@@ -1,0 +1,51 @@
+@import '../../assets/scss/variabls.scss';
+.hamburger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & svg {
+        height: 1.5em;
+        transition: $transition-base;
+        line {
+            stroke: $default-black;
+            stroke-width: 0.3em !important;
+            transition: $transition-base;
+        }
+        & #middle-bar {
+            transform: translateX(40%) scaleX(60%);
+            transition: $transition-base;
+        }
+    }
+    &.close {
+        & svg {
+            transform: rotate(90deg);
+            & #top-bar {
+                transform: rotate(45deg);
+                transform-origin: 10% 35%;
+                transition: $transition-base;
+            }
+            & #bottom-bar {
+                transform: rotate(-45deg);
+                transform-origin: 13% 64%;
+                transition: $transition-base;
+            }
+            & #middle-bar {
+                transform: translateX(-100%);
+            }
+        }
+    }
+    &:hover {
+        & svg {
+            & #middle-bar {
+                transform: scaleX(100%);
+            }
+        }
+        &.close {
+            & svg {
+                & #middle-bar {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+}

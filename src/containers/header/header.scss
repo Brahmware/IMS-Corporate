@@ -1,0 +1,30 @@
+@import '../../assets/scss/variabls.scss';
+.header {
+    height: 6em;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    background-color: $white;
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .header-left,
+    & .header-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+    & .logo {
+        & svg {
+            height: 2em;
+        }
+    }
+}

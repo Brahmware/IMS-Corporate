@@ -9,10 +9,10 @@ import "aos/dist/aos.css";
 import "./assets/css/plugins/animate.css";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/swiper.scss";
-import './App.css';
+import './App.scss';
 
 // UI Component Goes Here
-const HomePage = lazy(() => import("./pages/index")); 
+const HomePage = lazy(() => import("./pagegroups/home")); 
 
 const App = () => {
   useEffect(() => {

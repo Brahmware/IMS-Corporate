@@ -1,0 +1,25 @@
+@import "../../assets/scss/variabls.scss";
+.search {
+    height: 2em;
+    width: 15em;
+    & form {
+        width: 100%;
+        & input {
+            color: $default-black;
+            &::placeholder {
+                padding-left: 1.5em;
+                font-size: 1em;
+                font-style: italic;
+            }
+        }
+        & .search-button {
+            background-color: $white;
+            border: 0;
+            outline: 0;
+            & svg {
+                height: 1.5em;
+                fill: $default-black;
+            }
+        }
+    }
+}
