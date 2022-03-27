@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 // CSS Component
+import "aos/dist/aos.css";
+import "./assets/css/plugins/animate.css";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/swiper.scss";
 import './App.css';
 
 // UI Component Goes Here
