@@ -6,7 +6,7 @@
 			"script": "start",
 			"problemMatcher": [],
 			"label": "npm: start",
-			"detail": "react-scripts start"
+			"detail": "set PORT=5000 && react-scripts start"
 		}
 	]
 }
