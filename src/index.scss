@@ -5,7 +5,7 @@
 /*----------------------------------------*/
 
 @import "./assets/scss/bootstrap/bootstrap.scss";
-@import "./assets/scss/variabls";
+@import "./assets/scss/variabls.scss";
 @mixin placeholder {
     &::-webkit-input-placeholder {
         @content;
@@ -24,7 +24,7 @@
 
 /*-- Font Family --*/
 
-@import "./assets/fonts/Gotham/font.scss";
+@import "./assets/fonts/Gotham/stylesheet.scss";
 
 /*-- Common Style --*/
 
@@ -75,21 +75,21 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: $black;
+    background: $default-background;
     /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: $primary;
+    background-color: $primary-color;
     /* color of the scroll thumb */
     /* roundness of the scroll thumb */
-    //border: 0.5px solid $primary;
+    //border: 0.5px solid $primary-color;
     /* creates padding around scroll thumb */
 }
 
 // Scrollbar for mozilla
 html {
-    scrollbar-color: $primary $black;
+    scrollbar-color: $primary-color $black;
     /* thumb and track color */
     scrollbar-width: thin;
 }
@@ -106,6 +106,9 @@ button {
 a {
     text-decoration: none;
     color: inherit;
+    &:hover {
+        color: $primary-color !important;
+    }
 }
 
 p:last-child {
@@ -145,15 +148,13 @@ img {
     }
 }
 
-// Custom Container
-
-/* .custom-container {
-  @media #{$extraBig-device} {
-      max-width: 1920px;
-      padding: 0 70px;
-  }
+// Container
+.container {
+    @media #{$extraBig-device} {
+        max-width: 2400px;
+        padding: 0 70px;
+    }
 }
-*/
 
 
 /* Section Style */
@@ -226,7 +227,7 @@ img {
     & .title {
         font-size: 52px;
         font-weight: 700;
-        color: $primary;
+        color: $primary-color;
         text-transform: uppercase;
         @media #{$large-mobile} {
             font-size: 40px;
@@ -283,7 +284,7 @@ img {
         font-weight: 700;
         color: $white;
         & span {
-            color: $primary;
+            color: $primary-color;
         }
         @media #{$laptop-device} {
             font-size: 50px;
@@ -357,7 +358,7 @@ img {
                 padding: 0 15px;
             }
             &.active {
-                color: $primary;
+                color: $primary-color;
             }
         }
     }
@@ -376,7 +377,7 @@ img {
         letter-spacing: 10px;
         text-transform: uppercase;
         &:hover {
-            color: $primary;
+            color: $primary-color;
         }
     }
 }
@@ -399,7 +400,7 @@ img {
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
-    background-color: $primary;
+    background-color: $primary-color;
     &.show {
         visibility: visible;
         opacity: 1;
@@ -417,6 +418,11 @@ img {
             }
         }
     }
+}
+
+// Page Wrapper
+.page-wrapper {
+    padding-top: $header-height;
 }
 
 // No select text

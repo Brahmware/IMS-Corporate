@@ -1,0 +1,121 @@
+[{
+        "id": "business",
+        "pageGroup": "Business",
+        "pages": [{
+                "id": "about_us",
+                "page": "About Us",
+                "path": "/about_us"
+            },
+            {
+                "id": "our_leadership",
+                "page": "Our Leadership",
+                "path": "/our_leadership"
+            },
+            {
+                "id": "diversity_and_inclusion",
+                "page": "Diversity and Inclusion",
+                "path": "/diversity_and_inclusion"
+            },
+            {
+                "id": "career",
+                "page": "Career",
+                "path": "/career"
+            }
+        ]
+    },
+    {
+        "id": "media_network",
+        "pageGroup": "Media Network",
+        "pages": [{
+                "id": "business_and_brands",
+                "page": "Business and Brands",
+                "path": "/business_and_brands"
+            },
+            {
+                "id": "focus_areas",
+                "page": "Focus Areas",
+                "path": "/focus_areas"
+            },
+            {
+                "id": "technology",
+                "page": "Technology",
+                "path": "/technology"
+            },
+            {
+                "id": "newsroom",
+                "page": "Newsroom",
+                "path": "/newsroom"
+            }
+        ]
+    },
+    {
+        "id": "education_&_teaching",
+        "pageGroup": "Education & Teaching",
+        "pages": [{
+                "id": "resources",
+                "page": "Resources",
+                "path": "/resources"
+            },
+            {
+                "id": "professional_learning",
+                "page": "Professional Learning",
+                "path": "/professional_learning"
+            },
+            {
+                "id": "immersive_experience",
+                "page": "Immersive Experience",
+                "path": "/immersive_experience"
+            }
+        ]
+    },
+    {
+        "id": "collaborators",
+        "pageGroup": "Collaborators",
+        "pages": [{
+                "id": "explorers",
+                "page": "Explorers",
+                "path": "/explorers"
+            },
+            {
+                "id": "producers",
+                "page": "Producers",
+                "path": "/producers"
+            }
+        ]
+    },
+    {
+        "id": "partners",
+        "pageGroup": "Partners",
+        "pages": [{
+                "id": "corporate_and_foundations",
+                "page": "Corporate and Foundations",
+                "path": "/corporate_and_foundations"
+            },
+            {
+                "id": "become_a_member",
+                "page": "Become a Member",
+                "path": "/become_a_member"
+            }
+        ]
+    },
+    {
+        "id": "commercial",
+        "pageGroup": "Commercial",
+        "pages": [{
+                "id": "advertise_with_us",
+                "page": "Advertise with Us",
+                "path": "/advertise_with_us"
+            },
+            {
+                "id": "investors",
+                "page": "Investors",
+                "path": "/investors"
+            },
+            {
+                "id": "sustainability_statement",
+                "page": "Sustainability Statement",
+                "path": "/sustainability_statement"
+            }
+        ]
+    }
+]

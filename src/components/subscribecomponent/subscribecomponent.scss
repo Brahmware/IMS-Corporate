@@ -1,0 +1,50 @@
+@import "../../assets/scss/variabls.scss";
+.subscribecomponent {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    & .title {
+        font-size: 1.2em;
+        margin-left: 0.6em;
+        font-weight: 900;
+    }
+    & .subscribe-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        & input {
+            width: 25em;
+            border: 0;
+            border-radius: $button-border-radius;
+            outline: $medium-thin-border solid $default-black;
+            padding-left: 1em;
+            font-weight: 300;
+            font-size: 0.8em;
+            &::placeholder {
+                font-size: 1em;
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+        & .subscribe-button {
+            background-color: $default-black;
+            width: 10em;
+            color: $white;
+            outline: 0;
+            border: 0;
+            border-radius: $button-border-radius;
+            font-weight: 300;
+            font-size: 0.8em;
+            transition: $transition-base;
+            &:hover {
+                outline: $medium-thin-border solid $default-black;
+                background-color: $white;
+                color: $default-black;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import "../../assets/scss/variabls.scss";
+.language-component {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    & svg {
+        fill: $default-black;
+        height: 1em;
+    }
+    & span {
+        font-size: 1em;
+    }
+}

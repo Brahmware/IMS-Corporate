@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IMSLogo } from '../../assets/ourlogo';
 import HamburgerMenu from '../../components/hamburgermenu';
 import JoinButton from '../../components/JoinButton';
 import LiveButton from '../../components/LiveButton';
 import SearchComponent from '../../components/searchcomponent';
+import MegaMenu from '../../pagegroups/megamenu';
 import './header.scss';
 const Header = () => {
+  const [offcanvasShow, setOffcanvasShow] = useState(false);
+
+  const onCanvasHandler = () => {
+    setOffcanvasShow((prev) => !prev);
+  };
   return (
     <React.Fragment>
       <div className="header">
@@ -19,10 +25,11 @@ const Header = () => {
           <div className="header-right">
             <SearchComponent />
             <JoinButton />
-            <HamburgerMenu />
+            <HamburgerMenu onClickEvent={onCanvasHandler} toggleState={offcanvasShow}/>
           </div>
         </div>
       </div>
+      <MegaMenu show={offcanvasShow} onclose={onCanvasHandler}/>
     </React.Fragment>
   )
 }

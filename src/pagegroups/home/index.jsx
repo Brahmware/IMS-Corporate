@@ -6,7 +6,8 @@ import './home.scss';
 
 const HomePage = () => {
   return (
-    <React.Fragment>
+    <div className="page-wrapper">
+
       <Header/>
       <div className="home-slider"></div>
       <div className="about-us-1"></div>
@@ -18,7 +19,7 @@ const HomePage = () => {
       <div className="home-pricing"></div>
       <div className="our-network"></div>
       <Footer />
-    </React.Fragment>
+    </div>
   )
 }
 

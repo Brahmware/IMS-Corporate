@@ -2,11 +2,14 @@ import React from 'react';
 import { HamburgerIcon } from '../../assets/icons';
 import './hamburger.scss';
 
-const HamburgerMenu = () => {
+const HamburgerMenu = (props) => {
   return (
-    <div className="hamburger-menu">
-        <HamburgerIcon />
-    </div>
+    <button 
+      className={!props.toggleState ? "hamburger-menu" : "hamburger-menu close"}
+      onClick={props.onClickEvent}
+    >
+      <HamburgerIcon />
+    </button>
   )
 }
 

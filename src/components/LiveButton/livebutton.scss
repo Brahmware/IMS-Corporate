@@ -3,7 +3,7 @@
     width: 6em;
     height: 2em;
     background-color: $red;
-    border-radius: 24px;
+    border-radius: $button-border-radius;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,8 @@
     border: 0;
     transition: $transition-base;
     & .dot {
-        height: 0.6em;
-        width: 0.6em;
+        height: 0.7em;
+        width: 0.7em;
         border-radius: 50%;
         background-color: $white;
         transition: $transition-base;
@@ -21,11 +21,11 @@
     & span {
         color: $white;
         font-size: 0.9em;
-        font-weight: bold;
+        font-weight: 500;
         transition: $transition-base;
     }
     &:hover {
-        outline: 0.1em solid $red !important;
+        outline: $lite-stroke solid $red !important;
         background-color: $white;
         & .dot {
             background-color: $red;
@@ -35,7 +35,7 @@
         }
     }
     &:focus {
-        outline: 0 !important;
+        outline: 0;
         border-color: inherit;
         box-shadow: none;
         background: $red;

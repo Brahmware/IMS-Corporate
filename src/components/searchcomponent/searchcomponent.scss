@@ -1,24 +1,68 @@
 @import "../../assets/scss/variabls.scss";
 .search {
-    height: 2em;
-    width: 15em;
+    height: $header-button-height;
     & form {
-        width: 100%;
+        width: max-content;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: inherit;
+        width: inherit;
+        padding: 0;
+        margin: 0;
         & input {
             color: $default-black;
+            //overflow: hidden;
+            width: 1.2em;
+            padding: 0;
+            opacity: 0;
+            border-radius: $button-border-radius;
+            -webkit-box-sizing: border-box;
+            /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;
+            /* Firefox, other Gecko */
+            box-sizing: border-box;
+            /* Opera/IE 8+ */
+            border: 0;
+            transition: $transition-base;
             &::placeholder {
-                padding-left: 1.5em;
                 font-size: 1em;
+                font-weight: 300;
                 font-style: italic;
             }
         }
         & .search-button {
-            background-color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba($color: $white, $alpha: 0);
             border: 0;
             outline: 0;
+            border-radius: 50%;
+            position: absolute;
             & svg {
-                height: 1.5em;
-                fill: $default-black;
+                height: $header-icon-height;
+                & * {
+                    stroke: $default-black;
+                    stroke-width: 2.5em;
+                }
+            }
+        }
+        &:hover,
+        &:focus,
+        &:active,
+        &:focus-within {
+            width: 20em;
+            & input {
+                width: 100%;
+                padding: 0 2.5em;
+                border-radius: $button-border-radius;
+                outline: $medium-thin-border solid $default-black;
+                margin: 0;
+                opacity: 1;
+            }
+            & .search-button {
+                transform: translateX(-18.2em);
             }
         }
     }

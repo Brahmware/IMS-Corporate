@@ -1,0 +1,82 @@
+@import '../../assets/scss/variabls.scss';
+.footer {
+    height: 100vh;
+    font-size: 2em;
+    display: flex;
+    color: $default-black;
+    flex-direction: column;
+    justify-content: space-between;
+    & .sitemap-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        & .ims-logo-part {
+            padding-top: 0.5em;
+            & svg {
+                height: 2em;
+            }
+        }
+        & .sitemap-part {
+            padding: 0;
+            font-size: 0.5em;
+            & .sitemap {
+                padding: 0;
+                margin: 0;
+            }
+            & .pagegroup {
+                padding: 1em 0.1em !important;
+            }
+        }
+    }
+    & .subscribe-section {
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 0.5em;
+        & .col-6 {
+            padding: 0;
+        }
+    }
+    & .privacy-copyright-section {
+        padding: 0;
+        font-size: 0.5em;
+        & .privacy-copyright-section-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            gap: 1.5em;
+            & .social-links {
+                gap: 2em;
+            }
+            & .copyright-component {
+                font-size: 0.7em;
+            }
+        }
+        & .privacy-copyright-section-right {
+            padding: 0;
+            font-weight: 300;
+            font-size: 0.7em;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 1.5em;
+            & .legals {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                & a {
+                    text-decoration: underline;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
