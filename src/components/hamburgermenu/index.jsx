@@ -1,6 +1,5 @@
 import React from 'react';
 import { HamburgerIcon } from '../../assets/icons';
-import './hamburger.scss';
 
 const HamburgerMenu = (props) => {
   return (

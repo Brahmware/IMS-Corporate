@@ -1,5 +1,4 @@
 import React from 'react';
-import './copyright.scss';
 
 const CopyrightComponent = () => {
     const date = new Date();

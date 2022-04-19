@@ -1,5 +1,4 @@
 import React from 'react';
-import "./sitemap.scss";
 import SiteMapData from "../../data/sitemap.json";
 
 const SiteMap = () => {

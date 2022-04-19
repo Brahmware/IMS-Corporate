@@ -1,6 +1,5 @@
 import React from 'react'
 import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from '../../assets/icons';
-import "./sociallinks.scss";
 
 const SocialLinks = () => {
     return (

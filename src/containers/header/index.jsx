@@ -5,7 +5,6 @@ import JoinButton from '../../components/JoinButton';
 import LiveButton from '../../components/LiveButton';
 import SearchComponent from '../../components/searchcomponent';
 import MegaMenu from '../../pagegroups/megamenu';
-import './header.scss';
 const Header = () => {
   const [offcanvasShow, setOffcanvasShow] = useState(false);
 

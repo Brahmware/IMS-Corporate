@@ -2,8 +2,6 @@ import React from 'react'
 import Footer from '../../containers/footer';
 import Header from '../../containers/header';
 
-import './home.scss';
-
 const HomePage = () => {
   return (
     <div className="page-wrapper">

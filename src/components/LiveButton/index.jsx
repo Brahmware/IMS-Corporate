@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import './livebutton.scss';
 
 const LiveButton = () => {
   return (

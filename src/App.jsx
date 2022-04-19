@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import "./assets/css/plugins/animate.css";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/swiper.scss";
-import './App.scss';
+import './assets/scss/style.scss';
 
 // UI Component Goes Here
 const HomePage = lazy(() => import("./pagegroups/home")); 

@@ -3,7 +3,6 @@ import CopyrightComponent from '../../components/copyright';
 import LanguageComponent from '../../components/languagecomponent';
 import SiteMap from '../../components/sitemap';
 import SocialLinks from '../../components/sociallinks';
-import "./megamenu.scss";
 
 const MegaMenu = (props) => {
     return (

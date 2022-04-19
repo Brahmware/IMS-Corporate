@@ -1,5 +1,4 @@
-import React from 'react'
-import "./subscribecomponent.scss"
+import React from 'react';
 
 const SubscribeComponent = () => {
   return (
