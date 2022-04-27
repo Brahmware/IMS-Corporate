@@ -6,7 +6,7 @@ const SubscribeComponent = () => {
         <div className="title">Stay Connected</div>
         <form className='subscribe-form'>
             <input type='text' name='search_input' placeholder='yourname@email.com' />
-            <button className='subscribe-button'>SUBSCRIBE</button>
+            <button className='subscribe-button py-1'>SUBSCRIBE</button>
         </form>
     </div>
   )

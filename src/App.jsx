@@ -13,6 +13,7 @@ import './assets/scss/style.scss';
 
 // UI Component Goes Here
 const HomePage = lazy(() => import("./pagegroups/home")); 
+const About = lazy(() => import("./pagegroups/About")); 
 
 const App = () => {
   useEffect(() => {
@@ -31,7 +32,12 @@ const App = () => {
           <Route
             path={'/'}
             exact
-            component={HomePage}
+            component={HomePage}   
+            />
+          <Route
+            path={'/about_us'}
+            exact
+            component={About}   
             />
         </Switch>
       </Suspense>
