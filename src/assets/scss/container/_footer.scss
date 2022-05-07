@@ -3,6 +3,7 @@
     font-size: 2em;
     color: $default-black;
     background-color: $white;
+    overflow: hidden;
     & .container {
         height: 100%;
     }

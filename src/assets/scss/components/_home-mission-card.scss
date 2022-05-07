@@ -1,0 +1,26 @@
+.mission-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .count {
+        font-size: 4em;
+        font-weight: 700;
+        color: $black;
+    }
+    & .card-divider {
+        height: $thin-divider;
+        width: 4em;
+        background-color: $primary;
+        transform: translateY(-1em);
+    }
+    & .card-title {
+        color: $black;
+    }
+    & .card-content {
+        color: $light-text-color;
+    }
+    & .card-button {
+        margin-top: 1em;
+    }
+}

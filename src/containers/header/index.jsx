@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IMSLogo } from '../../assets/ourlogo';
+import FilledButton from '../../components/buttons/FilledButton';
 import HamburgerMenu from '../../components/hamburgermenu';
-import JoinButton from '../../components/JoinButton';
 import LiveButton from '../../components/LiveButton';
 import SearchComponent from '../../components/searchcomponent';
 import MegaMenu from '../../pagegroups/megamenu';
@@ -23,7 +23,7 @@ const Header = () => {
           </div>
           <div className="header-right">
             <SearchComponent />
-            <JoinButton />
+            <FilledButton class={"primary-button"} text={"JOIN"}/>
             <HamburgerMenu onClickEvent={onCanvasHandler} toggleState={offcanvasShow}/>
           </div>
         </div>

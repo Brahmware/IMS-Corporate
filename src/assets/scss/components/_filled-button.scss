@@ -1,0 +1,88 @@
+.filled-button {
+    background-color: $primary;
+    border-radius: $button-border-radius;
+    padding: 0.5em 2em;
+    stroke: none;
+    border: 0;
+    transition: $transition-base;
+
+    & span {
+        color: $white;
+        font-size: 1em;
+        transition: $transition-base;
+    }
+
+    &:hover {
+        outline: $lite-stroke solid $primary;
+        background-color: $white;
+
+        & span {
+            color: $primary;
+        }
+    }
+
+    &:focus {
+        outline: 0;
+        border-color: inherit;
+        box-shadow: none;
+        background: $primary;
+
+        &:hover {
+            & span {
+                color: $white;
+            }
+        }
+    }
+
+    &.primary-button {
+        background-color: $primary;
+
+        &:hover {
+            outline: $lite-stroke solid $primary;
+            background-color: $white;
+
+            & span {
+                color: $primary;
+            }
+        }
+
+        &:focus {
+            background-color: $primary;
+
+            &:hover {
+                outline: $lite-stroke solid $primary;
+                background-color: $white;
+
+                & span {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    &.black-button {
+        background-color: $black;
+
+        &:hover {
+            outline: $lite-stroke solid $black;
+            background-color: $white;
+
+            & span {
+                color: $black;
+            }
+        }
+
+        &:focus {
+            background-color: $black;
+
+            &:hover {
+                outline: $lite-stroke solid $black;
+                background-color: $white;
+
+                & span {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+.hollow-button {
+    background-color: rgba($primary, 0);
+    padding: 0.5em 2em;
+    border: 0;
+    border-radius: 0%;
+    stroke: none;
+    outline: $lite-stroke solid $primary;
+    transition: $transition-base;
+
+    & span {
+        color: $primary;
+        font-size: 1em;
+        transition: $transition-base;
+    }
+
+    &:hover {
+        outline: $lite-stroke solid $primary;
+        background-color: $primary;
+
+        & span {
+            color: $white;
+        }
+    }
+
+    &:focus {
+        outline: 0;
+        border-color: inherit;
+        box-shadow: none;
+        background: $primary;
+
+        &:hover {
+            & span {
+                color: $white;
+            }
+        }
+    }
+
+    &.primary-button {
+        background-color: rgba($primary, 0);
+
+        &:hover {
+            outline: $lite-stroke solid $primary;
+            background-color: $primary;
+
+            & span {
+                color: $white;
+            }
+        }
+
+        &:focus {
+            background-color: rgba($primary, 0);
+
+            &:hover {
+                outline: $lite-stroke solid $primary;
+                background-color: $primary;
+
+                & span {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &.black-button {
+        background-color: rgba($black, 0);
+        outline: $lite-stroke solid $black;
+
+        & span {
+            color: $black;
+        }
+
+        &:hover {
+            background-color: $black;
+
+            & span {
+                color: $white;
+            }
+        }
+
+        &:focus {
+            background-color: rgba($black, 0);
+            outline: $lite-stroke solid $black;
+
+            & span {
+                color: $black;
+            }
+
+            &:hover {
+                background-color: $black;
+
+                & span {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &.gray-button {
+        background-color: rgba($black, 0);
+        outline: $lite-stroke solid $light-text-color;
+
+        & span {
+            color: $light-text-color;
+        }
+
+        &:hover {
+            background-color: $light-text-color;
+
+            & span {
+                color: $white;
+            }
+        }
+
+        &:focus {
+            background-color: rgba($black, 0);
+            outline: $lite-stroke solid $light-text-color;
+
+            & span {
+                color: $light-text-color;
+            }
+
+            &:hover {
+                background-color: $light-text-color;
+
+                & span {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

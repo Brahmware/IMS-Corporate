@@ -1,0 +1,89 @@
+{
+    "homeData": [
+        {
+            "id": 1,
+            "elements": [
+                {
+                    "image": "/images/home/banner/cover-1.jpg",
+                    "card": {
+                        "title": "FOR INDIA",
+                        "subtitle": "Go Inventions!",
+                        "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    }
+                },
+                {
+                    "image": "/images/home/banner/cover-2.jpg",
+                    "card": {
+                        "title": "FOR INDIA",
+                        "subtitle": "Go Inventions!",
+                        "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    }
+                },
+                {
+                    "image": "/images/home/banner/cover-3.jpg",
+                    "card": {
+                        "title": "FOR INDIA",
+                        "subtitle": "Go Inventions!",
+                        "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    }
+                },
+                {
+                    "image": "/images/home/banner/cover-4.jpg",
+                    "card": {
+                        "title": "FOR INDIA",
+                        "subtitle": "Go Inventions!",
+                        "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "elements": [
+                {
+                    "images": {
+                        "imageTop": "/images/home/homeabout/image-top.jpg",
+                        "imageBottom": "/images/home/homeabout/image-bottom.jpg"
+                    }
+                },
+                {
+                    "card": {
+                        "title": "ABOUT US",
+                        "subtitle": "India celebrates <br /> Exploration",
+                        "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "elements": [
+                {
+                    "title": "OUR MISSION",
+                    "subtitle": "To lead the Infotainment Media Revolution",
+                    "content": "By making every Information, every Discovery, every Invention, every Challenge accessible to every person starting with the Indian pacific Region.",
+                    "cards": [
+                        {
+                            "id": 1,
+                            "count": 265,
+                            "cardtitle": "Conserved Species",
+                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        },
+                        {
+                            "id": 2,
+                            "count": 265,
+                            "cardtitle": "Conserved Species",
+                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        },
+                        {
+                            "id": 3,
+                            "count": 265,
+                            "cardtitle": "Conserved Species",
+                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

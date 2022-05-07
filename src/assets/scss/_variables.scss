@@ -1,5 +1,4 @@
-// @import "../fonts/Gotham/stylesheet.scss";
-@import "../fonts/Lato/stylesheet.scss";
+@import "../fonts/Gotham/stylesheet.scss";
 
 // Responsive Variables
 $extraBig-device: "only screen and (min-width: 1600px)";
@@ -43,6 +42,7 @@ $twitter: #00ccff !default;
 $behance: #0066ff !default;
 $facebook: #1674EA !default;
 $linkedin: #0173AF !default;
+$light-text-color: #707070 !default;
 //Spacers
 $spacer: 1rem;
 $spacers: ( 0: 0, 1: $spacer * 0.3125, 2: $spacer * 0.625, 3: $spacer * 0.9375, 4: $spacer * 1.25, 5: $spacer * 1.625, 6: $spacer * 1.875, 7: $spacer * 2.1875, 8: $spacer * 2.5, 9: $spacer * 2.8125, 10: $spacer * 3.125, );
@@ -86,3 +86,8 @@ $page-wrapper-padding: 6em;
 $header-icon-height: 1.2em;
 // Header Button Height
 $header-button-height: 2em;
+$container-gap: 4em;
+$section-padding: $container-gap 0em;
+$primary-haze: rgba($primary, 0.6);
+$thick-divider: 0.08em;
+$thin-divider: 0.04em;
