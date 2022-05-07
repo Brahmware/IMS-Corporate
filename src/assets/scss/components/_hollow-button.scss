@@ -97,7 +97,7 @@
 
     &.gray-button {
         background-color: rgba($black, 0);
-        outline: $lite-stroke solid $light-text-color;
+        outline: 1px solid $light-text-color;
 
         & span {
             color: $light-text-color;
@@ -113,7 +113,7 @@
 
         &:focus {
             background-color: rgba($black, 0);
-            outline: $lite-stroke solid $light-text-color;
+            outline: 1px solid $light-text-color;
 
             & span {
                 color: $light-text-color;
