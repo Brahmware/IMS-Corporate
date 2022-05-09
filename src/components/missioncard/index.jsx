@@ -2,7 +2,6 @@ import React from 'react'
 import HollowButton from '../buttons/HollowButton'
 
 const MissionCard = ({ cardData }) => {
-    console.log(cardData)
     return (
         <div className='mission-card'>
             <div className="count">

@@ -1,13 +1,13 @@
 import React from 'react'
 import ImageOverImageCardContainer from '../common/imageOverImageCardContainer';
 
-const HomeAbout = (props) => {
+const HomeExplorers = (props) => {
     
     return (
-        <div className='section home-about-section white-background'>
+        <div className='section home-explorers-section white-background'>
             <ImageOverImageCardContainer containerData={props.data} />
         </div>
     )
 }
 
-export default HomeAbout;
+export default HomeExplorers;

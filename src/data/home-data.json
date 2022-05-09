@@ -84,6 +84,55 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": 4,
+            "elements":[]
+        },
+        {
+            "id": 5,
+            "elements":[
+                {
+                    "testimonialid": 1,
+                    "authorname": "SATYA NADELLA",
+                    "authorimage": "/images/home/hometestimonials/author-1/profilepicture.jpg",
+                    "authordesignation": "CEO of Microsoft",
+                    "comment": "Indian Media Syndicate is a Revolution. It's Greater than Microsoft and Apple combined. I wish I could work with them."
+                },
+                {
+                    "testimonialid": 2,
+                    "authorname": "NARENDRA MODI",
+                    "authorimage": "/images/home/hometestimonials/author-2/profilepicture.jpg",
+                    "authordesignation": "PM of India",
+                    "comment": "Indian Media Syndicate is a Revolution. It's Greater than Microsoft and Apple combined. I wish I could work with them."
+                },
+                {
+                    "testimonialid": 3,
+                    "authorname": "EMMANUEL MACRON",
+                    "authorimage": "/images/home/hometestimonials/author-3/profilepicture.jpg",
+                    "authordesignation": "President of France",
+                    "comment": "Indian Media Syndicate is a Revolution. It's Greater than Microsoft and Apple combined. I wish I could work with them."
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "elements": [
+                {
+                    "images": {
+                        "imageTop": "/images/home/homeexplorers/image-top.jpg",
+                        "imageBottom": "/images/home/homeexplorers/image-bottom.jpg"
+                    }
+                },
+                {
+                    "card": {
+                        "title": "EXPLORERS",
+                        "subtitle": "Impactful programs for<br /> a global community<br /> of Changemakers",
+                        "content": "<p>We fund a worldwide network of Explorers who investigate, evaluate theories, revolutionize, take imagination to new heights, and push the limitations of traditional thinking in ways that fundamentally change humanity.</p>",
+                        "buttontext": "MEET EXPLORERS"
+                    }
+                }
+            ]
         }
     ]
 }
