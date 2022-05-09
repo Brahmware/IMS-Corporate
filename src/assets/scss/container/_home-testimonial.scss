@@ -63,7 +63,7 @@
         }
     }
 
-    & #pagination-holder {
+    & #testimonial-pagination-holder {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -81,6 +81,7 @@
                 background-color: $light-text-color;
                 border-radius: 50%;
                 transition: $transition-base;
+                box-shadow: $default-shadow;
 
                 &:hover {
                     background-color: $white;
@@ -98,4 +99,7 @@
         }
     }
 
+    @media #{$extraBig-device} {
+        font-size: 1.5em;
+    }
 }

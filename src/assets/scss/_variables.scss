@@ -1,5 +1,3 @@
-@import "../fonts/Gotham/stylesheet.scss";
-
 // Responsive Variables
 $extraBig-device: "only screen and (min-width: 1600px)";
 $laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
@@ -46,17 +44,18 @@ $light-text-color: #707070 !default;
 $color-overlay: #D16920;
 //Spacers
 $spacer: 1rem;
-$spacers: ( 0: 0, 1: $spacer * 0.3125, 2: $spacer * 0.625, 3: $spacer * 0.9375, 4: $spacer * 1.25, 5: $spacer * 1.625, 6: $spacer * 1.875, 7: $spacer * 2.1875, 8: $spacer * 2.5, 9: $spacer * 2.8125, 10: $spacer * 3.125, );
+$spacers: (0: 0, 1: $spacer * 0.3125, 2: $spacer * 0.625, 3: $spacer * 0.9375, 4: $spacer * 1.25, 5: $spacer * 1.625, 6: $spacer * 1.875, 7: $spacer * 2.1875, 8: $spacer * 2.5, 9: $spacer * 2.8125, 10: $spacer * 3.125, );
 // Break-points
-$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1600px, );
-$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1200px, xxl: 1200px, );
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1600px, );
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1200px, xxl: 1200px, );
 $grid-gutter-width: 30px;
 // Transitions
 $transition-base: all 600ms ease 0s;
 $transition-base-with-delay: all 600ms ease 100ms;
 $transition-specific: 600ms ease 0s;
 // Fonts 
-$font-family-base: 'Lato';
+$font-family-base: 'Gotham', sans-serif;
+$font-wight-base: 500;
 // Scrollbar
 $scrollbar-width: 0.5em;
 // default scaling
@@ -92,3 +91,8 @@ $section-padding: $container-gap 0em;
 $primary-haze: rgba($primary, 0.6);
 $thick-divider: 0.08em;
 $thin-divider: 0.04em;
+// base opacity
+$opacity-base: 0.6;
+// Default Shadows
+$lower-transparent-black: rgba($color: $black, $alpha: $opacity-base);
+$default-shadow: 0 0 10px 0px $lower-transparent-black;

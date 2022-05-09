@@ -21,4 +21,8 @@
             letter-spacing: 0.02em;
         }
     }
+
+    @media #{$extraBig-device} {
+        font-size: 1.5em;
+    }
 }

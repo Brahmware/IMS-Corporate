@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination } from "swiper/core";
+import SwiperCore, { Pagination, Autoplay } from "swiper/core";
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Autoplay]);
 
 
 const HomeTestimonial = (props) => {
     const testimonials = props.data.elements;
-    const paginationRef = useRef(null);
+    const testimonialPaginationRef = useRef(null);
 
     const params = {
         initialSlide: testimonials.length / 2,
@@ -18,15 +18,21 @@ const HomeTestimonial = (props) => {
                 return '<div class="swiper-pagination-bullet"></div>';
             },
         },
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: true,
+        },
+        speed:1000,
+		direction: 'horizontal',
         loop: true,
     };
 
     useEffect(() => {
 
-        const paginationHolder = document.getElementById('pagination-holder');
-        paginationHolder.appendChild(paginationRef.current);
+        const paginationHolder = document.getElementById('testimonial-pagination-holder');
+        paginationHolder.appendChild(testimonialPaginationRef.current);
 
-    }, [paginationRef]);
+    }, [testimonialPaginationRef]);
 
     return (
         <div className='section-with-padding home-testimonial-section'>
@@ -69,12 +75,12 @@ const HomeTestimonial = (props) => {
                             )
                         })
                     }
-                    <div className="swiper-pagination" ref={paginationRef}></div>
+                    <div className="swiper-pagination" ref={testimonialPaginationRef}></div>
                 </Swiper>
             </div>
-            <div id="pagination-holder" className='container'></div>
+            <div id="testimonial-pagination-holder" className='container'></div>
         </div>
     )
 }
 
-export default HomeTestimonial
+export default HomeTestimonial;

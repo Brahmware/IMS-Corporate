@@ -6,6 +6,7 @@
     stroke: none;
     outline: $lite-stroke solid $primary;
     transition: $transition-base;
+    font-weight: 500;
 
     & span {
         color: $primary;

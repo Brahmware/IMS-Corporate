@@ -1,18 +1,36 @@
-import React, { useEffect } from 'react'
-import { Swiper, SwiperSlide, Pagination } from 'swiper/react';
+import React, { useEffect, useRef } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Pagination, Autoplay } from "swiper/core";
+
+SwiperCore.use([Pagination, Autoplay]);
 
 
 const HomeBanner = (props) => {
+
+    const bannerPaginationRef = useRef(null);
 
     const params = {
         initialSlide: 1,
         pagination: {
             el: ".swiper-pagination",
-            type: "bullets",
+            renderBullet: function (index, className) {
+                return '<div class="swiper-pagination-bullet"></div>';
+            },
             clickable: true
         },
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: true,
+        },
+        speed:1000,
+		direction: 'horizontal',
         loop: true,
     };
+
+    useEffect(() => {
+        const paginationHolder = document.getElementById('banner-pagination-holder');
+        paginationHolder.appendChild(bannerPaginationRef.current);
+    }, [bannerPaginationRef])
 
     return (
         <div className='section home-banner-section'>
@@ -26,9 +44,9 @@ const HomeBanner = (props) => {
                                         <img src={eachSlide.image} alt={key} />
                                     </div>
                                     <div className="container">
-                                        <div className="card">
+                                        <div className="banner-card">
                                             <div className="title">
-                                            <span
+                                                <span
                                                     dangerouslySetInnerHTML={{
                                                         __html: eachSlide.card.title
                                                     }}
@@ -53,7 +71,9 @@ const HomeBanner = (props) => {
                         )
                     })
                 }
+                <div className="swiper-pagination" ref={bannerPaginationRef} />
             </Swiper>
+            <div id="banner-pagination-holder" className='container' />
         </div>
     )
 }

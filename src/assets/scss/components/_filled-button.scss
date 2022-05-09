@@ -4,11 +4,12 @@
     padding: 0.5em 2em;
     stroke: none;
     border: 0;
+    font-weight: 500;
     transition: $transition-base;
 
     & span {
         color: $white;
-        font-size: 1em;
+        font-size: 1.1em;
         transition: $transition-base;
     }
 

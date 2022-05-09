@@ -30,18 +30,66 @@
                 display: flex;
                 justify-content: space-between;
 
-                & .card {
+                & .banner-card {
                     height: auto;
                     width: 40em;
                     padding: 2em 3em;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: flex-start;
                     gap: 0.3em;
+                    background-color: $white;
                 }
             }
         }
 
     }
 
+    & #banner-pagination-holder {
+        height: 0;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        & .swiper-pagination {
+            position: absolute;
+            height: 2em;
+            z-index: 2;
+            transform: translateY(-4em);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.6em;
+
+            & .swiper-pagination-bullet {
+                cursor: pointer;
+                height: 0.5em;
+                width: 0.5em;
+                background-color: rgba($color: $white, $alpha: 0.75);
+                border-radius: 50%;
+                transition: $transition-base;
+                box-shadow: $default-shadow;
+
+                &:hover {
+                    background-color: rgba($color: $white, $alpha: 0.90);
+                    transform: scale(1.25);
+                }
+
+                &.swiper-pagination-bullet-active {
+                    background-color: rgba($color: $white, $alpha: 1.0);
+                    transform: scale(1.5);
+
+                    &:hover {
+                        background-color: rgba($color: $white, $alpha: 1.0);
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+    @media #{$extraBig-device} {
+        font-size: 1.5em;
+    }
 }
