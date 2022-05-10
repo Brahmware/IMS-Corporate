@@ -2,7 +2,7 @@ import React from 'react'
 
 const ImageOverThinImage = (props) => {
   return (
-    <div className='image-over-thin-image'>
+    <div className={!props.inverse ? 'image-over-thin-image' : 'image-over-thin-image inverse'}>
         <div className='bottom-image'>
             <div className="image-overlay" />
             <img src={props.bottomImage} alt={props.bottomImage} />

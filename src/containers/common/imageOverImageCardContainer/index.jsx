@@ -7,9 +7,9 @@ const ImageOverImageCardContainer = (props) => {
     const card = props.containerData.elements[1].card;
     return (
         <div className="container imageoverimage-card-container">
-            <div className="half-devided-section">
+            <div className={!props.inverse ? "half-devided-section" : "half-devided-section container-inverse"}>
                 <div className="image-part">
-                    <ImageOverThinImage topImage={images.imageTop} bottomImage={images.imageBottom} />
+                    <ImageOverThinImage topImage={images.imageTop} bottomImage={images.imageBottom} inverse={props.inverse}/>
                 </div>
                 <div className="card-part">
                     <div className="title">

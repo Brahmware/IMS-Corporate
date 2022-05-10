@@ -89,10 +89,12 @@ $header-button-height: 2em;
 $container-gap: 4em;
 $section-padding: $container-gap 0em;
 $primary-haze: rgba($primary, 0.6);
+// Divider
+$thicker-divider: 0.2em;
 $thick-divider: 0.08em;
 $thin-divider: 0.04em;
 // base opacity
 $opacity-base: 0.6;
 // Default Shadows
 $lower-transparent-black: rgba($color: $black, $alpha: $opacity-base);
-$default-shadow: 0 0 10px 0px $lower-transparent-black;
+$default-shadow: 0 0 10px 0px rgba($black, 0.3);

@@ -49,4 +49,16 @@
             border-radius: inherit;
         }
     }
+
+    &.inverse {
+        justify-content: flex-end;
+
+        & .bottom-image {
+            align-self: flex-end;
+        }
+
+        & .top-image {
+            transform: translateX(-1 * calc(22.12em / 1.88));
+        }
+    }
 }

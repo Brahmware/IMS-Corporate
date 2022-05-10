@@ -1,0 +1,9 @@
+.brands-container {
+    background-color: $default-background;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & svg {
+        height: 8em;
+    }
+}

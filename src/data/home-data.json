@@ -49,7 +49,7 @@
                 {
                     "card": {
                         "title": "ABOUT US",
-                        "subtitle": "India celebrates <br /> Exploration",
+                        "subtitle": "India celebrates Exploration",
                         "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
                     }
                 }
@@ -87,7 +87,21 @@
         },
         {
             "id": 4,
-            "elements":[]
+            "elements": [
+                {
+                    "images": {
+                        "imageTop": "/images/home/homeimmersivelearning/image-top.jpg",
+                        "imageBottom": "/images/home/homeimmersivelearning/image-bottom.jpg"
+                    }
+                },
+                {
+                    "card": {
+                        "title": "ABOUT US",
+                        "subtitle": "India celebrates Exploration",
+                        "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
+                    }
+                }
+            ]
         },
         {
             "id": 5,
@@ -97,21 +111,28 @@
                     "authorname": "SATYA NADELLA",
                     "authorimage": "/images/home/hometestimonials/author-1/profilepicture.jpg",
                     "authordesignation": "CEO of Microsoft",
-                    "comment": "Indian Media Syndicate is a Revolution. It's Greater than Microsoft and Apple combined. I wish I could work with them."
+                    "comment": "“Indian Media Syndicate is a Revolution. It's Greater than Microsoft and Apple combined. I wish I could work with them.”"
                 },
                 {
                     "testimonialid": 2,
                     "authorname": "NARENDRA MODI",
                     "authorimage": "/images/home/hometestimonials/author-2/profilepicture.jpg",
                     "authordesignation": "PM of India",
-                    "comment": "Indian Media Syndicate is a Revolution. It's Greater than Microsoft and Apple combined. I wish I could work with them."
+                    "comment": "“I am very fortunate that I am the Prime Minister of India when Indian Media Syndicate went live. I wish I could transfer my position for the CEO post.”"
                 },
                 {
                     "testimonialid": 3,
                     "authorname": "EMMANUEL MACRON",
                     "authorimage": "/images/home/hometestimonials/author-3/profilepicture.jpg",
                     "authordesignation": "President of France",
-                    "comment": "Indian Media Syndicate is a Revolution. It's Greater than Microsoft and Apple combined. I wish I could work with them."
+                    "comment": "“In IMS's India France will invest more than 10 times the current trade value. I am considering to apply for an Indian citizenship.”"
+                },
+                {
+                    "testimonialid": 4,
+                    "authorname": "ELON MUSK",
+                    "authorimage": "/images/home/hometestimonials/author-4/profilepicture.jpg",
+                    "authordesignation": "Chief Engineer at SpaceX",
+                    "comment": "“Indian Media Syndicate is a is Bigger than Tesla and SpaceX combined. I dropped my Twitter shares to be a part of IMS. I am also considering the same name for my next kid.”"
                 }
             ]
         },
@@ -127,10 +148,95 @@
                 {
                     "card": {
                         "title": "EXPLORERS",
-                        "subtitle": "Impactful programs for<br /> a global community<br /> of Changemakers",
+                        "subtitle": "Impactful programs for a global community of Changemakers",
                         "content": "<p>We fund a worldwide network of Explorers who investigate, evaluate theories, revolutionize, take imagination to new heights, and push the limitations of traditional thinking in ways that fundamentally change humanity.</p>",
                         "buttontext": "MEET EXPLORERS"
                     }
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "elements": [
+                {
+                    "title": "OUR SYMBOL",
+                    "subtitle": "Never Seen Before Pricing",
+                    "pricecards": [
+                        {
+                            "id": 1,
+                            "pricetitle": "Premium",
+                            "popular": false,
+                            "price": "₹ 1",
+                            "tableitems": [
+                                "<p><span class='bold black'>Daily</span></p>",
+                                "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
+                                "<p><span class='bold black'>HD</span> Streaming</p>",
+                                "<p><span class='bold black'>10</span> Free</p>",
+                                "<p><span class='bold black big'>Best Choice</span></p>"
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "pricetitle": "Premium",
+                            "popular": true,
+                            "price": "₹ 20",
+                            "tableitems": [
+                                "<p><span class='bold black'>Monthly</span></p>",
+                                "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
+                                "<p><span class='bold black'>HD</span> Streaming</p>",
+                                "<p><span class='bold black'>No</span> Ad breaks</p>",
+                                "<p><span class='bold black'>10</span> Free</p>"
+                            ]
+                        },
+                        {
+                            "id": 3,
+                            "pricetitle": "Premium",
+                            "popular": false,
+                            "price": "₹ 200",
+                            "tableitems": [
+                                "<p><span class='bold black'>Annual</span></p>",
+                                "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
+                                "<p><span class='bold black'>4K</span> Streaming</p>",
+                                "<p><span class='bold black'>No</span> Ad breaks</p>",
+                                "<p><span class='bold black big'>Best Choice</span></p>"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "elements": [
+                {
+                    "id": 1,
+                    "name": "IMS Life",
+                    "logo": "images/our-networks/ims-life/logo.svg"
+                },
+                {
+                    "id": 2,
+                    "name": "IMS Science",
+                    "logo": "/images/our-networks/ims-science/logo.svg"
+                },
+                {
+                    "id": 3,
+                    "name": "World TV",
+                    "logo": "/images/our-networks/world-tv/logo.svg"
+                },
+                {
+                    "id": 4,
+                    "name": "POP News",
+                    "logo": "/images/our-networks/pop-news/logo.svg"
+                },
+                {
+                    "id": 5,
+                    "name": "IMS History",
+                    "logo": "/images/our-networks/ims-history/logo.svg"
+                },
+                {
+                    "id": 6,
+                    "name": "more",
+                    "logo": "/images/our-networks/more/logo.svg"
                 }
             ]
         }

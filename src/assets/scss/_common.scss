@@ -190,6 +190,9 @@ img {
     justify-content: flex-start;
     gap: $container-gap;
 
+    &.container-inverse {
+        flex-direction: row-reverse;
+    }
 }
 
 .white-background {

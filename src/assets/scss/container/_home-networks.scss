@@ -1,0 +1,21 @@
+.home-our-networks-section {
+    padding-bottom: 0;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    & .section-title {
+        font-weight: 900;
+        font-size: 1.3em;
+    }
+    & .brands-part {
+        background-color: $default-background;
+        padding: 4em 0;
+        width: 100%;
+    }
+    @media #{$extraBig-device} {
+        font-size: 1.5em;
+    }
+}

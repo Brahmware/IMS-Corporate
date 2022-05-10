@@ -1,6 +1,5 @@
 .imageoverimage-card-container {
-    & .image-part {
-    }
+    & .image-part {}
 
     & .card-part {
         & .divider {
@@ -8,12 +7,13 @@
             width: 10em;
             background-color: $primary;
         }
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         gap: 1em;
-        
+
         & .black-button {
             font-size: 0.9em;
             margin-top: 1em;
