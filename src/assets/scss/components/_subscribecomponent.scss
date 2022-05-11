@@ -6,15 +6,15 @@
     align-items: flex-start;
     gap: 1em;
     & .title {
-        font-size: 1.2em;
+        font-size: 1em;
         margin-left: 0.6em;
-        font-weight: 900;
+        font-weight: 1000;
     }
     & .subscribe-form {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2em;
+        gap: 1.5em;
         & input {
             width: 25em;
             border: 0;
@@ -22,28 +22,12 @@
             outline: $medium-thin-border solid $default-black;
             padding-left: 1em;
             font-weight: 300;
-            font-size: 0.8em;
-            padding: 0.3125rem 0px 0.3125rem 1em;
+            padding: 0.3125em 0px 0.3125em 1em;
             &::placeholder {
                 font-size: 1em;
-                font-weight: 300;
+                font-weight: 500;
                 font-style: italic;
-            }
-        }
-        & .subscribe-button {
-            background-color: $default-black;
-            width: 10em;
-            color: $white;
-            outline: 0;
-            border: 0;
-            border-radius: $button-border-radius;
-            font-weight: 300;
-            font-size: 0.8em;
-            transition: $transition-base;
-            &:hover {
-                outline: $medium-thin-border solid $default-black;
-                background-color: $white;
-                color: $default-black;
+                color: $light-text-color;
             }
         }
     }

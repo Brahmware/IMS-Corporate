@@ -17,7 +17,7 @@ const Header = () => {
   const [headerTop, setHeaderTop] = useState(0);
   
   const header = document.querySelector(".header");
-  const headerHeight = header.getBoundingClientRect().height;
+  const headerHeight = header && header.getBoundingClientRect().height;
   
   useEffect(() => {
     setHeaderTop(headerHeight);

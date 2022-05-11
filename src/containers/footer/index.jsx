@@ -9,10 +9,10 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className="container">
+        <div className="divider">
+          <div className="divider-line" />
+        </div>
         <div className="page-wrapper">
-          <div className="divider">
-            <div className="divider-line"/>
-          </div>
           <div className="sitemap-section row">
             <div className="ims-logo-part col-6">
               <IMSLogo />

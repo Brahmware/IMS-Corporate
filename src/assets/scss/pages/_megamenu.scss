@@ -8,51 +8,81 @@
     top: 0;
     left: 0;
     right: 0;
-    transform: translateY(-110%);
+    transform: translateY(-200%);
     transition: $transition-base;
+    padding-bottom: 2em;
+
     &.open {
         transform: translateY(0%);
     }
+
     & .megamenu-page {
         height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-    & .site-map-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        & .megamenu-image {
-            height: 30em;
-            width: 25em;
-            overflow: hidden;
-            & img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
+
+        & .site-map-wrapper {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            & .site-map-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                & .megamenu-image-holder {
+                    width: 0;
+                    height: 30em;
+
+                    & .megamenu-image {
+                        position: absolute;
+                        left: 0;
+                        height: 30em;
+                        width: 20em;
+                        overflow: hidden;
+
+                        & img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+
+            & .sitemap {
+                & .pagegroup {}
             }
         }
-        & .sitemap {
-            padding: 0 8em;
-            & .pagegroup {}
-        }
     }
+
+
     & .megamenu-footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
         & .megamenu-footer-left {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: flex-start;
             gap: 1em;
+
+            & .contactus {
+                font-size: 1.3em;
+                font-weight: 1000;
+            }
+
             & .social-links {
                 gap: 2em
             }
         }
+
         & .megamenu-footer-right {
             display: flex;
             flex-direction: column;
@@ -60,6 +90,7 @@
             align-items: flex-end;
             gap: 1em;
             font-weight: 300;
+
             & .legals {
                 display: flex;
                 justify-content: center;
@@ -68,5 +99,9 @@
                 text-decoration: underline;
             }
         }
+    }
+
+    @media #{$extraBig-device} {
+        font-size: 1.5em;
     }
 }

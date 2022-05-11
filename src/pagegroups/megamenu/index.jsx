@@ -12,10 +12,16 @@ const MegaMenu = (props) => {
         >
             <div className="page-wrapper megamenu-page">
                 <div className="site-map-wrapper">
-                    <div className="megamenu-image" >
-                        <img src="/images/nav-image.png" alt="navimage" />
+                    <div className="container">
+                        <div className="site-map-container">    
+                            <div className="megamenu-image-holder">
+                                <div className="megamenu-image" >
+                                    <img src="/images/nav-image.png" alt="navimage" />
+                                </div>
+                            </div>
+                            <SiteMap />
+                        </div>
                     </div>
-                    <SiteMap />
                 </div>
                 <div className="megamenu-footer container">
                     <div className="megamenu-footer-left">
