@@ -4,9 +4,19 @@ import BrandsContainer from '../common/brandcontainer';
 const HomeNetworks = (props) => {
     const ourNetworks = props.data.elements;
     return (
-        <div className='section-with-padding home-our-networks-section'>
+        <div
+            className='section-with-padding home-our-networks-section'
+
+        >
             <div className="container">
-                <div className="section-title"><span>OUR NETWORKS</span></div>
+                <div
+                    className="section-title"
+                    data-aos='fade-up'
+                    data-aos-duration='600'
+                    data-aos-delay='300'
+                >
+                    <span>OUR NETWORKS</span>
+                </div>
             </div>
             <div className="brands-part">
                 <BrandsContainer branddata={ourNetworks} />

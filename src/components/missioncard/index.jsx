@@ -1,9 +1,14 @@
 import React from 'react'
 import HollowButton from '../buttons/HollowButton'
 
-const MissionCard = ({ cardData }) => {
+const MissionCard = ({ cardData, cardKey }) => {
     return (
-        <div className='mission-card'>
+        <div 
+            className='mission-card'
+            data-aos='fade-up'
+        data-aos-duration='600'
+        data-aos-delay={1200 + cardKey * 300}
+        >
             <div className="count">
                 <span>{cardData.count}</span>
             </div>

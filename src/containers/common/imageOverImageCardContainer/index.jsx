@@ -9,9 +9,14 @@ const ImageOverImageCardContainer = (props) => {
         <div className="container imageoverimage-card-container">
             <div className={!props.inverse ? "half-devided-section" : "half-devided-section container-inverse"}>
                 <div className="image-part">
-                    <ImageOverThinImage topImage={images.imageTop} bottomImage={images.imageBottom} inverse={props.inverse}/>
+                    <ImageOverThinImage topImage={images.imageTop} bottomImage={images.imageBottom} inverse={props.inverse} />
                 </div>
-                <div className="card-part">
+                <div
+                    className="card-part"
+                    data-aos='fade-left'
+                    data-aos-duration='600'
+                    data-aos-delay='600'
+                >
                     <div className="title">
                         <span
                             dangerouslySetInnerHTML={{
@@ -34,7 +39,7 @@ const ImageOverImageCardContainer = (props) => {
                             }}
                         />
                     </div>
-                    <FilledButton class={"black-button"} text={ card.buttontext ? card.buttontext : "VIEW MORE"} />
+                    <FilledButton class={"black-button"} text={card.buttontext ? card.buttontext : "VIEW MORE"} />
                 </div>
             </div>
         </div>

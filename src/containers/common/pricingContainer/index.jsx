@@ -8,7 +8,12 @@ const PricingContainer = (props) => {
                     props.tabledata && props.tabledata.map((eachCard, key) => {
                         return (
                             <div className="col" key={key}>
-                                <div className="card-wrapper">
+                                <div
+                                    className="card-wrapper"
+                                    data-aos='fade-up'
+                                    data-aos-duration='600'
+                                    data-aos-delay={900 + 300 * key}
+                                >
                                     <div className={eachCard.popular ? "each-card popular-card" : "each-card"}>
                                         <div className="table-header">
                                             <span
