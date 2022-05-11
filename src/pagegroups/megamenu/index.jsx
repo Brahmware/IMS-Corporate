@@ -6,7 +6,10 @@ import SocialLinks from '../../components/sociallinks';
 
 const MegaMenu = (props) => {
     return (
-        <div className={props.show ? "megamenu open" : "megamenu"}>
+        <div 
+            className={props.show ? "megamenu open" : "megamenu"}
+            style={{paddingTop: `${props.headerHeight}px`}}
+        >
             <div className="page-wrapper megamenu-page">
                 <div className="site-map-wrapper">
                     <div className="megamenu-image" >

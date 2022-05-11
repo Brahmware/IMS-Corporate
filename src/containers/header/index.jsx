@@ -15,17 +15,19 @@ const Header = () => {
 
   const [scroll, setScroll] = useState(0);
   const [headerTop, setHeaderTop] = useState(0);
-
+  
+  const header = document.querySelector(".header");
+  const headerHeight = header.getBoundingClientRect().height;
+  
   useEffect(() => {
-    const header = document.querySelector(".header");
-    setHeaderTop(header.offsetTop);
+    setHeaderTop(headerHeight);
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [headerHeight]);
 
-  const handleScroll = ({ }) => {
+  const handleScroll = () => {
     setScroll(window.scrollY);
   };
 
@@ -48,7 +50,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <MegaMenu show={offcanvasShow} onclose={onCanvasHandler} />
+      <MegaMenu show={offcanvasShow} onclose={onCanvasHandler} headerHeight={headerTop}/>
     </React.Fragment>
   )
 }

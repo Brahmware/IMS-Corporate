@@ -1,4 +1,5 @@
 .megamenu {
+    font-size: 1em;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -7,10 +8,10 @@
     top: 0;
     left: 0;
     right: 0;
-    transform: translateX(110%);
+    transform: translateY(-110%);
     transition: $transition-base;
     &.open {
-        transform: translateX(0%);
+        transform: translateY(0%);
     }
     & .megamenu-page {
         height: 100%;
@@ -22,13 +23,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 2em;
         & .megamenu-image {
             height: 30em;
             width: 25em;
+            overflow: hidden;
             & img {
-                height: inherit;
-                width: inherit;
+                height: 100%;
+                width: 100%;
                 object-fit: cover;
             }
         }
@@ -38,8 +39,6 @@
         }
     }
     & .megamenu-footer {
-        height: 100%;
-        font-size: 1.8em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -69,8 +68,5 @@
                 text-decoration: underline;
             }
         }
-    }
-    @media #{$laptop-device, $desktop-device} {
-        font-size: 0.55em;
     }
 }
