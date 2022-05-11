@@ -43,7 +43,7 @@ const Header = () => {
           </div>
           <div className="header-right">
             <SearchComponent />
-            <FilledButton class={"primary-button"} text={"JOIN"} />
+            <FilledButton class={"join-button"} text={"JOIN"} />
             <HamburgerMenu onClickEvent={onCanvasHandler} toggleState={offcanvasShow} />
           </div>
         </div>

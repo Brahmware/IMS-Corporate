@@ -24,13 +24,16 @@
         justify-content: center;
         align-items: center;
         gap: 3em;
-        & .primary-button {
-            width: 6em;
+        & .join-button {
             height: $header-button-height;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-weight: 700;
+            font-weight: 900;
+        }
+        & .live-button {
+            padding: 0.5em 1em;
+            font-weight: 900;
         }
     }
     & .logo {

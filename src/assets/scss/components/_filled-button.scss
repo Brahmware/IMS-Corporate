@@ -1,15 +1,16 @@
 .filled-button {
+    font-size: 1em;
     background-color: $primary;
     border-radius: $button-border-radius;
-    padding: 0.5em 2em;
     stroke: none;
     border: 0;
     font-weight: 500;
     transition: $transition-base;
+    padding: 0.5em 1.5em;
 
     & span {
         color: $white;
-        font-size: 1.1em;
+        font-size: 1em;
         transition: $transition-base;
     }
 

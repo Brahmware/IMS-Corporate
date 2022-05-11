@@ -1,12 +1,12 @@
 .live-button {
-    width: 6em;
-    height: 2em;
+    font-size: 1em;
     background-color: $red;
     border-radius: $button-border-radius;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.9em;
+    line-height: 1em;
     stroke: none;
     border: 0;
     transition: $transition-base;
@@ -19,8 +19,6 @@
     }
     & span {
         color: $white;
-        font-size: 0.9em;
-        font-weight: 500;
         transition: $transition-base;
     }
     &:hover {
