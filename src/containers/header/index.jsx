@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { IMSLogo } from '../../assets/ourlogo';
 import FilledButton from '../../components/buttons/FilledButton';
 import HamburgerMenu from '../../components/hamburgermenu';
@@ -34,7 +35,9 @@ const Header = () => {
         <div className="container">
           <div className="header-left">
             <div className="logo">
-              <IMSLogo />
+              <Link to="/">
+                <IMSLogo />
+              </Link>
             </div>
             <LiveButton />
           </div>

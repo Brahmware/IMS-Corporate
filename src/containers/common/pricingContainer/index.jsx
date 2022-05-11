@@ -1,4 +1,3 @@
-import { dblClick } from '@testing-library/user-event/dist/click'
 import React from 'react'
 
 const PricingContainer = (props) => {
@@ -27,8 +26,8 @@ const PricingContainer = (props) => {
                                             {
                                                 eachCard.tableitems && eachCard.tableitems.map((eachItem, key) => {
                                                     return (
-                                                        <React.Fragment>
-                                                            <div className="table-item" key={key}
+                                                        <React.Fragment key={key}>
+                                                            <div className="table-item"
                                                                 dangerouslySetInnerHTML={{
                                                                     __html: eachItem
                                                                 }}

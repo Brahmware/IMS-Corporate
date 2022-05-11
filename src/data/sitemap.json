@@ -1,120 +1,126 @@
 [{
         "id": "business",
         "pageGroup": "Business",
+        "bannerbackground": "/images/sitemap/business/banner.jpg",
         "pages": [{
                 "id": "about_us",
                 "page": "About Us",
-                "path": "/about_us"
+                "path": "/business#about_us"
             },
             {
                 "id": "our_leadership",
                 "page": "Our Leadership",
-                "path": "/our_leadership"
+                "path": "/business#our_leadership"
             },
             {
                 "id": "diversity_and_inclusion",
                 "page": "Diversity and Inclusion",
-                "path": "/diversity_and_inclusion"
+                "path": "/business#diversity_and_inclusion"
             },
             {
                 "id": "career",
                 "page": "Career",
-                "path": "/career"
+                "path": "/business#career"
             }
         ]
     },
     {
         "id": "media_network",
         "pageGroup": "Media Network",
+        "bannerbackground": "/images/sitemap/media-network/banner.jpg",
         "pages": [{
                 "id": "business_and_brands",
                 "page": "Business and Brands",
-                "path": "/business_and_brands"
+                "path": "/media_network#business_and_brands"
             },
             {
                 "id": "focus_areas",
                 "page": "Focus Areas",
-                "path": "/focus_areas"
+                "path": "/media_network#focus_areas"
             },
             {
                 "id": "technology",
                 "page": "Technology",
-                "path": "/technology"
+                "path": "/media_network#technology"
             },
             {
                 "id": "newsroom",
                 "page": "Newsroom",
-                "path": "/newsroom"
+                "path": "/media_network#newsroom"
             }
         ]
     },
     {
-        "id": "education_&_teaching",
+        "id": "education_and_teaching",
         "pageGroup": "Education & Teaching",
+        "bannerbackground": "/images/sitemap/education-and-teaching/banner.jpg",
         "pages": [{
                 "id": "resources",
                 "page": "Resources",
-                "path": "/resources"
+                "path": "/education_and_teaching#resources"
             },
             {
                 "id": "professional_learning",
                 "page": "Professional Learning",
-                "path": "/professional_learning"
+                "path": "/education_and_teaching#professional_learning"
             },
             {
                 "id": "immersive_experience",
                 "page": "Immersive Experience",
-                "path": "/immersive_experience"
+                "path": "/education_and_teaching#immersive_experience"
             }
         ]
     },
     {
         "id": "collaborators",
         "pageGroup": "Collaborators",
+        "bannerbackground": "/images/sitemap/collaborators/banner.jpg",
         "pages": [{
                 "id": "explorers",
                 "page": "Explorers",
-                "path": "/explorers"
+                "path": "/collaborators#explorers"
             },
             {
                 "id": "producers",
                 "page": "Producers",
-                "path": "/producers"
+                "path": "/collaborators#producers"
             }
         ]
     },
     {
         "id": "partners",
         "pageGroup": "Partners",
+        "bannerbackground": "/images/sitemap/partners/banner.jpg",
         "pages": [{
                 "id": "corporate_and_foundations",
                 "page": "Corporate and Foundations",
-                "path": "/corporate_and_foundations"
+                "path": "/partners#corporate_and_foundations"
             },
             {
                 "id": "become_a_member",
                 "page": "Become a Member",
-                "path": "/become_a_member"
+                "path": "/partners#become_a_member"
             }
         ]
     },
     {
         "id": "commercial",
         "pageGroup": "Commercial",
+        "bannerbackground": "/images/sitemap/commercial/banner.jpg",
         "pages": [{
                 "id": "advertise_with_us",
                 "page": "Advertise with Us",
-                "path": "/advertise_with_us"
+                "path": "/commercial#advertise_with_us"
             },
             {
                 "id": "investors",
                 "page": "Investors",
-                "path": "/investors"
+                "path": "/commercial#investors"
             },
             {
                 "id": "sustainability_statement",
                 "page": "Sustainability Statement",
-                "path": "/sustainability_statement"
+                "path": "/commercial#sustainability_statement"
             }
         ]
     }

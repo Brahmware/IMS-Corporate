@@ -6,7 +6,6 @@ const HomeOurSymbol = (props) => {
     const pricingData = props.data.elements[0];
     return (
         <div className="section-with-padding home-our-symbol-section">
-            {console.log(pricingData[0])}
             <div className="container heading-container">
                 <div className="title">
                     <span
@@ -34,4 +33,4 @@ const HomeOurSymbol = (props) => {
     )
 }
 
-export default HomeOurSymbol
+export default HomeOurSymbol;

@@ -4,6 +4,13 @@
     justify-content: space-between;
     align-items: center;
     & svg {
-        height: 8em;
+        min-height: 8em;
+        min-width: 8em;
+        transition: $transition-base;
+        opacity: 0.85;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
     }
 }

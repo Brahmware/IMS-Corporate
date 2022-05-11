@@ -16,7 +16,7 @@ const HomePage = () => {
   const homeData = Data.homeData;
   
   return (
-    <div className="page-wrapper">
+    <div className="page-wrapper home-page-wrapper">
       <Header />
       <HomeBanner data={homeData[0]} />
       <HomeAbout data={homeData[1]} />
