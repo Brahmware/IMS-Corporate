@@ -1,0 +1,237 @@
+{
+    "about_us": [
+        {
+            "id": 1,
+            "elements": [
+                {
+                    "images": "/images/business/about-us/aboutwhatwedo/what-we-do.jpg"
+                },
+                {
+                    "card": {
+                        "title": "WHAT WE DO",
+                        "subtitle": "India celebrates Exploration",
+                        "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /> <br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "elements": [
+                {
+                    "title": "OUR MISSION",
+                    "subtitle": "To Revolutionize Indian Media",
+                    "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "elements": [
+                {
+                    "images": {
+                        "bottomImage": "/images/business/about-us/aboutimmersivelearning/bottom-image.jpg",
+                        "topImage": "/images/business/about-us/aboutimmersivelearning/top-image.jpg"
+                    }
+                },
+                {
+                    "card": {
+                        "title": "ABOUT US",
+                        "subtitle": "Making Knowledge Accessible to All.",
+                        "content": "<p>Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "elements": [
+                {
+                    "cards": [
+                        {
+                            "id": 1,
+                            "count": 265,
+                            "cardtitle": "Conserved Species",
+                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        },
+                        {
+                            "id": 2,
+                            "count": 265,
+                            "cardtitle": "Conserved Species",
+                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        },
+                        {
+                            "id": 3,
+                            "count": 265,
+                            "cardtitle": "Conserved Species",
+                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "elements": [
+                {
+                    "images": "/images/business/about-us/aboutaboutus/about-us.jpg"
+                },
+                {
+                    "card": {
+                        "title": "ABOUT US",
+                        "subtitle": "India celebrates Exploration",
+                        "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    }
+                }
+            ]
+        }
+    ],
+    "our_leadership": [
+        {
+            "id": 1,
+            "elements": [
+                {
+                    "images": "/images/business/our-leadership/leadershipwhatwedo/what-we-do.jpg"
+                },
+                {
+                    "card": {
+                        "title": "WHAT WE DO",
+                        "subtitle": "India celebrates Exploration",
+                        "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /> <br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "elements": [
+                {
+                    "title": "OUR MISSION",
+                    "subtitle": "To Revolutionize Indian Media",
+                    "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "elements": [
+                {
+                    "images": {
+                        "bottomImage": "/images/business/our-leadership/leadershipimmersivelearning/bottom-image.jpg",
+                        "topImage": "/images/business/our-leadership/leadershipimmersivelearning/top-image.jpg"
+                    }
+                },
+                {
+                    "card": {
+                        "title": "Immersive Learning",
+                        "subtitle": "Making Knowledge Accessible to All.",
+                        "content": "<p>Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "elements": [
+                {
+                    "images": "/images/business/our-leadership/leadershipaboutus/about-us.jpg"
+                },
+                {
+                    "card": {
+                        "title": "ABOUT US",
+                        "subtitle": "India celebrates Exploration",
+                        "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    }
+                }
+            ]
+        }
+    ],
+    "diversity_and_inclusion": [
+        {
+            "id": 1,
+            "elements": [
+                {
+                    "images": "/images/business/diversity-and-inclusion/diwhatwedo/what-we-do.jpg"
+                },
+                {
+                    "card": {
+                        "title": "WHAT WE DO",
+                        "subtitle": "India celebrates Exploration",
+                        "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /> <br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "elements": [
+                {
+                    "title": "OUR MISSION",
+                    "subtitle": "To Revolutionize Indian Media",
+                    "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "elements": [
+                {
+                    "images": {
+                        "bottomImage": "/images/business/diversity-and-inclusion/diimmersivelearning/bottom-image.jpg",
+                        "topImage": "/images/business/diversity-and-inclusion/diimmersivelearning/top-image.jpg"
+                    }
+                },
+                {
+                    "card": {
+                        "title": "ABOUT US",
+                        "subtitle": "Making Knowledge Accessible to All.",
+                        "content": "<p>Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "elements": [
+                {
+                    "cards": [
+                        {
+                            "id": 1,
+                            "count": 265,
+                            "cardtitle": "Conserved Species",
+                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        },
+                        {
+                            "id": 2,
+                            "count": 265,
+                            "cardtitle": "Conserved Species",
+                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        },
+                        {
+                            "id": 3,
+                            "count": 265,
+                            "cardtitle": "Conserved Species",
+                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "elements": [
+                {
+                    "images": "/images/business/diversity-and-inclusion/diaboutus/about-us.jpg"
+                },
+                {
+                    "card": {
+                        "title": "ABOUT US",
+                        "subtitle": "India celebrates Exploration",
+                        "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    }
+                }
+            ]
+        }
+    ],
+    "career": {}
+}
