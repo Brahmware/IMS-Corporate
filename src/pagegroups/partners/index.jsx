@@ -5,6 +5,8 @@ import BannerNavigationContainer from '../../containers/common/bannernavigationc
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
 import sitemapData from "../../data/sitemap.json"
+import BecomeAMember from './becomeamember'
+import CorporateAndFoundations from './corporateandfoundations'
 
 const PartnersPage = () => {
     const partnersSitemap = sitemapData.find(pageGroup => pageGroup.id === 'partners')
@@ -28,6 +30,24 @@ const PartnersPage = () => {
             <div className="page-wrapper partners-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={partnersSitemap} activetab={activetab} onClickTab={onClickTab} />
+                {(() => {
+                    switch (activetab) {
+
+                        case "corporate_and_foundations":
+                            return (
+                                <CorporateAndFoundations />
+                            );
+                        case "become_a_member":
+                            return (
+                                <BecomeAMember />
+                            );
+                        default:
+                            return (
+                                <CorporateAndFoundations />
+                            );
+
+                    }
+                })()}
                 <Footer />
             </div>
         </React.Fragment>

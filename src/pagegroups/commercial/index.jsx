@@ -5,6 +5,9 @@ import BannerNavigationContainer from '../../containers/common/bannernavigationc
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
 import sitemapData from "../../data/sitemap.json"
+import AdvertiseWithUs from './advertisewithus'
+import Investors from './investors'
+import SustainabilityStatement from './sustainabilitystatement'
 
 const CommercialPage = () => {
     const commercialSitemap = sitemapData.find(pageGroup => pageGroup.id === 'commercial')
@@ -28,6 +31,28 @@ const CommercialPage = () => {
             <div className="page-wrapper commercial-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={commercialSitemap} activetab={activetab} onClickTab={onClickTab} />
+                {(() => {
+                    switch (activetab) {
+
+                        case "advertise_with_us":
+                            return (
+                                <AdvertiseWithUs />
+                            );
+                        case "investors":
+                            return (
+                                <Investors />
+                            );
+                        case "sustainability_statement":
+                            return (
+                                <SustainabilityStatement />
+                            );
+                        default:
+                            return (
+                                <AdvertiseWithUs />
+                            );
+
+                    }
+                })()}
                 <Footer />
             </div>
         </React.Fragment>

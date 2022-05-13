@@ -5,6 +5,9 @@ import BannerNavigationContainer from '../../containers/common/bannernavigationc
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
 import sitemapData from "../../data/sitemap.json"
+import ImmersiveExperience from './immersiveexperiences'
+import ProfessionalLearning from './professionallearning'
+import Resources from './resources'
 
 const EducationTeachingPage = () => {
     const educationTeachingSitemap = sitemapData.find(pageGroup => pageGroup.id === 'education_and_teaching')
@@ -28,6 +31,28 @@ const EducationTeachingPage = () => {
             <div className="page-wrapper educationTeaching-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={educationTeachingSitemap} activetab={activetab} onClickTab={onClickTab} />
+                {(() => {
+                    switch (activetab) {
+
+                        case "resources":
+                            return (
+                                <Resources />
+                            );
+                        case "professional_learning":
+                            return (
+                                <ProfessionalLearning />
+                            );
+                        case "immersive_experience":
+                            return (
+                                <ImmersiveExperience />
+                            );
+                        default:
+                            return (
+                                <Resources />
+                            );
+
+                    }
+                })()}
                 <Footer />
             </div>
         </React.Fragment>

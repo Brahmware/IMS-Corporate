@@ -5,6 +5,10 @@ import BannerNavigationContainer from '../../containers/common/bannernavigationc
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
 import sitemapData from "../../data/sitemap.json"
+import AboutUs from './aboutus'
+import Careers from './careers'
+import DIversityAndInclusion from './diversityandinclusion'
+import OurLeadership from './ourleadership'
 
 const BusinessPage = () => {
     const businessSitemap = sitemapData.find(pageGroup => pageGroup.id === 'business')
@@ -29,6 +33,32 @@ const BusinessPage = () => {
             <div className="page-wrapper business-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={businessSitemap} activetab={activetab} onClickTab={onClickTab} />
+                {(() => {
+                    switch (activetab) {
+
+                        case "about_us":
+                            return (
+                                <AboutUs />
+                            );
+                        case "our_leadership":
+                            return (
+                                <OurLeadership />
+                            );
+                        case "diversity_and_inclusion":
+                            return (
+                                <DIversityAndInclusion />
+                            );
+                        case "career":
+                            return (
+                                <Careers />
+                            );
+                        default:
+                            return (
+                                <AboutUs />
+                            );
+
+                    }
+                })()}
                 <Footer />
             </div>
         </React.Fragment>

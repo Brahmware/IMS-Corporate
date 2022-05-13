@@ -5,6 +5,8 @@ import BannerNavigationContainer from '../../containers/common/bannernavigationc
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
 import sitemapData from "../../data/sitemap.json"
+import Explorers from './explorers'
+import Producers from './producers'
 
 const CollaboratorsPage = () => {
     const collaboratorsSitemap = sitemapData.find(pageGroup => pageGroup.id === 'collaborators')
@@ -28,6 +30,24 @@ const CollaboratorsPage = () => {
             <div className="page-wrapper collaborators-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={collaboratorsSitemap} activetab={activetab} onClickTab={onClickTab} />
+                {(() => {
+                    switch (activetab) {
+
+                        case "explorers":
+                            return (
+                                <Explorers />
+                            );
+                        case "producers":
+                            return (
+                                <Producers />
+                            );
+                        default:
+                            return (
+                                <Explorers />
+                            );
+
+                    }
+                })()}
                 <Footer />
             </div>
         </React.Fragment>

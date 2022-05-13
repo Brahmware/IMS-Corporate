@@ -5,6 +5,10 @@ import BannerNavigationContainer from '../../containers/common/bannernavigationc
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
 import sitemapData from "../../data/sitemap.json"
+import BusinessAndBrands from './businessandbrands'
+import FocusAreas from './focusareas'
+import NewsRoom from './newsroom'
+import Technology from './technology'
 
 const MediaNetworkPage = () => {
     const mediaNetworkSitemap = sitemapData.find(pageGroup => pageGroup.id === 'media_network')
@@ -28,6 +32,32 @@ const MediaNetworkPage = () => {
             <div className="page-wrapper media-network-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={mediaNetworkSitemap} activetab={activetab} onClickTab={onClickTab} />
+                {(() => {
+                    switch (activetab) {
+
+                        case "business_and_brands":
+                            return (
+                                <BusinessAndBrands />
+                            );
+                        case "focus_areas":
+                            return (
+                                <FocusAreas />
+                            );
+                        case "technology":
+                            return (
+                                <Technology />
+                            );
+                        case "newsroom":
+                            return (
+                                <NewsRoom />
+                            );
+                        default:
+                            return (
+                                <BusinessAndBrands />
+                            );
+
+                    }
+                })()}
                 <Footer />
             </div>
         </React.Fragment>
