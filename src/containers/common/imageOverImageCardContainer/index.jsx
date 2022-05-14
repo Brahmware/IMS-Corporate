@@ -1,10 +1,14 @@
 import React from 'react'
+import BookishCard from '../../../components/bookish-card';
 import FilledButton from '../../../components/buttons/FilledButton'
 import ImageOverThinImage from '../../../components/imageoverimage/ImageOverThinImage'
 
 const ImageOverImageCardContainer = (props) => {
     const images = props.containerData.elements[0].images;
     const card = props.containerData.elements[1].card;
+
+    const ButtonComponent = <FilledButton class={"black-button"} text={card.buttontext ? card.buttontext : "VIEW MORE"} />
+
     return (
         <div className="container imageoverimage-card-container">
             <div className={!props.inverse ? "half-devided-section" : "half-devided-section container-inverse"}>
@@ -12,34 +16,17 @@ const ImageOverImageCardContainer = (props) => {
                     <ImageOverThinImage topImage={images.imageTop} bottomImage={images.imageBottom} inverse={props.inverse} />
                 </div>
                 <div
-                    className="card-part"
+                    className="card-part bookish-card"
                     data-aos='fade-left'
                     data-aos-duration='600'
                     data-aos-delay='600'
                 >
-                    <div className="title">
-                        <span
-                            dangerouslySetInnerHTML={{
-                                __html: card.title
-                            }}
-                        />
-                    </div>
-                    <div className="subtitle">
-                        <span
-                            dangerouslySetInnerHTML={{
-                                __html: card.subtitle
-                            }}
-                        />
-                    </div>
-                    <div className="divider" />
-                    <div className="content">
-                        <span
-                            dangerouslySetInnerHTML={{
-                                __html: card.content
-                            }}
-                        />
-                    </div>
-                    <FilledButton class={"black-button"} text={card.buttontext ? card.buttontext : "VIEW MORE"} />
+                    <BookishCard
+                        title={card.title}
+                        subtitle={card.subtitle}
+                        content={card.content}
+                        extracomponents={[ButtonComponent]}
+                    />
                 </div>
             </div>
         </div>

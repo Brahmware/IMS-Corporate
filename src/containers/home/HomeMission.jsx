@@ -1,5 +1,6 @@
 import React from 'react'
-import MissionCard from '../../components/missioncard';
+import CenterAlignedCard from '../../components/center-aligned-card';
+import FunfactColumnSpreadContainer from '../common/funfact-spread-columns-container';
 
 const HomeMission = (props) => {
     const sectionData = props.data.elements[0];
@@ -8,50 +9,13 @@ const HomeMission = (props) => {
         <div className='section-with-padding home-mission-section'>
             <div className="container">
                 <div className="our-mission-container">
-                    <div
-                        className="title"
-                        data-aos='fade-up'
-                        data-aos-duration='600'
-                        data-aos-delay='300'
-                    >
-                        <span
-                            dangerouslySetInnerHTML={{
-                                __html: sectionData.title
-                            }}
-                        />
-                    </div>
-                    <div
-                        className="subtitle"
-                        data-aos='fade-up'
-                        data-aos-duration='600'
-                        data-aos-delay='600'
-                    >
-                        <span
-                            dangerouslySetInnerHTML={{
-                                __html: sectionData.subtitle
-                            }}
-                        />
-                    </div>
-                    <div
-                        className="divider"
-                        data-aos='fade-up'
-                        data-aos-duration='600'
-                        data-aos-delay='900'
+                    <CenterAlignedCard 
+                        title={sectionData.title} 
+                        subtitle={sectionData.subtitle}
+                        content={sectionData.content}
                     />
-                    <div
-                        className="content"
-                        data-aos='fade-up'
-                        data-aos-duration='600'
-                        data-aos-delay='1200'
-                    >
-                        <span
-                            dangerouslySetInnerHTML={{
-                                __html: sectionData.content
-                            }}
-                        />
-                    </div>
                     <div className="mission-cards-part">
-                        {
+                        {/* {
                             missionCards.map((eachCardData, key) => {
                                 return (
                                     <React.Fragment key={key}>
@@ -59,7 +23,10 @@ const HomeMission = (props) => {
                                     </React.Fragment>
                                 )
                             })
-                        }
+                        } */}
+                        <FunfactColumnSpreadContainer
+                            columnsdata = {missionCards}
+                        />
                     </div>
                 </div>
             </div>

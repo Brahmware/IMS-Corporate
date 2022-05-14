@@ -1,4 +1,4 @@
-.our-mission-container {
+.center-aligned-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,15 +13,5 @@
     }
     & .content {
         max-width: 60%;
-    }
-    & .mission-cards-part {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10em;
-        margin-top: 1em;
-    }
-    @media #{$extraBig-device} {
-        font-size: 1.5em;
     }
 }

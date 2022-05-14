@@ -1,28 +1,11 @@
 .imageoverimage-card-container {
-    & .image-part {}
 
     & .card-part {
-        & .divider {
-            height: $thick-divider;
-            width: 10em;
-            background-color: $primary;
-        }
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 1em;
-
         & .black-button {
             font-size: 0.9em;
             margin-top: 1em;
             font-weight: 300;
             letter-spacing: 0.02em;
         }
-    }
-
-    @media #{$extraBig-device} {
-        font-size: 1.5em;
     }
 }

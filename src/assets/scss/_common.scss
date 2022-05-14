@@ -160,7 +160,7 @@ img {
 /* Section Style */
 .section,
 .section-with-padding {
-    width: 100vw;
+    width: 100%;
     .title {
         font-size: 0.8em;
         color: $light-text-color;
@@ -173,6 +173,12 @@ img {
         font-weight: 900;
         line-height: 1.3em;
         letter-spacing: 0.02em;
+    }
+
+    .divider {
+        height: $thick-divider;
+        width: $normal-divider-length;
+        background-color: $primary;
     }
 
     .content {

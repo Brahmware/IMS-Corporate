@@ -1,4 +1,5 @@
 .image-over-thin-image {
+    font-size: 1em;
     width: 34.6em;
     height: max-content;
     display: flex;
@@ -28,7 +29,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: inherit;
         }
     }
 
@@ -40,7 +40,72 @@
         overflow: hidden;
         z-index: 1;
         outline: 0.6em solid $white;
+        border-radius: $image-border-radius;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    }
+
+    &.inverse {
+        justify-content: flex-end;
+
+        & .bottom-image {
+            align-self: flex-end;
+        }
+
+        & .top-image {
+            transform: translateX(-1 * calc(22.12em / 1.88));
+        }
+    }
+}
+
+.image-over-square-image {
+    font-size: 1em;
+    width: 84em;
+    height: max-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+    & .bottom-image {
+        align-self: flex-start;
+        width: 25.83em;
+        height: 25em;
+        border-radius: $image-border-radius;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .image-overlay {
+            position: absolute;
+            height: inherit;
+            width: inherit;
+            flex-shrink: 0;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & .top-image {
+        position: absolute;
+        width: 21.20em;
+        height: 12.8em;
+        transform: translateX(-14.59375em) translateY(3em);
+        overflow: hidden;
+        z-index: 1;
         border-radius: 0.8em;
+        flex-shrink: 0;
 
         & img {
             width: 100%;

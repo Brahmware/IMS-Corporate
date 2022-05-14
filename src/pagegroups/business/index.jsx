@@ -4,11 +4,14 @@ import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
-import sitemapData from "../../data/sitemap.json"
 import AboutUs from './aboutus'
 import Careers from './careers'
 import DIversityAndInclusion from './diversityandinclusion'
 import OurLeadership from './ourleadership'
+
+/* Importing the related data */
+import sitemapData from "../../data/sitemap.json"
+import BusinessData from "../../data/business.json"
 
 const BusinessPage = () => {
     const businessSitemap = sitemapData.find(pageGroup => pageGroup.id === 'business')
@@ -27,6 +30,8 @@ const BusinessPage = () => {
         window.history.replaceState({}, pageObject.page, pageObject.path);
     }
 
+    const relatedData = BusinessData.find(( data => data.id === activetab )).elements;
+
     return (
         <React.Fragment>
             <SEO title={"IMS - Business"} />
@@ -38,23 +43,23 @@ const BusinessPage = () => {
 
                         case "about_us":
                             return (
-                                <AboutUs />
+                                <AboutUs data={relatedData}/>
                             );
                         case "our_leadership":
                             return (
-                                <OurLeadership />
+                                <OurLeadership data={relatedData}/>
                             );
                         case "diversity_and_inclusion":
                             return (
-                                <DIversityAndInclusion />
+                                <DIversityAndInclusion data={relatedData}/>
                             );
                         case "career":
                             return (
-                                <Careers />
+                                <Careers data={relatedData}/>
                             );
                         default:
                             return (
-                                <AboutUs />
+                                <AboutUs data={relatedData}/>
                             );
 
                     }

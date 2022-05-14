@@ -16,6 +16,7 @@
                 width: 100%;
                 height: 100%;
                 overflow: hidden;
+                flex-shrink: 0;
 
                 & img {
                     width: 100%;
@@ -88,8 +89,5 @@
                 }
             }
         }
-    }
-    @media #{$extraBig-device} {
-        font-size: 1.5em;
     }
 }

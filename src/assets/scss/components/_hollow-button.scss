@@ -130,4 +130,39 @@
             }
         }
     }
+
+    &.white-button {
+        background-color: rgba($black, 0);
+        outline: 1px solid $white;
+        border-radius: $button-border-radius;
+
+        & span {
+            color: $white;
+        }
+
+        &:hover {
+            background-color: $white;
+
+            & span {
+                color: $primary;
+            }
+        }
+
+        &:focus {
+            background-color: rgba($black, 0);
+            outline: 1px solid $white;
+
+            & span {
+                color: $white;
+            }
+
+            &:hover {
+                background-color: $white;
+
+                & span {
+                    color: $primary;
+                }
+            }
+        }
+    }
 }
