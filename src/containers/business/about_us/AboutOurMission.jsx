@@ -3,7 +3,6 @@ import React from 'react'
 const AboutOurMission = (props) => {
   const sectionData=props.data.elements[0]
   return (
-    // <div>hello</div>
     <div className='section-with-padding home-mission-section'>
       <div className="container">
         <div className="our-mission-container">

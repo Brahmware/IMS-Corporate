@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Pagination, Autoplay } from "swiper/core";
+
+SwiperCore.use([Pagination, Autoplay]);
 
 const LeadershipSlider = (props) => {
   const testimonials = props.data.elements;

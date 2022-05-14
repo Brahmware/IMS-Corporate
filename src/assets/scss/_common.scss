@@ -161,6 +161,7 @@ img {
 .section,
 .section-with-padding {
     width: 100vw;
+
     .title {
         font-size: 0.8em;
         color: $light-text-color;
@@ -195,10 +196,49 @@ img {
     }
 }
 
+.half-devided-section-with-two-images {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    display: flex;
+    justify-content: flex-start;
+    gap: 14em;
+
+    &.container-inverse {
+        flex-direction: row-reverse;
+    }
+}
+
 .white-background {
     background-color: $white;
 }
 
+/*ims explorers*/
+
+.ims-explorers {
+    display:flex;
+    align-items: center;
+    height: 30em;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(3, 3, 3, 0.3)), url("../../../public//images/business/about-us/aboutimsexplorers/background-img.jpg");
+    background-size: cover;
+
+    & .container {
+        & .sub-section {
+            width: 50%;
+            & .title {
+                font-size: 2em;
+                color: $white;
+                font-weight:normal;
+                letter-spacing: normal;
+            }
+            & .subtitle {
+                font-size: 4em;
+                font-weight: 1000;
+                letter-spacing: 0.0em;
+                color: $white;
+            }
+        }
+    }
+}
 
 /* Section Padding */
 

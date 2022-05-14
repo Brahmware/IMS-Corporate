@@ -84,8 +84,22 @@
                     }
                 }
             ]
+        },
+        {
+            "id": 6,
+            "elements": [
+                {
+                    "card": {
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers and Innovators"
+                    }
+                }
+            ]
         }
     ],
+
+
+
     "our_leadership": [
         {
             "id": 1,
@@ -261,6 +275,17 @@
                         "title": "ABOUT US",
                         "subtitle": "India celebrates Exploration",
                         "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "elements": [
+                {
+                    "card": {
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers and Innovators"
                     }
                 }
             ]

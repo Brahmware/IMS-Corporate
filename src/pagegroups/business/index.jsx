@@ -4,7 +4,9 @@ import BannerNavigationContainer from '../../containers/common/bannernavigationc
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
 import sitemapData from "../../data/sitemap.json"
-import AboutUs from '../../containers/about/about_us'
+import AboutUs from '../../containers/business/about_us'
+import OurLeadership from '../../containers/business/our_leadership'
+import DiversityAndInclusion from '../../containers/business/diversity_and_inclusion'
 
 
 const BusinessPage = () => {
@@ -28,8 +30,8 @@ const BusinessPage = () => {
             <Header />
             <BannerNavigationContainer data={businessSitemap} activetab={activetab} onClickTab={onClickTab} />
             {activetab === "about_us" ? <AboutUs /> :
-                activetab === "our_leadership" ? "our_leadership" :
-                    activetab === "diversity_and_inclusion" ? "diversity_and_inclusion" :
+                activetab === "our_leadership" ? <OurLeadership/> :
+                    activetab === "diversity_and_inclusion" ? <DiversityAndInclusion/> :
                         activetab === "career" ? "career" :
                             "not working"
 

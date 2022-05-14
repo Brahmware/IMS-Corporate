@@ -16,7 +16,7 @@ const DiversityAndInclusion = () => {
             <DIImmersiveLearning data={diversityAndInclusion[2]} />
             <DIConservedSpecies data={diversityAndInclusion[3] }/>
             <DIAboutUs data={diversityAndInclusion[4] }/>
-            <DIExplorers />
+            <DIExplorers data={diversityAndInclusion[5]}/>
 
         </>
     )
