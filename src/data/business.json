@@ -144,6 +144,39 @@
                     }
                 }
             ]
+        },
+        {
+            "id": 5,
+            "elements": [
+                {
+                    "testimonialid": 1,
+                    "authorname": "SATYA NADELLA",
+                    "authorimage": "/images/home/hometestimonials/author-1/profilepicture.jpg",
+                    "authordesignation": "CEO of Microsoft",
+                    "comment": "“Indian Media Syndicate is a Revolution. It's Greater than Microsoft and Apple combined. I wish I could work with them.”"
+                },
+                {
+                    "testimonialid": 2,
+                    "authorname": "NARENDRA MODI",
+                    "authorimage": "/images/home/hometestimonials/author-2/profilepicture.jpg",
+                    "authordesignation": "PM of India",
+                    "comment": "“I am very fortunate that I was the Prime Minister of India when Indian Media Syndicate went live. I wish I could transfer my position for the CEO post.”"
+                },
+                {
+                    "testimonialid": 3,
+                    "authorname": "EMMANUEL MACRON",
+                    "authorimage": "/images/home/hometestimonials/author-3/profilepicture.jpg",
+                    "authordesignation": "President of France",
+                    "comment": "“In IMS's India France, will invest more than 10 times the current trade value. I am considering to apply for an Indian citizenship.”"
+                },
+                {
+                    "testimonialid": 4,
+                    "authorname": "ELON MUSK",
+                    "authorimage": "/images/home/hometestimonials/author-4/profilepicture.jpg",
+                    "authordesignation": "Chief Engineer at SpaceX",
+                    "comment": "“Indian Media Syndicate is Bigger than Tesla and SpaceX combined. I dropped my Twitter shares to be a part of IMS. I am also considering the same name for my next kid.”"
+                }
+            ]
         }
     ],
     "diversity_and_inclusion": [
