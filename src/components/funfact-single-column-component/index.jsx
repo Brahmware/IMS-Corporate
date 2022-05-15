@@ -12,7 +12,7 @@ const FunfactSingleColumnComponent = ( {columnKey, count, cardtitle, cardcontent
       <div className="count">
         <span>{count}</span>
       </div>
-      <div className="card-divider" />
+      <div className={"card-divider"} />
       <div className="card-title">
         <span>{cardtitle}</span>
       </div>

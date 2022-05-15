@@ -6,10 +6,10 @@ import TestimonialContainer from '../common/testimonialcontainer';
 SwiperCore.use([Pagination, Autoplay]);
 
 
-const HomeTestimonial = (props) => {
+const HomeTestimonial = () => {
     return (
         <div className="home-testimonial-section">
-            <TestimonialContainer data={props.data}/>
+            <TestimonialContainer />
         </div>
     )
 }

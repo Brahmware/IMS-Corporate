@@ -45,7 +45,7 @@ const HomeOurSymbol = (props) => {
                 className="action-button"
                 data-aos='fade-up'
                 data-aos-duration='600'
-                data-aos-delay='0'
+                data-aos-delay='1200'
             >
                 <FilledButton class="black-button" text="VIEW MORE" />
             </div>

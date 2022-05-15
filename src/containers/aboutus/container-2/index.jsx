@@ -4,7 +4,7 @@ import CenterAlignedCardContainer from '../../common/center-aligned-card-compone
 const AboutUsContainerTwo = ({ data }) => {
     return (
         <div className='aboutus-container-2 section-with-padding'>
-            <CenterAlignedCardContainer data={data[0]} />
+            <CenterAlignedCardContainer data={data[0]} dividercolor='primary' />
         </div>
     )
 }

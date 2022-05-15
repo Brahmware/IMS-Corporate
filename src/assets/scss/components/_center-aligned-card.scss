@@ -10,6 +10,10 @@
         height: $thick-divider;
         width: 5em;
         background-color: $light-text-color;
+
+        &.primary {
+            background-color: $primary;
+        }
     }
     & .content {
         max-width: 60%;

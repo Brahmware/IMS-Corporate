@@ -10,6 +10,7 @@ const CenterAlignedCardContainer = (props) => {
                     title = {carddata.title}
                     subtitle = {carddata.subtitle}
                     content = {carddata.content}
+                    dividercolor = {props.dividercolor}
                 />
             </div>
         </div>

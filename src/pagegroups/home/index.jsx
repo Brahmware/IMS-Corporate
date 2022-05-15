@@ -26,10 +26,10 @@ const HomePage = () => {
         <HomeAbout data={homeData[1]} />
         <HomeMission data={homeData[2]} />
         <HomeImmersiveLearning data={homeData[3]} />
-        <HomeTestimonial data={homeData[4]} />
-        <HomeExplorers data={homeData[5]} />
-        <HomeOurSymbol data={homeData[6]} />
-        <HomeNetworks data={homeData[7]} />
+        <HomeTestimonial />
+        <HomeExplorers data={homeData[4]} />
+        <HomeOurSymbol data={homeData[5]} />
+        <HomeNetworks data={homeData[6]} />
         <Footer />
       </div>
     </React.Fragment>

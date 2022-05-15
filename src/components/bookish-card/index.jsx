@@ -1,24 +1,44 @@
 import React from 'react'
 
-const BookishCard = ( props ) => {
+const BookishCard = (props) => {
     return (
         <div className='bookish-card'>
-            <div className="title">
+            <div
+                className="title"
+                data-aos='fade-right'
+                data-aos-duration='600'
+                data-aos-delay='300'
+            >
                 <span
                     dangerouslySetInnerHTML={{
                         __html: props.title
                     }}
                 />
             </div>
-            <div className="subtitle">
+            <div
+                className="subtitle"
+                data-aos='fade-right'
+                data-aos-duration='600'
+                data-aos-delay='600'
+            >
                 <span
                     dangerouslySetInnerHTML={{
                         __html: props.subtitle
                     }}
                 />
             </div>
-            <div className="divider" />
-            <div className="content">
+            <div
+                className="divider"
+                data-aos='fade-right'
+                data-aos-duration='600'
+                data-aos-delay='900'
+            />
+            <div
+                className="content"
+                data-aos='fade-right'
+                data-aos-duration='600'
+                data-aos-delay='1200'
+            >
                 <span
                     dangerouslySetInnerHTML={{
                         __html: props.content
@@ -26,11 +46,17 @@ const BookishCard = ( props ) => {
                 />
             </div>
             {
-                props.extracomponents && props.extracomponents.map((eachComponent, key) => {
+                props.extracomponents && props.extracomponents.map((eachComponent, componentkey) => {
                     return (
-                        <React.Fragment key={key}>
-                            { eachComponent }
-                        </React.Fragment>
+                        <div
+                            className="button-element"
+                            data-aos='fade-right'
+                            data-aos-duration='600'
+                            data-aos-delay={1500 + componentkey * 300}
+                            key={componentkey}
+                        >
+                            {eachComponent}
+                        </div>
                     )
                 })
             }

@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Autoplay } from "swiper/core";
+import TestimonialData from "../../../data/testimonial.json";
 
 SwiperCore.use([Pagination, Autoplay]);
 
 
 const TestimonialContainer = (props) => {
-    const testimonials = props.data.elements;
+    const testimonials = TestimonialData.elements;
     const testimonialPaginationRef = useRef(null);
 
     const params = {

@@ -4,9 +4,13 @@ import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
-import sitemapData from "../../data/sitemap.json"
+import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 import Explorers from './explorers'
 import Producers from './producers'
+
+/* Importing the related data */
+import sitemapData from "../../data/sitemap.json"
+import CollaboratorsData from '../../data/collaborators.json'
 
 const CollaboratorsPage = () => {
     const collaboratorsSitemap = sitemapData.find(pageGroup => pageGroup.id === 'collaborators')
@@ -22,11 +26,15 @@ const CollaboratorsPage = () => {
         setactivetab(event.target.id);
         const pageObject = collaboratorsSitemap && collaboratorsSitemap.pages.find(page => page.id === event.target.id);
         window.history.replaceState({}, pageObject.page, pageObject.path);
+        scrollToNavigationPanel();
     }
+
+    const relatedData = CollaboratorsData.find(( data => data.id === activetab ));
+    const relatedDataElements = relatedData.elements;
 
     return (
         <React.Fragment>
-            <SEO title='IMS - Collaborators' />
+            <SEO title={`IMS Collaborators - ${relatedData.pagename}`} />
             <div className="page-wrapper collaborators-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={collaboratorsSitemap} activetab={activetab} onClickTab={onClickTab} />
@@ -35,15 +43,15 @@ const CollaboratorsPage = () => {
 
                         case "explorers":
                             return (
-                                <Explorers />
+                                <Explorers data={relatedDataElements}/>
                             );
                         case "producers":
                             return (
-                                <Producers />
+                                <Producers data={relatedDataElements}/>
                             );
                         default:
                             return (
-                                <Explorers />
+                                <Explorers data={relatedDataElements}/>
                             );
 
                     }

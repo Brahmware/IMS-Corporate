@@ -10,10 +10,10 @@ const ImageOverSquareImage = ( props ) => {
         >
           <div className='bottom-image'>
             <div className="image-overlay" />
-            <img src={props.bottomImage} alt={props.bottomImage} />
+            <img src={props.imageBottom} alt={props.imageBottom} />
           </div>
           <div className="top-image">
-            <img src={props.topImage} alt={props.topImage} />
+            <img src={props.imageTop} alt={props.imageTop} />
           </div>
         </div>
       )

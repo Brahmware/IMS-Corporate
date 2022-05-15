@@ -163,7 +163,7 @@
                     {
                         "image": "/images/business/our-leadership/container-1/cover.jpg",
                         "card": {
-                            "title": "WHAT WE DO",
+                            "title": "PATH TO EXCELLENCE",
                             "subtitle": "India celebrates Exploration",
                             "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                         }
@@ -199,9 +199,9 @@
                 "id": "container_3",
                 "elements": [
                     {
-                        "image": "/images/business/our-leadership/container-1/cover.jpg",
+                        "image": "/images/business/our-leadership/container-3/cover.jpg",
                         "card": {
-                            "title": "WHAT WE DO",
+                            "title": "GLOBAL INCLUSION",
                             "subtitle": "India celebrates Exploration",
                             "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                         }
@@ -213,7 +213,71 @@
     {
         "id": "diversity_and_inclusion",
         "pagename": "Diversity and Inclusion",
-        "elements": []
+        "elements": [
+            {
+                "id": "container_1",
+                "elements": [
+                    {
+                        "image": "/images/business/diversity-and-inclusion/container-1/cover.jpg",
+                        "card": {
+                            "title": "GLOBAL INCLUSION",
+                            "subtitle": "Our Commitment to move forward together.",
+                            "content": "<p>As an organization guided by science and innovation, we recognize that research shows the very best ideas result from teams with a wide range of backgrounds and experiences working together effectively to harness the creative power and ingenuity of diversity.<br /><br /> Championing all voices and ensuring members of the Society community are empowered to bring their unique perspective and story to bear on our mission work is critical to pushing us to a brighter future.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_2",
+                "elements": [
+                    {
+                        "heading": {
+                            "title": "WE AND OUR FUTURE",
+                            "subtitle": "Diversity, Equity & Equal Opportunity",
+                            "content": "<p>We believe we can only achieve our mission when we actualize our commitment to diversity, equity, and inclusion in every aspect of our work.</p>"
+                        }
+                    },
+                    {
+                        "images": {
+                            "imageTop": "/images/business/diversity-and-inclusion/container-2/image-top.jpg",
+                            "imageBottom": "/images/business/diversity-and-inclusion/container-2/image-bottom.jpg"
+                        }
+                    },
+                    {
+                        "card": {
+                            "subtitle": "Celebrating our Stories together",
+                            "content": "<p>Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.</p>",
+                            "buttontext": "VIEW MORE"
+                        }
+                    }
+                ]
+            },           
+            {
+                "id": "container_3",
+                "elements": [
+                    {
+                        "image": "/images/business/diversity-and-inclusion/container-3/cover.jpg",
+                        "card": {
+                            "title": "INCLUSION PHILOSOPHY",
+                            "subtitle": "Our Guiding Principles",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_4",
+                "elements": [
+                    {
+                        "image": "/images/business/diversity-and-inclusion/container-4/cover.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    }
+                ]
+            }
+
+        ]
     },
     {
         "id": "career",

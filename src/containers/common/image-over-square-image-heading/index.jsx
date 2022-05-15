@@ -12,6 +12,7 @@ const ImageOverSquareImageHeadingContainer = ( props ) => {
                         title={props.headertitle}
                         subtitle={props.headersubtitle}
                         content={props.headercontent}
+                        dividercolor = {"primary"}
                     />
                 </div>
                 <div className="about-us-container-2-desc section-with-padding">
@@ -19,11 +20,11 @@ const ImageOverSquareImageHeadingContainer = ( props ) => {
                         <BookishCard
                             subtitle={props.bookishsubtitle}
                             content={props.bookishcontent}
-                            extracomponents={[props.bookishButtonComponent]}
+                            extracomponents={props.bookishButtonComponent}
                         />
                         <ImageOverSquareImage
-                            bottomImage={props.imageBottom}
-                            topImage={props.imageTop}
+                            imageBottom={props.imageBottom}
+                            imageTop={props.imageTop}
                         />
                     </div>
                 </div>

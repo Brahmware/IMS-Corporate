@@ -8,11 +8,11 @@ import AboutUs from './aboutus'
 import Careers from './careers'
 import DIversityAndInclusion from './diversityandinclusion'
 import OurLeadership from './ourleadership'
+import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 
 /* Importing the related data */
 import sitemapData from "../../data/sitemap.json"
 import BusinessData from "../../data/business.json"
-import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 
 const BusinessPage = () => {
     const businessSitemap = sitemapData.find(pageGroup => pageGroup.id === 'business')
