@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const BannerNavigationContainer = (props) => {
     const data = props.data;
@@ -21,7 +21,7 @@ const BannerNavigationContainer = (props) => {
                     </span>
                 </div>
                 <div
-                    className="container tabs-conainer"
+                    className="container tabs-container"
                     data-aos='fade-up'
                     data-aos-duration='600'
                     data-aos-delay='600'

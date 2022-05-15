@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CopyrightComponent from '../../components/copyright';
 import LanguageComponent from '../../components/languagecomponent';
 import SiteMap from '../../components/sitemap';
 import SocialLinks from '../../components/sociallinks';
 
 const MegaMenu = (props) => {
+
     return (
         <div
             className={props.show ? "megamenu open" : "megamenu"}
@@ -17,7 +18,7 @@ const MegaMenu = (props) => {
                             <div className="megamenu-image" >
                                 <img src="/images/nav-image.png" alt="navimage" />
                             </div>
-                            <SiteMap />
+                            <SiteMap onClickClose={props.onclose}/>
                         </div>
                     </div>
                 </div>

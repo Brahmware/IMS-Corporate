@@ -12,6 +12,7 @@ import OurLeadership from './ourleadership'
 /* Importing the related data */
 import sitemapData from "../../data/sitemap.json"
 import BusinessData from "../../data/business.json"
+import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 
 const BusinessPage = () => {
     const businessSitemap = sitemapData.find(pageGroup => pageGroup.id === 'business')
@@ -28,42 +29,46 @@ const BusinessPage = () => {
         /* setActiveTabName(event.target.) */
         const pageObject = businessSitemap && businessSitemap.pages.find(page => page.id === event.target.id);
         window.history.replaceState({}, pageObject.page, pageObject.path);
+        scrollToNavigationPanel();
     }
 
-    const relatedData = BusinessData.find(( data => data.id === activetab )).elements;
+    const relatedData = BusinessData.find(( data => data.id === activetab ));
+    const relatedDataElements = relatedData.elements; 
 
     return (
         <React.Fragment>
-            <SEO title={"IMS - Business"} />
+            <SEO title={`Business - ${relatedData.pagename}`} />
             <div className="page-wrapper business-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={businessSitemap} activetab={activetab} onClickTab={onClickTab} />
-                {(() => {
-                    switch (activetab) {
+                <div className="page-content business-content">
+                    {(() => {
+                        switch (activetab) {
 
-                        case "about_us":
-                            return (
-                                <AboutUs data={relatedData}/>
-                            );
-                        case "our_leadership":
-                            return (
-                                <OurLeadership data={relatedData}/>
-                            );
-                        case "diversity_and_inclusion":
-                            return (
-                                <DIversityAndInclusion data={relatedData}/>
-                            );
-                        case "career":
-                            return (
-                                <Careers data={relatedData}/>
-                            );
-                        default:
-                            return (
-                                <AboutUs data={relatedData}/>
-                            );
+                            case "about_us":
+                                return (
+                                    <AboutUs data={relatedDataElements}/>
+                                );
+                            case "our_leadership":
+                                return (
+                                    <OurLeadership data={relatedDataElements}/>
+                                );
+                            case "diversity_and_inclusion":
+                                return (
+                                    <DIversityAndInclusion data={relatedDataElements}/>
+                                );
+                            case "career":
+                                return (
+                                    <Careers data={relatedDataElements}/>
+                                );
+                            default:
+                                return (
+                                    <AboutUs data={relatedDataElements}/>
+                                );
 
-                    }
-                })()}
+                        }
+                    })()}
+                </div>
                 <Footer />
             </div>
         </React.Fragment>
