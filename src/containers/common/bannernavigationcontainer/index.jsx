@@ -9,7 +9,7 @@ const BannerNavigationContainer = (props) => {
             <div className="banner-background">
                 <img src={data.bannerbackground} alt={data.id} />
             </div>
-            <div className="title-tabs-part">
+            <div className="title-tabs-part noselect">
                 <div
                     data-aos='fade-up'
                     data-aos-duration='600'
