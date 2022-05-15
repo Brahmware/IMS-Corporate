@@ -20,6 +20,81 @@
                 "id": "container_2",
                 "elements": [
                     {
+                        "card": {
+                            "title": "OUR MISSION",
+                            "subtitle": "To Revolutionize Indian Media",
+                            "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_3",
+                "elements": [
+                    {
+                        "cards": [
+                            {
+                                "id": 1,
+                                "count": 265,
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            },
+                            {
+                                "id": 2,
+                                "count": 265,
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            },
+                            {
+                                "id": 3,
+                                "count": 265,
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "container_4",
+                "elements": [
+                    {
+                        "card": {
+                            "title": "CORE VISION",
+                            "subtitle": "To break all Communication Barriers",
+                            "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_5",
+                "elements": [
+                    {
+                        "image": "/images/business/about-us/container-1/cover.jpg",
+                        "card": {
+                            "title": "WHAT WE DO",
+                            "subtitle": "India celebrates Exploration",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_6",
+                "elements": [
+                    {
+                        "image": "/images/business/about-us/container-4/cover.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    }
+                ]
+            },
+            {
+                "id": "container_20",
+                "elements": [
+                    {
                         "heading": {
                             "title": "OUR MISSION",
                             "subtitle": "To Revolutionize Indian Media",
@@ -42,7 +117,7 @@
                 ]
             },
             {
-                "id": "container_3",
+                "id": "container_30",
                 "elements": [
                     {
                         "cards": [
@@ -73,17 +148,6 @@
                             "subtitle": "India celebrates Exploration",
                             "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
                         }
-                    }
-                ]
-            },
-            {
-                "id": "container_4",
-                "elements": [
-                    {
-                        "image": "/images/business/about-us/container-4/cover.jpg",
-                        "title": "IMS Explorers",
-                        "subtitle": "Changemakers<br /> and Innovators",
-                        "buttontext": "APPLY"
                     }
                 ]
             }

@@ -1,12 +1,12 @@
 import React from 'react'
-import CardOverRibbonImageContainer from '../../common/card-over-ribbon-image-container'
+import CenterAlignedCardContainer from '../../common/center-aligned-card-component';
 
-const AboutUsContainerFour = ({data}) => {
-  return (
-    <div className='aboutus-container-4'>
-        <CardOverRibbonImageContainer cardribbondata = {data[0]}/>
-    </div>
-  )
+const AboutUsContainerFour = ({ data }) => {
+    return (
+        <div className='aboutus-container-4 section-with-padding'>
+            <CenterAlignedCardContainer data={data[0]} />
+        </div>
+    )
 }
 
 export default AboutUsContainerFour

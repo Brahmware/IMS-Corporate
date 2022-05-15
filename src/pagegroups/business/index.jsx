@@ -37,7 +37,7 @@ const BusinessPage = () => {
 
     return (
         <React.Fragment>
-            <SEO title={`Business - ${relatedData.pagename}`} />
+            <SEO title={`IMS Business - ${relatedData.pagename}`} />
             <div className="page-wrapper business-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={businessSitemap} activetab={activetab} onClickTab={onClickTab} />

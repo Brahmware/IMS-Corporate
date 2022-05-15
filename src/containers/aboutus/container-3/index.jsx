@@ -1,14 +1,14 @@
 import React from 'react'
-import FunfactColumnSpreadCardImageContainer from '../../common/funfact-column-spread-card-image-container'
+import FunfactColumnSpreadContainer from '../../common/funfact-spread-columns-container'
 
 const AboutUsContainerThree = ({data}) => {
   return (
-    <div className='aboutus-container-3 white-background'>
-        <FunfactColumnSpreadCardImageContainer 
-            columnsdata = {data[0]}
-            imagecarddata = {data[1]}
-            inverse={true}
+    <div className='aboutus-container-3 section-with-padding white-background'>
+      <div className="container">
+        <FunfactColumnSpreadContainer 
+            columnsdata = {data[0].cards}
         />
+      </div>
     </div>
   )
 }
