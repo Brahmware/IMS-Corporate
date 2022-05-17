@@ -9,7 +9,7 @@ import BusinessAndBrands from './businessandbrands'
 import FocusAreas from './focusareas'
 import NewsRoom from './newsroom'
 import Technology from './technology'
-
+import BusinessAndBrandsData from "../../data/media-network.json"
 const MediaNetworkPage = () => {
     const mediaNetworkSitemap = sitemapData.find(pageGroup => pageGroup.id === 'media_network')
     const { hash } = useLocation();
@@ -26,6 +26,10 @@ const MediaNetworkPage = () => {
         window.history.replaceState({}, pageObject.page, pageObject.path);
     }
 
+    const relatedData = BusinessAndBrandsData.find((data => data.id === activetab));
+    const relatedDataElements = relatedData.elements;
+    // console.log(relatedDataElements)
+
     return (
         <React.Fragment>
             <SEO title='IMS - Media Network' />
@@ -37,7 +41,7 @@ const MediaNetworkPage = () => {
 
                         case "business_and_brands":
                             return (
-                                <BusinessAndBrands />
+                                <BusinessAndBrands data={relatedDataElements} />
                             );
                         case "focus_areas":
                             return (
