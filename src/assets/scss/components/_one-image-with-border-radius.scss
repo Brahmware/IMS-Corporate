@@ -1,0 +1,22 @@
+.one-image {
+    width: 37.72em;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    & .border-image {
+
+        & img {
+            height: 30.45em;
+            width: 37.72em;
+            border-radius: 2em;
+        }
+    }
+    &.inverse {
+        justify-content: flex-end;
+    }
+}
