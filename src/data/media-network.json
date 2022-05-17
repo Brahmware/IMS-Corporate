@@ -1,0 +1,43 @@
+[
+    {
+        "id": "business_and_brands",
+        "pagename": "business and brands",
+        "elements": [
+            {
+                "id": "container_1",
+                "elements": [
+                    {
+                        "id": 1,
+                        "name": "IMS Life",
+                        "logo": "images/our-networks/ims-life/logo.svg"
+                    },
+                    {
+                        "id": 2,
+                        "name": "IMS Science",
+                        "logo": "/images/our-networks/ims-science/logo.svg"
+                    },
+                    {
+                        "id": 3,
+                        "name": "World TV",
+                        "logo": "/images/our-networks/world-tv/logo.svg"
+                    },
+                    {
+                        "id": 4,
+                        "name": "POP News",
+                        "logo": "/images/our-networks/pop-news/logo.svg"
+                    },
+                    {
+                        "id": 5,
+                        "name": "IMS History",
+                        "logo": "/images/our-networks/ims-history/logo.svg"
+                    },
+                    {
+                        "id": 6,
+                        "name": "more",
+                        "logo": "/images/our-networks/more/logo.svg"
+                    }
+                ]
+            }
+        ]
+    }
+]

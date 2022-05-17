@@ -7,6 +7,7 @@ import Header from '../../containers/header'
 import sitemapData from "../../data/sitemap.json"
 import BecomeAMember from './becomeamember'
 import CorporateAndFoundations from './corporateandfoundations'
+import partnersData from "../../data/partners.json"
 
 const PartnersPage = () => {
     const partnersSitemap = sitemapData.find(pageGroup => pageGroup.id === 'partners')
@@ -24,6 +25,8 @@ const PartnersPage = () => {
         window.history.replaceState({}, pageObject.page, pageObject.path);
     }
 
+    const relatedData = partnersData.find((data => data.id === activetab));
+    const relatedDataElements = relatedData.elements;
     return (
         <React.Fragment>
             <SEO title='IMS - Partners' />
@@ -35,7 +38,7 @@ const PartnersPage = () => {
 
                         case "corporate_and_foundations":
                             return (
-                                <CorporateAndFoundations />
+                                <CorporateAndFoundations data={relatedDataElements}/>
                             );
                         case "become_a_member":
                             return (
