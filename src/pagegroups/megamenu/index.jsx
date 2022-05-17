@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import CopyrightComponent from '../../components/copyright';
 import LanguageComponent from '../../components/languagecomponent';
+import OurSocialLinks from '../../components/our-social-links';
 import SiteMap from '../../components/sitemap';
-import SocialLinks from '../../components/sociallinks';
 
 const MegaMenu = (props) => {
 
@@ -25,7 +25,7 @@ const MegaMenu = (props) => {
                 <div className="megamenu-footer container">
                     <div className="megamenu-footer-left">
                         <span className="contactus">CONTACT US</span>
-                        <div className="socials"><SocialLinks /></div>
+                        <div className="socials"><OurSocialLinks /></div>
                         <div className="copyright"><CopyrightComponent /></div>
                     </div>
                     <div className="megamenu-footer-right">

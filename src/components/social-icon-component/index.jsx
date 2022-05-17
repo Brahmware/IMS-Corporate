@@ -1,5 +1,5 @@
 import React from 'react'
-import SocialIconData from "../../data/socialmedia-list.json";
+import SocialIconData from "../../data/socialmedia-icon-list.json";
 import RemoteIconComponent from '../remoeiconcomponent';
 
 const SocialIconComponent = ({ socialid, link }) => {
