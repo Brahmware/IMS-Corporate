@@ -4,10 +4,13 @@ import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
-import sitemapData from "../../data/sitemap.json"
 import AdvertiseWithUs from './advertisewithus'
 import Investors from './investors'
 import SustainabilityStatement from './sustainabilitystatement'
+
+/* Importing the related data */
+import sitemapData from "../../data/sitemap.json"
+import CommercialData from '../../data/commercial.json'
 
 const CommercialPage = () => {
     const commercialSitemap = sitemapData.find(pageGroup => pageGroup.id === 'commercial')
@@ -25,9 +28,12 @@ const CommercialPage = () => {
         window.history.replaceState({}, pageObject.page, pageObject.path);
     }
 
+    const relatedData = CommercialData.find(( data => data.id === activetab ));
+    const relatedDataElements = relatedData && relatedData.elements;
+
     return (
         <React.Fragment>
-            <SEO title='IMS - Commercial' />
+            <SEO title={`IMS ${commercialSitemap.pageGroup} - ${relatedData.pagename}`}/>
             <div className="page-wrapper commercial-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={commercialSitemap} activetab={activetab} onClickTab={onClickTab} />
@@ -36,19 +42,19 @@ const CommercialPage = () => {
 
                         case "advertise_with_us":
                             return (
-                                <AdvertiseWithUs />
+                                <AdvertiseWithUs data={relatedDataElements}/>
                             );
                         case "investors":
                             return (
-                                <Investors />
+                                <Investors data={relatedDataElements}/>
                             );
                         case "sustainability_statement":
                             return (
-                                <SustainabilityStatement />
+                                <SustainabilityStatement data={relatedDataElements}/>
                             );
                         default:
                             return (
-                                <AdvertiseWithUs />
+                                <AdvertiseWithUs data={relatedDataElements}/>
                             );
 
                     }

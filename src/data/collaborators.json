@@ -1,1 +1,12 @@
-{}
+[
+    {
+        "id": "explorers",
+        "pagename": "Explorers",
+        "elements": []
+    },
+    {
+        "id": "producers",
+        "pagename": "Producers",
+        "elements": []
+    }
+]

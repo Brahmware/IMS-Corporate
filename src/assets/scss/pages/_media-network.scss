@@ -1,0 +1,5 @@
+.media-network-page-wrapper {
+    @media #{$extraBig-device} {
+        font-size: 1.5em;
+    }
+}

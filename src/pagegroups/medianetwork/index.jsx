@@ -4,11 +4,13 @@ import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
-import sitemapData from "../../data/sitemap.json"
 import BusinessAndBrands from './businessandbrands'
 import FocusAreas from './focusareas'
 import NewsRoom from './newsroom'
 import Technology from './technology'
+
+/* Importing the related data */
+import sitemapData from "../../data/sitemap.json"
 import BusinessAndBrandsData from "../../data/media-network.json"
 const MediaNetworkPage = () => {
     const mediaNetworkSitemap = sitemapData.find(pageGroup => pageGroup.id === 'media_network')
@@ -27,12 +29,12 @@ const MediaNetworkPage = () => {
     }
 
     const relatedData = BusinessAndBrandsData.find((data => data.id === activetab));
-    const relatedDataElements = relatedData.elements;
-    // console.log(relatedDataElements)
+    const relatedDataElements = relatedData && relatedData.elements;
+    console.log(relatedDataElements)
 
     return (
         <React.Fragment>
-            <SEO title='IMS - Media Network' />
+            <SEO title={`IMS ${mediaNetworkSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper media-network-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={mediaNetworkSitemap} activetab={activetab} onClickTab={onClickTab} />

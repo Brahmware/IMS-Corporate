@@ -4,10 +4,13 @@ import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
-import sitemapData from "../../data/sitemap.json"
 import ImmersiveExperience from './immersiveexperiences'
 import ProfessionalLearning from './professionallearning'
 import Resources from './resources'
+
+/* Importing the related data */
+import sitemapData from "../../data/sitemap.json"
+import EducationTeachingData from '../../data/education-and-teaching.json'
 
 const EducationTeachingPage = () => {
     const educationTeachingSitemap = sitemapData.find(pageGroup => pageGroup.id === 'education_and_teaching')
@@ -25,9 +28,12 @@ const EducationTeachingPage = () => {
         window.history.replaceState({}, pageObject.page, pageObject.path);
     }
 
+    const relatedData = EducationTeachingData.find(( data => data.id === activetab ));
+    const relatedDataElements = relatedData && relatedData.elements;
+
     return (
         <React.Fragment>
-            <SEO title='IMS - Education & Teaching' />
+            <SEO title={`IMS ${educationTeachingSitemap.pageGroup} - ${relatedData.pagename}`}/>
             <div className="page-wrapper educationTeaching-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={educationTeachingSitemap} activetab={activetab} onClickTab={onClickTab} />
@@ -36,19 +42,19 @@ const EducationTeachingPage = () => {
 
                         case "resources":
                             return (
-                                <Resources />
+                                <Resources data={relatedDataElements}/>
                             );
                         case "professional_learning":
                             return (
-                                <ProfessionalLearning />
+                                <ProfessionalLearning data={relatedDataElements}/>
                             );
                         case "immersive_experience":
                             return (
-                                <ImmersiveExperience />
+                                <ImmersiveExperience data={relatedDataElements}/>
                             );
                         default:
                             return (
-                                <Resources />
+                                <Resources data={relatedDataElements}/>
                             );
 
                     }

@@ -39,5 +39,20 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "focus_areas",
+        "pagename": "Focus Areas",
+        "elements": []
+    },
+    {
+        "id": "technology",
+        "pagename": "Technology",
+        "elements": []
+    },
+    {
+        "id": "newsroom",
+        "pagename": "Newsroom",
+        "elements": []
     }
 ]

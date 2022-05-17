@@ -1,7 +1,7 @@
 [
     {
         "id": "corporate_and_foundations",
-        "pagename": "About Us",
+        "pagename": "Corporate and Foundations",
         "elements": [
             {
                 "id": "container_1",
@@ -65,6 +65,14 @@
                                 "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
                             }
                         ]
+                    },
+                    {
+                        "image": "/images/partners/corporate-and-foundations/container-3/cover.jpg",
+                        "card": {
+                            "title": "ABOUT US",
+                            "subtitle": "India celebrates Exploration",
+                            "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
+                        }
                     }
                 ]
             },
@@ -73,19 +81,6 @@
                 "elements": [
                     {
                         "image": "/images/partners/corporate-and-foundations/container-4/cover.jpg",
-                        "card": {
-                            "title": "ABOUT US",
-                            "subtitle": "India celebrates Exploration",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "container_5",
-                "elements": [
-                    {
-                        "image": "/images/partners/corporate-and-foundations/container-5/cover.jpg",
                         "title": "IMS Explorers",
                         "subtitle": "Changemakers<br /> and Innovators",
                         "buttontext": "APPLY"
@@ -93,5 +88,10 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "become_a_member",
+        "pagename": "Become a Member",
+        "elements": []
     }
 ]

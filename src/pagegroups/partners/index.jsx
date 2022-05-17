@@ -4,10 +4,12 @@ import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
-import sitemapData from "../../data/sitemap.json"
 import BecomeAMember from './becomeamember'
 import CorporateAndFoundations from './corporateandfoundations'
+
+/* Importing the related data */
 import partnersData from "../../data/partners.json"
+import sitemapData from "../../data/sitemap.json"
 
 const PartnersPage = () => {
     const partnersSitemap = sitemapData.find(pageGroup => pageGroup.id === 'partners')
@@ -26,10 +28,11 @@ const PartnersPage = () => {
     }
 
     const relatedData = partnersData.find((data => data.id === activetab));
-    const relatedDataElements = relatedData.elements;
+    const relatedDataElements = relatedData && relatedData.elements;
+
     return (
         <React.Fragment>
-            <SEO title='IMS - Partners' />
+            <SEO title={`IMS ${partnersSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper partners-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={partnersSitemap} activetab={activetab} onClickTab={onClickTab} />
@@ -42,11 +45,11 @@ const PartnersPage = () => {
                             );
                         case "become_a_member":
                             return (
-                                <BecomeAMember />
+                                <BecomeAMember data={relatedDataElements}/>
                             );
                         default:
                             return (
-                                <CorporateAndFoundations />
+                                <CorporateAndFoundations data={relatedDataElements}/>
                             );
 
                     }

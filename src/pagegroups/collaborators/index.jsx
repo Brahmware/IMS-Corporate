@@ -30,11 +30,11 @@ const CollaboratorsPage = () => {
     }
 
     const relatedData = CollaboratorsData.find(( data => data.id === activetab ));
-    const relatedDataElements = relatedData.elements;
+    const relatedDataElements = relatedData && relatedData.elements;
 
     return (
         <React.Fragment>
-            <SEO title={`IMS Collaborators - ${relatedData.pagename}`} />
+            <SEO title={`IMS ${collaboratorsSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper collaborators-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={collaboratorsSitemap} activetab={activetab} onClickTab={onClickTab} />

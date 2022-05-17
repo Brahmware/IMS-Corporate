@@ -32,11 +32,11 @@ const BusinessPage = () => {
     }
 
     const relatedData = BusinessData.find(( data => data.id === activetab ));
-    const relatedDataElements = relatedData.elements; 
+    const relatedDataElements = relatedData && relatedData.elements; 
 
     return (
         <React.Fragment>
-            <SEO title={`IMS Business - ${relatedData.pagename}`} />
+            <SEO title={`IMS ${businessSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper business-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={businessSitemap} activetab={activetab} onClickTab={onClickTab} />
