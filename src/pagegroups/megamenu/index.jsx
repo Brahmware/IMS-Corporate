@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CopyrightComponent from '../../components/copyright';
 import LanguageComponent from '../../components/languagecomponent';
 import SiteMap from '../../components/sitemap';

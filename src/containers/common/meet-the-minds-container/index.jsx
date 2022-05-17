@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, {  useRef, useState } from 'react'
 import TeamsData from '../../../data/teams.json'
 import CardsCarouselContainer from '../cards-carousel';
 
