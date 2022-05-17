@@ -29,6 +29,9 @@ const ImageOverSquareImageHeadingContainer = ( props ) => {
                     </div>
                 </div>
             </div>
+            <div className="container divider-container">
+                <div className="divider bottom-divider" />
+            </div>
         </div>
     )
 }

@@ -20,7 +20,6 @@ const HomeBanner = (props) => {
         },
         autoplay: {
             delay: 6000,
-            disableOnInteraction: true,
         },
         speed: 1000,
         direction: 'horizontal',

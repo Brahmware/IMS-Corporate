@@ -26,7 +26,6 @@ const BusinessPage = () => {
 
     const onClickTab = (event) => {
         setactivetab(event.target.id);
-        /* setActiveTabName(event.target.) */
         const pageObject = businessSitemap && businessSitemap.pages.find(page => page.id === event.target.id);
         window.history.replaceState({}, pageObject.page, pageObject.path);
         scrollToNavigationPanel();

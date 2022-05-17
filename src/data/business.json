@@ -171,31 +171,6 @@
                 ]
             },
             {
-                "id": "container_2",
-                "elements": [
-                    {
-                        "heading": {
-                            "title": "OUR MISSION",
-                            "subtitle": "To Revolutionize Indian Media",
-                            "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region.</p>"
-                        }
-                    },
-                    {
-                        "images": {
-                            "imageTop": "/images/business/our-leadership/container-2/image-top.jpg",
-                            "imageBottom": "/images/business/our-leadership/container-2/image-bottom.jpg"
-                        }
-                    },
-                    {
-                        "card": {
-                            "subtitle": "Making Knowledge Accessible to All.",
-                            "content": "<p>Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.</p>",
-                            "buttontext": "VIEW MORE"
-                        }
-                    }
-                ]
-            },
-            {
                 "id": "container_3",
                 "elements": [
                     {

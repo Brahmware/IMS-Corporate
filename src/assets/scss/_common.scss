@@ -179,6 +179,9 @@ img {
         height: $thick-divider;
         width: $normal-divider-length;
         background-color: $primary;
+        &.bottom-divider {
+            width: 5em;
+        }
     }
 
     .content {
