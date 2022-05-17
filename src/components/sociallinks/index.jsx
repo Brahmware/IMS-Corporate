@@ -1,13 +1,13 @@
-import React from 'react'
-import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from '../../assets/icons';
+import React from 'react';
+import SocialIconComponent from '../social-icon-component';
 
 const SocialLinks = () => {
     return (
         <div className='social-links'>
-            <a href="www.facebook.com/"><FacebookIcon /></a>
-            <a href="www.twitter.com/"><TwitterIcon /></a>
-            <a href="www.youtube.com"><YoutubeIcon /></a>
-            <a href="www.instagram.com"><InstagramIcon /></a>
+            <SocialIconComponent socialid={'facebook'} link={"https://www.facebook.com"} />
+            <SocialIconComponent socialid={'twitter'} link={"https://www.twitter.com"} />
+            <SocialIconComponent socialid={'youtube'} link={"https://www.youtube.com"} />
+            <SocialIconComponent socialid={'instagram'} link={"https://www.instagram.com"} />
         </div>
     )
 }

@@ -1,0 +1,19 @@
+.socialicon-component {
+
+    & .social-icon {
+        height: max-content;
+        width: max-content;
+        & svg {
+            height: 1em;
+            fill: $black;
+            transition: $transition-base;
+    
+        }
+        &:hover {
+            & svg {
+                fill: $primary;
+                transform: scale($scale-base);
+            }
+        }
+    }
+}

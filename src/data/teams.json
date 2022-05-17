@@ -8,18 +8,15 @@
                 "name": "Prakash<br /> Mandal",
                 "socials": [
                     {
-                        "id": "prakash-twitter",
-                        "icon": "/images/team/social-icons/twitter.svg",
+                        "id": "twitter",
                         "link": "https://twitter.com/PrakashBigBrain"
                     },
                     {
-                        "id": "prakash-linkedin",
-                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "id": "linkedin",
                         "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
                     },
                     {
-                        "id": "prakash-facebook",
-                        "icon": "/images/team/social-icons/facebook.svg",
+                        "id": "facebook",
                         "link": "https://www.facebook.com/Prakash.Mandal22"
                     }
                 ],
@@ -31,18 +28,15 @@
                 "name": "Sanchayan<br /> Bhunia",
                 "socials": [
                     {
-                        "id": "sanchayan-twitter",
-                        "icon": "/images/team/social-icons/twitter.svg",
+                        "id": "twitter",
                         "link": "https://twitter.com/Sanchayan_Bh"
                     },
                     {
-                        "id": "sanchayan-linkedin",
-                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "id": "linkedin",
                         "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
                     },
                     {
-                        "id": "sanchayan-facebook",
-                        "icon": "/images/team/social-icons/facebook.svg",
+                        "id": "facebook",
                         "link": "https://www.facebook.com/sanchayan.bhunia.1"
                     }
                 ],
@@ -54,18 +48,15 @@
                 "name": "Saurav<br /> Siddhartha",
                 "socials": [
                     {
-                        "id": "sashi-twitter",
-                        "icon": "/images/team/social-icons/twitter.svg",
+                        "id": "twitter",
                         "link": ""
                     },
                     {
-                        "id": "sashi-linkedin",
-                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "id": "linkedin",
                         "link": ""
                     },
                     {
-                        "id": "sashi-facebook",
-                        "icon": "/images/team/social-icons/facebook.svg",
+                        "id": "facebook",
                         "link": "https://www.facebook.com/shashi.b.prasad.10"
                     }
                 ],
@@ -77,17 +68,17 @@
                 "name": "Shashi Bhushan<br /> Prasad",
                 "socials": [
                     {
-                        "id": "sashi-twitter",
+                        "id": "twitter",
                         "icon": "/images/team/social-icons/twitter.svg",
                         "link": ""
                     },
                     {
-                        "id": "sashi-linkedin",
+                        "id": "linkedin",
                         "icon": "/images/team/social-icons/linkedin.svg",
                         "link": ""
                     },
                     {
-                        "id": "sashi-facebook",
+                        "id": "facebook",
                         "icon": "/images/team/social-icons/facebook.svg",
                         "link": "https://www.facebook.com/shashi.b.prasad.10"
                     }
@@ -106,18 +97,16 @@
                 "name": "Prakash<br /> Mandal",
                 "socials": [
                     {
-                        "id": "prakash-twitter",
-                        "icon": "/images/team/social-icons/twitter.svg",
+                        "id": "twitter",
                         "link": "https://twitter.com/PrakashBigBrain"
                     },
                     {
-                        "id": "prakash-linkedin",
+                        "id": "linkedin",
                         "icon": "/images/team/social-icons/linkedin.svg",
                         "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
                     },
                     {
-                        "id": "prakash-facebook",
-                        "icon": "/images/team/social-icons/facebook.svg",
+                        "id": "facebook",
                         "link": "https://www.facebook.com/Prakash.Mandal22"
                     }
                 ],
@@ -129,18 +118,15 @@
                 "name": "Sanchayan<br /> Bhunia",
                 "socials": [
                     {
-                        "id": "sanchayan-twitter",
-                        "icon": "/images/team/social-icons/twitter.svg",
+                        "id": "twitter",
                         "link": "https://twitter.com/Sanchayan_Bh"
                     },
                     {
-                        "id": "sanchayan-linkedin",
-                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "id": "linkedin",
                         "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
                     },
                     {
-                        "id": "sanchayan-facebook",
-                        "icon": "/images/team/social-icons/facebook.svg",
+                        "id": "facebook",
                         "link": "https://www.facebook.com/sanchayan.bhunia.1"
                     }
                 ],
@@ -152,18 +138,16 @@
                 "name": "Saurav<br /> Siddhartha",
                 "socials": [
                     {
-                        "id": "sashi-twitter",
-                        "icon": "/images/team/social-icons/twitter.svg",
+                        "id": "twitter",
                         "link": ""
                     },
                     {
-                        "id": "sashi-linkedin",
+                        "id": "linkedin",
                         "icon": "/images/team/social-icons/linkedin.svg",
                         "link": ""
                     },
                     {
-                        "id": "sashi-facebook",
-                        "icon": "/images/team/social-icons/facebook.svg",
+                        "id": "facebook",
                         "link": "https://www.facebook.com/shashi.b.prasad.10"
                     }
                 ],
@@ -175,18 +159,17 @@
                 "name": "Shashi Bhushan<br /> Prasad",
                 "socials": [
                     {
-                        "id": "sashi-twitter",
+                        "id": "twitter",
                         "icon": "/images/team/social-icons/twitter.svg",
                         "link": ""
                     },
                     {
-                        "id": "sashi-linkedin",
+                        "id": "linkedin",
                         "icon": "/images/team/social-icons/linkedin.svg",
                         "link": ""
                     },
                     {
-                        "id": "sashi-facebook",
-                        "icon": "/images/team/social-icons/facebook.svg",
+                        "id": "facebook",
                         "link": "https://www.facebook.com/shashi.b.prasad.10"
                     }
                 ],

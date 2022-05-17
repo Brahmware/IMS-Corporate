@@ -1,6 +1,7 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import RemoteIconComponent from '../remoeiconcomponent'
+import SocialIconComponent from '../social-icon-component';
 
 const IdentityCardComponent = ({ data, cardKey }) => {
     return (
@@ -31,14 +32,9 @@ const IdentityCardComponent = ({ data, cardKey }) => {
                 {
                     data.socials && data.socials.map((social, key) => {
                         return (
-                            <NavLink
-                                key={key}
-                                to={social.link}
-                            >
-                                <i className="social-icon" id={social.id}>
-                                    <RemoteIconComponent icon={social.icon}/>
-                                </i>
-                            </NavLink>
+                            <React.Fragment key={key}>
+                                <SocialIconComponent socialid={social.id} link={social.link} />
+                            </React.Fragment>
                         )
                     })
                 }

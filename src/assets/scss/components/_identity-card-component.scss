@@ -37,14 +37,8 @@
         justify-content: center;
         align-items: center;
         gap: 1.3em;
-        & svg {
-            height: 1em;
-            fill: $black;
-            transition: $transition-base;
-
-            &:hover {
-                fill: $primary;
-            }
+        & .socialicon-component {
+            font-size: 1.1em;
         }
     }
 
