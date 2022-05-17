@@ -1,8 +1,8 @@
 import React from 'react'
 import { IMSLogo } from '../../assets/ourlogo';
 import CopyrightComponent from '../../components/copyright';
+import OurSocialLinks from '../../components/our-social-links';
 import SiteMap from '../../components/sitemap';
-import SocialLinks from '../../components/sociallinks';
 import SubscribeComponent from '../../components/subscribecomponent';
 
 const Footer = () => {
@@ -50,7 +50,7 @@ const Footer = () => {
           >
             <div className="privacy-copyright-section-left col-6">
               <span className="contactus">CONTACT US</span>
-              <div className="socials"><SocialLinks /></div>
+              <div className="socials"><OurSocialLinks /></div>
               <div className="copyright"><CopyrightComponent /></div>
             </div>
             <div className="privacy-copyright-section-right col-6">
