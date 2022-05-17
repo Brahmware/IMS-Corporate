@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
 import Header from '../../containers/header'
-import sitemapData from "../../data/sitemap.json"
-import AboutUs from '../../containers/business/about_us'
-import OurLeadership from '../../containers/business/our_leadership'
-import DiversityAndInclusion from '../../containers/business/diversity_and_inclusion'
+import AboutUs from './aboutus'
+import Careers from './careers'
+import DIversityAndInclusion from './diversityandinclusion'
+import OurLeadership from './ourleadership'
+import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 
+/* Importing the related data */
+import sitemapData from "../../data/sitemap.json"
+import BusinessData from "../../data/business.json"
 
 const BusinessPage = () => {
     const businessSitemap = sitemapData.find(pageGroup => pageGroup.id === 'business')
@@ -23,21 +28,49 @@ const BusinessPage = () => {
         setactivetab(event.target.id);
         const pageObject = businessSitemap && businessSitemap.pages.find(page => page.id === event.target.id);
         window.history.replaceState({}, pageObject.page, pageObject.path);
+        scrollToNavigationPanel();
     }
 
-    return (
-        <div className="page-wrapper business-page-wrapper">
-            <Header />
-            <BannerNavigationContainer data={businessSitemap} activetab={activetab} onClickTab={onClickTab} />
-            {activetab === "about_us" ? <AboutUs /> :
-                activetab === "our_leadership" ? <OurLeadership/> :
-                    activetab === "diversity_and_inclusion" ? <DiversityAndInclusion/> :
-                        activetab === "career" ? "career" :
-                            "not working"
+    const relatedData = BusinessData.find(( data => data.id === activetab ));
+    const relatedDataElements = relatedData.elements; 
 
-            }{console.log(activetab)}
-            <Footer />
-        </div>
+    return (
+        <React.Fragment>
+            <SEO title={`IMS Business - ${relatedData.pagename}`} />
+            <div className="page-wrapper business-page-wrapper">
+                <Header />
+                <BannerNavigationContainer data={businessSitemap} activetab={activetab} onClickTab={onClickTab} />
+                <div className="page-content business-content">
+                    {(() => {
+                        switch (activetab) {
+
+                            case "about_us":
+                                return (
+                                    <AboutUs data={relatedDataElements}/>
+                                );
+                            case "our_leadership":
+                                return (
+                                    <OurLeadership data={relatedDataElements}/>
+                                );
+                            case "diversity_and_inclusion":
+                                return (
+                                    <DIversityAndInclusion data={relatedDataElements}/>
+                                );
+                            case "career":
+                                return (
+                                    <Careers data={relatedDataElements}/>
+                                );
+                            default:
+                                return (
+                                    <AboutUs data={relatedDataElements}/>
+                                );
+
+                        }
+                    })()}
+                </div>
+                <Footer />
+            </div>
+        </React.Fragment>
     )
 }
 

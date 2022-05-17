@@ -1,0 +1,198 @@
+[
+    {
+        "teamid": "board_of_leaders",
+        "teamname": "Board of Leaders",
+        "members": [
+            {
+                "id": 101,
+                "name": "Prakash<br /> Mandal",
+                "socials": [
+                    {
+                        "id": "prakash-twitter",
+                        "icon": "/images/team/social-icons/twitter.svg",
+                        "link": "https://twitter.com/PrakashBigBrain"
+                    },
+                    {
+                        "id": "prakash-linkedin",
+                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                    },
+                    {
+                        "id": "prakash-facebook",
+                        "icon": "/images/team/social-icons/facebook.svg",
+                        "link": "https://www.facebook.com/Prakash.Mandal22"
+                    }
+                ],
+                "profilepicture": "/images/team/leaders/prakash/profile-picture.jpg",
+                "designation": "Founder, Managing Director, CEO"
+            },
+            {
+                "id": 102,
+                "name": "Sanchayan<br /> Bhunia",
+                "socials": [
+                    {
+                        "id": "sanchayan-twitter",
+                        "icon": "/images/team/social-icons/twitter.svg",
+                        "link": "https://twitter.com/Sanchayan_Bh"
+                    },
+                    {
+                        "id": "sanchayan-linkedin",
+                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                    },
+                    {
+                        "id": "sanchayan-facebook",
+                        "icon": "/images/team/social-icons/facebook.svg",
+                        "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                    }
+                ],
+                "profilepicture": "/images/team/leaders/sanchayan/profile-picture.jpg",
+                "designation": "Founder, Chief Innovator, CTO"
+            },
+            {
+                "id": 103,
+                "name": "Saurav<br /> Siddhartha",
+                "socials": [
+                    {
+                        "id": "sashi-twitter",
+                        "icon": "/images/team/social-icons/twitter.svg",
+                        "link": ""
+                    },
+                    {
+                        "id": "sashi-linkedin",
+                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "link": ""
+                    },
+                    {
+                        "id": "sashi-facebook",
+                        "icon": "/images/team/social-icons/facebook.svg",
+                        "link": "https://www.facebook.com/shashi.b.prasad.10"
+                    }
+                ],
+                "profilepicture": "/images/team/leaders/saurav/profile-picture.jpg",
+                "designation": "Chief Strategy & Sales Officer"
+            },
+            {
+                "id": 104,
+                "name": "Shashi Bhushan<br /> Prasad",
+                "socials": [
+                    {
+                        "id": "sashi-twitter",
+                        "icon": "/images/team/social-icons/twitter.svg",
+                        "link": ""
+                    },
+                    {
+                        "id": "sashi-linkedin",
+                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "link": ""
+                    },
+                    {
+                        "id": "sashi-facebook",
+                        "icon": "/images/team/social-icons/facebook.svg",
+                        "link": "https://www.facebook.com/shashi.b.prasad.10"
+                    }
+                ],
+                "profilepicture": "/images/team/leaders/sashi/profile-picture.jpg",
+                "designation": "Chief of Staff and Project Alignment"
+            }
+        ]
+    },
+    {
+        "teamid": "brands_and_businesses",
+        "teamname": "Brands & Businesses",
+        "members": [
+            {
+                "id": 101,
+                "name": "Prakash<br /> Mandal",
+                "socials": [
+                    {
+                        "id": "prakash-twitter",
+                        "icon": "/images/team/social-icons/twitter.svg",
+                        "link": "https://twitter.com/PrakashBigBrain"
+                    },
+                    {
+                        "id": "prakash-linkedin",
+                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                    },
+                    {
+                        "id": "prakash-facebook",
+                        "icon": "/images/team/social-icons/facebook.svg",
+                        "link": "https://www.facebook.com/Prakash.Mandal22"
+                    }
+                ],
+                "profilepicture": "/images/team/members/prakash/profile-picture.jpg",
+                "designation": "Founder, Chairman, CMO"
+            },
+            {
+                "id": 102,
+                "name": "Sanchayan<br /> Bhunia",
+                "socials": [
+                    {
+                        "id": "sanchayan-twitter",
+                        "icon": "/images/team/social-icons/twitter.svg",
+                        "link": "https://twitter.com/Sanchayan_Bh"
+                    },
+                    {
+                        "id": "sanchayan-linkedin",
+                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                    },
+                    {
+                        "id": "sanchayan-facebook",
+                        "icon": "/images/team/social-icons/facebook.svg",
+                        "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                    }
+                ],
+                "profilepicture": "/images/team/members/sanchayan/profile-picture.jpg",
+                "designation": "Founder, CTO, COO"
+            },
+            {
+                "id": 103,
+                "name": "Saurav<br /> Siddhartha",
+                "socials": [
+                    {
+                        "id": "sashi-twitter",
+                        "icon": "/images/team/social-icons/twitter.svg",
+                        "link": ""
+                    },
+                    {
+                        "id": "sashi-linkedin",
+                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "link": ""
+                    },
+                    {
+                        "id": "sashi-facebook",
+                        "icon": "/images/team/social-icons/facebook.svg",
+                        "link": "https://www.facebook.com/shashi.b.prasad.10"
+                    }
+                ],
+                "profilepicture": "/images/team/members/saurav/profile-picture.jpg",
+                "designation": "CEO, Communication Manager"
+            },
+            {
+                "id": 104,
+                "name": "Shashi Bhushan<br /> Prasad",
+                "socials": [
+                    {
+                        "id": "sashi-twitter",
+                        "icon": "/images/team/social-icons/twitter.svg",
+                        "link": ""
+                    },
+                    {
+                        "id": "sashi-linkedin",
+                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "link": ""
+                    },
+                    {
+                        "id": "sashi-facebook",
+                        "icon": "/images/team/social-icons/facebook.svg",
+                        "link": "https://www.facebook.com/shashi.b.prasad.10"
+                    }
+                ],
+                "profilepicture": "/images/team/members/sashi/profile-picture.jpg",
+                "designation": "CEO, Communication Manager"
+            }
+        ]
+    }
+]

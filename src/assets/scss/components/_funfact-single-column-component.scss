@@ -1,8 +1,9 @@
-.mission-card {
+.column-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     & .count {
         font-size: 4em;
         font-weight: 700;

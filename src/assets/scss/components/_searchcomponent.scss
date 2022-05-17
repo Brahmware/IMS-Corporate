@@ -1,14 +1,14 @@
 .search {
     height: $header-button-height;
+    font-size: 1em;
     & form {
         width: max-content;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        height: inherit;
-        width: inherit;
-        padding: 0;
+        height: 100%;
         margin: 0;
+        padding: 0;
         & input {
             color: $default-black;
             //overflow: hidden;
@@ -37,14 +37,12 @@
             background-color: rgba($color: $white, $alpha: 0);
             border: 0;
             outline: 0;
-            padding: 10px 3px;
-            border-radius: 50%;
+            padding: 0.2em;
             position: absolute;
             & svg {
-                height: $header-icon-height;
+                height: 1.3em;
                 & * {
                     stroke: $default-black;
-                    stroke-width: 2.5em;
                 }
             }
         }
@@ -55,7 +53,7 @@
             width: 20em;
             & input {
                 width: 100%;
-                padding: 0 2.5em;
+                padding: 0 2em;
                 border-radius: $button-border-radius;
                 outline: $medium-thin-border solid $default-black;
                 margin: 0;

@@ -1,85 +1,102 @@
 .footer {
     height: 100vh;
-    font-size: 2em;
+    padding: 4em 0;
+    font-size: 1em;
     color: $default-black;
     background-color: $white;
     overflow: hidden;
     position: relative;
+
     & .container {
         height: 100%;
     }
+
+    & .divider {
+        font-size: 1em;
+        height: max-content;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        & .divider-line {
+            position: absolute;
+            height: $thicker-divider;
+            width: 50%;
+            right: 0;
+            background-color: $default-black;
+            border-radius: 2.5em;
+        }
+    }
     & .page-wrapper {
+        padding-top: 2em;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-top: calc($page-wrapper-padding / 2);
-        & .divider {
-            font-size: 2em;
-            height: max-content;
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            & .divider-line {
-                position: absolute;
-                //transform: translateX(57.5%);
-                height: 0.05em;
-                width: 50%;
-                right: 0;
-                background-color: $default-black;
-                border-radius: 2.5em;
-            }
-        }
+
+
         & .sitemap-section {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
+
             & .ims-logo-part {
-                padding-top: 0.5em;
+                padding: 0.7em;
+
                 & svg {
-                    height: 2em;
+                    height: 5em;
                 }
             }
+
             & .sitemap-part {
+                font-size: 0.7em;
                 padding: 0;
-                font-size: 0.5em;
-                & .sitemap {
-                    padding: 0;
-                    margin: 0;
-                }
-                & .pagegroup {
-                    padding: 1em 0.1em !important;
-                }
             }
         }
+
         & .subscribe-section {
             padding: 0;
+            margin-top: 5em;
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
-            font-size: 0.5em;
+            font-size: 1em;
+
             & .col-6 {
                 padding: 0;
             }
+            & .subscribecomponent {
+                font-size: 0.8em;
+            }
         }
+
         & .privacy-copyright-section {
             padding: 0;
-            font-size: 0.5em;
+            font-size: 1em;
+
             & .privacy-copyright-section-left {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: flex-start;
                 gap: 1.5em;
+
+                & .contactus {
+                    font-size: 0.8em;
+                    font-weight: 1000;
+                }
+
                 & .social-links {
                     gap: 2em;
                 }
+
                 & .copyright-component {
                     font-size: 0.7em;
                 }
             }
+
             & .privacy-copyright-section-right {
                 padding: 0;
                 font-weight: 300;
@@ -89,14 +106,17 @@
                 justify-content: flex-end;
                 align-items: flex-start;
                 gap: 1.5em;
+
                 & .legals {
                     width: 100%;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
+
                     & a {
                         text-decoration: underline;
+
                         &:hover {
                             color: $primary;
                         }
@@ -104,8 +124,5 @@
                 }
             }
         }
-    }
-    @media #{$extraBig-device} {
-        font-size: 3.5em;
     }
 }

@@ -1,15 +1,26 @@
-.sitemap {
+.sitemap-wrapper {
     font-size: 1em;
+    max-width: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .row,
+    & .col{
+        margin: 0;
+        padding: 0;
+    }
     & .pagegroup {
+        padding: 1em 0;
         & .group-title {
             & .title {
-                font-size: 1.2em;
-                font-weight: 900;
+                font-size: 1.3em;
+                font-weight: 1000;
             }
         }
         & .page {
             & a {
-                font-size: 0.8em;
+                font-size: 1em;
                 font-weight: 500;
             }
         }

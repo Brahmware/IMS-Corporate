@@ -1,0 +1,51 @@
+.identity-card-component {
+    height: max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5em;
+
+    & .profile-picture {
+        width: 17.85em;
+        height: 20.97em;
+        flex-shrink: 0;
+        border-radius: $image-border-radius;
+        overflow: hidden;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & .name {
+        font-size: 1.8em;
+        font-weight: 900;
+        line-height: 1.2em;
+    }
+
+    & .designation {
+        font-size: 1em;
+        color: $light-text-color;
+    }
+
+    & .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3em;
+        & svg {
+            height: 1em;
+            fill: $black;
+            transition: $transition-base;
+
+            &:hover {
+                fill: $primary;
+            }
+        }
+    }
+
+}

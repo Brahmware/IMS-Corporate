@@ -1,0 +1,89 @@
+.cards-carousel-wrapper {
+    height: max-content;
+    width: 100vw;
+    overflow: hidden;
+
+    & .swiper-slide {
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+
+// Swiper Button
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0.5;
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: $default-shadow;
+    transition: $transition-base;
+    height: max-content;
+    width: max-content;
+    padding: 1em;
+    @media #{$tablet-device, $large-mobile} {
+        bottom: 35px;
+        right: 40px;
+    }
+    @media #{$small-mobile} {
+        bottom: 15px;
+        right: 20px;
+    }
+    &::after {
+        display: none;
+    }
+    & i {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & svg {
+            height: 2em;
+            fill: $black;
+            @media #{$large-mobile, $tablet-device, $small-mobile} {
+                height: 15px;
+                fill: $dull-black;
+            }
+        }
+    }
+    &:hover {
+        opacity: 1;
+        & svg {
+            & path {
+                transform: translateX(0%) !important;
+            }
+        }
+    }
+}
+
+.swiper-button-prev {
+    left: 100px;
+    right: auto;
+    @media #{$tablet-device, $large-mobile} {
+        background-color: $white;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        left: 10px;
+        &:hover {
+            opacity: $opacity-high;
+            transition: $transition-base;
+        }
+    }
+}
+
+.swiper-button-next {
+    left: auto;
+    right: 100px;
+    @media #{$tablet-device, $large-mobile} {
+        background-color: $white;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        right: 10px;
+        &:hover {
+            opacity: $opacity-high;
+            transition: $transition-base;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.business-page-wrapper {
+
+    & .container_3 {
+        
+    }
+    @media #{$extraBig-device} {
+        font-size: 1.5em;
+    }
+}

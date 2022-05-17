@@ -6,8 +6,8 @@
     align-items: center;
 
     & .banner-background {
-        height: calc(100vh - $banner-tab-container-height);
-        ;
+        height: calc(100vh - $banner-tab-container-height - $header-height);
+        flex-shrink: 0;
         width: 100%;
         overflow: hidden;
 
@@ -40,7 +40,7 @@
             }
         }
         
-        & .tabs-conainer {
+        & .tabs-container {
             width: 100%;
             height: $banner-tab-container-height;
             display: flex;
@@ -67,7 +67,4 @@
         }
     }
 
-    @media #{$extraBig-device} {
-        font-size: 1.5em;
-    }
 }

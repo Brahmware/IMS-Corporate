@@ -1,12 +1,13 @@
 import React from 'react';
+import FilledButton from '../buttons/FilledButton';
 
 const SubscribeComponent = () => {
   return (
     <div className='subscribecomponent'>
-        <div className="title">Stay Connected</div>
+        <div className="title">STAY CONNECTED</div>
         <form className='subscribe-form'>
             <input type='text' name='search_input' placeholder='yourname@email.com' />
-            <button className='subscribe-button py-1'>SUBSCRIBE</button>
+            <FilledButton class="black-button" text='SUBSCRIBE' />
         </form>
     </div>
   )

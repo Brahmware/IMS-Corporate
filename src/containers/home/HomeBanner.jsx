@@ -20,10 +20,9 @@ const HomeBanner = (props) => {
         },
         autoplay: {
             delay: 6000,
-            disableOnInteraction: true,
         },
-        speed:1000,
-		direction: 'horizontal',
+        speed: 1000,
+        direction: 'horizontal',
         loop: true,
     };
 
@@ -44,7 +43,7 @@ const HomeBanner = (props) => {
                                         <img src={eachSlide.image} alt={key} />
                                     </div>
                                     <div className="container">
-                                        <div className="banner-card">
+                                        <div className="banner-card" >
                                             <div className="title">
                                                 <span
                                                     dangerouslySetInnerHTML={{

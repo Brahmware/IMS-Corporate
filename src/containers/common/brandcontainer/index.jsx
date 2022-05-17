@@ -10,7 +10,12 @@ const BrandsContainer = (props) => {
             {
                 brands && brands.map((eachBrand, key) => {
                     return (
-                        <div className="brand" key={key}>
+                        <div
+                            className="brand" key={key}
+                            data-aos='fade-left'
+                            data-aos-duration='600'
+                            data-aos-delay={600 + 300 * key}
+                        >
                             <RemoteIconComponent icon={eachBrand.logo} />
                         </div>
                     )

@@ -1,0 +1,16 @@
+.image-card-container {
+    font-size: 1em;
+    & .image-part {
+        width: 36em;
+        height: 29.06em;
+        border-radius: 0.8em;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
