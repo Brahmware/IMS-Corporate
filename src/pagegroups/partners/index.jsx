@@ -29,7 +29,7 @@ const PartnersPage = () => {
 
     const relatedData = partnersData.find((data => data.id === activetab));
     const relatedDataElements = relatedData && relatedData.elements;
-
+    // console.log(relatedDataElements)
     return (
         <React.Fragment>
             <SEO title={`IMS ${partnersSitemap.pageGroup} - ${relatedData.pagename}`} />

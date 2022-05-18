@@ -92,6 +92,91 @@
     {
         "id": "become_a_member",
         "pagename": "Become a Member",
-        "elements": []
+        "elements": [
+            {
+                "id": "container_1",
+                "elements": [
+                    {
+                        "image": "/images/partners/corporate-and-foundations/container-1/cover.jpg",
+                        "card": {
+                            "title": "WHAT WE DO",
+                            "subtitle": "India celebrates Exploration",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_2",
+                "elements": [
+                    {
+                        "heading": {
+                            "title": "OUR MISSION",
+                            "subtitle": "To Revolutionize Indian Media",
+                            "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+                        }
+                    },
+                    {
+                        "images": {
+                            "imageTop": "/images/partners/corporate-and-foundations/container-2/image-top.jpg",
+                            "imageBottom": "/images/partners/corporate-and-foundations/container-2/image-bottom.jpg"
+                        }
+                    },
+                    {
+                        "card": {
+                            "subtitle": "Making Knowledge Accessible to All.",
+                            "content": "<p>Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.</p>",
+                            "buttontext": "VIEW MORE"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_3",
+                "elements": [
+                    {
+                        "cards": [
+                            {
+                                "id": 1,
+                                "count": 265,
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            },
+                            {
+                                "id": 2,
+                                "count": 265,
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            },
+                            {
+                                "id": 3,
+                                "count": 265,
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            }
+                        ]
+                    },
+                    {
+                        "image": "/images/partners/corporate-and-foundations/container-3/cover.jpg",
+                        "card": {
+                            "title": "ABOUT US",
+                            "subtitle": "India celebrates Exploration",
+                            "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_4",
+                "elements": [
+                    {
+                        "image": "/images/partners/corporate-and-foundations/container-4/cover.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    }
+                ]
+            }
+        ]
     }
 ]

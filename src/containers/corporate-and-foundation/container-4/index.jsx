@@ -1,10 +1,10 @@
 import React from 'react'
-import ImageCardContainer from '../../common/image-card-container'
+import CardOverRibbonImageContainer from '../../common/card-over-ribbon-image-container'
 
 const CorporateAndFoundationContainerFour = ({data}) => {
   return (
-    <div className='aboutus-container-4 section-with-padding'>
-      <ImageCardContainer data={data[0]} inverse={true}/>
+    <div className='corporate-and-foundations-container-5'>
+      <CardOverRibbonImageContainer cardribbondata = {data[0]}/>
     </div>
   )
 }
