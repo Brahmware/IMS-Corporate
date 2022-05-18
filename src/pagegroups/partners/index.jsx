@@ -42,7 +42,7 @@ const PartnersPage = () => {
                             );
                         case "become_a_member":
                             return (
-                                <BecomeAMember />
+                                <BecomeAMember data={relatedDataElements} />
                             );
                         default:
                             return (
