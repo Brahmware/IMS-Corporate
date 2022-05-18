@@ -2,8 +2,8 @@ import React from 'react'
 import CorporateAndFoundationContainerOne from '../../../containers/corporate-and-foundation/container-1'
 import CorporateAndFoundationContainerTwo from '../../../containers/corporate-and-foundation/container-2'
 import CorporateAndFoundationContainerThree from '../../../containers/corporate-and-foundation/container-3'
-import CorporateAndFoundationContainerFive from '../../../containers/corporate-and-foundation/container-5'
- 
+import CorporateAndFoundationContainerFour from '../../../containers/corporate-and-foundation/container-4'
+
 const CorporateAndFoundations = ({ data}) => {
 
   const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
@@ -15,7 +15,7 @@ const CorporateAndFoundations = ({ data}) => {
       <CorporateAndFoundationContainerOne data={dataContainer1}/>
       <CorporateAndFoundationContainerTwo data={dataContainer2}/>
       <CorporateAndFoundationContainerThree data={dataContainer3}/>
-      <CorporateAndFoundationContainerFive data={dataContainer4}/>
+      <CorporateAndFoundationContainerFour data={dataContainer4}/>
     </div>
   )
 }
