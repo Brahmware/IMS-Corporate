@@ -1,19 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const BannerNavigationContainer = (props) => {
     const data = props.data;
     const activetab = props.activetab;
 
+    /* Parallax Background Image*/
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
         <div className="banner-sitemap-container">
             <div className="banner-background">
-                <img src={data.bannerbackground} alt={data.id} />
+                <img 
+                    src={data.bannerbackground} alt={data.id}
+                    /* style for parallax */
+                    style={{ transform: `translateY(${offsetY * 0.33}px)` }}
+                />
             </div>
             <div className="title-tabs-part noselect">
                 <div
                     data-aos='fade-up'
                     data-aos-duration='600'
-                    data-aos-delay='300' 
+                    data-aos-delay='300'
                     className="container page-title-container"
                 >
                     <span className="page-title">
