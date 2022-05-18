@@ -1,0 +1,50 @@
+[
+    {
+        "id": "facebook",
+        "icon":"/socialicons/facebook.svg"
+    },
+    {
+        "id": "instagram",
+        "icon": "/socialicons/instagram.svg"
+    },
+    {
+        "id": "linkedin",
+        "icon": "/socialicons/linkedin.svg"
+    },
+    {
+        "id": "youtube",
+        "icon": "/socialicons/youtube.svg"
+    },
+    {
+        "id": "twitter",
+        "icon": "/socialicons/twitter.svg"
+    },
+    {
+        "id": "tiktok",
+        "icon": "/socialicons/tiktok.svg"
+    },
+    {
+        "id": "pinterest",
+        "icon": "/socialicons/pinterest.svg"
+    },
+    {
+        "id": "snapchat",
+        "icon": "/socialicons/snapchat.svg"
+    },
+    {
+        "id": "behance",
+        "icon": "/socialicons/behance.svg"
+    },
+    {
+        "id": "dribbble",
+        "icon": "/socialicons/dribbble.svg"
+    },
+    {
+        "id": "deviantart",
+        "icon": "/socialicons/deviantart.svg"
+    },
+    {
+        "id": "generic",
+        "icon": "/socialicons/generic.svg"
+    }
+]
