@@ -97,7 +97,7 @@
                 "id": "container_1",
                 "elements": [
                     {
-                        "image": "/images/partners/corporate-and-foundations/container-1/cover.jpg",
+                        "image": "/images/partners/become-a-member/container-1/cover.jpg",
                         "card": {
                             "title": "WHAT WE DO",
                             "subtitle": "India celebrates Exploration",
@@ -118,8 +118,8 @@
                     },
                     {
                         "images": {
-                            "imageTop": "/images/partners/corporate-and-foundations/container-2/image-top.jpg",
-                            "imageBottom": "/images/partners/corporate-and-foundations/container-2/image-bottom.jpg"
+                            "imageTop": "/images/partners/become-a-member/container-2/image-top.jpg",
+                            "imageBottom": "/images/partners/become-a-member/container-2/image-bottom.jpg"
                         }
                     },
                     {
@@ -157,7 +157,7 @@
                         ]
                     },
                     {
-                        "image": "/images/partners/corporate-and-foundations/container-3/cover.jpg",
+                        "image": "/images/partners/become-a-member/container-3/cover.jpg",
                         "card": {
                             "title": "ABOUT US",
                             "subtitle": "India celebrates Exploration",
@@ -170,7 +170,7 @@
                 "id": "container_4",
                 "elements": [
                     {
-                        "image": "/images/partners/corporate-and-foundations/container-4/cover.jpg",
+                        "image": "/images/partners/become-a-member/container-4/cover.jpg",
                         "title": "IMS Explorers",
                         "subtitle": "Changemakers<br /> and Innovators",
                         "buttontext": "APPLY"
