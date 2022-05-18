@@ -47,7 +47,7 @@ const MediaNetworkPage = () => {
                             );
                         case "focus_areas":
                             return (
-                                <FocusAreas />
+                                <FocusAreas data={relatedDataElements}/>
                             );
                         case "technology":
                             return (
