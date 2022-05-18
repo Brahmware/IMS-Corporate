@@ -3,7 +3,7 @@ import CorporateAndFoundationContainerOne from '../../../containers/corporate-an
 import CorporateAndFoundationContainerTwo from '../../../containers/corporate-and-foundation/container-2'
 import CorporateAndFoundationContainerThree from '../../../containers/corporate-and-foundation/container-3'
 import CorporateAndFoundationContainerFive from '../../../containers/corporate-and-foundation/container-5'
-
+ 
 const CorporateAndFoundations = ({ data}) => {
 
   const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
