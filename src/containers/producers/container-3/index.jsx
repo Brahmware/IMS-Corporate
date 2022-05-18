@@ -1,9 +1,9 @@
 import React from 'react'
 import FunfactColumnSpreadCardImageContainer from '../../common/funfact-column-spread-card-image-container'
 
-const ResourcesContainerThree = ({data}) => {
+const ProducersContainerThree = ({data}) => {
   return (
-    <div className='resources-container-3 section-with-padding white-background'>
+    <div className='producers-container-container-3 section-with-padding white-background'>
       <div className="container">
         <FunfactColumnSpreadCardImageContainer
           columnsdata={data[0]}
@@ -15,4 +15,4 @@ const ResourcesContainerThree = ({data}) => {
   )
 }
 
-export default ResourcesContainerThree
+export default ProducersContainerThree

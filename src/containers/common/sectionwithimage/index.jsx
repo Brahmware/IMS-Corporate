@@ -5,7 +5,6 @@ import TwoImage from '../../../components/twoimage/TwoImage';
 const SectionWithImage = (props) => {
     const images = props.containerData.elements[0].images;
     const card = props.containerData.elements[1].card;
-    // console.log("==>"+props)
     return (
         <div className="container imageoverimage-card-container">
             <div className={!props.inverse ? " half-devided-section-with-two-images" : " half-devided-section-with-two-images container-inverse"}>

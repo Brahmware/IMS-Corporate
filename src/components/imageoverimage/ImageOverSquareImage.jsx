@@ -4,7 +4,7 @@ const ImageOverSquareImage = ( props ) => {
     return (
         <div
           className={!props.inverse ? 'image-over-square-image' : 'image-over-square-image inverse'}
-          data-aos='fade-right'
+          data-aos='fade-left'
           data-aos-duration='600'
           data-aos-delay='300'
         >

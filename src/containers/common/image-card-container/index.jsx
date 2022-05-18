@@ -9,7 +9,7 @@ const ImageCardContainer = (props) => {
             <div className={!props.inverse ? "half-devided-section" : "half-devided-section container-inverse"}>
                 <div 
                     className="image-part"
-                    data-aos='fade-right'
+                    data-aos={!props.inverse ? 'fade-right' : 'fade-left'}
                     data-aos-duration='600'
                     data-aos-delay='300'
                 >
@@ -17,7 +17,7 @@ const ImageCardContainer = (props) => {
                 </div>
                 <div
                     className="card-part bookish-card"
-                    data-aos='fade-left'
+                    data-aos={!props.inverse ? 'fade-left' : 'fade-right'}
                     data-aos-duration='600'
                     data-aos-delay='600'
                 >
@@ -25,6 +25,7 @@ const ImageCardContainer = (props) => {
                         title={data.card.title}
                         subtitle={data.card.subtitle}
                         content={data.card.content}
+                        inverse={props.inverse}
                     />
                 </div>
             </div>

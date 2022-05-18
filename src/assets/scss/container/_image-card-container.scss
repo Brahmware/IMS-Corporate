@@ -3,7 +3,7 @@
     & .image-part {
         width: 36em;
         height: 29.06em;
-        border-radius: 0.8em;
+        border-radius: $image-border-radius;
         overflow: hidden;
         flex-shrink: 0;
 
