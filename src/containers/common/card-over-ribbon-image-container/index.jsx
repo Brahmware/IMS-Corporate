@@ -4,7 +4,7 @@ import HollowButton from '../../../components/buttons/HollowButton'
 const CardOverRibbonImageContainer = ({ cardribbondata }) => {
 
     /* Parallax Background Image*/
-    const [offsetY, setOffsetY] = useState(0);
+    const [, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
     const [parallax, setParallax] = useState({});
 
@@ -15,7 +15,7 @@ const CardOverRibbonImageContainer = ({ cardribbondata }) => {
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
-        if(bgImageDistance < windowInnerHeight && bgImageDistance > - bgImageHeight) {
+        if (bgImageDistance < windowInnerHeight && bgImageDistance > - bgImageHeight) {
             setParallax({
                 transform: `translateY(${(windowInnerHeight - bgImageDistance) * 0.33}px)`
             })
@@ -25,11 +25,11 @@ const CardOverRibbonImageContainer = ({ cardribbondata }) => {
     }, [bgImageDistance, bgImageHeight, windowInnerHeight]);
     return (
         <div className='section card-over-ribbon-image-container'>
-                <div className="background-image" ref={backgroundImageRef}>
-                    <img 
-                        src={cardribbondata.image} alt={cardribbondata.title}
-                        style={parallax}
-                    />
+            <div className="background-image" ref={backgroundImageRef}>
+                <img
+                    src={cardribbondata.image} alt={cardribbondata.title}
+                    style={parallax}
+                />
             </div>
             <div className="card-part">
                 <div className="container">
