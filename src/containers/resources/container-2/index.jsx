@@ -2,7 +2,7 @@ import React from 'react'
 import ImageOverSquareImageHeadingContainer from '../../common/image-over-square-image-heading'
 import FilledButton from '../../../components/buttons/FilledButton';
 
-const DiversityInclusionContainerTwo = ({ data }) => {
+const ResourcesContainerTwo = ({ data }) => {
 
   const headingdata = data[0].heading
   const imagedata = data[1].images
@@ -11,7 +11,7 @@ const DiversityInclusionContainerTwo = ({ data }) => {
   const ButtonElement = <FilledButton class={'black-button'} text={carddata.buttontext}/>
 
   return (
-    <div className='diversity-and-inclusion-container-2 section-with-padding'>
+    <div className='resources-container-2 section-with-padding'>
       <ImageOverSquareImageHeadingContainer 
         headertitle = {headingdata.title}
         headersubtitle = {headingdata.subtitle}
@@ -26,4 +26,4 @@ const DiversityInclusionContainerTwo = ({ data }) => {
   )
 }
 
-export default DiversityInclusionContainerTwo
+export default ResourcesContainerTwo
