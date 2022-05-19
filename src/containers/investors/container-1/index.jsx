@@ -1,7 +1,7 @@
 import React from 'react'
 import ImageCardContainer from '../../common/image-card-container'
 
-const InvestorsOne = ({data}) => {
+const InvestorsContainerOne = ({data}) => {
   return (
     <div className='investors-container-1 section-with-padding white-background'>
       <ImageCardContainer data={data[0]} />
@@ -9,4 +9,4 @@ const InvestorsOne = ({data}) => {
   )
 }
 
-export default InvestorsOne
+export default InvestorsContainerOne

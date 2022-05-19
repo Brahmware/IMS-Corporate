@@ -1,20 +1,20 @@
-import React, {  useRef, useState } from 'react'
-import TeamsData from '../../../data/teams.json'
+import React, { useRef, useState } from 'react'
 import CardsCarouselContainer from '../cards-carousel';
 
-const MeetTheMindsContainer = () => {
+
+const CategoryOfPeopleTabsCarouselContainer = ({title, data}) => {
     const tabsRef = useRef({});
-    const [activeTab, setActiveTab] = useState("board_of_leaders");
+    const [activeTab, setActiveTab] = useState(data[0].typeid);
 
     const handleTabClick = (event) => {
         event.preventDefault();
         setActiveTab(event.target.id);
     }
 
-    const relatedData = TeamsData.filter(data => data.teamid === activeTab)[0].members;
+    const relatedData = data.filter(data => data.typeid === activeTab)[0].members;
 
     return (
-        <div className='meet-the-minds-container noselect'>
+        <div className='category-of-people-tabs-carousel-container noselect'>
             <div className="container">
                 <div
                     className="title"
@@ -22,7 +22,7 @@ const MeetTheMindsContainer = () => {
                     data-aos-duration='600'
                     data-aos-delay='300'
                 >
-                    <span>MEET THE MINDS</span>
+                    <span>{title}</span>
                 </div>
             </div>
             <div
@@ -33,20 +33,20 @@ const MeetTheMindsContainer = () => {
             >
                 <div className="tabs-section">
                     {
-                        TeamsData.map((team, key) => {
+                        data.map((type, key) => {
                             return (
                                 <div
                                     key={key}
                                     className="each-tab"
-                                    id={team.teamid}
+                                    id={type.typeid}
                                     onClick={handleTabClick}
-                                    ref={element => tabsRef.current[team.teamid] = element}
+                                    ref={element => tabsRef.current[type.typeid] = element}
                                 >
                                     <div className="tab-name subtitle">
-                                        <span>{team.teamname}</span>
+                                        <span>{type.typename}</span>
                                     </div>
                                     <div className="marker-holder">
-                                        <div className={team.teamid === activeTab ? 'marker active' : 'marker'} />
+                                        <div className={type.typeid === activeTab ? 'marker active' : 'marker'} />
                                     </div>
                                 </div>
                             )
@@ -58,7 +58,7 @@ const MeetTheMindsContainer = () => {
             <div className="cards-carousel-container">
                 <CardsCarouselContainer data={relatedData} />
             </div>
-            <div 
+            <div
                 className="divider bottom-divider"
                 data-aos='fade-up'
                 data-aos-duration='600'
@@ -68,4 +68,4 @@ const MeetTheMindsContainer = () => {
     )
 }
 
-export default MeetTheMindsContainer
+export default CategoryOfPeopleTabsCarouselContainer

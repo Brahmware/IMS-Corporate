@@ -1,7 +1,7 @@
 import React from 'react'
 import FunfactColumnSpreadCardImageContainer from '../../common/funfact-column-spread-card-image-container'
 
-const SustainabilityStatementThree = ({data}) => {
+const SustainabilityStatementContainerThree = ({data}) => {
   return (
     <div className='sustainabilitystatement-container-3 section-with-padding white-background'>
       <div className="container">
@@ -15,4 +15,4 @@ const SustainabilityStatementThree = ({data}) => {
   )
 }
 
-export default SustainabilityStatementThree
+export default SustainabilityStatementContainerThree

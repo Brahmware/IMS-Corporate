@@ -1,7 +1,7 @@
 import React from 'react'
 import CardOverRibbonImageContainer from '../../common/card-over-ribbon-image-container'
 
-const FocusAreasFour = ({data}) => {
+const FocusAreasContainerFour = ({data}) => {
   return (
     <div className='corporate-and-foundations-container-5'>
       <CardOverRibbonImageContainer cardribbondata = {data[0]}/>
@@ -9,4 +9,4 @@ const FocusAreasFour = ({data}) => {
   )
 }
 
-export default FocusAreasFour
+export default FocusAreasContainerFour

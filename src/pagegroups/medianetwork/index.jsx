@@ -12,6 +12,7 @@ import Technology from './technology'
 /* Importing the related data */
 import sitemapData from "../../data/sitemap.json"
 import BusinessAndBrandsData from "../../data/media-network.json"
+import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 const MediaNetworkPage = () => {
     const mediaNetworkSitemap = sitemapData.find(pageGroup => pageGroup.id === 'media_network')
     const { hash } = useLocation();
@@ -26,11 +27,11 @@ const MediaNetworkPage = () => {
         setactivetab(event.target.id);
         const pageObject = mediaNetworkSitemap && mediaNetworkSitemap.pages.find(page => page.id === event.target.id);
         window.history.replaceState({}, pageObject.page, pageObject.path);
+        scrollToNavigationPanel();
     }
 
     const relatedData = BusinessAndBrandsData.find((data => data.id === activetab));
     const relatedDataElements = relatedData && relatedData.elements;
-    console.log(relatedDataElements)
 
     return (
         <React.Fragment>

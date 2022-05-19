@@ -1,7 +1,7 @@
 import React from 'react'
 import FunfactColumnSpreadCardImageContainer from '../../common/funfact-column-spread-card-image-container'
 
-const FocusAreasThree = ({ data }) => {
+const FocusAreasContainerThree = ({ data }) => {
   return (
     <div className='corporateandfoundations-container-3 section-with-padding white-background'>
       <div className="container">
@@ -15,4 +15,4 @@ const FocusAreasThree = ({ data }) => {
   )
 }
 
-export default FocusAreasThree
+export default FocusAreasContainerThree

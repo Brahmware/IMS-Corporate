@@ -1,0 +1,77 @@
+.category-of-people-tabs-carousel-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+
+    & .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    & .tabs-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+
+        & .tabs-section {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            & .each-tab {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                & * {
+                    pointer-events: none;
+                }
+
+                & .marker-holder {
+                    height: 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+
+                    & .marker {
+                        position: absolute;
+                        height: $thicker-divider;
+                        width: 0%;
+                        background-color: $primary;
+                        transform: translateY(calc(1em + $thicker-divider/2));
+                        transition: width $transition-specific;
+
+                        &.active {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .tabs-divider {
+            width: 100%;
+            height: $thicker-divider;
+            background-color: rgba($color: $primary, $alpha: 0.2);
+        }
+    }
+
+    & .cards-carousel-container {
+        margin: 3em 0;
+    }
+
+}

@@ -11,6 +11,7 @@ import Resources from './resources'
 /* Importing the related data */
 import sitemapData from "../../data/sitemap.json"
 import EducationTeachingData from '../../data/education-and-teaching.json'
+import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 
 const EducationTeachingPage = () => {
     const educationTeachingSitemap = sitemapData.find(pageGroup => pageGroup.id === 'education_and_teaching')
@@ -26,6 +27,7 @@ const EducationTeachingPage = () => {
         setactivetab(event.target.id);
         const pageObject = educationTeachingSitemap && educationTeachingSitemap.pages.find(page => page.id === event.target.id);
         window.history.replaceState({}, pageObject.page, pageObject.path);
+        scrollToNavigationPanel();
     }
 
     const relatedData = EducationTeachingData.find(( data => data.id === activetab ));

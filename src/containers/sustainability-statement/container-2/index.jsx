@@ -2,7 +2,7 @@ import React from 'react'
 import ImageOverSquareImageHeadingContainer from '../../common/image-over-square-image-heading'
 import FilledButton from '../../../components/buttons/FilledButton';
 
-const SustainabilityStatementTwo = ({ data }) => {
+const SustainabilityStatementContainerTwo = ({ data }) => {
   const headingdata = data[0].heading
   const imagedata = data[1].images
   const carddata = data[2].card
@@ -24,4 +24,4 @@ const SustainabilityStatementTwo = ({ data }) => {
   )
 }
 
-export default SustainabilityStatementTwo
+export default SustainabilityStatementContainerTwo

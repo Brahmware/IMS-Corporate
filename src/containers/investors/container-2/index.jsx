@@ -2,7 +2,7 @@ import React from 'react'
 import ImageOverSquareImageHeadingContainer from '../../common/image-over-square-image-heading'
 import FilledButton from '../../../components/buttons/FilledButton';
 
-const InvestorsTwo = ({ data }) => {
+const InvestorsContainerTwo = ({ data }) => {
   const headingdata = data[0].heading
   const imagedata = data[1].images
   const carddata = data[2].card
@@ -24,4 +24,4 @@ const InvestorsTwo = ({ data }) => {
   )
 }
 
-export default InvestorsTwo
+export default InvestorsContainerTwo
