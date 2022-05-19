@@ -10,6 +10,8 @@ import "./assets/css/plugins/animate.css";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/swiper.scss";
 import './assets/scss/style.scss';
+import PrivacyPolicyPage from "./pagegroups/privacy-policy";
+// import Navbar from "./containers/common/navbar";
 
 // UI Component Goes Here
 const HomePage = lazy(() => import("./pagegroups/home"));
@@ -70,6 +72,11 @@ const App = () => {
             path={'/commercial'}
             exact
             component={CommercialPage}   
+          />
+          <Route
+            path={'/privacy_policy'}
+            exact
+            component={PrivacyPolicyPage}   
           />
 
         </Switch>

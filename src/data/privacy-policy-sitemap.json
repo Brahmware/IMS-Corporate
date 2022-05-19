@@ -1,0 +1,32 @@
+[
+     {
+        "id": "privacy_policy",
+        "pageGroup": "Privacy Policy",
+        "pages": [{
+                "id": "visitor_agreement",
+                "page": "visitor agreement",
+                "path": "/privacy_policy#visitor_agreement"
+            },
+            {
+                "id": "privacy_notice",
+                "page": "privacy notice",
+                "path": "/privacy_policy#privacy_notice"
+            },
+            {
+                "id": "website_accessibility_statement",
+                "page": "website accessibility statement",
+                "path": "/privacy_policy#website_accessibility_statement"
+            },
+            {
+                "id": "code_of_ethics",
+                "page": "code of ethics",
+                "path": "/privacy_policy#code_of_ethics"
+            },
+            {
+                "id": "faqs",
+                "page": "faqs",
+                "path": "/privacy_policy#faqs"
+            }
+        ]
+    }
+]

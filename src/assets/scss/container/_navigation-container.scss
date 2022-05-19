@@ -1,0 +1,56 @@
+.navigation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .title-tabs-part {
+        width: 100%;
+        background-color: $white;
+        & .page-title-container {
+            height: 0;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            & .page-title {
+                position: absolute;
+                color: $white;
+                display: inline-block;
+                font-size: 5.5em;
+                font-weight: 1000;
+                line-height: 1em;
+                transform: translateY(-0.36em);
+                text-transform: uppercase;
+            }
+        }
+        
+        & .tabs-container {
+            width: 100%;
+            height: $banner-tab-container-height;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            & .each-tab{
+                font-size: 1.125em;
+                font-weight: 1000;
+                text-transform: uppercase;
+                color: $light-text-color;
+                transition: $transition-base;
+                cursor: pointer;
+                & span {
+                    pointer-events: none;
+                }
+                &:hover {
+                    color: rgba($color: $black, $alpha: 0.75);
+                }
+                &.active-tab {
+                    color: $black;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+}
