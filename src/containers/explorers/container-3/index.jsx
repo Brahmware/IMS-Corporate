@@ -1,10 +1,13 @@
 import React from 'react'
-import CardOverRibbonImageContainer from '../../common/card-over-ribbon-image-container'
+import CategoryOfPeopleTabsCarouselContainer from '../../common/category-of-people-tabs-carousel-container'
 
-const ExplorersContainerThree = ({ data }) => {
+/* Importing the Data */
+import ExplorersData from '../../../data/explorers.json'
+
+const ExplorersContainerThree = () => {
   return (
-    <div className='explorers-container-container-container-3'>
-      <CardOverRibbonImageContainer cardribbondata = {data[0]}/>
+    <div className='explorers-container-3 section-with-padding'>
+      <CategoryOfPeopleTabsCarouselContainer title={"MEET THE EXPLORERS"} data={ExplorersData} />
     </div>
   )
 }

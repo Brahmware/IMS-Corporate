@@ -4,18 +4,18 @@ import HollowButton from '../../../components/buttons/HollowButton'
 const CardOverRibbonImageContainer = ({ cardribbondata }) => {
 
     /* Parallax Background Image*/
-    const [offsetY, setOffsetY] = useState(0);
+    const [, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
     const [parallax, setParallax] = useState({});
 
-    const backgroundImageRef = useRef();
-    const bgImageDistance = backgroundImageRef.current && backgroundImageRef.current.getBoundingClientRect().top;
-    const bgImageHeight = backgroundImageRef.current && backgroundImageRef.current.getBoundingClientRect().height;
+    const backgroundImagePartRef = useRef();
+    const bgImageDistance = backgroundImagePartRef.current && backgroundImagePartRef.current.getBoundingClientRect().top;
+    const bgImageHeight = backgroundImagePartRef.current && backgroundImagePartRef.current.getBoundingClientRect().height;
     const windowInnerHeight = window.innerHeight;
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
-        if(bgImageDistance < windowInnerHeight && bgImageDistance > - bgImageHeight) {
+        if (bgImageDistance < windowInnerHeight && bgImageDistance > - bgImageHeight) {
             setParallax({
                 transform: `translateY(${(windowInnerHeight - bgImageDistance) * 0.33}px)`
             })
@@ -25,11 +25,15 @@ const CardOverRibbonImageContainer = ({ cardribbondata }) => {
     }, [bgImageDistance, bgImageHeight, windowInnerHeight]);
     return (
         <div className='section card-over-ribbon-image-container'>
-                <div className="background-image" ref={backgroundImageRef}>
-                    <img 
-                        src={cardribbondata.image} alt={cardribbondata.title}
-                        style={parallax}
-                    />
+            <div className="background-image-part" ref={backgroundImagePartRef}>
+                <div className="background-image-holder">
+                    <div className="background-image">
+                        <img
+                            src={cardribbondata.image} alt={cardribbondata.title}
+                            style={parallax}
+                        />
+                    </div>
+                </div>
             </div>
             <div className="card-part">
                 <div className="container">

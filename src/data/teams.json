@@ -1,7 +1,7 @@
 [
     {
-        "teamid": "board_of_leaders",
-        "teamname": "Board of Leaders",
+        "typeid": "board_of_leaders",
+        "typename": "Board of Leaders",
         "members": [
             {
                 "id": 101,
@@ -20,7 +20,7 @@
                         "link": "https://www.facebook.com/Prakash.Mandal22"
                     }
                 ],
-                "profilepicture": "/images/team/leaders/prakash/profile-picture.jpg",
+                "profilepicture": "/images/people/team/leaders/prakash/profile-picture.jpg",
                 "designation": "Founder, Managing Director, CEO"
             },
             {
@@ -40,7 +40,7 @@
                         "link": "https://www.facebook.com/sanchayan.bhunia.1"
                     }
                 ],
-                "profilepicture": "/images/team/leaders/sanchayan/profile-picture.jpg",
+                "profilepicture": "/images/people/team/leaders/sanchayan/profile-picture.jpg",
                 "designation": "Founder, Chief Innovator, CTO"
             },
             {
@@ -60,7 +60,7 @@
                         "link": "https://www.facebook.com/shashi.b.prasad.10"
                     }
                 ],
-                "profilepicture": "/images/team/leaders/saurav/profile-picture.jpg",
+                "profilepicture": "/images/people/team/leaders/saurav/profile-picture.jpg",
                 "designation": "Chief Strategy & Sales Officer"
             },
             {
@@ -69,28 +69,28 @@
                 "socials": [
                     {
                         "id": "twitter",
-                        "icon": "/images/team/social-icons/twitter.svg",
+                        "icon": "/images/people/team/social-icons/twitter.svg",
                         "link": ""
                     },
                     {
                         "id": "linkedin",
-                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "icon": "/images/people/team/social-icons/linkedin.svg",
                         "link": ""
                     },
                     {
                         "id": "facebook",
-                        "icon": "/images/team/social-icons/facebook.svg",
+                        "icon": "/images/people/team/social-icons/facebook.svg",
                         "link": "https://www.facebook.com/shashi.b.prasad.10"
                     }
                 ],
-                "profilepicture": "/images/team/leaders/sashi/profile-picture.jpg",
+                "profilepicture": "/images/people/team/leaders/sashi/profile-picture.jpg",
                 "designation": "Chief of Staff and Project Alignment"
             }
         ]
     },
     {
-        "teamid": "brands_and_businesses",
-        "teamname": "Brands & Businesses",
+        "typeid": "brands_and_businesses",
+        "typename": "Brands & Businesses",
         "members": [
             {
                 "id": 101,
@@ -102,7 +102,7 @@
                     },
                     {
                         "id": "linkedin",
-                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "icon": "/images/people/team/social-icons/linkedin.svg",
                         "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
                     },
                     {
@@ -110,7 +110,7 @@
                         "link": "https://www.facebook.com/Prakash.Mandal22"
                     }
                 ],
-                "profilepicture": "/images/team/members/prakash/profile-picture.jpg",
+                "profilepicture": "/images/people/team/members/prakash/profile-picture.jpg",
                 "designation": "Founder, Chairman, CMO"
             },
             {
@@ -130,7 +130,7 @@
                         "link": "https://www.facebook.com/sanchayan.bhunia.1"
                     }
                 ],
-                "profilepicture": "/images/team/members/sanchayan/profile-picture.jpg",
+                "profilepicture": "/images/people/team/members/sanchayan/profile-picture.jpg",
                 "designation": "Founder, CTO, COO"
             },
             {
@@ -143,7 +143,7 @@
                     },
                     {
                         "id": "linkedin",
-                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "icon": "/images/people/team/social-icons/linkedin.svg",
                         "link": ""
                     },
                     {
@@ -151,7 +151,7 @@
                         "link": "https://www.facebook.com/shashi.b.prasad.10"
                     }
                 ],
-                "profilepicture": "/images/team/members/saurav/profile-picture.jpg",
+                "profilepicture": "/images/people/team/members/saurav/profile-picture.jpg",
                 "designation": "CEO, Communication Manager"
             },
             {
@@ -160,12 +160,12 @@
                 "socials": [
                     {
                         "id": "twitter",
-                        "icon": "/images/team/social-icons/twitter.svg",
+                        "icon": "/images/people/team/social-icons/twitter.svg",
                         "link": ""
                     },
                     {
                         "id": "linkedin",
-                        "icon": "/images/team/social-icons/linkedin.svg",
+                        "icon": "/images/people/team/social-icons/linkedin.svg",
                         "link": ""
                     },
                     {
@@ -173,7 +173,7 @@
                         "link": "https://www.facebook.com/shashi.b.prasad.10"
                     }
                 ],
-                "profilepicture": "/images/team/members/sashi/profile-picture.jpg",
+                "profilepicture": "/images/people/team/members/sashi/profile-picture.jpg",
                 "designation": "CEO, Communication Manager"
             }
         ]

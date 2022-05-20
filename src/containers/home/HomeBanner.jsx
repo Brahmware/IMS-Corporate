@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Autoplay } from "swiper/core";
 
@@ -31,6 +31,17 @@ const HomeBanner = (props) => {
         paginationHolder.appendChild(bannerPaginationRef.current);
     }, [bannerPaginationRef])
 
+
+    /* Parallax Background Image*/
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
         <div className='section home-banner-section'>
             <Swiper {...params}>
@@ -40,7 +51,10 @@ const HomeBanner = (props) => {
                             <SwiperSlide key={key} >
                                 <div className="swiper-slide">
                                     <div className="background-image">
-                                        <img src={eachSlide.image} alt={key} />
+                                        <img 
+                                            src={eachSlide.image} alt={key} 
+                                            style={{ transform: `translateY(${offsetY * 0.33}px)` }}
+                                        />
                                     </div>
                                     <div className="container">
                                         <div className="banner-card" >

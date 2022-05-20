@@ -16,7 +16,7 @@ const BannerNavigationContainer = (props) => {
 
     return (
         <div className="banner-sitemap-container">
-            <div className="banner-background">
+            <div className="banner-background" >
                 <img 
                     src={data.bannerbackground} alt={data.id}
                     /* style for parallax */

@@ -10,6 +10,7 @@ import CorporateAndFoundations from './corporateandfoundations'
 /* Importing the related data */
 import partnersData from "../../data/partners.json"
 import sitemapData from "../../data/sitemap.json"
+import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 
 const PartnersPage = () => {
     const partnersSitemap = sitemapData.find(pageGroup => pageGroup.id === 'partners')
@@ -25,11 +26,12 @@ const PartnersPage = () => {
         setactivetab(event.target.id);
         const pageObject = partnersSitemap && partnersSitemap.pages.find(page => page.id === event.target.id);
         window.history.replaceState({}, pageObject.page, pageObject.path);
+        scrollToNavigationPanel();
     }
 
     const relatedData = partnersData.find((data => data.id === activetab));
     const relatedDataElements = relatedData && relatedData.elements;
-
+    // console.log(relatedDataElements)
     return (
         <React.Fragment>
             <SEO title={`IMS ${partnersSitemap.pageGroup} - ${relatedData.pagename}`} />
