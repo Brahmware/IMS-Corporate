@@ -2,7 +2,7 @@ import React from 'react'
 import ImageOverSquareImageHeadingContainer from '../../common/image-over-square-image-heading'
 import FilledButton from '../../../components/buttons/FilledButton';
 
-const FocusAreasTwo = ({ data }) => {
+const FocusAreasContainerTwo = ({ data }) => {
   const headingdata = data[0].heading
   const imagedata = data[1].images
   const carddata = data[2].card
@@ -24,4 +24,4 @@ const FocusAreasTwo = ({ data }) => {
   )
 }
 
-export default FocusAreasTwo
+export default FocusAreasContainerTwo

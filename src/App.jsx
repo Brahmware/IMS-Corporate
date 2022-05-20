@@ -14,6 +14,7 @@ import PrivacyPolicyPage from "./pagegroups/privacy-policy";
 // import Navbar from "./containers/common/navbar";
 
 // UI Component Goes Here
+import LoadingPage from "./pagegroups/loading-page";
 const HomePage = lazy(() => import("./pagegroups/home"));
 const BusinessPage = lazy(() => import("./pagegroups/business"));
 const CollaboratorsPage = lazy(() => import("./pagegroups/collaborators"));
@@ -36,7 +37,7 @@ const App = () => {
   
   return (
     <Router>
-      <Suspense fallback={<p>Loading</p>}>
+      <Suspense fallback={<LoadingPage />}>
         <Switch>
           <Route
             path={'/'}

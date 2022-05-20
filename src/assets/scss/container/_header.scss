@@ -10,20 +10,29 @@
     position: sticky;
     z-index: 10;
     background-color: $white;
+
+    /* @supports (backdrop-filter: blur($default-blur)) {
+        background-color: rgba($color: $white, $alpha: $opacity-very-high);
+        backdrop-filter: blur($default-blur);
+    } */
+
     box-shadow: $default-shadow;
     transition: height $transition-specific;
+
 
     & .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     & .header-left,
     & .header-right {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 3em;
+
         & .join-button {
             height: $header-button-height;
             display: flex;
@@ -31,18 +40,20 @@
             align-items: center;
             font-weight: 900;
         }
+
         & .live-button {
             padding: 0.5em 1em;
             font-weight: 900;
         }
     }
+
     & .logo {
         & svg {
             height: 2em;
         }
     }
 
-    &.shrinked-header{
+    &.shrinked-header {
         height: $shrinked-header-height;
     }
 }

@@ -121,7 +121,7 @@ $primary-haze: rgba($primary, 0.6);
 // Divider
 $thicker-divider: 0.2em;
 $thick-divider: 0.08em;
-$thin-divider: 0.04em;
+$thin-divider: 0.08em;
 
 $normal-divider-length: 10em;
 // base opacity
@@ -137,7 +137,13 @@ $image-border-radius: 0.8em;
 // base opacity
 $opacity-base: 0.6;
 $opacity-less: 0.4;
-$opacity-very-less: 0.3;
+$opacity-very-less: 0.1;
 $opacity-high: 0.8;
-$opacity-very-high: 0.99;
+$opacity-very-high: 0.95;
 $opacity-full: 1;
+
+// Blur Variables
+$default-blur: 6px;
+
+// Brightness Variables
+$default-low-brightness: 0.65;

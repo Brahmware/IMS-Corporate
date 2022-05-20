@@ -11,6 +11,7 @@ import SustainabilityStatement from './sustainabilitystatement'
 /* Importing the related data */
 import sitemapData from "../../data/sitemap.json"
 import CommercialData from '../../data/commercial.json'
+import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 
 const CommercialPage = () => {
     const commercialSitemap = sitemapData.find(pageGroup => pageGroup.id === 'commercial')
@@ -26,6 +27,7 @@ const CommercialPage = () => {
         setactivetab(event.target.id);
         const pageObject = commercialSitemap && commercialSitemap.pages.find(page => page.id === event.target.id);
         window.history.replaceState({}, pageObject.page, pageObject.path);
+        scrollToNavigationPanel();
     }
 
     const relatedData = CommercialData.find(( data => data.id === activetab ));

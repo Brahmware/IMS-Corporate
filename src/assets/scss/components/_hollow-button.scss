@@ -1,6 +1,11 @@
 .hollow-button {
     font-size: 1em;
-    background-color: rgba($primary, 0);
+    background-color: rgba($white, 0);
+
+    @supports (backdrop-filter: blur($default-blur)) {
+       background-color: rgba($color: $white, $alpha: $opacity-very-less);
+    }
+
     padding: 0.5em 2em;
     border: 0;
     border-radius: 0%;
@@ -132,7 +137,7 @@
     }
 
     &.white-button {
-        background-color: rgba($black, 0);
+        /* background-color: rgba($black, 0); */
         outline: 1px solid $white;
         border-radius: $button-border-radius;
 

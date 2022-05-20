@@ -3,7 +3,6 @@ import BusinessAndBrandsContainerOne from '../../../containers/business-and-bran
 
 const BusinessAndBrands = ({ data }) => {
   const dataContainer1 = data && data.find(data => data.id === 'container_1').elements
-  console.log(dataContainer1)
 
   return (
     <div className="business-and-brands-page">

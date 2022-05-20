@@ -1,14 +1,11 @@
 import React from 'react'
-import PackedAlternatingImageCardContainer from '../../common/packed-alternating-image-card-container'
+import ImageCardContainer from '../../common/image-card-container'
 
 const ExplorersContainerTwo = ({ data }) => {
-
-    const cardTopData = data && data.find(datum => datum.id === "cardtop")
-    const cardBottomData = data && data.find(datum => datum.id === "cardbottom")
     
     return (
-        <div className='explorers-container-container-container-2 white-background'>
-            <PackedAlternatingImageCardContainer cardtopdata={cardTopData} cardbottomdata={cardBottomData}/>
+        <div className='explorers-container-2 section-with-padding white-background'>
+            <ImageCardContainer data={data[0]} />
         </div>
     )
 }
