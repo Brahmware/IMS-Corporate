@@ -34,7 +34,8 @@ const PrivacyPolicyPage = () => {
     }
 
     const relatedData = PrivacyPolicyData.find(( data => data.id === activetab ));
-    // const relatedDataElements = relatedData && relatedData.elements; 
+    const relatedDataElements = relatedData && relatedData.elements; 
+    // console.log(relatedDataElements)
 
     return (
         <React.Fragment>
@@ -48,27 +49,27 @@ const PrivacyPolicyPage = () => {
 
                             case "visitor_agreement":
                                 return (
-                                    <VisitorAgreement/>
+                                    <VisitorAgreement data={relatedDataElements}/>
                                 );
                             case "privacy_notice":
                                 return (
-                                    <PrivacyNotice/>
+                                    <PrivacyNotice data={relatedDataElements }/>
                                 );
                             case "website_accessibility_statement":
                                 return (
-                                   <WebsiteAccessibilityStatement/>
+                                   <WebsiteAccessibilityStatement data={relatedDataElements}/>
                                 );
                             case "code_of_ethics":
                                 return (
-                                    <CodeOfEthics/>
+                                    <CodeOfEthics data={relatedDataElements}/>
                                 );
                             case "faqs":
                                 return (
-                                    <Faqs/>
+                                    <Faqs data={relatedDataElements}/>
                                 );
                             default:
                                 return (
-                                    <VisitorAgreement/>
+                                    <VisitorAgreement data={relatedDataElements}/>
                                 );
 
                         }

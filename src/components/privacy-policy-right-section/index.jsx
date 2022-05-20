@@ -7,7 +7,7 @@ const PrivacyPolicyRightSection = () => {
             {
                 PrivacyPolicyData[0].pages.map((data, index) => {
                     return (
-                        <a href={data.path}>{data.page}</a>
+                        <a href={data.path} key={index}>{data.page}</a>
                     )
                 })
            }

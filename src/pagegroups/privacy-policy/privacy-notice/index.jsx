@@ -1,8 +1,12 @@
 import React from 'react'
+import ContentContainer from "../../../containers/common/contentcontainer"
 
-const PrivacyNotice = () => {
+const PrivacyNotice = (props) => {
+  const card = props.data[0]
   return (
-    <div>PrivacyNotice</div>
+    <div className=" white-background">
+      <ContentContainer card={card} />
+    </div>
   )
 }
 

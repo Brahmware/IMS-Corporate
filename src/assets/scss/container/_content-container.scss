@@ -1,0 +1,67 @@
+.white-background {
+    // background-color: $white;
+    padding-right: 4em;
+    padding-left: 4em;
+
+    & .half-divided-section-with-padding {
+        display: flex;
+        align-items: center;
+        padding: 3em 0em;
+        gap: $container-gap;
+
+        & .heading-part {
+            width: 50%;
+
+            & .title {
+                font-size: 4em;
+                font-weight: 1000;
+                line-height: 1em;
+                // letter-spacing: 0.02em;
+            }
+
+            & .date {
+                margin-top: 0.7em;
+                font-weight: 900;
+                margin-bottom: 0.7em;
+            }
+
+            & .bold-paragraph {
+                margin-bottom: 0.7em;
+                font-weight: 900;
+                line-height: 1.3em;
+            }
+
+            & .light-paragraph {
+                font-size: 0.8em;
+                line-height: 1.3em;
+            }
+        }
+
+        & .card-part {
+            height: 30em;
+            width: 50%;
+            overflow-y: scroll;
+            padding: 2em;
+            background-color: $default-background;
+
+            & .content {
+                font-size: 0.8em;
+            }
+
+        }
+
+        .card-part::-webkit-scrollbar {
+            width: 0.2em;
+        }
+
+        .card-part::-webkit-scrollbar-track {
+            background: $default-background;
+        }
+
+        .card-part::-webkit-scrollbar-thumb {
+            background-color: $light-text-color;
+            border: 0.5px solid $light-text-color;
+            border-radius: 3px;
+        }
+    }
+}

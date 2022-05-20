@@ -1,8 +1,12 @@
 import React from 'react'
+import ContentContainer from "../../../containers/common/contentcontainer"
 
-const WebsiteAccessibilityStatement = () => {
+const WebsiteAccessibilityStatement = (props) => {
+  const card = props.data[0]
   return (
-    <div>WebsiteAccessibilityStatement</div>
+    <div className=" white-background">
+      <ContentContainer card={card} />
+    </div>
   )
 }
 
