@@ -8,7 +8,8 @@ import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 
 /* Importing the related data */
 // import sitemapData from "../../data/sitemap.json"
-import PrivacyPolicyData from "../../data/privacy-policy-sitemap.json"
+import PrivacyPolicyData from "../../data/privacy-policy-data.json"
+import PrivacyPolicySitemapData from "../../data/privacy-policy-sitemap.json"
 import VisitorAgreement from './visitor-agreement'
 import PrivacyNotice from './privacy-notice'
 import WebsiteAccessibilityStatement from './website-accessibilty-statement'
@@ -16,7 +17,7 @@ import CodeOfEthics from './code-of-ethics'
 import Faqs from './faqs'
 
 const PrivacyPolicyPage = () => {
-    const PrivacyPolicySitemap = PrivacyPolicyData.find(pageGroup => pageGroup.id === 'privacy_policy')
+    const PrivacyPolicySitemap = PrivacyPolicySitemapData.find(pageGroup => pageGroup.id === 'privacy_policy')
     const { hash } = useLocation();
 
     const [activetab, setactivetab] = useState('visitor_agreement');
@@ -32,12 +33,12 @@ const PrivacyPolicyPage = () => {
         scrollToNavigationPanel();
     }
 
-    // const relatedData = BusinessData.find(( data => data.id === activetab ));
+    const relatedData = PrivacyPolicyData.find(( data => data.id === activetab ));
     // const relatedDataElements = relatedData && relatedData.elements; 
 
     return (
         <React.Fragment>
-            <SEO title={`IMS ${PrivacyPolicySitemap.pageGroup}`} />
+            <SEO title={`IMS ${PrivacyPolicySitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper business-page-wrapper">
                 <Header />
                 <NavigationContainer data={PrivacyPolicySitemap} activetab={activetab} onClickTab={onClickTab} />
