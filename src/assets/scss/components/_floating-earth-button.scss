@@ -1,0 +1,22 @@
+.floating-earth-button {
+    position: fixed;
+    bottom: 2.9em;
+    right: 2.9em;
+    z-index: 4;
+    cursor: pointer;
+
+    & .button-image {
+        height: 4.26em;
+        width: 4.26em;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        box-shadow: $default-shadow;
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

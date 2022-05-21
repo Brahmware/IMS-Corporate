@@ -12,6 +12,7 @@ import Resources from './resources'
 import sitemapData from "../../data/sitemap.json"
 import EducationTeachingData from '../../data/education-and-teaching.json'
 import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
+import FloatinEarthButton from '../../components/floating-button'
 
 const EducationTeachingPage = () => {
     const educationTeachingSitemap = sitemapData.find(pageGroup => pageGroup.id === 'education_and_teaching')
@@ -30,12 +31,12 @@ const EducationTeachingPage = () => {
         scrollToNavigationPanel();
     }
 
-    const relatedData = EducationTeachingData.find(( data => data.id === activetab ));
+    const relatedData = EducationTeachingData.find((data => data.id === activetab));
     const relatedDataElements = relatedData && relatedData.elements;
 
     return (
         <React.Fragment>
-            <SEO title={`IMS ${educationTeachingSitemap.pageGroup} - ${relatedData.pagename}`}/>
+            <SEO title={`IMS ${educationTeachingSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper educationTeaching-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={educationTeachingSitemap} activetab={activetab} onClickTab={onClickTab} />
@@ -44,23 +45,24 @@ const EducationTeachingPage = () => {
 
                         case "resources":
                             return (
-                                <Resources data={relatedDataElements}/>
+                                <Resources data={relatedDataElements} />
                             );
                         case "professional_learning":
                             return (
-                                <ProfessionalLearning data={relatedDataElements}/>
+                                <ProfessionalLearning data={relatedDataElements} />
                             );
                         case "immersive_experience":
                             return (
-                                <ImmersiveExperience data={relatedDataElements}/>
+                                <ImmersiveExperience data={relatedDataElements} />
                             );
                         default:
                             return (
-                                <Resources data={relatedDataElements}/>
+                                <Resources data={relatedDataElements} />
                             );
 
                     }
                 })()}
+                <FloatinEarthButton />
                 <Footer />
             </div>
         </React.Fragment>

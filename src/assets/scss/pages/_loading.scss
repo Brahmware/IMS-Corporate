@@ -47,4 +47,8 @@
             transform: translateX(4em)
         }
     }
+
+    @media #{$extraBig-device} {
+        font-size: 1.3;
+    }
 }

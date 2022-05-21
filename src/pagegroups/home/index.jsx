@@ -1,4 +1,5 @@
 import React from 'react'
+import FloatinEarthButton from '../../components/floating-button';
 import SEO from '../../components/SEO';
 import Footer from '../../containers/footer';
 import Header from '../../containers/header';
@@ -17,7 +18,6 @@ const HomePage = () => {
   const homeData = Data.homeData;
 
   return (
-
     <React.Fragment>
       <SEO title='Indian Media Syndicate' />
       <div className="page-wrapper home-page-wrapper">
@@ -30,6 +30,7 @@ const HomePage = () => {
         <HomeExplorers data={homeData[4]} />
         <HomeOurSymbol data={homeData[5]} />
         <HomeNetworks data={homeData[6]} />
+        <FloatinEarthButton />
         <Footer />
       </div>
     </React.Fragment>
