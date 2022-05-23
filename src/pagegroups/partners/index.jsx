@@ -11,6 +11,7 @@ import CorporateAndFoundations from './corporateandfoundations'
 import partnersData from "../../data/partners.json"
 import sitemapData from "../../data/sitemap.json"
 import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
+import FloatinEarthButton from '../../components/floating-button'
 
 const PartnersPage = () => {
     const partnersSitemap = sitemapData.find(pageGroup => pageGroup.id === 'partners')
@@ -43,21 +44,22 @@ const PartnersPage = () => {
 
                         case "corporate_and_foundations":
                             return (
-                                <CorporateAndFoundations data={relatedDataElements}/>
+                                <CorporateAndFoundations data={relatedDataElements} />
                             );
                         case "become_a_member":
                             return (
-                                <BecomeAMember data={relatedDataElements}/>
+                                <BecomeAMember data={relatedDataElements} />
                             );
                         default:
                             return (
-                                <CorporateAndFoundations data={relatedDataElements}/>
+                                <CorporateAndFoundations data={relatedDataElements} />
                             );
 
                     }
                 })()}
                 <Footer />
             </div>
+            <FloatinEarthButton />
         </React.Fragment>
     )
 }

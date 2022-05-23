@@ -199,6 +199,29 @@ img {
     justify-content: flex-start;
     gap: $container-gap;
 
+    &>div {
+        width: 50%;
+    }
+
+    &.container-inverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.odd-divided-section {
+    display: flex;
+    justify-content: flex-start;
+    gap: $container-gap;
+
+    &>div {
+        &:first-child {
+            width: 45.48%;
+        }
+        &:last-child {
+            width: 54.52%;
+        }
+    }
+
     &.container-inverse {
         flex-direction: row-reverse;
     }
@@ -230,10 +253,10 @@ img {
         padding-bottom: 80px;
     }
 
-    @media #{$large-mobile} {
+    /* @media #{$large-mobile} {
         padding-top: 60px;
         padding-bottom: 60px;
-    }
+    } */
 }
 
 .section-padding-02 {

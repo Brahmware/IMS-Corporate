@@ -1,0 +1,100 @@
+.sidestrip-container {
+    width: 100vw;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    transform: translateX(200%);
+    transition: $transition-base;
+
+    &.open {
+        transform: translateY(0%);
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .other-part {
+        width: 100%;
+        height: 100%;
+    }
+
+    & .sidestrip-wrapper {
+        height: 100%;
+        width: 20em;
+        flex-shrink: 0;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: $default-shadow;
+
+        & .cover-image {
+            height: 12em;
+            width: 100%;
+
+            & img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        & .content-part {
+            height: 100%;
+            padding: 0em 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            & .bookish-card {
+                
+                & .title {
+                    line-height: 1.2em;
+                    font-size: 00.7em;
+                }
+                
+                & .subtitle {
+                    font-size: 2em;
+                    line-height: 1.2em;
+                }
+                & .content {
+                    line-height: 1.2em;
+                    font-size: 0.65em;
+                }
+            }
+
+            & .buttons-part {
+                font-size: 0.7em;
+                height: 100%;
+                width: 100%;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                gap: 1em;
+
+                & .filled-button {
+                    width: 100%;
+
+                    & span {
+                        color: $black;
+
+                        & .bold {
+                            font-weight: 900;
+                        }
+                    }
+
+                    &:hover {
+                        & span {
+                            color: $primary
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

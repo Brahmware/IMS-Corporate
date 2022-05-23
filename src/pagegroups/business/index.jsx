@@ -13,6 +13,7 @@ import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 /* Importing the related data */
 import sitemapData from "../../data/sitemap.json"
 import BusinessData from "../../data/business.json"
+import FloatinEarthButton from '../../components/floating-button'
 
 const BusinessPage = () => {
     const businessSitemap = sitemapData.find(pageGroup => pageGroup.id === 'business')
@@ -31,8 +32,8 @@ const BusinessPage = () => {
         scrollToNavigationPanel();
     }
 
-    const relatedData = BusinessData.find(( data => data.id === activetab ));
-    const relatedDataElements = relatedData && relatedData.elements; 
+    const relatedData = BusinessData.find((data => data.id === activetab));
+    const relatedDataElements = relatedData && relatedData.elements;
 
     return (
         <React.Fragment>
@@ -46,28 +47,29 @@ const BusinessPage = () => {
 
                             case "about_us":
                                 return (
-                                    <AboutUs data={relatedDataElements}/>
+                                    <AboutUs data={relatedDataElements} />
                                 );
                             case "our_leadership":
                                 return (
-                                    <OurLeadership data={relatedDataElements}/>
+                                    <OurLeadership data={relatedDataElements} />
                                 );
                             case "diversity_and_inclusion":
                                 return (
-                                    <DIversityAndInclusion data={relatedDataElements}/>
+                                    <DIversityAndInclusion data={relatedDataElements} />
                                 );
                             case "career":
                                 return (
-                                    <Careers data={relatedDataElements}/>
+                                    <Careers data={relatedDataElements} />
                                 );
                             default:
                                 return (
-                                    <AboutUs data={relatedDataElements}/>
+                                    <AboutUs data={relatedDataElements} />
                                 );
 
                         }
                     })()}
                 </div>
+                <FloatinEarthButton />
                 <Footer />
             </div>
         </React.Fragment>

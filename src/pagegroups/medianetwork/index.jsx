@@ -13,6 +13,7 @@ import Technology from './technology'
 import sitemapData from "../../data/sitemap.json"
 import BusinessAndBrandsData from "../../data/media-network.json"
 import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
+import FloatinEarthButton from '../../components/floating-button'
 const MediaNetworkPage = () => {
     const mediaNetworkSitemap = sitemapData.find(pageGroup => pageGroup.id === 'media_network')
     const { hash } = useLocation();
@@ -48,7 +49,7 @@ const MediaNetworkPage = () => {
                             );
                         case "focus_areas":
                             return (
-                                <FocusAreas data={relatedDataElements}/>
+                                <FocusAreas data={relatedDataElements} />
                             );
                         case "technology":
                             return (
@@ -65,6 +66,7 @@ const MediaNetworkPage = () => {
 
                     }
                 })()}
+                <FloatinEarthButton />
                 <Footer />
             </div>
         </React.Fragment>

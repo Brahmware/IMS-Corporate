@@ -12,6 +12,7 @@ import SustainabilityStatement from './sustainabilitystatement'
 import sitemapData from "../../data/sitemap.json"
 import CommercialData from '../../data/commercial.json'
 import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
+import FloatinEarthButton from '../../components/floating-button'
 
 const CommercialPage = () => {
     const commercialSitemap = sitemapData.find(pageGroup => pageGroup.id === 'commercial')
@@ -30,12 +31,12 @@ const CommercialPage = () => {
         scrollToNavigationPanel();
     }
 
-    const relatedData = CommercialData.find(( data => data.id === activetab ));
+    const relatedData = CommercialData.find((data => data.id === activetab));
     const relatedDataElements = relatedData && relatedData.elements;
 
     return (
         <React.Fragment>
-            <SEO title={`IMS ${commercialSitemap.pageGroup} - ${relatedData.pagename}`}/>
+            <SEO title={`IMS ${commercialSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper commercial-page-wrapper">
                 <Header />
                 <BannerNavigationContainer data={commercialSitemap} activetab={activetab} onClickTab={onClickTab} />
@@ -44,23 +45,24 @@ const CommercialPage = () => {
 
                         case "advertise_with_us":
                             return (
-                                <AdvertiseWithUs data={relatedDataElements}/>
+                                <AdvertiseWithUs data={relatedDataElements} />
                             );
                         case "investors":
                             return (
-                                <Investors data={relatedDataElements}/>
+                                <Investors data={relatedDataElements} />
                             );
                         case "sustainability_statement":
                             return (
-                                <SustainabilityStatement data={relatedDataElements}/>
+                                <SustainabilityStatement data={relatedDataElements} />
                             );
                         default:
                             return (
-                                <AdvertiseWithUs data={relatedDataElements}/>
+                                <AdvertiseWithUs data={relatedDataElements} />
                             );
 
                     }
                 })()}
+                <FloatinEarthButton />
                 <Footer />
             </div>
         </React.Fragment>
