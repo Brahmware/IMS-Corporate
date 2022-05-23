@@ -13,7 +13,11 @@ const ImageCardContainer = (props) => {
                     data-aos-duration='600'
                     data-aos-delay='300'
                 >
-                    <img src={data.image} alt="container1" />
+                    <div className="image-box">
+                        <div className="image-holder">
+                            <img src={data.image} alt="container1" />
+                        </div>
+                    </div>
                 </div>
                 <div
                     className="card-part bookish-card"

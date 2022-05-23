@@ -1,16 +1,35 @@
 .image-card-container {
     font-size: 1em;
-    & .image-part {
-        width: 36em;
-        height: 29.06em;
-        border-radius: $image-border-radius;
-        overflow: hidden;
-        flex-shrink: 0;
 
-        & img {
-            width: 100%;
+    & .image-part {
+        flex-shrink: 0;
+        & .image-box {
             height: 100%;
-            object-fit: cover;
+            padding-top: 80.7%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            & .image-holder {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: $image-border-radius;
+                overflow: hidden;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+
         }
+
     }
 }

@@ -16,7 +16,7 @@ const ImageOverSquareImageHeadingContainer = (props) => {
                     />
                 </div>
                 <div className="about-us-container-2-desc section-with-padding">
-                    <div className="half-devided-section">
+                    <div className="odd-divided-section">
                         <BookishCard
                             subtitle={props.bookishsubtitle}
                             content={props.bookishcontent}

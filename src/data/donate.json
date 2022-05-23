@@ -1,0 +1,40 @@
+[
+    {
+        "id": "cover-image",
+        "alt": "donation-image",
+        "image": "/images/donation/cover.jpg"
+    },
+    {
+        "id": "card",
+        "data": {
+            "title": "JOIN US",
+            "subtitle": "Your Impact Starts Today!",
+            "content": "<p>By Joining Indian Media Syndicate you'll fund Indian Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /> <br />Also, you'll let educative content to reach everyone.</p>"
+        }
+    },
+    {
+        "id": "donation-types",
+        "types": [
+            {
+                "id": "10",
+                "content": "Donate <span class='bold'>₹ 10</span>"
+            },
+            {
+                "id": "50",
+                "content": "Donate <span class='bold'>₹ 50</span>"
+            },
+            {
+                "id": "100",
+                "content": "Donate <span class='bold'>₹ 100</span>"
+            },
+            {
+                "id": "500",
+                "content": "Donate <span class='bold'>₹ 500</span>"
+            },
+            {
+                "id": "enter-amoumt",
+                "content": "<span class='bold'>Enter Amount</span>"
+            }
+        ]
+    }
+]

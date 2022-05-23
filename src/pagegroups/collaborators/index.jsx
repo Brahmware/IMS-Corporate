@@ -11,6 +11,7 @@ import Producers from './producers'
 /* Importing the related data */
 import sitemapData from "../../data/sitemap.json"
 import CollaboratorsData from '../../data/collaborators.json'
+import FloatinEarthButton from '../../components/floating-button'
 
 const CollaboratorsPage = () => {
     const collaboratorsSitemap = sitemapData.find(pageGroup => pageGroup.id === 'collaborators')
@@ -29,7 +30,7 @@ const CollaboratorsPage = () => {
         scrollToNavigationPanel();
     }
 
-    const relatedData = CollaboratorsData.find(( data => data.id === activetab ));
+    const relatedData = CollaboratorsData.find((data => data.id === activetab));
     const relatedDataElements = relatedData && relatedData.elements;
 
     return (
@@ -43,21 +44,22 @@ const CollaboratorsPage = () => {
 
                         case "explorers":
                             return (
-                                <Explorers data={relatedDataElements}/>
+                                <Explorers data={relatedDataElements} />
                             );
                         case "producers":
                             return (
-                                <Producers data={relatedDataElements}/>
+                                <Producers data={relatedDataElements} />
                             );
                         default:
                             return (
-                                <Explorers data={relatedDataElements}/>
+                                <Explorers data={relatedDataElements} />
                             );
 
                     }
                 })()}
                 <Footer />
             </div>
+            <FloatinEarthButton />
         </React.Fragment>
     )
 }

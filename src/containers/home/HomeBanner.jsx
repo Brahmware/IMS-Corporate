@@ -21,7 +21,7 @@ const HomeBanner = (props) => {
         autoplay: {
             delay: 6000,
         },
-        speed: 1000,
+        speed: 2000,
         direction: 'horizontal',
         loop: true,
     };

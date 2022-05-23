@@ -1,5 +1,5 @@
 // Responsive Variables
-$extraBig-device: "only screen and (min-width: 1600px)";
+/* $extraBig-device: "only screen and (min-width: 1600px)";
 $laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
 $desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
 $tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
@@ -7,7 +7,16 @@ $tablet-landscape: "only screen and (max-height: 600px)";
 $large-mobile: "only screen and (max-width: 767px)";
 $large-mobile-shallow: "only screen and (max-width: 767px) and (max-height: 700px)";
 $small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)"; */
+
+$extraBig-device: "only screen and (min-width: 1600px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
 $extra-small-mobile: "only screen and (max-width: 479px)";
+
 // Colors
 $white: #FFF;
 $black: #000;
@@ -43,7 +52,7 @@ $linkedin: #0173AF !default;
 $light-text-color: #707070 !default;
 $color-overlay: #D16920;
 //Spacers
-$spacer: 1rem;
+/* $spacer: 1rem;
 $spacers: (
     0: 0,
     1: $spacer * 0.3125,
@@ -72,7 +81,7 @@ $container-max-widths: (
     lg: 960px,
     xl: 1200px,
     xxl: 1200px,
-);
+); */
 $grid-gutter-width: 30px;
 // Transitions
 $transition-base: all 600ms ease 0s;
@@ -128,7 +137,7 @@ $normal-divider-length: 10em;
 $opacity-base: 0.6;
 // Default Shadows
 $lower-transparent-black: rgba($color: $black, $alpha: $opacity-base);
-$default-shadow: 0 0 10px 0px rgba($black, 0.3);
+$default-shadow: 0 0 10px 0px rgba($black, 0.1);
 
 // image border radius
 $image-border-radius: 0.8em;

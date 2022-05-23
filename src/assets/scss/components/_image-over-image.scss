@@ -74,8 +74,8 @@
 
     & .bottom-image {
         align-self: flex-start;
-        width: 25.83em;
-        height: 25em;
+        width: 29em;
+        height: 28em;
         border-radius: $image-border-radius;
         overflow: hidden;
         position: relative;
@@ -99,9 +99,9 @@
 
     & .top-image {
         position: absolute;
-        width: 21.20em;
-        height: 12.8em;
-        transform: translateX(-14.59375em) translateY(3em);
+        width: 24em;
+        height: 17em;
+        transform: translateX(-22.5em) translateY(2.5em);
         overflow: hidden;
         z-index: 1;
         border-radius: 0.8em;
