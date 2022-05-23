@@ -7,7 +7,7 @@ const FrequentlyAskedQuestion = ({ data }) => {
             <div className="divider"></div>
 
             {
-                data.data.map((data, index) => {
+                data.map((data, index) => {
                     return (
                         <div  key={index} >
                             <div className="que-ans">

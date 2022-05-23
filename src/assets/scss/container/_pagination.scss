@@ -1,0 +1,37 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0em;
+    font-size: 0.8em;
+    letter-spacing: 0.03em;
+
+    & .displayed-per-pages {
+        display: flex;
+
+        & .pages {
+            margin-left: 1em;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        & .active {
+            border-bottom: 0.2em solid $primary;
+
+        }
+    }
+
+    & .page-numbers {
+        display: flex;
+
+        & .page-count {
+            margin-left: 1em
+        }
+
+        & .symbol {
+            margin-left: 1em;
+            margin-right: 1em;
+            cursor: pointer;
+        }
+    }
+}
