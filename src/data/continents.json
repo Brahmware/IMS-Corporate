@@ -1,0 +1,26 @@
+[
+    {
+        "iso": "AS",
+        "name": "Asia"
+    },
+    {
+        "iso": "AF",
+        "name": "Africa"
+    },
+    {
+        "iso": "EU",
+        "name": "Europe"
+    },
+    {
+        "iso": "NA",
+        "name": "North America"
+    },
+    {
+        "iso": "SA",
+        "name": "South America"
+    },
+    {
+        "iso": "OC",
+        "name": "Oceania"
+    }
+]

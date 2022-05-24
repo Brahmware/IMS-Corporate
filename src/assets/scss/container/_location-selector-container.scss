@@ -1,0 +1,12 @@
+.location-selector-container {
+    & .odd-divided-section {
+        &>div{
+            &:first-child {
+                width: 30%;
+            }
+            &:last-child {
+                width: 70%;
+            }
+        }
+    }
+}

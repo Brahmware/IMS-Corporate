@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { IMSLogo } from '../../assets/ourlogo';
 import FilledButton from '../../components/buttons/FilledButton';
 import HamburgerMenu from '../../components/hamburgermenu';
-import LiveButton from '../../components/LiveButton';
+/* import LiveButton from '../../components/LiveButton'; */
 import SearchComponent from '../../components/searchcomponent';
 import MegaMenu from '../../pagegroups/megamenu';
 const Header = () => {
@@ -41,7 +41,7 @@ const Header = () => {
                 <IMSLogo />
               </Link>
             </div>
-            <LiveButton />
+            {/* <LiveButton /> */}
           </div>
           <div className="header-right">
             <SearchComponent />
