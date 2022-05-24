@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Earth from '../../assets/gifs/earth.gif'
+import Earth from '../../assets/webms/earth.webm'
 import SidestripContainer from '../../containers/sidesrtip-container';
 
 
@@ -18,7 +18,7 @@ const FloatinEarthButton = () => {
         <React.Fragment>
             <div className='floating-earth-button' onClick={onCanvasHandler}>
                 <div className="button-image">
-                    <img src={Earth} alt="loading ..." />
+                    <video src={Earth} autoPlay loop muted alt="loading ..." />
                 </div>
             </div>
             <SidestripContainer show={offcanvasShow} onclose={onCanvasHandler} headerHeight={headerHeight} />

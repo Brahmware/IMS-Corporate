@@ -1,0 +1,19 @@
+.tagline-continent-selector-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4em;
+
+    & .tagline-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1em;
+
+        & .button-element {
+            margin-top: 2em;
+        }
+    }
+}

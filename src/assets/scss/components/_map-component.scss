@@ -1,0 +1,19 @@
+.map-component {
+    height: 100%;
+    width: 100%;
+
+    & svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    & .country {
+        fill: rgba($color: $light-text-color, $alpha: 0.1);
+        stroke: $light-text-color;
+        stroke-width: 0.033em;
+
+        &:hover {
+            fill: rgba($color: $primary, $alpha: 0.5);
+        }
+    }
+}

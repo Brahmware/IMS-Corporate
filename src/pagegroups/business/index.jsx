@@ -6,7 +6,7 @@ import Footer from '../../containers/footer'
 import Header from '../../containers/header'
 import AboutUs from './aboutus'
 import Careers from './careers'
-import DIversityAndInclusion from './diversityandinclusion'
+import DiversityAndInclusion from './diversityandinclusion'
 import OurLeadership from './ourleadership'
 import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 
@@ -55,7 +55,7 @@ const BusinessPage = () => {
                                 );
                             case "diversity_and_inclusion":
                                 return (
-                                    <DIversityAndInclusion data={relatedDataElements} />
+                                    <DiversityAndInclusion data={relatedDataElements} />
                                 );
                             case "career":
                                 return (

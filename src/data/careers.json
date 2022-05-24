@@ -1,0 +1,21 @@
+[
+    {
+        "id": "tagline",
+        "tagline":{
+            "subtitle": "You fit here.",
+            "content": "Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.",
+            "buttontext": "APPLY"
+        }
+    },
+    {
+        "id": "banner",
+        "elements": [
+            {
+                "image": "/images/collaborators/explorers/container-5/cover.jpg",
+                "title": "IMS Explorers",
+                "subtitle": "Revolutionaries<br /> and IMS Army",
+                "buttontext": "APPLY"
+            }
+        ]
+    }
+]

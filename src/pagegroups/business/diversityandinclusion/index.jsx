@@ -5,7 +5,7 @@ import DiversityInclusionContainerThree from '../../../containers/diversity-and-
 import DiversityInclusionContainerFour from '../../../containers/diversity-and-inclusion/container-4';
 
 
-const DIversityAndInclusion = ({data}) => {
+const DiversityAndInclusion = ({data}) => {
   const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
   const dataContainer2 = data && data.find(data => data.id === 'container_2').elements;
   const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
@@ -21,4 +21,4 @@ const DIversityAndInclusion = ({data}) => {
   )
 }
 
-export default DIversityAndInclusion
+export default DiversityAndInclusion

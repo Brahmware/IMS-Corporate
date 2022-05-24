@@ -4,6 +4,10 @@
 }
 
 
+body {
+  height: 100vh;
+}
+
 body,
 body * {
   -webkit-box-sizing: border-box;
@@ -133,6 +137,7 @@ h1,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  font-size: 0.8em;
 }
 
 @media screen and (max-width: 576px) {
