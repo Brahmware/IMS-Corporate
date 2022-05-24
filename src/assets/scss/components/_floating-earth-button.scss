@@ -13,10 +13,21 @@
         flex-shrink: 0;
         box-shadow: $default-shadow;
 
-        & img {
+        & video {
             height: 100%;
             width: 100%;
             object-fit: cover;
+            animation: tilt 120s linear infinite;
+        }
+
+        @keyframes tilt {
+            0%,
+            100% {
+                transform: rotate(23.5deg);
+            }
+            50% {
+                transform: rotate(-23.5deg);
+            }
         }
     }
 }
