@@ -5,7 +5,9 @@ const WebsiteAccessibilityStatement = (props) => {
   const card = props.data[0]
   return (
     <div className=" white-background">
-      <ContentContainer card={card} />
+      <div className="container">
+        <ContentContainer card={card} />
+      </div>
     </div>
   )
 }

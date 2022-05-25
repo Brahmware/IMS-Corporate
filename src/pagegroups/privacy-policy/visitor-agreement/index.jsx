@@ -6,7 +6,9 @@ const VisitorAgreement = (props) => {
 
   return (
     <div className=" white-background">
-      <ContentContainer card={card} />
+      <div className="container">
+        <ContentContainer card={card} />
+      </div>
     </div>
   )
 }

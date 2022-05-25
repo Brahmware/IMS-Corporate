@@ -16,13 +16,17 @@ const Faqs = (props) => {
     setItem(productValue.slice(0, value));
   }
   return (
-    <div className="frequently-asked-question-section white-background"
+    <div 
+      className="frequently-asked-question-section white-background"
       data-aos='fade-right'
       data-aos-duration='600'
-      data-aos-delay='600'>
-      <Pagination data={item} onSort={displayItem} />
-      <FrequentlyAskedQuestion data={item} />
-      <Pagination data={item} onSort={displayItem} />
+      data-aos-delay='600'
+    >
+      <div className="container">
+        <Pagination data={item} onSort={displayItem} />
+        <FrequentlyAskedQuestion data={item} />
+        <Pagination data={item} onSort={displayItem} />
+      </div>
     </div>
   )
 }

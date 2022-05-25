@@ -1,7 +1,8 @@
 import React from 'react'
 
 const Pagination = (props) => {
-  const pages = [5, 10, 15, 20]
+  const itemsPerPage = [5, 10, 15, 20]
+  const pageNo = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
   return (
@@ -9,9 +10,9 @@ const Pagination = (props) => {
       <div className="displayed-per-pages"><span>Displayed per pages</span>
         <div className="pages" onClick={props.onSort} >
           {
-            pages.map((page, index) => {
+            itemsPerPage.map((item, index) => {
               return (
-                <span className={props.data.length === page ? "active px-2" : "px-2"} key={index}>{page}</span>
+                <span className={props.data.length === item ? "active px-2" : "px-2"} key={index}>{item}</span>
               )
             })
           }
