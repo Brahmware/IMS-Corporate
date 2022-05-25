@@ -2,7 +2,6 @@ import React from 'react'
 
 const Pagination = (props) => {
   const pages = [5, 10, 15, 20]
-  const pageNo = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
   return (
@@ -22,13 +21,9 @@ const Pagination = (props) => {
         <div className="page-count">Pages</div>
         <span className="symbol">&lt;</span>
         <div className="" >
-          {
-            pageNo.map((page, index) => {
-              return (
-                <span className={"px-2"} key={index}>{page}</span>
-              )
-            })
-          }
+          <span className="px-2">
+            {props.data[props.data.length-1].id ===20 ? "hello":"not hello"}
+          </span>
         </div>
         <span className="symbol">&gt;</span>
       </div>

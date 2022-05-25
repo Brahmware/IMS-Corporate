@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import RemoteIconComponent from '../remoeiconcomponent'
+// import { Link } from 'react-router-dom';
+// import RemoteIconComponent from '../remoeiconcomponent'
 import SocialIconComponent from '../social-icon-component';
 
 const IdentityCardComponent = ({ data, cardKey }) => {

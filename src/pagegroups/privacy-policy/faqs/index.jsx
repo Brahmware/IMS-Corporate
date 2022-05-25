@@ -5,7 +5,7 @@ import Pagination from '../../../containers/common/pagination'
 const Faqs = (props) => {
   const [item, setItem] = useState(props.data);
   useEffect(() => {
-    setItem(item.slice(0, 5))
+    setItem(i=>i.slice(0, 5))
   }, [])
 
   const displayItem = (event) => {
