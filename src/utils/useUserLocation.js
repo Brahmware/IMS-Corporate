@@ -15,7 +15,7 @@ const useUserLocation = () => {
         }) :
         setUserLocation({
           "continentcode": "AS",
-          "continent": "Asia",
+          "continentname": "Asia",
           "countrycode": "IN",
           "countryname": "India"
         })

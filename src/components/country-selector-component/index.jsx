@@ -5,7 +5,7 @@ const CountrySelectorComponent = ({ activecontinent }) => {
 
     return (
         <div className='country-selector-component'>
-            <MapComponent />
+            <MapComponent activecontinent/>
         </div>
     )
 }

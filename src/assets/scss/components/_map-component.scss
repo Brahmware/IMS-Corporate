@@ -1,6 +1,10 @@
 .map-component {
     height: 100%;
     width: 100%;
+    border: 1px solid $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     & svg {
         height: 100%;
@@ -16,4 +20,32 @@
             fill: rgba($color: $primary, $alpha: 0.5);
         }
     }
+
+    & .resize-icon-holder {
+        height: 100%;
+        width: 0;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+
+        & #resize-icon {
+            position: absolute;
+            cursor: pointer;
+            transform: translateY(-50%);
+            height: 1em;
+            width: 1em;
+
+            & svg {
+                fill: rgba($color: $black, $alpha: 0.6);
+                transition: $transition-base;
+            }
+
+            &:hover {
+                & svg {
+                    fill: $black;
+                }
+            }
+        }
+    }
+
 }
