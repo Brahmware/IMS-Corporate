@@ -26,6 +26,7 @@
             fill: rgba($color: $light-text-color, $alpha: 0.2);
             stroke: rgba($color: $light-text-color, $alpha: 0.8);
             stroke-width: 0.033em;
+            cursor: pointer;
 
             &:hover {
                 fill: rgba($color: $light-text-color, $alpha: 0.8);
