@@ -4,6 +4,7 @@ import Pagination from '../../../containers/common/pagination'
 
 const Faqs = (props) => {
   const [item, setItem] = useState(props.data);
+  const [pages,setPages]=useState(5)
   useEffect(() => {
     setItem(i=>i.slice(0, 5))
   }, [])
@@ -13,6 +14,7 @@ const Faqs = (props) => {
     let productValue = props.data.filter((arr, index) => {
       return (value > index ? value : arr)
     })
+    setPages(value)
     setItem(productValue.slice(0, value));
   }
   return (
@@ -23,9 +25,9 @@ const Faqs = (props) => {
       data-aos-delay='600'
     >
       <div className="container">
-        <Pagination data={item} onSort={displayItem} />
+        <Pagination data={item} allData={props.data} onSort={displayItem} page={ pages} />
         <FrequentlyAskedQuestion data={item} />
-        <Pagination data={item} onSort={displayItem} />
+        <Pagination data={item} allData={props.data} onSort={displayItem}  page={ pages}/>
       </div>
     </div>
   )
