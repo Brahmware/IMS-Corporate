@@ -46,7 +46,15 @@ const MapComponent = ({ continentsdata }) => {
 
     const wrapperRef = useRef();
     const svgRef = useRef();
+    const tooltipRef = useRef();
     const dimensions = useResizeObserver(wrapperRef);
+
+    window.onmousemove = function (e) {
+        var x = e.clientX,
+            y = e.clientY;
+        tooltipRef.current.style.top = (y + 2) + 'px';
+        tooltipRef.current.style.left = (x + 2 - svgRef.current.getBoundingClientRect().x) + 'px';
+    };
 
     useEffect(() => {
 
@@ -57,6 +65,10 @@ const MapComponent = ({ continentsdata }) => {
         const drawMap = (isResize, selectedCountry, countriesInContinent) => {
             var projection = geoMercator().rotate([-11, 0]).fitSize([width, height], !isResize ? selectedCountry || countriesInContinent : countriesInContinent).precision(1000);
             const path = geoPath().projection(projection);
+
+
+            /* Tooltip */
+            let tooltip = select('#tooltip');
 
             /* Clicked on a country action */
             const clicked = (event, data) => {
@@ -84,7 +96,17 @@ const MapComponent = ({ continentsdata }) => {
             countriesInContinent.features && countriesInContinent.features.forEach((feature) => {
                 try {
                     let countryActiveContinent = svg.select(`#${feature.id}`)
-                    countryActiveContinent && countryActiveContinent.attr('class', 'country in-active-continent')
+                    countryActiveContinent && 
+                    countryActiveContinent.attr('class', 'country in-active-continent')
+                    .on("mousemove", (event, d) => {
+                        tooltip.style("display", "inline-block")
+                        .html(`
+                            <span>
+                                ${d.properties.name}
+                            </span>
+                        `)
+                    })
+                    .on("mouseout", () => { tooltip.style("display", "none");});
                 } catch (error) { }
             })
 
@@ -103,8 +125,6 @@ const MapComponent = ({ continentsdata }) => {
         /* rendering the map */
         drawMap(false, selectedCountry, countriesInContinent)
 
-
-
     }, [countriesInContinent, dimensions, selectedCountry])
 
     return (
@@ -113,6 +133,7 @@ const MapComponent = ({ continentsdata }) => {
             <div id="resize-icon">
                 <ResizeIcon />
             </div>
+            <div className="map-tooltip" id='tooltip' ref={tooltipRef}/>
         </div>
     )
 }
