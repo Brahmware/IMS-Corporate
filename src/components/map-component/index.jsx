@@ -1,95 +1,117 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { ResizeIcon } from '../../assets/icons';
-import { useD3 } from '../../utils/useD3';
 import CountriesGeologyData from '../../data/countries.geology.json'
-import * as d3 from 'd3';
+import { select, geoPath, geoMercator } from "d3";
+import useResizeObserver from '../../utils/useResizableObserver';
 
-const MapComponent = (props) => {
+const MapComponent = ({ continentsdata }) => {
 
-    const draw = (svg) => {
+    const [activeContinent, setAvtiveContinent] = useState(localStorage.getItem("continentcode"));
+    const [selectedCountry, setSelectedCountry] = useState(null);
 
-        var width = 960,
-            height = 500
+    useEffect(() => {
 
-        var projection = d3.geoMercator()
-            .scale(150)
-            .center([0, 45]);
+        const checkUserData = () => {
+            let userContinent = localStorage.getItem("continentcode")
+            setAvtiveContinent(userContinent)
+        }
 
-        const path = d3.geoPath().projection(projection);
+        window.addEventListener('continent-changed', checkUserData)
 
-        function drawGlobe() {
+        return () => {
+            window.removeEventListener('continent-changed', checkUserData)
+        }
+    }, [])
 
-            svg.selectAll(".countries")
+    const [countriesInContinent, setCountriesInContinent] = useState(CountriesGeologyData);
+
+    useEffect(() => {
+
+        let countriesInContinentFeatures = []
+        let countriesInContinent = continentsdata.find(continent => continent.iso === activeContinent)
+        let countriesInContinentCodes = countriesInContinent && countriesInContinent['countries']
+        countriesInContinentCodes && countriesInContinentCodes.forEach(countryCode => {
+            let countryFeature = CountriesGeologyData.features.find(feature => feature.id === countryCode)
+            countryFeature && countriesInContinentFeatures.push(countryFeature)
+        });
+        setCountriesInContinent({
+            type: 'FeatureCollection',
+            features: countriesInContinentFeatures
+        })
+        setSelectedCountry(null)
+
+    }, [activeContinent, continentsdata])
+
+    /* D3 code begins here */
+
+    const wrapperRef = useRef();
+    const svgRef = useRef();
+    const dimensions = useResizeObserver(wrapperRef);
+
+    useEffect(() => {
+
+        const svg = select(svgRef.current);
+
+        const { width, height } = dimensions || wrapperRef.current.getBoundingClientRect();
+
+        const drawMap = (isResize, selectedCountry, countriesInContinent) => {
+            var projection = geoMercator().rotate([-11, 0]).fitSize([width, height], !isResize ? selectedCountry || countriesInContinent : countriesInContinent).precision(1000);
+            const path = geoPath().projection(projection);
+
+            /* Clicked on a country action */
+            const clicked = (event, data) => {
+                setSelectedCountry(data)
+
+                if (selectedCountry !== data) {
+                    localStorage.setItem('countrycode', data.id)
+                    localStorage.setItem('countryname', data.properties.name)
+                    window.dispatchEvent(new Event("country-changed"));
+                }
+
+            }
+
+            svg.selectAll(".country")
                 .data(CountriesGeologyData.features)
-                .enter().append("path")
+                .join("path")
+                .on("click", clicked)
                 .attr("class", "country")
                 .attr("id", (d) => d.id)
+                .transition()
                 .attr("d", path)
-                .on("click", clicked);
+
+
+
+            countriesInContinent.features && countriesInContinent.features.forEach((feature) => {
+                try {
+                    let countryActiveContinent = svg.select(`#${feature.id}`)
+                    countryActiveContinent && countryActiveContinent.attr('class', 'country in-active-continent')
+                } catch (error) { }
+            })
+
+            if (selectedCountry) {
+                let selectedPath = select(`#${selectedCountry.id}`)
+                selectedPath.attr('class', 'country in-active-continent selected')
+            }
         }
 
-        d3.select("#resize-icon").on('click', resizeMap)
-
-        function resizeMap() {
-
-            var projection = d3.geoMercator()
-                .scale(150)
-                .center([0, 45]);
-
-            const path = d3.geoPath().projection(projection);
-            svg.selectAll("path")
-                .transition()
-                .duration(600)
-                .attr("d", path);
+        /* Resize Button Action */
+        const resizeMap = () => {
+            drawMap(true, selectedCountry, countriesInContinent)
         }
+        select("#resize-icon").on('click', resizeMap)
 
-        function clicked(event, data) {
-
-            let bounds = path.bounds(data),
-                dx = bounds[1][0] - bounds[0][0],
-                dy = bounds[1][1] - bounds[0][1],
-                x = (bounds[0][0] + bounds[1][0]) / 2,
-                y = (bounds[0][1] + bounds[1][1]) / 2,
-                scale = Math.max(1, Math.min(8, 0.9 / Math.max(dx / width, dy / height))),
-                translate = [width / 2 - scale * x, height / 2 - scale * y];
-
-            projection.translate(translate).scale();
-
-            // Transition to the new projection
-
-            svg.selectAll("path")
-                .transition()
-                .duration(600)
-                .attr("d", path);
-
-
-            // Add point showing new projection centre
-        }
-        /* function clicked(event, data) {
-            let bounds = geoPathProjection.bounds(data),
-                dx = bounds[1][0] - bounds[0][0],
-                dy = bounds[1][1] - bounds[0][1],
-                x = (bounds[0][0] + bounds[1][0]) / 2,
-                y = (bounds[0][1] + bounds[1][1]) / 2,
-                scale = Math.max(1, Math.min(8, 0.9 / Math.max(dx / width, dy / height))),
-                translate = [width / 2 - scale * x, height / 2 - scale * y];
-        } */
+        /* rendering the map */
+        drawMap(false, selectedCountry, countriesInContinent)
 
 
 
+    }, [countriesInContinent, dimensions, selectedCountry])
 
-        drawGlobe();
-    }
-
-    const svgRef = useD3(draw, []);
     return (
-        <div className='map-component'>
-            <svg id='map' ref={svgRef} viewBox="0 0 960 500" preserveAspectRatio="xMidYMid meet" >
-            </svg>
-            <div className="resize-icon-holder">
-                <div id="resize-icon">
-                    <ResizeIcon />
-                </div>
+        <div className='map-component' ref={wrapperRef}>
+            <svg id='map' ref={svgRef}></svg>
+            <div id="resize-icon">
+                <ResizeIcon />
             </div>
         </div>
     )

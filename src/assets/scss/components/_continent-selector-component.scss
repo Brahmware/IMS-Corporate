@@ -19,6 +19,7 @@
         &.active {
             color: rgba($color: $black, $alpha: $opacity-very-high);
             transform: translateX(0.4em) scale($scale-base);
+            pointer-events: none;
         }
 
         &>span {

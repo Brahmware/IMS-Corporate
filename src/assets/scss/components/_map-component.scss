@@ -1,10 +1,10 @@
 .map-component {
     height: 100%;
     width: 100%;
-    border: 1px solid $primary;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     & svg {
         height: 100%;
@@ -12,38 +12,45 @@
     }
 
     & .country {
-        fill: rgba($color: $light-text-color, $alpha: 0.1);
-        stroke: $light-text-color;
-        stroke-width: 0.033em;
+        fill: rgba($color: $light-text-color, $alpha: 0.05);
+        stroke: rgba($color: $light-text-color, $alpha: 0.4);
+        stroke-width: 0.02em;
+        pointer-events: none;
 
-        &:hover {
-            fill: rgba($color: $primary, $alpha: 0.5);
+        &.selected {
+            fill: $primary  !important;
+        }
+
+        &.in-active-continent {
+            pointer-events: all;
+            fill: rgba($color: $light-text-color, $alpha: 0.2);
+            stroke: rgba($color: $light-text-color, $alpha: 0.8);
+            stroke-width: 0.033em;
+
+            &:hover {
+                fill: rgba($color: $light-text-color, $alpha: 0.8);
+            }
         }
     }
 
-    & .resize-icon-holder {
-        height: 100%;
-        width: 0;
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
 
-        & #resize-icon {
-            position: absolute;
-            cursor: pointer;
-            transform: translateY(-50%);
-            height: 1em;
-            width: 1em;
+    & #resize-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        transform: translateY(-47%);
+        height: 1em;
+        width: 1em;
 
+        & svg {
+            fill: rgba($color: $light-text-color, $alpha: 0.8);
+            transition: $transition-base;
+        }
+
+        &:hover {
             & svg {
-                fill: rgba($color: $black, $alpha: 0.6);
-                transition: $transition-base;
-            }
-
-            &:hover {
-                & svg {
-                    fill: $black;
-                }
+                fill: $black;
             }
         }
     }
