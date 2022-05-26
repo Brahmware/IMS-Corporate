@@ -1,0 +1,22 @@
+.tab-box{
+    border-top: 3px solid $primary;
+}
+.tab-box-heading{
+    font-size: 4rem;
+    width: fit-content;
+    line-height: normal;
+}
+.menu-card-container-5-content{
+    background-color: $default-background;
+}
+
+.menu-card-content-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 75%;
+}
+.menu-card-content-list-items-container-5{
+    list-style-type: disc;
+    list-style-position: inside;
+}

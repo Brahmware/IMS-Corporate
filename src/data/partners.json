@@ -176,6 +176,79 @@
                         "buttontext": "APPLY"
                     }
                 ]
+            },
+            {
+                "id": "container_5",
+                "elements": [
+                    {
+                        "title": "IMS ASSEMBLY MEMBERSHIP"
+                    },
+                    {
+                        "cards": [
+                            {
+                                "id": 1,
+                                "image": "/images/partners/become-a-member/container-5/cover.jpg",
+                                "cardtitle": "BENEFITS",
+                                "cardcontentlist": [
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius"
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "image": "/images/partners/become-a-member/container-5/cover.jpg",
+                                "cardtitle": "BENEFITS",
+                                "cardcontentlist": [
+                                    "Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, ",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius"
+                                ]
+                            },
+                            {
+                                "id": 3,
+                                "image": "/images/partners/become-a-member/container-5/cover.jpg",
+                                "cardtitle": "BENEFITS",
+                                "cardcontentlist": [
+                                    "Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tabs": [
+                            {
+                                "id": 1,
+                                "title": "IM",
+                                "subtitle": "Wanderer",
+                                "content": "&#8377; 5,00,000 - &#8377; 10,00,000"
+                            },
+                            {
+                                "id": 2,
+                                "title": "IM",
+                                "subtitle": "Trendsetter",
+                                "content": "&#8377; 10,00,000 - &#8377; 100,00,000"
+                            },
+                            {
+                                "id": 3,
+                                "title": "IM",
+                                "subtitle": "Pioneer",
+                                "content": "Above &#8377; 100,00,000"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     }
