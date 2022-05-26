@@ -1,17 +1,14 @@
 import React from 'react'
 import FilledButton from '../buttons/FilledButton';
 
-export default function MenuCardContent({card}) {
+const MenuCardContent = ({card}) => {
   const image=card.image;
   const cardtitle=card.cardtitle;
   const cardcontent=card.cardcontentlist;
   return (
-    <>
-        <div className="" style={{"height": "40%"}}>
-            <img
-                className='menu-card-content-image'
-                src={image} alt={""} // alt need to be added
-            />
+    <React.Fragment>
+        <div className="menu-card-content-image">
+            <img src={image} alt={""} />
         </div>
         
         <div className='py-4 px-5' style={{height: "60%"}} >
@@ -43,7 +40,9 @@ export default function MenuCardContent({card}) {
                 }
             </ul>
         </div>
-    </>
+    </React.Fragment>
   )
 }
+
+export default MenuCardContent
 
