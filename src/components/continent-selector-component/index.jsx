@@ -1,6 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const ContinentSelectorComponent = ({ continentsdata, activeContinent, setActiveContinent}) => {
+const ContinentSelectorComponent = ({ continentsdata }) => {
+    
+    const [activeContinent, setActiveContinent] = useState(localStorage.getItem("continentcode"))
+    
+    const onClickHandler = (event) => {
+        const activecontinentcode = event.target.id
+        const activecontinentname = continentsdata.find(continent => continent.iso === activecontinentcode)['name']
+        
+        setActiveContinent(activecontinentcode)
+        
+        localStorage.setItem("continentcode", activecontinentcode)
+        localStorage.setItem("continentname", activecontinentname)
+        localStorage.setItem("countrycode", null)
+        localStorage.setItem("countryname", null)
+        window.dispatchEvent(new Event("continent-changed"));
+    }
+
     return (
         <div className='continent-selector-component'>
             <div className="title">
@@ -13,8 +29,8 @@ const ContinentSelectorComponent = ({ continentsdata, activeContinent, setActive
                             <div className="divider" />
                             <div 
                                 id={continentdata.iso} 
-                                className={continentdata.iso === activeContinent.continentcode ? 'continent active' : 'continent'}
-                                onClick={setActiveContinent}
+                                className={continentdata.iso === activeContinent ? 'continent active' : 'continent'}
+                                onClick={onClickHandler}
                             >
                                 <span
                                     dangerouslySetInnerHTML={{

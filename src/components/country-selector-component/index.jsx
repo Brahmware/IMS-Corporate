@@ -1,11 +1,11 @@
 import React from 'react'
 import MapComponent from '../map-component'
 
-const CountrySelectorComponent = ({ activecontinent }) => {
+const CountrySelectorComponent = ({continentsdata}) => {
 
     return (
         <div className='country-selector-component'>
-            <MapComponent activecontinent/>
+            <MapComponent continentsdata={continentsdata}/>
         </div>
     )
 }

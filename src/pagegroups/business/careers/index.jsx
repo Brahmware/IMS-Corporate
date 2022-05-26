@@ -9,6 +9,7 @@ const Careers = () => {
 
   const taglineData = CareerData.find(datum => datum.id === 'tagline')
   const careersBannerData = CareerData.find(datum => datum.id === 'banner')['elements']
+
   return (
     <div className='careers-page'>
       <LocationSelectionContainer taglineblob={taglineData} />
