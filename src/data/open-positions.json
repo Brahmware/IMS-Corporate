@@ -240,7 +240,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -254,7 +254,7 @@
                         "jobpostdate": "2021-04-24",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -268,7 +268,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -282,7 +282,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
                             "continent": "EU",
                             "country": "ITA",
@@ -296,7 +296,7 @@
                         "jobpostdate": "2021-04-24",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
                             "continent": "AF",
                             "country": "NGA",
@@ -310,7 +310,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
                             "continent": "AF",
                             "country": "BGD",
@@ -324,7 +324,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "ITA",
@@ -338,7 +338,7 @@
                         "jobpostdate": "2021-04-24",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "PAK",
@@ -352,7 +352,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
                             "continent": "AF",
                             "country": "NZL",
@@ -372,7 +372,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -386,7 +386,7 @@
                         "jobpostdate": "2021-04-24",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -400,7 +400,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -414,7 +414,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
                             "continent": "EU",
                             "country": "ITA",
@@ -428,7 +428,7 @@
                         "jobpostdate": "2021-04-24",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
                             "continent": "AF",
                             "country": "NGA",
@@ -442,7 +442,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
                             "continent": "AF",
                             "country": "BGD",
@@ -456,7 +456,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "ITA",
@@ -470,7 +470,7 @@
                         "jobpostdate": "2021-04-24",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "PAK",
@@ -484,7 +484,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
                             "continent": "AF",
                             "country": "NZL",
@@ -504,7 +504,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -518,7 +518,7 @@
                         "jobpostdate": "2021-04-24",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -532,7 +532,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -546,7 +546,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
                             "continent": "EU",
                             "country": "ITA",
@@ -560,7 +560,7 @@
                         "jobpostdate": "2021-04-24",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
                             "continent": "AF",
                             "country": "NGA",
@@ -574,7 +574,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
                             "continent": "AF",
                             "country": "BGD",
@@ -588,7 +588,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "ITA",
@@ -602,7 +602,7 @@
                         "jobpostdate": "2021-04-24",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "PAK",
@@ -616,7 +616,7 @@
                         "jobpostdate": "2020-11-01",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
                             "continent": "AF",
                             "country": "NZL",
