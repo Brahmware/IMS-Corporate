@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import FrequentlyAskedQuestion from "../../../containers/common/faqs"
-import Pagination from '../../../containers/common/pagination'
 
 const Faqs = (props) => {
   const [item, setItem] = useState(props.data);
@@ -25,9 +24,7 @@ const Faqs = (props) => {
       data-aos-delay='600'
     >
       <div className="container">
-        <Pagination data={item} allData={props.data} onSort={displayItem} page={ pages} />
-        <FrequentlyAskedQuestion data={item} />
-        <Pagination data={item} allData={props.data} onSort={displayItem}  page={ pages}/>
+        <FrequentlyAskedQuestion datas={item} allData={props.data} page={ pages} onSort={displayItem} />
       </div>
     </div>
   )
