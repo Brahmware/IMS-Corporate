@@ -26,10 +26,12 @@
             fill: rgba($color: $light-text-color, $alpha: 0.2);
             stroke: rgba($color: $light-text-color, $alpha: 0.8);
             stroke-width: 0.033em;
+            transition: $transition-base;
             cursor: pointer;
 
             &:hover {
-                fill: rgba($color: $light-text-color, $alpha: 0.8);
+                fill: $black;
+                stroke: $black;
             }
         }
     }
@@ -40,8 +42,8 @@
         top: 0;
         right: 0;
         cursor: pointer;
-        height: 1.5em;
-        width: 1.5em;
+        height: 1.3em;
+        width: 1.3em;
 
         & svg {
             fill: rgba($color: $light-text-color, $alpha: 0.8);
@@ -57,6 +59,7 @@
 
     & .map-tooltip {
         position: absolute;
+        display: none;
         z-index: 1;
         margin: auto;
         padding: 0 1em;
@@ -73,5 +76,4 @@
             white-space: nowrap;
         }
     }
-
 }

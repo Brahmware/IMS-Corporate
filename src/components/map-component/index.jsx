@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { ResizeIcon } from '../../assets/icons';
+import { Cursor, ResizeIcon } from '../../assets/icons';
 import CountriesGeologyData from '../../data/countries.geology.json'
 import { select, geoPath, geoMercator } from "d3";
 import useResizeObserver from '../../utils/useResizableObserver';
@@ -47,13 +47,14 @@ const MapComponent = ({ continentsdata }) => {
     const wrapperRef = useRef();
     const svgRef = useRef();
     const tooltipRef = useRef();
+
     const dimensions = useResizeObserver(wrapperRef);
 
     window.onmousemove = function (e) {
-        var x = e.clientX,
-            y = e.clientY;
-        tooltipRef.current.style.top = (y + 2) + 'px';
-        tooltipRef.current.style.left = (x + 2 - svgRef.current.getBoundingClientRect().x) + 'px';
+        var x = e.clientX - svgRef.current.getBoundingClientRect().x,
+            y = e.clientY - svgRef.current.getBoundingClientRect().y;
+        tooltipRef.current.style.top = (y + 20) + 'px';
+        tooltipRef.current.style.left = (x + 20) + 'px';
     };
 
     useEffect(() => {
