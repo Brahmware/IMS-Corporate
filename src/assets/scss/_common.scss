@@ -158,6 +158,10 @@ img {
 
 
 /* Section Style */
+
+.active {
+    border-bottom: 0.2em solid $primary;
+}
 .section,
 .section-with-padding {
     width: 100%;
