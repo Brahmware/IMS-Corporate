@@ -1,26 +1,22 @@
 import React from 'react'
-import ImageOverSquareImageHeadingContainer from '../../common/image-over-square-image-heading'
-import FilledButton from '../../../components/buttons/FilledButton';
+import MenuCard from '../../../components/menu-card/MenuCard';
 
-const BecomeAMemberTwo = ({ data }) => {
-  const headingdata = data[0].heading
-  const imagedata = data[1].images
-  const carddata = data[2].card
-
-  const ButtonElement = <FilledButton class={'black-button'} text={carddata.buttontext} />
+const BecomeAMemberTwo = ({data}) => {
+  const titleData = data[0].title
+  const cardsData = data[1].cards
+  const tabsdData = data[2].tabs
   return (
-    <div className='corporateandfoundations-container-2 section-with-padding'>
-      <ImageOverSquareImageHeadingContainer
-        headertitle={headingdata.title}
-        headersubtitle={headingdata.subtitle}
-        headercontent={headingdata.content}
-        bookishsubtitle={carddata.subtitle}
-        bookishcontent={carddata.content}
-        bookishButtonComponent={[ButtonElement]}
-        imageBottom={imagedata.imageBottom}
-        imageTop={imagedata.imageTop}
-      />
-    </div>
+    <>
+        <div className="becomeamember-container-2 section-with-padding white-background ">
+            <div className="container">
+                <MenuCard
+                    title={titleData}
+                    cards={cardsData}
+                    tabs={tabsdData}
+                />
+            </div>
+        </div>
+    </>
   )
 }
 

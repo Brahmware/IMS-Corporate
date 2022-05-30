@@ -11,9 +11,9 @@ const MenuCardContent = ({card}) => {
             <img src={image} alt={""} />
         </div>
         
-        <div className='py-4 px-5' style={{height: "60%"}} >
+        <div className='py-4 my-3 px-5'>
             <div className='d-flex justify-content-between align-items-center'>
-                <div className='title'>
+                <div className='title menu-card-content-heading'>
                     <span
                         className='fs-5'
                         dangerouslySetInnerHTML={{
@@ -23,22 +23,24 @@ const MenuCardContent = ({card}) => {
                 </div>
                 <FilledButton class={`join-button fw-bold`} text={"JOIN"} />
             </div>
-            <ul className="content pt-3">
-                {
-                    cardcontent.map((cardcontent, key) => {
-                        return (
-                            <React.Fragment key={key}>
-                                <li
-                                    className='menu-card-content-list-items-container-5'
-                                    dangerouslySetInnerHTML={{
-                                        __html: cardcontent
-                                    }}
-                                />
-                            </React.Fragment>
-                        )
-                    })
-                }
-            </ul>
+            <div className='ps-3'>
+                <ul className="content">
+                    {
+                        cardcontent.map((cardcontent, key) => {
+                            return (
+                                <React.Fragment key={key}>
+                                    <li
+                                        className='menu-card-content-list'
+                                        dangerouslySetInnerHTML={{
+                                            __html: cardcontent
+                                        }}
+                                    />
+                                </React.Fragment>
+                            )
+                        })
+                    }
+                </ul>
+            </div>
         </div>
     </React.Fragment>
   )

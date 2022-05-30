@@ -1,37 +1,61 @@
-.tab-column {
-    & .tab-box {
-        border-top: 3px solid $primary;
-        min-height: 15em;
-        min-width: 14em;
-        cursor: pointer;
-
+.menu-card {
+    height: 60em;
+    & .menu-card-heading{
+        font-size: 1.125em;
     }
-}
+    & .menu-card-tab-content{
 
-.tab-box-heading {
-    font-size: 4rem;
-    width: fit-content;
-    line-height: normal;
-}
+        & .tab-column {
 
-.menu-card-container-5-content {
-    background-color: $default-background;
-}
+            & .tab-box {
+                border-top: 3px solid $primary;
+                min-height: 16em;
+                min-width: 14em;
+                cursor: pointer;
+                padding-top: 4em;
+                padding-left: 1.7em;
 
-.menu-card-content-image {
-    height: 15em;
-    width: 100%;
-    overflow: hidden;
-    flex-shrink: 0;
+                & .tab-box-heading {
+                    font-size: 5em;
+                    width: fit-content;
+                    line-height: 1;
+                }
+                
+                & .tab-box-subtitle{
+                    font-size: 1.5em;
+                    line-height: 1;
+                }
 
-    & img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-}
-
-.menu-card-content-list-items-container-5 {
-    list-style-type: disc;
-    list-style-position: inside;
-}
+                & .tab-box-price{
+                    font-size: 0.8em;
+                }
+            } // tab-box
+        } // tab -column
+        
+        .menu-card-content {
+            background-color: $default-background;
+            
+            & .menu-card-content-image{
+                height: 17em;
+                width: 100%;
+                overflow: hidden;
+                flex-shrink: 0;
+    
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .menu-card-content-heading{
+                font-size: 1.6em;
+                line-height: 1;
+            }
+            & .menu-card-content-list{
+                list-style-type: disc;
+                font-size: 1.2em;
+                padding: 0.3em 0;
+            }
+        }
+    } // Menu-card-tab-content ends
+} // Menu-card ends

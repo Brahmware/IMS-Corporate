@@ -6,7 +6,7 @@ const MenuCardTab = (props) => {
     const content = props.tabdata.content;
     return (
 
-        <div className={`tab-box ps-4 pb-4 pt-5 m-1 bg-${(props.active) ? "white" : "primary"}`} onClick={() => { props.setactivetab(props.id) }}>
+        <div className={`tab-box m-1 bg-${(props.active) ? "white" : "primary"}`} onClick={() => { props.setactivetab(props.id) }}>
             <div
                 className={`tab-box-heading ${props.active ? "text-black" : "text-white"}`}
             >
@@ -17,8 +17,7 @@ const MenuCardTab = (props) => {
                 />
             </div>
             <div
-                className={`content pb-2 ${props.active ? "text-primary" : "text-white"}`}
-                style={{ "fontSize": "1.5em" }}
+                className={`tab-box-subtitle content pb-3 ${props.active ? "text-primary" : "text-white"}`}
             >
                 <span
                     dangerouslySetInnerHTML={{
@@ -30,8 +29,7 @@ const MenuCardTab = (props) => {
                 className={`divider w-50 ${props.active ? "bg-primary" : "bg-white"}`}
             />
             <div
-                className={`content py-2 text-black`}
-                style={{ "fontSize": "0.8em" }}
+                className={`tab-box-price content py-2 text-black`}
             >
                 <span
                     dangerouslySetInnerHTML={{
