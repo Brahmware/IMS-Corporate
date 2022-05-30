@@ -3,7 +3,7 @@ import React from 'react'
 const Pagination = (props) => {
   return (
     <ul id="page-numbers">
-      <div className="pagination">
+      <div className="pagination noselect">
         <div className="displayed-per-pages"><span>Displayed per pages</span>
           <div className="pages" onClick={props.onSort} >
             {
@@ -15,13 +15,13 @@ const Pagination = (props) => {
             }
           </div>
         </div>
-        <div className="page-numbers">
-          <div className="page-count">Pages</div>
-          <span className="symbol" onClick={props.prev}>&lt;</span>
-          <div className="" >
+        <div className="page-numbers-part">
+          <div className="page-count"><span>Pages</span></div>
+          <div className="symbol" onClick={props.prev}><span>&lt;</span></div>
+          <div className="page-numbers" >
             {props.renderPageNumbers}
           </div>
-          <span className="symbol" onClick={props.next}>&gt;</span>
+          <div className="symbol" onClick={props.next}><span>&gt;</span></div>
         </div>
       </div>
     </ul>

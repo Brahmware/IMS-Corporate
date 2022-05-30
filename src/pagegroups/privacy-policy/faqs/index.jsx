@@ -3,7 +3,7 @@ import FrequentlyAskedQuestion from "../../../containers/common/faqs"
 
 const Faqs = (props) => {
   const [item, setItem] = useState(props.data);
-  const [pages,setPages]=useState(5)
+  const [pages,setPages] = useState(5);
   useEffect(() => {
     setItem(i=>i.slice(0, 5))
   }, [])

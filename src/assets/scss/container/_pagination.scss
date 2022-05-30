@@ -17,25 +17,40 @@
 
         & .active {
             border-bottom: 0.2em solid $primary;
-
+            transform: translateY(-0.2em);
         }
     }
 
-    & .page-numbers {
+    & .page-numbers-part {
         display: flex;
+        gap: 1em;
 
         & .page-count {
-            margin-left: 1em
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-
         & .symbol {
-            padding-left: 1em;
-            padding-right: 1em;
+            height: 2em;
+            width: 2em;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             cursor: pointer;
+            transition: $transition-base;
         }
 
         & .symbol:hover{
             background-color: $primary;
+            color: $white;
+        }
+
+        & .page-numbers {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

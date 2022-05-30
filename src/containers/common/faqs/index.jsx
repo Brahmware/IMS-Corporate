@@ -1,10 +1,7 @@
 
 import React from 'react';
+import getCreatedXDaysAgo from '../../../utils/getCreatedXDaysAgo';
 import Pagination from "../../common/pagination";
-
-
-
-
 
 const FrequentlyAskedQuestion = ({ datas, allData, page, onSort }) => {
     class FaqsSection extends React.Component {
@@ -24,7 +21,6 @@ const FrequentlyAskedQuestion = ({ datas, allData, page, onSort }) => {
             this.setState({
                 currentPage: Number(event.target.id)
             });
-            // console.log(event)
         }
 
         next() {
@@ -58,21 +54,21 @@ const FrequentlyAskedQuestion = ({ datas, allData, page, onSort }) => {
                             <div className="question">
                                 <span
                                     dangerouslySetInnerHTML={{
-                                        __html: datas.que
+                                        __html: datas.question
                                     }}
                                 />
                             </div>
                             <div className="answer">
                                 <span
                                     dangerouslySetInnerHTML={{
-                                        __html: datas.ans
+                                        __html: datas.answer
                                     }}
                                 />
                             </div>
                             <div className="time">
                                 <span
                                     dangerouslySetInnerHTML={{
-                                        __html: datas.time
+                                        __html: `${getCreatedXDaysAgo(datas.time)} days ago`
                                     }}
                                 />
                             </div>
