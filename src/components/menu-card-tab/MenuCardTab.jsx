@@ -5,8 +5,12 @@ const MenuCardTab = (props) => {
     const subtitle = props.tabdata.subtitle;
     const content = props.tabdata.content;
     return (
-
-        <div className={`tab-box m-1 bg-${(props.active) ? "white" : "primary"}`} onClick={() => { props.setactivetab(props.id) }}>
+        <div
+            className={`tab-box m-1 bg-${(props.active) ? "white" : "primary"}`} onClick={() => { props.setactivetab(props.id) }}
+            data-aos='fade-right'
+            data-aos-duration='600'
+            data-aos-delay='300'
+        >
             <div
                 className={`tab-box-heading ${props.active ? "text-black" : "text-white"}`}
             >

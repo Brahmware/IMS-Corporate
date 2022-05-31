@@ -4,12 +4,12 @@
         font-size: 1.125em;
     }
     & .menu-card-tab-content{
-
+        font-size: 0.8em;
         & .tab-column {
 
             & .tab-box {
                 border-top: 3px solid $primary;
-                min-height: 16em;
+                min-height: 17em;
                 min-width: 14em;
                 cursor: pointer;
                 padding-top: 4em;
@@ -32,7 +32,7 @@
             } // tab-box
         } // tab -column
         
-        .menu-card-content {
+        & .menu-card-content {
             background-color: $default-background;
             
             & .menu-card-content-image{
@@ -47,12 +47,18 @@
                     object-fit: cover;
                 }
             }
+            & .join-button {
+                & span {
+                    font-weight: 900;
+                    font-size: 1.2em;
+                }
+            }
             & .menu-card-content-heading{
                 font-size: 1.6em;
                 line-height: 1;
             }
             & .menu-card-content-list{
-                list-style-type: disc;
+                list-style: disc;
                 font-size: 1.2em;
                 padding: 0.3em 0;
             }
