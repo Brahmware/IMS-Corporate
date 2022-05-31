@@ -138,6 +138,100 @@
     {
         "id": "newsroom",
         "pagename": "Newsroom",
-        "elements": []
+        "elements": [
+            {
+                "id": "container_1",
+                "elements": []
+            },
+            {
+                "id": "container_2",
+                "elements": [
+                    {
+                        "cards":[
+                            {
+                               "images": "/images/media-network/newsroom/container-2/card-1.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            },
+                            {
+                               "images": "/images/media-network/newsroom/container-2/card-2.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            },
+                            {
+                               "images": "/images/media-network/newsroom/container-2/card-3.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            },
+                            {
+                               "images": "/images/media-network/newsroom/container-2/card-4.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            },
+                            {
+                               "images": "/images/media-network/newsroom/container-2/card-5.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            },
+                            {
+                               "images": "/images/media-network/newsroom/container-2/card-6.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "container_3",
+                "elements": [
+                    {
+                        "image": "/images/partners/corporate-and-foundations/container-4/cover.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    }
+                ]
+            },
+            {
+                "id": "container_4",
+                "elements": [
+                    {
+                        "cards":[
+                            {
+                               "images": "/images/media-network/newsroom/container-4/card-1.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            },
+                            {
+                               "images": "/images/media-network/newsroom/container-4/card-2.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            },
+                            {
+                               "images": "/images/media-network/newsroom/container-4/card-3.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            },
+                            {
+                               "images": "/images/media-network/newsroom/container-4/card-4.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            },
+                            {
+                               "images": "/images/media-network/newsroom/container-4/card-5.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            },
+                            {
+                               "images": "/images/media-network/newsroom/container-4/card-6.jpg",
+                               "date": "JUNE 14, 2022",
+                               "title": "IMS and SAMSUNG partner up to raise awareness of Tiger Conservation in Karnataka."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]

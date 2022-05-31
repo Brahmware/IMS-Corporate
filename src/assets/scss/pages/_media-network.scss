@@ -3,3 +3,24 @@
         font-size: 1.3em;
     }
 }
+
+.news-card{
+    border-bottom: 2px solid $primary;
+    & .news-card-image{
+        width: 100%; 
+        height: 15em;
+    }
+    & .news-card-content{
+        padding: 1.5em 0em 3em 0em;
+
+        & .news-card-date{
+            padding-bottom: 0.5em;
+            font-size: 0.75em;
+            line-height: 1;
+        }
+        & .news-card-title{
+            font-size: 1.5em;
+            line-height: 1;
+        }
+    }
+}
