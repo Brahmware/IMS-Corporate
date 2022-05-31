@@ -33,7 +33,7 @@ const ParallaxImageComponent = ({image, alt, filter, positiontop}) => {
         console.log(windowInnerHeight -bgImageDistance)
 
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [bgImageDistance, bgImageHeight, windowInnerHeight, windowInnerWidth]);
+    }, [bgImageDistance, bgImageHeight, positiontop, windowInnerHeight, windowInnerWidth]);
 
     return (
         <div className='parallax-image-component'>
