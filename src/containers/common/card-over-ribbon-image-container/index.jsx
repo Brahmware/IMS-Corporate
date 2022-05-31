@@ -23,6 +23,7 @@ const CardOverRibbonImageContainer = ({ cardribbondata }) => {
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, [bgImageDistance, bgImageHeight, windowInnerHeight]);
+    
     return (
         <div className='section card-over-ribbon-image-container'>
             <div className="background-image-part" ref={backgroundImagePartRef}>
