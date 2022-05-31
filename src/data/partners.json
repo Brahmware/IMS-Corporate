@@ -99,8 +99,8 @@
                     {
                         "image": "/images/partners/become-a-member/container-1/cover.jpg",
                         "card": {
-                            "title": "WHAT WE DO",
-                            "subtitle": "India celebrates Exploration",
+                            "title": "UNITED FOR GOOD",
+                            "subtitle": "This is what an explorer looks like",
                             "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                         }
                     }
@@ -110,24 +110,72 @@
                 "id": "container_2",
                 "elements": [
                     {
-                        "heading": {
-                            "title": "OUR MISSION",
-                            "subtitle": "To Revolutionize Indian Media",
-                            "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
-                        }
+                        "title": "IMS ASSEMBLY MEMBERSHIP"
                     },
                     {
-                        "images": {
-                            "imageTop": "/images/partners/become-a-member/container-2/image-top.jpg",
-                            "imageBottom": "/images/partners/become-a-member/container-2/image-bottom.jpg"
-                        }
+                        "cards": [
+                            {
+                                "id": 1,
+                                "image": "/images/partners/become-a-member/container-2/cover.jpg",
+                                "cardtitle": "BENEFITS",
+                                "cardcontentlist": [
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius"
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "image": "/images/partners/become-a-member/container-2/cover.jpg",
+                                "cardtitle": "BENEFITS",
+                                "cardcontentlist": [
+                                    "Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, ",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius"
+                                ]
+                            },
+                            {
+                                "id": 3,
+                                "image": "/images/partners/become-a-member/container-2/cover.jpg",
+                                "cardtitle": "BENEFITS",
+                                "cardcontentlist": [
+                                    "Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius"
+                                ]
+                            }
+                        ]
                     },
                     {
-                        "card": {
-                            "subtitle": "Making Knowledge Accessible to All.",
-                            "content": "<p>Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.</p>",
-                            "buttontext": "VIEW MORE"
-                        }
+                        "tabs": [
+                            {
+                                "id": 1,
+                                "title": "IM",
+                                "subtitle": "Wanderer",
+                                "content": "&#8377; 5,00,000 - &#8377; 10,00,000"
+                            },
+                            {
+                                "id": 2,
+                                "title": "IM",
+                                "subtitle": "Trendsetter",
+                                "content": "&#8377; 10,00,000 - &#8377; 100,00,000"
+                            },
+                            {
+                                "id": 3,
+                                "title": "IM",
+                                "subtitle": "Pioneer",
+                                "content": "Above &#8377; 100,00,000"
+                            }
+                        ]
                     }
                 ]
             },
@@ -135,33 +183,11 @@
                 "id": "container_3",
                 "elements": [
                     {
-                        "cards": [
-                            {
-                                "id": 1,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                            },
-                            {
-                                "id": 2,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                            },
-                            {
-                                "id": 3,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                            }
-                        ]
-                    },
-                    {
                         "image": "/images/partners/become-a-member/container-3/cover.jpg",
                         "card": {
                             "title": "ABOUT US",
                             "subtitle": "India celebrates Exploration",
-                            "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                         }
                     }
                 ]
@@ -170,10 +196,72 @@
                 "id": "container_4",
                 "elements": [
                     {
-                        "image": "/images/partners/become-a-member/container-4/cover.jpg",
-                        "title": "IMS Explorers",
-                        "subtitle": "Changemakers<br /> and Innovators",
-                        "buttontext": "APPLY"
+                        "title": "IMS ASSEMBLY MEMBERSHIP"
+                    },
+                    {
+                        "cards": [
+                            {
+                                "id": 1,
+                                "image": "/images/partners/become-a-member/container-4/cover.jpg",
+                                "cardtitle": "BENEFITS",
+                                "cardcontentlist": [
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius"
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "image": "/images/partners/become-a-member/container-4/cover.jpg",
+                                "cardtitle": "BENEFITS",
+                                "cardcontentlist": [
+                                    "Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, ",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius"
+                                ]
+                            },
+                            {
+                                "id": 3,
+                                "image": "/images/partners/become-a-member/container-4/cover.jpg",
+                                "cardtitle": "BENEFITS",
+                                "cardcontentlist": [
+                                    "Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel laborum numquam blanditiis harum quisquam eius",
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tabs": [
+                            {
+                                "id": 1,
+                                "title": "IM",
+                                "subtitle": "Wanderer",
+                                "content": "&#8377; 5,00,000 - &#8377; 10,00,000"
+                            },
+                            {
+                                "id": 2,
+                                "title": "IM",
+                                "subtitle": "Trendsetter",
+                                "content": "&#8377; 10,00,000 - &#8377; 100,00,000"
+                            },
+                            {
+                                "id": 3,
+                                "title": "IM",
+                                "subtitle": "Pioneer",
+                                "content": "Above &#8377; 100,00,000"
+                            }
+                        ]
                     }
                 ]
             }

@@ -1,11 +1,22 @@
 import React from 'react'
-import CardOverRibbonImageContainer from '../../common/card-over-ribbon-image-container'
+import MenuCard from '../../../components/menu-card/MenuCard';
 
 const BecomeAMemberFour = ({data}) => {
+  const titleData = data[0].title
+  const cardsData = data[1].cards
+  const tabsdData = data[2].tabs
   return (
-    <div className='corporate-and-foundations-container-5'>
-      <CardOverRibbonImageContainer cardribbondata = {data[0]}/>
-    </div>
+    <>
+        <div className="becomeamember-container-5 section-with-padding white-background ">
+            <div className="container">
+                <MenuCard
+                    title={titleData}
+                    cards={cardsData}
+                    tabs={tabsdData}
+                />
+            </div>
+        </div>
+    </>
   )
 }
 
