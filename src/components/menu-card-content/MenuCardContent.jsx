@@ -1,18 +1,41 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import FilledButton from '../buttons/FilledButton';
 
 const MenuCardContent = ({ card }) => {
     const image = card.image;
     const cardtitle = card.cardtitle;
     const cardcontent = card.cardcontentlist;
+
+    const [, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+    const [parallax, setParallax] = useState({});
+
+    const backgroundImagePartRef = useRef();
+    const bgImageDistance = backgroundImagePartRef.current && backgroundImagePartRef.current.getBoundingClientRect().top;
+    const bgImageHeight = backgroundImagePartRef.current && backgroundImagePartRef.current.getBoundingClientRect().height;
+    const windowInnerHeight = window.innerHeight;
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        if (bgImageDistance < windowInnerHeight && bgImageDistance > - bgImageHeight) {
+            setParallax({
+                transform: `translateY(${(windowInnerHeight - bgImageDistance) * 0.33}px)`
+            })
+        }
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [bgImageDistance, bgImageHeight, windowInnerHeight]);
+
     return (
-        <div
-            data-aos='fade-left'
-            data-aos-duration='600'
-            data-aos-delay='300'
-        >
-            <div className="menu-card-content-image">
-                <img src={image} alt={""} />
+        <React.Fragment>
+            <div className="background-image-part" ref={backgroundImagePartRef}>
+                <div className="menu-card-content-image-holder" >
+                    <div className="menu-card-content-image">
+                        <img src={image} alt={image}
+                            style={parallax}
+                        />
+                    </div>
+                </div>
             </div>
 
             <div className='py-4 my-3 px-5'>
@@ -46,7 +69,7 @@ const MenuCardContent = ({ card }) => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 

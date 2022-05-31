@@ -1,10 +1,13 @@
 .menu-card {
     height: 60em;
-    & .menu-card-heading{
+
+    & .menu-card-heading {
         font-size: 1.125em;
     }
-    & .menu-card-tab-content{
+
+    & .menu-card-tab-content {
         font-size: 0.8em;
+
         & .tab-column {
 
             & .tab-box {
@@ -20,48 +23,81 @@
                     width: fit-content;
                     line-height: 1;
                 }
-                
-                & .tab-box-subtitle{
+
+                & .tab-box-subtitle {
                     font-size: 1.5em;
                     line-height: 1;
                 }
 
-                & .tab-box-price{
+                & .tab-box-price {
                     font-size: 0.8em;
                 }
-            } // tab-box
-        } // tab -column
-        
+            }
+
+            // tab-box
+        }
+
+        // tab -column
+
         & .menu-card-content {
             background-color: $default-background;
-            
-            & .menu-card-content-image{
+
+            & .background-image-part {
                 height: 17em;
                 width: 100%;
                 overflow: hidden;
                 flex-shrink: 0;
-    
-                & img {
-                    height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & .menu-card-content-image-holder {
+                    position: relative;
+                    height: 0;
                     width: 100%;
-                    object-fit: cover;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                & .menu-card-content-image {
+                    position: absolute;
+                    height: max-content;
+                    width: 100%;
+
+                    & img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
                 }
             }
+
+
             & .join-button {
+                border-radius: 0;
+
                 & span {
                     font-weight: 900;
                     font-size: 1.2em;
                 }
             }
-            & .menu-card-content-heading{
+
+            & .menu-card-content-heading {
                 font-size: 1.6em;
                 line-height: 1;
             }
-            & .menu-card-content-list{
+
+            & .menu-card-content-list {
                 list-style: disc;
                 font-size: 1.2em;
                 padding: 0.3em 0;
             }
         }
-    } // Menu-card-tab-content ends
-} // Menu-card ends
+    }
+
+    // Menu-card-tab-content ends
+}
+
+// Menu-card ends
