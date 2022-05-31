@@ -2,6 +2,7 @@ import React from 'react'
 import { IMSLogo } from '../../assets/ourlogo';
 import CopyrightComponent from '../../components/copyright';
 import OurSocialLinks from '../../components/our-social-links';
+import PrivacyPolicyRightSection from '../../components/privacy-policy-right-section';
 import SiteMap from '../../components/sitemap';
 import SubscribeComponent from '../../components/subscribecomponent';
 
@@ -55,11 +56,7 @@ const Footer = () => {
             </div>
             <div className="privacy-copyright-section-right col-6">
               <div className="legals">
-                <a href="/visitor_agreement">Visitor Agreement</a>
-                <a href="/visitor_agreement">Privacy Notice</a>
-                <a href="/website_accessibility_statement">Website Accessibility Statement</a>
-                <a href="/code_of_ethics">Code of Ethics</a>
-                <a href="/faq">FAQs</a>
+                <PrivacyPolicyRightSection/>
               </div>
             </div>
           </div>

@@ -1,0 +1,56 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0em;
+    font-size: 0.8em;
+    letter-spacing: 0.03em;
+
+    & .displayed-per-pages {
+        display: flex;
+
+        & .pages {
+            margin-left: 1em;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        & .active {
+            border-bottom: 0.2em solid $primary;
+            transform: translateY(-0.2em);
+        }
+    }
+
+    & .page-numbers-part {
+        display: flex;
+        gap: 1em;
+
+        & .page-count {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        & .symbol {
+            height: 2em;
+            width: 2em;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: $transition-base;
+        }
+
+        & .symbol:hover{
+            background-color: $primary;
+            color: $white;
+        }
+
+        & .page-numbers {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.frequently-asked-question-section {
+    padding: 0em 4em;
+
+    & .que-ans {
+        padding: 1em;
+        & .question {
+            color: $primary;
+            font-weight: 900;
+            font-size: 1.5em;
+        }
+
+        & .answer {
+            width: 60%;
+            font-size: 0.8em;
+            color:$light-text-color
+        }
+        
+        & .time {
+            margin-top: 1.5em;
+            font-size: 0.6em;
+            color:$light-text-color
+        }
+    }
+
+    & .divider {
+        border: 1px solid $default-background;
+    }
+}

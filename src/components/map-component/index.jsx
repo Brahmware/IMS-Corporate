@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Cursor, ResizeIcon } from '../../assets/icons';
+import { ResizeIcon } from '../../assets/icons';
 import CountriesGeologyData from '../../data/countries.geology.json'
 import { select, geoPath, geoMercator } from "d3";
 import useResizeObserver from '../../utils/useResizableObserver';
@@ -83,6 +83,8 @@ const MapComponent = ({ continentsdata }) => {
 
             }
 
+            console.log(CountriesGeologyData.features)
+
             svg.selectAll(".country")
                 .data(CountriesGeologyData.features)
                 .join("path")
@@ -90,6 +92,7 @@ const MapComponent = ({ continentsdata }) => {
                 .attr("class", "country")
                 .attr("id", (d) => d.id)
                 .transition()
+                .duration(600)
                 .attr("d", path)
 
 
