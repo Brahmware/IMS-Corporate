@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-const ParallaxImageComponent = ({image, alt, filter }) => {
+const ParallaxImageComponent = ({image, alt, filter, positiontop}) => {
 
     /* Parallax Background Image*/
     const [, setOffsetY] = useState(0);
@@ -14,14 +14,23 @@ const ParallaxImageComponent = ({image, alt, filter }) => {
     const windowInnerHeight = window.innerHeight;
     const windowInnerWidth = window.innerWidth;
 
+    const parallax_factor = 0.2;
+
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
-        console.log(bgImageDistance)
-        if (bgImageDistance < windowInnerHeight && bgImageDistance > - bgImageHeight) {
+        if (positiontop) {
             setParallax({
-                transform: `translateY(${(windowInnerHeight - bgImageDistance) * 0.2}px)`
+                transform: `translateY(${window.pageYOffset * parallax_factor}px)`
             })
-        } 
+        } else {
+            if (bgImageDistance <= windowInnerHeight && bgImageDistance >= - bgImageHeight) {
+                setParallax({
+                    transform: `translateY(${(windowInnerHeight - bgImageDistance) * parallax_factor}px)`
+                })
+            }
+        }
+
+        console.log(windowInnerHeight -bgImageDistance)
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, [bgImageDistance, bgImageHeight, windowInnerHeight, windowInnerWidth]);
