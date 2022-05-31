@@ -1,42 +1,11 @@
 .card-over-ribbon-image-container {
-    height: max-content;
+    height: 31.24em;
     width: 100%;
     color: $white;
 
-    & .background-image-part {
-        height: 31.24em;
+    & .image-part {
+        height: 100%;
         width: 100%;
-        overflow: hidden;
-        flex-shrink: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        & .background-image-holder {
-            position: relative;
-            height: 0;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            & .background-image {
-                position: absolute;
-                z-index: -1;
-                height: max-content;
-                width: 100%;
-                filter: brightness($default-low-brightness);
-                & img {
-                    width: 100%;
-                    height: max-content;
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    & .background-image {
-
-
     }
 
     & .ribbon-card-holder {

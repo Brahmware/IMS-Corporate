@@ -1,40 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import HollowButton from '../../../components/buttons/HollowButton'
+import ParallaxImageComponent from '../../../components/parallax-image-component';
 
 const CardOverRibbonImageContainer = ({ cardribbondata }) => {
-
-    /* Parallax Background Image*/
-    const [, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
-    const [parallax, setParallax] = useState({});
-
-    const backgroundImagePartRef = useRef();
-    const bgImageDistance = backgroundImagePartRef.current && backgroundImagePartRef.current.getBoundingClientRect().top;
-    const bgImageHeight = backgroundImagePartRef.current && backgroundImagePartRef.current.getBoundingClientRect().height;
-    const windowInnerHeight = window.innerHeight;
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-        if (bgImageDistance < windowInnerHeight && bgImageDistance > - bgImageHeight) {
-            setParallax({
-                transform: `translateY(${(windowInnerHeight - bgImageDistance) * 0.33}px)`
-            })
-        }
-
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, [bgImageDistance, bgImageHeight, windowInnerHeight]);
-    
     return (
         <div className='section card-over-ribbon-image-container'>
-            <div className="background-image-part" ref={backgroundImagePartRef}>
-                <div className="background-image-holder">
-                    <div className="background-image">
-                        <img
-                            src={cardribbondata.image} alt={cardribbondata.title}
-                            style={parallax}
-                        />
-                    </div>
-                </div>
+            <div className="image-part">
+                <ParallaxImageComponent image={cardribbondata.image} alt={cardribbondata.title} filter={true}/>
             </div>
             <div className="card-part">
                 <div className="container">

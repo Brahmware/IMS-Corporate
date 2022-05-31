@@ -1,4 +1,5 @@
 import React from 'react'
+import ParallaxImageComponent from '../parallax-image-component'
 
 const ImageOverThinImage = (props) => {
   return (
@@ -10,7 +11,7 @@ const ImageOverThinImage = (props) => {
     >
       <div className='bottom-image'>
         <div className="image-overlay" />
-        <img src={props.bottomImage} alt={props.bottomImage} />
+        <ParallaxImageComponent image={props.bottomImage} alt={props.bottomImage} />
       </div>
       <div className="top-image">
         <img src={props.topImage} alt={props.topImage} />

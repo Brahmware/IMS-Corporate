@@ -1,5 +1,5 @@
 .menu-card {
-    height: 60em;
+    height: max-content;
 
     & .menu-card-heading {
         font-size: 1.125em;
@@ -42,38 +42,10 @@
         & .menu-card-content {
             background-color: $default-background;
 
-            & .background-image-part {
+            & .image-part {
                 height: 17em;
                 width: 100%;
-                overflow: hidden;
-                flex-shrink: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                & .menu-card-content-image-holder {
-                    position: relative;
-                    height: 0;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                & .menu-card-content-image {
-                    position: absolute;
-                    height: max-content;
-                    width: 100%;
-
-                    & img {
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                }
             }
-
 
             & .join-button {
                 border-radius: 0;
