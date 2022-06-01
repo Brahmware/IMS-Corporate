@@ -6,6 +6,7 @@ import HamburgerMenu from '../../components/hamburgermenu';
 /* import LiveButton from '../../components/LiveButton'; */
 import SearchComponent from '../../components/searchcomponent';
 import MegaMenu from '../../pagegroups/megamenu';
+import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel';
 const Header = () => {
   const [offcanvasShow, setOffcanvasShow] = useState(false);
 
@@ -15,10 +16,10 @@ const Header = () => {
 
   const [scroll, setScroll] = useState(0);
   const [headerTop, setHeaderTop] = useState(0);
-  
+
   const header = document.querySelector(".header");
   const headerHeight = header && header.getBoundingClientRect().height;
-  
+
   useEffect(() => {
     setHeaderTop(headerHeight);
     window.addEventListener("scroll", handleScroll);
@@ -31,13 +32,23 @@ const Header = () => {
     setScroll(window.scrollY);
   };
 
+
+  /* Handeling clicking on logo */
+  const handleClickOnLogo = () => {
+    offcanvasShow ? onCanvasHandler() : window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <React.Fragment>
       <div className={`header ${scroll > headerTop && "shrinked-header"}`}>
         <div className="container">
           <div className="header-left">
             <div className="logo">
-              <Link to="/">
+              <Link
+                to="/"
+                id='IMS_Logo'
+                onClick={handleClickOnLogo}
+              >
                 <IMSLogo />
               </Link>
             </div>
@@ -50,7 +61,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <MegaMenu show={offcanvasShow} onclose={onCanvasHandler} headerHeight={headerTop}/>
+      <MegaMenu show={offcanvasShow} onclose={onCanvasHandler} headerHeight={headerTop} />
     </React.Fragment>
   )
 }

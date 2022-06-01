@@ -7,18 +7,26 @@
 
     & .displayed-per-pages {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
 
         & .pages {
-            margin-left: 1em;
-            cursor: pointer;
             display: flex;
-            justify-content: space-between;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            & span {
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
         }
 
-        & .active {
-            border-bottom: 0.2em solid $primary;
-            transform: translateY(-0.2em);
-        }
     }
 
     & .page-numbers-part {
@@ -30,6 +38,7 @@
             justify-content: center;
             align-items: center;
         }
+
         & .symbol {
             height: 2em;
             width: 2em;
@@ -41,7 +50,7 @@
             transition: $transition-base;
         }
 
-        & .symbol:hover{
+        & .symbol:hover {
             background-color: $primary;
             color: $white;
         }
@@ -51,6 +60,29 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+
+            & span {
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    & .active {
+
+        color: $white;
+        background-color: rgba($primary, $opacity-base);
+        border-bottom: 0.2em solid $primary;
+        margin-bottom: -0.2em;
+        cursor: default !important;
+
+        &:hover {
+            color: $white !important;
+            background-color: rgba($primary, $opacity-base) !important;
         }
     }
 }

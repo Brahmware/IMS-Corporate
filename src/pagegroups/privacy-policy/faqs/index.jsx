@@ -3,9 +3,9 @@ import FrequentlyAskedQuestion from "../../../containers/common/faqs"
 
 const Faqs = (props) => {
   const [item, setItem] = useState(props.data);
-  const [pages,setPages] = useState(5);
+  const [pages, setPages] = useState(5);
   useEffect(() => {
-    setItem(i=>i.slice(0, 5))
+    setItem(i => i.slice(0, 5))
   }, [])
 
   const displayItem = (event) => {
@@ -17,14 +17,14 @@ const Faqs = (props) => {
     setItem(productValue.slice(0, value));
   }
   return (
-    <div 
+    <div
       className="frequently-asked-question-section white-background"
-      data-aos='fade-right'
+      data-aos='fade-up'
       data-aos-duration='600'
-      data-aos-delay='600'
+      data-aos-delay='300'
     >
       <div className="container">
-        <FrequentlyAskedQuestion datas={item} allData={props.data} page={ pages} onSort={displayItem} />
+        <FrequentlyAskedQuestion datas={item} allData={props.data} page={pages} onSort={displayItem} />
       </div>
     </div>
   )

@@ -4,7 +4,8 @@ const Pagination = (props) => {
   return (
     <ul id="page-numbers">
       <div className="pagination noselect">
-        <div className="displayed-per-pages"><span>Displayed per pages</span>
+        <div className="displayed-per-pages">
+          <span>Displayed per pages</span>
           <div className="pages" onClick={props.onSort} >
             {
               props.itemsPerPage.map((item, index) => {

@@ -1,10 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CopyrightComponent from '../../components/copyright';
 import LanguageComponent from '../../components/languagecomponent';
 import OurSocialLinks from '../../components/our-social-links';
 import SiteMap from '../../components/sitemap';
+import PrivacyPolicySitemapData from '../../data/privacy-policy-sitemap.json';
 
 const MegaMenu = (props) => {
+
+    const pages = PrivacyPolicySitemapData && PrivacyPolicySitemapData[0].pages;
+    const visitor_agreement = pages && pages.find(page => page.id === 'visitor_agreement');
+    const privacy_notice = pages && pages.find(page => page.id === 'privacy_notice');
+
 
     return (
         <div
@@ -34,8 +41,28 @@ const MegaMenu = (props) => {
                             <LanguageComponent />
                         </div>
                         <div className="legals">
-                            <a href="/visitor_agreement">Visitor Agreement</a>
-                            <a href="/visitor_agreement">Privacy Notice</a>
+                            <Link 
+                                to={visitor_agreement.path} 
+                                id={visitor_agreement.id}
+                                onClick={props.onclose}
+                            >
+                                <span
+                                    dangerouslySetInnerHTML={{
+                                        __html: visitor_agreement.page
+                                    }}
+                                />
+                            </Link>
+                            <Link 
+                                to={privacy_notice.path} 
+                                id={privacy_notice.id}
+                                onClick={props.onclose}
+                            >
+                                <span 
+                                    dangerouslySetInnerHTML={{
+                                        __html: privacy_notice.page
+                                    }}
+                                />
+                            </Link>
                         </div>
                     </div>
                 </div>
