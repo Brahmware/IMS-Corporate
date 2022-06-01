@@ -15,10 +15,10 @@ const Header = () => {
 
   const [scroll, setScroll] = useState(0);
   const [headerTop, setHeaderTop] = useState(0);
-  
+
   const header = document.querySelector(".header");
   const headerHeight = header && header.getBoundingClientRect().height;
-  
+
   useEffect(() => {
     setHeaderTop(headerHeight);
     window.addEventListener("scroll", handleScroll);
@@ -45,12 +45,15 @@ const Header = () => {
           </div>
           <div className="header-right">
             <SearchComponent />
-            <FilledButton class={"join-button"} text={"JOIN"} />
+            <a href="/join">
+
+              <FilledButton class={"join-button"} text={"JOIN"} />
+            </a>
             <HamburgerMenu onClickEvent={onCanvasHandler} toggleState={offcanvasShow} />
           </div>
         </div>
       </div>
-      <MegaMenu show={offcanvasShow} onclose={onCanvasHandler} headerHeight={headerTop}/>
+      <MegaMenu show={offcanvasShow} onclose={onCanvasHandler} headerHeight={headerTop} />
     </React.Fragment>
   )
 }
