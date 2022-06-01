@@ -7,7 +7,7 @@ const ContentContainer = ({ card }) => {
                 <div className="title"
                     data-aos='fade-right'
                     data-aos-duration='600'
-                    data-aos-delay='600'>
+                    data-aos-delay='300'>
                     <span
                         dangerouslySetInnerHTML={{
                             __html: card.title
@@ -27,7 +27,7 @@ const ContentContainer = ({ card }) => {
                 <div className="bold-paragraph"
                     data-aos='fade-right'
                     data-aos-duration='600'
-                    data-aos-delay='600'>
+                    data-aos-delay='900'>
                     <span
                         dangerouslySetInnerHTML={{
                             __html: card.boldparagraph
@@ -35,9 +35,9 @@ const ContentContainer = ({ card }) => {
                     />
                 </div>
                 <div className="light-paragraph"
-                    data-aos='fade-left'
+                    data-aos='fade-right'
                     data-aos-duration='600'
-                    data-aos-delay='600'>
+                    data-aos-delay='1200'>
                     <span
                         dangerouslySetInnerHTML={{
                             __html: card.lightparagraph

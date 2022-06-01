@@ -34,8 +34,7 @@ const PrivacyPolicyPage = () => {
     }
 
     const relatedData = PrivacyPolicyData.find(( data => data.id === activetab ));
-    const relatedDataElements = relatedData && relatedData.elements; 
-    // console.log(relatedDataElements)
+    const relatedDataElements = relatedData && relatedData.elements;
 
     return (
         <React.Fragment>
