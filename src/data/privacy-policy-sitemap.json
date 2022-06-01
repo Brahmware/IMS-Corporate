@@ -4,27 +4,27 @@
         "pageGroup": "Privacy Policy",
         "pages": [{
                 "id": "visitor_agreement",
-                "page": "visitor agreement",
+                "page": "Visitor Agreement",
                 "path": "/privacy_policy#visitor_agreement"
             },
             {
                 "id": "privacy_notice",
-                "page": "privacy notice",
+                "page": "Privacy Notice",
                 "path": "/privacy_policy#privacy_notice"
             },
             {
                 "id": "website_accessibility_statement",
-                "page": "website accessibility statement",
+                "page": "Website Accessibility Statement",
                 "path": "/privacy_policy#website_accessibility_statement"
             },
             {
                 "id": "code_of_ethics",
-                "page": "code of ethics",
+                "page": "Code of Ethics",
                 "path": "/privacy_policy#code_of_ethics"
             },
             {
                 "id": "faqs",
-                "page": "faqs",
+                "page": "FAQs",
                 "path": "/privacy_policy#faqs"
             }
         ]

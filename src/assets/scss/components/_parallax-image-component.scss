@@ -22,14 +22,12 @@
             & .background-image {
                 position: absolute;
                 z-index: -1;
-                height: max-content;
-                width: max-content;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 & img {
-                    width: max-content;
+                    width: 100%;
                     height: max-content;
                     object-fit: cover;
                 }

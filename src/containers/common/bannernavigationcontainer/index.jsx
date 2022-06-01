@@ -1,27 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import ParallaxImageComponent from '../../../components/parallax-image-component';
 
 const BannerNavigationContainer = (props) => {
     const data = props.data;
     const activetab = props.activetab;
 
-    /* Parallax Background Image*/
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     return (
         <div className="banner-sitemap-container">
             <div className="banner-background" >
-                <img 
-                    src={data.bannerbackground} alt={data.id}
-                    /* style for parallax */
-                    style={{ transform: `translateY(${offsetY * 0.33}px)` }}
-                />
+                <ParallaxImageComponent image={data.bannerbackground} alt={data.id} positiontop={true}/>
             </div>
             <div className="title-tabs-part noselect">
                 <div
