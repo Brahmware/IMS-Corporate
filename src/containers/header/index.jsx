@@ -6,7 +6,7 @@ import HamburgerMenu from '../../components/hamburgermenu';
 /* import LiveButton from '../../components/LiveButton'; */
 import SearchComponent from '../../components/searchcomponent';
 import MegaMenu from '../../pagegroups/megamenu';
-import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel';
+// import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel';
 const Header = () => {
   const [offcanvasShow, setOffcanvasShow] = useState(false);
 
