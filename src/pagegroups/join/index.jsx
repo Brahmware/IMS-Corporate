@@ -22,17 +22,6 @@ const Join = () => {
             <JoinContainerThree data={dataContainer3} />
             <JoinContainerFour data={dataContainer4} />
             <JoinContainerFive data={dataContainer5} />
-
-
-
-
-
-
-
-
-
-
-
             <Footer />
         </>
     )

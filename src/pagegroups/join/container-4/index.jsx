@@ -31,7 +31,8 @@ const JoinContainerFour = (props) => {
                                     key={index}
                                     data-aos='fade-right'
                                     data-aos-duration='600'
-                                    data-aos-delay='600'>
+                                    data-aos-delay='600'
+                                >
                                     <div className="box-button">
                                         <button>{allData.button}</button></div>
                                     <div
