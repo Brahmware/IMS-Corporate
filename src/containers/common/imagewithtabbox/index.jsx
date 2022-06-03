@@ -1,4 +1,5 @@
 import React from 'react'
+import ParallaxImageComponent from '../../../components/parallax-image-component'
 import TabBoxContainer from '../../../containers/common/tabbox'
 
 const ImageWithTabBox = ({data}) => {
@@ -18,17 +19,21 @@ const ImageWithTabBox = ({data}) => {
                     />
                 </div>
                 <div className="section-1"
-                    data-aos='fade-left'
+                    data-aos='fade-up'
                     data-aos-duration='600'
                     data-aos-delay='600'
                 >
-                    <img src={data.image} alt="" />
+                    <div className="banner-image-container">
+                        <ParallaxImageComponent image={data.image}  />
+                    </div>
                 </div>
                 <div className="section-2 row m-0">
                     {
                         data.content.map((allData, index) => {
                             return (
-                                <TabBoxContainer data={allData} key={index} />
+                                <React.Fragment key = {index}>
+                                    <TabBoxContainer data={allData} tabkey={index} />
+                                </React.Fragment>
                             )
                         })
                     }

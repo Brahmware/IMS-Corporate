@@ -16,7 +16,7 @@ const JoinContainerThree = (props) => {
                     className="fixed-image" />
             </div>
             <div className="banner-background" >
-                <ParallaxImageComponent image={data.bannerbackground} alt={data.bannerbackground} positiontop={true} />
+                <ParallaxImageComponent image={data.bannerbackground} alt={data.bannerbackground} />
 
                 <div className="title-tabs-part noselect">
                     <div
