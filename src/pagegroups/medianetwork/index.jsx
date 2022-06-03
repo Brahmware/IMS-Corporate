@@ -57,7 +57,7 @@ const MediaNetworkPage = () => {
                             );
                         case "newsroom":
                             return (
-                                <NewsRoom />
+                                <NewsRoom data={relatedDataElements} />
                             );
                         default:
                             return (
