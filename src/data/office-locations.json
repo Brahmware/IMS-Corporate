@@ -1,0 +1,230 @@
+[
+    {
+        "id": "AS",
+        "continent": "Asia",
+        "countries": [
+            {
+                "id": "IND",
+                "country": "India",
+                "colorcode": "#F79432",
+                "cities": [
+                    {
+                        "officeid": "as_ind_noida",
+                        "name": "IMS Noida Campus",
+                        "location": {
+                            "address": "Sector - 62, Noida, 203202",
+                            "latlong": {
+                                "latitude": 28.6201526,
+                                "longitude": 77.3603447
+                            }
+                        }
+                    },
+                    {
+                        "officeid": "as_ind_kolkata",
+                        "name": "IMS Kolkata Campus",
+                        "location": {
+                            "address": "Sector - 5, Kolkata, 700160",
+                            "latlong": {
+                                "latitude": 22.5754,
+                                "longitude": 88.4798
+                            }
+                        }
+                    },
+                    {
+                        "officeid": "as_ind_bangalore",
+                        "name": "IMS Bangalore Campus",
+                        "location": {
+                            "address": "Whitefield, Bangalore, 560066",
+                            "latlong": {
+                                "latitude": 12.9698,
+                                "longitude": 77.7500
+                            }
+                        }
+                    },
+                    {
+                        "officeid": "as_ind_portblair",
+                        "name": "IMS Park - Andaman",
+                        "location": {
+                            "address": "Flat Bay RV, Andaman, 744103",
+                            "latlong": {
+                                "latitude": 11.6234,
+                                "longitude": 92.7265
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "PAK",
+                "country": "Pakistan",
+                "colorcode": "#A4BEA2",
+                "cities": [
+                    {
+                        "officeid": "as_pak_noida",
+                        "name": "IMS Karachi Office",
+                        "location": {
+                            "address": "Sector - 11, Karachi, 75850",
+                            "latlong": {
+                                "latitude": 24.9930,
+                                "longitude": 67.0651
+                            }
+                        }
+                    },
+                    {
+                        "officeid": "as_pak_multan",
+                        "name": "IMS Multan Office",
+                        "location": {
+                            "address": "Pak Gate, Multan, 59221",
+                            "latlong": {
+                                "latitude": 30.1575,
+                                "longitude": 71.5249
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "CHN",
+                "country": "China",
+                "colorcode": "#E4A3A3",
+                "cities": [
+                    {
+                        "officeid": "as_chn_beijing",
+                        "name": "IMS Beijing Office",
+                        "location": {
+                            "address": "Chaoyang, Beijing, 100000",
+                            "latlong": {
+                                "latitude": 40.3582,
+                                "longitude": 116.8012
+                            }
+                        }
+                    },
+                    {
+                        "officeid": "as_chn_shanghai",
+                        "name": "IMS Shanghai Office",
+                        "location": {
+                            "address": "Suzhou, Shanghai, 201701",
+                            "latlong": {
+                                "latitude": 31.2983,
+                                "longitude": 120.5832
+                            }
+                        }
+                    },
+                    {
+                        "officeid": "as_chn_chongqing",
+                        "name": "IMS Chongqing Office",
+                        "location": {
+                            "address": "Sigongli, Chongqing, 400067",
+                            "latlong": {
+                                "latitude": 43.5722,
+                                "longitude": 128.0579
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "BGD",
+                "country": "Bangladesh",
+                "colorcode": "#d8dd91",
+                "cities": [
+                    {
+                        "officeid": "as_bgd_dhaka",
+                        "name": "IMS Dhaka Office",
+                        "location": {
+                            "address": "Banasree, Dhaka, 1219",
+                            "latlong": {
+                                "latitude": 23.7619,
+                                "longitude": 90.4331
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "LKA",
+                "country": "Sri Lanka",
+                "colorcode": "#8c9eff",
+                "cities": [
+                    {
+                        "officeid": "as_lka_colombo",
+                        "name": "IMS Colombo Office",
+                        "location": {
+                            "address": "Pettah, Colombo, 01100",
+                            "latlong": {
+                                "latitude": 6.9368,
+                                "longitude": 79.8525
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "EU",
+        "continent": "Europe",
+        "countries": [
+            {
+                "id": "ITA",
+                "country": "Italy",
+                "colorcode": "#018d44",
+                "cities": [
+                    {
+                        "officeid": "eu_ita_genova",
+                        "name": "IMS Genova Office",
+                        "location": {
+                            "address": "Foce, Genova, 16121",
+                            "latlong": {
+                                "latitude": 44.4003,
+                                "longitude": 8.9480
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "DEU",
+                "country": "Germany",
+                "colorcode": "#D61115",
+                "cities": [
+                    {
+                        "officeid": "eu_deu_berlin",
+                        "name": "IMS Berlin Office",
+                        "location": {
+                            "address": "Giersstraße 19, Berlin, 13088",
+                            "latlong": {
+                                "latitude": 52.5200,
+                                "longitude": 13.4050
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "NA",
+        "continent": "North America",
+        "countries": [
+            {
+                "id": "USA",
+                "country": "United States of America",
+                "colorcode": "#018d44",
+                "cities": [
+                    {
+                        "officeid": "na_usa_Atlanta",
+                        "name": "IMS Atlanta Office",
+                        "location": {
+                            "address": "Buckhead, Atlanta, 30625",
+                            "latlong": {
+                                "latitude": 33.8373,
+                                "longitude": -84.4068
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
