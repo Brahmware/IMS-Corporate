@@ -1,5 +1,4 @@
 import React from 'react'
-import { LeftarrowIcon, RightarrowIcon } from '../../../assets/icons'
 import OpeningsCarouselContainer from '../../common/openings-carousel-container'
 
 const JobsContainer = ({ data }) => {
