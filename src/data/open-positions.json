@@ -24,7 +24,7 @@
                         "jobid": "ims1002",
                         "jobtitle": "Head of Marketing",
                         "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
+                        "jobpostdate": "2022-06-02T04:00:00",
                         "jobtype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/jobs/ims1002/icon.svg",
@@ -85,7 +85,7 @@
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/jobs/ims1003/icon.svg",
                         "location": {
-                            "continent": "AF",
+                            "continent": "AS",
                             "country": "BGD",
                             "city": "Dhaka"
                         }
@@ -99,7 +99,7 @@
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/jobs/ims1001/icon.svg",
                         "location": {
-                            "continent": "AS",
+                            "continent": "EU",
                             "country": "ITA",
                             "city": "Genoa"
                         }
@@ -127,7 +127,7 @@
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/jobs/ims1003/icon.svg",
                         "location": {
-                            "continent": "AF",
+                            "continent": "OC",
                             "country": "NZL",
                             "city": "Wellington"
                         }
@@ -326,7 +326,7 @@
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
-                            "continent": "AS",
+                            "continent": "EU",
                             "country": "ITA",
                             "city": "Genoa"
                         }
@@ -354,7 +354,7 @@
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
-                            "continent": "AF",
+                            "continent": "OC",
                             "country": "NZL",
                             "city": "Wellington"
                         }

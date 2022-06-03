@@ -15,7 +15,7 @@ const LocationSelectionContainer = ({ taglineblob }) => {
       <div className="container">
         <div className="odd-divided-section">
           <div className="tagline-continent-selector-part">
-            <div 
+            <div
               className="tagline-part"
               data-aos='fade-right'
               data-aos-duration='600'
@@ -57,6 +57,14 @@ const LocationSelectionContainer = ({ taglineblob }) => {
             <CountrySelectorComponent continentsdata={ContinentsData} />
           </div>
         </div>
+      </div>
+      <div
+        className="container divider-container"
+        data-aos='fade-up'
+        data-aos-duration='600'
+        data-aos-delay='300'
+      >
+        <div className="divider bottom-divider" />
       </div>
     </div>
   )
