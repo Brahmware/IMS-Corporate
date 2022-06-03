@@ -3,7 +3,7 @@ import React from 'react'
 
 const NewsCards = ({ data}) => {
     const image = data.images
-    const dateData = data.date
+    const dateData = new Date(data.date).toLocaleString('en-IN')
     const title = data.title
     return (
         <>
