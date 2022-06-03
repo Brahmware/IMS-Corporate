@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 const ParallaxImageComponent = ({image, alt, filter, positiontop}) => {
 
     /* Parallax Background Image*/
+    // console.log(filter)
     const [, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
     const [parallax, setParallax] = useState({});

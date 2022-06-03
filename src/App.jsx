@@ -22,6 +22,7 @@ const CommercialPage = lazy(() => import("./pagegroups/commercial"));
 const MediaNetworkPage = lazy(() => import("./pagegroups/medianetwork"));
 const EducationTeachingPage = lazy(() => import("./pagegroups/educationandteaching"));
 const PartnersPage = lazy(() => import("./pagegroups/partners"));
+const JoinPage = lazy(() => import("./pagegroups/join"));
 
 
 const App = () => {
@@ -78,6 +79,11 @@ const App = () => {
             path={'/privacy_policy'}
             exact
             component={PrivacyPolicyPage}   
+          />
+          <Route
+            path={'/join'}
+            exact
+            component={JoinPage}   
           />
 
         </Switch>
