@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom';
 import BookishCard from '../../../components/bookish-card';
 import FilledButton from '../../../components/buttons/FilledButton'
 import ImageOverThinImage from '../../../components/imageoverimage/ImageOverThinImage'
@@ -6,8 +7,14 @@ import ImageOverThinImage from '../../../components/imageoverimage/ImageOverThin
 const ImageOverImageCardContainer = (props) => {
     const images = props.containerData.elements[0].images;
     const card = props.containerData.elements[1].card;
+    const history = useHistory();
 
-    const ButtonComponent = <FilledButton class={"black-button"} text={card.buttontext ? card.buttontext : "VIEW MORE"} />
+    const ButtonComponent = 
+    <FilledButton 
+        class={"black-button"} 
+        text={card.buttontext ? card.buttontext : "VIEW MORE"}
+        onClick={() => history.push("/")}
+    />
 
     return (
         <div className="container imageoverimage-card-container">

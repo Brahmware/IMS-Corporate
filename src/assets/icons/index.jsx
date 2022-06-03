@@ -8,3 +8,8 @@ export { ReactComponent as Cursor } from './cursor.svg';
 
 // Language Icons
 export { ReactComponent as GlobeIcon } from './globe.svg';
+
+// Copy & Share Icons
+export { ReactComponent as CopyIcon } from './copy.svg';
+export { ReactComponent as ShareIcon } from './share.svg';
+

@@ -99,7 +99,8 @@ button {
     outline: 0;
 
     &:focus {
-        outline: 0;
+        outline: none;
+        box-shadow: none !important;
     }
 }
 
@@ -161,6 +162,7 @@ ol {
 .section,
 .section-with-padding {
     width: 100%;
+
     .title {
         font-size: 0.8em;
         color: $light-text-color;
@@ -179,6 +181,7 @@ ol {
         height: $thick-divider;
         width: $normal-divider-length;
         background-color: $primary;
+
         &.bottom-divider {
             width: 5em;
         }
@@ -217,6 +220,7 @@ ol {
         &:first-child {
             width: 45.48%;
         }
+
         &:last-child {
             width: 54.52%;
         }
