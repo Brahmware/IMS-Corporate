@@ -11,7 +11,7 @@ const NewsRoomContainerFour = ({ data }) => {
   const fetchMoreData = () => {
     setTimeout(() => {
       setcurrentData([...currentData, ...cardsData.slice(currentData.length, currentData.length + 6)])
-    }, 1000)  // I have set time out to 1 sec this can be removed this is just to show that infinite scroll is working fine
+    }, 2000)  // I have set time out to 1 sec this can be removed this is just to show that infinite scroll is working fine
   };
   return (
     <>
