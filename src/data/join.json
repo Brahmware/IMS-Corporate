@@ -5,6 +5,7 @@
         "elements": [
             {
                 "subtitle": "Humanity Depends On You",
+                "bannerbackground": "/images/join/container-4/image.jpg",
                 "title": "Join Our Mission to Illuminate Billions of lives"
             }
         ]
@@ -24,6 +25,7 @@
         "elements": [
             {
                 "image": "/images/join/container-3/image.png",
+                "bannerbackground": "/images/join/container-4/image.jpg",
                 "title": "Join India's first Informational Media Network"
             }
         ]

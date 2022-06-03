@@ -1,27 +1,47 @@
 .join-page {
-    height: calc(100vh - 5em);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.678)),
-        url("../../../../public/images/school-298680_1920.jpg");
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    // .banner-sitemap-container {
+    height: calc(100vh - $header-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    & .container {
-        padding: 4em;
-        position: absolute;
-        bottom: 0;
+    & .banner-background {
+        height: calc(100vh - $header-height);
+        flex-shrink: 0;
+        width: 100%;
+        overflow: hidden;
+        // opacity: 0.3;
 
-        & .subtitle {
-            color: $white;
-            font-size: 1.5em;
-            line-height: 4em;
+        & img {
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            filter: brightness(20%);
+            object-fit: cover;
         }
+    }
 
-        & .title {
-            color: $white;
-            font-size: 4.5em;
-            font-weight: 1000;
-            line-height: 1em;
+    & .title-tabs-part {
+        position: relative;
+        & .page-title-container {
+            height: 0;
+            justify-content: flex-end;
+            align-items: center;
+            transform: translateY(-15.36em);
+
+            & .page-title {
+                color: $white;
+                display: inline-block;
+                font-size: 5em;
+                font-weight: 1000;
+                line-height: 1em;
+            }
+            & .page-subtitle {
+                color: $white;
+                font-size: 1.5em;
+                text-transform: uppercase;
+            }
         }
     }
 }
@@ -29,8 +49,8 @@
 .what-you-have-seen {
     & .container {
         & .title {
-            padding-top: 1em;
-            padding-bottom: 1em;
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
             font-size: 4.5em;
             font-weight: 1000;
             line-height: 1em;
@@ -39,37 +59,57 @@
 }
 
 .image-background {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-        url("../../../../public/images/school-298680_1920.jpg");
-    background-size: cover;
-    background-position: center;
     height: 30em;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // height: 30em;
 
-    .container {
-        padding-bottom: 3em;
-        flex-direction: column;
-        display: flex;
-        justify-content: end;
-        align-items: center;
+    & .fixed-container {
         position: relative;
-        & img {
+        & .fixed-image {
             position: absolute;
-            top: -22em;
-            right: -10em;
-            width: 70em;
-            height: 43em;
+            top: 0em;
+            width: 65em;
+            transform: translateY(-24em) translateX(-23em);
+            height: 42em;
         }
+    }
 
-        & .title {
-            font-size: 2em;
-            color: $primary;
-            font-weight: 900;
-            margin-bottom: 1em;
+    & .banner-background {
+        height: 30em;
+        flex-shrink: 0;
+        width: 100%;
+        overflow: hidden;
+        // opacity: 0.3;
+
+        & img {
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            filter: brightness(20%);
+            object-fit: cover;
         }
+    }
 
-        & .view-plan-button {
-            background-color: black !important;
+    & .title-tabs-part {
+        position: relative;
+
+        & .page-title-container {
+            height: 0;
+            transform: translateY(-3.36em);
+            flex-direction: column;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            & .page-title {
+                font-size: 2em;
+                color: $primary;
+                font-weight: 900;
+                margin-bottom: 1em;
+            }
         }
     }
 }

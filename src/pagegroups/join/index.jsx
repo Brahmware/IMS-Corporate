@@ -7,6 +7,7 @@ import JoinContainerTwo from './container-2';
 import JoinContainerThree from './container-3';
 import JoinContainerFour from './container-4';
 import JoinContainerFive from './container-5';
+import SEO from "../../components/SEO"
 
 const Join = () => {
     const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
@@ -16,13 +17,17 @@ const Join = () => {
     const dataContainer5 = data && data.find(data => data.id === 'container_5').elements;
     return (
         <>
-            <Header />
-            <JoinContainerOne data={dataContainer1} />
-            <JoinContainerTwo data={dataContainer2} />
-            <JoinContainerThree data={dataContainer3} />
-            <JoinContainerFour data={dataContainer4} />
-            <JoinContainerFive data={dataContainer5} />
-            <Footer />
+            <SEO title='Indian Media Syndicate-join' />
+            <div className="page-wrapper">
+                <Header />
+                <JoinContainerOne data={dataContainer1} />
+                <JoinContainerTwo data={dataContainer2} />
+                <JoinContainerThree data={dataContainer3} />
+                <JoinContainerFour data={dataContainer4} />
+                <JoinContainerFive data={dataContainer5} />
+                <Footer />
+            </div>
+
         </>
     )
 }
