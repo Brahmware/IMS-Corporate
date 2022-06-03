@@ -1,0 +1,125 @@
+.job-card-component {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border: 0.02em solid $light-text-color;
+    border-bottom: 1.125em solid $primary;
+    border-radius: 0.6em;
+
+    & .head-part {
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        & .head-left {
+
+            height: max-content;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.5em;
+
+            & .job-title {
+                font-size: 2.5em;
+                font-weight: 900;
+                line-height: 1em;
+                max-width: 10em;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            & .job-subtitle {
+                font-size: 1.5em;
+                font-weight: 500;
+                line-height: 1em;
+            }
+        }
+
+        & .head-right {
+            font-size: 1.125em;
+            min-width: 8em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 0.9em;
+
+            & .location {
+                font-weight: 900;
+                line-height: 1em;
+            }
+
+            & .post-date {
+                color: $light-text-color;
+                line-height: 1em;
+            }
+        }
+    }
+
+    & .description-part {
+        width: 100%;
+        margin-top: 2em;
+        display: flex;
+        align-items: flex-start;
+        gap: 2.6em;
+
+        & .description-left {
+            & .job-icon {
+                height: 10.5em;
+                width: 10.5em;
+                background-color: $very-light-text-color;
+            }
+        }
+
+        & .description-middle {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5em;
+
+            & .share-link,
+            & .copy-link {
+                & svg {
+                    width: 2em;
+                    fill: $secondary;
+                }
+            }
+        }
+
+        & .description-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0.6em;
+            color: $light-text-color;
+            font-weight: 600;
+            & .job-type {
+                font-size: 1em;
+            }
+            & .short-description {
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    & .action-part {
+        margin-top: 3em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2.6em;
+
+        & .apply-button,
+        & .view-more-button {
+            font-size: 1em;
+            font-weight: 900;
+        }
+    }
+}

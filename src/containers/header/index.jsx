@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { IMSLogo } from '../../assets/ourlogo';
 import FilledButton from '../../components/buttons/FilledButton';
 import HamburgerMenu from '../../components/hamburgermenu';
@@ -58,10 +58,10 @@ const Header = () => {
           </div>
           <div className="header-right">
             <SearchComponent />
-            <FilledButton
-              class={"join-button"}
-              text={"JOIN"}
-              onClick={() => history.push('/join')}
+            <FilledButton 
+              class={"join-button"} 
+              text={"JOIN"} 
+              onClick={ () => history.push('/join') }
             />
             <HamburgerMenu onClickEvent={onCanvasHandler} toggleState={offcanvasShow} />
           </div>

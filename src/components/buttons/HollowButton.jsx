@@ -3,7 +3,10 @@ import { Button } from 'reactstrap'
 
 const HollowButton = (props) => {
   return (
-    <Button className={`hollow-button ${props.class}`}>
+    <Button 
+      className={`hollow-button ${props.class}`}
+      onClick = {props.onClick}
+    >
         <span>{props.text}</span>
     </Button>
   )
