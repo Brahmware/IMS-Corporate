@@ -1,14 +1,14 @@
 import React from 'react'
 
 
-const NewsCards = ({ data }) => {
+const NewsCards = ({ data}) => {
     const image = data.images
     const dateData = data.date
     const title = data.title
     return (
         <>
             <div className="col" >
-                <div className="news-card">
+                <div className="news-card h-100">
                     <img
                         src={image}
                         className="news-card-image"

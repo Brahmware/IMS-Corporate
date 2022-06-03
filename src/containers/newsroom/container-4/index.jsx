@@ -2,7 +2,7 @@ import React from 'react'
 import NewsCards from '../../../components/news-cards';
 
 const NewsRoomContainerFour = ({ data }) => {
-  const cardsData = data[0].cards;
+  const cardsData = data;
   return (
     <>
       <div className={`newsroom-container-4 seciton-with-padding white-background py-3`}>
