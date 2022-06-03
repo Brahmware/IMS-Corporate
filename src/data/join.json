@@ -1,0 +1,102 @@
+[
+    {
+        "id": "container_1",
+        "pagename": "Humanity Depends On You",
+        "elements": [
+            {
+                "subtitle": "Humanity Depends On You",
+                "bannerbackground": "/images/join/container-4/image.jpg",
+                "title": "Join Our Mission to Illuminate Billions of lives"
+            }
+        ]
+    },
+    {
+        "id": "container_2",
+        "pagename": "Forget what you've seen.",
+        "elements": [
+            {
+                "title": "Forget what <br/>you've seen."
+            }
+        ]
+    },
+    {
+        "id": "container_3",
+        "pagename": "Join India's first Informational Media Network",
+        "elements": [
+            {
+                "image": "/images/join/container-3/image.png",
+                "bannerbackground": "/images/join/container-4/image.jpg",
+                "title": "Join India's first Informational Media Network"
+            }
+        ]
+    },
+    {
+        "id": "container_4",
+        "pagename": "ims society membership",
+        "elements": [
+            {
+                "title": "IMS SOCIETY MEMBERSHIP",
+                "image": "/images/join/container-4/image.jpg",
+                "content" : [
+                    {
+                        "id":1,
+                        "button":"JOIN",
+                        "tab_box_heading":"IM",
+                        "tab_box_sub_heading":"Wanderer",
+                        "tab_box_price":"₹ 5,00,000 - ₹ 10,00,000"
+                    },
+                    {
+                        "id":2,
+                        "button":"JOIN",
+                        "tab_box_heading":"IM",
+                        "tab_box_sub_heading":"Trendsetter",
+                        "tab_box_price":"₹ 10,00,000 - ₹ 100,00,000"
+                    },
+                    {
+                        "id":3,
+                        "button":"JOIN",
+                        "tab_box_heading":"IM",
+                        "tab_box_sub_heading":"Pioneer",
+                        "tab_box_price":"Above ₹ 100,00,000"
+                    }
+
+                ]
+            }
+        ]
+    },
+    {
+        "id": "container_5",
+        "pagename": "ims assembly membership",
+        "elements": [
+            {
+                "title": "IMS ASSEMBLY MEMBERSHIP",
+                "image": "/images/join/container-5/image.jpg",
+                "content" : [
+                    {
+                        "id":1,
+                        "button":"JOIN",
+                        "tab_box_heading":"IM",
+                        "tab_box_sub_heading":"Wanderer",
+                        "tab_box_price":"₹ 5,00,000 - ₹ 10,00,000"
+                    },
+                    {
+                        "id":2,
+                        "button":"JOIN",
+                        "tab_box_heading":"IM",
+                        "tab_box_sub_heading":"Trendsetter",
+                        "tab_box_price":"₹ 10,00,000 - ₹ 100,00,000"
+                    },
+                    {
+                        "id":3,
+                        "button":"JOIN",
+                        "tab_box_heading":"IM",
+                        "tab_box_sub_heading":"Pioneer",
+                        "tab_box_price":"Above ₹ 100,00,000"
+                    }
+
+                ]
+            }
+        ]
+    }
+
+]
