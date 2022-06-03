@@ -74,7 +74,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: $black;
+    background: $white;
     /* color of the tracking area */
 }
 
@@ -88,7 +88,7 @@ body::-webkit-scrollbar-thumb {
 
 // Scrollbar for mozilla
 html {
-    scrollbar-color: $primary $black;
+    scrollbar-color: $primary $white;
     /* thumb and track color */
     scrollbar-width: thin;
 }
