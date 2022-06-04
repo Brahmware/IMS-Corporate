@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation } from "swiper"
 import OpeningCardComponent from '../../../components/opening-card-component';
@@ -6,73 +7,40 @@ import { LeftarrowIcon, RightarrowIcon } from '../../../assets/icons';
 
 SwiperCore.use([Navigation]);
 
-const OpeningsCarouselContainer = ({ data, title }) => {
-
-    /* Choosing User Continent */
-    const [userContinent, setUserContinent] = useState(localStorage.getItem("continentcode"));
-    useEffect(() => {
-
-        const checkUserData = () => {
-            let currentContinent = localStorage.getItem("continentcode")
-            setUserContinent(currentContinent)
-            setUserCountry(null)
-        }
-
-        window.addEventListener('continent-changed', checkUserData)
-
-        return () => {
-            window.removeEventListener('continent-changed', checkUserData)
-        }
-    }, [userContinent])
-
-
-
-    /* Choosing User Country */
-    const [userCountry, setUserCountry] = useState(null);
-    useEffect(() => {
-
-        const checkUserData = () => {
-            let currentCountry = localStorage.getItem("countrycode")
-            setUserCountry(currentCountry)
-        }
-
-        window.addEventListener('country-changed', checkUserData)
-
-        return () => {
-            window.removeEventListener('country-changed', checkUserData)
-        }
-    }, [userCountry])
-
-
+const OpeningsCarouselContainer = ({ data, title, country, continent }) => {
 
     /* Selecting the opening Positions to show */
     const [positionsToShow, setPositionsToShow] = useState([]);
     useEffect(() => {
         let setVariables = false;
-        let positions = [];
+        //let positions = [];
 
         if (!setVariables) {
-            if (!userCountry) {
+
+            let positions = [...data.filteredPositions]
+            /* if (!userCountry) {
                 positions = data.positions.filter(position => position.location.continent === userContinent)
             } else {
                 positions = data.positions.filter(position => position.location.country === userCountry)
-            }
+            } */
             setPositionsToShow(positions)
         }
 
         return () => {
             setVariables = true
         }
-    }, [userCountry, userContinent, data])
+    }, [country, continent, data.filteredPositions])
 
+    const navigationNext = `next-${uuidv4()}`;
+    const navigationPrev = `prev-${uuidv4()}`;
 
     const swiperOption = {
         speed: 600,
         spaceBetween: 50,
         slidesPerView: 2,
         navigation: {
-            nextEl: '.navigation-next',
-            prevEl: '.navigation-prev',
+            nextEl: `.${navigationNext}`,
+            prevEl: `.${navigationPrev}`,
         },
         breakpoints: {
             // when window width is >= 320px
@@ -87,49 +55,60 @@ const OpeningsCarouselContainer = ({ data, title }) => {
     };
 
     return (
-        <div className='opening-carousel-container'>
-            <div className="container">
-                <div className="heading-part">
-                    <div className="title">
-                        <span
-                            dangerouslySetInnerHTML={{
-                                __html: title
-                            }}
-                        />
-                    </div>
-                    <div className="subtitle">
-                        <span
-                            dangerouslySetInnerHTML={{
-                                __html: data.brandname
-                            }}
-                        />
-                    </div>
-                    <div className="divider"></div>
-                </div>
-            </div>
+        <React.Fragment>
+            {
+                positionsToShow.length > 0 &&
+                <div
+                    className='opening-carousel-container'
+                    data-aos='fade-up'
+                    data-aos-duration='600'
+                    data-aos-delay='300'
 
-            <div className="carousal-part">
-                <div className="swiper-navigation navigation-prev">
-                    <i className="right-arrow-icon"><LeftarrowIcon /></i>
+                >
+                    <div className="container">
+                        <div className="heading-part">
+                            <div className="title">
+                                <span
+                                    dangerouslySetInnerHTML={{
+                                        __html: title
+                                    }}
+                                />
+                            </div>
+                            <div className="subtitle">
+                                <span
+                                    dangerouslySetInnerHTML={{
+                                        __html: data.brandname
+                                    }}
+                                />
+                            </div>
+                            <div className="divider"></div>
+                        </div>
+                    </div>
+
+                    <div className="carousal-part">
+                        <div className={`swiper-navigation ${navigationPrev}`}>
+                            <i className="right-arrow-icon"><LeftarrowIcon /></i>
+                        </div>
+                        <div className="container">
+                            <Swiper {...swiperOption}>
+                                {
+                                    positionsToShow.map((position, key) => {
+                                        return (
+                                            <SwiperSlide key={key}>
+                                                <OpeningCardComponent data={position} cardKey={key} />
+                                            </SwiperSlide>
+                                        )
+                                    })
+                                }
+                            </Swiper>
+                        </div>
+                        <div className={`swiper-navigation ${navigationNext}`}>
+                            <i className="left-arrow-icon"><RightarrowIcon /></i>
+                        </div>
+                    </div>
                 </div>
-                <div className="container">
-                    <Swiper {...swiperOption}>
-                        {
-                            positionsToShow.map((position, key) => {
-                                return (
-                                    <SwiperSlide key={key}>
-                                        <OpeningCardComponent data={position} cardKey={key} />
-                                    </SwiperSlide>
-                                )
-                            })
-                        }
-                    </Swiper>
-                </div>
-                <div className="swiper-navigation navigation-next">
-                    <i className="left-arrow-icon"><RightarrowIcon /></i>
-                </div>
-            </div>
-        </div>
+            }
+        </React.Fragment>
     )
 }
 

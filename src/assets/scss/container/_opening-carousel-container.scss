@@ -24,23 +24,15 @@
 
         & .swiper-navigation {
             cursor: pointer;
+            transition: opacity $transition-specific;
             & svg {
-                height: 2em
+                height: 1.5em
             }
-        }
-    }
 
-    & .navigation-icons {
-        position: relative;
-        height: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        & .swiper-button-next {
-            position: absolute;
-            transform: translateX(30em);
+            &.swiper-button-disabled {
+                opacity: $opacity-less;
+                pointer-events: none;
+            }
         }
     }
 }

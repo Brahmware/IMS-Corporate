@@ -56,11 +56,13 @@ const MapComponent = ({ continentsdata, officelocations }) => {
 
     const dimensions = useResizeObserver(wrapperRef);
 
-    window.onmousemove = function (e) {
-        var x = e.clientX - svgRef.current.getBoundingClientRect().x,
-            y = e.clientY - svgRef.current.getBoundingClientRect().y;
-        tooltipRef.current.style.top = (y + 20) + 'px';
-        tooltipRef.current.style.left = (x + 20) + 'px';
+    window.onmousemove = function (event) {
+        try {
+            var x = event.clientX - svgRef.current.getBoundingClientRect().x,
+                y = event.clientY - svgRef.current.getBoundingClientRect().y;
+            tooltipRef.current.style.top = (y + 20) + 'px';
+            tooltipRef.current.style.left = (x + 20) + 'px';
+        } catch (error) {}
     };
 
     useEffect(() => {

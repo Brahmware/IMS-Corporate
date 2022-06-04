@@ -8,7 +8,7 @@
                 "positions": [
                     {
                         "jobid": "ims1001",
-                        "jobtitle": "IT Expert",
+                        "jobtitle": "Information Technology Expert",
                         "jobsubtitle": "Lord Amongside",
                         "jobpostdate": "2019-09-27T04:00:00",
                         "jobtype": "Full-time",
@@ -458,7 +458,7 @@
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
-                            "continent": "AS",
+                            "continent": "EU",
                             "country": "ITA",
                             "city": "Genoa"
                         }
@@ -590,7 +590,7 @@
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
-                            "continent": "AS",
+                            "continent": "EU",
                             "country": "ITA",
                             "city": "Genoa"
                         }

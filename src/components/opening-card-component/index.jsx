@@ -14,10 +14,13 @@ const JobCardComponent = ({ data, cardKey }) => {
             return `${getCreatedXDaysAgo(data.jobpostdate)} days ago`
         }
     }
-    
+
     return (
-        <div 
+        <div
             className='job-card-component noselect'
+            data-aos='fade-up'
+            data-aos-duration='600'
+            data-aos-delay={300 + 600 * cardKey}
         >
             <div className="head-part">
                 <div className="head-left">
