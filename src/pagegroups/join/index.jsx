@@ -17,8 +17,8 @@ const Join = () => {
     const dataContainer5 = data && data.find(data => data.id === 'container_5').elements;
     return (
         <>
-            <SEO title='Indian Media Syndicate-join' />
-            <div className="page-wrapper">
+            <SEO title='Join IMS' />
+            <div className="page-wrapper join-page-wrapper">
                 <Header />
                 <JoinContainerOne data={dataContainer1} />
                 <JoinContainerTwo data={dataContainer2} />

@@ -1,16 +1,17 @@
 import React from 'react'
+import FilledButton from '../../../components/buttons/FilledButton'
 
 const TabBoxContainer = (props) => {
     const allData=props.data
     return (
         <div className="sub-container col"
-            // key={index}
             data-aos='fade-up'
             data-aos-duration='600'
             data-aos-delay={900 + 300 * props.tabkey}
         >
             <div className="box-button">
-                <button>{allData.button}</button></div>
+                <FilledButton class={'white-button'} text = { allData.button } />
+            </div>
             <div
                 className="tab-box-heading"
             >

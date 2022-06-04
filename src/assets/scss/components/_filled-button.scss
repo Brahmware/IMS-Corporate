@@ -87,4 +87,38 @@
             }
         }
     }
+
+    &.white-button {
+        background-color: $white;
+
+        & span {
+            color: $primary;
+        }
+
+        &:hover {
+            outline: $lite-stroke solid $white;
+            background-color: rgba($color: $white, $alpha: 0.3);
+
+            & span {
+                color: $white;
+            }
+        }
+
+        &:focus {
+            background-color: $white;
+
+            & span {
+                color: $primary;
+            }
+
+            &:hover {
+                outline: $lite-stroke solid $white;
+                background-color: rgba($color: $white, $alpha: 0.3);
+
+                & span {
+                    color: $white;
+                }
+            }
+        }
+    }
 }
