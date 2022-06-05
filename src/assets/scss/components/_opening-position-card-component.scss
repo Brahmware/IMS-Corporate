@@ -77,6 +77,14 @@
                 height: 10.5em;
                 width: 10.5em;
                 background-color: $very-light-text-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & svg {
+                    width: 5.25em;
+                    fill: $light-text-color;
+                }
             }
         }
 

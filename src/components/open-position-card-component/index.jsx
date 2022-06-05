@@ -1,41 +1,42 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { CopyIcon, ShareIcon } from '../../assets/icons'
 import getCreatedXDaysAgo from '../../utils/getCreatedXDaysAgo'
+import IconButton from '../buttons/Index'
 import TextButton from '../buttons/TextButton'
+import RemoteIconComponent from '../remoeiconcomponent'
 
-const PositionCardComponent = ({ data, cardKey }) => {
+const PositionCardComponent = ({ data, cardKey, country, continent }) => {
 
-    const positionTitleTextHolderRef = useRef(null)
-    const positionTitleRef = useRef(null)
+    const [positionTitleTextHolderRef, setPositionTitleTextHolderRef] = useState(null)
+    const [positionTitleRef, setPositionTitleRef] = useState(null)
 
     const [positionTitleWidth, setpositionTitleWidth] = useState(0)
     const [positionTitleTextWidth, setpositionTitleTextWidth] = useState(0)
 
-
     useEffect(() => {
 
-        console.log(positionTitleRef.current)
+        if (positionTitleRef && positionTitleTextHolderRef) {
+            positionTitleRef && setpositionTitleWidth(positionTitleRef.getBoundingClientRect().width)
+            positionTitleTextHolderRef && setpositionTitleTextWidth(positionTitleTextHolderRef.getBoundingClientRect().width)
+        }
 
-        positionTitleRef && setpositionTitleWidth(positionTitleRef.current.getBoundingClientRect().width)
-        positionTitleTextHolderRef && setpositionTitleTextWidth(positionTitleTextHolderRef.current.getBoundingClientRect().width)
-
-    }, [positionTitleRef, positionTitleTextHolderRef])
-
+    }, [positionTitleRef, positionTitleTextHolderRef, country, continent])
 
     const handleMouseEnter = () => {
-        console.log(`title-text: ${positionTitleTextWidth}`)
-        console.log(`title: ${positionTitleWidth}`)
 
-        const movementAmount = positionTitleTextWidth - positionTitleWidth
-        if (positionTitleTextHolderRef && movementAmount > 0) {
-            positionTitleTextHolderRef.current.style.transform = `translateX(${-movementAmount}px)`
-            positionTitleTextHolderRef.current.style.transition = "transform 1500ms ease 300ms"
+        let movementAmount = positionTitleTextWidth - positionTitleWidth
+
+        let buffer = 10
+
+        if (positionTitleTextHolderRef && movementAmount > buffer) {
+            positionTitleTextHolderRef.style.transform = `translateX(${-movementAmount}px)`
+            positionTitleTextHolderRef.style.transition = "transform 1500ms ease 300ms"
         }
     }
 
     const handleMouseLeave = () => {
         if (positionTitleTextHolderRef) {
-            positionTitleTextHolderRef.current.style.transform = "translateX(0px)"
+            positionTitleTextHolderRef.style.transform = "translateX(0px)"
         }
     }
 
@@ -48,6 +49,31 @@ const PositionCardComponent = ({ data, cardKey }) => {
             return `${getCreatedXDaysAgo(data.positionpostdate)} days ago`
         }
     }
+
+
+
+
+    /* Onclick copy and chare handler */
+
+    const handleCopyOnClick = () => {
+
+    }
+
+    const handleShareOnClick = () => {
+
+    }
+
+
+    /* Onclick copy and chare handler */
+
+    const handleApplyOnClick = () => {
+
+    }
+
+    const handleViewMoreOnClick = () => {
+
+    }
+
 
     return (
         <div
@@ -62,11 +88,11 @@ const PositionCardComponent = ({ data, cardKey }) => {
                 <div className="head-left">
                     <div
                         className="position-title"
-                        ref={positionTitleRef}
+                        ref={setPositionTitleRef}
                     >
                         <div
                             className="position-title-text-holder"
-                            ref={positionTitleTextHolderRef}
+                            ref={setPositionTitleTextHolderRef}
                         >
                             <span
                                 dangerouslySetInnerHTML={{
@@ -102,14 +128,17 @@ const PositionCardComponent = ({ data, cardKey }) => {
             </div>
             <div className="description-part">
                 <div className="description-left">
-                    <div className="position-icon"></div>
+                    <div className="position-icon">
+                        {console.log(data.icon)}
+                        <RemoteIconComponent icon={data.icon} />
+                    </div>
                 </div>
                 <div className="description-middle">
                     <div className="copy-link">
-                        <ShareIcon />
+                        <IconButton iconComponent={<ShareIcon />} buttonOnclick={handleShareOnClick}/>
                     </div>
                     <div className="share-link">
-                        <CopyIcon />
+                        <IconButton iconComponent={<CopyIcon/>} buttonOnclick={handleCopyOnClick}/>
                     </div>
                 </div>
                 <div className="description-right">
@@ -131,10 +160,10 @@ const PositionCardComponent = ({ data, cardKey }) => {
             </div>
             <div className="action-part">
                 <div className="apply-button">
-                    <TextButton text={"APPLY"} />
+                    <TextButton text={"APPLY"} onClick={handleApplyOnClick}/>
                 </div>
                 <div className="view-more-button">
-                    <TextButton text={"VIEW MORE"} />
+                    <TextButton text={"VIEW MORE"} onClick={handleViewMoreOnClick}/>
                 </div>
             </div>
         </div>

@@ -8,17 +8,19 @@ import { LeftarrowIcon, RightarrowIcon } from '../../../assets/icons';
 SwiperCore.use([Navigation]);
 
 const OpeningsCarouselContainer = ({ data, title, country, continent }) => {
-
+    
     /* Selecting the opening Positions to show */
     const [positionsToShow, setPositionsToShow] = useState([]);
+
+
     useEffect(() => {
         let setVariables = false;
-        //let positions = [];
 
         if (!setVariables) {
 
             let positions = [...data.filteredPositions]
-            setPositionsToShow(positions)
+            setTimeout(() => setPositionsToShow([]), 0);
+            setTimeout(() => setPositionsToShow(positions), 0);
         }
 
         return () => {
@@ -90,7 +92,12 @@ const OpeningsCarouselContainer = ({ data, title, country, continent }) => {
                                     positionsToShow.map((position, key) => {
                                         return (
                                             <SwiperSlide key={key}>
-                                                <PositionCardComponent data={position} cardKey={key} />
+                                                <PositionCardComponent
+                                                    data={position}
+                                                    cardKey={key}
+                                                    country={country}
+                                                    continent={continent}
+                                                />
                                             </SwiperSlide>
                                         )
                                     })
