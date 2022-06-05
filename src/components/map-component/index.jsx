@@ -29,6 +29,9 @@ const MapComponent = ({ continentsdata, officelocations }) => {
         setOfficesInContinent(officelocations.find(location => location.id === activeContinent))
     }, [activeContinent, officelocations])
 
+
+
+
     const [countriesInContinent, setCountriesInContinent] = useState(CountriesGeologyData);
 
     useEffect(() => {
@@ -47,6 +50,9 @@ const MapComponent = ({ continentsdata, officelocations }) => {
         setSelectedCountry(null)
 
     }, [activeContinent, continentsdata])
+
+
+
 
     /* D3 code begins here */
 
@@ -85,10 +91,18 @@ const MapComponent = ({ continentsdata, officelocations }) => {
             /* Clicked on a country action */
             const clicked = (event, data) => {
                 setSelectedCountry(data)
-
                 if (selectedCountry !== data) {
+                    let  selectedContinentsdata = null
+
+                    continentsdata.forEach((continent, index) => {
+                        if(continent.countries.includes(data.id)) {
+                            selectedContinentsdata = continentsdata[index]
+                        }
+                    })
                     localStorage.setItem('countrycode', data.id)
                     localStorage.setItem('countryname', data.properties.name)
+                    localStorage.setItem('continentcode', selectedContinentsdata.iso)
+                    localStorage.setItem('continentname', selectedContinentsdata.name)
                     window.dispatchEvent(new Event("country-changed"));
                 }
             }
@@ -200,13 +214,14 @@ const MapComponent = ({ continentsdata, officelocations }) => {
         /* Resize Button Action */
         const resizeMap = () => {
             drawMap(true, selectedCountry, countriesInContinent)
+            window.dispatchEvent(new Event("continent-changed"))
         }
         select("#resize-icon").on('click', resizeMap)
 
         /* rendering the map */
         drawMap(false, selectedCountry, countriesInContinent)
 
-    }, [countriesInContinent, dimensions, officesInContinent, selectedCountry])
+    }, [continentsdata, countriesInContinent, dimensions, officesInContinent, selectedCountry])
 
     return (
         <div className='map-component' ref={wrapperRef}>

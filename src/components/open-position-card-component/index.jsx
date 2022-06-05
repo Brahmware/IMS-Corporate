@@ -129,7 +129,6 @@ const PositionCardComponent = ({ data, cardKey, country, continent }) => {
             <div className="description-part">
                 <div className="description-left">
                     <div className="position-icon">
-                        {console.log(data.icon)}
                         <RemoteIconComponent icon={data.icon} />
                     </div>
                 </div>
