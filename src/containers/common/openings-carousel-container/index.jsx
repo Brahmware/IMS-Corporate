@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation } from "swiper"
-import OpeningCardComponent from '../../../components/opening-card-component';
+import PositionCardComponent from '../../../components/open-position-card-component';
 import { LeftarrowIcon, RightarrowIcon } from '../../../assets/icons';
 
 SwiperCore.use([Navigation]);
@@ -18,11 +18,6 @@ const OpeningsCarouselContainer = ({ data, title, country, continent }) => {
         if (!setVariables) {
 
             let positions = [...data.filteredPositions]
-            /* if (!userCountry) {
-                positions = data.positions.filter(position => position.location.continent === userContinent)
-            } else {
-                positions = data.positions.filter(position => position.location.country === userCountry)
-            } */
             setPositionsToShow(positions)
         }
 
@@ -95,7 +90,7 @@ const OpeningsCarouselContainer = ({ data, title, country, continent }) => {
                                     positionsToShow.map((position, key) => {
                                         return (
                                             <SwiperSlide key={key}>
-                                                <OpeningCardComponent data={position} cardKey={key} />
+                                                <PositionCardComponent data={position} cardKey={key} />
                                             </SwiperSlide>
                                         )
                                     })

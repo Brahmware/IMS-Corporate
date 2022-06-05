@@ -10,8 +10,8 @@ const Careers = () => {
 
   const taglineData = CareerData.find(datum => datum.id === 'tagline')
   const careersBannerData = CareerData.find(datum => datum.id === 'banner')['elements']
-  const JobsData = OpenPOsitionsData.find(data => data.positiontype === 'job')['brands']
-  const InternshipsData = OpenPOsitionsData.find(data => data.positiontype === 'internship')['brands']
+  const JobsData = OpenPOsitionsData.find(data => data.openingtype === 'job')['brands']
+  const InternshipsData = OpenPOsitionsData.find(data => data.openingtype === 'internship')['brands']
  
 
   return (

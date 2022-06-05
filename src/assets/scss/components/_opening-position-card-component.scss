@@ -1,4 +1,4 @@
-.job-card-component {
+.position-card-component {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -23,16 +23,21 @@
             justify-content: center;
             gap: 0.5em;
 
-            & .job-title {
+            & .position-title {
                 font-size: 2.5em;
                 font-weight: 900;
-                line-height: 1em;
+                line-height: 1.125em;
                 max-width: 10em;
                 white-space: nowrap;
                 overflow: hidden;
+
+                & .position-title-text-holder {
+                    width: max-content;
+                    height: 100%;
+                }
             }
 
-            & .job-subtitle {
+            & .position-subtitle {
                 font-size: 1.5em;
                 font-weight: 500;
                 line-height: 1em;
@@ -46,7 +51,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
-            gap: 0.9em;
+            gap: 1em;
 
             & .location {
                 font-weight: 900;
@@ -68,7 +73,7 @@
         gap: 2.6em;
 
         & .description-left {
-            & .job-icon {
+            & .position-icon {
                 height: 10.5em;
                 width: 10.5em;
                 background-color: $very-light-text-color;
@@ -100,9 +105,11 @@
             gap: 0.6em;
             color: $light-text-color;
             font-weight: 600;
-            & .job-type {
+
+            & .position-type {
                 font-size: 1em;
             }
+
             & .short-description {
                 font-size: 0.9em;
             }

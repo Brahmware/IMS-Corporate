@@ -1,19 +1,19 @@
 [
     {
-        "positiontype": "job",
+        "openingtype": "job",
         "brands": [
             {
                 "id": "ims",
                 "brandname": "Indian Media Syndicate",
                 "positions": [
                     {
-                        "jobid": "ims1001",
-                        "jobtitle": "Information Technology Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "ims1001",
+                        "positiontitle": "Information Technology Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -21,13 +21,13 @@
                         }
                     },
                     {
-                        "jobid": "ims1002",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2022-06-02T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "ims1002",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2022-06-02T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1002/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -35,13 +35,13 @@
                         }
                     },
                     {
-                        "jobid": "ims1003",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "ims1003",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1003/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -49,13 +49,13 @@
                         }
                     },
                     {
-                        "jobid": "ims1004",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "ims1004",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1001/icon.svg",
                         "location": {
                             "continent": "EU",
                             "country": "ITA",
@@ -63,13 +63,13 @@
                         }
                     },
                     {
-                        "jobid": "ims1005",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "ims1005",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1002/icon.svg",
                         "location": {
                             "continent": "AF",
                             "country": "NGA",
@@ -77,13 +77,13 @@
                         }
                     },
                     {
-                        "jobid": "ims1006",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "ims1006",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1003/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "BGD",
@@ -91,13 +91,13 @@
                         }
                     },
                     {
-                        "jobid": "ims1007",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "ims1007",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1001/icon.svg",
                         "location": {
                             "continent": "EU",
                             "country": "ITA",
@@ -105,13 +105,13 @@
                         }
                     },
                     {
-                        "jobid": "ims1008",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "ims1008",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1002/icon.svg",
+                        "icon": "/images/business/careers/positions/ims1002/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "PAK",
@@ -119,13 +119,13 @@
                         }
                     },
                     {
-                        "jobid": "ims1009",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "ims1009",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1003/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1003/icon.svg",
                         "location": {
                             "continent": "OC",
                             "country": "NZL",
@@ -139,13 +139,13 @@
                 "brandname": "IMScience",
                 "positions": [
                     {
-                        "jobid": "imscience1001",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imscience1001",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -153,13 +153,13 @@
                         }
                     },
                     {
-                        "jobid": "imscience1002",
-                        "jobtitle": "Chartered Accountant",
-                        "jobsubtitle": "Lord Ganesh",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imscience1002",
+                        "positiontitle": "Chartered Accountant",
+                        "positionsubtitle": "Lord Ganesh",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -167,13 +167,13 @@
                         }
                     },
                     {
-                        "jobid": "imscience1003",
-                        "jobtitle": "Content Writer",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Part-time",
+                        "positionid": "imscience1003",
+                        "positiontitle": "Content Writer",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Part-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -181,13 +181,13 @@
                         }
                     },
                     {
-                        "jobid": "imscience1004",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imscience1004",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1001/icon.svg",
                         "location": {
                             "continent": "NA",
                             "country": "USA",
@@ -195,13 +195,13 @@
                         }
                     },
                     {
-                        "jobid": "imscience1005",
-                        "jobtitle": "Chartered Accountant",
-                        "jobsubtitle": "Lord Ganesh",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imscience1005",
+                        "positiontitle": "Chartered Accountant",
+                        "positionsubtitle": "Lord Ganesh",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1001/icon.svg",
                         "location": {
                             "continent": "SA",
                             "country": "BRA",
@@ -209,13 +209,13 @@
                         }
                     },
                     {
-                        "jobid": "imscience1006",
-                        "jobtitle": "Content Writer",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Part-time",
+                        "positionid": "imscience1006",
+                        "positiontitle": "Content Writer",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Part-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/jobs/ims1001/icon.svg",
+                        "icon": "/images/business/careers/jobs/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "RUS",
@@ -227,20 +227,20 @@
         ]
     },
     {
-        "positiontype": "internship",
+        "openingtype": "internship",
         "brands": [
             {
                 "id": "ims",
                 "brandname":"Indian Media Syndicate",
                 "positions": [
                     {
-                        "jobid": "ims1001",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1001",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/internships/ims1001/icon.svg",
+                        "icon": "/images/business/careers/internships/ims1001/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -248,13 +248,13 @@
                         }
                     },
                     {
-                        "jobid": "ims1002",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1002",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/internships/ims1002/icon.svg",
+                        "icon": "/images/business/careers/internships/ims1002/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -262,13 +262,13 @@
                         }
                     },
                     {
-                        "jobid": "ims1003",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1003",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-                        "icon": "/images/career/internships/ims1003/icon.svg",
+                        "icon": "/images/business/careers/internships/ims1003/icon.svg",
                         "location": {
                             "continent": "AS",
                             "country": "IND",
@@ -276,11 +276,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1004",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1004",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
@@ -290,11 +290,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1005",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1005",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
@@ -304,11 +304,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1006",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1006",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
@@ -318,11 +318,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1007",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1007",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
@@ -332,11 +332,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1008",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1008",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
@@ -346,11 +346,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1009",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1009",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
@@ -366,11 +366,11 @@
                 "brandname":"IMS History",
                 "positions": [
                     {
-                        "jobid": "ims1001",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1001",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
@@ -380,11 +380,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1002",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1002",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
@@ -394,11 +394,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1003",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1003",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
@@ -408,11 +408,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1004",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1004",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
@@ -422,11 +422,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1005",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1005",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
@@ -436,11 +436,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1006",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1006",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
@@ -450,11 +450,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1007",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1007",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
@@ -464,11 +464,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1008",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1008",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
@@ -478,11 +478,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1009",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1009",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
@@ -498,11 +498,11 @@
                 "brandname": "POP News",
                 "positions": [
                     {
-                        "jobid": "ims1001",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1001",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
@@ -512,11 +512,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1002",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1002",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
@@ -526,11 +526,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1003",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1003",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
@@ -540,11 +540,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1004",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1004",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
@@ -554,11 +554,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1005",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1005",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
@@ -568,11 +568,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1006",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1006",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
@@ -582,11 +582,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1007",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1007",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1001/icon.svg",
                         "location": {
@@ -596,11 +596,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1008",
-                        "jobtitle": "Head of Marketing",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1008",
+                        "positiontitle": "Head of Marketing",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1002/icon.svg",
                         "location": {
@@ -610,11 +610,11 @@
                         }
                     },
                     {
-                        "jobid": "ims1009",
-                        "jobtitle": "IT Expert",
-                        "jobsubtitle": "Lord Amongside",
-                        "jobpostdate": "2019-09-27T04:00:00",
-                        "jobtype": "Full-time",
+                        "positionid": "imsi1009",
+                        "positiontitle": "IT Expert",
+                        "positionsubtitle": "Lord Amongside",
+                        "positionpostdate": "2019-09-27T04:00:00",
+                        "positiontype": "Full-time",
                         "shortdescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
                         "icon": "/images/career/internships/ims1003/icon.svg",
                         "location": {
