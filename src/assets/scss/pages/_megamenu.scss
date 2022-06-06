@@ -95,4 +95,11 @@
             }
         }
     }
+
+    @media #{$laptop-device} {
+        font-size: 0.9em;
+    }
+    @media #{$desktop-device} {
+        font-size: 0.7em;
+    }
 }
