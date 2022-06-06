@@ -7,7 +7,7 @@ import TeamsData from '../../../data/teams.json'
 const FocusAreasContainerEight = () => {
   return (
     <div className='become-a-member-container-8 section-with-padding'>
-      <CategoryOfPeopleTabsCarouselContainer title={"MEET THE MINDS"} data={TeamsData} />
+      <CategoryOfPeopleTabsCarouselContainer title={"MEET THE MINDS"} data={TeamsData} buttontext={"EXPLORE"} />
     </div>
   )
 }
