@@ -59,25 +59,34 @@
             "id": 3,
             "elements": [
                 {
-                    "title": "OUR MISSION",
-                    "subtitle": "To lead the Infotainment Media Revolution",
-                    "content": "By making every Information, every Discovery, every Invention, every Challenge accessible to every person starting with the Indian pacific Region.",
+                    "card": {
+                        "title": "OUR MISSION",
+                        "subtitle": "To Revolutionize Indian Media",
+                        "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "elements": [
+                {
                     "cards": [
                         {
                             "id": 1,
-                            "count": 265,
+                            "count": "2.3Billion",
                             "cardtitle": "Conserved Species",
                             "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
                         },
                         {
                             "id": 2,
-                            "count": 265,
+                            "count": "20+",
                             "cardtitle": "Conserved Species",
                             "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
                         },
                         {
                             "id": 3,
-                            "count": 265,
+                            "count": "100+",
                             "cardtitle": "Conserved Species",
                             "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
                         }
@@ -86,7 +95,19 @@
             ]
         },
         {
-            "id": 4,
+            "id": 5,
+            "elements": [
+                {
+                    "card": {
+                        "title": "CORE VISION",
+                        "subtitle": "To break all Communication Barriers",
+                        "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6,
             "elements": [
                 {
                     "images": {
@@ -104,7 +125,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": 7,
             "elements": [
                 {
                     "images": {
@@ -123,7 +144,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": 8,
             "elements": [
                 {
                     "title": "OUR SYMBOL",
@@ -173,7 +194,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": 9,
             "elements": [
                 {
                     "id": 1,
