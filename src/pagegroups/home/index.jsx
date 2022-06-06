@@ -33,7 +33,7 @@ const HomePage = () => {
         <FloatinEarthButton />
         <Footer />
       </div>
-    </React.Fragment>
+    </React.Fragment> 
   )
 }
 
