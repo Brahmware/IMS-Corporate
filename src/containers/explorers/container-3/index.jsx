@@ -7,7 +7,7 @@ import ExplorersData from '../../../data/explorers.json'
 const ExplorersContainerThree = () => {
   return (
     <div className='explorers-container-3 section-with-padding'>
-      <CategoryOfPeopleTabsCarouselContainer title={"MEET THE EXPLORERS"} data={ExplorersData} />
+      <CategoryOfPeopleTabsCarouselContainer title={"MEET THE EXPLORERS"} data={ExplorersData} buttontext={"MEET ALL"}/>
     </div>
   )
 }

@@ -8,23 +8,19 @@ import { LeftarrowIcon, RightarrowIcon } from '../../../assets/icons';
 SwiperCore.use([Navigation]);
 
 const OpeningsCarouselContainer = ({ data, title, country, continent }) => {
-    
+
     /* Selecting the opening Positions to show */
     const [positionsToShow, setPositionsToShow] = useState([]);
 
 
     useEffect(() => {
-        let setVariables = false;
-
-        if (!setVariables) {
-
-            let positions = [...data.filteredPositions]
-            setTimeout(() => setPositionsToShow([]), 0);
-            setTimeout(() => setPositionsToShow(positions), 0);
-        }
+        let positions = [...data.filteredPositions]
+        const timeoutInitial = setTimeout(() => setPositionsToShow([]), 0);
+        const timeoutReload = setTimeout(() => setPositionsToShow(positions), 0);
 
         return () => {
-            setVariables = true
+            clearTimeout(timeoutInitial)
+            clearTimeout(timeoutReload)
         }
     }, [country, continent, data.filteredPositions])
 
