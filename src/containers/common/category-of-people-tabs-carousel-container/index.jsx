@@ -3,7 +3,7 @@ import FilledButton from '../../../components/buttons/FilledButton';
 import CardsCarouselContainer from '../cards-carousel';
 
 
-const CategoryOfPeopleTabsCarouselContainer = ({title, data, buttontext}) => {
+const CategoryOfPeopleTabsCarouselContainer = ({ title, data, buttontext }) => {
     const tabsRef = useRef({});
     const [activeTab, setActiveTab] = useState(data[0].typeid);
 
@@ -59,14 +59,23 @@ const CategoryOfPeopleTabsCarouselContainer = ({title, data, buttontext}) => {
             <div className="cards-carousel-container">
                 <CardsCarouselContainer data={relatedData} />
             </div>
-            <div
-                className="bottom-button"
-                data-aos='fade-up'
-                data-aos-duration='600'
-                data-aos-delay='900'
-            >
-                <FilledButton text={buttontext} class={'black-button'}/>
-            </div>
+            {
+                buttontext ?
+                    <div
+                        className="bottom-button"
+                        data-aos='fade-up'
+                        data-aos-duration='600'
+                        data-aos-delay='900'
+                    >
+                        <FilledButton text={buttontext} class={'black-button'} />
+                    </div> :
+                    <div
+                        className="divider bottom-divider"
+                        data-aos='fade-up'
+                        data-aos-duration='600'
+                        data-aos-delay='900'
+                    />
+            }
         </div>
     )
 }
