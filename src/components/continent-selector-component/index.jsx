@@ -1,9 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const ContinentSelectorComponent = ({ continentsdata }) => {
     
-    const [activeContinent, setActiveContinent] = useState(localStorage.getItem("continentcode"))
+    const [activeContinent, setActiveContinent] = useState(null)
     
+
+    useEffect(() => {
+
+        const handleContinentChange = () => {
+            setActiveContinent(localStorage.getItem("continentcode"))
+        }
+        window.addEventListener('continent-changed', handleContinentChange)
+        return () => {
+            window.removeEventListener('continent-changed', handleContinentChange)
+        }
+    }, [])
+
     const onClickHandler = (event) => {
         const activecontinentcode = event.target.id
         const activecontinentname = continentsdata.find(continent => continent.iso === activecontinentcode)['name']

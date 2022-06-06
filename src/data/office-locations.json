@@ -6,13 +6,13 @@
             {
                 "id": "IND",
                 "country": "India",
-                "colorcode": "#F79432",
+                "colorcode": "#f9b470",
                 "cities": [
                     {
                         "officeid": "as_ind_noida",
                         "name": "IMS Noida Campus",
                         "location": {
-                            "address": "Sector - 62, Noida, 203202",
+                            "address": "Sector - 16A, Noida, 201301",
                             "latlong": {
                                 "latitude": 28.6201526,
                                 "longitude": 77.3603447
@@ -43,7 +43,7 @@
                     },
                     {
                         "officeid": "as_ind_portblair",
-                        "name": "IMS Park - Andaman",
+                        "name": "IMS Film Island - Andaman",
                         "location": {
                             "address": "Flat Bay RV, Andaman, 744103",
                             "latlong": {
@@ -60,7 +60,7 @@
                 "colorcode": "#A4BEA2",
                 "cities": [
                     {
-                        "officeid": "as_pak_noida",
+                        "officeid": "as_pak_karachi",
                         "name": "IMS Karachi Office",
                         "location": {
                             "address": "Sector - 11, Karachi, 75850",

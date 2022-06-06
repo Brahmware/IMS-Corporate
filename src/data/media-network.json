@@ -115,8 +115,8 @@
                     {
                         "image": "/images/media-network/focus-areas/container-1/cover.jpg",
                         "card": {
-                            "title": "WHAT WE DO",
-                            "subtitle": "India celebrates Exploration",
+                            "title": "GROUND BREAKING",
+                            "subtitle": "Human Network",
                             "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                         }
                     }
@@ -151,42 +151,59 @@
                 "id": "container_3",
                 "elements": [
                     {
-                        "cards": [
-                            {
-                                "id": 1,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                            },
-                            {
-                                "id": 2,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                            },
-                            {
-                                "id": 3,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                            }
-                        ]
-                    },
-                    {
                         "image": "/images/media-network/focus-areas/container-3/cover.jpg",
                         "card": {
-                            "title": "ABOUT US",
-                            "subtitle": "India celebrates Exploration",
-                            "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
+                            "title": "DISCOVERING",
+                            "subtitle": "Next Science",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                         }
                     }
                 ]
             },
             {
-                "id": "container_4",
+                "id": "container_5",
                 "elements": [
                     {
-                        "image": "/images/media-network/focus-areas/container-4/cover.jpg",
+                        "image": "/images/media-network/focus-areas/container-5/cover.jpg",
+                        "card": {
+                            "title": "ENCOURAGING & ENFORCING",
+                            "subtitle": "Ecosystem Preservation",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_7",
+                "elements": [
+                    {
+                        "image": "/images/media-network/focus-areas/container-7/cover.jpg",
+                        "card": {
+                            "title": "UNDERSTANDING",
+                            "subtitle": "Human Past",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_9",
+                "elements": [
+                    {
+                        "image": "/images/media-network/focus-areas/container-9/cover.jpg",
+                        "card": {
+                            "title": "ACCOMPLISH",
+                            "subtitle": "Universal Intellect",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_11",
+                "elements": [
+                    {
+                        "image": "/images/media-network/focus-areas/container-11/cover.jpg",
                         "title": "IMS Explorers",
                         "subtitle": "Changemakers<br /> and Innovators",
                         "buttontext": "APPLY"

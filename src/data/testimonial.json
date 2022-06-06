@@ -1,5 +1,6 @@
 {
     "id": "testimonials",
+    "background": "/images/common/testimonial-cover.jpg",
     "elements": [
         {
             "testimonialid": 1,

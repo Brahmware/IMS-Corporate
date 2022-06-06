@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Autoplay } from "swiper/core";
 import TestimonialData from "../../../data/testimonial.json";
+import ParallaxImageComponent from '../../../components/parallax-image-component';
 
 SwiperCore.use([Pagination, Autoplay]);
 
@@ -20,9 +21,9 @@ const TestimonialContainer = (props) => {
             },
         },
         autoplay: {
-            delay: 6000,
+            delay: 7000,
         },
-        speed:1000,
+        speed:600,
 		direction: 'horizontal',
         loop: true,
     };
@@ -36,7 +37,10 @@ const TestimonialContainer = (props) => {
 
     return (
         <div className='section-with-padding testimonial-section'>
-            <div className="background-image-holder"></div>
+            <div className="background-image-holder">
+                <div className="overlay" />
+                <ParallaxImageComponent image={TestimonialData.background} positiontop={false}/>
+            </div>
             <div className="container testimonial-container">
                 <Swiper {...params}>
                     {
