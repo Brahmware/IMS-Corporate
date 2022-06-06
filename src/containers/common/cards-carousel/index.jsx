@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 import IdentityCardComponent from '../../../components/card-component';
@@ -7,7 +8,18 @@ import { LeftarrowIcon, RightarrowIcon } from '../../../assets/icons';
 
 SwiperCore.use([Autoplay, Navigation]);
 
-const CardsCarouselContainer = ({ data }) => {
+const CardsCarouselContainer = ({ data }) => { 
+
+    const navigationNext = `next-${uuidv4()}`;
+    const navigationPrev = `prev-${uuidv4()}`;
+
+    const [profilePicHeight, setProfilePicHeight] = useState(0);
+
+    const profilePictureElementList = document.getElementsByClassName('profile-picture')
+
+    useEffect(() => {
+        profilePictureElementList[0] && setProfilePicHeight(profilePictureElementList[0].getBoundingClientRect().height) 
+    }, [profilePictureElementList])
 
     const swiperOption = {
         loop: true,
@@ -15,12 +27,12 @@ const CardsCarouselContainer = ({ data }) => {
         spaceBetween: 0,
         slidesPerView: 4,
         autoplay: {
-            delay: 6000,
+            delay: 5000,
             disableOnInteraction: false,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: `.${navigationNext}`,
+            prevEl: `.${navigationPrev}`,
         },
         breakpoints: {
             // when window width is >= 320px
@@ -58,11 +70,15 @@ const CardsCarouselContainer = ({ data }) => {
                         )
                     })
                 }
-                <div className="swiper-button-next">
-                    <i className="right-arrow-icon"><RightarrowIcon /></i>
-                </div>
-                <div className="swiper-button-prev">
-                    <i className="left-arrow-icon"><LeftarrowIcon /></i>
+                <div className="swiper-navigation-wrapper"
+                    style={{top: `${profilePicHeight/2}px`}}
+                >
+                    <div className={`swiper-navigation ${navigationPrev}`}>
+                        <i className="left-arrow-icon"><LeftarrowIcon /></i>
+                    </div>
+                    <div className={`swiper-navigation ${navigationNext}`}>
+                        <i className="right-arrow-icon"><RightarrowIcon /></i>
+                    </div>
                 </div>
             </Swiper>
         </div>
