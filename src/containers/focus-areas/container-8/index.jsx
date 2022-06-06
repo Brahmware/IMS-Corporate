@@ -4,12 +4,12 @@ import CategoryOfPeopleTabsCarouselContainer from '../../common/category-of-peop
 /* Importing Data File */
 import TeamsData from '../../../data/teams.json'
 
-const FocusAreasContainerTwo = () => {
+const FocusAreasContainerEight = () => {
   return (
-    <div className='become-a-member-container-2 section-with-padding'>
+    <div className='become-a-member-container-8 section-with-padding'>
       <CategoryOfPeopleTabsCarouselContainer title={"MEET THE MINDS"} data={TeamsData} />
     </div>
   )
 }
 
-export default FocusAreasContainerTwo
+export default FocusAreasContainerEight
