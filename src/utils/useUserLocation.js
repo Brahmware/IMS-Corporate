@@ -38,6 +38,7 @@ const useUserLocation = async () => {
     Object.keys(userLocation).forEach((key) => {
       localStorage.setItem(key, userLocation[key])
     })
+    window.dispatchEvent(new Event("continent-changed"));
 }
 
 export default useUserLocation

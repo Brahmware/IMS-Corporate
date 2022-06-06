@@ -30,8 +30,6 @@ const MapComponent = ({ continentsdata, officelocations }) => {
     }, [activeContinent, officelocations])
 
 
-
-
     const [countriesInContinent, setCountriesInContinent] = useState(CountriesGeologyData);
 
     useEffect(() => {
@@ -68,7 +66,7 @@ const MapComponent = ({ continentsdata, officelocations }) => {
                 y = event.clientY - svgRef.current.getBoundingClientRect().y;
             tooltipRef.current.style.top = (y + 20) + 'px';
             tooltipRef.current.style.left = (x + 20) + 'px';
-        } catch (error) {}
+        } catch (error) { }
     };
 
     useEffect(() => {
@@ -77,10 +75,21 @@ const MapComponent = ({ continentsdata, officelocations }) => {
 
         const { width, height } = dimensions || wrapperRef.current.getBoundingClientRect();
 
+        const handleSizing = (isResize, selectedCountry, countriesInContinent) => {
+            if (isResize) {
+                return countriesInContinent
+            } else {
+                return selectedCountry || countriesInContinent
+            }
+        }
+
         const drawMap = (isResize, selectedCountry, countriesInContinent) => {
-            var projection = geoMercator().rotate([-11, 0])
-                .fitSize([width, height], !isResize ? selectedCountry || countriesInContinent : countriesInContinent)
-                .precision(1000);
+
+            var projection = geoMercator()
+                .rotate([-11, 0])
+                .fitSize([width, height], handleSizing(isResize, selectedCountry, countriesInContinent))
+                .precision(1000)
+
 
             const path = geoPath().projection(projection);
 
@@ -92,10 +101,10 @@ const MapComponent = ({ continentsdata, officelocations }) => {
             const clicked = (event, data) => {
                 setSelectedCountry(data)
                 if (selectedCountry !== data) {
-                    let  selectedContinentsdata = null
+                    let selectedContinentsdata = null
 
                     continentsdata.forEach((continent, index) => {
-                        if(continent.countries.includes(data.id)) {
+                        if (continent.countries.includes(data.id)) {
                             selectedContinentsdata = continentsdata[index]
                         }
                     })
@@ -107,15 +116,16 @@ const MapComponent = ({ continentsdata, officelocations }) => {
                 }
             }
 
-            svg.selectAll(".country")
-                .data(CountriesGeologyData.features)
-                .join("path")
-                .on("click", clicked)
-                .attr("class", "country")
-                .attr("id", (d) => d.id)
-                .transition()
-                .duration(600)
-                .attr("d", path)
+            CountriesGeologyData &&
+                svg.selectAll(".country")
+                    .data(CountriesGeologyData.features)
+                    .join("path")
+                    .on("click", clicked)
+                    .attr("class", "country")
+                    .attr("id", (d) => d.id)
+                    .transition()
+                    .duration(600)
+                    .attr("d", path)
 
             /* Countries in active continent */
             countriesInContinent.features && countriesInContinent.features.forEach((feature) => {
@@ -126,12 +136,32 @@ const MapComponent = ({ continentsdata, officelocations }) => {
                         countryActiveContinent
                             .attr('class', 'country in-active-continent')
                             .on("mousemove", (event, d) => {
-                                tooltip.style("display", "inline-block")
-                                    .html(`
-                                        <span>
-                                            ${d.properties.name}
-                                        </span>
-                                    `)
+
+                                    if (!selectedCountry) {
+                                        tooltip.style("display", "inline-block")
+                                            .html(`
+                                                <span>
+                                                    ${d.properties.name}
+                                                </span>
+                                            `)
+                                    } else {
+                                        if(d.id !== selectedCountry.id) {
+                                            tooltip.style("display", "inline-block")
+                                            .html(`
+                                                <span>
+                                                    ${d.properties.name}
+                                                </span>
+                                            `)
+                                        } else {
+                                            tooltip.style("display", "inline-block")
+                                            .html(`
+                                                <span>
+                                                    Scroll down to find open positions in ${d.properties.name}.
+                                                </span>
+                                            `)
+                                        }
+                                    }
+
                             })
                             .on("mouseout", () => { tooltip.style("display", "none"); });
 
@@ -186,7 +216,7 @@ const MapComponent = ({ continentsdata, officelocations }) => {
                             .attr("transform", (d) => {
                                 let latlong = d.location.latlong
                                 let p = projection([latlong.longitude, latlong.latitude]);
-        
+
                                 return `translate(${p[0] - 7.5}, ${p[1] - 7.5})`;
                             })
                     })
@@ -198,7 +228,7 @@ const MapComponent = ({ continentsdata, officelocations }) => {
                             .attr("transform", (d) => {
                                 let latlong = d.location.latlong
                                 let p = projection([latlong.longitude, latlong.latitude]);
-        
+
                                 return `translate(${p[0] - 6}, ${p[1] - 6})`;
                             })
                     });
@@ -207,13 +237,21 @@ const MapComponent = ({ continentsdata, officelocations }) => {
             /* Displaying The Country which is selected */
             if (selectedCountry) {
                 let selectedPath = select(`#${selectedCountry.id}`)
-                selectedPath.attr('class', 'country in-active-continent selected')
+                selectedPath
+                .attr('class', 'country in-active-continent selected')
+                .append('text')
+                .html(`
+                    <div>
+                        ${ selectedCountry.properties.name }
+                    </div>
+                `)
             }
         }
 
         /* Resize Button Action */
         const resizeMap = () => {
             drawMap(true, selectedCountry, countriesInContinent)
+            setSelectedCountry(null)
             window.dispatchEvent(new Event("continent-changed"))
         }
         select("#resize-icon").on('click', resizeMap)
@@ -221,7 +259,7 @@ const MapComponent = ({ continentsdata, officelocations }) => {
         /* rendering the map */
         drawMap(false, selectedCountry, countriesInContinent)
 
-    }, [continentsdata, countriesInContinent, dimensions, officesInContinent, selectedCountry])
+    }, [activeContinent, continentsdata, countriesInContinent, dimensions, officesInContinent, selectedCountry])
 
     return (
         <div className='map-component' ref={wrapperRef}>
