@@ -4,7 +4,7 @@ import FilledButton from '../../../components/buttons/FilledButton';
 
 const ImageCardContainer = (props) => {
     const data = props.data;
-    const button = <FilledButton text={data.card.button} class={"black-button"} onClick={props.onClick}/>
+    const button = data.card.button && <FilledButton text={data.card.button} class={"black-button"} onClick={props.onClick}/>
     
     return (
         <div className='image-card-container container'>
