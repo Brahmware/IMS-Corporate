@@ -11,29 +11,29 @@ import FocusAreasContainerNine from "../../../containers/focus-areas/container-9
 import FocusAreasContainerTen from '../../../containers/focus-areas/container-10';
 import FocusAreasContainerEleven from '../../../containers/focus-areas/container-11';
 
-const FocusAreas = ({data}) => {
-  
-  const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
-  const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
-  const dataContainer5 = data && data.find(data => data.id === 'container_5').elements;
-  const dataContainer7 = data && data.find(data => data.id === 'container_7').elements;
-  const dataContainer9 = data && data.find(data => data.id === 'container_9').elements;
-  const dataContainer11 = data && data.find(data => data.id === 'container_11').elements;
-  return (
-    <div className="focus-areas-page">
-      <FocusAreasContainerOne data={dataContainer1}/>
-      <FocusAreasContainerTwo />
-      <FocusAreasContainerThree data={dataContainer3}/>
-      <FocusAreasContainerFour />
-      <FocusAreasContainerFive data={dataContainer5}/>
-      <FocusAreasContainerSix />
-      <FocusAreasContainerSeven data={dataContainer7}/>
-      <FocusAreasContainerEight />
-      <FocusAreasContainerNine data={dataContainer9}/>
-      <FocusAreasContainerTen />
-      <FocusAreasContainerEleven data={dataContainer11}/>
-   </div>
-  )
+const FocusAreas = ({ data }) => {
+
+    const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
+    const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
+    const dataContainer5 = data && data.find(data => data.id === 'container_5').elements;
+    const dataContainer7 = data && data.find(data => data.id === 'container_7').elements;
+    const dataContainer9 = data && data.find(data => data.id === 'container_9').elements;
+    const dataContainer11 = data && data.find(data => data.id === 'container_11').elements;
+    return (
+        <div className="focus-areas-page">
+            <FocusAreasContainerOne data={dataContainer1} />
+            <FocusAreasContainerTwo />
+            <FocusAreasContainerThree data={dataContainer3} />
+            <FocusAreasContainerFour />
+            <FocusAreasContainerFive data={dataContainer5} />
+            <FocusAreasContainerSix />
+            <FocusAreasContainerSeven data={dataContainer7} />
+            <FocusAreasContainerEight />
+            <FocusAreasContainerNine data={dataContainer9} />
+            <FocusAreasContainerTen />
+            <FocusAreasContainerEleven data={dataContainer11} />
+        </div>
+    )
 }
 
 export default FocusAreas

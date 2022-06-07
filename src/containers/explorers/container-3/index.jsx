@@ -5,11 +5,11 @@ import CategoryOfPeopleTabsCarouselContainer from '../../common/category-of-peop
 import ExplorersData from '../../../data/explorers.json'
 
 const ExplorersContainerThree = () => {
-  return (
-    <div className='explorers-container-3 section-with-padding'>
-      <CategoryOfPeopleTabsCarouselContainer title={"MEET THE EXPLORERS"} data={ExplorersData} buttontext={"MEET ALL"}/>
-    </div>
-  )
+    return (
+        <div className='explorers-container-3 section-with-padding'>
+            <CategoryOfPeopleTabsCarouselContainer title={"MEET THE EXPLORERS"} data={ExplorersData} buttontext={"MEET ALL"} />
+        </div>
+    )
 }
 
 export default ExplorersContainerThree

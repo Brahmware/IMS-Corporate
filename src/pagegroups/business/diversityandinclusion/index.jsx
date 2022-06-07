@@ -5,20 +5,20 @@ import DiversityInclusionContainerThree from '../../../containers/diversity-and-
 import DiversityInclusionContainerFour from '../../../containers/diversity-and-inclusion/container-4';
 
 
-const DiversityAndInclusion = ({data}) => {
-  const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
-  const dataContainer2 = data && data.find(data => data.id === 'container_2').elements;
-  const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
-  const dataContainer4 = data && data.find(data => data.id === 'container_4').elements;
+const DiversityAndInclusion = ({ data }) => {
+    const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
+    const dataContainer2 = data && data.find(data => data.id === 'container_2').elements;
+    const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
+    const dataContainer4 = data && data.find(data => data.id === 'container_4').elements;
 
-  return (
-    <div className='diversity-and-inclusion-page'>
-      <DiversityInclusionContainerOne data={dataContainer1} />
-      <DiversityInclusionContainerTwo data={dataContainer2} />
-      <DiversityInclusionContainerThree data={dataContainer3} />
-      <DiversityInclusionContainerFour data={dataContainer4} />
-    </div>
-  )
+    return (
+        <div className='diversity-and-inclusion-page'>
+            <DiversityInclusionContainerOne data={dataContainer1} />
+            <DiversityInclusionContainerTwo data={dataContainer2} />
+            <DiversityInclusionContainerThree data={dataContainer3} />
+            <DiversityInclusionContainerFour data={dataContainer4} />
+        </div>
+    )
 }
 
 export default DiversityAndInclusion

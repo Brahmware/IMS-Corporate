@@ -1,8 +1,11 @@
 import React from 'react'
 import BookishCard from '../../../components/bookish-card';
+import FilledButton from '../../../components/buttons/FilledButton';
 
 const ImageCardContainer = (props) => {
     const data = props.data;
+    const button = <FilledButton text={data.card.button} class={"black-button"} onClick={props.onClick}/>
+    
     return (
         <div className='image-card-container container'>
             <div className={!props.inverse ? "half-devided-section" : "half-devided-section container-inverse"}>
@@ -29,7 +32,7 @@ const ImageCardContainer = (props) => {
                         subtitle={data.card.subtitle}
                         content={data.card.content}
                         inverse={props.inverse}
-                        button = {data.card.button}
+                        extracomponents = {[button]}
                     />
                 </div>
             </div>
