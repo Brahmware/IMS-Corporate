@@ -3,7 +3,7 @@ import Earth from '../../assets/webms/earth.webm'
 import SidestripContainer from '../../containers/sidesrtip-container';
 
 
-const FloatinEarthButton = () => {
+const FloatingEarthButton = () => {
     const [offcanvasShow, setOffcanvasShow] = useState(false);
     const [headerHeight, setHeaderheaight] = useState(0);
 
@@ -26,4 +26,4 @@ const FloatinEarthButton = () => {
     )
 }
 
-export default FloatinEarthButton
+export default FloatingEarthButton

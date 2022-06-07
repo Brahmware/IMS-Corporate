@@ -1,11 +1,11 @@
 import React from 'react';
 import SwiperCore, { Pagination, Autoplay } from "swiper/core";
-import TestimonialContainer from '../common/testimonialcontainer';
+import TestimonialContainer from '../../common/testimonialcontainer';
 
 SwiperCore.use([Pagination, Autoplay]);
 
 
-const HomeTestimonial = () => {
+const HomeContainerSeven = () => {
     return (
         <div className="home-testimonial-section">
             <TestimonialContainer />
@@ -13,4 +13,4 @@ const HomeTestimonial = () => {
     )
 }
 
-export default HomeTestimonial;
+export default HomeContainerSeven;

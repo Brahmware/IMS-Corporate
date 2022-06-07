@@ -1,7 +1,7 @@
 import React from 'react'
-import ImageOverImageCardContainer from '../common/imageOverImageCardContainer';
+import ImageOverImageCardContainer from '../../common/imageOverImageCardContainer';
 
-const HomeImmersiveLearning = (props) => {
+const HomeContainerSix = (props) => {
     return (
         <div className='section home-immersive-learning-section white-background'>
             <ImageOverImageCardContainer containerData={props.data} inverse={true} />
@@ -9,4 +9,4 @@ const HomeImmersiveLearning = (props) => {
     )
 }
 
-export default HomeImmersiveLearning;
+export default HomeContainerSix;

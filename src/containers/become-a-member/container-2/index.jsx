@@ -7,7 +7,7 @@ const BecomeAMemberTwo = ({data}) => {
   const tabsdData = data[2].tabs
   return (
     <>
-        <div className="becomeamember-container-2 section-with-padding white-background ">
+        <div className="become-a-member-container-2 section-with-padding white-background ">
             <div className="container">
                 <MenuCard
                     title={titleData}

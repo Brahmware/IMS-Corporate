@@ -4,7 +4,9 @@ import ImageWithTabBox from '../../../containers/common/imagewithtabbox'
 const JoinContainerFive = (props) => {
     const data=props.data[0]
     return (
-        <ImageWithTabBox data={data}/>
+        <div className="pb-5 white-background">
+            <ImageWithTabBox data={data}/>
+        </div>
     )
 }
 

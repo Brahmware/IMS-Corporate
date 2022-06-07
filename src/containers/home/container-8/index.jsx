@@ -1,7 +1,7 @@
 import React from 'react'
-import ImageOverImageCardContainer from '../common/imageOverImageCardContainer';
+import ImageOverImageCardContainer from '../../common/imageOverImageCardContainer';
 
-const HomeExplorers = (props) => {
+const HomeContainerEight = (props) => {
     
     return (
         <div className='section home-explorers-section white-background'>
@@ -10,4 +10,4 @@ const HomeExplorers = (props) => {
     )
 }
 
-export default HomeExplorers;
+export default HomeContainerEight;

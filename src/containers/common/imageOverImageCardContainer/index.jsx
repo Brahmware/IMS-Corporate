@@ -5,8 +5,8 @@ import FilledButton from '../../../components/buttons/FilledButton'
 import ImageOverThinImage from '../../../components/imageoverimage/ImageOverThinImage'
 
 const ImageOverImageCardContainer = (props) => {
-    const images = props.containerData.elements[0].images;
-    const card = props.containerData.elements[1].card;
+    const images = props.containerData[0].images;
+    const card = props.containerData[1].card;
     const history = useHistory();
 
     const ButtonComponent = 
