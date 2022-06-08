@@ -9,12 +9,12 @@ const PricingContainer = (props) => {
                         return (
                             <div className="col" key={key}>
                                 <div
-                                    className="card-wrapper"
+                                    className="card-wrapper noselect"
                                     data-aos='fade-up'
                                     data-aos-duration='600'
                                     data-aos-delay={900 + 300 * key}
                                 >
-                                    <div className={eachCard.popular ? "each-card popular-card" : "each-card"}>
+                                    <div className="each-card">
                                         <div className="table-header">
                                             <span
                                                 dangerouslySetInnerHTML={{
@@ -48,10 +48,10 @@ const PricingContainer = (props) => {
                                         </div>
                                     </div>
                                     {
-                                        eachCard.popular &&
-                                        <div className="most-popular-tag-holder">
-                                            <div className="most-popular-tag title">
-                                                <p><span>MOST POPULAR</span></p>
+                                        eachCard.adjective &&
+                                        <div className="adjective-tag-holder">
+                                            <div className="adjective-tag title">
+                                                <p><span>{eachCard.adjective}</span></p>
                                             </div>
                                         </div>
                                     }
