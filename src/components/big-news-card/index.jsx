@@ -2,6 +2,11 @@ import React from 'react'
 
 
 const BigNewsCard = ({ data}) => {
+    const convertDate = (dateData) => {
+        const months=['Januray','Feburary','March','April','May','June','July','August','September','October','November','December'];
+        const date= dateData.split(',')[0].split('/');
+        return `${months[date[1]-1]} ${date[0]}, ${date[2]}`;  
+    }
     const image = data.images
     const dateData = new Date(data.date).toLocaleString('en-IN')
     const title = (data.title.length >170 ) ? data.title.substring(0, 170) + '...' : data.title;
@@ -17,7 +22,7 @@ const BigNewsCard = ({ data}) => {
                     <div className='news-card-date text-primary mt-3'>
                         <span
                             dangerouslySetInnerHTML={{
-                                __html: dateData
+                                __html: convertDate(dateData)
                             }}
                         />
                     </div>
