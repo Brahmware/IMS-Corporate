@@ -152,42 +152,42 @@
                     "pricecards": [
                         {
                             "id": 1,
-                            "pricetitle": "Premium",
-                            "popular": false,
+                            "pricetitle": "Daily",
+                            "adjective": "Most Popular",
                             "price": "₹ 1",
                             "tableitems": [
-                                "<p><span class='bold black'>Daily</span></p>",
+                                "<p><span class='bold black'>Monthly</span></p>",
                                 "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
                                 "<p><span class='bold black'>HD</span> Streaming</p>",
-                                "<p><span class='bold black'>10</span> Free</p>",
-                                "<p><span class='bold black big'>Best Choice</span></p>"
+                                "<p><span class='bold black big'>Corporate Subscription</span> Available</p>",
+                                "<p><span class='bold black'>1</span> Screen</p>"
                             ]
-                        },
+                        }, 
                         {
                             "id": 2,
-                            "pricetitle": "Premium",
-                            "popular": true,
+                            "pricetitle": "Monthly",
+                            "adjective": null,
                             "price": "₹ 20",
                             "tableitems": [
                                 "<p><span class='bold black'>Monthly</span></p>",
                                 "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
                                 "<p><span class='bold black'>HD</span> Streaming</p>",
-                                "<p><span class='bold black'>No</span> Ad breaks</p>",
-                                "<p><span class='bold black'>10</span> Free</p>"
+                                "<p><span class='bold black big'>Corporate Subscription</span> Available</p>",
+                                "<p><span class='bold black'>1</span> Screen</p>"
                             ]
                         },
                         {
                             "id": 3,
-                            "pricetitle": "Premium",
-                            "popular": false,
+                            "pricetitle": "Yearly",
+                            "adjective": "Value Pack",
                             "price": "₹ 200",
                             "tableitems": [
-                                "<p><span class='bold black'>Annual</span></p>",
+                                "<p><span class='bold black'>Monthly</span></p>",
                                 "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
                                 "<p><span class='bold black'>4K</span> Streaming</p>",
-                                "<p><span class='bold black'>No</span> Ad breaks</p>",
-                                "<p><span class='bold black big'>Best Choice</span></p>"
-                            ]
+                                "<p><span class='bold black big'>Student Discount</span> Available</p>",
+                                "<p><span class='bold black'>2</span> Screens</p>"
+                            ] 
                         }
                     ]
                 }
