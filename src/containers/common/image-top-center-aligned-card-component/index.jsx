@@ -1,8 +1,8 @@
 import React from 'react'
 import CenterAlignedCard from '../../../components/center-aligned-card'
 
-const ImageTopCenterAlignedCardComponent = ({ data, dividercolor }) => {
-
+const ImageTopCenterAlignedCardComponent = ({ data, dividercolor ,largeheading}) => {
+console.log(largeheading)
     const carddata = data && data.card;
     const imagedata = data && data.image;
 
@@ -28,6 +28,7 @@ const ImageTopCenterAlignedCardComponent = ({ data, dividercolor }) => {
                     subtitle={carddata.subtitle}
                     content={carddata.content}
                     dividercolor={dividercolor}
+                    largeheading={largeheading}
                 />
             </div>
         </div>

@@ -1,8 +1,8 @@
 import React from 'react'
-import BrandsContainer from '../common/brandcontainer';
+import BrandsContainer from '../../common/brandcontainer';
 
-const HomeNetworks = (props) => {
-    const ourNetworks = props.data.elements;
+const HomeContainerTen = (props) => {
+    const ourNetworks = props.data;
     return (
         <div
             className='section-with-padding home-our-networks-section'
@@ -25,4 +25,4 @@ const HomeNetworks = (props) => {
     )
 }
 
-export default HomeNetworks
+export default HomeContainerTen

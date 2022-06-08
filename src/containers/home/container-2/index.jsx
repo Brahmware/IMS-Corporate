@@ -1,16 +1,13 @@
 import React from 'react'
-import FunfactColumnSpreadContainer from '../../common/funfact-spread-columns-container'
+import ImageOverImageCardContainer from '../../common/imageOverImageCardContainer';
 
-const HomeContainerTwo = ({ data }) => {
-	return (
-		<div className='home-container-2 section-with-padding white-background'>
-			<div className="container">
-				<FunfactColumnSpreadContainer
-					columnsdata={data[0].cards}
-				/>
-			</div>
-		</div>
-	)
+const HomeContainerTwo = (props) => {
+    
+    return (
+        <div className='section home-about-section white-background'>
+            <ImageOverImageCardContainer containerData={props.data} />
+        </div>
+    )
 }
 
-export default HomeContainerTwo
+export default HomeContainerTwo;

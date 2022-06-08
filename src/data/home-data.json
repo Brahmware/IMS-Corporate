@@ -1,232 +1,230 @@
-{
-    "homeData": [
-        {
-            "id": 1,
-            "elements": [
-                {
-                    "image": "/images/home/banner/cover-1.jpg",
-                    "card": {
-                        "title": "FOR INDIA",
-                        "subtitle": "Go Inventions!",
-                        "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                    }
-                },
-                {
-                    "image": "/images/home/banner/cover-2.jpg",
-                    "card": {
-                        "title": "FOR INDIA",
-                        "subtitle": "Go Inventions!",
-                        "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                    }
-                },
-                {
-                    "image": "/images/home/banner/cover-3.jpg",
-                    "card": {
-                        "title": "FOR INDIA",
-                        "subtitle": "Go Inventions!",
-                        "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                    }
-                },
-                {
-                    "image": "/images/home/banner/cover-4.jpg",
-                    "card": {
-                        "title": "FOR INDIA",
-                        "subtitle": "Go Inventions!",
-                        "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                    }
+[
+    {
+        "id": "container_1",
+        "elements": [
+            {
+                "image": "/images/home/banner/cover-1.jpg",
+                "card": {
+                    "title": "FOR INDIA",
+                    "subtitle": "Go Inventions!",
+                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                 }
-            ]
-        },
-        {
-            "id": 2,
-            "elements": [
-                {
-                    "images": {
-                        "imageTop": "/images/home/homeabout/image-top.jpg",
-                        "imageBottom": "/images/home/homeabout/image-bottom.jpg"
-                    }
-                },
-                {
-                    "card": {
-                        "title": "ABOUT US",
-                        "subtitle": "India celebrates Exploration",
-                        "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
-                    }
+            },
+            {
+                "image": "/images/home/banner/cover-2.jpg",
+                "card": {
+                    "title": "FOR INDIA",
+                    "subtitle": "Go Inventions!",
+                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                 }
-            ]
-        },
-        {
-            "id": 3,
-            "elements": [
-                {
-                    "card": {
-                        "title": "OUR MISSION",
-                        "subtitle": "To Revolutionize Indian Media",
-                        "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+            },
+            {
+                "image": "/images/home/banner/cover-3.jpg",
+                "card": {
+                    "title": "FOR INDIA",
+                    "subtitle": "Go Inventions!",
+                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                }
+            },
+            {
+                "image": "/images/home/banner/cover-4.jpg",
+                "card": {
+                    "title": "FOR INDIA",
+                    "subtitle": "Go Inventions!",
+                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                }
+            }
+        ]
+    },
+    {
+        "id": "container_2",
+        "elements": [
+            {
+                "images": {
+                    "imageTop": "/images/home/homeabout/image-top.jpg",
+                    "imageBottom": "/images/home/homeabout/image-bottom.jpg"
+                }
+            },
+            {
+                "card": {
+                    "title": "ABOUT US",
+                    "subtitle": "India celebrates Exploration",
+                    "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
+                }
+            }
+        ]
+    },
+    {
+        "id": "container_3",
+        "elements": [
+            {
+                "card": {
+                    "title": "OUR MISSION",
+                    "subtitle": "To Revolutionize Indian Media",
+                    "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+                }
+            }
+        ]
+    },
+    {
+        "id": "container_4",
+        "elements": [
+            {
+                "cards": [
+                    {
+                        "id": 1,
+                        "count": "2.3Billion",
+                        "cardtitle": "Conserved Species",
+                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                    },
+                    {
+                        "id": 2,
+                        "count": "20+",
+                        "cardtitle": "Conserved Species",
+                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                    },
+                    {
+                        "id": 3,
+                        "count": "100+",
+                        "cardtitle": "Conserved Species",
+                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
                     }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "container_5",
+        "elements": [
+            {
+                "card": {
+                    "title": "CORE VISION",
+                    "subtitle": "To break all Communication Barriers",
+                    "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
                 }
-            ]
-        },
-        {
-            "id": 4,
-            "elements": [
-                {
-                    "cards": [
-                        {
-                            "id": 1,
-                            "count": "2.3Billion",
-                            "cardtitle": "Conserved Species",
-                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                        },
-                        {
-                            "id": 2,
-                            "count": "20+",
-                            "cardtitle": "Conserved Species",
-                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                        },
-                        {
-                            "id": 3,
-                            "count": "100+",
-                            "cardtitle": "Conserved Species",
-                            "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                        }
-                    ]
+            }
+        ]
+    },
+    {
+        "id": "container_6",
+        "elements": [
+            {
+                "images": {
+                    "imageTop": "/images/home/homeimmersivelearning/image-top.jpg",
+                    "imageBottom": "/images/home/homeimmersivelearning/image-bottom.jpg"
                 }
-            ]
-        },
-        {
-            "id": 5,
-            "elements": [
-                {
-                    "card": {
-                        "title": "CORE VISION",
-                        "subtitle": "To break all Communication Barriers",
-                        "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+            },
+            {
+                "card": {
+                    "title": "ABOUT US",
+                    "subtitle": "India celebrates Exploration",
+                    "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
+                }
+            }
+        ]
+    },
+    {
+        "id": "container_8",
+        "elements": [
+            {
+                "images": {
+                    "imageTop": "/images/home/homeexplorers/image-top.jpg",
+                    "imageBottom": "/images/home/homeexplorers/image-bottom.jpg"
+                }
+            },
+            {
+                "card": {
+                    "title": "EXPLORERS",
+                    "subtitle": "Impactful programs for a global community of Changemakers",
+                    "content": "<p>We fund a worldwide network of Explorers who investigate, evaluate theories, revolutionize, take imagination to new heights, and push the limitations of traditional thinking in ways that fundamentally change humanity.</p>",
+                    "buttontext": "MEET EXPLORERS"
+                }
+            }
+        ]
+    },
+    {
+        "id": "container_9",
+        "elements": [
+            {
+                "title": "OUR SYMBOL",
+                "subtitle": "Never Seen Before Pricing",
+                "pricecards": [
+                    {
+                        "id": 1,
+                        "pricetitle": "Daily",
+                        "adjective": "Most Popular",
+                        "price": "₹ 1",
+                        "tableitems": [
+                            "<p><span class='bold black'>Monthly</span></p>",
+                            "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
+                            "<p><span class='bold black'>HD</span> Streaming</p>",
+                            "<p><span class='bold black big'>Corporate Subscription</span> Available</p>",
+                            "<p><span class='bold black'>1</span> Screen</p>"
+                        ]
+                    }, 
+                    {
+                        "id": 2,
+                        "pricetitle": "Monthly",
+                        "adjective": null,
+                        "price": "₹ 20",
+                        "tableitems": [
+                            "<p><span class='bold black'>Monthly</span></p>",
+                            "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
+                            "<p><span class='bold black'>HD</span> Streaming</p>",
+                            "<p><span class='bold black big'>Corporate Subscription</span> Available</p>",
+                            "<p><span class='bold black'>1</span> Screen</p>"
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "pricetitle": "Yearly",
+                        "adjective": "Value Pack",
+                        "price": "₹ 200",
+                        "tableitems": [
+                            "<p><span class='bold black'>Monthly</span></p>",
+                            "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
+                            "<p><span class='bold black'>4K</span> Streaming</p>",
+                            "<p><span class='bold black big'>Student Discount</span> Available</p>",
+                            "<p><span class='bold black'>2</span> Screens</p>"
+                        ] 
                     }
-                }
-            ]
-        },
-        {
-            "id": 6,
-            "elements": [
-                {
-                    "images": {
-                        "imageTop": "/images/home/homeimmersivelearning/image-top.jpg",
-                        "imageBottom": "/images/home/homeimmersivelearning/image-bottom.jpg"
-                    }
-                },
-                {
-                    "card": {
-                        "title": "ABOUT US",
-                        "subtitle": "India celebrates Exploration",
-                        "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
-                    }
-                }
-            ]
-        },
-        {
-            "id": 7,
-            "elements": [
-                {
-                    "images": {
-                        "imageTop": "/images/home/homeexplorers/image-top.jpg",
-                        "imageBottom": "/images/home/homeexplorers/image-bottom.jpg"
-                    }
-                },
-                {
-                    "card": {
-                        "title": "EXPLORERS",
-                        "subtitle": "Impactful programs for a global community of Changemakers",
-                        "content": "<p>We fund a worldwide network of Explorers who investigate, evaluate theories, revolutionize, take imagination to new heights, and push the limitations of traditional thinking in ways that fundamentally change humanity.</p>",
-                        "buttontext": "MEET EXPLORERS"
-                    }
-                }
-            ]
-        },
-        {
-            "id": 8,
-            "elements": [
-                {
-                    "title": "OUR SYMBOL",
-                    "subtitle": "Never Seen Before Pricing",
-                    "pricecards": [
-                        {
-                            "id": 1,
-                            "pricetitle": "Daily",
-                            "adjective": "Most Popular",
-                            "price": "₹ 1",
-                            "tableitems": [
-                                "<p><span class='bold black'>Monthly</span></p>",
-                                "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
-                                "<p><span class='bold black'>HD</span> Streaming</p>",
-                                "<p><span class='bold black big'>Corporate Subscription</span> Available</p>",
-                                "<p><span class='bold black'>1</span> Screen</p>"
-                            ]
-                        }, 
-                        {
-                            "id": 2,
-                            "pricetitle": "Monthly",
-                            "adjective": null,
-                            "price": "₹ 20",
-                            "tableitems": [
-                                "<p><span class='bold black'>Monthly</span></p>",
-                                "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
-                                "<p><span class='bold black'>HD</span> Streaming</p>",
-                                "<p><span class='bold black big'>Corporate Subscription</span> Available</p>",
-                                "<p><span class='bold black'>1</span> Screen</p>"
-                            ]
-                        },
-                        {
-                            "id": 3,
-                            "pricetitle": "Yearly",
-                            "adjective": "Value Pack",
-                            "price": "₹ 200",
-                            "tableitems": [
-                                "<p><span class='bold black'>Monthly</span></p>",
-                                "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
-                                "<p><span class='bold black'>4K</span> Streaming</p>",
-                                "<p><span class='bold black big'>Student Discount</span> Available</p>",
-                                "<p><span class='bold black'>2</span> Screens</p>"
-                            ] 
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 9,
-            "elements": [
-                {
-                    "id": 1,
-                    "name": "IMS Life",
-                    "logo": "images/our-networks/ims-life/logo.svg"
-                },
-                {
-                    "id": 2,
-                    "name": "IMS Science",
-                    "logo": "/images/our-networks/ims-science/logo.svg"
-                },
-                {
-                    "id": 3,
-                    "name": "World TV",
-                    "logo": "/images/our-networks/world-tv/logo.svg"
-                },
-                {
-                    "id": 4,
-                    "name": "POP News",
-                    "logo": "/images/our-networks/pop-news/logo.svg"
-                },
-                {
-                    "id": 5,
-                    "name": "IMS History",
-                    "logo": "/images/our-networks/ims-history/logo.svg"
-                },
-                {
-                    "id": 6,
-                    "name": "more",
-                    "logo": "/images/our-networks/more/logo.svg"
-                }
-            ]
-        }
-    ]
-}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "container_10",
+        "elements": [
+            {
+                "id": 1,
+                "name": "IMS Life",
+                "logo": "images/our-networks/ims-life/logo.svg"
+            },
+            {
+                "id": 2,
+                "name": "IMS Science",
+                "logo": "/images/our-networks/ims-science/logo.svg"
+            },
+            {
+                "id": 3,
+                "name": "World TV",
+                "logo": "/images/our-networks/world-tv/logo.svg"
+            },
+            {
+                "id": 4,
+                "name": "POP News",
+                "logo": "/images/our-networks/pop-news/logo.svg"
+            },
+            {
+                "id": 5,
+                "name": "IMS History",
+                "logo": "/images/our-networks/ims-history/logo.svg"
+            },
+            {
+                "id": 6,
+                "name": "more",
+                "logo": "/images/our-networks/more/logo.svg"
+            }
+        ]
+    }
+]

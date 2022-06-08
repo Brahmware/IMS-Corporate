@@ -1,9 +1,9 @@
 import React from 'react'
-import FilledButton from '../../components/buttons/FilledButton';
-import PricingContainer from '../common/pricingContainer';
+import FilledButton from '../../../components/buttons/FilledButton';
+import PricingContainer from '../../common/pricingContainer';
 
-const HomeOurSymbol = (props) => {
-    const pricingData = props.data.elements[0];
+const HomeContainerNine = (props) => {
+    const pricingData = props.data[0];
     return (
         <div className="section-with-padding home-our-symbol-section">
             <div className="container heading-container">
@@ -53,4 +53,4 @@ const HomeOurSymbol = (props) => {
     )
 }
 
-export default HomeOurSymbol;
+export default HomeContainerNine;

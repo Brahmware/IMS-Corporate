@@ -16,7 +16,7 @@ const CenterAlignedCard = (props) => {
                 />
             </div>
             <div
-                className="subtitle"
+                className={!props.largeheading ? "subtitle" :"large-heading "}
                 data-aos='fade-up'
                 data-aos-duration='600'
                 data-aos-delay='600'

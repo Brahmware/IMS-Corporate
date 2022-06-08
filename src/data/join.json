@@ -5,7 +5,7 @@
         "elements": [
             {
                 "subtitle": "Humanity Depends On You",
-                "bannerbackground": "/images/join/container-4/image.jpg",
+                "bannerbackground": "/images/join/container-1/cover.jpg",
                 "title": "Join Our Mission to Illuminate Billions of lives"
             }
         ]
@@ -25,7 +25,7 @@
         "elements": [
             {
                 "image": "/images/join/container-3/image.png",
-                "bannerbackground": "/images/join/container-4/image.jpg",
+                "bannerbackground": "/images/join/container-3/cover.jpg",
                 "title": "Join India's first Informational Media Network"
             }
         ]
@@ -36,30 +36,29 @@
         "elements": [
             {
                 "title": "IMS SOCIETY MEMBERSHIP",
-                "image": "/images/join/container-4/image.jpg",
-                "content" : [
+                "image": "/images/join/container-4/cover.jpg",
+                "content": [
                     {
-                        "id":1,
-                        "button":"JOIN",
-                        "tab_box_heading":"IM",
-                        "tab_box_sub_heading":"Wanderer",
-                        "tab_box_price":"₹ 5,00,000 - ₹ 10,00,000"
+                        "id": 1,
+                        "button": "JOIN",
+                        "tab_box_heading": "IM",
+                        "tab_box_sub_heading": "Wanderer",
+                        "tab_box_price": "₹ 5,00,000 - ₹ 10,00,000"
                     },
                     {
-                        "id":2,
-                        "button":"JOIN",
-                        "tab_box_heading":"IM",
-                        "tab_box_sub_heading":"Trendsetter",
-                        "tab_box_price":"₹ 10,00,000 - ₹ 100,00,000"
+                        "id": 2,
+                        "button": "JOIN",
+                        "tab_box_heading": "IM",
+                        "tab_box_sub_heading": "Trendsetter",
+                        "tab_box_price": "₹ 10,00,000 - ₹ 100,00,000"
                     },
                     {
-                        "id":3,
-                        "button":"JOIN",
-                        "tab_box_heading":"IM",
-                        "tab_box_sub_heading":"Pioneer",
-                        "tab_box_price":"Above ₹ 100,00,000"
+                        "id": 3,
+                        "button": "JOIN",
+                        "tab_box_heading": "IM",
+                        "tab_box_sub_heading": "Pioneer",
+                        "tab_box_price": "Above ₹ 100,00,000"
                     }
-
                 ]
             }
         ]
@@ -70,33 +69,71 @@
         "elements": [
             {
                 "title": "IMS ASSEMBLY MEMBERSHIP",
-                "image": "/images/join/container-5/image.jpg",
-                "content" : [
+                "image": "/images/join/container-5/cover.jpg",
+                "content": [
                     {
-                        "id":1,
-                        "button":"JOIN",
-                        "tab_box_heading":"IM",
-                        "tab_box_sub_heading":"Wanderer",
-                        "tab_box_price":"₹ 5,00,000 - ₹ 10,00,000"
+                        "id": 1,
+                        "button": "JOIN",
+                        "tab_box_heading": "IM",
+                        "tab_box_sub_heading": "Wanderer",
+                        "tab_box_price": "₹ 5,00,000 - ₹ 10,00,000"
                     },
                     {
-                        "id":2,
-                        "button":"JOIN",
-                        "tab_box_heading":"IM",
-                        "tab_box_sub_heading":"Trendsetter",
-                        "tab_box_price":"₹ 10,00,000 - ₹ 100,00,000"
+                        "id": 2,
+                        "button": "JOIN",
+                        "tab_box_heading": "IM",
+                        "tab_box_sub_heading": "Trendsetter",
+                        "tab_box_price": "₹ 10,00,000 - ₹ 100,00,000"
                     },
                     {
-                        "id":3,
-                        "button":"JOIN",
-                        "tab_box_heading":"IM",
-                        "tab_box_sub_heading":"Pioneer",
-                        "tab_box_price":"Above ₹ 100,00,000"
+                        "id": 3,
+                        "button": "JOIN",
+                        "tab_box_heading": "IM",
+                        "tab_box_sub_heading": "Pioneer",
+                        "tab_box_price": "Above ₹ 100,00,000"
                     }
-
                 ]
             }
         ]
+    },
+    {
+        "id": "container_6",
+        "pagename": "ims assembly membership",
+        "elements": [
+            {
+                "image": "/images/join/container-6/cover.jpg",
+                "card": {
+                    "subtitle": "LOCATIONS"
+                }
+            }
+        ]
+    },
+    {
+        "id": "container_7",
+        "elements": [
+            {
+                "image": "/images/join/container-7/cover.jpg",
+                "card": {
+                    "title": "IMS BANSHEE PRODUCTION STUDIO",
+                    "button":"EXPLORE",
+                    "subtitle": "IMS Banshee Studio Noida, India",
+                    "content": "<p>Under Construction. Under Construction. Under Construction.<br/><br/><br/> Opens 2023.</p>"
+                }
+            }
+        ]
+    },
+    {
+        "id": "container_8",
+        "elements": [
+            {
+                "image": "/images/join/container-8/cover.jpg",
+                "card": {
+                    "title": "FILM ISLAND",
+                    "button":"EXPLORE",
+                    "subtitle": "IMS Film Island Andaman, India",
+                    "content": "<p>Under Construction. Under Construction. Under Construction. Under Construction. Under Construction. Under Construction. Under Construction. Under Construction. Under Construction. Gates<br/><br/><br/> Open 2025.</p>"
+                }
+            }
+        ]
     }
-
 ]
