@@ -17,7 +17,6 @@ import data from "../../data/home-data.json";
 
 
 const HomePage = () => {
-<<<<<<< HEAD
   const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
   const dataContainer2 = data && data.find(data => data.id === 'container_2').elements;
   const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
@@ -47,29 +46,6 @@ const HomePage = () => {
       </div>
     </React.Fragment>
   )
-=======
-    const homeData = Data.homeData;
-    return (
-        <React.Fragment>
-            <SEO title='Indian Media Syndicate' />
-            <div className="page-wrapper home-page-wrapper">
-                <Header />
-                <HomeBanner data={homeData[0]} />
-                <HomeAbout data={homeData[1]} />
-                <HomeContainerOne data={homeData[2].elements} />
-                <HomeContainerTwo data={homeData[3].elements} />
-                <HomeContainerThree data={homeData[4].elements} />
-                <HomeImmersiveLearning data={homeData[5]} />
-                <HomeTestimonial />
-                <HomeExplorers data={homeData[6]} />
-                <HomeOurSymbol data={homeData[7]} />
-                <HomeNetworks data={homeData[8]} />
-                <FloatinEarthButton />
-                <Footer />
-            </div>
-        </React.Fragment>
-    )
->>>>>>> main
 }
 
 export default HomePage;
