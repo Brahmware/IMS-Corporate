@@ -1,7 +1,7 @@
 import React from 'react'
 import FunfactSingleColumnComponent from '../../../components/funfact-single-column-component'
 
-const FunfactColumnSpreadContainer = ( {columnsdata} ) => {
+const FunfactColumnSpreadContainer = ({ columnsdata }) => {
     return (
         <div className="funfact-spread-columns-container">
             {

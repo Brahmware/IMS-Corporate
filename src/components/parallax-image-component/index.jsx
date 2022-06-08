@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-const ParallaxImageComponent = ({image, alt, filter, positiontop}) => {
+const ParallaxImageComponent = ({ image, alt, filter, positiontop, fixedImage }) => {
+    console.log(fixedImage)
 
     /* Parallax Background Image*/
     // console.log(filter)
@@ -35,25 +36,28 @@ const ParallaxImageComponent = ({image, alt, filter, positiontop}) => {
     }, [bgImageDistance, bgImageHeight, positiontop, windowInnerHeight, windowInnerWidth]);
 
     return (
-        <div className='parallax-image-component'>
-            <div className="background-image-part" ref={backgroundImagePartRef}>
-                <div className="background-image-holder">
-                    <div 
-                        className="background-image"
-                        style={{
-                            height: `${bgImageHeight}px`,
-                            width: `${bgImageWidth}px`,
-                            filter: `${filter ? "brightness(0.65)" : "none"}`
-                        }}
-                    >
-                        <img
-                            src={image} alt={alt ? alt : image}
-                            style={parallax}
-                        />
+        <>
+            {/* <img src={fixedImage} alt={fixedImage} /> */}
+            <div className='parallax-image-component'>
+                <div className="background-image-part" ref={backgroundImagePartRef}>
+                    <div className="background-image-holder">
+                        <div
+                            className="background-image"
+                            style={{
+                                height: `${bgImageHeight}px`,
+                                width: `${bgImageWidth}px`,
+                                filter: `${filter ? "brightness(0.65)" : "none"}`
+                            }}
+                        >
+                            <img
+                                src={image} alt={alt ? alt : image}
+                                style={parallax}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

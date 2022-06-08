@@ -1,19 +1,18 @@
 .join-page-wrapper {
-
     & .join-page {
         height: calc(100vh - $header-height);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
         & .banner-background {
             height: 100%;
             width: 100%;
             flex-shrink: 0;
             overflow: hidden;
             position: relative;
-    
+
             & .overlay {
                 position: absolute;
                 height: 100%;
@@ -21,7 +20,7 @@
                 background-color: rgba($color: $black, $alpha: 0.8);
             }
         }
-    
+
         & .title-tabs-part {
             position: relative;
             height: 0;
@@ -29,12 +28,12 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-    
+
             & .page-title-container {
                 position: absolute;
                 transform: translateY(32em);
                 z-index: 1;
-    
+
                 & .page-title {
                     color: $white;
                     display: inline-block;
@@ -42,7 +41,7 @@
                     font-weight: 1000;
                     line-height: 1em;
                 }
-    
+
                 & .page-subtitle {
                     color: $white;
                     font-size: 1.5em;
@@ -51,7 +50,7 @@
             }
         }
     }
-    
+
     .what-you-have-seen {
         & .container {
             & .title {
@@ -63,7 +62,7 @@
             }
         }
     }
-    
+
     .image-background {
         height: 30em;
         display: flex;
@@ -71,38 +70,38 @@
         justify-content: center;
         align-items: center;
         // height: 30em;
-    
+
         & .fixed-container {
             position: relative;
-    
+
             & .fixed-image {
                 position: absolute;
                 top: 0em;
                 width: 65em;
-                transform: translateY(-24em) translateX(-23em);
-                height: 42em;
+                z-index: 3;
+                transform: translateY(-24em) translateX(-29em);
+                // height: 42em;
             }
         }
-    
+
         & .banner-background {
             height: 30em;
             flex-shrink: 0;
             width: 100%;
             overflow: hidden;
-            // opacity: 0.3;
-    
+
             & img {
                 background-color: $black;
                 width: 100%;
                 height: 100%;
-                filter: brightness(20%);
+                opacity: 0.08;
                 object-fit: cover;
             }
         }
-    
+
         & .title-tabs-part {
             position: relative;
-    
+
             & .page-title-container {
                 height: 0;
                 transform: translateY(-3.36em);
@@ -110,7 +109,7 @@
                 display: flex;
                 justify-content: end;
                 align-items: center;
-    
+
                 & .page-title {
                     font-size: 2em;
                     color: $primary;
@@ -120,7 +119,7 @@
             }
         }
     }
-    
+
     .ims-society-membership {
         & .container {
             & .title {
@@ -128,7 +127,7 @@
                 padding: 4em 0em;
                 letter-spacing: 0.6em;
             }
-    
+
             & .section-1 {
                 height: 15em;
                 overflow: hidden;
@@ -137,21 +136,21 @@
                     width: 100%;
                 }
             }
-    
+
             & .section-2 {
                 width: 100%;
                 margin-top: 0.5em !important;
                 gap: 0.5em;
-    
+
                 & .sub-container {
                     background-color: $primary;
                     // height: 15em;
                     padding: 2em;
-    
+
                     & .box-button {
                         display: flex;
                         flex-direction: row-reverse;
-    
+
                         & button {
                             font-size: 1.2em;
                             font-weight: 800;
@@ -160,26 +159,26 @@
                             border-radius: 0%;
                         }
                     }
-    
+
                     & .tab-box-heading {
                         font-size: 5em;
                         color: $white;
                         line-height: normal;
                     }
-    
+
                     & .tab-box-sub-heading {
                         font-size: 1.5em;
                         color: $white;
                         font-weight: 300;
                     }
-    
+
                     & .divider {
                         border: 0.07em solid $white;
                         background: $white;
                         width: 6em;
                         margin-top: 1em;
                     }
-    
+
                     & .tab-box-price {
                         font-size: 0.8em;
                         line-height: 2.8em;
