@@ -47,14 +47,6 @@ const BookishCard = (props) => {
                 />
             </div>
             {
-                props.button ? <div
-                    data-aos={!props.inverse ? 'fade-left' : 'fade-right'}
-                    data-aos-duration='600'
-                    data-aos-delay='1200'>
-                    <FilledButton text={props.button} class={"black-button"} />
-                </div> : ""
-            }
-            {
                 props.extracomponents && props.extracomponents.map((eachComponent, componentkey) => {
                     return (
                         <div

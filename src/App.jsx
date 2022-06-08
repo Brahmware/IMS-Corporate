@@ -26,69 +26,69 @@ const JoinPage = lazy(() => import("./pagegroups/join"));
 
 
 const App = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 80,
-      duration: 1000,
-      once: true,
-      easing: "ease",
-    });
-    AOS.refresh();
-  }, []);
-  
-  return (
-    <Router>
-      <Suspense fallback={<LoadingPage />}>
-        <Switch>
-          <Route
-            path={'/'}
-            exact
-            component={HomePage}
-          />
-          <Route
-            path={'/business'}
-            exact
-            component={BusinessPage}
-          />
-          <Route
-            path={'/media_network'}
-            exact
-            component={MediaNetworkPage}
-          />
-          <Route
-            path={'/education_and_teaching'}
-            exact
-            component={EducationTeachingPage}
-          />
-          <Route
-            path={'/collaborators'}
-            exact
-            component={CollaboratorsPage}   
-          />
-          <Route
-            path={'/partners'}
-            exact
-            component={PartnersPage}   
-          />
-          <Route
-            path={'/commercial'}
-            exact
-            component={CommercialPage}   
-          />
-          <Route
-            path={'/privacy_policy'}
-            exact
-            component={PrivacyPolicyPage}   
-          />
-          <Route
-            path={'/join'}
-            exact
-            component={JoinPage}   
-          />
+    useEffect(() => {
+        AOS.init({
+            offset: 80,
+            duration: 1000,
+            once: true,
+            easing: "ease",
+        });
+        AOS.refresh();
+    }, []);
 
-        </Switch>
-      </Suspense>
-    </Router>
-  )
+    return (
+        <Router>
+            <Suspense fallback={<LoadingPage />}>
+                <Switch>
+                    <Route
+                        path={'/'}
+                        exact
+                        component={HomePage}
+                    />
+                    <Route
+                        path={'/business'}
+                        exact
+                        component={BusinessPage}
+                    />
+                    <Route
+                        path={'/media_network'}
+                        exact
+                        component={MediaNetworkPage}
+                    />
+                    <Route
+                        path={'/education_and_teaching'}
+                        exact
+                        component={EducationTeachingPage}
+                    />
+                    <Route
+                        path={'/collaborators'}
+                        exact
+                        component={CollaboratorsPage}
+                    />
+                    <Route
+                        path={'/partners'}
+                        exact
+                        component={PartnersPage}
+                    />
+                    <Route
+                        path={'/commercial'}
+                        exact
+                        component={CommercialPage}
+                    />
+                    <Route
+                        path={'/privacy_policy'}
+                        exact
+                        component={PrivacyPolicyPage}
+                    />
+                    <Route
+                        path={'/join'}
+                        exact
+                        component={JoinPage}
+                    />
+
+                </Switch>
+            </Suspense>
+        </Router>
+    )
 }
 export default App;

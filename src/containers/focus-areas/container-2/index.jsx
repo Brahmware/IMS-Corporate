@@ -5,11 +5,11 @@ import CategoryOfPeopleTabsCarouselContainer from '../../common/category-of-peop
 import TeamsData from '../../../data/teams.json'
 
 const FocusAreasContainerTwo = () => {
-  return (
-    <div className='become-a-member-container-2 section-with-padding'>
-      <CategoryOfPeopleTabsCarouselContainer title={"MEET THE MINDS"} data={TeamsData} buttontext={"EXPLORE"} />
-    </div>
-  )
+    return (
+        <div className='become-a-member-container-2 section-with-padding'>
+            <CategoryOfPeopleTabsCarouselContainer title={"MEET THE MINDS"} data={TeamsData} buttontext={"EXPLORE"} />
+        </div>
+    )
 }
 
 export default FocusAreasContainerTwo
