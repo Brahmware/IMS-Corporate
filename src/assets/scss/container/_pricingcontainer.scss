@@ -9,6 +9,8 @@
                 overflow: hidden;
                 margin: 2em 0.25em;
                 padding: 0;
+                transition: $transition-base;
+                box-shadow: $default-shadow;
 
                 & .bold {
                     font-weight: 900;
@@ -24,10 +26,12 @@
 
                 & .table-header {
                     background-color: $black;
+                    transition: $transition-base;
                     padding: 1em 3em;
                     color: $white;
                     font-size: 1.3em;
                     font-weight: 700;
+                    text-transform: uppercase;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -59,16 +63,16 @@
                     }
                 }
 
-                &.popular-card {
+                &:hover {
                     & .table-header {
                         background-color: $primary;
                     }
 
-                    box-shadow: $default-shadow;
+                    box-shadow: $deep-shadow;
                 }
             }
 
-            & .most-popular-tag-holder {
+            & .adjective-tag-holder {
                 height: 0;
                 width: 100%;
                 position: relative;
@@ -77,8 +81,9 @@
                 align-items: center;
                 transform: translateY(-2em);
 
-                & .most-popular-tag {
+                & .adjective-tag {
                     position: absolute;
+                    text-transform: uppercase;
                     z-index: 1;
                     font-size: 0.8em;
                     padding: 0.2em 4em;
