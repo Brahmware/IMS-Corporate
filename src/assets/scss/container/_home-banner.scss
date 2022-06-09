@@ -17,6 +17,8 @@
                 height: 100%;
                 overflow: hidden;
                 flex-shrink: 0;
+                object-fit: cover;
+                object-position: center;
             }
 
             &>.container {
@@ -84,4 +86,16 @@
             }
         }
     }
+}
+
+.home-image-bg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.de{
+    border: 2px solid red;
 }
