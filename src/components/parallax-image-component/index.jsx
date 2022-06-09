@@ -49,7 +49,7 @@ const ParallaxImageComponent = ({image, alt, filter, positiontop}) => {
                         <img
                             src={image} alt={alt ? alt : image}
                             style={parallax}
-                            className="w-100"
+                            className="w-100 home-image-bg h-100"
                         />
                     </div>
                 </div>
