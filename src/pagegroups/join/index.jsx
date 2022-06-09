@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../../containers/footer'
 import Header from '../../containers/header';
 import data from "../../data/join.json";
+import FloatingEarthButton from '../../components/floating-button';
 import JoinContainerOne from "../../containers/join/container-1"
 import JoinContainerTwo from '../../containers/join/container-2';
 import JoinContainerThree from '../../containers/join/container-3';
@@ -34,6 +35,7 @@ const Join = () => {
                 <JoinContainerSix data={dataContainer6} />
                 <JoinContainerSeven data={dataContainer7} />
                 <JoinContainerEight data={dataContainer8} />
+                <FloatingEarthButton />
                 <Footer />
             </div>
 
