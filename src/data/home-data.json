@@ -48,7 +48,7 @@
             {
                 "card": {
                     "title": "ABOUT US",
-                    "subtitle": "India celebrates Exploration",
+                    "subtitle": "India, Explore!<br/>Dream! Lead!",
                     "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
                 }
             }
@@ -60,7 +60,7 @@
             {
                 "card": {
                     "title": "OUR MISSION",
-                    "subtitle": "To Revolutionize Indian Media",
+                    "subtitle": "Lead the Indian Infotainment Media Revolution",
                     "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
                 }
             }
@@ -74,20 +74,20 @@
                     {
                         "id": 1,
                         "count": "2.3Billion",
-                        "cardtitle": "Conserved Species",
-                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        "cardtitle": "Serviceable Audience",
+                        "cardcontent": "Pan Asia Media creation & distribution."
                     },
                     {
                         "id": 2,
                         "count": "20+",
-                        "cardtitle": "Conserved Species",
-                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        "cardtitle": "Languages",
+                        "cardcontent": "In audio channels for all media labels. All Indic languages covered."
                     },
                     {
                         "id": 3,
                         "count": "100+",
-                        "cardtitle": "Conserved Species",
-                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                        "cardtitle": "Production Houses",
+                        "cardcontent": "In Syndicate partnership, crafting the dream."
                     }
                 ]
             }
@@ -99,8 +99,8 @@
             {
                 "card": {
                     "title": "CORE VISION",
-                    "subtitle": "To break all Communication Barriers",
-                    "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+                    "subtitle": "Break all Communication Barriers in Broadcast",
+                    "content": "<p>By achieving real-time universal connection in a decentralized multi-linguistic Human society with technology at our disposal.</p>"
                 }
             }
         ]
@@ -116,9 +116,9 @@
             },
             {
                 "card": {
-                    "title": "ABOUT US",
-                    "subtitle": "India celebrates Exploration",
-                    "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
+                    "title": "IMMERSIVE TEACHING",
+                    "subtitle": "A Strategy to Revolutionize Learning",
+                    "content": "<p>Grasping attention is easier, keeping learners engaged throughout the process and command action is a different story. We learn much faster visually, and retention is simply great if it is rewarding. In comes the array of Immersive education for new generation of India.<br/><br/> Putting our best foot forward, IMS resources are used in teaching the new wave of decision-makers. Integrating with schools and teaching organizations, creating the seamless streaming of knowledge like never before.</p>"
                 }
             }
         ]
@@ -179,7 +179,7 @@
                         "id": 3,
                         "pricetitle": "Yearly",
                         "adjective": "Value Pack",
-                        "price": "₹ 200",
+                        "price": "₹ 250",
                         "tableitems": [
                             "<p><span class='bold black'>Monthly</span></p>",
                             "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
