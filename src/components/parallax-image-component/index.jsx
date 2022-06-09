@@ -35,11 +35,11 @@ const ParallaxImageComponent = ({image, alt, filter, positiontop}) => {
     }, [bgImageDistance, bgImageHeight, positiontop, windowInnerHeight, windowInnerWidth]);
 
     return (
-        <div className='parallax-image-component'>
-            <div className="background-image-part" ref={backgroundImagePartRef}>
-                <div className="background-image-holder">
+        <div className='parallax-image-component w-100'>
+            <div className="background-image-part w-100" ref={backgroundImagePartRef}>
+                <div className="background-image-holder w-100">
                     <div 
-                        className="background-image"
+                        className="background-image w-100"
                         style={{
                             height: `${bgImageHeight}px`,
                             width: `${bgImageWidth}px`,
@@ -49,6 +49,7 @@ const ParallaxImageComponent = ({image, alt, filter, positiontop}) => {
                         <img
                             src={image} alt={alt ? alt : image}
                             style={parallax}
+                            className="w-100"
                         />
                     </div>
                 </div>
