@@ -1,179 +1,1105 @@
 [
     {
-        "typeid": "ims_explorers",
-        "typename": "IMS Explorers",
-        "members": [
+        "id": 1,
+        "type": "popular",
+        "elements": [
             {
-                "id": 101,
-                "name": "Sush<br /> Henessey",
-                "socials": [
-                    {
-                        "id": "twitter",
-                        "link": "https://twitter.com/PrakashBigBrain"
-                    },
-                    {
-                        "id": "linkedin",
-                        "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
-                    },
-                    {
-                        "id": "facebook",
-                        "link": "https://www.facebook.com/Prakash.Mandal22"
-                    }
-                ],
-                "profilepicture": "/images/people/explorers/ims-explorers/sush-henessey/profile-picture.jpg",
-                "designation": "Archeology"
+            "typeid": "ims_explorers",
+            "typename": "IMS Explorers",
+            "members": [
+                {
+                    "id": 101,
+                    "name": "Sush<br /> Henessey",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/PrakashBigBrain"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/Prakash.Mandal22"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/sush-henessey/profile-picture.jpg",
+                    "designation": "Archeology"
+                },
+                {
+                    "id": 102,
+                    "name": "Vishal<br /> Bharadwaj",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/Sanchayan_Bh"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/vishal-bharadwaj/profile-picture.jpg",
+                    "designation": "Engineering & Technology"
+                },
+                {
+                    "id": 103,
+                    "name": "Shruti<br /> Pallavi",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/shruti-pallavi/profile-picture.jpg",
+                    "designation": "Ancient Indian History"
+                },
+                {
+                    "id": 104,
+                    "name": "Kobde<br /> Felix",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "icon": "/images/team/social-icons/twitter.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "icon": "/images/team/social-icons/linkedin.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "icon": "/images/team/social-icons/facebook.svg",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/kobde-felix/profile-picture.jpg",
+                    "designation": "Marine Biology"
+                }
+            ]
             },
             {
-                "id": 102,
-                "name": "Vishal<br /> Bharadwaj",
-                "socials": [
+                "typeid": "fame_explorers",
+                "typename": "Fame Explorers",
+                "members": [
                     {
-                        "id": "twitter",
-                        "link": "https://twitter.com/Sanchayan_Bh"
+                        "id": 101,
+                        "name": "Manan<br /> Thakur",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/PrakashBigBrain"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/Prakash.Mandal22"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/manan-thakur/profile-picture.jpg",
+                        "designation": "Astrophysics"
                     },
                     {
-                        "id": "linkedin",
-                        "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                        "id": 102,
+                        "name": "Suraj<br /> Gupta",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/Sanchayan_Bh"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/suraj-gupta/profile-picture.jpg",
+                        "designation": "Indian Mithology"
                     },
                     {
-                        "id": "facebook",
-                        "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                        "id": 103,
+                        "name": "Vishal<br /> Chanda",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/vishal-chanda/profile-picture.jpg",
+                        "designation": "Art and Culture"
+                    },
+                    {
+                        "id": 104,
+                        "name": "Viti<br /> Pau",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "icon": "/images/team/social-icons/twitter.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "icon": "/images/team/social-icons/linkedin.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "icon": "/images/team/social-icons/facebook.svg",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/viti-pau/profile-picture.jpg",
+                        "designation": "Environmental Activist"
                     }
-                ],
-                "profilepicture": "/images/people/explorers/ims-explorers/vishal-bharadwaj/profile-picture.jpg",
-                "designation": "Engineering & Technology"
-            },
-            {
-                "id": 103,
-                "name": "Shruti<br /> Pallavi",
-                "socials": [
-                    {
-                        "id": "twitter",
-                        "link": ""
-                    },
-                    {
-                        "id": "linkedin",
-                        "link": ""
-                    },
-                    {
-                        "id": "facebook",
-                        "link": "https://www.facebook.com/shashi.b.prasad.10"
-                    }
-                ],
-                "profilepicture": "/images/people/explorers/ims-explorers/shruti-pallavi/profile-picture.jpg",
-                "designation": "Ancient Indian History"
-            },
-            {
-                "id": 104,
-                "name": "Kobde<br /> Felix",
-                "socials": [
-                    {
-                        "id": "twitter",
-                        "icon": "/images/team/social-icons/twitter.svg",
-                        "link": ""
-                    },
-                    {
-                        "id": "linkedin",
-                        "icon": "/images/team/social-icons/linkedin.svg",
-                        "link": ""
-                    },
-                    {
-                        "id": "facebook",
-                        "icon": "/images/team/social-icons/facebook.svg",
-                        "link": "https://www.facebook.com/shashi.b.prasad.10"
-                    }
-                ],
-                "profilepicture": "/images/people/explorers/ims-explorers/kobde-felix/profile-picture.jpg",
-                "designation": "Marine Biology"
+                ]
             }
         ]
     },
     {
-        "typeid": "fame_explorers",
-        "typename": "Fame Explorers",
-        "members": [
+        "id": 2,
+        "type": "networking",
+        "elements": [
             {
-                "id": 101,
-                "name": "Manan<br /> Thakur",
-                "socials": [
-                    {
-                        "id": "twitter",
-                        "link": "https://twitter.com/PrakashBigBrain"
-                    },
-                    {
-                        "id": "linkedin",
-                        "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
-                    },
-                    {
-                        "id": "facebook",
-                        "link": "https://www.facebook.com/Prakash.Mandal22"
-                    }
-                ],
-                "profilepicture": "/images/people/explorers/fame-explorers/manan-thakur/profile-picture.jpg",
-                "designation": "Astrophysics"
+            "typeid": "ims_explorers",
+            "typename": "IMS Explorers",
+            "members": [
+                {
+                    "id": 101,
+                    "name": "Sush<br /> Henessey",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/PrakashBigBrain"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/Prakash.Mandal22"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/sush-henessey/profile-picture.jpg",
+                    "designation": "Archeology"
+                },
+                {
+                    "id": 102,
+                    "name": "Vishal<br /> Bharadwaj",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/Sanchayan_Bh"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/vishal-bharadwaj/profile-picture.jpg",
+                    "designation": "Engineering & Technology"
+                },
+                {
+                    "id": 103,
+                    "name": "Shruti<br /> Pallavi",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/shruti-pallavi/profile-picture.jpg",
+                    "designation": "Ancient Indian History"
+                },
+                {
+                    "id": 104,
+                    "name": "Kobde<br /> Felix",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "icon": "/images/team/social-icons/twitter.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "icon": "/images/team/social-icons/linkedin.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "icon": "/images/team/social-icons/facebook.svg",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/kobde-felix/profile-picture.jpg",
+                    "designation": "Marine Biology"
+                }
+            ]
             },
             {
-                "id": 102,
-                "name": "Suraj<br /> Gupta",
-                "socials": [
+                "typeid": "fame_explorers",
+                "typename": "Fame Explorers",
+                "members": [
                     {
-                        "id": "twitter",
-                        "link": "https://twitter.com/Sanchayan_Bh"
+                        "id": 101,
+                        "name": "Manan<br /> Thakur",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/PrakashBigBrain"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/Prakash.Mandal22"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/manan-thakur/profile-picture.jpg",
+                        "designation": "Astrophysics"
                     },
                     {
-                        "id": "linkedin",
-                        "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                        "id": 102,
+                        "name": "Suraj<br /> Gupta",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/Sanchayan_Bh"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/suraj-gupta/profile-picture.jpg",
+                        "designation": "Indian Mithology"
                     },
                     {
-                        "id": "facebook",
-                        "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                        "id": 103,
+                        "name": "Vishal<br /> Chanda",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/vishal-chanda/profile-picture.jpg",
+                        "designation": "Art and Culture"
+                    },
+                    {
+                        "id": 104,
+                        "name": "Viti<br /> Pau",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "icon": "/images/team/social-icons/twitter.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "icon": "/images/team/social-icons/linkedin.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "icon": "/images/team/social-icons/facebook.svg",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/viti-pau/profile-picture.jpg",
+                        "designation": "Environmental Activist"
                     }
-                ],
-                "profilepicture": "/images/people/explorers/fame-explorers/suraj-gupta/profile-picture.jpg",
-                "designation": "Indian Mithology"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "type": "science",
+        "elements": [
+            {
+            "typeid": "ims_explorers",
+            "typename": "IMS Explorers",
+            "members": [
+                {
+                    "id": 101,
+                    "name": "Sush<br /> Henessey",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/PrakashBigBrain"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/Prakash.Mandal22"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/sush-henessey/profile-picture.jpg",
+                    "designation": "Archeology"
+                },
+                {
+                    "id": 102,
+                    "name": "Vishal<br /> Bharadwaj",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/Sanchayan_Bh"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/vishal-bharadwaj/profile-picture.jpg",
+                    "designation": "Engineering & Technology"
+                },
+                {
+                    "id": 103,
+                    "name": "Shruti<br /> Pallavi",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/shruti-pallavi/profile-picture.jpg",
+                    "designation": "Ancient Indian History"
+                },
+                {
+                    "id": 104,
+                    "name": "Kobde<br /> Felix",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "icon": "/images/team/social-icons/twitter.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "icon": "/images/team/social-icons/linkedin.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "icon": "/images/team/social-icons/facebook.svg",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/kobde-felix/profile-picture.jpg",
+                    "designation": "Marine Biology"
+                }
+            ]
             },
             {
-                "id": 103,
-                "name": "Vishal<br /> Chanda",
-                "socials": [
+                "typeid": "fame_explorers",
+                "typename": "Fame Explorers",
+                "members": [
                     {
-                        "id": "twitter",
-                        "link": ""
+                        "id": 101,
+                        "name": "Manan<br /> Thakur",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/PrakashBigBrain"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/Prakash.Mandal22"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/manan-thakur/profile-picture.jpg",
+                        "designation": "Astrophysics"
                     },
                     {
-                        "id": "linkedin",
-                        "link": ""
+                        "id": 102,
+                        "name": "Suraj<br /> Gupta",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/Sanchayan_Bh"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/suraj-gupta/profile-picture.jpg",
+                        "designation": "Indian Mithology"
                     },
                     {
-                        "id": "facebook",
-                        "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        "id": 103,
+                        "name": "Vishal<br /> Chanda",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/vishal-chanda/profile-picture.jpg",
+                        "designation": "Art and Culture"
+                    },
+                    {
+                        "id": 104,
+                        "name": "Viti<br /> Pau",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "icon": "/images/team/social-icons/twitter.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "icon": "/images/team/social-icons/linkedin.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "icon": "/images/team/social-icons/facebook.svg",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/viti-pau/profile-picture.jpg",
+                        "designation": "Environmental Activist"
                     }
-                ],
-                "profilepicture": "/images/people/explorers/fame-explorers/vishal-chanda/profile-picture.jpg",
-                "designation": "Art and Culture"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "type": "environmental",
+        "elements": [
+            {
+            "typeid": "ims_explorers",
+            "typename": "IMS Explorers",
+            "members": [
+                {
+                    "id": 101,
+                    "name": "Sush<br /> Henessey",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/PrakashBigBrain"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/Prakash.Mandal22"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/sush-henessey/profile-picture.jpg",
+                    "designation": "Archeology"
+                },
+                {
+                    "id": 102,
+                    "name": "Vishal<br /> Bharadwaj",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/Sanchayan_Bh"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/vishal-bharadwaj/profile-picture.jpg",
+                    "designation": "Engineering & Technology"
+                },
+                {
+                    "id": 103,
+                    "name": "Shruti<br /> Pallavi",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/shruti-pallavi/profile-picture.jpg",
+                    "designation": "Ancient Indian History"
+                },
+                {
+                    "id": 104,
+                    "name": "Kobde<br /> Felix",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "icon": "/images/team/social-icons/twitter.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "icon": "/images/team/social-icons/linkedin.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "icon": "/images/team/social-icons/facebook.svg",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/kobde-felix/profile-picture.jpg",
+                    "designation": "Marine Biology"
+                }
+            ]
             },
             {
-                "id": 104,
-                "name": "Viti<br /> Pau",
-                "socials": [
+                "typeid": "fame_explorers",
+                "typename": "Fame Explorers",
+                "members": [
                     {
-                        "id": "twitter",
-                        "icon": "/images/team/social-icons/twitter.svg",
-                        "link": ""
+                        "id": 101,
+                        "name": "Manan<br /> Thakur",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/PrakashBigBrain"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/Prakash.Mandal22"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/manan-thakur/profile-picture.jpg",
+                        "designation": "Astrophysics"
                     },
                     {
-                        "id": "linkedin",
-                        "icon": "/images/team/social-icons/linkedin.svg",
-                        "link": ""
+                        "id": 102,
+                        "name": "Suraj<br /> Gupta",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/Sanchayan_Bh"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/suraj-gupta/profile-picture.jpg",
+                        "designation": "Indian Mithology"
                     },
                     {
-                        "id": "facebook",
-                        "icon": "/images/team/social-icons/facebook.svg",
-                        "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        "id": 103,
+                        "name": "Vishal<br /> Chanda",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/vishal-chanda/profile-picture.jpg",
+                        "designation": "Art and Culture"
+                    },
+                    {
+                        "id": 104,
+                        "name": "Viti<br /> Pau",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "icon": "/images/team/social-icons/twitter.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "icon": "/images/team/social-icons/linkedin.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "icon": "/images/team/social-icons/facebook.svg",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/viti-pau/profile-picture.jpg",
+                        "designation": "Environmental Activist"
                     }
-                ],
-                "profilepicture": "/images/people/explorers/fame-explorers/viti-pau/profile-picture.jpg",
-                "designation": "Environmental Activist"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "type": "humans-past",
+        "elements": [
+            {
+            "typeid": "ims_explorers",
+            "typename": "IMS Explorers",
+            "members": [
+                {
+                    "id": 101,
+                    "name": "Sush<br /> Henessey",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/PrakashBigBrain"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/Prakash.Mandal22"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/sush-henessey/profile-picture.jpg",
+                    "designation": "Archeology"
+                },
+                {
+                    "id": 102,
+                    "name": "Vishal<br /> Bharadwaj",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/Sanchayan_Bh"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/vishal-bharadwaj/profile-picture.jpg",
+                    "designation": "Engineering & Technology"
+                },
+                {
+                    "id": 103,
+                    "name": "Shruti<br /> Pallavi",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/shruti-pallavi/profile-picture.jpg",
+                    "designation": "Ancient Indian History"
+                },
+                {
+                    "id": 104,
+                    "name": "Kobde<br /> Felix",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "icon": "/images/team/social-icons/twitter.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "icon": "/images/team/social-icons/linkedin.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "icon": "/images/team/social-icons/facebook.svg",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/kobde-felix/profile-picture.jpg",
+                    "designation": "Marine Biology"
+                }
+            ]
+            },
+            {
+                "typeid": "fame_explorers",
+                "typename": "Fame Explorers",
+                "members": [
+                    {
+                        "id": 101,
+                        "name": "Manan<br /> Thakur",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/PrakashBigBrain"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/Prakash.Mandal22"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/manan-thakur/profile-picture.jpg",
+                        "designation": "Astrophysics"
+                    },
+                    {
+                        "id": 102,
+                        "name": "Suraj<br /> Gupta",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/Sanchayan_Bh"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/suraj-gupta/profile-picture.jpg",
+                        "designation": "Indian Mithology"
+                    },
+                    {
+                        "id": 103,
+                        "name": "Vishal<br /> Chanda",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/vishal-chanda/profile-picture.jpg",
+                        "designation": "Art and Culture"
+                    },
+                    {
+                        "id": 104,
+                        "name": "Viti<br /> Pau",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "icon": "/images/team/social-icons/twitter.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "icon": "/images/team/social-icons/linkedin.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "icon": "/images/team/social-icons/facebook.svg",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/viti-pau/profile-picture.jpg",
+                        "designation": "Environmental Activist"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "type": "education",
+        "elements": [
+            {
+            "typeid": "ims_explorers",
+            "typename": "IMS Explorers",
+            "members": [
+                {
+                    "id": 101,
+                    "name": "Sush<br /> Henessey",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/PrakashBigBrain"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/Prakash.Mandal22"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/sush-henessey/profile-picture.jpg",
+                    "designation": "Archeology"
+                },
+                {
+                    "id": 102,
+                    "name": "Vishal<br /> Bharadwaj",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": "https://twitter.com/Sanchayan_Bh"
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/vishal-bharadwaj/profile-picture.jpg",
+                    "designation": "Engineering & Technology"
+                },
+                {
+                    "id": 103,
+                    "name": "Shruti<br /> Pallavi",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/shruti-pallavi/profile-picture.jpg",
+                    "designation": "Ancient Indian History"
+                },
+                {
+                    "id": 104,
+                    "name": "Kobde<br /> Felix",
+                    "socials": [
+                        {
+                            "id": "twitter",
+                            "icon": "/images/team/social-icons/twitter.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "linkedin",
+                            "icon": "/images/team/social-icons/linkedin.svg",
+                            "link": ""
+                        },
+                        {
+                            "id": "facebook",
+                            "icon": "/images/team/social-icons/facebook.svg",
+                            "link": "https://www.facebook.com/shashi.b.prasad.10"
+                        }
+                    ],
+                    "profilepicture": "/images/people/explorers/ims-explorers/kobde-felix/profile-picture.jpg",
+                    "designation": "Marine Biology"
+                }
+            ]
+            },
+            {
+                "typeid": "fame_explorers",
+                "typename": "Fame Explorers",
+                "members": [
+                    {
+                        "id": 101,
+                        "name": "Manan<br /> Thakur",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/PrakashBigBrain"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/prakash-mandal-89a04b7b/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/Prakash.Mandal22"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/manan-thakur/profile-picture.jpg",
+                        "designation": "Astrophysics"
+                    },
+                    {
+                        "id": 102,
+                        "name": "Suraj<br /> Gupta",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": "https://twitter.com/Sanchayan_Bh"
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": "https://www.linkedin.com/in/sanchayan-bhunia/"
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/sanchayan.bhunia.1"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/suraj-gupta/profile-picture.jpg",
+                        "designation": "Indian Mithology"
+                    },
+                    {
+                        "id": 103,
+                        "name": "Vishal<br /> Chanda",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/vishal-chanda/profile-picture.jpg",
+                        "designation": "Art and Culture"
+                    },
+                    {
+                        "id": 104,
+                        "name": "Viti<br /> Pau",
+                        "socials": [
+                            {
+                                "id": "twitter",
+                                "icon": "/images/team/social-icons/twitter.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "linkedin",
+                                "icon": "/images/team/social-icons/linkedin.svg",
+                                "link": ""
+                            },
+                            {
+                                "id": "facebook",
+                                "icon": "/images/team/social-icons/facebook.svg",
+                                "link": "https://www.facebook.com/shashi.b.prasad.10"
+                            }
+                        ],
+                        "profilepicture": "/images/people/explorers/fame-explorers/viti-pau/profile-picture.jpg",
+                        "designation": "Environmental Activist"
+                    }
+                ]
             }
         ]
     }
