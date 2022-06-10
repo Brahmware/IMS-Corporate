@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 const ParallaxImageComponent = ({ image, alt, filter, positiontop, fixedImage }) => {
-    console.log(fixedImage)
 
     /* Parallax Background Image*/
     // console.log(filter)

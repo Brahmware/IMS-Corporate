@@ -1,9 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import MenuCardContent from '../menu-card-content/MenuCardContent'
 import MenuCardTab from '../menu-card-tab/MenuCardTab'
+import {useLocation} from "react-router-dom"
 
 const MenuCard = (props) => {
+  const location = useLocation();
   const [activetab, setactivetab] = useState(1)
+
+  useEffect(() => {
+    const state=Number(location.state)
+    setactivetab(state)
+  },[activetab])
   return (
     <div className="menu-card">
       <div className='center-aligned-card'>

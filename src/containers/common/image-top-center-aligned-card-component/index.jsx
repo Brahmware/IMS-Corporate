@@ -2,7 +2,6 @@ import React from 'react'
 import CenterAlignedCard from '../../../components/center-aligned-card'
 
 const ImageTopCenterAlignedCardComponent = ({ data, dividercolor ,largeheading}) => {
-console.log(largeheading)
     const carddata = data && data.card;
     const imagedata = data && data.image;
 
