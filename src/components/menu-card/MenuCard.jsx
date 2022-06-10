@@ -10,7 +10,7 @@ const MenuCard = (props) => {
   useEffect(() => {
     const state=Number(location.state)
     setactivetab(state)
-  },[activetab])
+  },[])
   return (
     <div className="menu-card">
       <div className='center-aligned-card'>
