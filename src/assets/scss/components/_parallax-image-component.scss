@@ -1,37 +1,23 @@
 .parallax-image-component {
     height: 100%;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 
-    & .background-image-part {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
+    & .background-image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 100%;
 
-        & .background-image-holder {
-            position: relative;
-            height: 0;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            & .background-image {
-                position: absolute;
-                z-index: -1;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                & img {
-                    width: 100%;
-                    height: max-content;
-                    object-fit: cover;
-                }
-            }
+        & img {
+            object-fit: cover;
         }
     }
+
 }
