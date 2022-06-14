@@ -269,19 +269,19 @@
                             {
                                 "id": 1,
                                 "title": "IM",
-                                "subtitle": "Wanderer",
+                                "subtitle": "Delegate",
                                 "content": "&#8377; 5,00,000 - &#8377; 10,00,000"
                             },
                             {
                                 "id": 2,
                                 "title": "IM",
-                                "subtitle": "Trendsetter",
+                                "subtitle": "Envoy",
                                 "content": "&#8377; 10,00,000 - &#8377; 100,00,000"
                             },
                             {
                                 "id": 3,
                                 "title": "IM",
-                                "subtitle": "Pioneer",
+                                "subtitle": "Chief",
                                 "content": "Above &#8377; 100,00,000"
                             }
                         ]

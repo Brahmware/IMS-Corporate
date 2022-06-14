@@ -19,6 +19,7 @@
         "react-inlinesvg": "^2.3.0",
         "react-router-dom": "^5.2.0",
         "react-scripts": "^5.0.0",
+        "react-scroll-into-view": "^1.12.0",
         "reactstrap": "^8.9.0",
         "resize-observer-polyfill": "^1.5.1",
         "sass": "^1.32.12",

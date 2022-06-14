@@ -184,6 +184,27 @@
                         line-height: 2.8em;
                     }
                 }
+
+                & .sub-container:hover {
+                    background-color: white;
+                    & .box-button {
+                        & button {
+                            border: 1px solid $primary;
+                        }
+                    }
+                    & .tab-box-heading {
+                        color: $primary;
+                    }
+
+                    & .tab-box-sub-heading {
+                        color: $primary;
+                    }
+
+                    & .divider {
+                        border: 0.07em solid $primary;
+                        background: $primary;
+                    }
+                }
             }
         }
     }

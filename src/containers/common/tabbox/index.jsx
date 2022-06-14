@@ -16,12 +16,12 @@ const TabBoxContainer = (props) => {
                 history.push({
                     pathname: 'partners',
                     hash: "#become_a_member",
-                    state:`${props.id+1}`
+                    state: `${props.id + 1}`
                 })
             }}
         >
             <div className="box-button">
-                <FilledButton class={'white-button'} text={allData.button} />
+                <a href="/join"><FilledButton class={'white-button'} text={allData.button} /></a>
             </div>
             <div
                 className="tab-box-heading"

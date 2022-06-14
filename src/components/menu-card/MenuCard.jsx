@@ -1,18 +1,20 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import MenuCardContent from '../menu-card-content/MenuCardContent'
 import MenuCardTab from '../menu-card-tab/MenuCardTab'
-import {useLocation} from "react-router-dom"
+import { useLocation } from "react-router-dom"
+import ScrollIntoView from 'react-scroll-into-view'
 
 const MenuCard = (props) => {
   const location = useLocation();
   const [activetab, setactivetab] = useState(1)
 
   useEffect(() => {
-    const state=Number(location.state)
-    setactivetab(state)
-  },[])
+    const state = Number(location.state)
+    setactivetab(isNaN(state) ? 1 : state)
+
+  }, [location.state])
   return (
-    <div className="menu-card">
+    <div className="menu-card" id='menucard'>
       <div className='center-aligned-card'>
         <div
           className="title menu-card-heading"
