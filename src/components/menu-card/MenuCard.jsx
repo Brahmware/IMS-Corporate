@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import MenuCardContent from '../menu-card-content/MenuCardContent'
 import MenuCardTab from '../menu-card-tab/MenuCardTab'
 import { useLocation } from "react-router-dom"
-import ScrollIntoView from 'react-scroll-into-view'
 
 const MenuCard = (props) => {
   const location = useLocation();
