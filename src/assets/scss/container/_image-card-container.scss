@@ -3,6 +3,11 @@
 
     & .image-part {
         flex-shrink: 0;
+
+        &>div {
+            border-radius: $image-border-radius;
+        }
+
         & .image-box {
             height: 100%;
             padding-top: 80.7%;
