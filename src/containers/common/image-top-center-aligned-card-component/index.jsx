@@ -1,7 +1,9 @@
 import React from 'react'
 import CenterAlignedCard from '../../../components/center-aligned-card'
+import ReflectionComponent from '../../../components/reflection-component';
 
-const ImageTopCenterAlignedCardComponent = ({ data, dividercolor ,largeheading}) => {
+const ImageTopCenterAlignedCardComponent = ({ data, dividercolor, largeheading }) => {
+    console.log(largeheading)
     const carddata = data && data.card;
     const imagedata = data && data.image;
 
@@ -16,7 +18,11 @@ const ImageTopCenterAlignedCardComponent = ({ data, dividercolor ,largeheading})
                     data-aos-delay='300'
                 >
                     <div className="centered-aligned-image">
-                        <img src={imagedata} alt={carddata.title} />
+                        <ReflectionComponent
+                            component={
+                                <img src={imagedata} alt={carddata.title} />
+                            }
+                        />
                     </div>
                 </div>
                 <div className="bottom-half-bg" />
