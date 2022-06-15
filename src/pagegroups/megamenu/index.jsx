@@ -21,6 +21,11 @@ const MegaMenu = (props) => {
     useEffect(() => {
         imageDimensions && setImageStyle({width: imageDimensions.height * MEGA_MENU_ASPECT_RATIO})
     }, [imageDimensions])
+    const [megaMenuMedia, setMegaMenuMedia] = useState(null);
+
+    const onMouseOver = (event) => {
+        setMegaMenuMedia(event.currentTarget.getAttribute("data-megamenumedia"))
+    }
 
     return (
         <div
@@ -35,9 +40,9 @@ const MegaMenu = (props) => {
                                 ref={megaMenuImageRef}
                                 style={imageStyle}
                             >
-                                <img src="/images/nav-image.png" alt="navimage" />
+                                <video src={megaMenuMedia} autoPlay loop muted alt="loading ..." />
                             </div>
-                            <SiteMap onClickClose={props.onclose} />
+                            <SiteMap onClickClose={props.onclose} onMouseOver={onMouseOver} />
                         </div>
                     </div>
                     <div className="megamenu-footer">
@@ -46,6 +51,7 @@ const MegaMenu = (props) => {
                             <div className="socials"><OurSocialLinks /></div>
                             <div className="copyright"><CopyrightComponent /></div>
                         </div>
+
                         <div className="megamenu-footer-right">
                             <div />
                             <div className="language-preference">
