@@ -2,7 +2,7 @@ import React from 'react'
 
 const JoinContainerTwo = (props) => {
     return (
-        <div className="what-you-have-seen white-background">
+        <div className="what-you-have-seen">
             <div className="container">
                 <div
                     className="title"

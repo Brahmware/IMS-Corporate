@@ -2,6 +2,7 @@
         "id": "business",
         "pageGroup": "Business",
         "bannerbackground": "/images/sitemap/business/banner.jpg",
+        "megamenumedia": "/images/sitemap/business/megamenu-media.webm",
         "pages": [{
                 "id": "about_us",
                 "page": "About Us",
@@ -28,6 +29,7 @@
         "id": "media_network",
         "pageGroup": "Media Network",
         "bannerbackground": "/images/sitemap/media-network/banner.jpg",
+        "megamenumedia": "/images/sitemap/media-network/megamenu-media.webm",
         "pages": [{
                 "id": "business_and_brands",
                 "page": "Business and Brands",
@@ -54,6 +56,7 @@
         "id": "education_and_teaching",
         "pageGroup": "Education & Teaching",
         "bannerbackground": "/images/sitemap/education-and-teaching/banner.jpg",
+        "megamenumedia": "/images/sitemap/education-and-teaching/megamenu-media.webm",
         "pages": [{
                 "id": "resources",
                 "page": "Resources",
@@ -75,6 +78,7 @@
         "id": "collaborators",
         "pageGroup": "Collaborators",
         "bannerbackground": "/images/sitemap/collaborators/banner.jpg",
+        "megamenumedia": "/images/sitemap/collaborators/megamenu-media.webm",
         "pages": [{
                 "id": "explorers",
                 "page": "Explorers",
@@ -91,6 +95,7 @@
         "id": "partners",
         "pageGroup": "Partners",
         "bannerbackground": "/images/sitemap/partners/banner.jpg",
+        "megamenumedia": "/images/sitemap/partners/megamenu-media.webm",
         "pages": [{
                 "id": "corporate_and_foundations",
                 "page": "Corporate and Foundations",
@@ -107,6 +112,7 @@
         "id": "commercial",
         "pageGroup": "Commercial",
         "bannerbackground": "/images/sitemap/commercial/banner.jpg",
+        "megamenumedia": "/images/sitemap/commercial/megamenu-media.webm",
         "pages": [{
                 "id": "advertise_with_us",
                 "page": "Advertise with Us",

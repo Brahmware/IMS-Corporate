@@ -19,9 +19,13 @@ const ProducersContainerThree = ({ data }) => {
                 <div className="container">
                     <MembershipCard cardData={membershipCardData} />
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 tab-box-container">
-                        <TabBoxContainer data={cardData} />
-                        <TabBoxContainer data={cardData} />
-                        <TabBoxContainer data={cardData} />
+                        {
+                            cardData.map((card, index) => {
+                                return (
+                                    <TabBoxContainer data={card} key={index} />
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>

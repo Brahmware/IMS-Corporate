@@ -2,7 +2,6 @@ import React from 'react'
 import FunfactColumnSpreadCardImageContainer from '../../common/funfact-column-spread-card-image-container'
 
 const ProfessionalLearningContainerThree = ({ data }) => {
-    console.log(data)
     return (
         <div className='professional-learning-container-3 section-with-padding white-background'>
             <div className="container">

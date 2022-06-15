@@ -3,7 +3,6 @@ import React from 'react'
 import ImageTopCenterAlignedCardComponent from '../../common/image-top-center-aligned-card-component'
 
 const JoinContainerSix = ({ data }) => {
-  console.log(data)
   return (
     <div className='join-container-6 section'>
       <ImageTopCenterAlignedCardComponent data={data[0]} dividercolor="primary" largeheading={ true}/>

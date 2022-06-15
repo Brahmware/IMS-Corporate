@@ -3,14 +3,13 @@ import FilledButton from '../../../components/buttons/FilledButton'
 import ParallaxImageComponent from '../../../components/parallax-image-component'
 
 const TabBoxImageBackground = (props) => {
-    const allData=props.data[0]
-    console.log(allData);
+    const allData=props.data
     return (
         <div className="col">
             <div className="sub-container"
-                // data-aos='fade-up'
-                // data-aos-duration='600'
-                // data-aos-delay={900 + 300 * props.tabkey}
+                data-aos='fade-up'
+                data-aos-duration='600'
+                data-aos-delay={900 + 300 * props.tabkey}
             >
                 <div className="image-part">
                     <div className="image-overlay"></div>

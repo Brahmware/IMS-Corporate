@@ -27,12 +27,14 @@ const CenterAlignedCard = (props) => {
                     }}
                 />
             </div>
-            <div
+            {
+                !props.largeheading ? <div
                 className={props.dividercolor && props.dividercolor === "primary"? "divider primary" : "divider"}
                 data-aos='fade-up'
                 data-aos-duration='600'
                 data-aos-delay='900'
-            />
+            /> : ""
+            }
             <div
                 className="content"
                 data-aos='fade-up'
