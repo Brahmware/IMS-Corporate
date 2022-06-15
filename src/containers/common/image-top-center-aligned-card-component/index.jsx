@@ -3,7 +3,6 @@ import CenterAlignedCard from '../../../components/center-aligned-card'
 import ReflectionComponent from '../../../components/reflection-component';
 
 const ImageTopCenterAlignedCardComponent = ({ data, dividercolor, largeheading }) => {
-    console.log(largeheading)
     const carddata = data && data.card;
     const imagedata = data && data.image;
 

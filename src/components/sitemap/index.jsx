@@ -10,7 +10,10 @@ const SiteMap = (props) => {
     }
 
     return (
-        <div className='sitemap-wrapper noselect'>
+        <div 
+            className='sitemap-wrapper noselect'
+            onMouseLeave={props.onMouseOut && props.onMouseOut}
+        >
             <div className="row row-cols-lg-3 row-cols-sm-2 row-cols-1 row-no-1">
                 {
                     SiteMapData.map((group, groupKey) => {
@@ -20,10 +23,11 @@ const SiteMap = (props) => {
                                 id={group.id}
                                 className="col"
                             >
-                                <div 
+                                <div
                                     className="pagegroup"
-                                    data-megamenumedia = {group.megamenumedia}
-                                    onMouseEnter={props.onMouseOver && props.onMouseOver}
+                                    data-megamenumedia={group.megamenumedia}
+                                    onMouseEnter={props.onFocusOver && props.onFocusOver}
+                                    onTouchStart={props.onFocusOver && props.onFocusOver}
                                 >
                                     <div className="group-title">
                                         <span className='title'>{group.pageGroup}</span>
