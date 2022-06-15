@@ -6,18 +6,37 @@
     align-items: center;
 
     & .row,
-    & .col{
+    & .col {
         margin: 0;
         padding: 0;
     }
+
     & .pagegroup {
         padding: 1em 0;
+
         & .group-title {
+            transition: $transition-base;
+
             & .title {
                 font-size: 1.3em;
                 font-weight: 1000;
             }
         }
+
+        &:hover {
+            & .group-title {
+                color: $primary;
+            }
+
+            & a {
+                color: $primary;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+
         & .page {
             & a {
                 font-size: 1em;
