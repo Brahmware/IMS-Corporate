@@ -52,6 +52,9 @@
     }
 
     .what-you-have-seen {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%);
+
         & .container {
             & .title {
                 padding-top: 1.5em;
@@ -77,7 +80,7 @@
             & .fixed-image {
                 position: absolute;
                 top: 0em;
-                width: 65em;
+                width: 80em;
                 z-index: 3;
                 transform: translateY(-24em) translateX(-29em);
                 // height: 42em;
@@ -131,6 +134,7 @@
             & .section-1 {
                 height: 15em;
                 overflow: hidden;
+
                 & .banner-image-container {
                     height: 100%;
                     width: 100%;
@@ -187,11 +191,13 @@
 
                 & .sub-container:hover {
                     background-color: white;
+
                     & .box-button {
                         & button {
                             border: 1px solid $primary;
                         }
                     }
+
                     & .tab-box-heading {
                         color: $primary;
                     }
@@ -216,6 +222,7 @@
     @media #{$laptop-device} {
         font-size: 0.9em;
     }
+
     @media #{$desktop-device} {
         font-size: 0.7em;
     }

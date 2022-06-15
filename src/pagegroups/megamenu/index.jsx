@@ -16,9 +16,10 @@ const MegaMenu = (props) => {
     const megaMenuImageRef = useRef(null);
     const imageDimensions = useResizeObserver(megaMenuImageRef);
     const [imageStyle, setImageStyle] = useState({});
+    const MEGA_MENU_ASPECT_RATIO = 0.57;
 
     useEffect(() => {
-        imageDimensions && setImageStyle({width: imageDimensions.height * 0.57})
+        imageDimensions && setImageStyle({width: imageDimensions.height * MEGA_MENU_ASPECT_RATIO})
     }, [imageDimensions])
 
     return (
