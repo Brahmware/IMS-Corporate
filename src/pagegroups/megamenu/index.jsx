@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import CopyrightComponent from '../../components/copyright';
 import LanguageComponent from '../../components/languagecomponent';
@@ -12,6 +12,11 @@ const MegaMenu = (props) => {
     const visitor_agreement = pages && pages.find(page => page.id === 'visitor_agreement');
     const privacy_notice = pages && pages.find(page => page.id === 'privacy_notice');
 
+    const [megaMenuMedia, setMegaMenuMedia] = useState(null);
+
+    const onMouseOver = (event) => {
+        setMegaMenuMedia(event.currentTarget.getAttribute("data-megamenumedia"))
+    }
 
     return (
         <div
@@ -23,9 +28,9 @@ const MegaMenu = (props) => {
                     <div className="container">
                         <div className="site-map-container">
                             <div className="megamenu-image" >
-                                <img src="/images/nav-image.png" alt="navimage" />
+                                <video src={megaMenuMedia} autoPlay loop muted alt="loading ..." />
                             </div>
-                            <SiteMap onClickClose={props.onclose}/>
+                            <SiteMap onClickClose={props.onclose} onMouseOver={onMouseOver} />
                         </div>
                     </div>
                 </div>
@@ -41,8 +46,8 @@ const MegaMenu = (props) => {
                             <LanguageComponent />
                         </div>
                         <div className="legals">
-                            <Link 
-                                to={visitor_agreement.path} 
+                            <Link
+                                to={visitor_agreement.path}
                                 id={visitor_agreement.id}
                                 onClick={props.onclose}
                             >
@@ -52,12 +57,12 @@ const MegaMenu = (props) => {
                                     }}
                                 />
                             </Link>
-                            <Link 
-                                to={privacy_notice.path} 
+                            <Link
+                                to={privacy_notice.path}
                                 id={privacy_notice.id}
                                 onClick={props.onclose}
                             >
-                                <span 
+                                <span
                                     dangerouslySetInnerHTML={{
                                         __html: privacy_notice.page
                                     }}

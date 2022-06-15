@@ -20,7 +20,11 @@ const SiteMap = (props) => {
                                 id={group.id}
                                 className="col"
                             >
-                                <div className="pagegroup">
+                                <div 
+                                    className="pagegroup"
+                                    data-megamenumedia = {group.megamenumedia}
+                                    onMouseEnter={props.onMouseOver && props.onMouseOver}
+                                >
                                     <div className="group-title">
                                         <span className='title'>{group.pageGroup}</span>
                                     </div>
