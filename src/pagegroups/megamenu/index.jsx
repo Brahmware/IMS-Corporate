@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CopyrightComponent from '../../components/copyright';
 import LanguageComponent from '../../components/languagecomponent';
@@ -13,18 +13,42 @@ const MegaMenu = (props) => {
     const visitor_agreement = pages && pages.find(page => page.id === 'visitor_agreement');
     const privacy_notice = pages && pages.find(page => page.id === 'privacy_notice');
 
-    const megaMenuImageRef = useRef(null);
-    const imageDimensions = useResizeObserver(megaMenuImageRef);
-    const [imageStyle, setImageStyle] = useState({});
+    const megaMenuMediaRef = useRef(null);
+    const mediaDimensions = useResizeObserver(megaMenuMediaRef);
+    const [mediaStyle, setMediaStyle] = useState({});
     const MEGA_MENU_ASPECT_RATIO = 0.57;
+    const TOTAL_ANIMATIONTIME = 600;
 
     useEffect(() => {
-        imageDimensions && setImageStyle({width: imageDimensions.height * MEGA_MENU_ASPECT_RATIO})
-    }, [imageDimensions])
-    const [megaMenuMedia, setMegaMenuMedia] = useState(null);
+        mediaDimensions && setMediaStyle({ width: mediaDimensions.height * MEGA_MENU_ASPECT_RATIO })
+    }, [mediaDimensions])
 
-    const onMouseOver = (event) => {
-        setMegaMenuMedia(event.currentTarget.getAttribute("data-megamenumedia"))
+
+    const MEGAMENU_DEFAULT_MEDIA = '/images/megamenu-default-media.webm';
+    const [megaMenuMedia, setMegaMenuMedia] = useState(MEGAMENU_DEFAULT_MEDIA);
+
+    let handleMediaChange = (media) => {
+        let megamenuMedia = document.getElementById('megamenu-media');
+        megamenuMedia.classList.add("out");
+
+        setTimeout(() => {
+            megamenuMedia.classList.remove("out");
+            megamenuMedia.classList.add('in');
+            setMegaMenuMedia(media);
+        }, TOTAL_ANIMATIONTIME / 2)
+
+        setTimeout(() => {
+            megamenuMedia.classList.remove('in');
+        }, TOTAL_ANIMATIONTIME)
+    }
+
+    const onFocusOver = (event) => {
+        let currentMedia = event.currentTarget.getAttribute("data-megamenumedia");
+        handleMediaChange(currentMedia);
+    }
+
+    const onMouseOut = () => {
+        handleMediaChange(MEGAMENU_DEFAULT_MEDIA);
     }
 
     return (
@@ -36,13 +60,14 @@ const MegaMenu = (props) => {
                 <div className="page-wrapper megamenu-page">
                     <div className="site-map-wrapper">
                         <div className="site-map-container">
-                            <div className="megamenu-image" 
-                                ref={megaMenuImageRef}
-                                style={imageStyle}
+                            <div className="megamenu-media"
+                                id='megamenu-media'
+                                ref={megaMenuMediaRef}
+                                style={mediaStyle}
                             >
                                 <video src={megaMenuMedia} autoPlay loop muted alt="loading ..." />
                             </div>
-                            <SiteMap onClickClose={props.onclose} onMouseOver={onMouseOver} />
+                            <SiteMap onClickClose={props.onclose} onFocusOver={onFocusOver} onMouseOut={onMouseOut} />
                         </div>
                     </div>
                     <div className="megamenu-footer">

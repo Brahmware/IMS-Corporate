@@ -21,11 +21,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+
         & .site-map-wrapper {
             width: 100%;
             height: 100%;
-            
+
             & .site-map-container {
                 height: inherit;
                 display: flex;
@@ -33,7 +33,7 @@
                 align-items: center;
                 gap: 4em;
 
-                & .megamenu-image {
+                & .megamenu-media {
                     flex-shrink: 0;
                     height: 100%;
                     overflow: hidden;
@@ -43,13 +43,43 @@
                         width: 100%;
                         object-fit: cover;
                     }
+
+                    &.out {
+                        animation: out-animation 300ms ease-out;
+
+                        @keyframes out-animation {
+                            0% {
+                                opacity: 1;
+                            }
+
+                            100% {
+                                opacity: 0;
+                            }
+                        }
+                    }
+
+                    &.in {
+                        animation: in-animation 300ms ease-in;
+
+                        @keyframes in-animation {
+                            0% {
+                                opacity: 0;
+                            }
+
+                            100% {
+                                opacity: 1;
+                            }
+                        }
+                    }
                 }
 
             }
+
             & .pagegroup {
                 padding: 3em 0em;
             }
         }
+
         & .megamenu-footer {
             height: max-content;
             padding: 2em 0em;
@@ -57,24 +87,24 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
-    
+
             & .megamenu-footer-left {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: flex-start;
                 gap: 1em;
-    
+
                 & .contactus {
                     font-size: 1.3em;
                     font-weight: 1000;
                 }
-    
+
                 & .our-social-links-component {
                     gap: 2em
                 }
             }
-    
+
             & .megamenu-footer-right {
                 display: flex;
                 flex-direction: column;
@@ -82,7 +112,7 @@
                 align-items: flex-end;
                 gap: 1em;
                 font-weight: 300;
-    
+
                 & .legals {
                     display: flex;
                     justify-content: center;
@@ -99,6 +129,7 @@
     @media #{$laptop-device} {
         font-size: 0.9em;
     }
+
     @media #{$desktop-device} {
         font-size: 0.7em;
     }
