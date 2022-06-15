@@ -32,7 +32,7 @@ const ImageWithTabBox = ({data}) => {
                         data.content.map((allData, index) => {
                             return (
                                 <React.Fragment key = {index}>
-                                    <TabBoxContainer data={allData} tabkey={index} />
+                                    <TabBoxContainer data={allData} tabkey={index} id={ index}/>
                                 </React.Fragment>
                             )
                         })

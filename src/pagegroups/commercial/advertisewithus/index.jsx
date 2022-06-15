@@ -9,7 +9,7 @@ const AdvertiseWithUs = ({ data }) => {
     const dataContainer2 = data && data.find(data => data.id === 'container_2').elements;
     const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
     const dataContainer4 = data && data.find(data => data.id === 'container_4').elements;
-    console.log(dataContainer3);
+    // console.log(dataContainer3);
     return (
         <div className="advertise-with-us-page">
             <AdvertiseWithUsContainerOne data={dataContainer1} />

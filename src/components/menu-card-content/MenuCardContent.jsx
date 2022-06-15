@@ -1,8 +1,10 @@
 import React from 'react'
 import FilledButton from '../buttons/FilledButton';
+import {useHistory} from "react-router-dom"
 import ParallaxImageComponent from '../parallax-image-component';
 
 const MenuCardContent = ({ card }) => {
+    const history=useHistory()
     const image = card.image;
     const cardtitle = card.cardtitle;
     const cardcontent = card.cardcontentlist;
@@ -22,7 +24,9 @@ const MenuCardContent = ({ card }) => {
                             }}
                         />
                     </div>
-                    <FilledButton class={`join-button`} text={"JOIN"} />
+                    <FilledButton class={`join-button`} text={"JOIN"} 
+                        onClick={() => history.push('/join')}
+                    />
                 </div>
                 <div className='ps-3 mt-4'>
                     <ul className="content">

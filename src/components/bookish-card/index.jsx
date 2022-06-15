@@ -1,5 +1,4 @@
 import React from 'react'
-import FilledButton from '../buttons/FilledButton'
 
 const BookishCard = (props) => {
     return (

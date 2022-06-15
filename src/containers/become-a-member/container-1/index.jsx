@@ -3,7 +3,6 @@ import React from 'react'
 import ImageTopCenterAlignedCardComponent from '../../common/image-top-center-aligned-card-component'
 
 const BecomeAMemberOne = ({ data }) => {
-  console.log(data)
   return (
     <div className='become-a-member-container-1 section'>
       {/* <ImageCardContainer data={data[0]} /> */}
