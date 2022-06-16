@@ -16,7 +16,11 @@ const MembershipCard = (props) => {
     <React.Fragment>
         <div className="row row-cols-1 row-cols-lg-2 g-5 membership-card-row">
             <div className="col membership-card-column">
-                <div className=" membership-card-form">
+                <div className=" membership-card-form"
+                    data-aos={!props.inverse ? 'fade-right' : 'fade-left'}
+                    data-aos-duration='600'
+                    data-aos-delay='300'
+                >
                     <div className='form-header'>
                         <span
                             dangerouslySetInnerHTML={{
@@ -100,7 +104,11 @@ const MembershipCard = (props) => {
                 </div>
             </div>
             <div className="col membership-card-column">
-                <div className="membership-card-action h-100">
+                <div className="membership-card-action h-100"
+                    data-aos={props.inverse ? 'fade-right' : 'fade-left'}
+                    data-aos-duration='800'
+                    data-aos-delay='300'
+                >
                     <div className="membership-card-action-border">
                         <div className='action-header text-center'>
                             <span
