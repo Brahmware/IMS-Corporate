@@ -3,14 +3,8 @@ import FunfactColumnSpreadCardImageContainer from '../../common/funfact-column-s
 
 const InvestorsContainerThree = ({ data }) => {
     return (
-        <div className='investors-container-3 section-with-padding white-background'>
-            <div className="container">
-                <FunfactColumnSpreadCardImageContainer
-                    columnsdata={data[0]}
-                    imagecarddata={data[1]}
-                    inverse={true}
-                />
-            </div>
+        <div>
+            InvestorsContainerThree
         </div>
     )
 }

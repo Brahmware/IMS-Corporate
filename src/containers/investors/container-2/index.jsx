@@ -1,27 +1,27 @@
 import React from 'react'
-import ImageOverSquareImageHeadingContainer from '../../common/image-over-square-image-heading'
-import FilledButton from '../../../components/buttons/FilledButton';
+import NewsCards from '../../../components/news-cards';
 
-const InvestorsContainerTwo = ({ data }) => {
-    const headingdata = data[0].heading
-    const imagedata = data[1].images
-    const carddata = data[2].card
-
-    const ButtonElement = <FilledButton class={'black-button'} text={carddata.buttontext} />
-    return (
-        <div className='investors-container-2 section-with-padding'>
-            <ImageOverSquareImageHeadingContainer
-                headertitle={headingdata.title}
-                headersubtitle={headingdata.subtitle}
-                headercontent={headingdata.content}
-                bookishsubtitle={carddata.subtitle}
-                bookishcontent={carddata.content}
-                bookishButtonComponent={[ButtonElement]}
-                imageBottom={imagedata.imageBottom}
-                imageTop={imagedata.imageTop}
-            />
+const InvestorsContainerTwo = ({data}) => {
+  const cardsData = data[0].cards
+  return (
+    <React.Fragment>
+      <div className={`newsroom-container-2 seciton-with-padding white-background py-3`}>
+        <div className='py-5 container'>
+          <div className=" row row-cols-1 row-cols-md-3 g-5">
+            {
+              cardsData.map((cardData, key) => {
+                return (
+                  <React.Fragment key={key} >
+                    <NewsCards data={cardData} />
+                  </React.Fragment>
+                )
+              })
+            }
+          </div>
         </div>
-    )
+      </div>
+    </React.Fragment>
+  )
 }
 
 export default InvestorsContainerTwo
