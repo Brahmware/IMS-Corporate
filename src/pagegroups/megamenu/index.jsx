@@ -17,30 +17,49 @@ const MegaMenu = (props) => {
     const mediaDimensions = useResizeObserver(megaMenuMediaRef);
     const [mediaStyle, setMediaStyle] = useState({});
     const MEGA_MENU_ASPECT_RATIO = 0.57;
-    const TOTAL_ANIMATIONTIME = 600;
+    const ANIMATION_TIME = 1200;
 
     useEffect(() => {
         mediaDimensions && setMediaStyle({ width: mediaDimensions.height * MEGA_MENU_ASPECT_RATIO })
     }, [mediaDimensions])
 
-
     const MEGAMENU_DEFAULT_MEDIA = '/images/megamenu-default-media.webm';
     const [megaMenuMedia, setMegaMenuMedia] = useState(MEGAMENU_DEFAULT_MEDIA);
+    const [inTransition, setInTransition] = useState(false);
+    const [removeRolldownTimer, setRemoveRolldownTimer] = useState();
 
     let handleMediaChange = (media) => {
-        let megamenuMedia = document.getElementById('megamenu-media');
-        megamenuMedia.classList.add("out");
+        let mediaShutter = document.getElementById('media-shutter');
 
         setTimeout(() => {
-            megamenuMedia.classList.remove("out");
-            megamenuMedia.classList.add('in');
             setMegaMenuMedia(media);
-        }, TOTAL_ANIMATIONTIME / 2)
+        }, ANIMATION_TIME / 2)
 
-        setTimeout(() => {
-            megamenuMedia.classList.remove('in');
-        }, TOTAL_ANIMATIONTIME)
+        if (!inTransition) {
+            setTimeout(() => {
+                mediaShutter.classList.add("roll-up");
+                setInTransition(true)
+            }, 0)
+
+            let rollDownTimer = setTimeout(() => {
+                mediaShutter.classList.remove('roll-up');
+                setInTransition(false)
+            }, ANIMATION_TIME)
+            setRemoveRolldownTimer(rollDownTimer);
+
+        } else {
+
+            clearTimeout(removeRolldownTimer);
+
+            let rollDownTimer = setTimeout(() => {
+                mediaShutter.classList.remove('roll-up');
+                setInTransition(false)
+            }, ANIMATION_TIME)
+            setRemoveRolldownTimer(rollDownTimer)
+
+        }
     }
+
 
     const onFocusOver = (event) => {
         let currentMedia = event.currentTarget.getAttribute("data-megamenumedia");
@@ -60,12 +79,18 @@ const MegaMenu = (props) => {
                 <div className="page-wrapper megamenu-page">
                     <div className="site-map-wrapper">
                         <div className="site-map-container">
-                            <div className="megamenu-media"
-                                id='megamenu-media'
+                            <div
+                                className="media-holder"
                                 ref={megaMenuMediaRef}
                                 style={mediaStyle}
                             >
-                                <video src={megaMenuMedia} autoPlay loop muted alt="loading ..." />
+                                <div className="megamenu-media">
+                                    <video src={megaMenuMedia} autoPlay loop muted alt="loading ..." />
+                                </div>
+                                <div
+                                    className="media-shutter"
+                                    id="media-shutter"
+                                />
                             </div>
                             <SiteMap onClickClose={props.onclose} onFocusOver={onFocusOver} onMouseOut={onMouseOut} />
                         </div>

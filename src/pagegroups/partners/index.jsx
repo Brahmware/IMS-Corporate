@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Switch, Route, useRouteMatch, Redirect, useHistory } from 'react-router-dom'
 import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
@@ -14,49 +14,66 @@ import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 import FloatinEarthButton from '../../components/floating-button'
 
 const PartnersPage = () => {
-    const partnersSitemap = sitemapData.find(pageGroup => pageGroup.id === 'partners')
-    const { hash } = useLocation();
+    const PAGE_GROUP_NAME = 'partners';
+    const DEFAULT_PAGE = 'corporate_and_foundations';
 
-    const [activetab, setactivetab] = useState('corporate_and_foundations');
+    const partnersSitemap = sitemapData.find(pageGroup => pageGroup.id === PAGE_GROUP_NAME)
+    const { url, path } = useRouteMatch();
+    const history = useHistory().location;
 
+    const getPageNameFromLink = (history, pageGroupName, defaultPage) => {
+        let pathname = history && history.pathname;
+        let pathstring = `/${pageGroupName}`;
+        let intermediate = pathname.replace(pathstring, "");
+        let pageName = intermediate.replace('/', "");
+        return pageName !== '' ? pageName : defaultPage
+    }
+
+    const [activetab, setactivetab] = useState(getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE));
+    
     useEffect(() => {
-        setactivetab(hash.replace(/^(#)/, ""));
-    }, [hash]);
+        let activeTabname = getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE);
+        let found = partnersSitemap.pages.find(each => each.id === activeTabname);
+        
+        if(found) {
+            setactivetab(activeTabname);
+        } else {
+            setactivetab(DEFAULT_PAGE);
+        }
+    }, [history, partnersSitemap.pages]);
 
     const onClickTab = (event) => {
         setactivetab(event.target.id);
-        const pageObject = partnersSitemap && partnersSitemap.pages.find(page => page.id === event.target.id);
-        window.history.replaceState({}, pageObject.page, pageObject.path);
         scrollToNavigationPanel();
     }
 
     const relatedData = partnersData.find((data => data.id === activetab));
     const relatedDataElements = relatedData && relatedData.elements;
-    // console.log(relatedDataElements)
     return (
         <React.Fragment>
-            <SEO title={`IMS ${partnersSitemap.pageGroup} - ${relatedData.pagename}`} />
+            <SEO title={relatedData && `IMS ${partnersSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper partners-page-wrapper">
                 <Header />
-                <BannerNavigationContainer data={partnersSitemap} activetab={activetab} onClickTab={onClickTab} />
-                {(() => {
-                    switch (activetab) {
-
-                        case "corporate_and_foundations":
-                            return (
-                                <CorporateAndFoundations data={relatedDataElements} />
-                            );
-                        case "become_a_member":
-                            return (
-                                <BecomeAMember data={relatedDataElements} />
-                            );
-                        default:
-                            return (
-                                <CorporateAndFoundations data={relatedDataElements} />
-                            );
-
-                    }
-                })()}
+                <BannerNavigationContainer data={partnersSitemap} activetab={activetab} onClickTab={onClickTab} url={url}/>
+                <Switch>
+                    <Route
+                        path={`${path}`}
+                        exact
+                    > 
+                        <Redirect to={`${path}/corporate_and_foundations`} />
+                    </Route>
+                    <Route
+                        path={`${path}/corporate_and_foundations`}
+                        component={() => <CorporateAndFoundations data={relatedDataElements} />}
+                    />
+                    <Route
+                        path={`${path}/become_a_member`}
+                        component={() => <BecomeAMember data={relatedDataElements} />}
+                    />
+                    <Route path={`${path}/*`}>
+                            <Redirect to={`${path}`} />
+                        </Route>
+                </Switch>
                 <Footer />
             </div>
             <FloatinEarthButton />

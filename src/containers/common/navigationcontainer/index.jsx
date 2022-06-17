@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const NavigationContainer = (props) => {
     const data = props.data;
@@ -15,13 +16,14 @@ const NavigationContainer = (props) => {
                     {
                         data.pages && data.pages.map((eachPage, key) => {
                             return (
-                                <div key={key}
+                                <Link key={key}
                                     id={eachPage.id}
                                     className={activetab && activetab === eachPage.id ? "each-tab active-tab" : "each-tab"}
                                     onClick={props.onClickTab}
+                                    to={`${props.url}/${eachPage.id}`}
                                 >
                                     <span>{eachPage.page}</span>
-                                </div>
+                                </Link>
                             )
                         })
                     }

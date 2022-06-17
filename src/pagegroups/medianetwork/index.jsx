@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Switch, Route, useRouteMatch, Redirect, useHistory } from 'react-router-dom'
 import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
@@ -14,20 +14,38 @@ import sitemapData from "../../data/sitemap.json"
 import BusinessAndBrandsData from "../../data/media-network.json"
 import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 import FloatinEarthButton from '../../components/floating-button'
-const MediaNetworkPage = () => {
-    const mediaNetworkSitemap = sitemapData.find(pageGroup => pageGroup.id === 'media_network')
-    const { hash } = useLocation();
 
-    const [activetab, setactivetab] = useState('business_and_brands');
+const MediaNetworkPage = () => {
+    const PAGE_GROUP_NAME = 'media_network';
+    const DEFAULT_PAGE = 'business_and_brands';
+
+    const mediaNetworkSitemap = sitemapData.find(pageGroup => pageGroup.id === PAGE_GROUP_NAME);
+    const { url, path } = useRouteMatch();
+    const history = useHistory().location;
+
+    const getPageNameFromLink = (history, pageGroupName, defaultPage) => {
+        let pathname = history && history.pathname;
+        let pathstring = `/${pageGroupName}`;
+        let intermediate = pathname.replace(pathstring, "");
+        let pageName = intermediate.replace('/', "");
+        return pageName !== '' ? pageName : defaultPage
+    }
+
+    const [activetab, setactivetab] = useState(getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE));
 
     useEffect(() => {
-        setactivetab(hash.replace(/^(#)/, ""));
-    }, [hash]);
+        let activeTabname = getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE);
+        let found = mediaNetworkSitemap.pages.find(each => each.id === activeTabname);
+
+        if (found) {
+            setactivetab(activeTabname);
+        } else {
+            setactivetab(DEFAULT_PAGE);
+        }
+    }, [history, mediaNetworkSitemap.pages]);
 
     const onClickTab = (event) => {
         setactivetab(event.target.id);
-        const pageObject = mediaNetworkSitemap && mediaNetworkSitemap.pages.find(page => page.id === event.target.id);
-        window.history.replaceState({}, pageObject.page, pageObject.path);
         scrollToNavigationPanel();
     }
 
@@ -36,36 +54,37 @@ const MediaNetworkPage = () => {
 
     return (
         <React.Fragment>
-            <SEO title={`IMS ${mediaNetworkSitemap.pageGroup} - ${relatedData.pagename}`} />
+            <SEO title={relatedData && `IMS ${mediaNetworkSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper media-network-page-wrapper">
                 <Header />
-                <BannerNavigationContainer data={mediaNetworkSitemap} activetab={activetab} onClickTab={onClickTab} />
-                {(() => {
-                    switch (activetab) {
-
-                        case "business_and_brands":
-                            return (
-                                <BusinessAndBrands data={relatedDataElements} />
-                            );
-                        case "focus_areas":
-                            return (
-                                <FocusAreas data={relatedDataElements} />
-                            );
-                        case "technology":
-                            return (
-                                <Technology />
-                            );
-                        case "newsroom":
-                            return (
-                                <NewsRoom data={relatedDataElements} />
-                            );
-                        default:
-                            return (
-                                <BusinessAndBrands />
-                            );
-
-                    }
-                })()}
+                <BannerNavigationContainer data={mediaNetworkSitemap} activetab={activetab} onClickTab={onClickTab} url={url} />
+                <Switch>
+                    <Route
+                        path={`${path}`}
+                        exact
+                    >
+                        <Redirect to={`${path}/business_and_brands`} />
+                    </Route>
+                    <Route
+                        path={`${path}/business_and_brands`}
+                        component={() => <BusinessAndBrands data={relatedDataElements} />}
+                    />
+                    <Route
+                        path={`${path}/focus_areas`}
+                        component={() => <FocusAreas data={relatedDataElements} />}
+                    />
+                    <Route
+                        path={`${path}/technology`}
+                        component={() => <Technology data={relatedDataElements} />}
+                    />
+                    <Route
+                        path={`${path}/newsroom`}
+                        component={() => <NewsRoom data={relatedDataElements} />}
+                    />
+                    <Route path={`${path}/*`}>
+                        <Redirect to={`${path}`} />
+                    </Route>
+                </Switch>
                 <FloatinEarthButton />
                 <Footer />
             </div>
