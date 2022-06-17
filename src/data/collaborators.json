@@ -63,6 +63,19 @@
                 "id": "container_1",
                 "elements": [
                     {
+                        "image": "/images/partners/become-a-member/container-1/cover.jpg",
+                        "card": {
+                            "title": "UNITED FOR GOOD",
+                            "subtitle": "This is what an explorer looks like",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_2",
+                "elements": [
+                    {
                         "image": "/images/collaborators/producers/container-1/cover.jpg",
                         "card": {
                             "title": "WHAT WE DO",
@@ -73,67 +86,95 @@
                 ]
             },
             {
-                "id": "container_2",
-                "elements": [
-                    {
-                        "heading": {
-                            "title": "WE AND OUR FUTURE",
-                            "subtitle": "Diversity, Equity & Equal Opportunity",
-                            "content": "<p>We believe we can only achieve our mission when we actualize our commitment to diversity, equity, and inclusion in every aspect of our work.</p>"
-                        }
-                    },
-                    {
-                        "images": {
-                            "imageTop": "/images/collaborators/producers/container-2/image-top.jpg",
-                            "imageBottom": "/images/collaborators/producers/container-2/image-bottom.jpg"
-                        }
-                    },
-                    {
-                        "card": {
-                            "subtitle": "Celebrating our Stories together",
-                            "content": "<p>Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.</p>",
-                            "buttontext": "VIEW MORE"
-                        }
-                    }
-                ]
-            },
-            {
                 "id": "container_3",
                 "elements": [
                     {
+                        "title": "OUR MISSION",
+                        "subtitle": "To Revolutionize Indian Media",
+                        "membershipcard": [
+                            {
+                                "title": "Apply for Membership",
+                                "inputfield": [
+                                    {
+                                        "label": "Name",
+                                        "type": "text",
+                                        "id": "name"
+                                    },
+                                    {
+                                        "label": "Official email",
+                                        "type": "email",
+                                        "id": "email"
+                                    }
+                                ],
+                                "optionfield": [
+                                    {
+                                        "label": "Crew Strength",
+                                        "type": "select",
+                                        "id": "crew-strength",
+                                        "option": [
+                                            "Crew Strength","10", "20", "30", "40", "50", "60", "70", "80", "90", "100+"
+                                        ]
+                                    },
+                                    {
+                                        "label": "Region",
+                                        "type": "select",
+                                        "id": "region",
+                                        "option": [
+                                            "Region","Mumbai", "Chennai", "Delhi", "Kanpur", "Prayagraj"
+                                        ]
+                                    }
+                                ],
+                                "buttontext": "Next"
+                            },
+                            {
+                                "title": "Member Actions",
+                                "buttons": [
+                                    {
+                                        "text": "+ Project Pitch",
+                                        "link": "#"
+                                    },
+                                    {
+                                        "text": "+ Raise an Issue",
+                                        "link": "#"
+                                    },
+                                    {
+                                        "text": "View All Actions",
+                                        "link": "#"
+                                    }
+                                ]
+                            }
+                        ],
                         "cards": [
                             {
                                 "id": 1,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                "button": "DISCOVER",
+                                "image": "/images/collaborators/producers/container-3/cover.jpg", 
+                                "title": "IMS",
+                                "subtitle": "UNIVERSE",
+                                "content": "Precious Members of the Indian Media Syndicate"
                             },
                             {
                                 "id": 2,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                "button": "CHECK",
+                                "image": "/images/collaborators/producers/container-3/cover.jpg",
+                                "title": "Standard",
+                                "subtitle": "REQUIREMENTS",
+                                "content": "Guidelines for IMS title Productions (Procedural)"
                             },
                             {
                                 "id": 3,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                "button": "CHECK",
+                                "image": "/images/collaborators/producers/container-3/cover.jpg",
+                                "title": "Member",
+                                "subtitle": "GUDELINES",
+                                "content": "Guidelines for IMS production partners and terms of cooperation"
                             }
                         ]
-                    },
-                    {
-                        "image": "/images/collaborators/producers/container-3/cover.jpg",
-                        "card": {
-                            "title": "ABOUT US",
-                            "subtitle": "India celebrates Exploration",
-                            "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
-                        }
                     }
                 ]
             },
             {
-                "id": "container_4",
+                "id": "container_5",
                 "elements": [
                     {
                         "image": "/images/collaborators/producers/container-4/cover.jpg",
