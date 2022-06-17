@@ -17,12 +17,7 @@ const MegaMenu = (props) => {
     const mediaDimensions = useResizeObserver(megaMenuMediaRef);
     const [mediaStyle, setMediaStyle] = useState({});
     const MEGA_MENU_ASPECT_RATIO = 0.57;
-    const ANIMATION_TIME = 600;
-    const [intransition, setintransition] = useState(false);
-    const [mediaTrail, setMediaTrail] = useState({
-        objects: [],
-        length: 0
-    });
+    const ANIMATION_TIME = 1200;
 
     useEffect(() => {
         mediaDimensions && setMediaStyle({ width: mediaDimensions.height * MEGA_MENU_ASPECT_RATIO })
@@ -30,51 +25,49 @@ const MegaMenu = (props) => {
 
     const MEGAMENU_DEFAULT_MEDIA = '/images/megamenu-default-media.webm';
     const [megaMenuMedia, setMegaMenuMedia] = useState(MEGAMENU_DEFAULT_MEDIA);
-
+    const [inTransition, setInTransition] = useState(false);
+    const [removeRolldownTimer, setRemoveRolldownTimer] = useState();
 
     let handleMediaChange = (media) => {
         let mediaShutter = document.getElementById('media-shutter');
 
         setTimeout(() => {
-            mediaShutter.classList.add("shutter-transition");
-            setintransition(true)
-        }, 0)
-
-        setTimeout(() => {
             setMegaMenuMedia(media);
         }, ANIMATION_TIME / 2)
 
-        setTimeout(() => {
-            mediaShutter.classList.remove('shutter-transition');
-            setintransition(false)
-        }, ANIMATION_TIME)
+        if (!inTransition) {
+            setTimeout(() => {
+                mediaShutter.classList.add("roll-up");
+                setInTransition(true)
+            }, 0)
+
+            let rollDownTimer = setTimeout(() => {
+                mediaShutter.classList.remove('roll-up');
+                setInTransition(false)
+            }, ANIMATION_TIME)
+            setRemoveRolldownTimer(rollDownTimer);
+
+        } else {
+
+            clearTimeout(removeRolldownTimer);
+
+            let rollDownTimer = setTimeout(() => {
+                mediaShutter.classList.remove('roll-up');
+                setInTransition(false)
+            }, ANIMATION_TIME)
+            setRemoveRolldownTimer(rollDownTimer)
+
+        }
     }
+
 
     const onFocusOver = (event) => {
         let currentMedia = event.currentTarget.getAttribute("data-megamenumedia");
-        if (!intransition) {
-            handleMediaChange(currentMedia);
-        } else {
-            let temp = mediaTrail.objects;
-            temp.push(currentMedia);
-            setMediaTrail({
-                objects: temp,
-                length: temp.length
-            });
-        }
+        handleMediaChange(currentMedia);
     }
 
     const onMouseOut = () => {
-        if (!intransition) {
-            handleMediaChange(MEGAMENU_DEFAULT_MEDIA);
-        } else {
-            let temp = mediaTrail.objects;
-            temp.push(MEGAMENU_DEFAULT_MEDIA);
-            setMediaTrail({
-                objects: temp,
-                length: temp.length
-            });
-        }
+        handleMediaChange(MEGAMENU_DEFAULT_MEDIA);
     }
 
     return (
@@ -91,7 +84,6 @@ const MegaMenu = (props) => {
                                 ref={megaMenuMediaRef}
                                 style={mediaStyle}
                             >
-                                {console.log(mediaTrail)}
                                 <div className="megamenu-media">
                                     <video src={megaMenuMedia} autoPlay loop muted alt="loading ..." />
                                 </div>
