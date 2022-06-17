@@ -35,7 +35,7 @@
                     {
                         "title": "INDIAN MEDIA SYNDICATE MEMBERSHIP",
                         "subtitle": "The Greatest Event in Indian Broadcasting",
-                        "membershipcard": [
+                        "cards": [
                             {
                                 "title": "Advertisement Enquiry",
                                 "inputfield": [
@@ -87,12 +87,19 @@
                                     }
                                 ]
                             }
-                        ],
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "container_4",
+                "elements": [
+                    {
                         "cards": [
                             {
                                 "id": 1,
                                 "button": "DISCOVER",
-                                "image": "/images/commercial/advertise-with-us/container-3/cover.jpg", 
+                                "image": "/images/commercial/advertise-with-us/container-4/cover.jpg", 
                                 "title": "IMS",
                                 "subtitle": "PRASAR",
                                 "content": "Precious Members of the Indian Media Syndicate"
@@ -100,7 +107,7 @@
                             {
                                 "id": 2,
                                 "button": "CHECK",
-                                "image": "/images/commercial/advertise-with-us/container-3/cover.jpg",
+                                "image": "/images/commercial/advertise-with-us/container-4/cover.jpg",
                                 "title": "Advert",
                                 "subtitle": "POLICY",
                                 "content": "Guidelines for IMS title Productions (Procedural)"
@@ -108,7 +115,7 @@
                             {
                                 "id": 3,
                                 "button": "CHECK",
-                                "image": "/images/commercial/advertise-with-us/container-3/cover.jpg",
+                                "image": "/images/commercial/advertise-with-us/container-4/cover.jpg",
                                 "title": "PRASAR",
                                 "subtitle": "MONETIZATION",
                                 "content": "Guidelines for IMS production partners and terms of cooperation"
@@ -118,10 +125,10 @@
                 ]
             },
             {
-                "id": "container_4",
+                "id": "container_5",
                 "elements": [
                     {
-                        "image": "/images/commercial/investors/container-4/cover.jpg",
+                        "image": "/images/commercial/advertise-with-us/container-5/cover.jpg",
                         "title": "IMS Explorers",
                         "subtitle": "Changemakers<br /> and Innovators",
                         "buttontext": "APPLY"

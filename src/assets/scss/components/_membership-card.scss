@@ -1,6 +1,5 @@
 .membership-card-row{
     & .membership-card-column{
-        // border: 2px solid red;
         & .membership-card-form{
             background-color: white;
             border-radius: 5px;
@@ -71,7 +70,7 @@
 }
 
 .tab-box-container{
-    margin-top: 5em;
+    margin-bottom: 5em;
     & .sub-container{
         padding-top: 2em;
         padding-bottom: 1.5em;
