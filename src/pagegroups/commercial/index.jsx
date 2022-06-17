@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Switch, Route, useRouteMatch, Redirect, useHistory } from 'react-router-dom'
 import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
@@ -15,19 +15,36 @@ import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 import FloatinEarthButton from '../../components/floating-button'
 
 const CommercialPage = () => {
-    const commercialSitemap = sitemapData.find(pageGroup => pageGroup.id === 'commercial')
-    const { hash } = useLocation();
+    const PAGE_GROUP_NAME = 'commercial';
+    const DEFAULT_PAGE = 'advertise_with_us';
 
-    const [activetab, setactivetab] = useState('advertise_with_us');
+    const commercialSitemap = sitemapData.find(pageGroup => pageGroup.id === PAGE_GROUP_NAME)
+    const { url, path } = useRouteMatch();
+    const history = useHistory().location;
+
+    const getPageNameFromLink = (history, pageGroupName, defaultPage) => {
+        let pathname = history && history.pathname;
+        let pathstring = `/${pageGroupName}`;
+        let intermediate = pathname.replace(pathstring, "");
+        let pageName = intermediate.replace('/', "");
+        return pageName !== '' ? pageName : defaultPage
+    }
+
+    const [activetab, setactivetab] = useState(getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE));
 
     useEffect(() => {
-        setactivetab(hash.replace(/^(#)/, ""));
-    }, [hash]);
+        let activeTabname = getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE);
+        let found = commercialSitemap.pages.find(each => each.id === activeTabname);
+
+        if (found) {
+            setactivetab(activeTabname);
+        } else {
+            setactivetab(DEFAULT_PAGE);
+        }
+    }, [commercialSitemap.pages, history]);
 
     const onClickTab = (event) => {
         setactivetab(event.target.id);
-        const pageObject = commercialSitemap && commercialSitemap.pages.find(page => page.id === event.target.id);
-        window.history.replaceState({}, pageObject.page, pageObject.path);
         scrollToNavigationPanel();
     }
 
@@ -36,32 +53,33 @@ const CommercialPage = () => {
 
     return (
         <React.Fragment>
-            <SEO title={`IMS ${commercialSitemap.pageGroup} - ${relatedData.pagename}`} />
+            <SEO title={relatedData && `IMS ${commercialSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper commercial-page-wrapper">
                 <Header />
-                <BannerNavigationContainer data={commercialSitemap} activetab={activetab} onClickTab={onClickTab} />
-                {(() => {
-                    switch (activetab) {
-
-                        case "advertise_with_us":
-                            return (
-                                <AdvertiseWithUs data={relatedDataElements} />
-                            );
-                        case "investors":
-                            return (
-                                <Investors data={relatedDataElements} />
-                            );
-                        case "sustainability_statement":
-                            return (
-                                <SustainabilityStatement data={relatedDataElements} />
-                            );
-                        default:
-                            return (
-                                <AdvertiseWithUs data={relatedDataElements} />
-                            );
-
-                    }
-                })()}
+                <BannerNavigationContainer data={commercialSitemap} activetab={activetab} onClickTab={onClickTab} url={url} />
+                <Switch>
+                    <Route
+                        path={`${path}`}
+                        exact
+                    >
+                        <Redirect to={`${path}/advertise_with_us`} />
+                    </Route>
+                    <Route
+                        path={`${path}/advertise_with_us`}
+                        component={() => <AdvertiseWithUs data={relatedDataElements} />}
+                    />
+                    <Route
+                        path={`${path}/investors`}
+                        component={() => <Investors data={relatedDataElements} />}
+                    />
+                    <Route
+                        path={`${path}/sustainability_statement`}
+                        component={() => <SustainabilityStatement data={relatedDataElements} />}
+                    />
+                    <Route path={`${path}/*`}>
+                        <Redirect to={`${path}`} />
+                    </Route>
+                </Switch>
                 <FloatinEarthButton />
                 <Footer />
             </div>

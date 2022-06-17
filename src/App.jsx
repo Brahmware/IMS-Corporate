@@ -10,11 +10,11 @@ import "./assets/css/plugins/animate.css";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/swiper.scss";
 import './assets/scss/style.scss';
-import PrivacyPolicyPage from "./pagegroups/privacy-policy";
 // import Navbar from "./containers/common/navbar";
 
 // UI Component Goes Here
 import LoadingPage from "./pagegroups/loading-page";
+import { Redirect } from "react-router-dom";
 const HomePage = lazy(() => import("./pagegroups/home"));
 const BusinessPage = lazy(() => import("./pagegroups/business"));
 const CollaboratorsPage = lazy(() => import("./pagegroups/collaborators"));
@@ -23,6 +23,7 @@ const MediaNetworkPage = lazy(() => import("./pagegroups/medianetwork"));
 const EducationTeachingPage = lazy(() => import("./pagegroups/educationandteaching"));
 const PartnersPage = lazy(() => import("./pagegroups/partners"));
 const JoinPage = lazy(() => import("./pagegroups/join"));
+const PrivacyPolicyPage = lazy(() => import("./pagegroups/privacy-policy"));
 
 
 const App = () => {
@@ -47,37 +48,30 @@ const App = () => {
                     />
                     <Route
                         path={'/business'}
-                        exact
                         component={BusinessPage}
                     />
                     <Route
                         path={'/media_network'}
-                        exact
                         component={MediaNetworkPage}
                     />
                     <Route
                         path={'/education_and_teaching'}
-                        exact
                         component={EducationTeachingPage}
                     />
                     <Route
                         path={'/collaborators'}
-                        exact
                         component={CollaboratorsPage}
                     />
                     <Route
                         path={'/partners'}
-                        exact
                         component={PartnersPage}
                     />
                     <Route
                         path={'/commercial'}
-                        exact
                         component={CommercialPage}
                     />
                     <Route
                         path={'/privacy_policy'}
-                        exact
                         component={PrivacyPolicyPage}
                     />
                     <Route
@@ -85,7 +79,9 @@ const App = () => {
                         exact
                         component={JoinPage}
                     />
-
+                    <Route path={'/*'}>
+                        <Redirect to={'/'} />
+                    </Route>
                 </Switch>
             </Suspense>
         </Router>

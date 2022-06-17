@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Switch, Route, useRouteMatch, Redirect, useHistory } from 'react-router-dom'
 import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
@@ -15,19 +15,36 @@ import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 import FloatinEarthButton from '../../components/floating-button'
 
 const EducationTeachingPage = () => {
-    const educationTeachingSitemap = sitemapData.find(pageGroup => pageGroup.id === 'education_and_teaching')
-    const { hash } = useLocation();
+    const PAGE_GROUP_NAME = 'education_and_teaching';
+    const DEFAULT_PAGE = 'resources';
 
-    const [activetab, setactivetab] = useState('resources');
+    const educationTeachingSitemap = sitemapData.find(pageGroup => pageGroup.id === PAGE_GROUP_NAME)
+    const { url, path } = useRouteMatch();
+    const history = useHistory().location;
+
+    const getPageNameFromLink = (history, pageGroupName, defaultPage) => {
+        let pathname = history && history.pathname;
+        let pathstring = `/${pageGroupName}`;
+        let intermediate = pathname.replace(pathstring, "");
+        let pageName = intermediate.replace('/', "");
+        return pageName !== '' ? pageName : defaultPage
+    }
+
+    const [activetab, setactivetab] = useState(getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE));
 
     useEffect(() => {
-        setactivetab(hash.replace(/^(#)/, ""));
-    }, [hash]);
+        let activeTabname = getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE);
+        let found = educationTeachingSitemap.pages.find(each => each.id === activeTabname);
+
+        if (found) {
+            setactivetab(activeTabname);
+        } else {
+            setactivetab(DEFAULT_PAGE);
+        }
+    }, [educationTeachingSitemap.pages, history]);
 
     const onClickTab = (event) => {
         setactivetab(event.target.id);
-        const pageObject = educationTeachingSitemap && educationTeachingSitemap.pages.find(page => page.id === event.target.id);
-        window.history.replaceState({}, pageObject.page, pageObject.path);
         scrollToNavigationPanel();
     }
 
@@ -36,32 +53,33 @@ const EducationTeachingPage = () => {
 
     return (
         <React.Fragment>
-            <SEO title={`IMS ${educationTeachingSitemap.pageGroup} - ${relatedData.pagename}`} />
+            <SEO title={relatedData && `IMS ${educationTeachingSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper educationTeaching-page-wrapper">
                 <Header />
-                <BannerNavigationContainer data={educationTeachingSitemap} activetab={activetab} onClickTab={onClickTab} />
-                {(() => {
-                    switch (activetab) {
-
-                        case "resources":
-                            return (
-                                <Resources data={relatedDataElements} />
-                            );
-                        case "professional_learning":
-                            return (
-                                <ProfessionalLearning data={relatedDataElements} />
-                            );
-                        case "immersive_experience":
-                            return (
-                                <ImmersiveExperience data={relatedDataElements} />
-                            );
-                        default:
-                            return (
-                                <Resources data={relatedDataElements} />
-                            );
-
-                    }
-                })()}
+                <BannerNavigationContainer data={educationTeachingSitemap} activetab={activetab} onClickTab={onClickTab} url={url} />
+                <Switch>
+                    <Route
+                        path={`${path}`}
+                        exact
+                    >
+                        <Redirect to={`${path}/resources`} />
+                    </Route>
+                    <Route
+                        path={`${path}/resources`}
+                        component={() => <Resources data={relatedDataElements} />}
+                    />
+                    <Route
+                        path={`${path}/professional_learning`}
+                        component={() => <ProfessionalLearning data={relatedDataElements} />}
+                    />
+                    <Route
+                        path={`${path}/immersive_experience`}
+                        component={() => <ImmersiveExperience data={relatedDataElements} />}
+                    />
+                    <Route path={`${path}/*`}>
+                        <Redirect to={`${path}`} />
+                    </Route>
+                </Switch>
                 <FloatinEarthButton />
                 <Footer />
             </div>
