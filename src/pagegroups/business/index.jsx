@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Switch, Route, useRouteMatch, Redirect, useHistory } from 'react-router-dom'
 import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
@@ -16,19 +16,36 @@ import BusinessData from "../../data/business.json"
 import FloatinEarthButton from '../../components/floating-button'
 
 const BusinessPage = () => {
-    const businessSitemap = sitemapData.find(pageGroup => pageGroup.id === 'business')
-    const { hash } = useLocation();
+    const PAGE_GROUP_NAME = 'business';
+    const DEFAULT_PAGE = 'about_us';
 
-    const [activetab, setactivetab] = useState('about_us');
+    const businessSitemap = sitemapData.find(pageGroup => pageGroup.id === PAGE_GROUP_NAME)
+    const { url, path } = useRouteMatch();
+    const history = useHistory().location;
+
+    const getPageNameFromLink = (history, pageGroupName, defaultPage) => {
+        let pathname = history && history.pathname;
+        let pathstring = `/${pageGroupName}`;
+        let intermediate = pathname.replace(pathstring, "");
+        let pageName = intermediate.replace('/', "");
+        return pageName !== '' ? pageName : defaultPage
+    }
+
+    const [activetab, setactivetab] = useState(getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE));
 
     useEffect(() => {
-        setactivetab(hash.replace(/^(#)/, ""));
-    }, [hash]);
+        let activeTabname = getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE);
+        let found = businessSitemap.pages.find(each => each.id === activeTabname);
+        
+        if(found) {
+            setactivetab(activeTabname);
+        } else {
+            setactivetab(DEFAULT_PAGE);
+        }
+    }, [businessSitemap.pages, history]);
 
     const onClickTab = (event) => {
         setactivetab(event.target.id);
-        const pageObject = businessSitemap && businessSitemap.pages.find(page => page.id === event.target.id);
-        window.history.replaceState({}, pageObject.page, pageObject.path);
         scrollToNavigationPanel();
     }
 
@@ -37,37 +54,38 @@ const BusinessPage = () => {
 
     return (
         <React.Fragment>
-            <SEO title={`IMS ${businessSitemap.pageGroup} - ${relatedData.pagename}`} />
+            <SEO title={relatedData && `IMS ${businessSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper business-page-wrapper noselect">
                 <Header />
-                <BannerNavigationContainer data={businessSitemap} activetab={activetab} onClickTab={onClickTab} />
+                <BannerNavigationContainer data={businessSitemap} activetab={activetab} onClickTab={onClickTab} url={url} />
                 <div className="page-content business-content">
-                    {(() => {
-                        switch (activetab) {
-
-                            case "about_us":
-                                return (
-                                    <AboutUs data={relatedDataElements} />
-                                );
-                            case "our_leadership":
-                                return (
-                                    <OurLeadership data={relatedDataElements} />
-                                );
-                            case "diversity_and_inclusion":
-                                return (
-                                    <DiversityAndInclusion data={relatedDataElements} />
-                                );
-                            case "career":
-                                return (
-                                    <Careers data={relatedDataElements} />
-                                );
-                            default:
-                                return (
-                                    <AboutUs data={relatedDataElements} />
-                                );
-
-                        }
-                    })()}
+                    <Switch>
+                        <Route
+                            path={`${path}`}
+                            exact
+                        >
+                            <Redirect to={`${path}/about_us`} />
+                        </Route>
+                        <Route
+                            path={`${path}/about_us`}
+                            component={() => <AboutUs data={relatedDataElements} />}
+                        />
+                        <Route
+                            path={`${path}/our_leadership`}
+                            component={() => <OurLeadership data={relatedDataElements} />}
+                        />
+                        <Route
+                            path={`${path}/diversity_and_inclusion`}
+                            component={() => <DiversityAndInclusion data={relatedDataElements} />}
+                        />
+                        <Route
+                            path={`${path}/career`}
+                            component={() => <Careers data={relatedDataElements} />}
+                        />
+                        <Route path={`${path}/*`}>
+                            <Redirect to={`${path}`} />
+                        </Route>
+                    </Switch>
                 </div>
                 <FloatinEarthButton />
                 <Footer />

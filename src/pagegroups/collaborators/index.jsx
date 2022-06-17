@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Switch, Route, useRouteMatch, Redirect, useHistory } from 'react-router-dom'
 import SEO from '../../components/SEO'
 import BannerNavigationContainer from '../../containers/common/bannernavigationcontainer'
 import Footer from '../../containers/footer'
@@ -14,19 +14,36 @@ import CollaboratorsData from '../../data/collaborators.json'
 import FloatinEarthButton from '../../components/floating-button'
 
 const CollaboratorsPage = () => {
-    const collaboratorsSitemap = sitemapData.find(pageGroup => pageGroup.id === 'collaborators')
-    const { hash } = useLocation();
+    const PAGE_GROUP_NAME = 'collaborators';
+    const DEFAULT_PAGE = 'explorers';
 
-    const [activetab, setactivetab] = useState('explorers');
+    const collaboratorsSitemap = sitemapData.find(pageGroup => pageGroup.id === PAGE_GROUP_NAME);
+    const { url, path } = useRouteMatch();
+    const history = useHistory().location;
+
+    const getPageNameFromLink = (history, pageGroupName, defaultPage) => {
+        let pathname = history && history.pathname;
+        let pathstring = `/${pageGroupName}`;
+        let intermediate = pathname.replace(pathstring, "");
+        let pageName = intermediate.replace('/', "");
+        return pageName !== '' ? pageName : defaultPage
+    }
+
+    const [activetab, setactivetab] = useState(getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE));
 
     useEffect(() => {
-        setactivetab(hash.replace(/^(#)/, ""));
-    }, [hash]);
+        let activeTabname = getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE);
+        let found = collaboratorsSitemap.pages.find(each => each.id === activeTabname);
+        
+        if(found) {
+            setactivetab(activeTabname);
+        } else {
+            setactivetab(DEFAULT_PAGE);
+        }
+    }, [collaboratorsSitemap.pages, history]);
 
     const onClickTab = (event) => {
         setactivetab(event.target.id);
-        const pageObject = collaboratorsSitemap && collaboratorsSitemap.pages.find(page => page.id === event.target.id);
-        window.history.replaceState({}, pageObject.page, pageObject.path);
         scrollToNavigationPanel();
     }
 
@@ -35,28 +52,29 @@ const CollaboratorsPage = () => {
 
     return (
         <React.Fragment>
-            <SEO title={`IMS ${collaboratorsSitemap.pageGroup} - ${relatedData.pagename}`} />
+            <SEO title={relatedData && `IMS ${collaboratorsSitemap.pageGroup} - ${relatedData.pagename}`} />
             <div className="page-wrapper collaborators-page-wrapper">
                 <Header />
-                <BannerNavigationContainer data={collaboratorsSitemap} activetab={activetab} onClickTab={onClickTab} />
-                {(() => {
-                    switch (activetab) {
-
-                        case "explorers":
-                            return (
-                                <Explorers data={relatedDataElements} />
-                            );
-                        case "producers":
-                            return (
-                                <Producers data={relatedDataElements} />
-                            );
-                        default:
-                            return (
-                                <Explorers data={relatedDataElements} />
-                            );
-
-                    }
-                })()}
+                <BannerNavigationContainer data={collaboratorsSitemap} activetab={activetab} onClickTab={onClickTab} url={url} />
+                <Switch>
+                    <Route
+                        path={`${path}`}
+                        exact
+                    >
+                        <Redirect to={`${path}/explorers`} />
+                    </Route>
+                    <Route
+                        path={`${path}/explorers`}
+                        component={() => <Explorers data={relatedDataElements} />}
+                    />
+                    <Route
+                        path={`${path}/producers`}
+                        component={() => <Producers data={relatedDataElements} />}
+                    />
+                    <Route path={`${path}/*`}>
+                        <Redirect to={`${path}`} />
+                    </Route>
+                </Switch>
                 <Footer />
             </div>
             <FloatinEarthButton />

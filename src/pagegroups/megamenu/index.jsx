@@ -17,38 +17,64 @@ const MegaMenu = (props) => {
     const mediaDimensions = useResizeObserver(megaMenuMediaRef);
     const [mediaStyle, setMediaStyle] = useState({});
     const MEGA_MENU_ASPECT_RATIO = 0.57;
-    const TOTAL_ANIMATIONTIME = 600;
+    const ANIMATION_TIME = 600;
+    const [intransition, setintransition] = useState(false);
+    const [mediaTrail, setMediaTrail] = useState({
+        objects: [],
+        length: 0
+    });
 
     useEffect(() => {
         mediaDimensions && setMediaStyle({ width: mediaDimensions.height * MEGA_MENU_ASPECT_RATIO })
     }, [mediaDimensions])
 
-
     const MEGAMENU_DEFAULT_MEDIA = '/images/megamenu-default-media.webm';
     const [megaMenuMedia, setMegaMenuMedia] = useState(MEGAMENU_DEFAULT_MEDIA);
 
+
     let handleMediaChange = (media) => {
-        let megamenuMedia = document.getElementById('megamenu-media');
-        megamenuMedia.classList.add("out");
+        let mediaShutter = document.getElementById('media-shutter');
 
         setTimeout(() => {
-            megamenuMedia.classList.remove("out");
-            megamenuMedia.classList.add('in');
+            mediaShutter.classList.add("shutter-transition");
+            setintransition(true)
+        }, 0)
+
+        setTimeout(() => {
             setMegaMenuMedia(media);
-        }, TOTAL_ANIMATIONTIME / 2)
+        }, ANIMATION_TIME / 2)
 
         setTimeout(() => {
-            megamenuMedia.classList.remove('in');
-        }, TOTAL_ANIMATIONTIME)
+            mediaShutter.classList.remove('shutter-transition');
+            setintransition(false)
+        }, ANIMATION_TIME)
     }
 
     const onFocusOver = (event) => {
         let currentMedia = event.currentTarget.getAttribute("data-megamenumedia");
-        handleMediaChange(currentMedia);
+        if (!intransition) {
+            handleMediaChange(currentMedia);
+        } else {
+            let temp = mediaTrail.objects;
+            temp.push(currentMedia);
+            setMediaTrail({
+                objects: temp,
+                length: temp.length
+            });
+        }
     }
 
     const onMouseOut = () => {
-        handleMediaChange(MEGAMENU_DEFAULT_MEDIA);
+        if (!intransition) {
+            handleMediaChange(MEGAMENU_DEFAULT_MEDIA);
+        } else {
+            let temp = mediaTrail.objects;
+            temp.push(MEGAMENU_DEFAULT_MEDIA);
+            setMediaTrail({
+                objects: temp,
+                length: temp.length
+            });
+        }
     }
 
     return (
@@ -60,12 +86,19 @@ const MegaMenu = (props) => {
                 <div className="page-wrapper megamenu-page">
                     <div className="site-map-wrapper">
                         <div className="site-map-container">
-                            <div className="megamenu-media"
-                                id='megamenu-media'
+                            <div
+                                className="media-holder"
                                 ref={megaMenuMediaRef}
                                 style={mediaStyle}
                             >
-                                <video src={megaMenuMedia} autoPlay loop muted alt="loading ..." />
+                                {console.log(mediaTrail)}
+                                <div className="megamenu-media">
+                                    <video src={megaMenuMedia} autoPlay loop muted alt="loading ..." />
+                                </div>
+                                <div
+                                    className="media-shutter"
+                                    id="media-shutter"
+                                />
                             </div>
                             <SiteMap onClickClose={props.onclose} onFocusOver={onFocusOver} onMouseOut={onMouseOut} />
                         </div>
