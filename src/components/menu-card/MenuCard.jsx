@@ -9,7 +9,7 @@ const MenuCard = (props) => {
 
   useEffect(() => {
     const state = Number(location.state)
-    setactivetab(isNaN(state) ? 1 : state)
+    // setactivetab(isNaN(state) ? 1 : state)
 
   }, [location.state])
   return (

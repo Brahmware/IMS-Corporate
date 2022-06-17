@@ -1,23 +1,22 @@
 import React from 'react'
 import FilledButton from '../../../components/buttons/FilledButton'
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 
 const TabBoxContainer = (props) => {
     const history = useHistory()
     const allData = props.data
     return (
-        <div className="sub-container col"
+        <Link className="sub-container col"
             type="button"
             data-aos='fade-up'
             data-aos-duration='600'
             id={allData.tab_box_sub_heading}
             data-aos-delay={900 + 300 * props.tabkey}
-            onClick={() => {
-                history.push({
-                    pathname: 'partners',
-                    hash: "#become_a_member",
-                    state: `${props.id + 1}`
-                })
+            to={{
+                pathname: 'partners/become_a_member',
+                hash: `#${props.id}`,
+                state: `${props.id + 1}`
+
             }}
         >
             <div className="box-button">
@@ -51,7 +50,7 @@ const TabBoxContainer = (props) => {
                     }}
                 />
             </div>
-        </div>
+        </Link>
     )
 }
 
