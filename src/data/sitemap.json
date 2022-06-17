@@ -6,22 +6,22 @@
         "pages": [{
                 "id": "about_us",
                 "page": "About Us",
-                "path": "/business#about_us"
+                "path": "/business/about_us"
             },
             {
                 "id": "our_leadership",
                 "page": "Our Leadership",
-                "path": "/business#our_leadership"
+                "path": "/business/our_leadership"
             },
             {
                 "id": "diversity_and_inclusion",
                 "page": "Diversity and Inclusion",
-                "path": "/business#diversity_and_inclusion"
+                "path": "/business/diversity_and_inclusion"
             },
             {
                 "id": "career",
                 "page": "Career",
-                "path": "/business#career"
+                "path": "/business/career"
             }
         ]
     },
@@ -33,22 +33,22 @@
         "pages": [{
                 "id": "business_and_brands",
                 "page": "Business and Brands",
-                "path": "/media_network#business_and_brands"
+                "path": "/media_network/business_and_brands"
             },
             {
                 "id": "focus_areas",
                 "page": "Focus Areas",
-                "path": "/media_network#focus_areas"
+                "path": "/media_network/focus_areas"
             },
             {
                 "id": "technology",
                 "page": "Technology",
-                "path": "/media_network#technology"
+                "path": "/media_network/technology"
             },
             {
                 "id": "newsroom",
                 "page": "Newsroom",
-                "path": "/media_network#newsroom"
+                "path": "/media_network/newsroom"
             }
         ]
     },
@@ -60,17 +60,17 @@
         "pages": [{
                 "id": "resources",
                 "page": "Resources",
-                "path": "/education_and_teaching#resources"
+                "path": "/education_and_teaching/resources"
             },
             {
                 "id": "professional_learning",
                 "page": "Professional Learning",
-                "path": "/education_and_teaching#professional_learning"
+                "path": "/education_and_teaching/professional_learning"
             },
             {
                 "id": "immersive_experience",
                 "page": "Immersive Experience",
-                "path": "/education_and_teaching#immersive_experience"
+                "path": "/education_and_teaching/immersive_experience"
             }
         ]
     },
@@ -82,12 +82,12 @@
         "pages": [{
                 "id": "explorers",
                 "page": "Explorers",
-                "path": "/collaborators#explorers"
+                "path": "/collaborators/explorers"
             },
             {
                 "id": "producers",
                 "page": "Producers",
-                "path": "/collaborators#producers"
+                "path": "/collaborators/producers"
             }
         ]
     },
@@ -99,12 +99,12 @@
         "pages": [{
                 "id": "corporate_and_foundations",
                 "page": "Corporate and Foundations",
-                "path": "/partners#corporate_and_foundations"
+                "path": "/partners/corporate_and_foundations"
             },
             {
                 "id": "become_a_member",
                 "page": "Become a Member",
-                "path": "/partners#become_a_member"
+                "path": "/partners/become_a_member"
             }
         ]
     },
@@ -116,17 +116,17 @@
         "pages": [{
                 "id": "advertise_with_us",
                 "page": "Advertise with Us",
-                "path": "/commercial#advertise_with_us"
+                "path": "/commercial/advertise_with_us"
             },
             {
                 "id": "investors",
                 "page": "Investors",
-                "path": "/commercial#investors"
+                "path": "/commercial/investors"
             },
             {
                 "id": "sustainability_statement",
                 "page": "Sustainability Statement",
-                "path": "/commercial#sustainability_statement"
+                "path": "/commercial/sustainability_statement"
             }
         ]
     }
