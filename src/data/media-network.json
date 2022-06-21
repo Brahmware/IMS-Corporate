@@ -293,7 +293,7 @@
                             {
                                 "id": 1,
                                 "button": "DISCOVER",
-                                "image": "/images/commercial/advertise-with-us/container-3/cover.jpg",
+                                "image": "/images/media-network/technology/container-4/cover1.jpg",
                                 "title": "Tech",
                                 "subtitle": "DATA SHEET",
                                 "content": "Precious Members of the Indian Media Syndicate"
@@ -301,7 +301,7 @@
                             {
                                 "id": 2,
                                 "button": "CHECK",
-                                "image": "/images/commercial/advertise-with-us/container-3/cover.jpg",
+                                "image": "/images/media-network/technology/container-4/cover2.jpg",
                                 "title": "Speech",
                                 "subtitle": "SERVERS",
                                 "content": "Guidelines for IMS title Productions (Procedural)"
@@ -309,7 +309,7 @@
                             {
                                 "id": 3,
                                 "button": "CHECK",
-                                "image": "/images/commercial/advertise-with-us/container-3/cover.jpg",
+                                "image": "/images/media-network/technology/container-4/cover3.jpg",
                                 "title": "Film",
                                 "subtitle": "PRODUCTION",
                                 "content": "Guidelines for IMS production partners and terms of cooperation"
