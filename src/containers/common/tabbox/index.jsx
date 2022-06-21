@@ -1,10 +1,11 @@
 import React from 'react'
 import FilledButton from '../../../components/buttons/FilledButton'
-import { useHistory, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 
 const TabBoxContainer = (props) => {
-    const history = useHistory()
+    // const history = useHistory()
     const allData = props.data
+    // console.log(allData)
     return (
         <Link className="sub-container col"
             type="button"
@@ -14,8 +15,8 @@ const TabBoxContainer = (props) => {
             data-aos-delay={900 + 300 * props.tabkey}
             to={{
                 pathname: 'partners/become_a_member',
-                hash: `#${props.id}`,
-                state: `${props.id + 1}`
+                hash: `#${allData.tab_box_sub_heading}`,
+                state: `${props.id }`
 
             }}
         >

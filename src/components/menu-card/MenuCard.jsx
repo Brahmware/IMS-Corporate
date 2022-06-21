@@ -6,10 +6,21 @@ import { useLocation } from "react-router-dom"
 const MenuCard = (props) => {
   const location = useLocation();
   const [activetab, setactivetab] = useState(1)
-
+  const scrolling = () => {
+    document.getElementById(location.hash.slice(1, location.hash.length)).scrollIntoView({
+      behavior: 'smooth',
+      block: 'center' 
+    })
+  }
   useEffect(() => {
     const state = Number(location.state)
-    // setactivetab(isNaN(state) ? 1 : state)
+    setactivetab(isNaN(state) ? 1 : state)
+    if (location.hash === "") {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+    else {
+      scrolling();
+    }
 
   }, [location.state])
   return (
@@ -40,7 +51,9 @@ const MenuCard = (props) => {
               return (
                 <React.Fragment key={key}>
                   <MenuCardTab
-                    id={key + 1}
+                    // ref={tab.subtitle}
+                    id={tab.subtitle}
+                    ids={key + 1}
                     setactivetab={setactivetab}
                     tabdata={tab}
                     active={activetab === (key + 1) ? true : false}

@@ -7,7 +7,7 @@ const MenuCardTab = (props) => {
     return (
         <div
         id={props.id}
-            className={`tab-box m-1 bg-${(props.active) ? "white" : "primary"}`} onClick={() => { props.setactivetab(props.id) }}
+            className={`tab-box m-1 bg-${(props.active) ? "white" : "primary"}`} onClick={() => { props.setactivetab(props.ids) }}
         >
             <div
                 className={`tab-box-heading ${props.active ? "text-black" : "text-white"}`}

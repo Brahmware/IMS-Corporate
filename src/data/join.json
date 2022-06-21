@@ -75,21 +75,21 @@
                         "id": 1,
                         "button": "JOIN",
                         "tab_box_heading": "IM",
-                        "tab_box_sub_heading": "Wanderer",
+                        "tab_box_sub_heading": "Delegate",
                         "tab_box_price": "₹ 5,00,000 - ₹ 10,00,000"
                     },
                     {
                         "id": 2,
                         "button": "JOIN",
                         "tab_box_heading": "IM",
-                        "tab_box_sub_heading": "Trendsetter",
+                        "tab_box_sub_heading": "Envoy",
                         "tab_box_price": "₹ 10,00,000 - ₹ 100,00,000"
                     },
                     {
                         "id": 3,
                         "button": "JOIN",
                         "tab_box_heading": "IM",
-                        "tab_box_sub_heading": "Pioneer",
+                        "tab_box_sub_heading": "Chief",
                         "tab_box_price": "Above ₹ 100,00,000"
                     }
                 ]
