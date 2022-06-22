@@ -189,9 +189,10 @@
                     {
                         "image": "/images/education-and-teaching/immersive-experience/container-1/cover.jpg",
                         "card": {
-                            "title": "WHAT WE DO",
-                            "subtitle": "India celebrates Exploration",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                            "title": "AR/VR PRODUCTION SERVICES",
+                            "button":"ENQUIRE",
+                            "subtitle": "Immersive teaching tools for Educators",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/><br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                         }
                     }
                 ]
@@ -201,9 +202,9 @@
                 "elements": [
                     {
                         "heading": {
-                            "title": "WE AND OUR FUTURE",
-                            "subtitle": "Diversity, Equity & Equal Opportunity",
-                            "content": "<p>We believe we can only achieve our mission when we actualize our commitment to diversity, equity, and inclusion in every aspect of our work.</p>"
+                            "title": "OUR MISSION",
+                            "subtitle": "To Revolutionize Indian Media",
+                            "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
                         }
                     },
                     {
@@ -214,7 +215,7 @@
                     },
                     {
                         "card": {
-                            "subtitle": "Celebrating our Stories together",
+                            "subtitle": "Making Knowledge Accessible to All.",
                             "content": "<p>Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.</p>",
                             "buttontext": "VIEW MORE"
                         }
@@ -225,34 +226,34 @@
                 "id": "container_3",
                 "elements": [
                     {
-                        "cards": [
-                            {
-                                "id": 1,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                            },
-                            {
-                                "id": 2,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                            },
-                            {
-                                "id": 3,
-                                "count": 265,
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                            }
-                        ]
+                        "id": 1,
+                        "name": "IMS Life",
+                        "logo": "images/our-networks/ims-life/logo.svg"
                     },
                     {
-                        "image": "/images/education-and-teaching/immersive-experience/container-3/cover.jpg",
-                        "card": {
-                            "title": "ABOUT US",
-                            "subtitle": "India celebrates Exploration",
-                            "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
-                        }
+                        "id": 2,
+                        "name": "IMS Science",
+                        "logo": "/images/our-networks/ims-science/logo.svg"
+                    },
+                    {
+                        "id": 3,
+                        "name": "World TV",
+                        "logo": "/images/our-networks/world-tv/logo.svg"
+                    },
+                    {
+                        "id": 4,
+                        "name": "POP News",
+                        "logo": "/images/our-networks/pop-news/logo.svg"
+                    },
+                    {
+                        "id": 5,
+                        "name": "IMS History",
+                        "logo": "/images/our-networks/ims-history/logo.svg"
+                    },
+                    {
+                        "id": 6,
+                        "name": "more",
+                        "logo": "/images/our-networks/more/logo.svg"
                     }
                 ]
             },

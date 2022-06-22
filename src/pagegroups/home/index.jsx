@@ -14,6 +14,7 @@ import HomeContainerEight from '../../containers/home/container-8';
 import HomeContainerNine from '../../containers/home/container-9';
 import HomeContainerTen from '../../containers/home/container-10';
 import data from "../../data/home-data.json";
+import HomeContainerEleven from '../../containers/home/container-11';
 
 
 const HomePage = () => {
@@ -26,6 +27,7 @@ const HomePage = () => {
   const dataContainer8 = data && data.find(data => data.id === 'container_8').elements;
   const dataContainer9 = data && data.find(data => data.id === 'container_9').elements;
   const dataContainer10 = data && data.find(data => data.id === 'container_10').elements;
+  const dataContainer11 = data && data.find(data => data.id === 'container_11').elements;
   return (
     <React.Fragment>
       <SEO title='Indian Media Syndicate' />
@@ -41,6 +43,7 @@ const HomePage = () => {
         <HomeContainerEight data={dataContainer8} />
         <HomeContainerNine data={dataContainer9} />
         <HomeContainerTen data={dataContainer10} />
+        <HomeContainerEleven data={dataContainer11} />
         <FloatingEarthButton />
         <Footer />
       </div>

@@ -1,18 +1,28 @@
 import React from 'react'
-import FunfactColumnSpreadCardImageContainer from '../../common/funfact-column-spread-card-image-container'
+import BrandsContainer from '../../common/brandcontainer';
 
-const ImmersiveExperienceContainerThree = ({ data }) => {
+const BusinessAndBrandsContainerOne = (props) => {
+    const ourNetworks = props.data;
     return (
-        <div className='immersive-experience-container-3 section-with-padding white-background'>
+        <div
+            className='section-with-padding home-our-networks-section'
+
+        >
             <div className="container">
-                <FunfactColumnSpreadCardImageContainer
-                    columnsdata={data[0]}
-                    imagecarddata={data[1]}
-                    inverse={true}
-                />
+                <div
+                    className="section-title"
+                    data-aos='fade-up'
+                    data-aos-duration='600'
+                    data-aos-delay='300'
+                >
+                    <span>EDUCATION PRODUCTION & DISTRIBUTION PARTNERS</span>
+                </div>
+            </div>
+            <div className="brands-part">
+                <BrandsContainer branddata={ourNetworks} />
             </div>
         </div>
     )
 }
 
-export default ImmersiveExperienceContainerThree
+export default BusinessAndBrandsContainerOne

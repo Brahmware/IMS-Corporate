@@ -1,5 +1,5 @@
 .home-our-networks-section {
-    padding-bottom: 0;
+    padding-bottom: 5em ;
     background-color: $white;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     align-items: flex-start;
     gap: 1em;
     & .section-title {
-        font-weight: 900;
+        font-weight: 1000;
         font-size: 1.3em;
     }
     & .brands-part {
