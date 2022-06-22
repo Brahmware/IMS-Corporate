@@ -43,26 +43,28 @@ const Header = () => {
         <React.Fragment>
             <div className={`header ${scroll > headerTop && "shrinked-header"}`}>
                 <div className="container">
-                    <div className="header-left">
-                        <div className="logo">
-                            <Link
-                                to="/"
-                                id='IMS_Logo'
-                                onClick={handleClickOnLogo}
-                            >
-                                <IMSLogo />
-                            </Link>
+                    <div className="header-wrapper">
+                        <div className="header-left">
+                            <div className="logo">
+                                <Link
+                                    to="/"
+                                    id='IMS_Logo'
+                                    onClick={handleClickOnLogo}
+                                >
+                                    <IMSLogo />
+                                </Link>
+                            </div>
+                            {/* <LiveButton /> */}
                         </div>
-                        {/* <LiveButton /> */}
-                    </div>
-                    <div className="header-right">
-                        <SearchComponent />
-                        <FilledButton
-                            class={"join-button"}
-                            text={"JOIN"}
-                            onClick={() => history.push('/join')}
-                        />
-                        <HamburgerMenu onClickEvent={onCanvasHandler} toggleState={offcanvasShow} />
+                        <div className="header-right">
+                            <SearchComponent />
+                            <FilledButton
+                                class={"join-button"}
+                                text={"JOIN"}
+                                onClick={() => history.push('/join')}
+                            />
+                            <HamburgerMenu onClickEvent={onCanvasHandler} toggleState={offcanvasShow} />
+                        </div>
                     </div>
                 </div>
             </div>

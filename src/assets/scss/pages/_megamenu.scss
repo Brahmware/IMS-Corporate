@@ -51,11 +51,11 @@
                         left: -1%;
                         right: 0;
                         z-index: 1;
-                        transition: height 600ms ease 0s;
+                        transition: height 300ms ease 0s;
 
                         &.roll-up {
                             height: 102%;
-                            transition: height $transition-specific;
+                            transition: height 300ms ease 0s;
                         }
                     }
 

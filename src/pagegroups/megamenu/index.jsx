@@ -17,7 +17,7 @@ const MegaMenu = (props) => {
     const mediaDimensions = useResizeObserver(megaMenuMediaRef);
     const [mediaStyle, setMediaStyle] = useState({});
     const MEGA_MENU_ASPECT_RATIO = 0.57;
-    const ANIMATION_TIME = 1200;
+    const ANIMATION_TIME = 600;
 
     useEffect(() => {
         mediaDimensions && setMediaStyle({ width: mediaDimensions.height * MEGA_MENU_ASPECT_RATIO })

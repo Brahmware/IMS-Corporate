@@ -1,6 +1,5 @@
 .header {
     height: $header-height;
-    width: 100vw;
     left: 0;
     right: 0;
     top: 0;
@@ -21,9 +20,11 @@
 
 
     & .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        & .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     & .header-left,
@@ -44,6 +45,14 @@
         & .live-button {
             padding: 0.5em 1em;
             font-weight: 900;
+        }
+
+        & .hamburger-menu {
+            padding: 0;
+            justify-self: flex-end;
+            & svg {
+                height: 1.3em;
+            }
         }
     }
 
