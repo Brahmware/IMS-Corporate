@@ -10,11 +10,31 @@ const StackedFluidCardsContainer = ({ cards, activeCard, handleOnClick }) => {
     const handleMouseLeave = (event) => {
             setHoveredTab(null)
     }
+    const handleClick = (event) => {
+        let cardsContainer = document.getElementById('stacked-fluid-cards-container');
+        let prevActiveEl = document.getElementsByClassName('active-card')[0];
+        
+        cardsContainer.classList.remove('justify-between');
+        prevActiveEl.classList.remove('breathing');
+        
+        let activeElement = event.currentTarget;
+        
+        setTimeout(() => {
+            handleOnClick(activeElement)
+        }, 0)
 
+        setTimeout(() => {
+            cardsContainer.classList.add('justify-between');
+            activeElement.classList.add('breathing');
+        }, 600)
+    }
     return (
         <div className="white-background">
             <div className="container">
-                <div className='stacked-fluid-cards-container noselect'>
+                <div 
+                    className='stacked-fluid-cards-container noselect'
+                    id='stacked-fluid-cards-container'
+                >
                     {
                         cards && cards.map((card, cardKey) => {
                             return (
@@ -22,7 +42,7 @@ const StackedFluidCardsContainer = ({ cards, activeCard, handleOnClick }) => {
                                     className={`stacked-card ${card.id === activeCard && 'active-card'} ${card.id === hoveredTab & hoveredTab !== activeCard && 'hovered-tab'}`}
                                     key={cardKey}
                                     id={card.id}
-                                    onClick = {handleOnClick}
+                                    onClick = {handleClick}
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}
                                 >

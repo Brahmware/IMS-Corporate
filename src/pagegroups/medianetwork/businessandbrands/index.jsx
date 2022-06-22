@@ -18,14 +18,10 @@ const BusinessAndBrands = ({ data }) => {
     const dataContainer7 = data && data.find(data => data.id === 'container_7').elements */
 
     /* console.log(data) */
-    const [activeTab, setactivetab] = useState(null);
-    const [hoveredTab, setHoveredTab] = useState(null);
+    const [activeTab, setactivetab] = useState(data[0].id);
 
-
-
-
-    const handleOnClick = (event) => {
-        setactivetab(event.currentTarget.id)
+    const handleOnClick = (activeElement) => {
+        setactivetab(activeElement.id)
     }
 
     return (

@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: row;
 
+    &.justify-between {
+        justify-content: space-between;
+    }
+
     & .stacked-card {
         height: 25em;
         margin: 0em 0.6em;
@@ -84,6 +88,7 @@
         &.active-card {
             flex-grow: 1;
             cursor: default;
+            transition: $transition-base;
 
             & .card-content {
                 & .card-name {
@@ -91,6 +96,22 @@
                     font-weight: 900;
                     transform: rotate(0deg) translateY(-30%) translateX(7%);
                     transition: $transition-base;
+                }
+            }
+
+            &.breathing {
+                animation: shrink 4600ms linear infinite 600ms;
+
+                @keyframes shrink {
+
+                    0%,
+                    100% {
+                        flex-grow: 1;
+                    }
+
+                    80% {
+                        flex-grow: 0.95;
+                    }
                 }
             }
         }
