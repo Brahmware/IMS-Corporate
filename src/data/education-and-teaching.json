@@ -20,6 +20,232 @@
                 "id": "container_2",
                 "elements": [
                     {
+                        "title": "Resource Gallery",
+                        "types": [
+                            "Climate",
+                            "Culture",
+                            "Disaster",
+                            "Ecology",
+                            "Economy",
+                            "Education",
+                            "Energy",
+                            "Environment",
+                            "Food",
+                            "Health and well-being",
+                            "History",
+                            "Industry",
+                            "Infrastructure",
+                            "Innovation",
+                            "Lifestyle",
+                            "Miscellaneous",
+                            "Natural Resource",
+                            "Space Exploration",
+                            "Sustainability",
+                            "Transportation",
+                            "Urban Cities",
+                            "Wildlife",
+                            "Miscellaneous"
+                        ],
+                        "licences": [
+                            "All",
+                            "Rights Managed",
+                            "Editorial Use",
+                            "Royalty Free",
+                            "Creative Commons"
+                        ]
+                    },
+                    {
+                        "cards": [
+                            {
+                                "images": "/images/education-and-teaching/resources/container-1/cover.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": true,
+                                "price": "300"
+                            },
+                            {
+                                "images": "/images/education-and-teaching/resources/container-3/cover.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "/images/education-and-teaching/resources/container-4/cover.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5MzgyNTIzMF5BMl5BanBnXkFtZTgwODg1OTY1MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAwNDA1NjcwN15BMl5BanBnXkFtZTgwMDY0MDA2MDI@._V1_UY209_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "/images/education-and-teaching/resources/container-4/cover.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5MzgyNTIzMF5BMl5BanBnXkFtZTgwODg1OTY1MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAwNDA1NjcwN15BMl5BanBnXkFtZTgwMDY0MDA2MDI@._V1_UY209_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "/images/education-and-teaching/resources/container-4/cover.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5MzgyNTIzMF5BMl5BanBnXkFtZTgwODg1OTY1MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAwNDA1NjcwN15BMl5BanBnXkFtZTgwMDY0MDA2MDI@._V1_UY209_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "/images/education-and-teaching/resources/container-4/cover.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5MzgyNTIzMF5BMl5BanBnXkFtZTgwODg1OTY1MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAwNDA1NjcwN15BMl5BanBnXkFtZTgwMDY0MDA2MDI@._V1_UY209_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTg0Nzc1NjA0MV5BMl5BanBnXkFtZTgwNTcyNDQ0MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": true,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxMjk0NDg4Ml5BMl5BanBnXkFtZTgwODcyNjA5OTE@._V1_UY209_CR0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5MzgyNTIzMF5BMl5BanBnXkFtZTgwODg1OTY1MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTg0Nzc1NjA0MV5BMl5BanBnXkFtZTgwNTcyNDQ0MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": true,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxMjk0NDg4Ml5BMl5BanBnXkFtZTgwODcyNjA5OTE@._V1_UY209_CR0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5MzgyNTIzMF5BMl5BanBnXkFtZTgwODg1OTY1MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTg0Nzc1NjA0MV5BMl5BanBnXkFtZTgwNTcyNDQ0MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": true,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxMjk0NDg4Ml5BMl5BanBnXkFtZTgwODcyNjA5OTE@._V1_UY209_CR0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5MzgyNTIzMF5BMl5BanBnXkFtZTgwODg1OTY1MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTg0Nzc1NjA0MV5BMl5BanBnXkFtZTgwNTcyNDQ0MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": true,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxMjk0NDg4Ml5BMl5BanBnXkFtZTgwODcyNjA5OTE@._V1_UY209_CR0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": false,
+                                "price": "300"
+                            },
+                            {
+                                "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_UY209_CR0,0,140,209_AL_.jpg",
+                                "title": "Penguins in Antartica",
+                                "type": "Ancient Indian History",
+                                "premium": true,
+                                "price": "300"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "container_5",
+                "elements": [
+                    {
                         "heading": {
                             "title": "WE AND OUR FUTURE",
                             "subtitle": "Diversity, Equity & Equal Opportunity",

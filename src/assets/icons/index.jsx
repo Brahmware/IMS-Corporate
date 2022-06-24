@@ -12,4 +12,6 @@ export { ReactComponent as GlobeIcon } from './globe.svg';
 // Copy & Share Icons
 export { ReactComponent as CopyIcon } from './copy.svg';
 export { ReactComponent as ShareIcon } from './share.svg';
+export { ReactComponent as DownloadButton } from './download.svg';
+export { ReactComponent as CrownIcon } from './Premiumicon.svg';
 

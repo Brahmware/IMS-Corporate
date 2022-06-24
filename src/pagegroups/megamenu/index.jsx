@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { IMSMascot } from '../../assets/ourlogo';
 import CopyrightComponent from '../../components/copyright';
 import LanguageComponent from '../../components/languagecomponent';
 import OurSocialLinks from '../../components/our-social-links';
@@ -15,12 +16,12 @@ const MegaMenu = (props) => {
 
     const megaMenuMediaRef = useRef(null);
     const mediaDimensions = useResizeObserver(megaMenuMediaRef);
-    const [mediaStyle, setMediaStyle] = useState({});
+    const [mediaWidth, setMediaWidth] = useState(0);
     const MEGA_MENU_ASPECT_RATIO = 0.57;
-    const ANIMATION_TIME = 1200;
+    const ANIMATION_TIME = 600;
 
     useEffect(() => {
-        mediaDimensions && setMediaStyle({ width: mediaDimensions.height * MEGA_MENU_ASPECT_RATIO })
+        mediaDimensions && setMediaWidth(mediaDimensions.height * MEGA_MENU_ASPECT_RATIO)
     }, [mediaDimensions])
 
     const MEGAMENU_DEFAULT_MEDIA = '/images/megamenu-default-media.webm';
@@ -82,7 +83,7 @@ const MegaMenu = (props) => {
                             <div
                                 className="media-holder"
                                 ref={megaMenuMediaRef}
-                                style={mediaStyle}
+                                style={{width: mediaWidth}}
                             >
                                 <div className="megamenu-media">
                                     <video src={megaMenuMedia} autoPlay loop muted alt="loading ..." />
@@ -90,7 +91,11 @@ const MegaMenu = (props) => {
                                 <div
                                     className="media-shutter"
                                     id="media-shutter"
-                                />
+                                >
+                                    <div className="mascot" style={{width: mediaWidth * 0.4}}>
+                                        <IMSMascot />
+                                    </div>
+                                </div>
                             </div>
                             <SiteMap onClickClose={props.onclose} onFocusOver={onFocusOver} onMouseOut={onMouseOut} />
                         </div>
