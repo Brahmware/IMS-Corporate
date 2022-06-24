@@ -14,7 +14,7 @@ const Resources = ({ data }) => {
         <div className='resources-page'>
             <ResourcesContainerOne data={dataContainer1} />
             <ResourcesContainerTwo data={dataContainer2} />
-            <ResourcesContainerThree data={dataContainer3} />
+            {/* <ResourcesContainerThree data={dataContainer3} /> */}
             <ResourcesContainerFour data={dataContainer4} />
         </div>
     )
