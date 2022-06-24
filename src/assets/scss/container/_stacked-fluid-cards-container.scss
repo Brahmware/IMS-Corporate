@@ -1,0 +1,128 @@
+.stacked-fluid-cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    &.justify-between {
+        justify-content: space-between;
+    }
+
+    & .stacked-card {
+        height: 25em;
+        margin: 0em 0.6em;
+        min-width: 5em;
+        position: relative;
+        transition: $transition-base;
+        cursor: pointer;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        & .card-content {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-color: rgba($primary, 0.33);
+            border-radius: 3em;
+            height: inherit;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            & .background-image {
+                position: absolute;
+                align-self: center;
+                height: 100%;
+                width: 100%;
+
+                & .overlay {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    background: linear-gradient(0deg, rgba($black, 1) 0%, rgba($black, 0) 100%) 0% 0% no-repeat padding-box;
+                    opacity: 0.5;
+                    transition: $transition-base;
+                }
+
+                & .background-image-wrapper {
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: -1;
+
+                    & img {
+                        height: 100%;
+                        min-width: 100%;
+                        object-fit: cover;
+                        transition: $transition-base;
+                    }
+                }
+            }
+
+            & .card-name {
+                width: 100%;
+                transform: rotate(-90deg) translateX(75%);
+                color: $white;
+                font-size: 1.5em;
+                font-weight: 500;
+                text-align: left;
+                white-space: nowrap;
+                transition: $transition-base;
+            }
+        }
+
+        &.active-card {
+            flex-grow: 1;
+            cursor: default;
+            transition: $transition-base;
+
+            & .card-content {
+                & .card-name {
+                    font-size: 2.8em;
+                    font-weight: 900;
+                    transform: rotate(0deg) translateY(-30%) translateX(7%);
+                    transition: $transition-base;
+                }
+            }
+
+            &.breathing {
+                animation: shrink 4600ms linear infinite 600ms;
+
+                @keyframes shrink {
+
+                    0%,
+                    100% {
+                        flex-grow: 1;
+                    }
+
+                    80% {
+                        flex-grow: 0.95;
+                    }
+                }
+            }
+        }
+
+        &.hovered-tab {
+            & .card-content {
+                & .overlay {
+                    background-color: rgba($black, 1);
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

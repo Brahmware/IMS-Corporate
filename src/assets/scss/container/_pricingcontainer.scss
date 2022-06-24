@@ -3,11 +3,12 @@
         justify-content: space-between;
 
         & .card-wrapper {
+            margin: 4em 0em;
+
             & .each-card {
                 background-color: $default-background;
                 border-radius: 1.5em;
                 overflow: hidden;
-                margin: 2em 0.25em;
                 padding: 0;
                 transition: $transition-base;
                 box-shadow: $default-shadow;
@@ -79,7 +80,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                transform: translateY(-2em);
 
                 & .adjective-tag {
                     position: absolute;

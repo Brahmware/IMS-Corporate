@@ -11,7 +11,7 @@ import Technology from './technology'
 
 /* Importing the related data */
 import sitemapData from "../../data/sitemap.json"
-import BusinessAndBrandsData from "../../data/media-network.json"
+import MediaNetworkData from "../../data/media-network.json"
 import scrollToNavigationPanel from '../../utils/scrollToNavigationPanel'
 import FloatinEarthButton from '../../components/floating-button'
 
@@ -49,7 +49,7 @@ const MediaNetworkPage = () => {
         scrollToNavigationPanel();
     }
 
-    const relatedData = BusinessAndBrandsData.find((data => data.id === activetab));
+    const relatedData = MediaNetworkData.find((data => data.id === activetab));
     const relatedDataElements = relatedData && relatedData.elements;
 
     return (
