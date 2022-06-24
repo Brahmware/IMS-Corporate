@@ -1,12 +1,12 @@
 import React from 'react'
 import CardOverRibbonImageContainer from '../../common/card-over-ribbon-image-container'
 
-const AdvertiseWithUsContainerFour = ({ data }) => {
+const SustainabilityStatementContainerSix = ({ data }) => {
     return (
-        <div className='advertisewithus-container-4'>
+        <div className='sustainabilitystatement-container-6'>
             <CardOverRibbonImageContainer cardribbondata={data[0]} />
         </div>
     )
 }
 
-export default AdvertiseWithUsContainerFour
+export default SustainabilityStatementContainerSix

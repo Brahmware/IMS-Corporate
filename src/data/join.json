@@ -6,7 +6,7 @@
             {
                 "subtitle": "Humanity Depends On You",
                 "bannerbackground": "/images/join/container-1/cover.jpg",
-                "title": "Join Our Mission to Illuminate Billions of lives"
+                "title": "Join Our Mission to <br/> Illuminate Billions of lives"
             }
         ]
     },
@@ -115,7 +115,7 @@
                 "image": "/images/join/container-7/cover.jpg",
                 "card": {
                     "title": "IMS BANSHEE PRODUCTION STUDIO",
-                    "button":"EXPLORE",
+                    "button": "EXPLORE",
                     "subtitle": "IMS Banshee Studio Noida, India",
                     "content": "<p>Under Construction. Under Construction. Under Construction.<br/><br/><br/> Opens 2023.</p>"
                 }
@@ -129,7 +129,7 @@
                 "image": "/images/join/container-8/cover.jpg",
                 "card": {
                     "title": "FILM ISLAND",
-                    "button":"EXPLORE",
+                    "button": "EXPLORE",
                     "subtitle": "IMS Film Island Andaman, India",
                     "content": "<p>Under Construction. Under Construction. Under Construction. Under Construction. Under Construction. Under Construction. Under Construction. Under Construction. Under Construction. Gates<br/><br/><br/> Open 2025.</p>"
                 }
