@@ -91,7 +91,7 @@
                     {
                         "title": "OUR MISSION",
                         "subtitle": "To Revolutionize Indian Media",
-                        "membershipcard": [
+                        "cards": [
                             {
                                 "title": "Apply for Membership",
                                 "inputfield": [
@@ -143,12 +143,19 @@
                                     }
                                 ]
                             }
-                        ],
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "container_4",
+                "elements": [
+                    {
                         "cards": [
                             {
                                 "id": 1,
                                 "button": "DISCOVER",
-                                "image": "/images/collaborators/producers/container-3/cover.jpg", 
+                                "image": "/images/collaborators/producers/container-4/cover.jpg", 
                                 "title": "IMS",
                                 "subtitle": "UNIVERSE",
                                 "content": "Precious Members of the Indian Media Syndicate"
@@ -156,7 +163,7 @@
                             {
                                 "id": 2,
                                 "button": "CHECK",
-                                "image": "/images/collaborators/producers/container-3/cover.jpg",
+                                "image": "/images/collaborators/producers/container-4/cover.jpg",
                                 "title": "Standard",
                                 "subtitle": "REQUIREMENTS",
                                 "content": "Guidelines for IMS title Productions (Procedural)"
@@ -164,7 +171,7 @@
                             {
                                 "id": 3,
                                 "button": "CHECK",
-                                "image": "/images/collaborators/producers/container-3/cover.jpg",
+                                "image": "/images/collaborators/producers/container-4/cover.jpg",
                                 "title": "Member",
                                 "subtitle": "GUDELINES",
                                 "content": "Guidelines for IMS production partners and terms of cooperation"
@@ -177,7 +184,7 @@
                 "id": "container_5",
                 "elements": [
                     {
-                        "image": "/images/collaborators/producers/container-4/cover.jpg",
+                        "image": "/images/collaborators/producers/container-5/cover.jpg",
                         "title": "IMS Explorers",
                         "subtitle": "Changemakers<br /> and Innovators",
                         "buttontext": "APPLY"

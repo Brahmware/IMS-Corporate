@@ -1099,7 +1099,147 @@
     {
         "id": "technology",
         "pagename": "Technology",
-        "elements": []
+        "elements": [
+            {
+                "id": "container_1",
+                "elements": [
+                    {
+                        "image": "/images/media-network/technology/container-1/cover.jpg",
+                        "card": {
+                            "title": "IMS MEDIA CENTERS",
+                            "subtitle": "Largest Educational <br/>Media Archive",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_2",
+                "elements": [
+                    {
+                        "heading": {
+                            "title": "IMS AI LANGUAGE SERVICES",
+                            "subtitle": "Technology to Disrupt Media Viewership",
+                            "content": "<p>We think that we will only be able to achieve our purpose if we put our commitment to diversity, equity, and inclusion into practice in all aspects of our work.</p>"
+                        }
+                    },
+                    {
+                        "images": {
+                            "imageTop": "/images/media-network/technology/container-2/image-top.jpg",
+                            "imageBottom": "/images/media-network/technology/container-2/image-bottom.jpg"
+                        }
+                    },
+                    {
+                        "card": {
+                            "subtitle": "Real Time Speech Translation",
+                            "content": "<p>We promote an enriching and supportive climate for our community of employees, explorers, photojournalists, and storytellers– regardless of their age, race, gender identity, sexual orientation, physical or mental ability, ethnicity, nationality, or professional title.</p>",
+                            "buttontext": "VIEW MORE"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_3",
+                "elements": [
+                    {
+                        "image": "/images/media-network/technology/container-3/cover.jpg",
+                        "card": {
+                            "title": "DISCOVERING",
+                            "subtitle": "AR/VR Experience<br/> Production Wing",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_4",
+                "elements": [
+                    {
+                        "title": "INDIAN MEDIA SYNDICATE MEMBERSHIP",
+                        "subtitle": "The Greatest Event in Indian Broadcasting",
+                        "cards": [
+                            {
+                                "id": 1,
+                                "button": "DISCOVER",
+                                "image": "/images/media-network/technology/container-4/cover1.jpg",
+                                "title": "Tech",
+                                "subtitle": "DATA SHEET",
+                                "content": "Precious Members of the Indian Media Syndicate"
+                            },
+                            {
+                                "id": 2,
+                                "button": "CHECK",
+                                "image": "/images/media-network/technology/container-4/cover2.jpg",
+                                "title": "Speech",
+                                "subtitle": "SERVERS",
+                                "content": "Guidelines for IMS title Productions (Procedural)"
+                            },
+                            {
+                                "id": 3,
+                                "button": "CHECK",
+                                "image": "/images/media-network/technology/container-4/cover3.jpg",
+                                "title": "Film",
+                                "subtitle": "PRODUCTION",
+                                "content": "Guidelines for IMS production partners and terms of cooperation"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "container_5",
+                "elements": [
+                    {
+                        "image": "/images/media-network/technology/container-5/cover.jpg",
+                        "card": {
+                            "title": "IMS PRODUCTION SETS",
+                            "subtitle": "Mega Unreal Production Sets",
+                            "content": "<p>We think that we will only be able to achieve our purpose if we put our commitment to diversity, equity, and inclusion into practice in all aspects of our work.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_6",
+                "elements": [
+                    {
+                        "cards": [
+                            {
+                                "id": 1,
+                                "count": "265",
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            },
+                            {
+                                "id": 2,
+                                "count": "265",
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            },
+                            {
+                                "id": 3,
+                                "count": "265",
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "container_7",
+                "elements": [
+                    {
+                        "image": "/images/media-network/technology/container-7/cover.jpg",
+                        "card": {
+                            "title": "IMS R&D WING",
+                            "subtitle": "Viewership Research Facilities",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "newsroom",
