@@ -1,6 +1,7 @@
 import React from 'react'
 import { IMSLogo } from '../../assets/ourlogo';
 import CopyrightComponent from '../../components/copyright';
+import FlashcardComponent from '../../components/flashcard-component';
 import OurSocialLinks from '../../components/our-social-links';
 import PrivacyPolicyRightSection from '../../components/privacy-policy-right-section';
 import SiteMap from '../../components/sitemap';
@@ -16,12 +17,12 @@ const Footer = () => {
                 <div className="page-wrapper">
                     <div className="sitemap-section row">
                         <div
-                            className="ims-logo-part col-6"
+                            className="flashcard-part col-6"
                             data-aos='fade-right'
                             data-aos-duration='600'
                             data-aos-delay='300'
                         >
-                            <IMSLogo />
+                            <FlashcardComponent />
                         </div>
                         <div
                             className="sitemap-part col-6"
@@ -43,9 +44,9 @@ const Footer = () => {
                             <SubscribeComponent />
                         </div>
                     </div>
-                    <div className="privacy-copyright-section row">
+                    <div className="privacy-copyright-section half-devided-section">
                         <div
-                            className="privacy-copyright-section-left col-6"
+                            className="privacy-copyright-section-left"
                             data-aos='fade-up'
                             data-aos-duration='600'
                             data-aos-delay='300'
@@ -55,7 +56,7 @@ const Footer = () => {
                             <div className="copyright"><CopyrightComponent /></div>
                         </div>
                         <div
-                            className="privacy-copyright-section-right col-6"
+                            className="privacy-copyright-section-right"
                             data-aos='fade-up'
                             data-aos-duration='600'
                             data-aos-delay='600'

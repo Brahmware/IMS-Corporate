@@ -1,0 +1,133 @@
+.flashcard-component {
+    position: relative;
+    height: 32em;
+    width: 24em;
+
+    & .image-card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+        border-radius: 2em;
+        z-index: 1;
+        overflow: hidden;
+
+        & .title-link {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: max-content;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 2em 1.8em;
+
+            & .title {
+                font-size: 1.3em;
+                line-height: 1em;
+                font-weight: 900;
+                color: $white;
+            }
+
+            & a {
+                & svg {
+                    height: 1em;
+                    fill: rgba($white, 0.8);
+                    transition: $transition-base;
+                }
+                &:hover {
+                    & svg {
+                        fill: rgba($color: $white, $alpha: 1.0);
+                    }
+                }
+            }
+        }
+
+        & .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba($black, 0) 70%, $black 100%);
+            opacity: 0.6;
+            z-index: 1;
+        }
+    }
+
+    & .shadow {
+        position: absolute;
+        z-index: 0;
+        height: 85%;
+        width: 1em;
+        right: 0;
+        bottom: 7.5%;
+        box-shadow: $deep-shadow;
+    }
+
+    & .information-card {
+        position: absolute;
+        height: 80%;
+        width: 100%;
+        bottom: 10%;
+        right: 0;
+        border-radius: 2em;
+        transform: translateX(70%);
+        padding-left: 30%;
+        background-color: $default-background;
+        z-index: -1;
+
+        & .information {
+            height: 100%;
+            width: 100%;
+            padding: 4em 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1.8em;
+            font-size: 0.85em;
+            line-height: 1.2em;
+            font-weight: 500;
+            color: $default-black;
+
+            & .artist {
+                font-weight: 700;
+            }
+        }
+
+        animation: slide-in-out 10s linear infinite;
+        
+        @keyframes slide-in-out {
+            0% {
+                transform: translateX(5%);
+            }
+
+            5% {
+                transform: translateX(5%);
+            }
+
+            10% {
+                transform: translateX(70%);
+            }
+
+            90% {
+                transform: translateX(70%);
+            }
+            95% {
+                transform: translateX(5%);
+            }
+            100% {
+                transform: translateX(5%);
+            }
+        }
+
+    }
+}
