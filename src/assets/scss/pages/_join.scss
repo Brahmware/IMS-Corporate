@@ -22,7 +22,7 @@
         }
 
         & .title-tabs-part {
-            position: relative;
+            // position: relative;
             height: 0;
             width: 100%;
             display: flex;
@@ -31,7 +31,8 @@
 
             & .page-title-container {
                 position: absolute;
-                transform: translateY(32em);
+                bottom:0;
+                transform: translateY(-4em);
                 z-index: 1;
 
                 & .page-title {
