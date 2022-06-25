@@ -1,13 +1,14 @@
 import React from 'react'
 import { DownloadButton, CrownIcon } from '../../assets/icons/'
 
-const DownloadImageCard = ({ card }) => {
+const DownloadImageCard = ({ card,click }) => {
     return (
         <>
             <li className="grid-figure"
                 data-aos='fade-left'
                 data-aos-duration='600'
                 data-aos-delay='400'
+                // onClick={click}
             >
                 <div className="grid-figure-shadow">
                     <DownloadButton className='grid-figure-shadow-icon' />
@@ -18,7 +19,7 @@ const DownloadImageCard = ({ card }) => {
                             </div>
                     }
                 </div>
-                <img src={card.images} alt="" />
+                <img src={card.images} alt="" onClick={click} style={{zIndex:"5"}} />
                 <div className="bold-paragraph grid-figure-title"
                     data-aos='fade-left'
                     data-aos-duration='600'
