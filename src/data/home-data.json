@@ -3,7 +3,7 @@
         "id": "container_1",
         "elements": [
             {
-                "image": "/images/home/banner/cover-1.jpg",
+                "image": "/images/home/container-1/cover-1.jpg",
                 "card": {
                     "title": "FOR INDIA",
                     "subtitle": "Go Inventions!",
@@ -11,7 +11,7 @@
                 }
             },
             {
-                "image": "/images/home/banner/cover-2.jpg",
+                "image": "/images/home/container-1/cover-2.jpg",
                 "card": {
                     "title": "FOR INDIA",
                     "subtitle": "Go Inventions!",
@@ -19,7 +19,7 @@
                 }
             },
             {
-                "image": "/images/home/banner/cover-3.jpg",
+                "image": "/images/home/container-1/cover-3.jpg",
                 "card": {
                     "title": "FOR INDIA",
                     "subtitle": "Go Inventions!",
@@ -27,7 +27,7 @@
                 }
             },
             {
-                "image": "/images/home/banner/cover-4.jpg",
+                "image": "/images/home/container-1/cover-4.jpg",
                 "card": {
                     "title": "FOR INDIA",
                     "subtitle": "Go Inventions!",
@@ -41,8 +41,8 @@
         "elements": [
             {
                 "images": {
-                    "imageTop": "/images/home/homeabout/image-top.jpg",
-                    "imageBottom": "/images/home/homeabout/image-bottom.jpg"
+                    "imageTop": "/images/home/container-2/image-top.jpg",
+                    "imageBottom": "/images/home/container-2/image-bottom.jpg"
                 }
             },
             {
@@ -110,8 +110,8 @@
         "elements": [
             {
                 "images": {
-                    "imageTop": "/images/home/homeimmersivelearning/image-top.jpg",
-                    "imageBottom": "/images/home/homeimmersivelearning/image-bottom.jpg"
+                    "imageTop": "/images/home/container-6/image-top.jpg",
+                    "imageBottom": "/images/home/container-6/image-bottom.jpg"
                 }
             },
             {
@@ -128,8 +128,8 @@
         "elements": [
             {
                 "images": {
-                    "imageTop": "/images/home/homeexplorers/image-top.jpg",
-                    "imageBottom": "/images/home/homeexplorers/image-bottom.jpg"
+                    "imageTop": "/images/home/container-8/image-top.jpg",
+                    "imageBottom": "/images/home/container-8/image-bottom.jpg"
                 }
             },
             {
@@ -161,7 +161,7 @@
                             "<p><span class='bold black big'>Corporate Subscription</span> Available</p>",
                             "<p><span class='bold black'>1</span> Screen</p>"
                         ]
-                    }, 
+                    },
                     {
                         "id": 2,
                         "pricetitle": "Monthly",
@@ -186,7 +186,7 @@
                             "<p><span class='bold black'>4K</span> Streaming</p>",
                             "<p><span class='bold black big'>Student Discount</span> Available</p>",
                             "<p><span class='bold black'>2</span> Screens</p>"
-                        ] 
+                        ]
                     }
                 ]
             }
@@ -224,6 +224,17 @@
                 "id": 6,
                 "name": "more",
                 "logo": "/images/our-networks/more/logo.svg"
+            }
+        ]
+    },
+    {
+        "id": "container_11",
+        "elements": [
+            {
+                "image": "/images/home/container-11/cover.jpg",
+                "title": "Production Ready IMS Resources",
+                "subtitle": "Get your FREE <br/> IMS Resources",
+                "buttontext": "CHECK"
             }
         ]
     }

@@ -1,12 +1,12 @@
 import React from 'react'
-import CardOverRibbonImageContainer from '../../common/card-over-ribbon-image-container'
+import ImageCardContainer from '../../common/image-card-container'
 
-const InvestorsContainerFive = ({ data }) => {
-    return (
-        <div className='investors-container-4'>
-            <CardOverRibbonImageContainer cardribbondata={data[0]} />
+const InvestorsContainerFour = ({data}) => {
+  return (
+    <div className='investors-container-1 section-with-padding white-background'>
+            <ImageCardContainer data={data[0]} inverse={true }/>
         </div>
-    )
+  )
 }
 
-export default InvestorsContainerFive
+export default InvestorsContainerFour

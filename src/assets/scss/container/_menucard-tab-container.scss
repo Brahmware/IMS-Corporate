@@ -13,10 +13,11 @@
             & .tab-box {
                 border-top: 3px solid $primary;
                 min-height: 17em;
-                min-width: 14em;
+                min-width: 17em;
                 cursor: pointer;
                 padding-top: 4em;
                 padding-left: 1.7em;
+                border-bottom: 3px solid $primary;
 
                 & .tab-box-heading {
                     font-size: 5em;

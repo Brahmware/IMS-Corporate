@@ -132,120 +132,13 @@
                 "cover": "/images/media-network/businessandbrands/motion-pictures/cover.jpg",
                 "elements": [
                     {
-                        "id": "container_1",
-                        "elements": [
-                            {
-                                "id": 1,
-                                "name": "IMS Life",
-                                "logo": "images/our-networks/ims-life/logo.svg"
-                            },
-                            {
-                                "id": 2,
-                                "name": "IMS Science",
-                                "logo": "/images/our-networks/ims-science/logo.svg"
-                            },
-                            {
-                                "id": 3,
-                                "name": "World TV",
-                                "logo": "/images/our-networks/world-tv/logo.svg"
-                            },
-                            {
-                                "id": 4,
-                                "name": "POP News",
-                                "logo": "/images/our-networks/pop-news/logo.svg"
-                            },
-                            {
-                                "id": 5,
-                                "name": "IMS History",
-                                "logo": "/images/our-networks/ims-history/logo.svg"
-                            },
-                            {
-                                "id": 6,
-                                "name": "more",
-                                "logo": "/images/our-networks/more/logo.svg"
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_2",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
-                                "card": {
-                                    "button":"VIEW MORE",
-                                    "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_3",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
-                                "card": {
-                                    "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_4",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
-                                "card": {
-                                    "title": "POP NEWS",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_5",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
-                                "card": {
-                                    "title": "WORLD TV",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_6",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
-                                "card": {
-                                    "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_7",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
-                                "title": "IMS Explorers",
-                                "subtitle": "Changemakers<br /> and Innovators",
-                                "buttontext": "APPLY"
-                            }
-                        ]
+                        "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
+                        "card": {
+                            "button": "VIEW MORE",
+                            "title": "IMSCIENCE",
+                            "subtitle": "India’s first Science OTT for curious people",
+                            "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
                     }
                 ]
             },
@@ -255,120 +148,13 @@
                 "cover": "/images/media-network/businessandbrands/radio/cover.jpg",
                 "elements": [
                     {
-                        "id": "container_1",
-                        "elements": [
-                            {
-                                "id": 1,
-                                "name": "IMS Life",
-                                "logo": "images/our-networks/ims-life/logo.svg"
-                            },
-                            {
-                                "id": 2,
-                                "name": "IMS Science",
-                                "logo": "/images/our-networks/ims-science/logo.svg"
-                            },
-                            {
-                                "id": 3,
-                                "name": "World TV",
-                                "logo": "/images/our-networks/world-tv/logo.svg"
-                            },
-                            {
-                                "id": 4,
-                                "name": "POP News",
-                                "logo": "/images/our-networks/pop-news/logo.svg"
-                            },
-                            {
-                                "id": 5,
-                                "name": "IMS History",
-                                "logo": "/images/our-networks/ims-history/logo.svg"
-                            },
-                            {
-                                "id": 6,
-                                "name": "more",
-                                "logo": "/images/our-networks/more/logo.svg"
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_2",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
-                                "card": {
-                                    "button":"VIEW MORE",
-                                    "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_3",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
-                                "card": {
-                                    "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_4",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
-                                "card": {
-                                    "title": "POP NEWS",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_5",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
-                                "card": {
-                                    "title": "WORLD TV",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_6",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
-                                "card": {
-                                    "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_7",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
-                                "title": "IMS Explorers",
-                                "subtitle": "Changemakers<br /> and Innovators",
-                                "buttontext": "APPLY"
-                            }
-                        ]
+                        "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
+                        "card": {
+                            "title": "IMS HISTORY",
+                            "button": "VIEW MORE",
+                            "subtitle": "History narrated for the newest generation",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
                     }
                 ]
             },
@@ -378,120 +164,13 @@
                 "cover": "/images/media-network/businessandbrands/magazines/cover.jpg",
                 "elements": [
                     {
-                        "id": "container_1",
-                        "elements": [
-                            {
-                                "id": 1,
-                                "name": "IMS Life",
-                                "logo": "images/our-networks/ims-life/logo.svg"
-                            },
-                            {
-                                "id": 2,
-                                "name": "IMS Science",
-                                "logo": "/images/our-networks/ims-science/logo.svg"
-                            },
-                            {
-                                "id": 3,
-                                "name": "World TV",
-                                "logo": "/images/our-networks/world-tv/logo.svg"
-                            },
-                            {
-                                "id": 4,
-                                "name": "POP News",
-                                "logo": "/images/our-networks/pop-news/logo.svg"
-                            },
-                            {
-                                "id": 5,
-                                "name": "IMS History",
-                                "logo": "/images/our-networks/ims-history/logo.svg"
-                            },
-                            {
-                                "id": 6,
-                                "name": "more",
-                                "logo": "/images/our-networks/more/logo.svg"
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_2",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
-                                "card": {
-                                    "button":"VIEW MORE",
-                                    "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_3",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
-                                "card": {
-                                    "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_4",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
-                                "card": {
-                                    "title": "POP NEWS",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_5",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
-                                "card": {
-                                    "title": "WORLD TV",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_6",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
-                                "card": {
-                                    "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_7",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
-                                "title": "IMS Explorers",
-                                "subtitle": "Changemakers<br /> and Innovators",
-                                "buttontext": "APPLY"
-                            }
-                        ]
+                        "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
+                        "card": {
+                            "title": "POP NEWS",
+                            "button": "VIEW MORE",
+                            "subtitle": "Global Disaster NEWS Channel",
+                            "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
                     }
                 ]
             },
@@ -501,120 +180,13 @@
                 "cover": "/images/media-network/businessandbrands/consumer-products/cover.jpg",
                 "elements": [
                     {
-                        "id": "container_1",
-                        "elements": [
-                            {
-                                "id": 1,
-                                "name": "IMS Life",
-                                "logo": "images/our-networks/ims-life/logo.svg"
-                            },
-                            {
-                                "id": 2,
-                                "name": "IMS Science",
-                                "logo": "/images/our-networks/ims-science/logo.svg"
-                            },
-                            {
-                                "id": 3,
-                                "name": "World TV",
-                                "logo": "/images/our-networks/world-tv/logo.svg"
-                            },
-                            {
-                                "id": 4,
-                                "name": "POP News",
-                                "logo": "/images/our-networks/pop-news/logo.svg"
-                            },
-                            {
-                                "id": 5,
-                                "name": "IMS History",
-                                "logo": "/images/our-networks/ims-history/logo.svg"
-                            },
-                            {
-                                "id": 6,
-                                "name": "more",
-                                "logo": "/images/our-networks/more/logo.svg"
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_2",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
-                                "card": {
-                                    "button":"VIEW MORE",
-                                    "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_3",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
-                                "card": {
-                                    "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_4",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
-                                "card": {
-                                    "title": "POP NEWS",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_5",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
-                                "card": {
-                                    "title": "WORLD TV",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_6",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
-                                "card": {
-                                    "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_7",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
-                                "title": "IMS Explorers",
-                                "subtitle": "Changemakers<br /> and Innovators",
-                                "buttontext": "APPLY"
-                            }
-                        ]
+                        "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
+                        "card": {
+                            "title": "WORLD TV",
+                            "button": "VIEW MORE",
+                            "subtitle": "If World Culture is fire, World TV is gasoline",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
                     }
                 ]
             },
@@ -624,120 +196,13 @@
                 "cover": "/images/media-network/businessandbrands/studio-operations/cover.jpg",
                 "elements": [
                     {
-                        "id": "container_1",
-                        "elements": [
-                            {
-                                "id": 1,
-                                "name": "IMS Life",
-                                "logo": "images/our-networks/ims-life/logo.svg"
-                            },
-                            {
-                                "id": 2,
-                                "name": "IMS Science",
-                                "logo": "/images/our-networks/ims-science/logo.svg"
-                            },
-                            {
-                                "id": 3,
-                                "name": "World TV",
-                                "logo": "/images/our-networks/world-tv/logo.svg"
-                            },
-                            {
-                                "id": 4,
-                                "name": "POP News",
-                                "logo": "/images/our-networks/pop-news/logo.svg"
-                            },
-                            {
-                                "id": 5,
-                                "name": "IMS History",
-                                "logo": "/images/our-networks/ims-history/logo.svg"
-                            },
-                            {
-                                "id": 6,
-                                "name": "more",
-                                "logo": "/images/our-networks/more/logo.svg"
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_2",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
-                                "card": {
-                                    "button":"VIEW MORE",
-                                    "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_3",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
-                                "card": {
-                                    "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_4",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
-                                "card": {
-                                    "title": "POP NEWS",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_5",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
-                                "card": {
-                                    "title": "WORLD TV",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_6",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
-                                "card": {
-                                    "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_7",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
-                                "title": "IMS Explorers",
-                                "subtitle": "Changemakers<br /> and Innovators",
-                                "buttontext": "APPLY"
-                            }
-                        ]
+                        "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
+                        "card": {
+                            "title": "IMS LIFE",
+                            "button": "VIEW MORE",
+                            "subtitle": "Responsible Lifestyle your way",
+                            "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
                     }
                 ]
             },
@@ -1099,7 +564,147 @@
     {
         "id": "technology",
         "pagename": "Technology",
-        "elements": []
+        "elements": [
+            {
+                "id": "container_1",
+                "elements": [
+                    {
+                        "image": "/images/media-network/technology/container-1/cover.jpg",
+                        "card": {
+                            "title": "IMS MEDIA CENTERS",
+                            "subtitle": "Largest Educational <br/>Media Archive",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_2",
+                "elements": [
+                    {
+                        "heading": {
+                            "title": "IMS AI LANGUAGE SERVICES",
+                            "subtitle": "Technology to Disrupt Media Viewership",
+                            "content": "<p>We think that we will only be able to achieve our purpose if we put our commitment to diversity, equity, and inclusion into practice in all aspects of our work.</p>"
+                        }
+                    },
+                    {
+                        "images": {
+                            "imageTop": "/images/media-network/technology/container-2/image-top.jpg",
+                            "imageBottom": "/images/media-network/technology/container-2/image-bottom.jpg"
+                        }
+                    },
+                    {
+                        "card": {
+                            "subtitle": "Real Time Speech Translation",
+                            "content": "<p>We promote an enriching and supportive climate for our community of employees, explorers, photojournalists, and storytellers– regardless of their age, race, gender identity, sexual orientation, physical or mental ability, ethnicity, nationality, or professional title.</p>",
+                            "buttontext": "VIEW MORE"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_3",
+                "elements": [
+                    {
+                        "image": "/images/media-network/technology/container-3/cover.jpg",
+                        "card": {
+                            "title": "DISCOVERING",
+                            "subtitle": "AR/VR Experience<br/> Production Wing",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_4",
+                "elements": [
+                    {
+                        "title": "INDIAN MEDIA SYNDICATE MEMBERSHIP",
+                        "subtitle": "The Greatest Event in Indian Broadcasting",
+                        "cards": [
+                            {
+                                "id": 1,
+                                "button": "DISCOVER",
+                                "image": "/images/media-network/technology/container-4/cover1.jpg",
+                                "title": "Tech",
+                                "subtitle": "DATA SHEET",
+                                "content": "Precious Members of the Indian Media Syndicate"
+                            },
+                            {
+                                "id": 2,
+                                "button": "CHECK",
+                                "image": "/images/media-network/technology/container-4/cover2.jpg",
+                                "title": "Speech",
+                                "subtitle": "SERVERS",
+                                "content": "Guidelines for IMS title Productions (Procedural)"
+                            },
+                            {
+                                "id": 3,
+                                "button": "CHECK",
+                                "image": "/images/media-network/technology/container-4/cover3.jpg",
+                                "title": "Film",
+                                "subtitle": "PRODUCTION",
+                                "content": "Guidelines for IMS production partners and terms of cooperation"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "container_5",
+                "elements": [
+                    {
+                        "image": "/images/media-network/technology/container-5/cover.jpg",
+                        "card": {
+                            "title": "IMS PRODUCTION SETS",
+                            "subtitle": "Mega Unreal Production Sets",
+                            "content": "<p>We think that we will only be able to achieve our purpose if we put our commitment to diversity, equity, and inclusion into practice in all aspects of our work.</p>"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "container_6",
+                "elements": [
+                    {
+                        "cards": [
+                            {
+                                "id": 1,
+                                "count": "265",
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            },
+                            {
+                                "id": 2,
+                                "count": "265",
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            },
+                            {
+                                "id": 3,
+                                "count": "265",
+                                "cardtitle": "Conserved Species",
+                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "container_7",
+                "elements": [
+                    {
+                        "image": "/images/media-network/technology/container-7/cover.jpg",
+                        "card": {
+                            "title": "IMS R&D WING",
+                            "subtitle": "Viewership Research Facilities",
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                        }
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "newsroom",

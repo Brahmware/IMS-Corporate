@@ -1,12 +1,12 @@
 import React from 'react'
 import ImageTopCenterAlignedCardComponent from '../../common/image-top-center-aligned-card-component'
 
-const ProfessionalLearningContainerOne = ({ data }) => {
+const TechnologyContainerFive = ({ data }) => {
   return (
-    <div className='advertisewithus-container-1 section'>
+    <div className='technology-container-1 '>
       <ImageTopCenterAlignedCardComponent data={data[0]} dividercolor="primary"/>
     </div>
   )
 }
 
-export default ProfessionalLearningContainerOne
+export default TechnologyContainerFive
