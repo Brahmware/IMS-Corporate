@@ -1,43 +1,70 @@
-import React, { useState } from 'react'
-/* import BusinessAndBrandsContainerOne from '../../../containers/business-and-brands/container-1'
-import BusinessAndBrandsContainerTwo from '../../../containers/business-and-brands/container-2'
-import BusinessAndBrandsContainerThree from '../../../containers/business-and-brands/container-3'
-import BusinessAndBrandsContainerFour from '../../../containers/business-and-brands/container-4'
-import BusinessAndBrandsContainerFive from '../../../containers/business-and-brands/container-5'
-import BusinessAndBrandsContainerSix from '../../../containers/business-and-brands/container-6'
-import BusinessAndBrandsContainerSeven from '../../../containers/business-and-brands/container-7' */
+import React, { useState, useEffect } from 'react'
+import { Switch, useRouteMatch, Redirect, Route  } from 'react-router-dom';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import StackedFluidCardsContainer from '../../../containers/common/stacked-fluid-cards-container'
+import scrollToFlexBar from '../../../utils/scrollToFlexBar';
+import TVNetwork from './tvnetwork';
 
-const BusinessAndBrands = ({ data }) => {
-    /* const dataContainer1 = data && data.find(data => data.id === 'container_1').elements
-    const dataContainer2 = data && data.find(data => data.id === 'container_2').elements
-    const dataContainer3 = data && data.find(data => data.id === 'container_3').elements
-    const dataContainer4 = data && data.find(data => data.id === 'container_4').elements
-    const dataContainer5 = data && data.find(data => data.id === 'container_5').elements
-    const dataContainer6 = data && data.find(data => data.id === 'container_6').elements
-    const dataContainer7 = data && data.find(data => data.id === 'container_7').elements */
+const BusinessAndBrands = ({ data, fromParent }) => {
+    
+    setTimeout(() => !fromParent && window.location.reload(false), 0)
 
-    /* console.log(data) */
-    const [activeTab, setactivetab] = useState(data[0].id);
+    const history = useHistory().location;
+
+    const { url, path } = useRouteMatch();
+    const DEFAULT_PAGE = data[0].id;
+
+    const getPageNameFromLink = (history, defaultPage) => {
+        let pathname = history && history.pathname;
+        let pagenameArray = pathname.split('/');
+        let pageName = pagenameArray.length > 0 && pagenameArray[3] && pagenameArray[3].replace(/'/g,'');
+        return pageName && pageName !== '' ? pageName : defaultPage
+    }
+    const [activeTab, setactivetab] = useState(getPageNameFromLink(history, DEFAULT_PAGE));
 
     const handleOnClick = (activeElement) => {
-        setactivetab(activeElement.id)
+        setactivetab(activeElement.id);
+        scrollToFlexBar();
     }
+
+
+    useEffect(() => {
+        let activeTab = getPageNameFromLink(history, DEFAULT_PAGE);
+        let found = data.find(each => each.id === activeTab);
+
+        if (found) {
+            setactivetab(activeTab);
+        } else {
+            setactivetab(DEFAULT_PAGE);
+        }
+    }, [DEFAULT_PAGE, data, history]);
+
+    const dataTVNetwork = data.find(element => element.id === 'tv_network');
 
     return (
         <div className="business-and-brands-page">
-            {/* <BusinessAndBrandsContainerOne data={dataContainer1} />
-            <BusinessAndBrandsContainerTwo data={dataContainer2} />
-            <BusinessAndBrandsContainerThree data={dataContainer3} />
-            <BusinessAndBrandsContainerFour data={dataContainer4} />
-            <BusinessAndBrandsContainerFive data={dataContainer5} />
-            <BusinessAndBrandsContainerSix data={dataContainer6} />
-            <BusinessAndBrandsContainerSeven data={dataContainer7} /> */}
-            <StackedFluidCardsContainer 
-                cards={data} 
-                activeCard={activeTab} 
+            <StackedFluidCardsContainer
+                url={url}
+                cards={data}
+                activeCard={activeTab}
                 handleOnClick={handleOnClick}
             />
+            <Switch>
+                <Route
+                    path={`${path}`}
+                    exact
+                >
+                    <Redirect to={`${path}/tv_network`} />
+                </Route>
+                <Route path={`${path}/tv_network`} component={() => <TVNetwork data={dataTVNetwork.elements} />} />
+                {/* <Route path={`${path}/motion_pictures`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
+                <Route path={`${path}/radio`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
+                <Route path={`${path}/magazines`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
+                <Route path={`${path}/consumer_products`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
+                <Route path={`${path}/studio_operations`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
+                <Route path={`${path}/physical_experiences`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
+                <Route path={`${path}/intellectual_properties`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+            </Switch>
         </div>
     )
 }
