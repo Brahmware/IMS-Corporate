@@ -1,7 +1,7 @@
 import React from 'react';
-import ImageCardContainer from '../../common/image-card-container'
+import ImageCardContainer from '../../../common/image-card-container'
 
-const BusinessAndBrandsContainerTwo = ({data}) => {
+const MagazinesContainerSix = ({data}) => {
     return (
         <div className='business-and-brands-container- section-with-padding white-background'>
             <ImageCardContainer data={data[0]} />
@@ -9,4 +9,4 @@ const BusinessAndBrandsContainerTwo = ({data}) => {
     )
 }
 
-export default BusinessAndBrandsContainerTwo
+export default MagazinesContainerSix

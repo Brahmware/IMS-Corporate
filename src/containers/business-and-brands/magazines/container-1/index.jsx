@@ -1,7 +1,7 @@
 import React from 'react'
-import BrandsContainer from '../../common/brandcontainer';
+import BrandsContainer from '../../../common/brandcontainer';
 
-const BusinessAndBrandsContainerOne = (props) => {
+const MagazinesContainerOne = (props) => {
     const ourNetworks = props.data;
     return (
         <div
@@ -25,4 +25,4 @@ const BusinessAndBrandsContainerOne = (props) => {
     )
 }
 
-export default BusinessAndBrandsContainerOne
+export default MagazinesContainerOne
