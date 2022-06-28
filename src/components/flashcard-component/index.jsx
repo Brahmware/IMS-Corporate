@@ -1,36 +1,33 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { OutboundLinkIcon } from '../../assets/icons';
 import FlashcardData from '../../data/flashcard.json';
+import useInterval from '../../utils/useInterval';
 import ImageComponent from '../image-component';
 
+/* const firstPhoto = FlashcardData[0]; */
+
 const FlashcardComponent = () => {
+    const [photoToShow, setPhotoToshow] = useState({});
+    const [intervalTime, setIntervalTime] = useState(0);
+    const [randomIndex, setRandomIndex] = useState(0);
+    
+    const DEFAULT_INTERVAL = 10000;
+    
+    const changePhoto = async () => {
+        intervalTime === 0 && setIntervalTime(DEFAULT_INTERVAL);
 
-    let [photoToShow, setPhotoToshow] = useState(FlashcardData[0]);
-
-    let INTERVAL = 10000; // How long a photo exists on screen
-    let ANIMATION_TIME = 600;
-
-    let changePhoto = () => {
-        let random_index = Math.floor(Math.random() * FlashcardData.length)
-        let fetched_photo = FlashcardData[random_index];
-        /* let informationCard = document.getElementsByClassName('information-card')[0];
-
-        setTimeout(() => {
-            informationCard.classList.remove('slide-back');
-        }, ANIMATION_TIME)
-
-        setTimeout(() => {
-            informationCard.classList.add('slide-back')
-        }, INTERVAL - ANIMATION_TIME) */
-        setPhotoToshow(fetched_photo)
+        let isSame = true;
+        while(isSame) {
+            let random_index = Math.floor(Math.random() * FlashcardData.length);
+            if(random_index !== randomIndex) {
+                isSame = false;
+            }
+            setRandomIndex(random_index);
+        }
+        setPhotoToshow(FlashcardData[randomIndex]);
     }
 
-
-    useEffect(() => {
-        let settingPhoto = setInterval(() => { changePhoto() }, INTERVAL)
-        return () => clearInterval(settingPhoto)
-    }, [INTERVAL])
-
+    useInterval(changePhoto, intervalTime);
 
     return (
         <div className='flashcard-component'>
