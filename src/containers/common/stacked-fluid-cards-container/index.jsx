@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import TvNetwork from '../../business-and-brands/tv-network';
 import Magazines from "../../business-and-brands/magazines"
+import StudioOperations from '../../business-and-brands/studio-operations';
+import MotionPictures from '../../business-and-brands/motion-pictures';
 const StackedFluidCardsContainer = ({ cards, activeCard, handleOnClick }) => {
 
     const tvNetwork = cards && cards.find(data => data.id === 'tv_network').elements;
     const magazines = cards && cards.find(data => data.id === 'magazines').elements;
+    const studioOperations = cards && cards.find(data => data.id === 'studio_operations').elements;
+    const motionPictures = cards && cards.find(data => data.id === 'motion_pictures').elements;
 
     // console.log(cards)
 
@@ -74,7 +78,10 @@ const StackedFluidCardsContainer = ({ cards, activeCard, handleOnClick }) => {
             </div>
             {
                 activeElement === "tv_network" ? <TvNetwork data={tvNetwork} /> :
-                    activeElement === "magazines" ? <Magazines data={magazines} /> : activeElement
+                    activeElement === "magazines" ? <Magazines data={magazines} /> :
+                        activeElement === "studio_operations" ? <StudioOperations data={studioOperations} /> :
+                            activeElement === "motion_pictures" ? <MotionPictures data={motionPictures} /> :
+                                activeElement
             }
         </>
     )

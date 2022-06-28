@@ -8,7 +8,7 @@ import MagazinesContainerSix from './container-6'
 import MagazinesContainerSeven from './container-7'
 import MagazinesContainerEight from './container-8'
 
-const TvNetwork = ({ data }) => {
+const Magazines = ({ data }) => {
   const dataContainer1 = data && data.find(data => data.id === 'container_1').elements
   const dataContainer2 = data && data.find(data => data.id === 'container_2').elements
   const dataContainer3 = data && data.find(data => data.id === 'container_3').elements
@@ -31,4 +31,4 @@ const TvNetwork = ({ data }) => {
   )
 }
 
-export default TvNetwork
+export default Magazines
