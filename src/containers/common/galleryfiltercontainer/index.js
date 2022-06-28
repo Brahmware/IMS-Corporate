@@ -16,6 +16,7 @@ const GalleryFilterContainer = ({ data }) => {
             </div>
             <div className="gallery-container">
                 <ul className="grid">
+                            <DownloadImageCard card={cardData[0]} temp={true} />
                     {cardData.map((card, index) => {
                         return (
                             <DownloadImageCard card={card} key={index}/>
