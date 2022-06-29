@@ -3,6 +3,7 @@ import { Switch, useRouteMatch, Redirect, Route  } from 'react-router-dom';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import StackedFluidCardsContainer from '../../../containers/common/stacked-fluid-cards-container'
 import scrollToFlexBar from '../../../utils/scrollToFlexBar';
+import Magazines from './magazines';
 import TVNetwork from './tvnetwork';
 
 const BusinessAndBrands = ({ data, fromParent }) => {
@@ -40,6 +41,8 @@ const BusinessAndBrands = ({ data, fromParent }) => {
     }, [DEFAULT_PAGE, data, history]);
 
     const dataTVNetwork = data.find(element => element.id === 'tv_network');
+    const dataMagazines = data.find(element => element.id === 'magazines');
+    console.log(dataMagazines)
 
     return (
         <div className="business-and-brands-page">
@@ -57,13 +60,13 @@ const BusinessAndBrands = ({ data, fromParent }) => {
                     <Redirect to={`${path}/tv_network`} />
                 </Route>
                 <Route path={`${path}/tv_network`} component={() => <TVNetwork data={dataTVNetwork.elements} />} />
-                {/* <Route path={`${path}/motion_pictures`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
-                <Route path={`${path}/radio`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
-                <Route path={`${path}/magazines`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
-                <Route path={`${path}/consumer_products`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
-                <Route path={`${path}/studio_operations`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
-                <Route path={`${path}/physical_experiences`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
-                <Route path={`${path}/intellectual_properties`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                <Route path={`${path}/magazines`} component={() => <Magazines data={dataMagazines.elements}/>} />
+                {/* <Route path={`${path}/radio`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                {/* <Route path={`${path}/magazines`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                {/* <Route path={`${path}/consumer_products`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                {/* <Route path={`${path}/studio_operations`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                {/* <Route path={`${path}/physical_experiences`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                {/* <Route path={`${path}/intellectual_properties`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
             </Switch>
         </div>
     )
