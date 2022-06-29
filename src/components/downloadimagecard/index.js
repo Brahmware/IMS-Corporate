@@ -56,7 +56,7 @@ const DownloadImageCard = ({ card, temp}) => {
                         }
                     </div>
                 </div>
-                <div className={`image-container ${temp2}`} style={{...styles, "transition": "all 1s linear"}}>
+                <div className={`image-container ${temp2}`} style={{...styles, "transition": "all 1s"}}>
                     <img
                         // style={{...styles}} 
                         ref={imageRef}
