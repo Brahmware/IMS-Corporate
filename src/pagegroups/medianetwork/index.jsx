@@ -17,17 +17,20 @@ import FloatinEarthButton from '../../components/floating-button'
 
 const MediaNetworkPage = () => {
     const PAGE_GROUP_NAME = 'media_network';
-    const DEFAULT_PAGE = 'business_and_brands';
-
+    
     const mediaNetworkSitemap = sitemapData.find(pageGroup => pageGroup.id === PAGE_GROUP_NAME);
+    const allPages = mediaNetworkSitemap && mediaNetworkSitemap.pages.filter(pageGroup => pageGroup.id !== null).map(page => page.id);
+    const DEFAULT_PAGE = allPages[0];
+    
     const { url, path } = useRouteMatch();
     const history = useHistory().location;
 
     const getPageNameFromLink = (history, pageGroupName, defaultPage) => {
         let pathname = history && history.pathname;
-        let pathstring = `/${pageGroupName}`;
+        let pathstring = `/${pageGroupName}/`;
         let intermediate = pathname.replace(pathstring, "");
-        let pageName = intermediate.replace('/', "");
+        let pagenameArray = intermediate.split('/');
+        let pageName = pagenameArray.length > 0 && pagenameArray[0];
         return pageName !== '' ? pageName : defaultPage
     }
 
@@ -36,16 +39,16 @@ const MediaNetworkPage = () => {
     useEffect(() => {
         let activeTabname = getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE);
         let found = mediaNetworkSitemap.pages.find(each => each.id === activeTabname);
-
+        
         if (found) {
             setactivetab(activeTabname);
         } else {
             setactivetab(DEFAULT_PAGE);
         }
-    }, [history, mediaNetworkSitemap.pages]);
+    }, [DEFAULT_PAGE, activetab, history, mediaNetworkSitemap.pages]);
 
     const onClickTab = (event) => {
-        setactivetab(event.target.id);
+        setactivetab(event.currentTarget.id);
         scrollToNavigationPanel();
     }
 
@@ -63,23 +66,23 @@ const MediaNetworkPage = () => {
                         path={`${path}`}
                         exact
                     >
-                        <Redirect to={`${path}/business_and_brands`} />
+                        <Redirect to={`${path}/business_and_brands/`} />
                     </Route>
                     <Route
                         path={`${path}/business_and_brands`}
-                        component={() => <BusinessAndBrands data={relatedDataElements} />}
+                        render={() => <BusinessAndBrands data={relatedDataElements} fromParent={true}/>}
                     />
                     <Route
                         path={`${path}/focus_areas`}
-                        component={() => <FocusAreas data={relatedDataElements} />}
+                        render={() => <FocusAreas data={relatedDataElements} />}
                     />
                     <Route
                         path={`${path}/technology`}
-                        component={() => <Technology data={relatedDataElements} />}
+                        render={() => <Technology data={relatedDataElements} />}
                     />
                     <Route
                         path={`${path}/newsroom`}
-                        component={() => <NewsRoom data={relatedDataElements} />}
+                        render={() => <NewsRoom data={relatedDataElements} />}
                     />
                     <Route path={`${path}/*`}>
                         <Redirect to={`${path}`} />

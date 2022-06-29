@@ -12,27 +12,27 @@
                         "id": "container_1",
                         "elements": [
                             {
-                                "id": 1,
+                                "id": "ims_life",
                                 "name": "IMS Life",
-                                "logo": "images/our-networks/ims-life/logo.svg"
+                                "logo": "/images/our-networks/ims-life/logo.svg"
                             },
                             {
-                                "id": 2,
+                                "id": "ims_science",
                                 "name": "IMS Science",
                                 "logo": "/images/our-networks/ims-science/logo.svg"
                             },
                             {
-                                "id": 3,
+                                "id": "world_tv",
                                 "name": "World TV",
                                 "logo": "/images/our-networks/world-tv/logo.svg"
                             },
                             {
-                                "id": 4,
+                                "id": "pop_news",
                                 "name": "POP News",
                                 "logo": "/images/our-networks/pop-news/logo.svg"
                             },
                             {
-                                "id": 5,
+                                "id": "ims_history",
                                 "name": "IMS History",
                                 "logo": "/images/our-networks/ims-history/logo.svg"
                             },

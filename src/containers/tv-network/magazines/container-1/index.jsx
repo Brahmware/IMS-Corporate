@@ -1,7 +1,11 @@
 import React from 'react'
 import BrandsContainer from '../../../common/brandcontainer';
 
+<<<<<<< HEAD:src/containers/tv-network/magazines/container-1/index.jsx
 const MagazinesContainerOne = (props) => {
+=======
+const TVNetworkContainerOne = (props) => {
+>>>>>>> main:src/containers/tv-network/container-1/index.jsx
     const ourNetworks = props.data;
     return (
         <div
@@ -25,4 +29,8 @@ const MagazinesContainerOne = (props) => {
     )
 }
 
+<<<<<<< HEAD:src/containers/tv-network/magazines/container-1/index.jsx
 export default MagazinesContainerOne
+=======
+export default TVNetworkContainerOne
+>>>>>>> main:src/containers/tv-network/container-1/index.jsx
