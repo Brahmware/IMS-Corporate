@@ -1,45 +1,55 @@
-
-.filter-download-image-card{
-    .filter{
+.filter-download-image-card {
+    .filter {
         width: 30%;
     }
-    .gallery-container{
+
+    .gallery-container {
         width: 70%;
-        
+
         .grid {
             display: grid;
             grid-auto-flow: column;
             grid-auto-columns: 90%;
-        
+
             @media all {
                 grid-auto-flow: initial;
                 grid-template-columns: repeat(auto-fit, minmax(auto, 18em));
                 justify-content: space-between;
             }
+
             @media #{$large-mobile} {
                 justify-content: center;
             }
+
             @media #{$small-mobile} {
                 justify-content: center;
             }
+
             @media #{$extra-small-mobile} {
                 justify-content: center;
-                
+
             }
-        
+
             & .grid-figure {
                 display: grid;
                 max-width: 18em;
                 margin-bottom: 4em;
-                
-                & .non-blur{
+                cursor: pointer;
+                transition: $transition-base;
+                border-radius: 1.3em;
+
+                &:hover {
+                    box-shadow: $default-shadow;
+                }
+
+                & .non-blur {
                     position: relative;
                     left: 0%;
                     right: 0%;
                     transition: all 0.6s ease;
                 }
 
-                & .blur-bg{
+                & .blur-bg {
                     position: fixed;
                     top: 0%;
                     left: 0%;
@@ -50,7 +60,8 @@
                     display: flex;
                     justify-content: center;
                     overflow-y: scroll;
-                    & .modal-container{
+
+                    & .modal-container {
                         margin-top: 10em;
                         width: 65%;
                         height: 55em;
@@ -58,29 +69,40 @@
                         z-index: 2;
                         border-radius: 1.3em;
                         animation: slide-up 0.8s linear 0s 1 normal forwards;
+
                         @keyframes slide-up {
-                            0% {margin-top: 100vh}
-                            100%{margin-top: 10em;}
+                            0% {
+                                margin-top: 100vh
+                            }
+
+                            100% {
+                                margin-top: 10em;
+                            }
                         }
-                        & .close-button{
+
+                        & .close-button {
                             margin-top: 1.375em;
                             display: flex;
                             flex-direction: row-reverse;
                             padding-right: 0.5em;
                             height: 1.875em;
-                            & svg{
+
+                            & svg {
                                 height: 100%;
                             }
                         }
-                        & .modal-content{
+
+                        & .modal-content {
                             border: 2px solid red;
                             display: flex;
                             flex-direction: row;
-                            & .modal-image{
+
+                            & .modal-image {
                                 width: 30em;
                                 height: 23em;
                                 margin-left: 4.3em;
-                                & img{
+
+                                & img {
                                     object-fit: cover;
                                     object-position: center;
                                     width: 100%;
@@ -88,32 +110,36 @@
                                     border-radius: 1.3em;
                                 }
                             }
-                            & .modal-text-content{
+
+                            & .modal-text-content {
                                 margin-left: 3.3em;
                             }
                         }
                     }
-                    & .click-page{
+
+                    & .click-page {
                         z-index: 1;
                         position: absolute;
                         height: 100%;
                         width: 100%;
                     }
                 }
-                
 
-                & .wrap-shadow{
+
+                & .wrap-shadow {
                     position: relative;
+
                     & .grid-figure-shadow {
                         position: absolute;
-                        top:0px;
-                        left:0px;
-                        right:0px;
-                        
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+
                         height: 15em;
-                        background: radial-gradient(circle, rgba(181,181,181,0) 23%, rgba(44,44,44,0.39289219105610995) 80%);
+                        background: radial-gradient(circle, rgba(181, 181, 181, 0) 23%, rgba(44, 44, 44, 0.39289219105610995) 80%);
                         border-radius: 1.3em;
-                        & .grid-figure-shadow-icon{
+
+                        & .grid-figure-shadow-icon {
                             width: 1.7em;
                             position: absolute;
                             bottom: 0;
@@ -121,29 +147,33 @@
                             margin: 1em 1.7em;
                             cursor: pointer;
                         }
-                        & .grid-figure-crown{
+
+                        & .grid-figure-crown {
                             position: absolute;
                             bottom: 100%;
                             left: 8%;
                             background-color: transparent;
                             display: flex;
                             flex-direction: column-reverse;
-                            & svg{
+
+                            & svg {
                                 height: 1.3em;
                                 fill: $primary;
                             }
                         }
                     }
                 }
+
                 & .image-container {
-                    & img{
+                    & img {
                         width: 100%;
                         height: 15em;
                         border-radius: 1.3em;
                         object-fit: cover;
                     }
-                    
+
                 }
+
                 // & .addAnimation{
                 //     animation: fun 0.6s linear 0s 1 normal forwards;
                 //     @keyframes fun {
@@ -159,70 +189,92 @@
                 //         }
                 //     }
                 // }
-                & .grid-figure-title{
-                    line-height: 1;
-                    margin-top: 1em;
-                    font-weight: bold;
-                }
-                & .grid-figure-subtitle{
-                    line-height: 1;
-                    margin-top: 0.5em;
+
+                & .content {
+                    padding: 1em 1.3em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 0.5em;
+                    
+                    & .grid-figure-title {
+                        line-height: 1;
+                        font-weight: bold;
+                    }
+
+                    & .grid-figure-subtitle {
+                        line-height: 1;
+                    }
                 }
             }
         }
-        & .button-part{
+
+        & .button-part {
             display: flex;
             justify-content: center;
             font-size: 1.25em;
         }
     }
+
     @media #{$tablet-device} {
-        .filter{
+        .filter {
             width: 0%;
         }
-        .gallery-container{
+
+        .gallery-container {
             width: 100%;
         }
-        .filter-container{
-            display: none;
-        }
-    }
-    @media #{$large-mobile} {
-        .filter{
-            width: 0%;
-        }
-        .gallery-container{
-            width: 100%;
-        }
-        .filter-container{
-            display: none;
-        }
-    }
-    @media #{$small-mobile} {
-        .filter{
-            width: 0%;
-        }
-        .gallery-container{
-            width: 100%;
-        }
-        .filter-container{
-            display: none;
-        }
-    }
-    @media #{$extra-small-mobile} {
-        .filter{
-            width: 0%;
-        }
-        .gallery-container{
-            width: 100%;
-        }
-        .filter-container{
+
+        .filter-container {
             display: none;
         }
     }
 
-    
-    & .filter-container{
+    @media #{$large-mobile} {
+        .filter {
+            width: 0%;
+        }
+
+        .gallery-container {
+            width: 100%;
+        }
+
+        .filter-container {
+            display: none;
+        }
+    }
+
+    @media #{$small-mobile} {
+        .filter {
+            width: 0%;
+        }
+
+        .gallery-container {
+            width: 100%;
+        }
+
+        .filter-container {
+            display: none;
+        }
+    }
+
+    @media #{$extra-small-mobile} {
+        .filter {
+            width: 0%;
+        }
+
+        .gallery-container {
+            width: 100%;
+        }
+
+        .filter-container {
+            display: none;
+        }
+    }
+
+
+    & .filter-container {
         margin-right: 5.5em;
         background-color: $default-background;
         padding: 2em;
@@ -230,11 +282,13 @@
         position: sticky;
         scroll-behavior: smooth;
         top: 10%;
-        & .filter-title{
+
+        & .filter-title {
             font-size: 1.5em;
-            font-weight: bold;      
+            font-weight: bold;
         }
-        & .filter-type{
+
+        & .filter-type {
             border: 0.5px solid $light-text-color;
             padding: 0.5em 0.7em;
             width: 100%;
@@ -242,49 +296,58 @@
             margin-top: 1.5em;
             outline: none;
         }
-        & :focus{
+
+        & :focus {
             border: 0.5px solid $primary;
             outline: none;
         }
-        & .filter-free-resource{
+
+        & .filter-free-resource {
             margin-left: 0.7em;
             margin-top: 1.5em;
         }
-        & .filter-checkbox{
+
+        & .filter-checkbox {
             width: 1.33em;
             height: 1.33em;
             accent-color: #E18F3C;
             margin-right: 0.5em;
         }
-        & .filter-sort{
+
+        & .filter-sort {
             margin-top: 1.5em;
-            & .filter-header{
+
+            & .filter-header {
                 border-bottom: 0.5px solid $light-text-color;
                 padding-bottom: 0.5em;
             }
-            & .filter-sort-options{
+
+            & .filter-sort-options {
                 margin-left: 0.7em;
                 margin-top: 1em;
+
                 // border: 2px solid red;
-                div{
+                div {
                     // border: 2px solid red;
                     margin-top: 0.6em;
                 }
             }
         }
 
-        & .filter-budget{
-            & .filter-budget-title{
+        & .filter-budget {
+            & .filter-budget-title {
                 margin-top: 2em;
                 font-weight: bold;
             }
-            & .filter-range-slider{
+
+            & .filter-range-slider {
                 position: relative;
                 width: 100%;
                 top: 0%;
                 left: 0%;
                 margin-top: 1.75em;
-                & input[type="range"]{
+
+                & input[type="range"] {
                     appearance: none;
                     width: 100%;
                     outline: none;
@@ -306,12 +369,14 @@
                     bottom: 0;
                     border-radius: 5px;
                 }
+
                 & input[type="range"]::-webkit-slider-runnable-track {
                     -webkit-appearance: none;
                     height: 3px;
                     background-color: $primary;
                     border-radius: 5px;
                 }
+
                 & input[type="range"]::-webkit-slider-thumb {
                     -webkit-appearance: none;
                     height: 16px;
@@ -324,10 +389,11 @@
                 }
             }
 
-            & .filter-range-data{
+            & .filter-range-data {
                 margin-top: 3.5em;
                 font-size: 0.9em;
-                & input{
+
+                & input {
                     width: 40%;
                     background-color: white;
                     padding: 0.4em 0.75em;
@@ -336,18 +402,21 @@
                     color: $primary;
                     border: 0.5px solid $light-text-color;
                 }
-                & div{
+
+                & div {
                     color: $light-text-color;
                     margin: auto;
                 }
             }
-            & .filter-button{
+
+            & .filter-button {
                 margin-top: 1.5em;
             }
         }
 
     }
-    & .filter-text{
+
+    & .filter-text {
         font-size: 1em;
         color: $light-text-color;
         line-height: 1;
