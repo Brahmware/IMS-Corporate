@@ -5,7 +5,6 @@ import FilledButton from '../../../components/buttons/FilledButton';
 const InvestorsContainerTwo = ({ data }) => {
   const [slice, setSlice] = useState(6);
   const cardsData = data[0].cards.splice(0, slice)
-  // console.log(data[0].cards.length)
   return (
     <React.Fragment>
       <div className={`newsroom-container-2 section-with-padding white-background py-3 d-flex flex-column align-items-center`}>

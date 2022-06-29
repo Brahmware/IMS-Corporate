@@ -8,7 +8,7 @@ const MotionPicturesContainerTwo = ({ data }) => {
             <div className={`newsroom-container-1 seciton-with-padding white-background py-3`}>
                 <div className='in-newsroom-container-1 container d-flex'>
                     <div className="highlighted-news-card">
-                        <BigNewsCards data={cardsData[0]} />
+                        <BigNewsCards data={cardsData[0]} heading={true} />
                     </div>
                     <div className="other-news-card">
                         {

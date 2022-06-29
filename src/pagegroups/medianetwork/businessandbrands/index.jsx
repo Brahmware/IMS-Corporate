@@ -4,6 +4,8 @@ import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import StackedFluidCardsContainer from '../../../containers/common/stacked-fluid-cards-container'
 import scrollToFlexBar from '../../../utils/scrollToFlexBar';
 import Magazines from './magazines';
+import MotionPictures from './motionpictures';
+import StudioOperations from './studiooperations';
 import TVNetwork from './tvnetwork';
 
 const BusinessAndBrands = ({ data, fromParent }) => {
@@ -42,7 +44,8 @@ const BusinessAndBrands = ({ data, fromParent }) => {
 
     const dataTVNetwork = data.find(element => element.id === 'tv_network');
     const dataMagazines = data.find(element => element.id === 'magazines');
-    console.log(dataMagazines)
+    const dataStudioOperations = data.find(element => element.id === 'studio_operations');
+    const dataMotionPictures = data.find(element => element.id === 'motion_pictures');
 
     return (
         <div className="business-and-brands-page">
@@ -62,9 +65,9 @@ const BusinessAndBrands = ({ data, fromParent }) => {
                 <Route path={`${path}/tv_network`} component={() => <TVNetwork data={dataTVNetwork.elements} />} />
                 <Route path={`${path}/magazines`} component={() => <Magazines data={dataMagazines.elements}/>} />
                 {/* <Route path={`${path}/radio`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
-                {/* <Route path={`${path}/magazines`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                <Route path={`${path}/motion_pictures`} component={() => <MotionPictures data={dataMotionPictures.elements}/>} />
                 {/* <Route path={`${path}/consumer_products`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
-                {/* <Route path={`${path}/studio_operations`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                <Route path={`${path}/studio_operations`} component={() => <StudioOperations data={dataStudioOperations.elements}/>} />
                 {/* <Route path={`${path}/physical_experiences`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
                 {/* <Route path={`${path}/intellectual_properties`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
             </Switch>

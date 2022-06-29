@@ -3,7 +3,6 @@ import DownloadImageCard from '../../../components/downloadimagecard';
 import FilledButton from '../../../components/buttons/FilledButton';
 import GalleryFilter from '../../../components/galleryfilter';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 
 
 const GalleryFilterContainer = ({ data }) => {

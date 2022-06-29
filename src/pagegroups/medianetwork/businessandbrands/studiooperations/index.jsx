@@ -1,9 +1,9 @@
 import React from 'react'
-import StudioOperationsContainerOne from './container-1'
-import StudioOperationsContainerTwo from './container-2'
-import StudioOperationsContainerThree from './container-3'
-import StudioOperationsContainerFour from './container-4'
-import StudioOperationsContainerFive from './container-5'
+import StudioOperationsContainerOne from '../../../../containers/studio-operations/container-1'
+import StudioOperationsContainerTwo from '../../../../containers/studio-operations/container-2'
+import StudioOperationsContainerThree from '../../../../containers/studio-operations/container-3'
+import StudioOperationsContainerFour from '../../../../containers/studio-operations/container-4'
+import StudioOperationsContainerFive from '../../../../containers/studio-operations/container-5'
 
 const StudioOperations = ({ data }) => {
   const dataContainer1 = data && data.find(data => data.id === 'container_1').elements
