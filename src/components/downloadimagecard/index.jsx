@@ -1,5 +1,5 @@
-import React, { useCallback, useRef, useState } from 'react'
-import { DownloadButton, CrownIcon, CloseIcon } from '../../assets/icons'
+import React, { useRef, useState } from 'react'
+import { DownloadButton, CrownIcon } from '../../assets/icons'
 import ModalContainer from '../../containers/common/modal-container';
 import disableScroll from 'disable-scroll';
 import { useEffect } from 'react';
@@ -9,14 +9,13 @@ const DownloadImageCard = ({ card, temp }) => {
     const [showModal, setShowModal] = useState(false);
 
     const handleOnClick = () => {
-        /* let rootElement = document.getElementById('root'); */
-        /* rootElement.style = "position: relative"; */
         !showModal && setShowModal(true);
     }
 
     const closeModal = (event) => {
         let closingPlaces = ['modal-bg', 'close-button'];
         closingPlaces.includes(event.target.id) && setShowModal(false);
+        /* console.log(event.target) */
     }
 
     useEffect(() => {

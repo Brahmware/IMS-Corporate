@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useCallback } from 'react';
 import { CloseIcon } from '../../../assets/icons';
 import ImageComponent from '../../../components/image-component';
@@ -32,7 +32,6 @@ const ModalContainer = ({ data, contLocPage, closeModal }) => {
             let translateX = contLocPage.left - boundingRect.left;
             let translateY = contLocPage.top - boundingRect.top;
 
-            console.log(translateX)
             setCardStyle({
                 transform: `scale(${scaleX}, ${scaleY}) translateX(${translateX}px) translateY(${translateY}px)`,
                 transition: 'none',
@@ -80,18 +79,20 @@ const ModalContainer = ({ data, contLocPage, closeModal }) => {
 
     return (
         <div
-            id='modal-bg'
             className='modal-container'
             style={modalStyle}
-            onClick={handleModalClose}
         >
+            <div 
+                id="modal-bg" 
+                onClick={handleModalClose}
+            />
             <div 
                 className="image-content-area" 
                 id='image-content-area' 
                 style={cardStyle}
                 ref={cardRef}
             >
-                <div className="close-button" id='close-button'>
+                <div className="close-button" id='close-button' onClick={handleModalClose}>
                     <CloseIcon />
                 </div>
                 <div className="image-details-area">
