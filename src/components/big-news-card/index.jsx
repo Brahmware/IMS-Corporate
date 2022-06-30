@@ -7,7 +7,7 @@ const BigNewsCard = ({ data, heading }) => {
         const date = dateData.split(',')[0].split('/');
         return `${months[date[1] - 1]} ${date[0]}, ${date[2]}`;
     }
-    const image = data.images
+    const image = data.images;
     const dateData = new Date(data.date).toLocaleString('en-IN')
     const title = (data.title.length > 170) ? data.title.substring(0, 170) + '...' : data.title;
     return (
@@ -18,15 +18,15 @@ const BigNewsCard = ({ data, heading }) => {
                     className="news-card-image big-news-card-image"
                     alt=""
                 />
-                <div className="news-card-content">
-                    {
-                        heading === true ?
-                            <>
+                {
+                    heading === true ?
+                        <>
+                            <div className="heading-content">
                                 <div className="heading-part">
                                     <div className='heading'>
                                         <span
                                             dangerouslySetInnerHTML={{
-                                                __html: "JAIL BAIL"
+                                                __html: data.title
                                             }}
                                         />
                                     </div>
@@ -36,11 +36,13 @@ const BigNewsCard = ({ data, heading }) => {
                                     </div>
                                 </div>
                                 <div className="content-part">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, fugit eveniet reprehenderit qui voluptatem blanditiis. Provident quasi cupiditate asperiores itaque.
+                                    {data.content}
                                 </div>
-                            </>
-                            :
-                            <>
+                            </div>
+                        </>
+                        :
+                        <>
+                            <div className="news-card-content">
                                 <div className='news-card-date text-primary mt-3'>
                                     <span
                                         dangerouslySetInnerHTML={{
@@ -55,9 +57,9 @@ const BigNewsCard = ({ data, heading }) => {
                                         }}
                                     />
                                 </div>
-                            </>
-                    }
-                </div>
+                            </div>
+                        </>
+                }
             </div>
         </>
     )

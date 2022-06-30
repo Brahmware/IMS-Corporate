@@ -4,7 +4,7 @@ import FilledButton from '../../../components/buttons/FilledButton';
 
 const MotionPicturesContainerThree = ({ data }) => {
     const [slice, setSlice] = useState(6);
-    const cardsData = data[0].cards.splice(0, slice)
+    const cardsData = data[0].cards.slice(0, slice)
     return (
         <React.Fragment>
             <div className={`newsroom-container-2 section-with-padding white-background py-3 d-flex flex-column align-items-center`}>
@@ -14,17 +14,16 @@ const MotionPicturesContainerThree = ({ data }) => {
                             cardsData.map((cardData, key) => {
                                 return (
                                     <React.Fragment key={key} >
-                                        <NewsCards data={cardData} />
+                                        <NewsCards data={cardData} heading={ true} />
                                     </React.Fragment>
                                 )
                             })
                         }
                     </div>
                 </div>
-                <div className="button-part">
-                    <FilledButton text={"SHOW ALL"} class={"black-button"} onClick={() => {
-                        setSlice(data[0].cards.length)
-
+                <div className="button-part" id="btn">
+                    <FilledButton text={slice === data[0].cards.length ? "SHOW LESS" : "SHOW ALL"} class={"black-button"} onClick={() => {
+                        slice === data[0].cards.length ? setSlice(6) : setSlice(data[0].cards.length)
                     }} />
                 </div>
             </div>

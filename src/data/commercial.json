@@ -497,7 +497,7 @@
                             {
                                 "id": 1,
                                 "button": "DISCOVER",
-                                "image": "/images/commercial/advertise-with-us/container-3/cover.jpg",
+                                "image": "/images/commercial/advertise-with-us/container-2/cover.jpg",
                                 "title": "IMS",
                                 "subtitle": "PRASAR",
                                 "content": "Precious Members of the Indian Media Syndicate"
@@ -505,7 +505,7 @@
                             {
                                 "id": 2,
                                 "button": "CHECK",
-                                "image": "/images/commercial/advertise-with-us/container-3/cover.jpg",
+                                "image": "/images/commercial/advertise-with-us/container-2/cover.jpg",
                                 "title": "Advert",
                                 "subtitle": "POLICY",
                                 "content": "Guidelines for IMS title Productions (Procedural)"
@@ -513,7 +513,7 @@
                             {
                                 "id": 3,
                                 "button": "CHECK",
-                                "image": "/images/commercial/advertise-with-us/container-3/cover.jpg",
+                                "image": "/images/commercial/advertise-with-us/container-2/cover.jpg",
                                 "title": "PRASAR",
                                 "subtitle": "MONETIZATION",
                                 "content": "Guidelines for IMS production partners and terms of cooperation"
