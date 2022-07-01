@@ -3,6 +3,7 @@ import { Switch, useRouteMatch, Redirect, Route  } from 'react-router-dom';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import StackedFluidCardsContainer from '../../../containers/common/stacked-fluid-cards-container'
 import scrollToFlexBar from '../../../utils/scrollToFlexBar';
+import IntellectualProperties from './intellectualproperties';
 import Magazines from './magazines';
 import MotionPictures from './motionpictures';
 import StudioOperations from './studiooperations';
@@ -46,6 +47,7 @@ const BusinessAndBrands = ({ data, fromParent }) => {
     const dataMagazines = data.find(element => element.id === 'magazines');
     const dataStudioOperations = data.find(element => element.id === 'studio_operations');
     const dataMotionPictures = data.find(element => element.id === 'motion_pictures');
+    const dataIntellectualProperties = data.find(element => element.id === 'intellectual_properties');
 
     return (
         <div className="business-and-brands-page">
@@ -69,7 +71,7 @@ const BusinessAndBrands = ({ data, fromParent }) => {
                 {/* <Route path={`${path}/consumer_products`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
                 <Route path={`${path}/studio_operations`} component={() => <StudioOperations data={dataStudioOperations.elements}/>} />
                 {/* <Route path={`${path}/physical_experiences`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
-                {/* <Route path={`${path}/intellectual_properties`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                <Route path={`${path}/intellectual_properties`} component={() => <IntellectualProperties data={dataIntellectualProperties.elements}/>} />
             </Switch>
         </div>
     )
