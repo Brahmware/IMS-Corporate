@@ -16,3 +16,5 @@ export { ReactComponent as DownloadButton } from './download.svg';
 export { ReactComponent as CrownIcon } from './Premiumicon.svg';
 export { ReactComponent as OutboundLinkIcon } from './outbound-link.svg';
 export { ReactComponent as CloseIcon } from './close.svg';
+export { ReactComponent as InfoIcon } from './infoicon.svg';
+export { ReactComponent as TickMarkIcon } from './tickmark.svg';

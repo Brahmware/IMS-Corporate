@@ -750,27 +750,27 @@
                         "id": "container_1",
                         "elements": [
                             {
-                                "id": 1,
+                                "id": "ims_life",
                                 "name": "IMS Life",
-                                "logo": "images/our-networks/ims-life/logo.svg"
+                                "logo": "/images/our-networks/ims-life/logo.svg"
                             },
                             {
-                                "id": 2,
+                                "id": "ims_science",
                                 "name": "IMS Science",
                                 "logo": "/images/our-networks/ims-science/logo.svg"
                             },
                             {
-                                "id": 3,
+                                "id": "world_tv",
                                 "name": "World TV",
                                 "logo": "/images/our-networks/world-tv/logo.svg"
                             },
                             {
-                                "id": 4,
+                                "id": "pop_news",
                                 "name": "POP News",
                                 "logo": "/images/our-networks/pop-news/logo.svg"
                             },
                             {
-                                "id": 5,
+                                "id": "ims_history",
                                 "name": "IMS History",
                                 "logo": "/images/our-networks/ims-history/logo.svg"
                             },
@@ -785,12 +785,12 @@
                         "id": "container_2",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/tv-network/container-2/cover.jpg",
                                 "card": {
-                                    "button":"VIEW MORE",
+                                    "button":"SUBSCRIBE",
                                     "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "subtitle": "IMS Natural Museum",
+                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -799,12 +799,12 @@
                         "id": "container_3",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/tv-network/container-3/cover.jpg",
                                 "card": {
                                     "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button":"SUBSCRIBE",
+                                    "subtitle": "IMS History Magazine",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/><br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -813,12 +813,12 @@
                         "id": "container_4",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/tv-network/container-4/cover.jpg",
                                 "card": {
                                     "title": "POP NEWS",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button":"SUBSCRIBE",
+                                    "subtitle": "IMS Wildlife Magazine",
+                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -827,35 +827,7 @@
                         "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
-                                "card": {
-                                    "title": "WORLD TV",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_6",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
-                                "card": {
-                                    "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_7",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/tv-network/container-7/cover.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"

@@ -4,7 +4,7 @@ import ModalContainer from '../../containers/common/modal-container';
 import disableScroll from 'disable-scroll';
 import { useEffect } from 'react';
 
-const DownloadImageCard = ({ card, temp }) => {
+const DownloadImageCard = ({ card  }) => {
 
     const [showModal, setShowModal] = useState(false);
 
@@ -52,7 +52,6 @@ const DownloadImageCard = ({ card, temp }) => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, [cardRef])
-
     return (
         <React.Fragment>
             <li
