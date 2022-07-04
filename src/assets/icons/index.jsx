@@ -15,3 +15,6 @@ export { ReactComponent as ShareIcon } from './share.svg';
 export { ReactComponent as DownloadButton } from './download.svg';
 export { ReactComponent as CrownIcon } from './Premiumicon.svg';
 export { ReactComponent as OutboundLinkIcon } from './outbound-link.svg';
+export { ReactComponent as InfoIcon } from './info.svg';
+export { ReactComponent as BlankIcon } from './blank.svg';
+export { ReactComponent as StarFillIcon } from './star-fill.svg';

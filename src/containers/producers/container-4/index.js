@@ -10,7 +10,7 @@ const ProducersContainerFour = ({ data }) => {
                     {
                         cardData.map((card, index) => {
                             return (
-                                <TabBoxImageBackground data={card} key={index} />
+                                <TabBoxImageBackground data={card} key={index} tabkey={index}/>
                             )
                         })
                     }

@@ -8,6 +8,7 @@ import Magazines from './magazines';
 import MotionPictures from './motionpictures';
 import StudioOperations from './studiooperations';
 import TVNetwork from './tvnetwork';
+import Radio from './radio';
 
 const BusinessAndBrands = ({ data, fromParent }) => {
     
@@ -48,6 +49,7 @@ const BusinessAndBrands = ({ data, fromParent }) => {
     const dataStudioOperations = data.find(element => element.id === 'studio_operations');
     const dataMotionPictures = data.find(element => element.id === 'motion_pictures');
     const dataIntellectualProperties = data.find(element => element.id === 'intellectual_properties');
+    const dataRadio = data.find(element => element.id === 'radio');
 
     return (
         <div className="business-and-brands-page">
@@ -66,7 +68,7 @@ const BusinessAndBrands = ({ data, fromParent }) => {
                 </Route>
                 <Route path={`${path}/tv_network`} component={() => <TVNetwork data={dataTVNetwork.elements} />} />
                 <Route path={`${path}/magazines`} component={() => <Magazines data={dataMagazines.elements}/>} />
-                {/* <Route path={`${path}/radio`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                <Route path={`${path}/radio`} component={() => <Radio data={dataRadio.elements}/>} />
                 <Route path={`${path}/motion_pictures`} component={() => <MotionPictures data={dataMotionPictures.elements}/>} />
                 {/* <Route path={`${path}/consumer_products`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
                 <Route path={`${path}/studio_operations`} component={() => <StudioOperations data={dataStudioOperations.elements}/>} />

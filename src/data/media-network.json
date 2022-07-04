@@ -175,91 +175,106 @@
                                         "id": 1,
                                         "images": "https://robohash.org/sequiutexercitationem.png?size=1000x1000&set=set1",
                                         "title": "Bitwolf",
-                                        "content": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio."
+                                        "content": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 2,
                                         "images": "https://robohash.org/molestiaererumdolorem.png?size=500x500&set=set1",
                                         "title": "Temp",
-                                        "content": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui."
+                                        "content": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 3,
                                         "images": "https://robohash.org/aspernaturvoluptasat.png?size=500x500&set=set1",
                                         "title": "Tin",
-                                        "content": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus."
+                                        "content": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 4,
                                         "images": "https://robohash.org/molestiaenobisveniam.png?size=500x500&set=set1",
                                         "title": "Gembucket",
-                                        "content": null
+                                        "content": null,
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 5,
                                         "images": "https://robohash.org/atrecusandaequod.png?size=500x500&set=set1",
                                         "title": "Bytecard",
-                                        "content": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris."
+                                        "content": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 6,
                                         "images": "https://robohash.org/utquianam.png?size=500x500&set=set1",
                                         "title": "Fix San",
-                                        "content": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem."
+                                        "content": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 7,
                                         "images": "https://robohash.org/nullaetrepudiandae.png?size=500x500&set=set1",
                                         "title": "Wrapsafe",
-                                        "content": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                                        "content": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 8,
                                         "images": "https://robohash.org/reprehenderitsedmolestiae.png?size=500x500&set=set1",
                                         "title": "Fix San",
-                                        "content": "Sed ante. Vivamus tortor. Duis mattis egestas metus."
+                                        "content": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 9,
                                         "images": "https://robohash.org/ipsaautemdolorem.png?size=500x500&set=set1",
                                         "title": "Cookley",
-                                        "content": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum."
+                                        "content": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 10,
                                         "images": "https://robohash.org/etquidemvoluptatem.png?size=500x500&set=set1",
                                         "title": "Bitchip",
-                                        "content": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo."
+                                        "content": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 11,
                                         "images": "https://robohash.org/corporisadet.png?size=500x500&set=set1",
                                         "title": "Fixflex",
-                                        "content": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit."
+                                        "content": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 12,
                                         "images": "https://robohash.org/voluptatesnumquamconsequuntur.png?size=500x500&set=set1",
                                         "title": "Y-Solowarm",
-                                        "content": "Sed ante. Vivamus tortor. Duis mattis egestas metus."
+                                        "content": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 13,
                                         "images": "https://robohash.org/voluptatefugiatvel.png?size=500x500&set=set1",
                                         "title": "Domainer",
-                                        "content": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet."
+                                        "content": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 14,
                                         "images": "https://robohash.org/enimestiste.png?size=500x500&set=set1",
                                         "title": "Voyatouch",
-                                        "content": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus."
+                                        "content": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 15,
                                         "images": "https://robohash.org/exipsumiure.png?size=500x500&set=set1",
                                         "title": "Redhold",
-                                        "content": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus."
+                                        "content": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+                                        "text":"TV-U"
                                     }
                                 ]
                             }
@@ -274,301 +289,351 @@
                                         "id": 1,
                                         "images": "https://robohash.org/quamipsumdolorum.png?size=500x500&set=set1",
                                         "subtitle": "Greenlam",
-                                        "heading": "Uraeginthus angolensis"
+                                        "heading": "Uraeginthus angolensis",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 2,
                                         "images": "https://robohash.org/nobisaaut.png?size=500x500&set=set1",
                                         "subtitle": "Keylex",
-                                        "heading": "Phoenicopterus chilensis"
+                                        "heading": "Phoenicopterus chilensis",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 3,
                                         "images": "https://robohash.org/magnivoluptatumculpa.png?size=500x500&set=set1",
                                         "subtitle": "Y-Solowarm",
-                                        "heading": "Stercorarius longicausus"
+                                        "heading": "Stercorarius longicausus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 4,
                                         "images": "https://robohash.org/porroassumendanihil.png?size=500x500&set=set1",
                                         "subtitle": "Tempsoft",
-                                        "heading": "Coendou prehensilis"
+                                        "heading": "Coendou prehensilis",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 5,
                                         "images": "https://robohash.org/exinciduntdolor.png?size=500x500&set=set1",
                                         "subtitle": "Domainer",
-                                        "heading": "Macropus agilis"
+                                        "heading": "Macropus agilis",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 6,
                                         "images": "https://robohash.org/sintvitaeporro.png?size=500x500&set=set1",
                                         "subtitle": "Redhold",
-                                        "heading": "Speothos vanaticus"
+                                        "heading": "Speothos vanaticus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 7,
                                         "images": "https://robohash.org/saepeadquia.png?size=500x500&set=set1",
                                         "subtitle": "Viva",
-                                        "heading": null
+                                        "heading": null,
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 8,
                                         "images": "https://robohash.org/doloresquisunt.png?size=500x500&set=set1",
                                         "subtitle": "Opela",
-                                        "heading": "Falco peregrinus"
+                                        "heading": "Falco peregrinus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 9,
                                         "images": "https://robohash.org/harumetomnis.png?size=500x500&set=set1",
                                         "subtitle": "Latlux",
-                                        "heading": "Eubalaena australis"
+                                        "heading": "Eubalaena australis",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 10,
                                         "images": "https://robohash.org/debitisdoloreeum.png?size=500x500&set=set1",
                                         "subtitle": "Cardguard",
-                                        "heading": "Geococcyx californianus"
+                                        "heading": "Geococcyx californianus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 11,
                                         "images": "https://robohash.org/laboredignissimoset.png?size=500x500&set=set1",
                                         "subtitle": "Trippledex",
-                                        "heading": "Chamaelo sp."
+                                        "heading": "Chamaelo sp.",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 12,
                                         "images": "https://robohash.org/sedinnulla.png?size=500x500&set=set1",
                                         "subtitle": "Bitchip",
-                                        "heading": "Ara chloroptera"
+                                        "heading": "Ara chloroptera",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 13,
                                         "images": "https://robohash.org/velaliaseum.png?size=500x500&set=set1",
                                         "subtitle": "Regrant",
-                                        "heading": "Ploceus rubiginosus"
+                                        "heading": "Ploceus rubiginosus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 14,
                                         "images": "https://robohash.org/perspiciatisdoloresed.png?size=500x500&set=set1",
                                         "subtitle": "Home Ing",
-                                        "heading": null
+                                        "heading": null,
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 15,
                                         "images": "https://robohash.org/errorautdicta.png?size=500x500&set=set1",
                                         "subtitle": "Zaam-Dox",
-                                        "heading": "Vulpes vulpes"
+                                        "heading": "Vulpes vulpes",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 16,
                                         "images": "https://robohash.org/optiodoloremquealiquam.png?size=500x500&set=set1",
                                         "subtitle": "Konklab",
-                                        "heading": "Junonia genoveua"
+                                        "heading": "Junonia genoveua",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 17,
                                         "images": "https://robohash.org/nequesedet.png?size=500x500&set=set1",
                                         "subtitle": "Job",
-                                        "heading": null
+                                        "heading": null,
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 18,
                                         "images": "https://robohash.org/dolorumvoluptatibusex.png?size=500x500&set=set1",
                                         "subtitle": "Biodex",
-                                        "heading": null
+                                        "heading": null,
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 19,
                                         "images": "https://robohash.org/dictanondoloribus.png?size=500x500&set=set1",
                                         "subtitle": "Cookley",
-                                        "heading": "Vulpes vulpes"
+                                        "heading": "Vulpes vulpes",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 20,
                                         "images": "https://robohash.org/molestiasvelitsuscipit.png?size=500x500&set=set1",
                                         "subtitle": "Fintone",
-                                        "heading": null
+                                        "heading": null,
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 21,
                                         "images": "https://robohash.org/inventoreducimusalias.png?size=500x500&set=set1",
                                         "subtitle": "Ventosanzap",
-                                        "heading": "Gorilla gorilla"
+                                        "heading": "Gorilla gorilla",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 22,
                                         "images": "https://robohash.org/eaipsumquia.png?size=500x500&set=set1",
                                         "subtitle": "Veribet",
-                                        "heading": "Spermophilus armatus"
+                                        "heading": "Spermophilus armatus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 23,
                                         "images": "https://robohash.org/eiusetinventore.png?size=500x500&set=set1",
                                         "subtitle": "Tres-Zap",
-                                        "heading": "Chionis alba"
+                                        "heading": "Chionis alba",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 24,
                                         "images": "https://robohash.org/errorexaut.png?size=500x500&set=set1",
                                         "subtitle": "Treeflex",
-                                        "heading": "Spheniscus magellanicus"
+                                        "heading": "Spheniscus magellanicus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 25,
                                         "images": "https://robohash.org/nisitemporeomnis.png?size=500x500&set=set1",
                                         "subtitle": "Latlux",
-                                        "heading": "Damaliscus dorcas"
+                                        "heading": "Damaliscus dorcas",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 26,
                                         "images": "https://robohash.org/idassumendafacilis.png?size=500x500&set=set1",
                                         "subtitle": "Tin",
-                                        "heading": "Sagittarius serpentarius"
+                                        "heading": "Sagittarius serpentarius",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 27,
                                         "images": "https://robohash.org/eosadipisciiusto.png?size=500x500&set=set1",
                                         "subtitle": "Voyatouch",
-                                        "heading": "Lemur catta"
+                                        "heading": "Lemur catta",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 28,
                                         "images": "https://robohash.org/acumqueautem.png?size=500x500&set=set1",
                                         "subtitle": "Opela",
-                                        "heading": "Pytilia melba"
+                                        "heading": "Pytilia melba",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 29,
                                         "images": "https://robohash.org/porronatusrepellendus.png?size=500x500&set=set1",
                                         "subtitle": "Job",
-                                        "heading": "Tadorna tadorna"
+                                        "heading": "Tadorna tadorna",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 30,
                                         "images": "https://robohash.org/beataeporroet.png?size=500x500&set=set1",
                                         "subtitle": "Subin",
-                                        "heading": "Scolopax minor"
+                                        "heading": "Scolopax minor",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 31,
                                         "images": "https://robohash.org/quiutassumenda.png?size=500x500&set=set1",
                                         "subtitle": "Pannier",
-                                        "heading": "Genetta genetta"
+                                        "heading": "Genetta genetta",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 32,
                                         "images": "https://robohash.org/quiillumqui.png?size=500x500&set=set1",
                                         "subtitle": "Latlux",
-                                        "heading": "Bradypus tridactylus"
+                                        "heading": "Bradypus tridactylus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 33,
                                         "images": "https://robohash.org/temporavoluptateomnis.png?size=500x500&set=set1",
                                         "subtitle": "Opela",
-                                        "heading": "Ateles paniscus"
+                                        "heading": "Ateles paniscus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 34,
                                         "images": "https://robohash.org/utaliasinventore.png?size=500x500&set=set1",
                                         "subtitle": "Latlux",
-                                        "heading": "Actophilornis africanus"
+                                        "heading": "Actophilornis africanus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 35,
                                         "images": "https://robohash.org/nesciuntrerumiste.png?size=500x500&set=set1",
                                         "subtitle": "Keylex",
-                                        "heading": "Sula dactylatra"
+                                        "heading": "Sula dactylatra",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 36,
                                         "images": "https://robohash.org/inventorequaeconsequatur.png?size=500x500&set=set1",
                                         "subtitle": "Alpha",
-                                        "heading": "Geochelone radiata"
+                                        "heading": "Geochelone radiata",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 37,
                                         "images": "https://robohash.org/officiismaioresconsequatur.png?size=500x500&set=set1",
                                         "subtitle": "Keylex",
-                                        "heading": "Larus dominicanus"
+                                        "heading": "Larus dominicanus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 38,
                                         "images": "https://robohash.org/verodelenitioptio.png?size=500x500&set=set1",
                                         "subtitle": "Mat Lam Tam",
-                                        "heading": "Crotalus adamanteus"
+                                        "heading": "Crotalus adamanteus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 39,
                                         "images": "https://robohash.org/saepedictasint.png?size=500x500&set=set1",
                                         "subtitle": "Domainer",
-                                        "heading": "Gyps bengalensis"
+                                        "heading": "Gyps bengalensis",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 40,
                                         "images": "https://robohash.org/deleniticorruptiomnis.png?size=500x500&set=set1",
                                         "subtitle": "Home Ing",
-                                        "heading": "Semnopithecus entellus"
+                                        "heading": "Semnopithecus entellus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 41,
                                         "images": "https://robohash.org/voluptatibusmolestiaeconsequatur.png?size=500x500&set=set1",
                                         "subtitle": "Gembucket",
-                                        "heading": "Trichoglossus chlorolepidotus"
+                                        "heading": "Trichoglossus chlorolepidotus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 42,
                                         "images": "https://robohash.org/illumassumendaitaque.png?size=500x500&set=set1",
                                         "subtitle": "Rank",
-                                        "heading": "Colaptes campestroides"
+                                        "heading": "Colaptes campestroides",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 43,
                                         "images": "https://robohash.org/underepellendusdolor.png?size=500x500&set=set1",
                                         "subtitle": "Y-Solowarm",
-                                        "heading": "Felis silvestris lybica"
+                                        "heading": "Felis silvestris lybica",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 44,
                                         "images": "https://robohash.org/nullainciduntnon.png?size=500x500&set=set1",
                                         "subtitle": "Cardguard",
-                                        "heading": "Equus hemionus"
+                                        "heading": "Equus hemionus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 45,
                                         "images": "https://robohash.org/repellatipsaest.png?size=500x500&set=set1",
                                         "subtitle": "Veribet",
-                                        "heading": "Meles meles"
+                                        "heading": "Meles meles",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 46,
                                         "images": "https://robohash.org/sequinihileveniet.png?size=500x500&set=set1",
                                         "subtitle": "Solarbreeze",
-                                        "heading": "Eudyptula minor"
+                                        "heading": "Eudyptula minor",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 47,
                                         "images": "https://robohash.org/etesthic.png?size=500x500&set=set1",
                                         "subtitle": "Keylex",
-                                        "heading": "Pseudalopex gymnocercus"
+                                        "heading": "Pseudalopex gymnocercus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 48,
                                         "images": "https://robohash.org/eligendiautpraesentium.png?size=500x500&set=set1",
                                         "subtitle": "Duobam",
-                                        "heading": "Felis chaus"
+                                        "heading": "Felis chaus",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 49,
                                         "images": "https://robohash.org/inventoreporroquos.png?size=500x500&set=set1",
                                         "subtitle": "Biodex",
-                                        "heading": "Petaurus breviceps"
+                                        "heading": "Petaurus breviceps",
+                                        "text":"TV-U"
                                     },
                                     {
                                         "id": 50,
                                         "images": "https://robohash.org/rerumnullaut.png?size=500x500&set=set1",
                                         "subtitle": "Greenlam",
-                                        "heading": "Panthera leo"
+                                        "heading": "Panthera leo",
+                                        "text":"TV-U"
                                     }
                                 ]
                             }
@@ -620,12 +685,12 @@
                         "id": "container_2",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-2/cover.jpg",
                                 "card": {
-                                    "button": "VIEW MORE",
+                                    "button": "EXPLORE",
                                     "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "subtitle": "Ancient Indian<br/> Historical Universe",
+                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> <br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -634,12 +699,12 @@
                         "id": "container_3",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-3/cover.jpg",
                                 "card": {
                                     "title": "IMS HISTORY",
-                                    "button": "VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "EXPLORE",
+                                    "subtitle": "Indian Mythological <br/>Cinematic Universe",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/><br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -648,12 +713,12 @@
                         "id": "container_4",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-4/cover.jpg",
                                 "card": {
                                     "title": "POP NEWS",
-                                    "button": "VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "EXPLORE",
+                                    "subtitle": "IMScience ENGINE<br/> Pro Vault",
+                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> <br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -662,35 +727,7 @@
                         "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
-                                "card": {
-                                    "title": "WORLD TV",
-                                    "button": "VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_6",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
-                                "card": {
-                                    "title": "IMS LIFE",
-                                    "button": "VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_7",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"

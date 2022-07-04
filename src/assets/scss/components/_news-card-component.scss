@@ -23,8 +23,29 @@
             padding: 1em 0em;
 
             & .stars {
+                display: flex;
                 font-size: 1em;
                 color: $primary;
+                gap: 0.5em;
+            }
+            & .icon-part {
+                display: flex;
+                align-items: flex-end;
+                gap: 0.8em;
+    
+                & .blank {
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    & span {
+                        font-size: 0.5em;
+                        line-height: 1em;
+                        /* width: 100%; */
+                        color: white;
+                        position: absolute;
+                        transform: translateX(6px);
+                    }
+                }
             }
         }
     }
@@ -57,6 +78,8 @@
                 }
 
                 & .stars {
+                    display: flex;
+                    gap: 0.5em;
                     font-size: 1em;
                     color: $primary;
                 }
@@ -64,6 +87,27 @@
         }
         & .content-part {
             width: 100%;
+        }
+
+        & .icon-part {
+            display: flex;
+            align-items: flex-end;
+            height: 6em;
+            gap: 0.8em;
+
+            & .blank {
+                display: flex;
+                position: relative;
+                align-items: center;
+                & span {
+                    font-size: 0.5em;
+                    line-height: 1em;
+                    /* width: 100%; */
+                    color: white;
+                    position: absolute;
+                    transform: translateX(6px);
+                }
+            }
         }
     }
 

@@ -1,8 +1,9 @@
 import React from 'react'
+import { BlankIcon, InfoIcon,StarFillIcon } from "../../assets/icons"
 
 
 const NewsCards = ({ data, heading }) => {
-    console.log(data)
+    const stars=[1,2,3,4,5]
     const convertDate = (dateData) => {
         const months = ['Januray', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         const date = dateData.split(',')[0].split('/');
@@ -57,10 +58,17 @@ const NewsCards = ({ data, heading }) => {
                                     /></div>
                                     <div className="rating-part">
 
-                                        <div className="stars">@@@@@</div>
-                                        <div className="symbol"> 3 4</div>
+                                        <div className="stars">{
+                                            stars.map((star, index) => {
+                                                return <StarFillIcon key={index} />
+                                            })
+                                        }</div>
+                                        <div className="icon-part">
+                                            <div className="blank"><BlankIcon /><span>{data.text}</span></div>
+                                            <div className="info"><span><InfoIcon /></span></div>
+                                        </div>
                                     </div>
-                                </div>
+                                </div> 
                             </>
                     }
                 </div>
