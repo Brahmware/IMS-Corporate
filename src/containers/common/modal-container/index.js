@@ -1,17 +1,24 @@
-import { Button } from 'bootstrap';
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useCallback } from 'react';
 import { CloseIcon, DownloadButton , CrownIcon, InfoIcon, TickMarkIcon} from '../../../assets/icons';
 import ImageComponent from '../../../components/image-component';
 import FilledButton from '../../../components/buttons/FilledButton';
 import HollowButton from '../../../components/buttons/HollowButton';
 
-const ModalContainer = ({ data, contLocPage, closeModal }) => {
-
+const ModalContainer = ({ data, contLocPage, closeModal, handleChange }) => {
+    // const [data, setdata] = useState({...modalData})
     const header = document.querySelector(".header");
     const headerHeight = header && header.getBoundingClientRect().height;
     const [modalStyle, setModalStyle] = useState({ paddingTop: headerHeight });
-
+    function download(source){
+        const fileName = source.split('/').pop();
+        var el = document.createElement("a");
+        el.setAttribute("href", source);
+        el.setAttribute("download", fileName);
+        document.body.appendChild(el);
+         el.click();
+        el.remove();
+    }
     useEffect(() => {
         const handleScroll = () => {
             setModalStyle({
@@ -135,22 +142,162 @@ const ModalContainer = ({ data, contLocPage, closeModal }) => {
             "premium": false,
             "price": "300"
         },
+        {
+            "images": "/images/education-and-teaching/resources/container-3/cover.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "/images/education-and-teaching/resources/container-4/cover.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5MzgyNTIzMF5BMl5BanBnXkFtZTgwODg1OTY1MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAwNDA1NjcwN15BMl5BanBnXkFtZTgwMDY0MDA2MDI@._V1_UY209_C R0,0,140,209_AL_.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "/images/education-and-teaching/resources/container-4/cover.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "/images/education-and-teaching/resources/container-3/cover.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "/images/education-and-teaching/resources/container-4/cover.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5MzgyNTIzMF5BMl5BanBnXkFtZTgwODg1OTY1MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAwNDA1NjcwN15BMl5BanBnXkFtZTgwMDY0MDA2MDI@._V1_UY209_C R0,0,140,209_AL_.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "/images/education-and-teaching/resources/container-4/cover.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "/images/education-and-teaching/resources/container-3/cover.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "/images/education-and-teaching/resources/container-4/cover.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5MzgyNTIzMF5BMl5BanBnXkFtZTgwODg1OTY1MDI@._V1_UX140_C R0,0,140,209_AL_.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAwNDA1NjcwN15BMl5BanBnXkFtZTgwMDY0MDA2MDI@._V1_UY209_C R0,0,140,209_AL_.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
+        {
+            "images": "/images/education-and-teaching/resources/container-4/cover.jpg",
+            "title": "Penguins in Antartica",
+            "type": "Ancient Indian History",
+            "description": "Penguins Standing on the Snow during Daytime",
+            "lisense": "Editorial Use",
+            "premium": false,
+            "price": "300"
+        },
     ]
-
+    const handleDownload=()=>{
+        if(data.premium===true) return;
+        download(data.images)
+    }
     return (
         <div
-            id='modal-bg'
             className='modal-container '
             style={modalStyle}
-                onClick={handleModalClose}
         >
+            <div
+                id="modal-bg"
+                onClick={handleModalClose}
+            />
             <div 
                 className="image-content-area" 
                 id='image-content-area' 
                 style={cardStyle}
                 ref={cardRef}
             >
-                <div className="close-button" id='close-button'>
+                <div className="close-button" id='close-button' onClick={handleModalClose}>
                     <CloseIcon />
                 </div>
                 <div className="image-details-area">
@@ -214,7 +361,7 @@ const ModalContainer = ({ data, contLocPage, closeModal }) => {
                             </div>
                         </div>
                         <div className="buttons">
-                            <FilledButton text={"DOWNLOAD"} class={"black-button"} 
+                            <FilledButton onClick={handleDownload} text={"DOWNLOAD"} class={"black-button"} 
                             />
                             <HollowButton text="SHARE" class="black-button rounded-pill ms-3" />
                             {/* <FilledButton text="Share"/> */}
@@ -244,10 +391,14 @@ const ModalContainer = ({ data, contLocPage, closeModal }) => {
                                         data-aos='fade-left'
                                         data-aos-duration='600'
                                         data-aos-delay={100+(index*200)}
+                                        onClick={(e)=>{handleChange(e,card)}}
                                     >
                                         <div className="modal-card-filter">
                                             <div className="card-shadow" >
-                                                <DownloadButton className='grid-figure-shadow-icon' />
+                                            <div className='download-btn' >
+                                                <div id='download-btn-2' className="download-btn-cover"></div>
+                                                <DownloadButton/>
+                                            </div>
                                                 {
                                                     card.premium &&
                                                     <div className="grid-figure-crown">

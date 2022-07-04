@@ -12,7 +12,7 @@ const Resources = ({ data }) => {
 
     return (
         <div className='resources-page'>
-            <ResourcesContainerOne data={dataContainer1} />
+            <ResourcesContainerOne data={dataContainer1} fromParent={true} />
             <ResourcesContainerTwo data={dataContainer2} />
             {/* <ResourcesContainerThree data={dataContainer3} /> */}
             <ResourcesContainerFour data={dataContainer4} />

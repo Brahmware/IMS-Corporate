@@ -55,13 +55,23 @@
                         background: radial-gradient(circle, rgba(181, 181, 181, 0) 23%, rgba(44, 44, 44, 0.39289219105610995) 80%);
                         border-radius: 1.3em;
 
-                        & .grid-figure-shadow-icon {
+                        & .download-btn {
                             width: 1.7em;
+                            // border: 2px solid green;
                             position: absolute;
                             bottom: 0;
                             right: 0;
                             margin: 1em 1.7em;
                             cursor: pointer;
+                            & .download-btn-cover{
+                                position: absolute;
+                                inset: 0;
+                                z-index: 2;
+                            }
+                            & svg{
+                                z-index: 1;
+                                width: 100%;
+                            }
                         }
 
                         & .grid-figure-crown {

@@ -5,22 +5,37 @@ import disableScroll from 'disable-scroll';
 import { useEffect } from 'react';
 
 const DownloadImageCard = ({ card  }) => {
+    const [data, setdata] = useState({...card});
 
     const [showModal, setShowModal] = useState(false);
-
-    const handleOnClick = () => {
+    function download(source){
+        const fileName = source.split('/').pop();
+        var el = document.createElement("a");
+        el.setAttribute("href", source);
+        el.setAttribute("download", fileName);
+        document.body.appendChild(el);
+        el.click();
+        el.remove();
+    }
+    const handleOnClick = (e) => {
+        if(e.target.id==='download-btn' && card.premium!==true){
+            download(card.images)
+            return;
+        }
         !showModal && setShowModal(true);
+        document.body.style.overflow="hidden";
     }
 
     const closeModal = (event) => {
         let closingPlaces = ['modal-bg', 'close-button'];
         closingPlaces.includes(event.target.id) && setShowModal(false);
         /* console.log(event.target) */
+        document.body.style.overflow="";
     }
 
-    useEffect(() => {
-        showModal ? disableScroll.on() : disableScroll.off()
-    }, [showModal])
+    // useEffect(() => {
+    //     showModal ? disableScroll.on() : disableScroll.off()
+    // }, [showModal])
 
     const cardRef = useRef(null);
     let boundingRect = cardRef.current && cardRef.current.getBoundingClientRect();
@@ -51,6 +66,13 @@ const DownloadImageCard = ({ card  }) => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, [cardRef])
+    const handleChange=(e,cardData)=>{
+        if(e.target.id==="download-btn-2" && cardData.premium!==true){
+            download(cardData.images)
+            return;
+        }
+        setdata({...cardData});
+    }
     return (
         <React.Fragment>
             <li
@@ -59,11 +81,14 @@ const DownloadImageCard = ({ card  }) => {
                 ref={cardRef}
             >
                 {
-                    showModal && <ModalContainer data={card} closeModal={closeModal} contLocPage={cardDimension}/>
+                    showModal && <ModalContainer data={data} handleChange={handleChange} closeModal={closeModal} contLocPage={cardDimension}/>
                 }
                 <div className="wrap-shadow">
                     <div className="grid-figure-shadow" >
-                        <DownloadButton className='grid-figure-shadow-icon' />
+                        <a className='download-btn' >
+                            <div id='download-btn' className="download-btn-cover"></div>
+                            <DownloadButton/>
+                        </a>
                         {
                             card.premium &&
                             <div className="grid-figure-crown">

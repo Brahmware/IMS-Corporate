@@ -7,8 +7,8 @@ const GalleryFilter = ({ data }) => {
         "type": "",
         "free": "false",
         "sortBy": "recommended",
-        "minPrice": 229,
-        "maxPrice": 2229,
+        "minPrice": 0,
+        "maxPrice": 5000,
         "licences": ""
     }
     const [filterData, setfilterData] = useState(defaultData);
