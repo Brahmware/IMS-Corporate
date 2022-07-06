@@ -1,7 +1,7 @@
 import React from 'react'
 import TabBoxImageBackground from '../../../containers/common/tabbox-image-background';
 
-const SustainabilityStatementContainerFour = ({ data }) => {
+const SustainabilityStatementContainerFour = ({ data,url }) => {
     const cardData=data[0].cards;
     return (
         <div className='sustainabilitystatement-container-4 white-background pb-5'>
@@ -10,7 +10,7 @@ const SustainabilityStatementContainerFour = ({ data }) => {
                     {
                         cardData.map((card, index) => {
                             return (
-                                <TabBoxImageBackground data={card} key={index} />
+                                <TabBoxImageBackground data={card} key={index} tabkey={index} url={url} />
                             )
                         })
                     }

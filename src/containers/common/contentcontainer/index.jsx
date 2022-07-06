@@ -1,8 +1,14 @@
-import React from 'react'
+import React,{ useEffect} from 'react'
 
 const ContentContainer = ({ card }) => {
+    useEffect(() => {
+        document.getElementById("content-container").scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+        })
+    })
     return (
-        <div className="half-divided-section-with-padding">
+        <div className="half-divided-section-with-padding" id="content-container">
             <div className="heading-part">
                 <div className="title"
                     data-aos='fade-right'

@@ -11,6 +11,7 @@ const Explorers = ({ data }) => {
     const dataContainer2 = data && data.find(data => data.id === 'container_2').elements;
     const dataContainer4 = data && data.find(data => data.id === 'container_4').elements;
     const dataContainer5 = data && data.find(data => data.id === 'container_5').elements;
+    // console.log(dataContainer1)
 
     return (
         <div className='explorers-experience-page'>

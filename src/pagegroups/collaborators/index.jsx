@@ -23,19 +23,20 @@ const CollaboratorsPage = () => {
 
     const getPageNameFromLink = (history, pageGroupName, defaultPage) => {
         let pathname = history && history.pathname;
-        let pathstring = `/${pageGroupName}`;
+        let pathstring = `/${pageGroupName}/`;
         let intermediate = pathname.replace(pathstring, "");
-        let pageName = intermediate.replace('/', "");
+        let pagenameArray = intermediate.split('/');
+        let pageName = pagenameArray.length > 0 && pagenameArray[0];
         return pageName !== '' ? pageName : defaultPage
     }
-
+    // console.log(getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE))
     const [activetab, setactivetab] = useState(getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE));
 
     useEffect(() => {
         let activeTabname = getPageNameFromLink(history, PAGE_GROUP_NAME, DEFAULT_PAGE);
         let found = collaboratorsSitemap.pages.find(each => each.id === activeTabname);
-        
-        if(found) {
+
+        if (found) {
             setactivetab(activeTabname);
         } else {
             setactivetab(DEFAULT_PAGE);

@@ -1,23 +1,33 @@
 import React from 'react'
-import InvestorsContainerOne from '../../../containers/investors/container-1'
-import InvestorsContainerTwo from '../../../containers/investors/container-2'
-import InvestorsContainerThree from '../../../containers/investors/container-3'
-import InvestorsContainerFive from '../../../containers/investors/container-5'
-import InvestorsContainerFour from '../../../containers/investors/container-4'
+import { Switch, useRouteMatch, Redirect, Route } from 'react-router-dom';
+import Advert from './advert';
+import Ims from './ims';
+import InvestorsContainers from './inverstorscontainers';
+import Prasar from './prasar';
 
 const Investors = ({ data }) => {
-    const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
-    const dataContainer2 = data && data.find(data => data.id === 'container_2').elements;
-    const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
-    const dataContainer4 = data && data.find(data => data.id === 'container_4').elements;
-    const dataContainer5 = data && data.find(data => data.id === 'container_5').elements;
+    const { url, path } = useRouteMatch();
+    const dataContainers = data && data.find(data => data.id === 'containers');
+    const dataIms = data && data.find(data => data.id === 'ims');
+    const dataAdvert = data && data.find(data => data.id === 'advert');
+    const dataPrasar = data && data.find(data => data.id === 'prasar');
     return (
-        <div className="investors-page">
-            <InvestorsContainerOne data={dataContainer1} />
-            <InvestorsContainerTwo data={dataContainer2} />
-            <InvestorsContainerThree data={dataContainer3} />
-            <InvestorsContainerFour data={dataContainer4} />
-            <InvestorsContainerFive data={dataContainer5} />
+        <div className="advertise-with-us-page">
+            <Switch>
+                <Route path={`${path}`}
+                    exact
+                >
+
+                    <Redirect to={`${path}/containers`} />
+                </Route>
+                <Route path={`${path}/containers`} component={() => <InvestorsContainers data={dataContainers.elements} url={url} />} />
+                <Route path={`${path}/IMS`} component={() => <Ims data={dataIms.elements} />} />
+                <Route path={`${path}/Advert`} component={() => <Advert data={dataAdvert.elements} />} />
+                <Route path={`${path}/Prasar`} component={() => <Prasar data={dataPrasar.elements} />} />
+                <Route path={`${path}/*`}>
+                    <Redirect to={`${path}`} />
+                </Route>
+            </Switch>
         </div>
     )
 }

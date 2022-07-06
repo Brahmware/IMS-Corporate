@@ -1,24 +1,35 @@
 import React from 'react'
-import ProducersContainerOne from '../../../containers/producers/container-1';
-import ProducersContainerTwo from '../../../containers/producers/container-2';
-import ProducersContainerThree from '../../../containers/producers/container-3';
-import ProducersContainerFour from '../../../containers/producers/container-4';
-import ProducersContainerFive from '../../../containers/producers/container-5';
+import { Switch, useRouteMatch, Redirect, Route } from 'react-router-dom';
+import ProducersContainers from './producerscontainers';
+import Ims from "./ims"
+import Standard from './standard';
 
 
 const Producers = ({ data }) => {
-    const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
-    const dataContainer2 = data && data.find(data => data.id === 'container_2').elements;
-    const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
-    const dataContainer4 = data && data.find(data => data.id === 'container_4').elements;
-    const dataContainer5 = data && data.find(data => data.id === 'container_5').elements;
+    const { url, path } = useRouteMatch();
+
+    const dataContainer = data && data.find(data => data.id === 'containers');
+    const dataIms = data && data.find(data => data.id === 'ims');
+    const dataStandard = data && data.find(data => data.id === 'standard');
+    const dataMember = data && data.find(data => data.id === 'member');
     return (
         <div className='immersive-experience-page'>
-            <ProducersContainerOne data={dataContainer1} />
-            <ProducersContainerTwo data={dataContainer2} />
-            <ProducersContainerThree data={dataContainer3} />
-            <ProducersContainerFour data={dataContainer4} />
-            <ProducersContainerFive data={dataContainer5} />
+            
+            <Switch>
+                <Route path={`${path}`}
+                    exact
+                >
+
+                    <Redirect to={`${path}/containers`} />
+                </Route>
+                <Route path={`${path}/containers`} component={() => <ProducersContainers data={ dataContainer.elements} url={url} />} />
+                <Route path={`${path}/IMS`} component={() => <Ims data={ dataIms.elements}/> } />
+                <Route path={`${path}/Standard`} component={() => <Standard data={ dataStandard.elements}/> } />
+                <Route path={`${path}/Member`} component={() => <Standard data={ dataMember.elements}/> } />
+                <Route path={`${path}/*`}>
+                    <Redirect to={`${path}`} />
+                </Route>
+            </Switch>
         </div>
     )
 }

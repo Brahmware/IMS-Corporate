@@ -15,6 +15,7 @@ const BusinessAndBrands = ({ data, fromParent }) => {
     setTimeout(() => !fromParent && window.location.reload(false), 0)
 
     const history = useHistory().location;
+    // console.log(history);
 
     const { url, path } = useRouteMatch();
     const DEFAULT_PAGE = data[0].id;
