@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect } from 'react'
 import ContentContainer from "../../../../containers/common/contentcontainer"
 
 const Standard = (props) => {
