@@ -11,8 +11,9 @@ const NewsRoomContainerFour = ({ data }) => {
     const fetchMoreData = () => {
         setTimeout(() => {
             setcurrentData([...currentData, ...cardsData.slice(currentData.length, currentData.length + 6)])
-        }, 2000)  // I have set time out to 1 sec this can be removed this is just to show that infinite scroll is working fine
+        }, 100)  // I have set time out to 1 sec this can be removed this is just to show that infinite scroll is working fine
     };
+    console.log(cardsData);
     return (
         <>
             <div className={`newsroom-container-4 seciton-with-padding white-background py-3`}>

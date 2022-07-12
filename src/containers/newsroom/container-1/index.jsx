@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import BigNewsCards from '../../../components/big-news-card';
 
 const NewsRoomContainerOne = ({ data }) => {
@@ -16,7 +17,12 @@ const NewsRoomContainerOne = ({ data }) => {
                                 return (
                                     <React.Fragment key={key} >
                                         {
-                                            key !== 0 && <img className='other-news-card-image' src={cardData.images} alt="" />
+                                            key !== 0 && 
+                                            <Link
+                                                to={`/newspage/${cardData.id}`}
+                                            >
+                                                <img className='other-news-card-image' src={cardData.images} alt="" />
+                                            </Link>
                                         }
                                     </React.Fragment>
                                 )

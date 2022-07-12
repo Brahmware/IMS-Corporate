@@ -51,7 +51,7 @@ const BusinessPage = () => {
 
     const relatedData = BusinessData.find((data => data.id === activetab));
     const relatedDataElements = relatedData && relatedData.elements;
-
+    console.log(url,"asa",path);
     return (
         <React.Fragment>
             <SEO title={relatedData && `IMS ${businessSitemap.pageGroup} - ${relatedData.pagename}`} />

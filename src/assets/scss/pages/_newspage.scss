@@ -1,0 +1,205 @@
+.newspage-banner{
+    height: 90vh;
+    
+    & .newspage-content{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: flex-end;
+        color: white;
+        & .newspage-title{
+            font-size: 6em;
+            font-weight: 1000;
+            line-height: 1;
+            margin-bottom: 0.3em;
+        }
+        & .newspage-date{
+            font-size: 1.5em;
+            margin-bottom: 3em;
+        }
+    }
+}
+
+.recommended-cards-container{
+    
+    & .more-like-this-area{
+        width: 100%;
+        padding-bottom: 7.25em;
+        & .heading{
+            display: flex;
+            gap: 1em;
+            align-items: flex-end;
+            margin-bottom: 2em;
+            & span{
+                font-size: 2.5em;
+                font-weight: 1000;
+                line-height: 1;
+            }
+            & a{
+                text-decoration: underline;
+                color: $primary;
+            }
+    
+        }
+        & .recommended-cards{
+            display: grid;
+            grid-auto-flow: column;
+            background-color: transparent;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+            gap: 2.5em;
+            & .news-card{
+                width: 28em;
+                max-height: 30em;
+            }
+        }
+        & ::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+.newspage-body{
+    display: flex;
+    & .newspage-content{
+        width: 75%;
+        padding-right: 8em;
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+        & .heading{
+            font-size: 3em;
+            letter-spacing: 0;
+            line-height: 1;
+            font-weight: 400;
+            & .divider{
+                margin-top: 0.6em;
+                height: 0.04em;
+            }
+        }
+        & .divider{
+            width: 20%;
+        }
+        & .content{
+        }
+        & .quotes{
+            font-size: 2em;
+            color: $light-text-color;
+            font-style: italic;
+            line-height: 1;
+            & .quotes-upper{
+                margin-bottom: 0.8em;
+                height: 0.08em;
+                width: 20%;
+                background-color: $primary;
+            }
+            & .quotes-lower{
+                margin-top: 0.8em;
+                height: 0.08em;
+                margin-left: auto;
+                width: 20%;
+                background-color: $primary;
+            }
+        }
+        & .images{
+            border-radius: 1.375em;
+            height: 36em;
+            & img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        & .imagewithtext{
+            display: flex;
+            justify-content: space-between;
+            & .image-part{
+                border-radius: 1.375em;
+                width: 37.5%;
+                & img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .text-part{
+                width: 57.5%;
+                font-size: 1em;
+                line-height: 1.3em;
+                color: $light-text-color;
+            }
+        }
+    }
+    & .author-card{
+        width: 25%;
+        background-color: $default-background;
+        border-radius: 1.7em;
+        position: sticky;
+        scroll-behavior: smooth;
+        top: 10%;
+        height: 100%;
+        padding: 2.125em 2.375em 2.8em 2.375em;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        & .profile-image{
+            width: 6.5em;
+            height: 6.5em;
+            border-radius: 100%;
+            margin-bottom: 1.4em;
+            & img{
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+            }
+        }
+        & .title{
+            font-size: 0.93em;
+            line-height: 1;
+            margin-bottom: 0.5em;
+            letter-spacing: 0.28em;
+        }
+        & .author{
+            font-size: 1.875em;
+            margin-bottom: 0.6em;
+            color: $light-text-color;
+            line-height: 1;
+            font-style: italic;
+        }
+        & .divider{
+            height: 0.08em;
+        }
+        & .share-msg{
+            margin-top: 1.2em;
+            font-size: 1em;
+            margin-bottom: 1.3em;
+        }
+        & .social{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            & .social-icon{
+                display: flex;
+                & svg{
+                    cursor: pointer;
+                    border-radius: 100%;
+                    width: 1.5em;
+                    height: 1.5em;
+                    transition: all 0.5s 0s ease;
+                }
+            }
+            & :hover{
+                & svg{
+                    fill: $primary;
+                }
+            }
+        }
+        
+    }
+    
+}

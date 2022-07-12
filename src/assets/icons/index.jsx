@@ -18,3 +18,8 @@ export { ReactComponent as OutboundLinkIcon } from './outbound-link.svg';
 export { ReactComponent as CloseIcon } from './close.svg';
 export { ReactComponent as InfoIcon } from './infoicon.svg';
 export { ReactComponent as TickMarkIcon } from './tickmark.svg';
+export { ReactComponent as FacebookIcon } from './facebook.svg';
+export { ReactComponent as TwitterIcon } from './twitter.svg';
+export { ReactComponent as InstagramIcon } from './instagram.svg';
+export { ReactComponent as WhatsappIcon } from './whatsapp.svg';
+export { ReactComponent as Share2Icon } from './shareIcon2.svg';
