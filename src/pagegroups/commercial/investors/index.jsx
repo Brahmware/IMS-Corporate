@@ -3,7 +3,7 @@ import { Switch, useRouteMatch, Redirect, Route } from 'react-router-dom';
 import Advert from './advert';
 import Ims from './ims';
 import InvestorsContainers from './inverstorscontainers';
-import Prasar from './prasar';
+import Prasar from "./prasar"
 
 const Investors = ({ data }) => {
     const { url, path } = useRouteMatch();

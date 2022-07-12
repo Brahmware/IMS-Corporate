@@ -15,7 +15,7 @@ const AdvertiseWithUs = ({ data,url }) => {
         <div className="advertise-with-us-page">
             <AdvertiseWithUsContainerOne data={dataContainer1} />
             <AdvertiseWithUsContainerTwo data={dataContainer2} />
-            <AdvertiseWithUsContainerThree data={dataContainer3} />
+            <AdvertiseWithUsContainerThree data={dataContainer3} url={url}/>
             <AdvertiseWithUsContainerFour data={dataContainer4} url={ url} />
             <AdvertiseWithUsContainerFive data={dataContainer5} />
         </div>

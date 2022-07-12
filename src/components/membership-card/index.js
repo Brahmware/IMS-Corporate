@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
+import FilledButton from '../buttons/FilledButton';
 
 const MembershipCard = (props) => {
   const [formData, setformData] = useState({"name": "", "email": "", "crewStrength": "", "region": ""});
@@ -100,6 +102,7 @@ const MembershipCard = (props) => {
                             >
                             {buttonText}
                         </Button>
+                          <Link to={`${props.url}/form` }><FilledButton text={"More"} class={"form-body-button ms-5"} /></Link>
                     </form>
                 </div>
             </div>

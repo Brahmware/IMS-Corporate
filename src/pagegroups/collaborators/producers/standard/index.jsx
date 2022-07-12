@@ -1,16 +1,15 @@
 import React from 'react'
-import ContentContainer from "../../../../containers/common/contentcontainer"
+import StandardContainerOne from './container-1'
+import StandardContainerTwo from './container-2'
 
 const Standard = (props) => {
-    const card = props.data[0]
-    
-    return (
-        <div className=" white-background">
-            <div className="container">
-                <ContentContainer card={card} />
-            </div>
-        </div>
-    )
+    const card=props.data
+  return (
+      <>
+          <StandardContainerOne card={card}/>
+          <StandardContainerTwo card={card}/>
+    </>
+  )
 }
 
 export default Standard

@@ -1,15 +1,14 @@
 import React from 'react'
-import ContentContainer from "../../../../containers/common/contentcontainer"
+import ImsContainerOne from './container-1'
+import ImsContainerTwo from './container-2'
 
 const Ims = (props) => {
-  const card = props.data[0]
-  console.log(card)
+    const card = props.data
     return (
-        <div className=" white-background">
-            <div className="container">
-                <ContentContainer card={card} />
-            </div>
-        </div>
+        <>
+            <ImsContainerOne card={card} />
+            <ImsContainerTwo card={card} />
+        </>
     )
 }
 

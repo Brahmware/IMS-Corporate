@@ -1,17 +1,15 @@
-
 import React from 'react'
-import ContentContainer from "../../../../containers/common/contentcontainer"
+import EducatorContainerOne from './container-1'
+import EducatorContainerTwo from './container-2'
 
-const Educator= (props) => {
-  const card = props.data[0]
-  console.log(card)
-    return (
-        <div className=" white-background">
-            <div className="container">
-                <ContentContainer card={card} />
-            </div>
-        </div>
-    )
+const Educator = (props) => {
+    const card=props.data
+  return (
+      <>
+          <EducatorContainerOne card={card}/>
+          <EducatorContainerTwo card={card}/>
+    </>
+  )
 }
 
 export default Educator

@@ -2,6 +2,7 @@ import React from 'react'
 import { Switch, useRouteMatch, Redirect, Route } from 'react-router-dom';
 import Ims from "./ims"
 import Standard from './standard';
+import Member from './member';
 import SustainabilityStatementContainers from './sustainabilitystatementcontainers';
 
 
@@ -25,7 +26,7 @@ const SustainabilityStatement = ({ data }) => {
                 <Route path={`${path}/containers`} component={() => <SustainabilityStatementContainers data={ dataContainer.elements} url={url} />} />
                 <Route path={`${path}/IMS`} component={() => <Ims data={ dataIms.elements}/> } />
                 <Route path={`${path}/Standard`} component={() => <Standard data={ dataStandard.elements}/> } />
-                <Route path={`${path}/Member`} component={() => <Standard data={ dataMember.elements}/> } />
+                <Route path={`${path}/Member`} component={() => <Member data={ dataMember.elements}/> } />
                 <Route path={`${path}/*`}>
                     <Redirect to={`${path}`} />
                 </Route>

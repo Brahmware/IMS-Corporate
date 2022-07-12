@@ -1,15 +1,15 @@
 import React from 'react'
-import ContentContainer from "../../../../containers/common/contentcontainer"
+import FilmContainerOne from './container-1'
+import FilmContainerTwo from './container-2'
 
 const Film = (props) => {
-  const card = props.data[0]
+  const card = props.data
   console.log(card)
     return (
-        <div className=" white-background">
-            <div className="container">
-                <ContentContainer card={card} />
-            </div>
-        </div>
+        <>
+            <FilmContainerOne card={card} />
+            <FilmContainerTwo card={card} />
+        </>
     )
 }
 

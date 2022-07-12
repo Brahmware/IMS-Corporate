@@ -2,6 +2,7 @@ import React from 'react'
 import { Switch, useRouteMatch, Redirect, Route } from 'react-router-dom';
 import Advert from './advert';
 import AdvertiseWithUsContainers from './advertisewithuscontainers'
+import Forms from './form';
 import Ims from './ims';
 import Prasar from './prasar';
 
@@ -11,6 +12,7 @@ const AdvertiseWithUs = ({ data }) => {
     const dataIms = data && data.find(data => data.id === 'ims');
     const dataAdvert = data && data.find(data => data.id === 'advert');
     const dataPrasar = data && data.find(data => data.id === 'prasar');
+    const dataForm = data && data.find(data => data.id === 'form_data');
     return (
         <div className="advertise-with-us-page">
             <Switch>
@@ -24,6 +26,7 @@ const AdvertiseWithUs = ({ data }) => {
                 <Route path={`${path}/IMS`} component={() => <Ims data={dataIms.elements} />} />
                 <Route path={`${path}/Advert`} component={() => <Advert data={dataAdvert.elements} />} />
                 <Route path={`${path}/Prasar`} component={() => <Prasar data={dataPrasar.elements} />} />
+                <Route path={`${path}/form`} component={() => <Forms data={dataForm.elements} />} />
                 <Route path={`${path}/*`}>
                     <Redirect to={`${path}`} />
                 </Route>

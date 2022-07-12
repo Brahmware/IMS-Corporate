@@ -3,6 +3,7 @@ import { Switch, useRouteMatch, Redirect, Route } from 'react-router-dom';
 import ProducersContainers from './producerscontainers';
 import Ims from "./ims"
 import Standard from './standard';
+import Member from './member';
 
 
 const Producers = ({ data }) => {
@@ -25,7 +26,7 @@ const Producers = ({ data }) => {
                 <Route path={`${path}/containers`} component={() => <ProducersContainers data={ dataContainer.elements} url={url} />} />
                 <Route path={`${path}/IMS`} component={() => <Ims data={ dataIms.elements}/> } />
                 <Route path={`${path}/Standard`} component={() => <Standard data={ dataStandard.elements}/> } />
-                <Route path={`${path}/Member`} component={() => <Standard data={ dataMember.elements}/> } />
+                <Route path={`${path}/Member`} component={() => <Member data={ dataMember.elements}/> } />
                 <Route path={`${path}/*`}>
                     <Redirect to={`${path}`} />
                 </Route>

@@ -1,16 +1,15 @@
 import React from 'react'
-import ContentContainer from "../../../../containers/common/contentcontainer"
+import CorporateContainerOne from './container-1'
+import CorporateContainerTwo from './container-2'
 
 const Corporate = (props) => {
-  const card = props.data[0]
-  console.log(card)
-    return (
-        <div className=" white-background">
-            <div className="container">
-                <ContentContainer card={card} />
-            </div>
-        </div>
-    )
+    const card=props.data
+  return (
+      <>
+          <CorporateContainerOne card={card}/>
+          <CorporateContainerTwo card={card}/>
+    </>
+  )
 }
 
 export default Corporate

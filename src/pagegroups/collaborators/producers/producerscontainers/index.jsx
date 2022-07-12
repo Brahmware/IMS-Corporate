@@ -14,7 +14,6 @@ const ProducersContainers = ({data,url}) => {
     const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
     const dataContainer4 = data && data.find(data => data.id === 'container_4').elements;
     const dataContainer5 = data && data.find(data => data.id === 'container_5').elements;
-    console.log(dataContainer1)
     return (
         <div className='immersive-experience-page'>
             <ProducersContainerOne data={dataContainer1} />

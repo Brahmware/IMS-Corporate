@@ -1,15 +1,15 @@
 import React from 'react'
-import ContentContainer from "../../../../containers/common/contentcontainer"
+import SpeechContainerOne from './container-1'
+import SpeechContainerTwo from './container-2'
 
 const Speech = (props) => {
-  const card = props.data[0]
+  const card = props.data
   console.log(card)
     return (
-        <div className=" white-background">
-            <div className="container">
-                <ContentContainer card={card} />
-            </div>
-        </div>
+        <>
+            <SpeechContainerOne card={card} />
+            <SpeechContainerTwo card={card} />
+        </>
     )
 }
 
