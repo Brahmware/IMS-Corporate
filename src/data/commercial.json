@@ -237,22 +237,26 @@
                             {
                                 "label": "First Name",
                                 "type": "text",
-                                "id": "firstName"
+                                "id": "firstName",
+                                "error":"first name is required"
                             },
                             {
                                 "label": "Last Name",
                                 "type": "text",
-                                "id": "lastName"
+                                "id": "lastName",
+                                "error":"las name is required"
                             },
                             {
                                 "label": "Official email",
                                 "type": "email",
-                                "id": "email"
+                                "id": "email",
+                                "error":"email is required"
                             },
                             {
                                 "label": "Company Name",
                                 "type": "text",
-                                "id": "company_name"
+                                "id": "company_name",
+                                "error":"company name is required"
                             },
                             {
                                 "label": "Company Description",
@@ -262,12 +266,14 @@
                             {
                                 "label": "Website",
                                 "type": "text",
-                                "id": "website"
+                                "id": "website",
+                                "error":"website is required"
                             },
                             {
                                 "label": "Phone Number",
                                 "type": "number",
-                                "id": "phone_number"
+                                "id": "phone_number",
+                                "error":"phone number is required"
                             },
                             {
                                 "label": "Advertisement Description",

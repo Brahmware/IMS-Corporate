@@ -1,4 +1,7 @@
 .imageoverimage-card-container {
+    @media #{$large-mobile}{
+        padding: 0;
+    }
 
     & .card-part {
         & .black-button {

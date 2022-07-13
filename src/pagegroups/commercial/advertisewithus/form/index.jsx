@@ -1,7 +1,16 @@
 import React, { useState } from 'react'
 import { Button } from 'reactstrap'
+import { useForm } from 'react-hook-form';
 
 const Forms = ({ data }) => {
+
+    const { register, errors } = useForm({
+        mode: "onBlur",
+    });
+    // console.log(errors)
+
+
+
     const firstNameData = data[0].inputfield && data[0].inputfield.find(data => data.id === 'firstName');
     const lastNameData = data[0].inputfield && data[0].inputfield.find(data => data.id === 'lastName');
     const emailData = data[0].inputfield && data[0].inputfield.find(data => data.id === 'email');
@@ -27,12 +36,12 @@ const Forms = ({ data }) => {
         region: "",
         advertisementAvenue: "",
         advertisementType: "",
-        advertisementDescription: "", 
+        advertisementDescription: "",
     })
 
     const inputValue = (e) => {
         const { name, value } = e.target;
-        
+
         setInputFieldData({
             ...inputFieldData, [name]: value
         })
@@ -52,9 +61,8 @@ const Forms = ({ data }) => {
                             type={firstNameData.type}
                             placeholder={firstNameData.label}
                             className="input-field"
-
                         />
-                    </div>
+                    </div> 
                     <div className="col-md-6 mb-3">
                         <input
                             value={inputFieldData.lastName}
@@ -129,7 +137,7 @@ const Forms = ({ data }) => {
 
                                 {
                                     requirementData.option.map((data, index) => {
-                                        return (<option  value={data} key={index}>{data}</option>)
+                                        return (<option value={data} key={index}>{data}</option>)
                                     })
                                 }
                             </select>
@@ -202,6 +210,14 @@ const Forms = ({ data }) => {
                     </div>
                 </div>
             </form>
+            {/* <form onSubmit={handleSubmit(onSubmit)}>
+                <input {...register('firstName')} />
+                <input {...register('lastName', { required: true })} />
+                {errors.lastName && <p>Last name is required.</p>}
+                <input {...register('age', { pattern: /\d+/ })} />
+                {errors.age && <p>Please enter number for age.</p>}
+                <input type="submit" />
+            </form> */}
         </div>
     )
 }

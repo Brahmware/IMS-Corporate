@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media #{$small-mobile}{
+        gap: 1em;
+    }
     & svg {
         min-height: 8em;
         min-width: 8em;

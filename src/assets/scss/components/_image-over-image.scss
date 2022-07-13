@@ -17,12 +17,21 @@
         justify-content: center;
         align-items: center;
 
+        @media #{$large-mobile} {
+            width: 62.5%;
+            height: 27.5625em;
+        }
+        
         & .image-overlay {
             position: absolute;
             height: inherit;
             width: inherit;
             background-color: $color-overlay;
             opacity: 0.75;
+            
+            @media #{$large-mobile} {
+                width:100%;
+            }
         }
     }
 
@@ -33,6 +42,13 @@
         transform: translateX(calc(22.12em / 1.88));
         border-radius: $image-border-radius;
         z-index: 1;
+
+        @media #{$large-mobile} {
+            width: 14.9375em;
+            height: 21.1875em;
+            right: 2.3125em;
+            transform: translateX(0);
+        }
 
         & .image-wrapper {
             height: 100%;
@@ -46,7 +62,6 @@
                 border-radius: inherit;
             }
         }
-
     }
 
     &.inverse {
@@ -58,6 +73,10 @@
 
         & .top-image {
             transform: translateX(-1 * calc(22.12em / 1.88));
+            @media #{$large-mobile}{
+                transform: translateX(0);
+                left: 2.3125em;
+            }
         }
     }
 }

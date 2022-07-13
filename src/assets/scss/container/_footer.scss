@@ -7,6 +7,9 @@
     overflow: hidden;
     position: relative;
 
+    @media #{$large-mobile}{
+        height: max-content;
+    }
     & .container {
         height: 100%;
     }
@@ -42,9 +45,17 @@
             justify-content: space-between;
             align-items: center;
 
+            @media #{$large-mobile}{
+                flex-direction: column;
+            }
+
             & .sitemap-part {
                 font-size: 0.7em;
                 padding: 0;
+                
+                @media #{$large-mobile}{
+                    width: 100%;
+                }
             }
         }
 
@@ -55,11 +66,22 @@
             align-items: flex-end;
             font-size: 1em;
 
+            @media #{$large-mobile}{
+                flex-direction: column;
+            }
+
             & .col-6 {
                 padding: 0;
+                @media #{$large-mobile}{
+                    width: 100%;
+                }
             }
             & .subscribecomponent {
                 font-size: 0.8em;
+
+                @media #{$large-mobile}{
+                    align-items: center;
+                }
             }
         }
 

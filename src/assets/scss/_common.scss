@@ -54,6 +54,10 @@ body {
     line-height: 1.714;
     overflow-x: hidden;
 
+    @media #{large-mobile}{
+        font-size: 14px;
+    }
+
     @supports (overflow-x: clip) {
         overflow-x: clip;
     }
@@ -172,6 +176,11 @@ ol {
         font-weight: 900;
         line-height: 1.3em;
         letter-spacing: 0.02em;
+
+        @media #{$large-mobile}{
+            font-size:1.875em;
+            // text-align: center;
+        }
     }
 
     .divider {
@@ -199,12 +208,23 @@ ol {
     justify-content: flex-start;
     gap: $container-gap;
 
+    @media #{$large-mobile} {
+        flex-direction: column;
+        gap: 1em;
+    }
+
     & > div {
         width: 50%;
+        @media #{$large-mobile} {
+            width: 100%;
+        }
     }
 
     &.container-inverse {
         flex-direction: row-reverse;
+        @media #{$large-mobile} {
+            flex-direction: column;
+        }
     }
 }
 
