@@ -63,7 +63,7 @@ const Forms = ({ data }) => {
                             className="input-field"
                         />
                     </div> 
-                    <div className="col-md-6 mb-3">
+                    <div className="col-md-6 mb-3 ">
                         <input
                             value={inputFieldData.lastName}
                             name="lastName"
@@ -127,8 +127,8 @@ const Forms = ({ data }) => {
                             placeholder={phoneNumberData.label}
                             className="input-field" />
                     </div>
-                    <div className="col-md-6 row mb-3">
-                        <div className="menu col-md-6">
+                    <div className="col-md-6 row mb-3 pe-0 ">
+                        <div className="menu col-md-6 mb-3 pe-0">
 
                             <select value={inputFieldData.requirement}
                                 name="requirement"
@@ -142,7 +142,7 @@ const Forms = ({ data }) => {
                                 }
                             </select>
                         </div>
-                        <div className="menu col-md-6">
+                        <div className="menu col-md-6 pe-0">
                             <select
                                 value={inputFieldData.region}
                                 name="region"
