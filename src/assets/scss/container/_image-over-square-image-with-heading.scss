@@ -4,9 +4,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media #{$large-mobile}{
+            margin-top: 1em;
+        }
     }
 
     & .bookish-card {
         padding-right: 8em;
+
+        @media #{$large-mobile}{
+            padding: 0;
+        }
     }
 }

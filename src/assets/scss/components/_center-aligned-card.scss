@@ -17,5 +17,9 @@
     }
     & .content {
         max-width: 60%;
+
+        @media #{$large-mobile} {
+            max-width: 100%;
+        }
     }
 }

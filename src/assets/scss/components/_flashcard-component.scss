@@ -1,11 +1,20 @@
 .flashcard-part {
-    @media #{$large-mobile}{
+    @media #{$large-mobile} {
         width: 100%;
+        padding:0;
     }
     .flashcard-component {
         position: relative;
         height: 32em;
         width: 24em;
+
+        @media #{$large-mobile} {
+            width: 100%;
+            // height: max-content;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
 
         & .image-card {
             position: absolute;
@@ -18,6 +27,11 @@
             border-radius: 2em;
             z-index: 1;
             overflow: hidden;
+
+            @media #{$large-mobile} {
+                position: relative;
+                height: 30.75em;
+            }
 
             & .title-link {
                 position: absolute;
@@ -74,6 +88,10 @@
             right: 0;
             bottom: 7.5%;
             box-shadow: $deep-shadow;
+
+            @media #{$large-mobile} {
+                display: none;
+            }
         }
 
         & .information-card {
@@ -87,6 +105,39 @@
             padding-left: 30%;
             background-color: $default-background;
             z-index: -1;
+
+            @media #{$large-mobile} {
+                position: relative;
+                transform: translateY(-100%);
+                // animation: none;
+                animation: slide-up-down 10s linear infinite;
+                padding-left: 0;
+                padding-top: 30%;
+
+                @keyframes slide-up-down {
+                    0% {
+                        transform: translateY(-95%);
+                    }
+
+                    5% {
+                        transform: translateY(-70%);
+                    }
+
+                    10% {
+                        transform: translateY(-30%);
+                    }
+
+                    90% {
+                        transform: translateY(-30%);
+                    }
+                    95% {
+                        transform: translateY(-70%);
+                    }
+                    100% {
+                        transform: translateY(-100%);
+                    }
+                }
+            }
 
             & .information {
                 height: 100%;

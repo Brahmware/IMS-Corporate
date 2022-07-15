@@ -29,6 +29,10 @@
             align-items: flex-start;
             gap: 1em;
 
+            @media #{$large-mobile} {
+                width: fit-content;
+            }
+
             & .title {
                 font-size: 1.3em;
                 letter-spacing: 0.01em;

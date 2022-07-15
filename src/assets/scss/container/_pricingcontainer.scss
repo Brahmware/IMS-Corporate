@@ -86,10 +86,14 @@
                     text-transform: uppercase;
                     z-index: 1;
                     font-size: 0.8em;
-                    padding: 0.2em 4em;
+                    padding: 0.2em 2em;
                     background-color: $primary;
                     border-radius: 2em;
                     color: $white;
+
+                    // @media #{$large-mobile}{
+                    //     width: 75%;
+                    // }
                 }
             }
         }
