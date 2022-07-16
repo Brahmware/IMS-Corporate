@@ -162,7 +162,7 @@ const MegaMenu = (props) => {
                                                 >{group.pageGroup}
                                                 </span>
                                             </div>
-                                            <ul className={groupKey===activeSubMenu?'active':'inactive'} >
+                                            <ul className={groupKey===activeSubMenu?'active':''} >
                                                 {
                                                     group.pages.map((subgroup, pageKey) => {
                                                         return (

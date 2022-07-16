@@ -5,7 +5,10 @@
     justify-content: center;
     align-items: center;
     gap: 3em;
-
+    @media #{$large-mobile} {
+        font-size: 13px;
+    }
+    
     & .title {
         display: flex;
         justify-content: center;
@@ -20,14 +23,20 @@
         justify-content: center;
         align-items: center;
         gap: 1em;
-
+        
         & .tabs-section {
+            @media #{$large-mobile} {
+                font-size: 10px;
+            }
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-
+            
             & .each-tab {
+                @media #{$large-mobile} {
+                    font-size: 0.7em;
+                }
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -54,6 +63,9 @@
                         background-color: $primary;
                         transform: translateY(calc(1em + $thicker-divider/2));
                         transition: width $transition-specific;
+                        @media #{$large-mobile} {
+                            transform: translateY(calc(2em + $thicker-divider/2));
+                        }
 
                         &.active {
                             width: 100%;
