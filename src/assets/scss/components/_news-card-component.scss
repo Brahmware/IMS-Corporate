@@ -7,14 +7,15 @@
         height: 15em;
         object-fit: cover;
         object-position: center;
+        
     }
     & .big-news-card-image{
         height: 30em;
     }
-
+    
     & .news-card-content {
         padding: 1.5em 0em 3em 0em;
-
+        
         & .news-card-date {
             padding-bottom: 0.5em;
             font-size: 0.75em;
@@ -30,7 +31,22 @@
 
 .newsroom-container-1{
     & .in-newsroom-container-1{
-        height: 40em;
+        @media #{$extraBig-device}{
+            height: 40em;
+        }
+        @media #{$laptop-device}{
+            height: 40em;
+        }
+        @media #{$desktop-device}{
+            height: 40em;
+        }
+        @media #{$tablet-device}{
+            height: 40em;
+        }
+        @media #{$large-mobile} {
+            min-height: 40em;
+        }
+        
         & .highlighted-news-card {
             width: 75%;
             margin-right: 1em;
@@ -46,7 +62,36 @@
                 object-position: center;
                 margin-bottom: 1em;
             }
-    
+            
+        }
+        @media #{$large-mobile} {
+            flex-direction: column;
+            justify-content: flex-start;
+            & .highlighted-news-card {
+                width: 100%;
+                margin-right: 0;
+                & .news-card-title{
+                    font-size: 1.2em;
+                }
+            }
+            & .big-news-card-image{
+                height: 15em;
+            }
+            & .other-news-card{
+                width: 100%;
+                display: grid;
+                grid-auto-flow: column;
+                gap: 0.5em;
+                overflow-y: none;
+                overflow-x: scroll;
+                scroll-behavior: auto;
+                & img{
+                    height: 7em;
+                    width: 28vw;
+                    margin-bottom: 0em;
+                    margin-top: 1em;
+                }
+            }
         }
         & .other-news-card::-webkit-scrollbar {
             width: 0;
@@ -54,3 +99,10 @@
     }
 }
 
+.newsroom-container-2{
+    padding: 3em 0em;
+    @media #{$large-mobile} {
+        padding: 0;
+        padding-bottom: 3em;
+    }
+}
