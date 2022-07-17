@@ -35,7 +35,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         & .swiper-navigation {
             cursor: pointer;
             transition: opacity $transition-specific;
@@ -48,5 +47,37 @@
                 pointer-events: none;
             }
         }
+    }
+    & .carousal-part-desktop{
+        @media #{$large-mobile} {
+            display: none;
+        }
+    }
+    & .carousal-part-mb{
+        display: none;
+        @media #{$large-mobile} {
+            display: block;
+            & .swiper-system-mb{
+                display: grid;
+                grid-auto-flow: column;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+                gap: 2em;
+                font-size: 12px;
+                @media #{$small-mobile} {
+                    font-size: 11px;
+                }
+                @media #{$extra-small-mobile} {
+                    font-size: 10px;
+                }
+                & .card-holder{
+                    width: 85vw;
+                }
+            }
+            & ::-webkit-scrollbar{
+                display: none;
+            }
+        }
+
     }
 }
