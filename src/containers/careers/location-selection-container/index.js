@@ -12,7 +12,7 @@ const LocationSelectionContainer = ({ taglineblob }) => {
 
   return (
     <div className='location-selector-container section-with-padding noselect'>
-      <div className="container">
+      <div className="container laptop-container">
         <div className="odd-divided-section">
           <div className="tagline-continent-selector-part">
             <div
@@ -58,8 +58,57 @@ const LocationSelectionContainer = ({ taglineblob }) => {
           </div>
         </div>
       </div>
+
+
+      <div className="container-mb">
+        <div className="container">
+          <div className="tagline-continent-selector-part">
+            <div
+              className="tagline-part"
+              data-aos='fade-right'
+              data-aos-duration='600'
+              data-aos-delay='0'
+            >
+              <div className="subtitle">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: tagline.subtitle
+                  }}
+                />
+              </div>
+              <div className="content">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: tagline.content
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+            className="country-selector-part"
+            data-aos='fade-left'
+            data-aos-duration='600'
+            data-aos-delay='300'
+        >
+          <CountrySelectorComponent continentsdata={ContinentsData} />
+        </div>
+        <div className="container">
+          <div
+            className="continent-selector-part"
+            data-aos='fade-right'
+            data-aos-duration='600'
+            data-aos-delay='600'
+          >
+            <ContinentSelectorComponent continentsdata={ContinentsData} />
+          </div>
+        </div>
+      </div>
+
+
       <div
-        className="container divider-container"
+        className="container divider-container laptop-container"
         data-aos='fade-up'
         data-aos-duration='600'
         data-aos-delay='300'

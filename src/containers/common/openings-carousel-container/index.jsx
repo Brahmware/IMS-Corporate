@@ -82,12 +82,12 @@ const OpeningsCarouselContainer = ({ data, title, country, continent }) => {
                         <div className={`swiper-navigation ${navigationPrev}`}>
                             <i className="right-arrow-icon"><LeftarrowIcon /></i>
                         </div>
-                        <div className="container">
+                        <div className="container swiper-system">
                             <Swiper {...swiperOption}>
                                 {
                                     positionsToShow.map((position, key) => {
                                         return (
-                                            <SwiperSlide key={key}>
+                                            <SwiperSlide key={key} className="w-100">
                                                 <PositionCardComponent
                                                     data={position}
                                                     cardKey={key}

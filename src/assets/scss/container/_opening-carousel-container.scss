@@ -6,7 +6,18 @@
     justify-content: center;
     align-items: center;
     gap: 3em;
-
+    @media #{$large-mobile} {
+        font-size: 14px;
+        & .heading-part{
+            & .subtitle{
+                font-size: 2em;
+            }
+            & .title{
+                font-size: 1em;
+            }
+        }
+    }
+    
     & .heading-part {
         width: 100%;
         display: flex;
@@ -14,7 +25,6 @@
         justify-content: center;
         align-items: flex-start;
         gap: 1em;
-
         & .title {
             padding-left: 0.4em;
         }
