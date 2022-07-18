@@ -1,9 +1,8 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import DownloadImageCard from '../../../components/downloadimagecard';
 import FilledButton from '../../../components/buttons/FilledButton';
 import GalleryFilter from '../../../components/galleryfilter';
 import Modal from 'react-bootstrap/Modal';
-
 
 const GalleryFilterContainer = ({ data }) => {
     const positionFixButton = useRef(null);
@@ -19,9 +18,45 @@ const GalleryFilterContainer = ({ data }) => {
     const handleClose = () => {
         setShow(false);
     }
+    const [showModal, setShowModal] = useState(false);
+    const handleOnClick = (e) => {
+        !showModal && setShowModal(true);
+        document.body.style.overflow="hidden";
+    }
+    const cardRef = useRef(null);
+    let boundingRect = cardRef.current && cardRef.current.getBoundingClientRect();
+    const [cardDimension, setCardDimensions] = useState({
+        bottom: boundingRect && boundingRect.bottom,
+        height: boundingRect && boundingRect.height,
+        left: boundingRect && boundingRect.left,
+        right: boundingRect && boundingRect.right,
+        top: boundingRect && boundingRect.top,
+        width: boundingRect && boundingRect.width,
+    });
+    const closeModal = (event) => {
+        let closingPlaces = ['modal-bg', 'close-button'];
+        closingPlaces.includes(event.target.id) && setShowModal(false);
+        /* console.log(event.target) */
+        document.body.style.overflow="";
+    }
+    useEffect(() => {
+        let handleScroll = () => {
+            let boundingRect = cardRef.current && cardRef.current.getBoundingClientRect();
+            setCardDimensions({
+                bottom: boundingRect.bottom,
+                height: boundingRect.height,
+                left: boundingRect.left,
+                right: boundingRect.right,
+                top: boundingRect.top,
+                width: boundingRect.width,
+            })
+        }
 
-
-
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [cardRef])
     const [size, setsize] = useState(12);
     const filterData = data[0]
     const cardData = data[1].cards.slice(0, size)
@@ -30,12 +65,40 @@ const GalleryFilterContainer = ({ data }) => {
         // console.log(cardData)
         setShow(true);
     }
+    const [cardStyle, setCardStyle] = useState({});
+    const [cardStyleInMemo, setCardStyleInMemo] = useState({});
+    const handleModalClose = (event) => {
+
+        setCardStyle({
+            ...cardStyleInMemo,
+            opacity: 0   
+        })
+
+        setTimeout(() => {
+            closeModal(event);
+        }, 200)
+    }
     return (
         <div className="filter-download-image-card d-flex" ref={positionFixButton}>
+            {
+                showModal && 
+                <div className="filter-modal-container">
+                    <div
+                        id="modal-bg"
+                        onClick={handleModalClose}
+                    />
+                    <div className="container">
+                        <GalleryFilter data={filterData} />
+                    </div>
+                </div>
+            }
             <div className="filter-btn-holder"
                 style={{left: -1*leftPosition}}
             >
-                <div className="filter-btn" >
+                <div className="filter-btn" 
+                    onClick={handleOnClick}
+                    ref={cardRef}
+                >
                     FILTERS
                 </div>
             </div>
@@ -47,7 +110,7 @@ const GalleryFilterContainer = ({ data }) => {
                     {cardData.map((card, index) => {
                         return (
                             <div key={index}  >
-                                <DownloadImageCard card={card} click={handleShow} />
+                                <DownloadImageCard card={card}/>
                             </div>
                         )
                     })}

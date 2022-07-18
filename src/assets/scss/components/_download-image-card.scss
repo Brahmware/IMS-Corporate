@@ -3,6 +3,9 @@
     & .filter-btn-holder{
         display: none;
         @media #{$large-mobile} {
+            @media #{$small-mobile} {
+                font-size: 14px;
+            }
             display: block;
             padding: 4em 0em;
             position: absolute;
@@ -348,5 +351,52 @@
         font-size: 1em;
         color: $light-text-color;
         line-height: 1;
+    }
+
+    
+    .filter-modal-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        bottom: 0;
+        width: 100vw;
+        margin: auto;
+        overflow-y: scroll;
+    
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        & #modal-bg {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+    
+            /* slightly transparent fallback */
+            background-color: rgba(255, 255, 255, .9);
+            /* if backdrop support: very transparent and blurred */
+            // @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+            //     background-color: rgba(255, 255, 255, .3);
+            //     -webkit-backdrop-filter: blur(0.8em);
+            //     backdrop-filter: blur(0.8em);
+            // }
+        }
+        & .container{
+            font-size: 14px;
+            & .filter-container{
+                margin: auto;
+                margin-right: 0;
+                // height: 80%;
+            }
+        }
+    
+    }
+    .filter-modal-container::-webkit-scrollbar {
+        display: none;
     }
 }
