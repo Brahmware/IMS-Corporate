@@ -31,7 +31,7 @@
 
             & .page-title-container {
                 position: absolute;
-                bottom:0;
+                bottom: 0;
                 transform: translateY(-4em);
                 z-index: 1;
 
@@ -125,7 +125,10 @@
     }
 
     .ims-society-membership {
-        & .container {
+        & .containers {
+            @media #{$large-mobile} {
+                padding: 0;
+            }
             & .title {
                 text-align: center;
                 padding: 4em 0em;
@@ -135,6 +138,10 @@
             & .section-1 {
                 height: 15em;
                 overflow: hidden;
+
+                @media #{$large-mobile} {
+                    height: 10em;
+                }
 
                 & .banner-image-container {
                     height: 100%;
@@ -147,14 +154,30 @@
                 margin-top: 0.5em !important;
                 gap: 0.5em;
 
+                @media #{$large-mobile} {
+                    display: flex;
+                    flex-wrap:nowrap;
+                    gap:1px;
+                }
+
                 & .sub-container {
                     background-color: $primary;
                     // height: 15em;
                     padding: 2em;
-
+                    @media #{$large-mobile} {
+                        padding:0;
+                        display:flex;
+                        align-items:center;
+                        flex-direction:column;
+                        position:relative;
+                        height: 8.625em;
+                    }
                     & .box-button {
                         display: flex;
                         flex-direction: row-reverse;
+                        position: absolute;
+                        bottom: -15px;
+                        border: 1px solid $primary;
 
                         & button {
                             font-size: 1.2em;
@@ -169,12 +192,18 @@
                         font-size: 5em;
                         color: $white;
                         line-height: normal;
+                        @media #{$large-mobile} {
+                            font-size: 2.125em;
+                        }
                     }
 
                     & .tab-box-sub-heading {
                         font-size: 1.5em;
                         color: $white;
                         font-weight: 300;
+                        @media #{$large-mobile} {
+                            font-size:1em;
+                        }
                     }
 
                     & .divider {
@@ -187,6 +216,9 @@
                     & .tab-box-price {
                         font-size: 0.8em;
                         line-height: 2.8em;
+                        @media #{$large-mobile} {
+                            font-size:0.625em;
+                        }
                     }
                 }
 
