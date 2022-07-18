@@ -1,4 +1,49 @@
 .filter-download-image-card {
+    position: relative;
+    & .filter-btn-holder{
+        display: none;
+        @media #{$large-mobile} {
+            display: block;
+            padding: 4em 0em;
+            position: absolute;
+            height: 100%;
+            width: 0%;
+            & .filter-btn{
+                cursor: pointer;
+                font-size: 1em;
+                font-weight: 1000;
+                background-color: #E4E4E4;
+                float: left;
+                padding: 0.3em 3em 0.5em 3em;
+                border-bottom-left-radius: 2em;
+                border-bottom-right-radius: 2em;
+                position: sticky;
+                scroll-behavior: smooth;
+                top: 20%;
+                transform: rotate(-0.25turn) translate(-0%,-150%);
+            }
+        }
+        @media #{$tablet-device} {
+            display: block;
+            padding: 4em 0em;
+            position: absolute;
+            height: 100%;
+            width: 0%;
+            & .filter-btn{
+                font-size: 1em;
+                font-weight: 1000;
+                background-color: #E4E4E4;
+                float: left;
+                padding: 0.3em 3em 0.5em 3em;
+                border-bottom-left-radius: 2em;
+                border-bottom-right-radius: 2em;
+                position: sticky;
+                scroll-behavior: smooth;
+                top: 20%;
+                transform: rotate(-0.25turn) translate(-0%,-150%);
+            }
+        }
+    }
     .filter {
         width: 30%;
     }
@@ -111,6 +156,7 @@
                     & .grid-figure-title {
                         line-height: 1;
                         font-weight: bold;
+                        color: black;
                     }
 
                     & .grid-figure-subtitle {
@@ -130,6 +176,7 @@
     @media #{$tablet-device} {
         .filter {
             width: 0%;
+            display: none;
         }
 
         .gallery-container {
@@ -137,13 +184,13 @@
         }
 
         .filter-container {
-            display: none;
         }
     }
 
     @media #{$large-mobile} {
         .filter {
             width: 0%;
+            display: none;
         }
 
         .gallery-container {
@@ -151,35 +198,6 @@
         }
 
         .filter-container {
-            display: none;
-        }
-    }
-
-    @media #{$small-mobile} {
-        .filter {
-            width: 0%;
-        }
-
-        .gallery-container {
-            width: 100%;
-        }
-
-        .filter-container {
-            display: none;
-        }
-    }
-
-    @media #{$extra-small-mobile} {
-        .filter {
-            width: 0%;
-        }
-
-        .gallery-container {
-            width: 100%;
-        }
-
-        .filter-container {
-            display: none;
         }
     }
 

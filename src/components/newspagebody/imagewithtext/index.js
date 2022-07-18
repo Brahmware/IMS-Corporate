@@ -9,6 +9,7 @@ const ImageWithText = (props) => {
             <div className={props.type} style={{flexDirection: (elements.position==="left"?"row": "row-reverse")}} >
                 <div
                     className="image-part"
+                    style={{float: elements.position, marginRight: (elements.position==="left"?"3em":"0em"), marginBottom: "3em", marginLeft: (elements.position==="left"?"0em":"3em") }}
                     data-aos={(elements.position==="left"?"fade-right": "fade-left")}
                     data-aos-duration='600'
                     data-aos-delay='300'

@@ -5,7 +5,6 @@ const ParallaxImageComponent = ({ image, alt, filter, positiontop }) => {
 
     const [imageDimensions, setImageDimensions] = useState({});
     /* Parallax Background Image*/
-    // console.log(filter)
     const [, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
     const [parallax, setParallax] = useState({});
@@ -15,7 +14,7 @@ const ParallaxImageComponent = ({ image, alt, filter, positiontop }) => {
     const bgImageHeight = backgroundImagePartRef.current && backgroundImagePartRef.current.getBoundingClientRect().height;
     const bgImageWidth = backgroundImagePartRef.current && backgroundImagePartRef.current.getBoundingClientRect().width;
     const { height, width } = useWindowDimensions();
-
+    
     let windowInnerHeight = height,
         windowInnerWidth = width
 
@@ -51,7 +50,7 @@ const ParallaxImageComponent = ({ image, alt, filter, positiontop }) => {
                 <img
                     src={image} alt={alt ? alt : image}
                     style={{
-                        height: `${( 1 + parallax) * bgImageHeight}px`,
+                        height: `${( 1 + parallax_factor) * bgImageHeight}px`,
                         width: `${bgImageWidth}px`
                     }}
                     className="image-bg"
