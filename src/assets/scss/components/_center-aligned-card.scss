@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; 
     gap: 1em;
 
     & .divider {
@@ -17,5 +17,8 @@
     }
     & .content {
         max-width: 60%;
+        @media #{$large-mobile} {
+            max-width: 90%;
+        }
     }
 }

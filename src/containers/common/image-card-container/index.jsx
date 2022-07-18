@@ -9,7 +9,9 @@ const ImageCardContainer = (props) => {
 
     return (
         <div className='image-card-container container'>
-            <div className={!props.inverse ? "half-devided-section" : "half-devided-section container-inverse"}>
+            <div className={(!props.inverse ? "half-devided-section" : "half-devided-section container-inverse")+" "}
+                // style={{}}
+            >
                 <div
                     className="image-part"
                     data-aos={!props.inverse ? 'fade-right' : 'fade-left'}

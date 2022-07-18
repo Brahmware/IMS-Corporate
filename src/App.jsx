@@ -24,6 +24,7 @@ const EducationTeachingPage = lazy(() => import("./pagegroups/educationandteachi
 const PartnersPage = lazy(() => import("./pagegroups/partners"));
 const JoinPage = lazy(() => import("./pagegroups/join"));
 const PrivacyPolicyPage = lazy(() => import("./pagegroups/privacy-policy"));
+const NewsPage = lazy(() => import("./pagegroups/medianetwork/newsroom/newspage"));
 
 
 const App = () => {
@@ -78,6 +79,11 @@ const App = () => {
                         path={'/join'}
                         exact
                         component={JoinPage}
+                    />
+                    <Route
+                        path={'/newspage'}
+                        // exact
+                        component={NewsPage}
                     />
                     <Route path={'/*'}>
                         <Redirect to={'/'} />

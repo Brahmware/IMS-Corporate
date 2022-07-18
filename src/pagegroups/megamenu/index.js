@@ -7,9 +7,9 @@ import OurSocialLinks from '../../components/our-social-links';
 import SiteMap from '../../components/sitemap';
 import PrivacyPolicySitemapData from '../../data/privacy-policy-sitemap.json';
 import useResizeObserver from '../../utils/useResizableObserver';
+import SiteMapData from "../../data/sitemap.json";
 
 const MegaMenu = (props) => {
-
     const pages = PrivacyPolicySitemapData && PrivacyPolicySitemapData[0].pages;
     const visitor_agreement = pages && pages.find(page => page.id === 'visitor_agreement');
     const privacy_notice = pages && pages.find(page => page.id === 'privacy_notice');
@@ -71,12 +71,17 @@ const MegaMenu = (props) => {
         handleMediaChange(MEGAMENU_DEFAULT_MEDIA);
     }
 
+    const [activeSubMenu, setactiveSubMenu] = useState(0)
+    const handleMenuChange=(key)=>{
+        setactiveSubMenu(key);
+    }
+
     return (
         <div
             className={props.show ? "megamenu open" : "megamenu"}
             style={{ paddingTop: `${props.headerHeight}px` }}
         >
-            <div className="container h-100">
+            <div className="page-wrapper-container container h-100">
                 <div className="page-wrapper megamenu-page">
                     <div className="site-map-wrapper">
                         <div className="site-map-container">
@@ -140,8 +145,87 @@ const MegaMenu = (props) => {
                     </div>
                 </div>
             </div>
+            <div className="megamenu-page-mb page-wrapper">
+                    <div className="site-map-menu-mb">
+                        <div className="image-holder">
+                            <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="" />
+                        </div>
+                        <div className="overlay"/>
+                        <div className="site-menu-mb">
+                            {
+                                SiteMapData.map((group, groupKey) => {
+                                    return (
+                                        <React.Fragment key={groupKey}>
+                                            <div className="group-title-mb">
+                                                <span className='title-mb'
+                                                    onClick={()=>handleMenuChange(groupKey)}
+                                                >{group.pageGroup}
+                                                </span>
+                                            </div>
+                                            <ul className={groupKey===activeSubMenu?'active':''} >
+                                                {
+                                                    group.pages.map((subgroup, pageKey) => {
+                                                        return (
+                                                            <li className='page-mb' key={pageKey}>
+                                                                <a
+                                                                    id={subgroup.id}
+                                                                    href={subgroup.path}
+                                                                    // onClick={navigationOnClick}
+                                                                >
+                                                                    {subgroup.page}
+                                                                </a>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
+                                            </ul>
+
+                                        </React.Fragment>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                    <div className="container h-100">
+                        <div className="megamenu-footer">
+                            <div className="megamenu-footer-left">
+                                <div className="socials"><OurSocialLinks /></div>
+                                <div className="language-preference">
+                                    <LanguageComponent />
+                                </div>
+                            </div>
+                            <div className="legals">
+                                <Link
+                                    to={visitor_agreement.path}
+                                    id={visitor_agreement.id}
+                                    onClick={props.onclose}
+                                >
+                                    <span
+                                        dangerouslySetInnerHTML={{
+                                            __html: visitor_agreement.page
+                                        }}
+                                    />
+                                </Link>
+                                <Link
+                                    to={privacy_notice.path}
+                                    id={privacy_notice.id}
+                                    onClick={props.onclose}
+                                >
+                                    <span
+                                        dangerouslySetInnerHTML={{
+                                            __html: privacy_notice.page
+                                        }}
+                                    />
+                                </Link>
+                            </div>
+                            <div className="copyright"><CopyrightComponent /></div>
+                        </div>
+                    </div>
+            </div>
         </div>
     )
 }
 
 export default MegaMenu
+
+

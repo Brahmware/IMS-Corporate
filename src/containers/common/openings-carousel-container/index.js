@@ -78,11 +78,11 @@ const OpeningsCarouselContainer = ({ data, title, country, continent }) => {
                         </div>
                     </div>
 
-                    <div className="carousal-part">
+                    <div className="carousal-part carousal-part-desktop">
                         <div className={`swiper-navigation ${navigationPrev}`}>
                             <i className="right-arrow-icon"><LeftarrowIcon /></i>
                         </div>
-                        <div className="container">
+                        <div className="container swiper-system">
                             <Swiper {...swiperOption}>
                                 {
                                     positionsToShow.map((position, key) => {
@@ -103,6 +103,32 @@ const OpeningsCarouselContainer = ({ data, title, country, continent }) => {
                         <div className={`swiper-navigation ${navigationNext}`}>
                             <i className="left-arrow-icon"><RightarrowIcon /></i>
                         </div>
+                    </div>
+                    <div className="carousal-part carousal-part-mb">
+                        {/* <div className={`swiper-navigation ${navigationPrev}`}>
+                            <i className="right-arrow-icon"><LeftarrowIcon /></i>
+                        </div> */}
+                        <div className="container">
+                            <div className="swiper-system swiper-system-mb">
+                                {
+                                    positionsToShow.map((position, key) => {
+                                        return (
+                                            <div className="card-holder" key={key}>
+                                                <PositionCardComponent
+                                                    data={position}
+                                                    cardKey={key}
+                                                    country={country}
+                                                    continent={continent}
+                                                />
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </div>
+                        {/* <div className={`swiper-navigation ${navigationNext}`}>
+                            <i className="left-arrow-icon"><RightarrowIcon /></i>
+                        </div> */}
                     </div>
                 </div>
             }

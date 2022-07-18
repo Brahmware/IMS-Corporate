@@ -4,20 +4,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     & .banner-background {
         height: calc(100vh - $banner-tab-container-height - $header-height);
         flex-shrink: 0;
         width: 100%;
         overflow: hidden;
-
         & img {
             width: 100%;
             height: 100%;
+            @media #{$large-mobile} {
+                height: calc(100vh - $banner-tab-container-height - $header-height);
+            }
             object-fit: cover;
         }
     }
-
+    
     & .title-tabs-part {
         width: 100%;
         background-color: $white;
@@ -28,6 +29,9 @@
             justify-content: flex-end;
             align-items: center;
             
+            @media #{$large-mobile} {
+                font-size: 10px;
+            }
             & .page-title {
                 position: absolute;
                 color: $white;
@@ -44,9 +48,37 @@
             width: 100%;
             height: $banner-tab-container-height;
             display: flex;
-            justify-content: space-around;
+            @media #{$extraBig-device} {
+                justify-content: space-around;
+            }
+            @media #{$laptop-device} {
+                justify-content: space-around;
+            }
+            @media #{$desktop-device} {
+                justify-content: space-around;
+            }
+            @media #{$tablet-device} {
+                justify-content: space-around;
+            }
             align-items: center;
+            @media #{$large-mobile} {
+                display: grid;
+                grid-auto-flow: column;
+                overflow-x: auto;
+                gap: 5em;
+            }
+            // @media #{$small-mobile} {
+            //     display: grid;
+            //     grid-auto-flow: column;
+            //     overflow-x: auto;
+            //     gap: 10em;
+            // }
             & .each-tab{
+                @media #{$large-mobile} {
+                    width: 10em;
+                    text-align: center;
+                    font-size: 1em;
+                }
                 font-size: 1.125em;
                 font-weight: 1000;
                 text-transform: uppercase;
@@ -65,6 +97,34 @@
                 }
             }
         }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        // & .tabs-container {
+            //     width: 100%;
+        //     height: $banner-tab-container-height;
+        //     display: flex;
+        //     justify-content: space-around;
+        //     align-items: center;
+        //     & .each-tab{
+        //         font-size: 1.125em;
+        //         font-weight: 1000;
+        //         text-transform: uppercase;
+        //         color: $light-text-color;
+        //         transition: $transition-base;
+        //         cursor: pointer;
+        //         & span {
+        //             pointer-events: none;
+        //         }
+        //         &:hover {
+        //             color: rgba($color: $black, $alpha: 0.75);
+        //         }
+        //         &.active-tab {
+        //             color: $black;
+        //             transform: scale(1.1);
+        //         }
+        //     }
+        // }
     }
 
 }

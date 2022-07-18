@@ -1,10 +1,16 @@
 .image-top-center-aligned-card-component {
     & .image-part {
+        @media #{$large-mobile} {
+            font-size: 8px;
+        }
+        @media #{$small-mobile} {
+            font-size: 7px;
+        }
         width: 100%;
         height: 29.24em;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center; 
         align-items: center;
 
         & .top-half-bg, 
@@ -36,5 +42,10 @@
             }
         }
 
+    }
+    & .center-aligned-card-part{
+        @media #{$large-mobile} {
+            font-size: 15px;
+        }
     }
 }

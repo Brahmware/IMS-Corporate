@@ -5,6 +5,7 @@ import NewsRoomContainerThree from '../../../containers/newsroom/container-3'
 import NewsRoomContainerFour from '../../../containers/newsroom/container-4'
 
 const NewsRoom = ({ data }) => {
+
     const dataContainer1 = data && data.find(data => data.id === 'container_1').elements
     const dataContainer0 = data && data.find(data => data.id === 'container_2').elements
     const dataContainer2 = dataContainer0[0].cards.splice(0, 6)
@@ -16,6 +17,7 @@ const NewsRoom = ({ data }) => {
             <NewsRoomContainerTwo data={dataContainer2} />
             <NewsRoomContainerThree data={dataContainer3} />
             <NewsRoomContainerFour data={dataContainer4} />
+            
         </>
     )
 }
