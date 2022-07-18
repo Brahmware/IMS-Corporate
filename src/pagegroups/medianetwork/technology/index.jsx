@@ -1,29 +1,36 @@
 import React from 'react'
-import TechnologyContainerOne from '../../../containers/technology/container-1'
-import TechnologyContainerTwo from '../../../containers/technology/container-2'
-import TechnologyContainerThree from '../../../containers/technology/container-3'
-import TechnologyContainerFour from '../../../containers/technology/container-4'
-import TechnologyContainerFive from '../../../containers/technology/container-5'
-import TechnologyContainerSix from '../../../containers/technology/container-6'
-import TechnologyContainerSeven from '../../../containers/technology/container-7'
+import { Switch, useRouteMatch, Redirect, Route } from 'react-router-dom';
+import TechnologyContainers from './technologycontainers'
+import Tech from './tech'
+import Speech from './speech';
+import Film from './film';
 
 const Technology = ({ data }) => {
-    const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
-    const dataContainer2 = data && data.find(data => data.id === 'container_2').elements;
-    const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
-    const dataContainer4 = data && data.find(data => data.id === 'container_4').elements;
-    const dataContainer5 = data && data.find(data => data.id === 'container_5').elements;
-    const dataContainer6 = data && data.find(data => data.id === 'container_6').elements;
-    const dataContainer7 = data && data.find(data => data.id === 'container_7').elements;
+    const { url, path } = useRouteMatch();
+    const dataContainers = data && data.find(data => data.id === 'containers');
+    const dataTech = data && data.find(data => data.id === 'tech');
+    const dataSpeech = data && data.find(data => data.id === 'speech');
+    const dataFilm = data && data.find(data => data.id === 'film');
     return (
         <>
-            <TechnologyContainerOne data={dataContainer1} />
-            <TechnologyContainerTwo data={dataContainer2} />
-            <TechnologyContainerThree data={dataContainer3} />
-            <TechnologyContainerFour data={dataContainer4}/>
-            <TechnologyContainerFive data={dataContainer5}/>
-            <TechnologyContainerSix data={dataContainer6} />
-            <TechnologyContainerSeven data={dataContainer7} />
+            {/* <TechnologyContainers data={dataContainers} /> */}
+            
+
+            <Switch>
+                <Route path={`${path}`}
+                    exact
+                >
+
+                    <Redirect to={`${path}/containers`} />
+                </Route>
+                <Route path={`${path}/containers`} component={() => <TechnologyContainers data={ dataContainers.elements} url={url} />} />
+                <Route path={`${path}/Tech`} component={() => <Tech data={ dataTech.elements}/> } />
+                <Route path={`${path}/Speech`} component={() => <Speech data={ dataSpeech.elements}/> } />
+                <Route path={`${path}/Film`} component={() => <Film data={ dataFilm.elements}/> } />
+                <Route path={`${path}/*`}>
+                    <Redirect to={`${path}`} />
+                </Route>
+            </Switch>
         </>
     )
 }

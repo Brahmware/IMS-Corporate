@@ -1,6 +1,12 @@
 .imageoverimage-card-container {
+    @media #{$large-mobile}{
+        padding: 0;
+    }
 
     & .card-part {
+        @media #{$large-mobile}{
+            padding: 2.3125em;
+        }
         & .black-button {
             font-size: 0.9em;
             margin-top: 1em;

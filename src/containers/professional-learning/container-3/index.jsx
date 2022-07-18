@@ -1,7 +1,7 @@
 import React from 'react'
 import TabBoxContainer from '../../../containers/common/tabbox-image-background';
 
-const ProfessionalLearningContainerThree = ({ data }) => {
+const ProfessionalLearningContainerThree = ({ data,url }) => {
     const cardData = data[0].cards;
     return (
         <div className='technology-container-4 white-background pb-5'>
@@ -10,7 +10,7 @@ const ProfessionalLearningContainerThree = ({ data }) => {
                     {
                         cardData.map((card, index) => {
                             return (
-                                <TabBoxContainer data={card} key={index} />
+                                <TabBoxContainer data={card} key={index} tabkey={index} url={url}/>
                             )
                         })
                     }

@@ -14,5 +14,9 @@
         background-color: $default-background;
         padding: 4em 0;
         width: 100%;
+
+        @media #{$small-mobile}{
+            overflow-x: scroll;
+        }
     }
 }

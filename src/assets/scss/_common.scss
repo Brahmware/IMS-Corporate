@@ -45,6 +45,12 @@ body {
     font-smooth: auto;
 }
 
+@media #{$large-mobile} {
+    #root {
+        overflow-x: hidden;
+    }
+}
+
 body {
     background-color: $body-color;
     color: $default-black;
@@ -53,6 +59,10 @@ body {
     visibility: visible;
     line-height: 1.714;
     overflow-x: hidden;
+
+    @media #{large-mobile} {
+        font-size: 14px;
+    }
 
     @supports (overflow-x: clip) {
         overflow-x: clip;
@@ -153,6 +163,9 @@ ol {
         max-width: 1920px;
         padding: 0 70px;
     }
+    @media #{$large-mobile} {
+        padding: 0em 2.3125em ;
+    }
 }
 
 /* Section Style */
@@ -175,6 +188,11 @@ ol {
         font-weight: 900;
         line-height: 1.3em;
         letter-spacing: 0.02em;
+
+        @media #{$large-mobile} {
+            font-size: 1.875em;
+            // text-align: center;
+        }
     }
 
     .divider {
@@ -195,6 +213,10 @@ ol {
 
 .section-with-padding {
     padding: $section-padding;
+
+    @media #{$large-mobile} {
+        padding: 2em 0em;
+    }
 }
 
 .half-devided-section {
@@ -202,12 +224,23 @@ ol {
     justify-content: flex-start;
     gap: $container-gap;
 
+    @media #{$large-mobile} {
+        flex-direction: column;
+        gap: 1em;
+    }
+
     & > div {
         width: 50%;
+        @media #{$large-mobile} {
+            width: 100%;
+        }
     }
 
     &.container-inverse {
         flex-direction: row-reverse;
+        @media #{$large-mobile} {
+            flex-direction: column;
+        }
     }
 }
 
@@ -222,13 +255,31 @@ ol {
     justify-content: flex-start;
     gap: $container-gap;
 
+    @media #{$large-mobile} {
+        flex-direction: column-reverse;
+    }
+
     & > div {
         &:first-child {
             width: 45.48%;
+            @media #{$large-mobile} {
+                width: 100%;
+            }
         }
 
         &:last-child {
             width: 54.52%;
+            @media #{$large-mobile} {
+                width: 100%;
+            }
+        }
+        & .button-element {
+            @media #{$large-mobile} {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
         }
     }
 

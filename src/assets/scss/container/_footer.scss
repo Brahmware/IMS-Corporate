@@ -7,6 +7,9 @@
     overflow: hidden;
     position: relative;
 
+    @media #{$large-mobile} {
+        height: max-content;
+    }
     & .container {
         height: 100%;
     }
@@ -26,6 +29,10 @@
             right: 0;
             background-color: $default-black;
             border-radius: 2.5em;
+
+            @media #{$large-mobile} {
+                width: 100%;
+            }
         }
     }
     & .page-wrapper {
@@ -35,6 +42,9 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @media #{$large-mobile} {
+            align-items: center;
+        }
 
         & .sitemap-section {
             display: flex;
@@ -42,9 +52,19 @@
             justify-content: space-between;
             align-items: center;
 
+            @media #{$large-mobile} {
+                flex-direction: column;
+                padding-top: 3em;
+                width: 100%;
+            }
+
             & .sitemap-part {
                 font-size: 0.7em;
                 padding: 0;
+
+                @media #{$large-mobile} {
+                    width: 100%;
+                }
             }
         }
 
@@ -55,11 +75,22 @@
             align-items: flex-end;
             font-size: 1em;
 
+            @media #{$large-mobile} {
+                flex-direction: column;
+            }
+
             & .col-6 {
                 padding: 0;
+                @media #{$large-mobile} {
+                    width: 100%;
+                }
             }
             & .subscribecomponent {
                 font-size: 0.8em;
+
+                @media #{$large-mobile} {
+                    align-items: center;
+                }
             }
         }
 
@@ -67,6 +98,9 @@
             padding: 0;
             gap: 0;
             font-size: 1em;
+            @media #{$large-mobile} {
+                margin-top: 2em;
+            }
 
             & .privacy-copyright-section-left {
                 display: flex;
@@ -75,9 +109,16 @@
                 align-items: flex-start;
                 gap: 1.5em;
 
+                @media #{$large-mobile} {
+                    align-items: center;
+                }
                 & .contactus {
                     font-size: 0.8em;
                     font-weight: 1000;
+
+                    @media #{$large-mobile} {
+                        display: none;
+                    }
                 }
 
                 & .social-links {
@@ -105,6 +146,13 @@
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
+
+                    @media #{$large-mobile} {
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        margin-top: 1.25em;
+                        row-gap: 1em;
+                    }
 
                     & a {
                         text-decoration: underline;

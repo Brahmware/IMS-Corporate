@@ -49,7 +49,7 @@
                             {
                                 "image": "/images/media-network/businessandbrands/tv-network/container-2/cover.jpg",
                                 "card": {
-                                    "button":"VIEW MORE",
+                                    "button": "VIEW MORE",
                                     "title": "IMSCIENCE",
                                     "subtitle": "India’s first Science OTT for curious people",
                                     "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
@@ -64,7 +64,7 @@
                                 "image": "/images/media-network/businessandbrands/tv-network/container-3/cover.jpg",
                                 "card": {
                                     "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
+                                    "button": "VIEW MORE",
                                     "subtitle": "History narrated for the newest generation",
                                     "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -78,7 +78,7 @@
                                 "image": "/images/media-network/businessandbrands/tv-network/container-4/cover.jpg",
                                 "card": {
                                     "title": "POP NEWS",
-                                    "button":"VIEW MORE",
+                                    "button": "VIEW MORE",
                                     "subtitle": "Global Disaster NEWS Channel",
                                     "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -92,7 +92,7 @@
                                 "image": "/images/media-network/businessandbrands/tv-network/container-5/cover.jpg",
                                 "card": {
                                     "title": "WORLD TV",
-                                    "button":"VIEW MORE",
+                                    "button": "VIEW MORE",
                                     "subtitle": "If World Culture is fire, World TV is gasoline",
                                     "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -106,7 +106,7 @@
                                 "image": "/images/media-network/businessandbrands/tv-network/container-6/cover.jpg",
                                 "card": {
                                     "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
+                                    "button": "VIEW MORE",
                                     "subtitle": "Responsible Lifestyle your way",
                                     "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -170,13 +170,113 @@
                         "id": "container_2",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
-                                "card": {
-                                    "button":"VIEW MORE",
-                                    "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
+                                "cards": [
+                                    {
+                                        "id": 1,
+                                        "images": "https://robohash.org/sequiutexercitationem.png?size=1000x1000&set=set1",
+                                        "title": "Bitwolf",
+                                        "content": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 2,
+                                        "images": "https://robohash.org/molestiaererumdolorem.png?size=500x500&set=set1",
+                                        "title": "Temp",
+                                        "content": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 3,
+                                        "images": "https://robohash.org/aspernaturvoluptasat.png?size=500x500&set=set1",
+                                        "title": "Tin",
+                                        "content": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 4,
+                                        "images": "https://robohash.org/molestiaenobisveniam.png?size=500x500&set=set1",
+                                        "title": "Gembucket",
+                                        "content": null,
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 5,
+                                        "images": "https://robohash.org/atrecusandaequod.png?size=500x500&set=set1",
+                                        "title": "Bytecard",
+                                        "content": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 6,
+                                        "images": "https://robohash.org/utquianam.png?size=500x500&set=set1",
+                                        "title": "Fix San",
+                                        "content": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 7,
+                                        "images": "https://robohash.org/nullaetrepudiandae.png?size=500x500&set=set1",
+                                        "title": "Wrapsafe",
+                                        "content": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 8,
+                                        "images": "https://robohash.org/reprehenderitsedmolestiae.png?size=500x500&set=set1",
+                                        "title": "Fix San",
+                                        "content": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 9,
+                                        "images": "https://robohash.org/ipsaautemdolorem.png?size=500x500&set=set1",
+                                        "title": "Cookley",
+                                        "content": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 10,
+                                        "images": "https://robohash.org/etquidemvoluptatem.png?size=500x500&set=set1",
+                                        "title": "Bitchip",
+                                        "content": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 11,
+                                        "images": "https://robohash.org/corporisadet.png?size=500x500&set=set1",
+                                        "title": "Fixflex",
+                                        "content": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 12,
+                                        "images": "https://robohash.org/voluptatesnumquamconsequuntur.png?size=500x500&set=set1",
+                                        "title": "Y-Solowarm",
+                                        "content": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 13,
+                                        "images": "https://robohash.org/voluptatefugiatvel.png?size=500x500&set=set1",
+                                        "title": "Domainer",
+                                        "content": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 14,
+                                        "images": "https://robohash.org/enimestiste.png?size=500x500&set=set1",
+                                        "title": "Voyatouch",
+                                        "content": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 15,
+                                        "images": "https://robohash.org/exipsumiure.png?size=500x500&set=set1",
+                                        "title": "Redhold",
+                                        "content": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+                                        "text": "TV-U"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -184,66 +284,358 @@
                         "id": "container_3",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
-                                "card": {
-                                    "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_4",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
-                                "card": {
-                                    "title": "POP NEWS",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_5",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
-                                "card": {
-                                    "title": "WORLD TV",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_6",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
-                                "card": {
-                                    "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_7",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
-                                "title": "IMS Explorers",
-                                "subtitle": "Changemakers<br /> and Innovators",
-                                "buttontext": "APPLY"
+                                "cards": [
+                                    {
+                                        "id": 1,
+                                        "images": "https://robohash.org/quamipsumdolorum.png?size=500x500&set=set1",
+                                        "subtitle": "Greenlam",
+                                        "heading": "Uraeginthus angolensis",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 2,
+                                        "images": "https://robohash.org/nobisaaut.png?size=500x500&set=set1",
+                                        "subtitle": "Keylex",
+                                        "heading": "Phoenicopterus chilensis",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 3,
+                                        "images": "https://robohash.org/magnivoluptatumculpa.png?size=500x500&set=set1",
+                                        "subtitle": "Y-Solowarm",
+                                        "heading": "Stercorarius longicausus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 4,
+                                        "images": "https://robohash.org/porroassumendanihil.png?size=500x500&set=set1",
+                                        "subtitle": "Tempsoft",
+                                        "heading": "Coendou prehensilis",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 5,
+                                        "images": "https://robohash.org/exinciduntdolor.png?size=500x500&set=set1",
+                                        "subtitle": "Domainer",
+                                        "heading": "Macropus agilis",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 6,
+                                        "images": "https://robohash.org/sintvitaeporro.png?size=500x500&set=set1",
+                                        "subtitle": "Redhold",
+                                        "heading": "Speothos vanaticus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 7,
+                                        "images": "https://robohash.org/saepeadquia.png?size=500x500&set=set1",
+                                        "subtitle": "Viva",
+                                        "heading": null,
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 8,
+                                        "images": "https://robohash.org/doloresquisunt.png?size=500x500&set=set1",
+                                        "subtitle": "Opela",
+                                        "heading": "Falco peregrinus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 9,
+                                        "images": "https://robohash.org/harumetomnis.png?size=500x500&set=set1",
+                                        "subtitle": "Latlux",
+                                        "heading": "Eubalaena australis",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 10,
+                                        "images": "https://robohash.org/debitisdoloreeum.png?size=500x500&set=set1",
+                                        "subtitle": "Cardguard",
+                                        "heading": "Geococcyx californianus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 11,
+                                        "images": "https://robohash.org/laboredignissimoset.png?size=500x500&set=set1",
+                                        "subtitle": "Trippledex",
+                                        "heading": "Chamaelo sp.",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 12,
+                                        "images": "https://robohash.org/sedinnulla.png?size=500x500&set=set1",
+                                        "subtitle": "Bitchip",
+                                        "heading": "Ara chloroptera",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 13,
+                                        "images": "https://robohash.org/velaliaseum.png?size=500x500&set=set1",
+                                        "subtitle": "Regrant",
+                                        "heading": "Ploceus rubiginosus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 14,
+                                        "images": "https://robohash.org/perspiciatisdoloresed.png?size=500x500&set=set1",
+                                        "subtitle": "Home Ing",
+                                        "heading": null,
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 15,
+                                        "images": "https://robohash.org/errorautdicta.png?size=500x500&set=set1",
+                                        "subtitle": "Zaam-Dox",
+                                        "heading": "Vulpes vulpes",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 16,
+                                        "images": "https://robohash.org/optiodoloremquealiquam.png?size=500x500&set=set1",
+                                        "subtitle": "Konklab",
+                                        "heading": "Junonia genoveua",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 17,
+                                        "images": "https://robohash.org/nequesedet.png?size=500x500&set=set1",
+                                        "subtitle": "Job",
+                                        "heading": null,
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 18,
+                                        "images": "https://robohash.org/dolorumvoluptatibusex.png?size=500x500&set=set1",
+                                        "subtitle": "Biodex",
+                                        "heading": null,
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 19,
+                                        "images": "https://robohash.org/dictanondoloribus.png?size=500x500&set=set1",
+                                        "subtitle": "Cookley",
+                                        "heading": "Vulpes vulpes",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 20,
+                                        "images": "https://robohash.org/molestiasvelitsuscipit.png?size=500x500&set=set1",
+                                        "subtitle": "Fintone",
+                                        "heading": null,
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 21,
+                                        "images": "https://robohash.org/inventoreducimusalias.png?size=500x500&set=set1",
+                                        "subtitle": "Ventosanzap",
+                                        "heading": "Gorilla gorilla",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 22,
+                                        "images": "https://robohash.org/eaipsumquia.png?size=500x500&set=set1",
+                                        "subtitle": "Veribet",
+                                        "heading": "Spermophilus armatus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 23,
+                                        "images": "https://robohash.org/eiusetinventore.png?size=500x500&set=set1",
+                                        "subtitle": "Tres-Zap",
+                                        "heading": "Chionis alba",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 24,
+                                        "images": "https://robohash.org/errorexaut.png?size=500x500&set=set1",
+                                        "subtitle": "Treeflex",
+                                        "heading": "Spheniscus magellanicus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 25,
+                                        "images": "https://robohash.org/nisitemporeomnis.png?size=500x500&set=set1",
+                                        "subtitle": "Latlux",
+                                        "heading": "Damaliscus dorcas",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 26,
+                                        "images": "https://robohash.org/idassumendafacilis.png?size=500x500&set=set1",
+                                        "subtitle": "Tin",
+                                        "heading": "Sagittarius serpentarius",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 27,
+                                        "images": "https://robohash.org/eosadipisciiusto.png?size=500x500&set=set1",
+                                        "subtitle": "Voyatouch",
+                                        "heading": "Lemur catta",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 28,
+                                        "images": "https://robohash.org/acumqueautem.png?size=500x500&set=set1",
+                                        "subtitle": "Opela",
+                                        "heading": "Pytilia melba",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 29,
+                                        "images": "https://robohash.org/porronatusrepellendus.png?size=500x500&set=set1",
+                                        "subtitle": "Job",
+                                        "heading": "Tadorna tadorna",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 30,
+                                        "images": "https://robohash.org/beataeporroet.png?size=500x500&set=set1",
+                                        "subtitle": "Subin",
+                                        "heading": "Scolopax minor",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 31,
+                                        "images": "https://robohash.org/quiutassumenda.png?size=500x500&set=set1",
+                                        "subtitle": "Pannier",
+                                        "heading": "Genetta genetta",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 32,
+                                        "images": "https://robohash.org/quiillumqui.png?size=500x500&set=set1",
+                                        "subtitle": "Latlux",
+                                        "heading": "Bradypus tridactylus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 33,
+                                        "images": "https://robohash.org/temporavoluptateomnis.png?size=500x500&set=set1",
+                                        "subtitle": "Opela",
+                                        "heading": "Ateles paniscus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 34,
+                                        "images": "https://robohash.org/utaliasinventore.png?size=500x500&set=set1",
+                                        "subtitle": "Latlux",
+                                        "heading": "Actophilornis africanus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 35,
+                                        "images": "https://robohash.org/nesciuntrerumiste.png?size=500x500&set=set1",
+                                        "subtitle": "Keylex",
+                                        "heading": "Sula dactylatra",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 36,
+                                        "images": "https://robohash.org/inventorequaeconsequatur.png?size=500x500&set=set1",
+                                        "subtitle": "Alpha",
+                                        "heading": "Geochelone radiata",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 37,
+                                        "images": "https://robohash.org/officiismaioresconsequatur.png?size=500x500&set=set1",
+                                        "subtitle": "Keylex",
+                                        "heading": "Larus dominicanus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 38,
+                                        "images": "https://robohash.org/verodelenitioptio.png?size=500x500&set=set1",
+                                        "subtitle": "Mat Lam Tam",
+                                        "heading": "Crotalus adamanteus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 39,
+                                        "images": "https://robohash.org/saepedictasint.png?size=500x500&set=set1",
+                                        "subtitle": "Domainer",
+                                        "heading": "Gyps bengalensis",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 40,
+                                        "images": "https://robohash.org/deleniticorruptiomnis.png?size=500x500&set=set1",
+                                        "subtitle": "Home Ing",
+                                        "heading": "Semnopithecus entellus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 41,
+                                        "images": "https://robohash.org/voluptatibusmolestiaeconsequatur.png?size=500x500&set=set1",
+                                        "subtitle": "Gembucket",
+                                        "heading": "Trichoglossus chlorolepidotus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 42,
+                                        "images": "https://robohash.org/illumassumendaitaque.png?size=500x500&set=set1",
+                                        "subtitle": "Rank",
+                                        "heading": "Colaptes campestroides",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 43,
+                                        "images": "https://robohash.org/underepellendusdolor.png?size=500x500&set=set1",
+                                        "subtitle": "Y-Solowarm",
+                                        "heading": "Felis silvestris lybica",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 44,
+                                        "images": "https://robohash.org/nullainciduntnon.png?size=500x500&set=set1",
+                                        "subtitle": "Cardguard",
+                                        "heading": "Equus hemionus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 45,
+                                        "images": "https://robohash.org/repellatipsaest.png?size=500x500&set=set1",
+                                        "subtitle": "Veribet",
+                                        "heading": "Meles meles",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 46,
+                                        "images": "https://robohash.org/sequinihileveniet.png?size=500x500&set=set1",
+                                        "subtitle": "Solarbreeze",
+                                        "heading": "Eudyptula minor",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 47,
+                                        "images": "https://robohash.org/etesthic.png?size=500x500&set=set1",
+                                        "subtitle": "Keylex",
+                                        "heading": "Pseudalopex gymnocercus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 48,
+                                        "images": "https://robohash.org/eligendiautpraesentium.png?size=500x500&set=set1",
+                                        "subtitle": "Duobam",
+                                        "heading": "Felis chaus",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 49,
+                                        "images": "https://robohash.org/inventoreporroquos.png?size=500x500&set=set1",
+                                        "subtitle": "Biodex",
+                                        "heading": "Petaurus breviceps",
+                                        "text": "TV-U"
+                                    },
+                                    {
+                                        "id": 50,
+                                        "images": "https://robohash.org/rerumnullaut.png?size=500x500&set=set1",
+                                        "subtitle": "Greenlam",
+                                        "heading": "Panthera leo",
+                                        "text": "TV-U"
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -293,12 +685,12 @@
                         "id": "container_2",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-2/cover.jpg",
                                 "card": {
-                                    "button":"VIEW MORE",
+                                    "button": "EXPLORE",
                                     "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "subtitle": "Ancient Indian<br/> Historical Universe",
+                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> <br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -307,12 +699,12 @@
                         "id": "container_3",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-3/cover.jpg",
                                 "card": {
                                     "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "EXPLORE",
+                                    "subtitle": "Indian Mythological <br/>Cinematic Universe",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/><br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -321,12 +713,12 @@
                         "id": "container_4",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-4/cover.jpg",
                                 "card": {
                                     "title": "POP NEWS",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "EXPLORE",
+                                    "subtitle": "IMScience ENGINE<br/> Pro Vault",
+                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> <br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -335,35 +727,7 @@
                         "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
-                                "card": {
-                                    "title": "WORLD TV",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_6",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
-                                "card": {
-                                    "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_7",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -416,12 +780,12 @@
                         "id": "container_2",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/magazines/container-2/cover.jpg",
                                 "card": {
-                                    "button":"VIEW MORE",
+                                    "button": "SUBSCRIBE",
                                     "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "subtitle": "IMScience<br/> Magazine",
+                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> <br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -430,12 +794,12 @@
                         "id": "container_3",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/magazines/container-3/cover.jpg",
                                 "card": {
                                     "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "SUBSCRIBE",
+                                    "subtitle": "IMS History<br/> Magazine",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/><br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -444,12 +808,12 @@
                         "id": "container_4",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/magazines/container-4/cover.jpg",
                                 "card": {
                                     "title": "POP NEWS",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "SUBSCRIBE",
+                                    "subtitle": "IMS Wildlife<br/>  Magazine",
+                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> <br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -458,12 +822,12 @@
                         "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/magazines/container-5/cover.jpg",
                                 "card": {
-                                    "title": "WORLD TV",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "title": "IMS HISTORY",
+                                    "button": "SUBSCRIBE",
+                                    "subtitle": "IMS Wealth <BR/> Magazine",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -472,12 +836,12 @@
                         "id": "container_6",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/magazines/container-6/cover.jpg",
                                 "card": {
-                                    "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "title": "POP NEWS",
+                                    "button": "SUBSCRIBE",
+                                    "subtitle": "IMS Lifestyle <br/>Magazine",
+                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -486,7 +850,21 @@
                         "id": "container_7",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/magazines/container-7/cover.jpg",
+                                "card": {
+                                    "title": "IMS HISTORY",
+                                    "button": "SUBSCRIBE",
+                                    "subtitle": "History narrated for<br/> the newest generation",
+                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "container_8",
+                        "elements": [
+                            {
+                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -541,7 +919,7 @@
                             {
                                 "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
                                 "card": {
-                                    "button":"VIEW MORE",
+                                    "button": "VIEW MORE",
                                     "title": "IMSCIENCE",
                                     "subtitle": "India’s first Science OTT for curious people",
                                     "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
@@ -556,7 +934,7 @@
                                 "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
                                 "card": {
                                     "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
+                                    "button": "VIEW MORE",
                                     "subtitle": "History narrated for the newest generation",
                                     "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -570,7 +948,7 @@
                                 "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
                                 "card": {
                                     "title": "POP NEWS",
-                                    "button":"VIEW MORE",
+                                    "button": "VIEW MORE",
                                     "subtitle": "Global Disaster NEWS Channel",
                                     "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -584,7 +962,7 @@
                                 "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
                                 "card": {
                                     "title": "WORLD TV",
-                                    "button":"VIEW MORE",
+                                    "button": "VIEW MORE",
                                     "subtitle": "If World Culture is fire, World TV is gasoline",
                                     "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -598,7 +976,7 @@
                                 "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
                                 "card": {
                                     "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
+                                    "button": "VIEW MORE",
                                     "subtitle": "Responsible Lifestyle your way",
                                     "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -662,12 +1040,12 @@
                         "id": "container_2",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-2/cover.jpg",
                                 "card": {
-                                    "button":"VIEW MORE",
+                                    "button": "SUBSCRIBE",
                                     "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "subtitle": "IMScience<br/> Magazine",
+                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> <br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -676,12 +1054,12 @@
                         "id": "container_3",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-3/cover.jpg",
                                 "card": {
                                     "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "SUBSCRIBE",
+                                    "subtitle": "IMS History<br/> Magazine",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/><br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -690,12 +1068,12 @@
                         "id": "container_4",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-4/cover.jpg",
                                 "card": {
                                     "title": "POP NEWS",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "SUBSCRIBE",
+                                    "subtitle": "IMS Wildlife<br/>  Magazine",
+                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> <br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -704,35 +1082,7 @@
                         "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
-                                "card": {
-                                    "title": "WORLD TV",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_6",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
-                                "card": {
-                                    "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_7",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -787,7 +1137,7 @@
                             {
                                 "image": "/images/media-network/businessandbrands/tv-network/container-2/cover.jpg",
                                 "card": {
-                                    "button":"SUBSCRIBE",
+                                    "button": "VIEW MORE",
                                     "title": "IMSCIENCE",
                                     "subtitle": "IMS Natural Museum",
                                     "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
@@ -802,9 +1152,9 @@
                                 "image": "/images/media-network/businessandbrands/tv-network/container-3/cover.jpg",
                                 "card": {
                                     "title": "IMS HISTORY",
-                                    "button":"SUBSCRIBE",
-                                    "subtitle": "IMS History Magazine",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/><br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "VIEW MORE",
+                                    "subtitle": "History narrated for the newest generation",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -816,9 +1166,9 @@
                                 "image": "/images/media-network/businessandbrands/tv-network/container-4/cover.jpg",
                                 "card": {
                                     "title": "POP NEWS",
-                                    "button":"SUBSCRIBE",
-                                    "subtitle": "IMS Wildlife Magazine",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "VIEW MORE",
+                                    "subtitle": "Global Disaster NEWS Channel",
+                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -827,7 +1177,35 @@
                         "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/tv-network/container-7/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
+                                "card": {
+                                    "title": "WORLD TV",
+                                    "button": "VIEW MORE",
+                                    "subtitle": "If World Culture is fire, World TV is gasoline",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "container_6",
+                        "elements": [
+                            {
+                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
+                                "card": {
+                                    "title": "IMS LIFE",
+                                    "button": "VIEW MORE",
+                                    "subtitle": "Responsible Lifestyle your way",
+                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "container_7",
+                        "elements": [
+                            {
+                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -880,12 +1258,12 @@
                         "id": "container_2",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-2/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-2/cover.jpg",
                                 "card": {
-                                    "button":"VIEW MORE",
+                                    "button": "EXPLORE",
                                     "title": "IMSCIENCE",
-                                    "subtitle": "India’s first Science OTT for curious people",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "subtitle": "Ancient Indian<br/> Historical Universe",
+                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> <br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -894,12 +1272,12 @@
                         "id": "container_3",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-3/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-3/cover.jpg",
                                 "card": {
                                     "title": "IMS HISTORY",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "History narrated for the newest generation",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "EXPLORE",
+                                    "subtitle": "Indian Mythological <br/>Cinematic Universe",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/><br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -908,12 +1286,12 @@
                         "id": "container_4",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-4/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-4/cover.jpg",
                                 "card": {
                                     "title": "POP NEWS",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Global Disaster NEWS Channel",
-                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "button": "EXPLORE",
+                                    "subtitle": "IMScience ENGINE<br/> Pro Vault",
+                                    "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> <br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
                             }
                         ]
@@ -922,35 +1300,7 @@
                         "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
-                                "card": {
-                                    "title": "WORLD TV",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "If World Culture is fire, World TV is gasoline",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_6",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-6/cover.jpg",
-                                "card": {
-                                    "title": "IMS LIFE",
-                                    "button":"VIEW MORE",
-                                    "subtitle": "Responsible Lifestyle your way",
-                                    "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "id": "container_7",
-                        "elements": [
-                            {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -1073,141 +1423,219 @@
         "pagename": "Technology",
         "elements": [
             {
-                "id": "container_1",
+                "id": "containers",
+                "name": "containers",
                 "elements": [
                     {
-                        "image": "/images/media-network/technology/container-1/cover.jpg",
-                        "card": {
-                            "title": "IMS MEDIA CENTERS",
-                            "subtitle": "Largest Educational <br/>Media Archive",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "container_2",
-                "elements": [
-                    {
-                        "heading": {
-                            "title": "IMS AI LANGUAGE SERVICES",
-                            "subtitle": "Technology to Disrupt Media Viewership",
-                            "content": "<p>We think that we will only be able to achieve our purpose if we put our commitment to diversity, equity, and inclusion into practice in all aspects of our work.</p>"
-                        }
+                        "id": "container_1",
+                        "elements": [
+                            {
+                                "image": "/images/media-network/technology/container-1/cover.jpg",
+                                "card": {
+                                    "title": "IMS MEDIA CENTERS",
+                                    "subtitle": "Largest Educational <br/>Media Archive",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                }
+                            }
+                        ]
                     },
                     {
-                        "images": {
-                            "imageTop": "/images/media-network/technology/container-2/image-top.jpg",
-                            "imageBottom": "/images/media-network/technology/container-2/image-bottom.jpg"
-                        }
+                        "id": "container_2",
+                        "elements": [
+                            {
+                                "heading": {
+                                    "title": "IMS AI LANGUAGE SERVICES",
+                                    "subtitle": "Technology to Disrupt Media Viewership",
+                                    "content": "<p>We think that we will only be able to achieve our purpose if we put our commitment to diversity, equity, and inclusion into practice in all aspects of our work.</p>"
+                                }
+                            },
+                            {
+                                "images": {
+                                    "imageTop": "/images/media-network/technology/container-2/image-top.jpg",
+                                    "imageBottom": "/images/media-network/technology/container-2/image-bottom.jpg"
+                                }
+                            },
+                            {
+                                "card": {
+                                    "subtitle": "Real Time Speech Translation",
+                                    "content": "<p>We promote an enriching and supportive climate for our community of employees, explorers, photojournalists, and storytellers– regardless of their age, race, gender identity, sexual orientation, physical or mental ability, ethnicity, nationality, or professional title.</p>",
+                                    "buttontext": "VIEW MORE"
+                                }
+                            }
+                        ]
                     },
                     {
-                        "card": {
-                            "subtitle": "Real Time Speech Translation",
-                            "content": "<p>We promote an enriching and supportive climate for our community of employees, explorers, photojournalists, and storytellers– regardless of their age, race, gender identity, sexual orientation, physical or mental ability, ethnicity, nationality, or professional title.</p>",
-                            "buttontext": "VIEW MORE"
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "container_3",
-                "elements": [
+                        "id": "container_3",
+                        "elements": [
+                            {
+                                "image": "/images/media-network/technology/container-3/cover.jpg",
+                                "card": {
+                                    "title": "DISCOVERING",
+                                    "subtitle": "AR/VR Experience<br/> Production Wing",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                }
+                            }
+                        ]
+                    },
                     {
-                        "image": "/images/media-network/technology/container-3/cover.jpg",
-                        "card": {
-                            "title": "DISCOVERING",
-                            "subtitle": "AR/VR Experience<br/> Production Wing",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "container_4",
-                "elements": [
+                        "id": "container_4",
+                        "elements": [
+                            {
+                                "title": "INDIAN MEDIA SYNDICATE MEMBERSHIP",
+                                "subtitle": "The Greatest Event in Indian Broadcasting",
+                                "cards": [
+                                    {
+                                        "id": 1,
+                                        "button": "DISCOVER",
+                                        "image": "/images/media-network/technology/container-4/cover1.jpg",
+                                        "title": "Tech",
+                                        "subtitle": "DATA SHEET",
+                                        "content": "Precious Members of the Indian Media Syndicate"
+                                    },
+                                    {
+                                        "id": 2,
+                                        "button": "CHECK",
+                                        "image": "/images/media-network/technology/container-4/cover2.jpg",
+                                        "title": "Speech",
+                                        "subtitle": "SERVERS",
+                                        "content": "Guidelines for IMS title Productions (Procedural)"
+                                    },
+                                    {
+                                        "id": 3,
+                                        "button": "CHECK",
+                                        "image": "/images/media-network/technology/container-4/cover3.jpg",
+                                        "title": "Film",
+                                        "subtitle": "PRODUCTION",
+                                        "content": "Guidelines for IMS production partners and terms of cooperation"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
                     {
-                        "title": "INDIAN MEDIA SYNDICATE MEMBERSHIP",
-                        "subtitle": "The Greatest Event in Indian Broadcasting",
-                        "cards": [
+                        "id": "container_5",
+                        "elements": [
                             {
-                                "id": 1,
-                                "button": "DISCOVER",
-                                "image": "/images/media-network/technology/container-4/cover1.jpg",
-                                "title": "Tech",
-                                "subtitle": "DATA SHEET",
-                                "content": "Precious Members of the Indian Media Syndicate"
-                            },
+                                "image": "/images/media-network/technology/container-5/cover.jpg",
+                                "card": {
+                                    "title": "IMS PRODUCTION SETS",
+                                    "subtitle": "Mega Unreal Production Sets",
+                                    "content": "<p>We think that we will only be able to achieve our purpose if we put our commitment to diversity, equity, and inclusion into practice in all aspects of our work.</p>"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "container_6",
+                        "elements": [
                             {
-                                "id": 2,
-                                "button": "CHECK",
-                                "image": "/images/media-network/technology/container-4/cover2.jpg",
-                                "title": "Speech",
-                                "subtitle": "SERVERS",
-                                "content": "Guidelines for IMS title Productions (Procedural)"
-                            },
+                                "cards": [
+                                    {
+                                        "id": 1,
+                                        "count": "265",
+                                        "cardtitle": "Conserved Species",
+                                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                    },
+                                    {
+                                        "id": 2,
+                                        "count": "265",
+                                        "cardtitle": "Conserved Species",
+                                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                    },
+                                    {
+                                        "id": 3,
+                                        "count": "265",
+                                        "cardtitle": "Conserved Species",
+                                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "container_7",
+                        "elements": [
                             {
-                                "id": 3,
-                                "button": "CHECK",
-                                "image": "/images/media-network/technology/container-4/cover3.jpg",
-                                "title": "Film",
-                                "subtitle": "PRODUCTION",
-                                "content": "Guidelines for IMS production partners and terms of cooperation"
+                                "image": "/images/media-network/technology/container-7/cover.jpg",
+                                "card": {
+                                    "title": "IMS R&D WING",
+                                    "subtitle": "Viewership Research Facilities",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                }
                             }
                         ]
                     }
                 ]
             },
             {
-                "id": "container_5",
+                "id": "tech",
+                "pagename": "Tech",
                 "elements": [
                     {
-                        "image": "/images/media-network/technology/container-5/cover.jpg",
-                        "card": {
-                            "title": "IMS PRODUCTION SETS",
-                            "subtitle": "Mega Unreal Production Sets",
-                            "content": "<p>We think that we will only be able to achieve our purpose if we put our commitment to diversity, equity, and inclusion into practice in all aspects of our work.</p>"
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "container_6",
-                "elements": [
+                        "title": "TECH <br/> DATASHEET",
+                        "date": "LAST UPDATED : Oct 2022",
+                        "boldparagraph": "<p>By accessing and using the Services, you agree to our collection and use of your information in the manner described in this Notice. If you disagree with the terms of this Notice, you should not use the Services.</p>",
+                        "lightparagraph": "<p>This Notice explains how we collect, use, and share information about users who interact with our websites, applications, our content on connected televisions, or other interactive services that link to or reference this Privacy Notice (“Services”). This Notice does not apply to our collection of information from other features, services, or sources (unless specifically stated), or to third parties that provide information to IMS.</p>",
+                        "content": "<p>The Services are operated in India and are intended for users located in the India. The Services are therefore governed by and operated in accordance with the laws of India. If you are located outside India, please be aware that information you provide to us or that we obtain as a result of your use of the Services will be collected in India and/or transferred to India and will be subject to Indian law. <br/> <br/>By using the Services and/or providing us with information, you (a) consent to the transfer and/or processing of any information to and in India, (b) acknowledge that Indian law may provide a lower standard of protection for information than the laws of your location, (c) understand that we will collect, transfer, store, process and share your information from or about you in accordance with this Notice and Indian law.  <br/> <br/>When you interact with the Services, we collect information that directly identifies you ( i.e., information that would allow someone to identify you or contact you, such as your full name, postal address, e-mail address, or telephone number), as well as information about your use of the Services. Below we describe the different types of information we collect from you and the devices you use when you interact with the Services.  <br/> <br/>Information you provide to us: Some of the Services may permit you to enter contact information and other information about yourself and others. We collect and store any information you enter through the Services. For example, you may provide: <br/> <br/> your name, postal address, e-mail address, phone number, profile picture, birthday, or other information, such as when you register with our Services, create or edit your user profile, sign up to receive newsletters, or enter in a contest or sweepstakes;  <br/>certain demographic information, such as your age, gender, or income bracket, when you participate in a survey or poll;  <br/>information in postings, comments, or forums (such as chat rooms, message boards, or similar public forums) within the Services, and in non-public messages you send to other users of the Services; <br/> nutrition and dietary preference information when you search for recipes within the Services;  <br/>your first and last name, your address, and your credit card and billing information if you purchase of a product at the IMS Store or subscribe to one of IMS's paid Services; or <br/> your e-mail address, communications, and files when you send to us a message by e-mail, through our Customer Support portal, or through other communication services. <br/> Information we collect automatically from your devices: When you interact with the Services, certain information about your use of the Services is automatically collected. This information includes information about the devices used to access the Services, such as Internet Protocol (“IP”) address, your device ID and other unique device identifiers, mobile network information, information about how the device is interacting with our Services, hardware model, and the type and version of your device’s operating system or web browser. We also collect information about how you use our Services, such as pages viewed and the order of such pages, content (including video content) or advertising you view within the Services; the length of time you interact with the Services; search queries entered within the Services; error logs; websites and other services you visit before and after visiting an IMS site; and other similar information. Much of this information is collected through cookies, web beacons, and other tracking technologies. Please see our Tracking Technologies Notice for further information, including your choices in relation to the use of these technologies.</p>"
+                    },
                     {
-                        "cards": [
+                        "id":"container_2",
+                        "elements": [
                             {
-                                "id": 1,
-                                "count": "265",
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                            },
-                            {
-                                "id": 2,
-                                "count": "265",
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
-                            },
-                            {
-                                "id": 3,
-                                "count": "265",
-                                "cardtitle": "Conserved Species",
-                                "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                "image": "/images/collaborators/producers/container-5/cover.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
                             }
                         ]
                     }
                 ]
             },
             {
-                "id": "container_7",
+                "id": "speech",
+                "pagename": "Speech",
                 "elements": [
                     {
-                        "image": "/images/media-network/technology/container-7/cover.jpg",
-                        "card": {
-                            "title": "IMS R&D WING",
-                            "subtitle": "Viewership Research Facilities",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/><br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                        }
+                        "title": "SPEECH <br/> SERVERS",
+                        "date": "LAST UPDATED : Oct 2022",
+                        "boldparagraph": "<p>By accessing and using the Services, you agree to our collection and use of your information in the manner described in this Notice. If you disagree with the terms of this Notice, you should not use the Services.</p>",
+                        "lightparagraph": "<p>This Notice explains how we collect, use, and share information about users who interact with our websites, applications, our content on connected televisions, or other interactive services that link to or reference this Privacy Notice (“Services”). This Notice does not apply to our collection of information from other features, services, or sources (unless specifically stated), or to third parties that provide information to IMS.</p>",
+                        "content": "<p>The Services are operated in India and are intended for users located in the India. The Services are therefore governed by and operated in accordance with the laws of India. If you are located outside India, please be aware that information you provide to us or that we obtain as a result of your use of the Services will be collected in India and/or transferred to India and will be subject to Indian law. <br/> <br/>By using the Services and/or providing us with information, you (a) consent to the transfer and/or processing of any information to and in India, (b) acknowledge that Indian law may provide a lower standard of protection for information than the laws of your location, (c) understand that we will collect, transfer, store, process and share your information from or about you in accordance with this Notice and Indian law.  <br/> <br/>When you interact with the Services, we collect information that directly identifies you ( i.e., information that would allow someone to identify you or contact you, such as your full name, postal address, e-mail address, or telephone number), as well as information about your use of the Services. Below we describe the different types of information we collect from you and the devices you use when you interact with the Services.  <br/> <br/>Information you provide to us: Some of the Services may permit you to enter contact information and other information about yourself and others. We collect and store any information you enter through the Services. For example, you may provide: <br/> <br/> your name, postal address, e-mail address, phone number, profile picture, birthday, or other information, such as when you register with our Services, create or edit your user profile, sign up to receive newsletters, or enter in a contest or sweepstakes;  <br/>certain demographic information, such as your age, gender, or income bracket, when you participate in a survey or poll;  <br/>information in postings, comments, or forums (such as chat rooms, message boards, or similar public forums) within the Services, and in non-public messages you send to other users of the Services; <br/> nutrition and dietary preference information when you search for recipes within the Services;  <br/>your first and last name, your address, and your credit card and billing information if you purchase of a product at the IMS Store or subscribe to one of IMS's paid Services; or <br/> your e-mail address, communications, and files when you send to us a message by e-mail, through our Customer Support portal, or through other communication services. <br/> Information we collect automatically from your devices: When you interact with the Services, certain information about your use of the Services is automatically collected. This information includes information about the devices used to access the Services, such as Internet Protocol (“IP”) address, your device ID and other unique device identifiers, mobile network information, information about how the device is interacting with our Services, hardware model, and the type and version of your device’s operating system or web browser. We also collect information about how you use our Services, such as pages viewed and the order of such pages, content (including video content) or advertising you view within the Services; the length of time you interact with the Services; search queries entered within the Services; error logs; websites and other services you visit before and after visiting an IMS site; and other similar information. Much of this information is collected through cookies, web beacons, and other tracking technologies. Please see our Tracking Technologies Notice for further information, including your choices in relation to the use of these technologies.</p>"
+                    },
+                    {
+                        "id":"container_2",
+                        "elements": [
+                            {
+                                "image": "/images/collaborators/producers/container-5/cover.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "film",
+                "pagename": "Film",
+                "elements": [
+                    {
+                        "title": "FILM <br/> PRODUCTION",
+                        "date": "LAST UPDATED : Oct 2022",
+                        "boldparagraph": "<p>By accessing and using the Services, you agree to our collection and use of your information in the manner described in this Notice. If you disagree with the terms of this Notice, you should not use the Services.</p>",
+                        "lightparagraph": "<p>This Notice explains how we collect, use, and share information about users who interact with our websites, applications, our content on connected televisions, or other interactive services that link to or reference this Privacy Notice (“Services”). This Notice does not apply to our collection of information from other features, services, or sources (unless specifically stated), or to third parties that provide information to IMS.</p>",
+                        "content": "<p>The Services are operated in India and are intended for users located in the India. The Services are therefore governed by and operated in accordance with the laws of India. If you are located outside India, please be aware that information you provide to us or that we obtain as a result of your use of the Services will be collected in India and/or transferred to India and will be subject to Indian law. <br/> <br/>By using the Services and/or providing us with information, you (a) consent to the transfer and/or processing of any information to and in India, (b) acknowledge that Indian law may provide a lower standard of protection for information than the laws of your location, (c) understand that we will collect, transfer, store, process and share your information from or about you in accordance with this Notice and Indian law.  <br/> <br/>When you interact with the Services, we collect information that directly identifies you ( i.e., information that would allow someone to identify you or contact you, such as your full name, postal address, e-mail address, or telephone number), as well as information about your use of the Services. Below we describe the different types of information we collect from you and the devices you use when you interact with the Services.  <br/> <br/>Information you provide to us: Some of the Services may permit you to enter contact information and other information about yourself and others. We collect and store any information you enter through the Services. For example, you may provide: <br/> <br/> your name, postal address, e-mail address, phone number, profile picture, birthday, or other information, such as when you register with our Services, create or edit your user profile, sign up to receive newsletters, or enter in a contest or sweepstakes;  <br/>certain demographic information, such as your age, gender, or income bracket, when you participate in a survey or poll;  <br/>information in postings, comments, or forums (such as chat rooms, message boards, or similar public forums) within the Services, and in non-public messages you send to other users of the Services; <br/> nutrition and dietary preference information when you search for recipes within the Services;  <br/>your first and last name, your address, and your credit card and billing information if you purchase of a product at the IMS Store or subscribe to one of IMS's paid Services; or <br/> your e-mail address, communications, and files when you send to us a message by e-mail, through our Customer Support portal, or through other communication services. <br/> Information we collect automatically from your devices: When you interact with the Services, certain information about your use of the Services is automatically collected. This information includes information about the devices used to access the Services, such as Internet Protocol (“IP”) address, your device ID and other unique device identifiers, mobile network information, information about how the device is interacting with our Services, hardware model, and the type and version of your device’s operating system or web browser. We also collect information about how you use our Services, such as pages viewed and the order of such pages, content (including video content) or advertising you view within the Services; the length of time you interact with the Services; search queries entered within the Services; error logs; websites and other services you visit before and after visiting an IMS site; and other similar information. Much of this information is collected through cookies, web beacons, and other tracking technologies. Please see our Tracking Technologies Notice for further information, including your choices in relation to the use of these technologies.</p>"
+                    },
+                    {
+                        "id":"container_2",
+                        "elements": [
+                            {
+                                "image": "/images/collaborators/producers/container-5/cover.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            }
+                        ]
                     }
                 ]
             }

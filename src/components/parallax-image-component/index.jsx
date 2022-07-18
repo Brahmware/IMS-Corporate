@@ -53,6 +53,10 @@ const ParallaxImageComponent = ({ image, alt, filter, positiontop }) => {
                         height: `${( 1 + parallax_factor) * bgImageHeight}px`,
                         width: `${bgImageWidth}px`
                     }}
+                    // style={{
+                    //     height: `${( 1 + parallax) * bgImageHeight}px`,
+                    //     width: `${bgImageWidth}px`
+                    // }}
                     className="image-bg"
                 />
             </div>

@@ -12,6 +12,12 @@
         justify-content: center;
         align-items: center;
         gap: 0.5em;
+
+        & .subtitle {
+            @media #{$large-mobile}{
+                text-align: center;
+            }
+        }
     }
 
     & .divider {

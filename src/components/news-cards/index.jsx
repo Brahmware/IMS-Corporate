@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { BlankIcon, InfoIcon,StarFillIcon } from "../../assets/icons"
 
-const NewsCards = ({ data}) => {
+
+const NewsCards = ({ data, heading }) => {
+    const stars=[1,2,3,4,5]
     const convertDate = (dateData) => {
         const months=['Januray','Feburary','March','April','May','June','July','August','September','October','November','December'];
         dateData=new Date(dateData).toLocaleString('en-IN')
@@ -28,22 +31,55 @@ const NewsCards = ({ data}) => {
                         className="news-card-image"
                         alt=""
                     />
-                    <div className="news-card-content">
-                        <div className='news-card-date text-primary'>
-                            <span
-                                dangerouslySetInnerHTML={{
-                                    __html: convertDate(dateData)
-                                }}
-                            />
-                        </div>
-                        <div className='news-card-title'>
-                            <span
-                                dangerouslySetInnerHTML={{
-                                    __html: title
-                                }}
-                            />
-                        </div>
-                    </div>
+                    {
+
+                        !heading ?
+                            <div className="news-card-content">
+                                <div className='news-card-date text-primary'>
+                                    <span
+                                        dangerouslySetInnerHTML={{
+                                            __html: convertDate(dateData)
+                                        }}
+                                    />
+                                </div>
+                                <div className='news-card-title'>
+                                    <span
+                                        dangerouslySetInnerHTML={{
+                                            __html: title
+                                        }}
+                                    />
+                                </div>
+                            </div>
+                            :
+                            <>
+
+                                <div className="small-heading-content">
+
+                                    <div className="subtitle"> <span
+                                        dangerouslySetInnerHTML={{
+                                            __html: data.subtitle
+                                        }}
+                                    /></div>
+                                    <div className="heading"><span
+                                        dangerouslySetInnerHTML={{
+                                            __html: data.heading
+                                        }}
+                                    /></div>
+                                    <div className="rating-part">
+
+                                        <div className="stars">{
+                                            stars.map((star, index) => {
+                                                return <StarFillIcon key={index} />
+                                            })
+                                        }</div>
+                                        <div className="icon-part">
+                                            <div className="blank"><BlankIcon /><span>{data.text}</span></div>
+                                            <div className="info"><span><InfoIcon /></span></div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </>
+                    }
                 </div>
             </Link>
             </div>

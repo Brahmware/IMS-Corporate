@@ -5,7 +5,7 @@ import TabBoxContainer from '../../../containers/common/tabbox'
 const ImageWithTabBox = ({data}) => {
     return (
         <div className="ims-society-membership white-background">
-            <div className="container">
+            <div className="container containers">
                 <div
                     className="title"
                     data-aos='fade-down'

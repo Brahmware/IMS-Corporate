@@ -1,7 +1,7 @@
 import React from 'react'
 import TabBoxImageBackground from '../../../containers/common/tabbox-image-background';
 
-const ProducersContainerFour = ({ data }) => {
+const ProducersContainerFour = ({ data ,url}) => {
     const cardData=data[0].cards;
     return (
         <div className='producers-container-4 section pb-5 mb-5'>
@@ -10,7 +10,7 @@ const ProducersContainerFour = ({ data }) => {
                     {
                         cardData.map((card, index) => {
                             return (
-                                <TabBoxImageBackground data={card} key={index} />
+                                <TabBoxImageBackground data={card} key={index} tabkey={index} url={url} />
                             )
                         })
                     }

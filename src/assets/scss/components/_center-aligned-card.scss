@@ -17,8 +17,9 @@
     }
     & .content {
         max-width: 60%;
+
         @media #{$large-mobile} {
-            max-width: 90%;
+            max-width: 100%;
         }
     }
 }

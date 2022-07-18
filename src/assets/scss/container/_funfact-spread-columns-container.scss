@@ -4,4 +4,9 @@
     align-items: center;
     gap: 10em;
     margin-top: -1.3em;
+
+    @media #{$small-mobile}{
+        flex-direction: column;
+        gap: 3em;
+    }
 }
