@@ -23,5 +23,9 @@
     }
     & .card-button {
         margin-top: 4em;
+
+        @media #{$large-mobile} {
+            margin-top: 1em;
+        }
     }
 }

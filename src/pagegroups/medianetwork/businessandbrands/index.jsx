@@ -3,14 +3,20 @@ import { Switch, useRouteMatch, Redirect, Route  } from 'react-router-dom';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import StackedFluidCardsContainer from '../../../containers/common/stacked-fluid-cards-container'
 import scrollToFlexBar from '../../../utils/scrollToFlexBar';
+import IntellectualProperties from './intellectualproperties';
+import Magazines from './magazines';
+import MotionPictures from './motionpictures';
+import StudioOperations from './studiooperations';
 import TVNetwork from './tvnetwork';
 import PhysicalExperiences from './physicalexperiences';
+import Radio from './radio';
 
 const BusinessAndBrands = ({ data, fromParent }) => {
     
     setTimeout(() => !fromParent && window.location.reload(false), 0)
 
     const history = useHistory().location;
+    // console.log(history);
 
     const { url, path } = useRouteMatch();
     const DEFAULT_PAGE = data[0].id;
@@ -42,6 +48,11 @@ const BusinessAndBrands = ({ data, fromParent }) => {
 
     const dataTVNetwork = data.find(element => element.id === 'tv_network');
     const dataPhysicalExperiences = data.find(element => element.id === 'physical_experiences');
+    const dataMagazines = data.find(element => element.id === 'magazines');
+    const dataStudioOperations = data.find(element => element.id === 'studio_operations');
+    const dataMotionPictures = data.find(element => element.id === 'motion_pictures');
+    const dataIntellectualProperties = data.find(element => element.id === 'intellectual_properties');
+    const dataRadio = data.find(element => element.id === 'radio');
 
     return (
         <div className="business-and-brands-page">
@@ -66,6 +77,13 @@ const BusinessAndBrands = ({ data, fromParent }) => {
                 <Route path={`${path}/studio_operations`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
                 <Route path={`${path}/physical_experiences`} component={() => <PhysicalExperiences data={dataPhysicalExperiences.elements} />}/>
                 {/* <Route path={`${path}/intellectual_properties`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                <Route path={`${path}/magazines`} component={() => <Magazines data={dataMagazines.elements}/>} />
+                <Route path={`${path}/radio`} component={() => <Radio data={dataRadio.elements}/>} />
+                <Route path={`${path}/motion_pictures`} component={() => <MotionPictures data={dataMotionPictures.elements}/>} />
+                {/* <Route path={`${path}/consumer_products`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                <Route path={`${path}/studio_operations`} component={() => <StudioOperations data={dataStudioOperations.elements}/>} />
+                {/* <Route path={`${path}/physical_experiences`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
+                <Route path={`${path}/intellectual_properties`} component={() => <IntellectualProperties data={dataIntellectualProperties.elements}/>} />
             </Switch>
         </div>
     )

@@ -24,9 +24,10 @@ const CommercialPage = () => {
 
     const getPageNameFromLink = (history, pageGroupName, defaultPage) => {
         let pathname = history && history.pathname;
-        let pathstring = `/${pageGroupName}`;
+        let pathstring = `/${pageGroupName}/`;
         let intermediate = pathname.replace(pathstring, "");
-        let pageName = intermediate.replace('/', "");
+        let pagenameArray = intermediate.split('/');
+        let pageName = pagenameArray.length > 0 && pagenameArray[0];
         return pageName !== '' ? pageName : defaultPage
     }
 

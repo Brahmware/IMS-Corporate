@@ -2,7 +2,8 @@ import React from 'react'
 import CenterAlignedCard from '../../../components/center-aligned-card'
 import MembershipCard from '../../../components/membership-card';
 
-const AdvertiseWithUsThree = ({ data }) => {
+const AdvertiseWithUsThree = ({ data, url }) => {
+    console.log(url)
     const title=data[0].title;
     const subtitle=data[0].subtitle;
     const cardData=data[0].cards;
@@ -15,7 +16,7 @@ const AdvertiseWithUsThree = ({ data }) => {
             />
             <div className="section-with-padding">
                 <div className="container">
-                    <MembershipCard cardData={cardData} />
+                    <MembershipCard cardData={cardData} url={url}/>
                 </div>
             </div>
         </div>

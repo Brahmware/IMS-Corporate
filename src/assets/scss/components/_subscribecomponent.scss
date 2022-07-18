@@ -15,6 +15,11 @@
         justify-content: center;
         align-items: center;
         gap: 1.5em;
+
+        @media #{$large-mobile} {
+            flex-direction: column;
+        }
+
         & input {
             width: 25em;
             border: 0;

@@ -23,3 +23,5 @@ export { ReactComponent as TwitterIcon } from './twitter.svg';
 export { ReactComponent as InstagramIcon } from './instagram.svg';
 export { ReactComponent as WhatsappIcon } from './whatsapp.svg';
 export { ReactComponent as Share2Icon } from './shareIcon2.svg';
+export { ReactComponent as BlankIcon } from './blank.svg';
+export { ReactComponent as StarFillIcon } from './star-fill.svg';

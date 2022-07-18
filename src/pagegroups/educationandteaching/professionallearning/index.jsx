@@ -1,28 +1,39 @@
 import React from 'react'
-import ProfessionalLearningContainerOne from '../../../containers/professional-learning/container-1'
-import ProfessionalLearningContainerTwo from '../../../containers/professional-learning/container-2'
-import ProfessionalLearningContainerThree from '../../../containers/professional-learning/container-3'
-import ProfessionalLearningContainerFour from '../../../containers/professional-learning/container-4'
-import ProfessionalLearningContainerFive from '../../../containers/professional-learning/container-5'
+import { Switch, useRouteMatch, Redirect, Route } from 'react-router-dom';
+import Corporate from './corporate';
+import Educator from './educator';
+import Leaders from './leaders';
+import ProfessionalLearningContainers from './professionallearningcontainers'
 
 
-const Resources = ({ data }) => {
-    const dataContainer1 = data && data.find(data => data.id === 'container_1').elements;
-    const dataContainer2 = data && data.find(data => data.id === 'container_2').elements;
-    const dataContainer3 = data && data.find(data => data.id === 'container_3').elements;
-    const dataContainer4 = data && data.find(data => data.id === 'container_4').elements;
-    const dataContainer5 = data && data.find(data => data.id === 'container_5').elements;
+const ProfessionalLearning = ({ data }) => {
+    
+    const { url, path } = useRouteMatch();
+    const dataContainers = data && data.find(data => data.id === 'containers');
+    const dataCorporate = data && data.find(data => data.id === 'corporate');
+    const dataLeaders = data && data.find(data => data.id === 'leaders');
+    const dataEducator = data && data.find(data => data.id === 'educator');
 
     return (
         <div className='resources-page'>
+            {/* <ProfessionalLearningContainers data={dataContainers} /> */}
+            <Switch>
+                <Route path={`${path}`}
+                    exact
+                >
 
-            <ProfessionalLearningContainerOne data={dataContainer1} />
-            <ProfessionalLearningContainerTwo data={dataContainer2} />
-            <ProfessionalLearningContainerThree data={dataContainer3} />
-            <ProfessionalLearningContainerFour data={dataContainer4} />
-            <ProfessionalLearningContainerFive data={dataContainer5} />
+                    <Redirect to={`${path}/containers`} />
+                </Route>
+                <Route path={`${path}/containers`} component={() => <ProfessionalLearningContainers data={dataContainers.elements} url={url} />} />
+                <Route path={`${path}/Corporate`} component={() => <Corporate data={dataCorporate.elements} />} />
+                <Route path={`${path}/Educator`} component={() => <Educator data={dataEducator.elements} />} />
+                <Route path={`${path}/Leaders'`} component={() => <Leaders data={dataLeaders.elements} />} />
+                <Route path={`${path}/*`}>
+                    <Redirect to={`${path}`} />
+                </Route>
+            </Switch>
         </div>
     )
 }
 
-export default Resources
+export default ProfessionalLearning

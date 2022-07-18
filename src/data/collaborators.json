@@ -60,134 +60,227 @@
         "pagename": "Producers",
         "elements": [
             {
-                "id": "container_1",
+                "id": "containers",
+                "name": "containers",
                 "elements": [
                     {
-                        "image": "/images/partners/become-a-member/container-1/cover.jpg",
-                        "card": {
-                            "title": "UNITED FOR GOOD",
-                            "subtitle": "This is what an explorer looks like",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "container_2",
-                "elements": [
-                    {
-                        "image": "/images/collaborators/producers/container-1/cover.jpg",
-                        "card": {
-                            "title": "WHAT WE DO",
-                            "subtitle": "India celebrates Exploration",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
-                        }
-                    }
-                ]
-            },
-            {
-                "id": "container_3",
-                "elements": [
-                    {
-                        "title": "OUR MISSION",
-                        "subtitle": "To Revolutionize Indian Media",
-                        "cards": [
+                        "id": "container_1",
+                        "elements": [
                             {
-                                "title": "Apply for Membership",
-                                "inputfield": [
-                                    {
-                                        "label": "Name",
-                                        "type": "text",
-                                        "id": "name"
-                                    },
-                                    {
-                                        "label": "Official email",
-                                        "type": "email",
-                                        "id": "email"
-                                    }
-                                ],
-                                "optionfield": [
-                                    {
-                                        "label": "Crew Strength",
-                                        "type": "select",
-                                        "id": "crew-strength",
-                                        "option": [
-                                            "Crew Strength","10", "20", "30", "40", "50", "60", "70", "80", "90", "100+"
-                                        ]
-                                    },
-                                    {
-                                        "label": "Region",
-                                        "type": "select",
-                                        "id": "region",
-                                        "option": [
-                                            "Region","Mumbai", "Chennai", "Delhi", "Kanpur", "Prayagraj"
-                                        ]
-                                    }
-                                ],
-                                "buttontext": "Next"
-                            },
+                                "image": "/images/partners/become-a-member/container-1/cover.jpg",
+                                "card": {
+                                    "title": "UNITED FOR GOOD",
+                                    "subtitle": "This is what an explorer looks like",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "container_2",
+                        "elements": [
                             {
-                                "title": "Member Actions",
-                                "buttons": [
+                                "image": "/images/collaborators/producers/container-1/cover.jpg",
+                                "card": {
+                                    "title": "WHAT WE DO",
+                                    "subtitle": "India celebrates Exploration",
+                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "container_3",
+                        "elements": [
+                            {
+                                "title": "OUR MISSION",
+                                "subtitle": "To Revolutionize Indian Media",
+                                "cards": [
                                     {
-                                        "text": "+ Project Pitch",
-                                        "link": "#"
+                                        "title": "Apply for Membership",
+                                        "inputfield": [
+                                            {
+                                                "label": "Name",
+                                                "type": "text",
+                                                "id": "name"
+                                            },
+                                            {
+                                                "label": "Official email",
+                                                "type": "email",
+                                                "id": "email"
+                                            }
+                                        ],
+                                        "optionfield": [
+                                            {
+                                                "label": "Crew Strength",
+                                                "type": "select",
+                                                "id": "crew-strength",
+                                                "option": [
+                                                    "Crew Strength",
+                                                    "10",
+                                                    "20",
+                                                    "30",
+                                                    "40",
+                                                    "50",
+                                                    "60",
+                                                    "70",
+                                                    "80",
+                                                    "90",
+                                                    "100+"
+                                                ]
+                                            },
+                                            {
+                                                "label": "Region",
+                                                "type": "select",
+                                                "id": "region",
+                                                "option": [
+                                                    "Region",
+                                                    "Mumbai",
+                                                    "Chennai",
+                                                    "Delhi",
+                                                    "Kanpur",
+                                                    "Prayagraj"
+                                                ]
+                                            }
+                                        ],
+                                        "buttontext": "Next"
                                     },
                                     {
-                                        "text": "+ Raise an Issue",
-                                        "link": "#"
-                                    },
-                                    {
-                                        "text": "View All Actions",
-                                        "link": "#"
+                                        "title": "Member Actions",
+                                        "buttons": [
+                                            {
+                                                "text": "+ Project Pitch",
+                                                "link": "#"
+                                            },
+                                            {
+                                                "text": "+ Raise an Issue",
+                                                "link": "#"
+                                            },
+                                            {
+                                                "text": "View All Actions",
+                                                "link": "#"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
                         ]
-                    }
-                ]
-            },
-            {
-                "id": "container_4",
-                "elements": [
+                    },
                     {
-                        "cards": [
+                        "id": "container_4",
+                        "elements": [
                             {
-                                "id": 1,
-                                "button": "DISCOVER",
-                                "image": "/images/collaborators/producers/container-4/cover.jpg", 
-                                "title": "IMS",
-                                "subtitle": "UNIVERSE",
-                                "content": "Precious Members of the Indian Media Syndicate"
-                            },
+                                "cards": [
+                                    {
+                                        "id": 1,
+                                        "button": "DISCOVER",
+                                        "image": "/images/collaborators/producers/container-4/cover.jpg",
+                                        "title": "IMS",
+                                        "subtitle": "UNIVERSE",
+                                        "content": "Precious Members of the Indian Media Syndicate"
+                                    },
+                                    {
+                                        "id": 2,
+                                        "button": "CHECK",
+                                        "image": "/images/collaborators/producers/container-4/cover.jpg",
+                                        "title": "Standard",
+                                        "subtitle": "REQUIREMENTS",
+                                        "content": "Guidelines for IMS title Productions (Procedural)"
+                                    },
+                                    {
+                                        "id": 3,
+                                        "button": "CHECK",
+                                        "image": "/images/collaborators/producers/container-4/cover.jpg",
+                                        "title": "Member",
+                                        "subtitle": "GUDELINES",
+                                        "content": "Guidelines for IMS production partners and terms of cooperation"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "container_5",
+                        "elements": [
                             {
-                                "id": 2,
-                                "button": "CHECK",
-                                "image": "/images/collaborators/producers/container-4/cover.jpg",
-                                "title": "Standard",
-                                "subtitle": "REQUIREMENTS",
-                                "content": "Guidelines for IMS title Productions (Procedural)"
-                            },
-                            {
-                                "id": 3,
-                                "button": "CHECK",
-                                "image": "/images/collaborators/producers/container-4/cover.jpg",
-                                "title": "Member",
-                                "subtitle": "GUDELINES",
-                                "content": "Guidelines for IMS production partners and terms of cooperation"
+                                "image": "/images/collaborators/producers/container-5/cover.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
                             }
                         ]
                     }
                 ]
             },
             {
-                "id": "container_5",
+                "id": "ims",
+                "pagename": "IMS",
                 "elements": [
                     {
-                        "image": "/images/collaborators/producers/container-5/cover.jpg",
-                        "title": "IMS Explorers",
-                        "subtitle": "Changemakers<br /> and Innovators",
-                        "buttontext": "APPLY"
+                        "title": "IMS <br/> UNIVERSE",
+                        "date": "LAST UPDATED : Oct 2022",
+                        "boldparagraph": "<p>By accessing and using the Services, you agree to our collection and use of your information in the manner described in this Notice. If you disagree with the terms of this Notice, you should not use the Services.</p>",
+                        "lightparagraph": "<p>This Notice explains how we collect, use, and share information about users who interact with our websites, applications, our content on connected televisions, or other interactive services that link to or reference this Privacy Notice (“Services”). This Notice does not apply to our collection of information from other features, services, or sources (unless specifically stated), or to third parties that provide information to IMS.</p>",
+                        "content": "<p>The Services are operated in India and are intended for users located in the India. The Services are therefore governed by and operated in accordance with the laws of India. If you are located outside India, please be aware that information you provide to us or that we obtain as a result of your use of the Services will be collected in India and/or transferred to India and will be subject to Indian law. <br/> <br/>By using the Services and/or providing us with information, you (a) consent to the transfer and/or processing of any information to and in India, (b) acknowledge that Indian law may provide a lower standard of protection for information than the laws of your location, (c) understand that we will collect, transfer, store, process and share your information from or about you in accordance with this Notice and Indian law.  <br/> <br/>When you interact with the Services, we collect information that directly identifies you ( i.e., information that would allow someone to identify you or contact you, such as your full name, postal address, e-mail address, or telephone number), as well as information about your use of the Services. Below we describe the different types of information we collect from you and the devices you use when you interact with the Services.  <br/> <br/>Information you provide to us: Some of the Services may permit you to enter contact information and other information about yourself and others. We collect and store any information you enter through the Services. For example, you may provide: <br/> <br/> your name, postal address, e-mail address, phone number, profile picture, birthday, or other information, such as when you register with our Services, create or edit your user profile, sign up to receive newsletters, or enter in a contest or sweepstakes;  <br/>certain demographic information, such as your age, gender, or income bracket, when you participate in a survey or poll;  <br/>information in postings, comments, or forums (such as chat rooms, message boards, or similar public forums) within the Services, and in non-public messages you send to other users of the Services; <br/> nutrition and dietary preference information when you search for recipes within the Services;  <br/>your first and last name, your address, and your credit card and billing information if you purchase of a product at the IMS Store or subscribe to one of IMS's paid Services; or <br/> your e-mail address, communications, and files when you send to us a message by e-mail, through our Customer Support portal, or through other communication services. <br/> Information we collect automatically from your devices: When you interact with the Services, certain information about your use of the Services is automatically collected. This information includes information about the devices used to access the Services, such as Internet Protocol (“IP”) address, your device ID and other unique device identifiers, mobile network information, information about how the device is interacting with our Services, hardware model, and the type and version of your device’s operating system or web browser. We also collect information about how you use our Services, such as pages viewed and the order of such pages, content (including video content) or advertising you view within the Services; the length of time you interact with the Services; search queries entered within the Services; error logs; websites and other services you visit before and after visiting an IMS site; and other similar information. Much of this information is collected through cookies, web beacons, and other tracking technologies. Please see our Tracking Technologies Notice for further information, including your choices in relation to the use of these technologies.</p>"
+                    },
+                    {
+                        "id":"container_2",
+                        "elements": [
+                            {
+                                "image": "/images/collaborators/producers/container-5/cover.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "standard",
+                "pagename": "Standard",
+                "elements": [
+                    {
+                        "title": "STANDARD <br/> REQUIREMENT",
+                        "date": "LAST UPDATED : Oct 2022",
+                        "boldparagraph": "<p>By accessing and using the Services, you agree to our collection and use of your information in the manner described in this Notice. If you disagree with the terms of this Notice, you should not use the Services.</p>",
+                        "lightparagraph": "<p>This Notice explains how we collect, use, and share information about users who interact with our websites, applications, our content on connected televisions, or other interactive services that link to or reference this Privacy Notice (“Services”). This Notice does not apply to our collection of information from other features, services, or sources (unless specifically stated), or to third parties that provide information to IMS.</p>",
+                        "content": "<p>The Services are operated in India and are intended for users located in the India. The Services are therefore governed by and operated in accordance with the laws of India. If you are located outside India, please be aware that information you provide to us or that we obtain as a result of your use of the Services will be collected in India and/or transferred to India and will be subject to Indian law. <br/> <br/>By using the Services and/or providing us with information, you (a) consent to the transfer and/or processing of any information to and in India, (b) acknowledge that Indian law may provide a lower standard of protection for information than the laws of your location, (c) understand that we will collect, transfer, store, process and share your information from or about you in accordance with this Notice and Indian law.  <br/> <br/>When you interact with the Services, we collect information that directly identifies you ( i.e., information that would allow someone to identify you or contact you, such as your full name, postal address, e-mail address, or telephone number), as well as information about your use of the Services. Below we describe the different types of information we collect from you and the devices you use when you interact with the Services.  <br/> <br/>Information you provide to us: Some of the Services may permit you to enter contact information and other information about yourself and others. We collect and store any information you enter through the Services. For example, you may provide: <br/> <br/> your name, postal address, e-mail address, phone number, profile picture, birthday, or other information, such as when you register with our Services, create or edit your user profile, sign up to receive newsletters, or enter in a contest or sweepstakes;  <br/>certain demographic information, such as your age, gender, or income bracket, when you participate in a survey or poll;  <br/>information in postings, comments, or forums (such as chat rooms, message boards, or similar public forums) within the Services, and in non-public messages you send to other users of the Services; <br/> nutrition and dietary preference information when you search for recipes within the Services;  <br/>your first and last name, your address, and your credit card and billing information if you purchase of a product at the IMS Store or subscribe to one of IMS's paid Services; or <br/> your e-mail address, communications, and files when you send to us a message by e-mail, through our Customer Support portal, or through other communication services. <br/> Information we collect automatically from your devices: When you interact with the Services, certain information about your use of the Services is automatically collected. This information includes information about the devices used to access the Services, such as Internet Protocol (“IP”) address, your device ID and other unique device identifiers, mobile network information, information about how the device is interacting with our Services, hardware model, and the type and version of your device’s operating system or web browser. We also collect information about how you use our Services, such as pages viewed and the order of such pages, content (including video content) or advertising you view within the Services; the length of time you interact with the Services; search queries entered within the Services; error logs; websites and other services you visit before and after visiting an IMS site; and other similar information. Much of this information is collected through cookies, web beacons, and other tracking technologies. Please see our Tracking Technologies Notice for further information, including your choices in relation to the use of these technologies.</p>"
+                    },
+                    {
+                        "id":"container_2",
+                        "elements": [
+                            {
+                                "image": "/images/collaborators/producers/container-5/cover.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "member",
+                "pagename": "Member",
+                "elements": [
+                    {
+                        "title": "MEMBER <br/> GUIDELINES",
+                        "date": "LAST UPDATED : Oct 2022",
+                        "boldparagraph": "<p>By accessing and using the Services, you agree to our collection and use of your information in the manner described in this Notice. If you disagree with the terms of this Notice, you should not use the Services.</p>",
+                        "lightparagraph": "<p>This Notice explains how we collect, use, and share information about users who interact with our websites, applications, our content on connected televisions, or other interactive services that link to or reference this Privacy Notice (“Services”). This Notice does not apply to our collection of information from other features, services, or sources (unless specifically stated), or to third parties that provide information to IMS.</p>",
+                        "content": "<p>The Services are operated in India and are intended for users located in the India. The Services are therefore governed by and operated in accordance with the laws of India. If you are located outside India, please be aware that information you provide to us or that we obtain as a result of your use of the Services will be collected in India and/or transferred to India and will be subject to Indian law. <br/> <br/>By using the Services and/or providing us with information, you (a) consent to the transfer and/or processing of any information to and in India, (b) acknowledge that Indian law may provide a lower standard of protection for information than the laws of your location, (c) understand that we will collect, transfer, store, process and share your information from or about you in accordance with this Notice and Indian law.  <br/> <br/>When you interact with the Services, we collect information that directly identifies you ( i.e., information that would allow someone to identify you or contact you, such as your full name, postal address, e-mail address, or telephone number), as well as information about your use of the Services. Below we describe the different types of information we collect from you and the devices you use when you interact with the Services.  <br/> <br/>Information you provide to us: Some of the Services may permit you to enter contact information and other information about yourself and others. We collect and store any information you enter through the Services. For example, you may provide: <br/> <br/> your name, postal address, e-mail address, phone number, profile picture, birthday, or other information, such as when you register with our Services, create or edit your user profile, sign up to receive newsletters, or enter in a contest or sweepstakes;  <br/>certain demographic information, such as your age, gender, or income bracket, when you participate in a survey or poll;  <br/>information in postings, comments, or forums (such as chat rooms, message boards, or similar public forums) within the Services, and in non-public messages you send to other users of the Services; <br/> nutrition and dietary preference information when you search for recipes within the Services;  <br/>your first and last name, your address, and your credit card and billing information if you purchase of a product at the IMS Store or subscribe to one of IMS's paid Services; or <br/> your e-mail address, communications, and files when you send to us a message by e-mail, through our Customer Support portal, or through other communication services. <br/> Information we collect automatically from your devices: When you interact with the Services, certain information about your use of the Services is automatically collected. This information includes information about the devices used to access the Services, such as Internet Protocol (“IP”) address, your device ID and other unique device identifiers, mobile network information, information about how the device is interacting with our Services, hardware model, and the type and version of your device’s operating system or web browser. We also collect information about how you use our Services, such as pages viewed and the order of such pages, content (including video content) or advertising you view within the Services; the length of time you interact with the Services; search queries entered within the Services; error logs; websites and other services you visit before and after visiting an IMS site; and other similar information. Much of this information is collected through cookies, web beacons, and other tracking technologies. Please see our Tracking Technologies Notice for further information, including your choices in relation to the use of these technologies.</p>"
+                    },
+                    {
+                        "id":"container_2",
+                        "elements": [
+                            {
+                                "image": "/images/collaborators/producers/container-5/cover.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            }
+                        ]
                     }
                 ]
             }

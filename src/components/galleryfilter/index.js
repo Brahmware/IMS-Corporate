@@ -16,7 +16,7 @@ const GalleryFilter = ({ data }) => {
     const sortHandler=(e)=>{
         setfilterData({...filterData, "sortBy": e.target.value});
     }
-    console.log(filterData);
+    // console.log(filterData);
     return (
         <div className="filter-container"
             data-aos='fade-right'
