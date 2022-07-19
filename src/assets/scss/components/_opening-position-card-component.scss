@@ -13,7 +13,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
-
+        @media #{$small-mobile} {
+            font-size: 0.9em;
+        }
         & .head-left {
 
             height: max-content;
@@ -77,6 +79,13 @@
         display: flex;
         align-items: flex-start;
         gap: 2.6em;
+        
+        @media #{$small-mobile} {
+            gap: 1.5em;
+        }
+        @media #{$extra-small-mobile} {
+            gap: 1.5em;
+        }
 
         & .description-left {
             & .position-icon {
@@ -86,10 +95,24 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+                
                 & svg {
                     width: 5.25em;
                     fill: $light-text-color;
+                }
+                @media #{$large-mobile} {
+                    height: 6em;
+                    width: 6em;
+                    & svg{
+                        width: 3em;
+                    }
+                }
+                @media #{$extra-small-mobile} {
+                    height: 5em;
+                    width: 5em;
+                    & svg{
+                        width: 2.5em;
+                    }
                 }
             }
         }
@@ -136,7 +159,10 @@
         justify-content: flex-end;
         align-items: center;
         gap: 2.6em;
-
+        
+        @media #{$small-mobile} {
+            font-size: 1.2em;
+        }
         & .apply-button,
         & .view-more-button {
             font-size: 1em;
