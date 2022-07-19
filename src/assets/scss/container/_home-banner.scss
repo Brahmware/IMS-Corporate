@@ -74,6 +74,10 @@
             justify-content: center;
             align-items: center;
             gap: 1.6em;
+
+            @media #{$large-mobile}{
+                transform: translateY(-26.6875em)
+            }
             & .swiper-pagination-bullet {
                 cursor: pointer;
                 height: 0.5em;
