@@ -48,6 +48,12 @@
         transition: $transition-base;
         margin-top: 6em;
         margin-bottom: 6em;
+        @media #{$large-mobile} {
+            font-size: 14px;
+            width: 80vw;
+            padding: 1.5em;
+            padding-top: 4em;
+        }
 
         & .close-button {
             position: absolute;
@@ -60,6 +66,9 @@
                 height: 1.5em;
                 fill: $black;
                 transition: $transition-base;
+                @media #{$large-mobile} {
+                    height: 1em;
+                }
             }
 
             &:hover {
@@ -78,13 +87,17 @@
             align-items: center;
             gap: 3em;
 
+            @media #{$large-mobile} {
+                gap: 2.5em;
+            }
+            
             & .image {
                 height: 20em;
                 width: 25.8em;
                 border-radius: 1.3em;
                 overflow: hidden;
             }
-
+            
             & .details-buttons {
                 height: 20em;
                 flex-grow: 1;
@@ -94,8 +107,14 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-start;
+                @media #{$large-mobile} {
+                    height: fit-content;
+                    & .details{
+                        margin-bottom: 1em;
+                    }
+                }
                 & .details{
-                    height: 65%;
+                    height: fit-content;
                     & .modalcard-title {
                         font-weight: 1000;
                         font-size: 2.5em;
@@ -155,11 +174,40 @@
                 }
             }
 
+            @media #{$large-mobile} {
+                flex-direction: column;
+                & .image{
+                    height: 17em;
+                    width: 100%;
+                }
+                & .details-buttons {
+                    & .details{
+                        & .modalcard-title {
+                            font-size: 2em;
+                        }
+                        & .card-type {
+                            font-size: 1.4em;
+                        }
+                        & .features {
+                            gap: 1em;
+                            font-size: 1em;
+                            flex-direction: column;
+                        }
+                        & .card-description{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+
         }
         & .more-like-this-area{
             margin-top: 6.5em;
             width: 100%;
-            
+            @media #{$large-mobile}{
+                margin-top: 3.7em;
+                margin-bottom: 2em;
+            }
             & .heading{
                 display: flex;
                 gap: 1em;
@@ -169,6 +217,9 @@
                     font-size: 2.5em;
                     font-weight: 1000;
                     line-height: 1;
+                    @media #{$large-mobile}{
+                        font-size: 2em;
+                    }
                 }
                 & a{
                     text-decoration: underline;
@@ -182,9 +233,16 @@
                 background-color: transparent;
                 padding-top: 1.5em;
                 margin-right: -4.5em;
+                margin-left: -4.5em;
+                padding-left: 4.5em;
+                padding-right: 4.5em;
                 overflow-x: auto;
-                // overscroll-behavior-inline: contain;
                 gap: 2.5em;
+                // overscroll-behavior-inline: contain;
+                @media #{$large-mobile} {
+                    padding-top: 1em;
+                    gap: 1em;
+                }
                 .modal-cards{
                     display: inline-block;
                     width: 18.75em;
@@ -196,6 +254,10 @@
                     // &:hover {
                     //     box-shadow: $default-shadow;
                     // }
+                    @media #{$large-mobile} {
+                        height: 13em;
+                        width: 16em;
+                    }
                     & .modal-card-filter{
                         position: absolute;
                         width: 100%;

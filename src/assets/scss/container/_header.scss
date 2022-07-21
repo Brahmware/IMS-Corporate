@@ -1,4 +1,7 @@
 .header {
+    @media #{$extra-small-mobile} {
+        font-size: 0.9em;
+    }
     height: $header-height;
     left: 0;
     right: 0;

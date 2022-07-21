@@ -32,6 +32,9 @@
             @media #{$large-mobile} {
                 font-size: 10px;
             }
+            @media #{$small-mobile} {
+                font-size: 8px;
+            }
             & .page-title {
                 position: absolute;
                 color: $white;
@@ -65,18 +68,11 @@
                 display: grid;
                 grid-auto-flow: column;
                 overflow-x: auto;
-                gap: 5em;
+                gap: 4em;
             }
-            // @media #{$small-mobile} {
-            //     display: grid;
-            //     grid-auto-flow: column;
-            //     overflow-x: auto;
-            //     gap: 10em;
-            // }
             & .each-tab{
                 @media #{$large-mobile} {
-                    width: 10em;
-                    text-align: center;
+                    width: max-content;
                     font-size: 1em;
                 }
                 font-size: 1.125em;
