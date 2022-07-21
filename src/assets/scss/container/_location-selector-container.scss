@@ -25,21 +25,28 @@
         }
         & .container-mb{
             font-size: 14px;
+            // height: 100vh;
             display: block;
             & .tagline-part{
                 display: flex;
                 align-items: center;
                 text-align: center;
             }
-        }
-        & .country-selector-part{
-            width: 100%;
-            margin-top: 2em;
-            height: 30em;
-            margin-bottom: 2em;
-        }
-        & .continent-selector-part {
-            font-size: 20px;
+            & .country-selector-part{
+                width: 100%;
+                margin-top: 2em;
+                height: 28em;
+                margin-bottom: 2em;
+                @media #{$small-mobile} {
+                    height: 26em;
+                }
+                @media #{$extra-small-mobile} {
+                    height: 24em;
+                }
+            }
+            & .continent-selector-part {
+                font-size: 20px;
+            }
         }
         
     }

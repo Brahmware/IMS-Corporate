@@ -17,6 +17,17 @@
             }
         }
     }
+    @media #{$small-mobile} {
+        font-size: 14px;
+        & .heading-part{
+            & .subtitle{
+                font-size: 1.8em;
+            }
+            & .title{
+                font-size: 0.8em;
+            }
+        }
+    }
     
     & .heading-part {
         width: 100%;
@@ -62,16 +73,19 @@
                 grid-auto-flow: column;
                 overflow-x: auto;
                 scroll-behavior: smooth;
-                gap: 2em;
-                font-size: 12px;
+                font-size: 14px;
+                & .card-holder{
+                    margin-right: 2em;
+                    // width: 70vw;
+                }
                 @media #{$small-mobile} {
-                    font-size: 11px;
+                    font-size: 13px;
+                    & .card-holder{
+                        width: 82vw;
+                    }
                 }
                 @media #{$extra-small-mobile} {
-                    font-size: 10px;
-                }
-                & .card-holder{
-                    width: 85vw;
+                    font-size: 12px;
                 }
             }
             & ::-webkit-scrollbar{

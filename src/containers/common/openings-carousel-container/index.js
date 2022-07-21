@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation } from "swiper"
@@ -8,9 +8,16 @@ import { LeftarrowIcon, RightarrowIcon } from '../../../assets/icons';
 SwiperCore.use([Navigation]);
 
 const OpeningsCarouselContainer = ({ data, title, country, continent }) => {
-
+    const containerSize = useRef(0)
+    const swiperSize = useRef(0)
     /* Selecting the opening Positions to show */
     const [positionsToShow, setPositionsToShow] = useState([]);
+    const [paddingRemover, setpaddingRemover] = useState(0);
+
+    setTimeout(() => {
+        const temp=(containerSize && containerSize.current.offsetWidth)-(swiperSize && swiperSize.current.offsetWidth);
+        setpaddingRemover(temp/2+20);
+    }, 10);
 
 
     useEffect(() => {
@@ -104,12 +111,14 @@ const OpeningsCarouselContainer = ({ data, title, country, continent }) => {
                             <i className="left-arrow-icon"><RightarrowIcon /></i>
                         </div>
                     </div>
-                    <div className="carousal-part carousal-part-mb">
+                    <div className="carousal-part carousal-part-mb" ref={containerSize}>
                         {/* <div className={`swiper-navigation ${navigationPrev}`}>
                             <i className="right-arrow-icon"><LeftarrowIcon /></i>
                         </div> */}
-                        <div className="container">
-                            <div className="swiper-system swiper-system-mb">
+                        <div className="container" >
+                            <div className="swiper-system swiper-system-mb" ref={swiperSize}
+                                style={{marginRight: -1*paddingRemover}}
+                            >
                                 {
                                     positionsToShow.map((position, key) => {
                                         return (

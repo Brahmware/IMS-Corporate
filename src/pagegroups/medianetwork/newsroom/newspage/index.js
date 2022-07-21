@@ -38,10 +38,12 @@ const NewsPage = () => {
                         {
                             pathname.length<=3 && data?
                             <>
-                                <NewsPageContainerOne data={datacontainer1} />
-                                <NewsPageContainerTwo data={datacontainer2} />
-                                <NewsPageContainerThree data={datacontainer3} />
-                                <NewsPageContainerFour data={datacontainer4} />   
+                                <div className="newspage-wrapper">
+                                    <NewsPageContainerOne data={datacontainer1} />
+                                    <NewsPageContainerTwo data={datacontainer2} />
+                                    <NewsPageContainerThree data={datacontainer3} />
+                                    <NewsPageContainerFour data={datacontainer4} />   
+                                </div>
                             </>
                             :
                             <>
