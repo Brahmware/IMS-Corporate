@@ -89,7 +89,14 @@
                 font-size: 0.8em;
 
                 @media #{$large-mobile} {
+                    margin-top: 1em;
                     align-items: center;
+                }
+
+                & .title {
+                    @media #{$large-mobile} {
+                        font-size: 1.375em;
+                    }
                 }
             }
         }
@@ -124,6 +131,11 @@
                 & .social-links {
                     gap: 2em;
                 }
+                & .copyright {
+                    @media #{$large-mobile} {
+                        display: none;
+                    }
+                }
 
                 & .copyright-component {
                     font-size: 0.7em;
@@ -140,6 +152,12 @@
                 align-items: flex-start;
                 gap: 1.5em;
 
+                & .copyright-sm {
+                    display: none;
+                    @media #{$large-mobile}{
+                        display: block;
+                    }
+                }
                 & .legals {
                     width: 100%;
                     display: flex;

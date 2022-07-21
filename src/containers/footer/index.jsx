@@ -64,6 +64,7 @@ const Footer = () => {
                             <div className="legals">
                                 <PrivacyPolicyRightSection />
                             </div>
+                            <div className="copyright-sm"><CopyrightComponent /></div>
                         </div>
                     </div>
                 </div>

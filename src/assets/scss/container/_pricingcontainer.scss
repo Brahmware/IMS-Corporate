@@ -4,6 +4,9 @@
 
         & .card-wrapper {
             margin: 4em 0em;
+            @media #{$large-mobile}{
+                margin: 2em 0em;
+            }
 
             & .each-card {
                 background-color: $default-background;
@@ -23,6 +26,9 @@
 
                 & .big {
                     font-size: 1.3em;
+                    @media #{$large-mobile}{
+                        font-size: 1em;
+                    }
                 }
 
                 & .table-header {
@@ -36,6 +42,10 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+
+                    @media #{$large-mobile}{
+                        font-size: 1.25em;
+                    }
                 }
 
                 & .table-content {
