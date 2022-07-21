@@ -29,7 +29,7 @@
                 justify-content: space-between;
 
                 @media #{$large-mobile}{
-                    transform:translateY(-9em) ;
+                    transform:translateY(-7.375em) ;
                     padding: 0em 2.3125em;
                 }
 
@@ -74,9 +74,13 @@
             justify-content: center;
             align-items: center;
             gap: 1.6em;
+
+            @media #{$large-mobile}{
+                transform: translateY(-26.6875em)
+            }
             & .swiper-pagination-bullet {
                 cursor: pointer;
-                height: 0.5em;
+                height: 0.5em;  
                 width: 0.5em;
                 background-color: rgba($color: $white, $alpha: 0.75);
                 border-radius: 50%;

@@ -116,22 +116,22 @@
 
                 @keyframes slide-up-down {
                     0% {
-                        transform: translateY(-95%);
+                        transform: translateY(-100%);
                     }
 
                     5% {
-                        transform: translateY(-70%);
+                        transform: translateY(-100%);
                     }
 
                     10% {
-                        transform: translateY(-30%);
+                        transform: translateY(0%);
                     }
 
                     90% {
-                        transform: translateY(-30%);
+                        transform: translateY(0%);
                     }
                     95% {
-                        transform: translateY(-70%);
+                        transform: translateY(-100%);
                     }
                     100% {
                         transform: translateY(-100%);
