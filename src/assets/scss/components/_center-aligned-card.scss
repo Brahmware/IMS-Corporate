@@ -5,6 +5,11 @@
     align-items: center;
     text-align: center; 
     gap: 1em;
+    @media #{$large-mobile} {
+        padding: 2.3125em;
+        padding-top: 67px;
+        padding-bottom: 0;
+    }
 
     & .divider {
         height: $thick-divider;

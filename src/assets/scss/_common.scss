@@ -58,7 +58,7 @@ body {
     outline: none;
     visibility: visible;
     line-height: 1.714;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 
     @media #{large-mobile} {
         font-size: 14px;
@@ -248,6 +248,10 @@ ol {
     font-size: 6em;
     font-weight: 900;
     line-height: 1em;
+    @media #{$large-mobile}{
+        font-size: 1.875em;
+        font-weight: 1000;
+    }
 }
 
 .odd-divided-section {

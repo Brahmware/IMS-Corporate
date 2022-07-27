@@ -1,18 +1,28 @@
 .white-background {
-
     & .half-divided-section-with-padding {
         display: flex;
         align-items: center;
         padding: 3em 0em;
         gap: $container-gap;
 
+        @media #{$large-mobile} {
+            flex-direction: column;
+        }
+
         & .heading-part {
             width: 50%;
+            @media #{$large-mobile} {
+                width: 100%;
+            }
 
             & .title {
                 font-size: 4em;
                 font-weight: 1000;
                 line-height: 1em;
+
+                @media #{$large-mobile} {
+                    font-size: 2em;
+                }
                 // letter-spacing: 0.02em;
             }
 
@@ -40,11 +50,13 @@
             overflow-y: scroll;
             padding: 2em;
             background-color: $default-background;
+            @media #{$large-mobile} {
+                width: 100%;
+            }
 
             & .content {
                 font-size: 0.8em;
             }
-
         }
 
         .card-part::-webkit-scrollbar {

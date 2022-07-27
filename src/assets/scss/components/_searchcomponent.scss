@@ -1,6 +1,12 @@
 .search {
     height: $header-button-height;
     font-size: 1em;
+    transition-property: all;
+    transition-duration: 1s;
+
+    // @media #{$large-mobile} {
+    //     display: none;
+    // }
     & form {
         width: max-content;
         display: flex;
@@ -51,6 +57,10 @@
         &:active,
         &:focus-within {
             width: 20em;
+
+            @media #{$large-mobile}{
+                width: 10em;
+            }
             & input {
                 width: 100%;
                 padding: 0 2em;
@@ -61,7 +71,19 @@
             }
             & .search-button {
                 transform: translateX(-18.2em);
+                @media #{$large-mobile}{
+                    
+                    transform: translateX(0);
+                }
             }
         }
+    }
+}
+
+.search-invisible {
+    @media #{$large-mobile} {
+        opacity: 0;
+        transition-property: all;
+        transition-duration: 1s;
     }
 }

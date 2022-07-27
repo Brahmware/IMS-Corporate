@@ -1,17 +1,24 @@
-.membership-card-row{
-    & .membership-card-column{
-        & .membership-card-form{
+.membership-card-row {
+    & .membership-card-column {
+        & .membership-card-form {
             background-color: white;
             border-radius: 5px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             padding: 5em 3.4em;
-            & .form-header{
+
+            @media #{$large-mobile} {
+                padding: 4em 2.5em 5.6825em 2.5em;
+            }
+            & .form-header {
                 font-size: 2em;
                 padding-bottom: 1em;
                 line-height: 1;
+                @media #{$large-mobile} {
+                    font-size: 1.25em;
+                }
             }
-            & .form-body > div{
-                & .input-field{
+            & .form-body > div {
+                & .input-field {
                     border: 2px solid $light-text-color;
                     border-radius: 5px;
                     font-size: 1.5em;
@@ -19,23 +26,50 @@
                     width: 100%;
                     line-height: 1;
                     color: $light-text-color;
+                    @media #{$large-mobile} {
+                        font-size: 1em;
+                    }
                 }
             }
-            & .form-body-button{
+            & .select-group {
+                display: flex;
+                justify-content: space-between;
+                gap: 1em;
+                @media #{$large-mobile} {
+                    flex-direction: column;
+                }
+            }
+            & .button-group {
+                display: flex;
+                // flex-direction: column;
+                justify-content: space-evenly;
+
+
+            }
+            & .form-body-button {
                 font-size: 1.5em;
                 padding: 0.5em 2.5em;
                 font-weight: bold;
                 border-radius: 100px;
+                @media #{$large-mobile} {
+                    font-size: 1em;
+                }
+                @media #{$small-mobile} {
+                    font-size: 0.8em;
+                }
             }
         }
 
-        & .membership-card-action{
+        & .membership-card-action {
             background-color: white;
             border-radius: 5px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             padding: 2.5em 3.1em;
+            @media #{$large-mobile} {
+                padding: 1.25em 1em;
+            }
             width: 100%;
-            & .membership-card-action-border{
+            & .membership-card-action-border {
                 border: 1px dotted $light-text-color;
                 border-radius: 5px;
                 display: flex;
@@ -44,82 +78,101 @@
                 justify-content: center;
                 width: 100%;
                 height: 100%;
-                & .action-header{
+
+                @media #{$large-mobile} {
+                    padding: 1.5em;
+                }
+                & .action-header {
                     width: 100%;
                     font-size: 2em;
                     line-height: 1;
                     padding-bottom: 1em;
+                    @media #{$large-mobile} {
+                        font-size: 1em;
+                    }
                 }
-                & .action-body{
+                & .action-body {
                     width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    & .action-body-button{
+                    & .action-body-button {
                         width: 60%;
                         font-size: 1.5em;
                         padding: 0.5em;
                         font-weight: bold;
                         border-radius: 100px;
+                        @media #{$large-mobile} {
+                            width: 100%;
+                            font-size: 1em;
+                        }
                     }
                 }
             }
         }
     }
-
 }
 
-.tab-box-container{
-    & .sub-container{
+.tab-box-container {
+    & .sub-container {
         padding-top: 2em;
         padding-bottom: 1.5em;
         position: relative;
         color: white;
-        & .image-part{
+        & .image-part {
             position: absolute;
             top: 0;
             overflow: hidden;
             z-index: -1;
             width: 100%;
             height: 100%;
-            & .image-overlay{
+            & .image-overlay {
                 background-color: $primary;
                 opacity: 0.7;
                 z-index: -2;
                 width: 100%;
                 height: 100%;
             }
-            & .bg-image{
+            & .bg-image {
                 z-index: -3;
                 width: 100%;
                 height: 100%;
                 position: absolute;
                 top: 0;
-                & img{
+                & img {
                     transform: scale(2);
                 }
             }
         }
-        & .sub-container-part{
+        & .sub-container-part {
             height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            & .sub-container-title{
+            & .sub-container-title {
                 font-size: 5em;
                 line-height: 1.2;
+                @media #{$large-mobile} {
+                    font-size: 3.75em;
+                }
             }
-            & .sub-container-subtitle{
+            & .sub-container-subtitle {
                 font-size: 1.5em;
                 line-height: 1;
                 padding-bottom: 1em;
+                @media #{$large-mobile} {
+                    font-size: 1.25em;
+                }
             }
-            & .sub-container-content{
+            & .sub-container-content {
                 padding: 1.2em 0em;
                 color: white;
+                @media #{$large-mobile} {
+                    font-size: 14px;
+                }
             }
-            & .white-button{
+            & .white-button {
                 border-radius: 0px;
             }
         }

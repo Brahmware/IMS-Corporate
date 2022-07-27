@@ -1,18 +1,31 @@
 .frequently-asked-question-section {
     padding: 0em 4em;
 
+    @media #{$large-mobile} {
+        padding: 0;
+    }
     & .que-ans {
         padding: 1em;
+        @media #{$large-mobile} {
+            padding-left: 0;
+        }
         & .question {
             color: $primary;
             font-weight: 900;
             font-size: 1.5em;
+            @media #{$large-mobile} {
+                font-size:1em;
+            }
         }
 
         & .answer {
             width: 60%;
             font-size: 0.8em;
-            color:$light-text-color
+            color:$light-text-color;
+
+            @media #{$large-mobile} {
+                width:100%;
+            }
         }
         
         & .time {

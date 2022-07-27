@@ -57,12 +57,13 @@ const Header = () => {
                             {/* <LiveButton /> */}
                         </div>
                         <div className="header-right">
-                            <SearchComponent />
+                            <SearchComponent toggleState={offcanvasShow}/>
                             <FilledButton
                                 class={"join-button"}
                                 text={"JOIN"}
                                 onClick={() => history.push('/join')}
                             />
+                            {/* {console.log(offcanvasShow)} */}
                             <HamburgerMenu onClickEvent={onCanvasHandler} toggleState={offcanvasShow} />
                         </div>
                     </div>

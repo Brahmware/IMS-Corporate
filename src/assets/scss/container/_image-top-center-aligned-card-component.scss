@@ -1,4 +1,7 @@
 .image-top-center-aligned-card-component {
+    @media #{$large-mobile}{
+        padding: 2.3125em;
+    }
     & .image-part {
         @media #{$large-mobile} {
             font-size: 8px;
@@ -10,13 +13,17 @@
         height: 29.24em;
         display: flex;
         flex-direction: column;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
 
-        & .top-half-bg, 
+        & .top-half-bg,
         & .bottom-half-bg {
             width: 100%;
             height: 50%;
+
+            @media #{$large-mobile} {
+                border-radius:1.375em 
+            }
         }
 
         & .image-holder {
@@ -34,6 +41,11 @@
                 border-radius: $image-border-radius;
                 flex-shrink: 0;
 
+                @media #{$large-mobile} {
+                    border-radius: 1.375em;
+                    width: 100%;
+                }
+
                 & img {
                     width: 100%;
                     height: 100%;
@@ -41,11 +53,12 @@
                 }
             }
         }
-
     }
-    & .center-aligned-card-part{
+    & .center-aligned-card-part {
         @media #{$large-mobile} {
             font-size: 15px;
+            padding-bottom: 0;
+            padding: 0;
         }
     }
 }

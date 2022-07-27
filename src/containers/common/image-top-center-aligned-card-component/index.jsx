@@ -26,7 +26,7 @@ const ImageTopCenterAlignedCardComponent = ({ data, dividercolor, largeheading }
                 </div>
                 <div className="bottom-half-bg" />
             </div>
-            <div className="center-aligned-card-part section-with-padding">
+            <div className="center-aligned-card-part container">
                 <CenterAlignedCard
                     title={carddata.title}
                     subtitle={carddata.subtitle}
