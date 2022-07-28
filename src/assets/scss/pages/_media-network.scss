@@ -1,4 +1,5 @@
 .media-network-page-wrapper {
+    padding-top: $header-height;
     @media #{$extraBig-device} {
         font-size: 1.3em;
     }

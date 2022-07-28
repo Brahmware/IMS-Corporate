@@ -1,4 +1,7 @@
 .join-page-wrapper {
+
+    padding-top: $header-height;
+
     & .join-page {
         height: calc(100vh - $header-height);
         display: flex;
@@ -93,17 +96,17 @@
         justify-content: center;
         align-items: center;
         // height: 30em;
-        
-        
-        
-        @media #{$large-mobile}{
+
+
+
+        @media #{$large-mobile} {
             height: 17em;
         }
 
         & .fixed-container {
             position: relative;
             width: 100%;
-            
+
 
             & .fixed-image {
                 position: absolute;
@@ -111,11 +114,13 @@
                 right: 0;
                 z-index: 3;
                 width: 80%;
+
                 @media #{$large-mobile} {
                     width: 100%;
                     // width:20em;
                     top: -6em;
                 }
+
                 // transform: translateY(-24em) translateX(-29em);
                 // height: 42em;
             }
@@ -172,12 +177,13 @@
             @media #{$large-mobile} {
                 padding: 0;
             }
+
             & .title {
                 text-align: center;
                 padding: 4em 0em;
                 letter-spacing: 0.6em;
 
-        
+
                 @media #{$large-mobile} {
                     // padding: 2.25em 0em 1.5em 0em;
                     font-size: 0.875em;
@@ -218,6 +224,7 @@
                     background-color: $primary;
                     // height: 15em;
                     padding: 2em;
+
                     @media #{$large-mobile} {
                         padding: 0;
                         display: flex;
@@ -226,6 +233,7 @@
                         position: relative;
                         height: 8.625em;
                     }
+
                     & .box-button {
                         display: flex;
                         flex-direction: row-reverse;
@@ -246,6 +254,7 @@
                         font-size: 5em;
                         color: $white;
                         line-height: normal;
+
                         @media #{$large-mobile} {
                             font-size: 2.125em;
                         }
@@ -255,6 +264,7 @@
                         font-size: 1.5em;
                         color: $white;
                         font-weight: 300;
+
                         @media #{$large-mobile} {
                             font-size: 1em;
                         }
@@ -264,15 +274,18 @@
                         border: 0.07em solid $white;
                         background: $white;
                         width: 6em;
+
                         @media #{$large-mobile} {
                             width: 40%;
                         }
+
                         // margin-top: 0.8em;
                     }
 
                     & .tab-box-price {
                         font-size: 0.8em;
                         line-height: 2.8em;
+
                         @media #{$large-mobile} {
                             font-size: 0.5em;
                             line-height: 5em;
