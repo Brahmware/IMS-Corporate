@@ -35,18 +35,31 @@
                 transform: translateY(-4em);
                 z-index: 1;
 
+                @media #{$large-mobile} {
+                    transform: translateY(-8.25em);
+                    padding-right: 2.3125em;
+                }
+
                 & .page-title {
                     color: $white;
                     display: inline-block;
                     font-size: 5em;
                     font-weight: 1000;
                     line-height: 1em;
+
+                    @media #{$large-mobile} {
+                        font-size: 2.5em;
+                    }
                 }
 
                 & .page-subtitle {
                     color: $white;
                     font-size: 1.5em;
                     text-transform: uppercase;
+
+                    @media #{$large-mobile} {
+                        font-size: 1.25em;
+                    }
                 }
             }
         }
@@ -63,6 +76,12 @@
                 font-size: 4.5em;
                 font-weight: 1000;
                 line-height: 1em;
+
+                @media #{$large-mobile} {
+                    padding-top: 1.68em;
+                    padding-bottom: 1.8em;
+                    font-size: 1.5625em;
+                }
             }
         }
     }
@@ -74,16 +93,30 @@
         justify-content: center;
         align-items: center;
         // height: 30em;
+        
+        
+        
+        @media #{$large-mobile}{
+            height: 17em;
+        }
 
         & .fixed-container {
             position: relative;
+            width: 100%;
+            
 
             & .fixed-image {
                 position: absolute;
-                top: 0em;
-                width: 80em;
+                top: -20em;
+                right: 0;
                 z-index: 3;
-                transform: translateY(-24em) translateX(-29em);
+                width: 80%;
+                @media #{$large-mobile} {
+                    width: 100%;
+                    // width:20em;
+                    top: -6em;
+                }
+                // transform: translateY(-24em) translateX(-29em);
                 // height: 42em;
             }
         }
@@ -93,6 +126,10 @@
             flex-shrink: 0;
             width: 100%;
             overflow: hidden;
+
+            @media #{$large-mobile} {
+                height: 17em;
+            }
 
             & img {
                 background-color: $black;
@@ -119,6 +156,12 @@
                     color: $primary;
                     font-weight: 900;
                     margin-bottom: 1em;
+
+                    @media #{$large-mobile} {
+                        font-size: 1.25em;
+                        text-align: center;
+                        line-height: 20px;
+                    }
                 }
             }
         }
@@ -133,6 +176,15 @@
                 text-align: center;
                 padding: 4em 0em;
                 letter-spacing: 0.6em;
+
+        
+                @media #{$large-mobile} {
+                    // padding: 2.25em 0em 1.5em 0em;
+                    font-size: 0.875em;
+                    letter-spacing: 0.2625em;
+                    padding-top: 3.2142em;
+                    padding-bottom: 1.7142em;
+                }
             }
 
             & .section-1 {
@@ -140,7 +192,7 @@
                 overflow: hidden;
 
                 @media #{$large-mobile} {
-                    height: 10em;
+                    height: 10.125em;
                 }
 
                 & .banner-image-container {
@@ -154,10 +206,12 @@
                 margin-top: 0.5em !important;
                 gap: 0.5em;
 
+
                 @media #{$large-mobile} {
                     display: flex;
-                    flex-wrap:nowrap;
-                    gap:1px;
+                    flex-wrap: nowrap;
+                    gap: 1px;
+                    margin-top: 1px !important;
                 }
 
                 & .sub-container {
@@ -165,11 +219,11 @@
                     // height: 15em;
                     padding: 2em;
                     @media #{$large-mobile} {
-                        padding:0;
-                        display:flex;
-                        align-items:center;
-                        flex-direction:column;
-                        position:relative;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        position: relative;
                         height: 8.625em;
                     }
                     & .box-button {
@@ -202,7 +256,7 @@
                         color: $white;
                         font-weight: 300;
                         @media #{$large-mobile} {
-                            font-size:1em;
+                            font-size: 1em;
                         }
                     }
 
@@ -210,14 +264,19 @@
                         border: 0.07em solid $white;
                         background: $white;
                         width: 6em;
-                        margin-top: 1em;
+                        @media #{$large-mobile} {
+                            width: 40%;
+                        }
+                        // margin-top: 0.8em;
                     }
 
                     & .tab-box-price {
                         font-size: 0.8em;
                         line-height: 2.8em;
                         @media #{$large-mobile} {
-                            font-size:0.625em;
+                            font-size: 0.5em;
+                            line-height: 5em;
+                            color: white;
                         }
                     }
                 }

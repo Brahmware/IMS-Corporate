@@ -7,6 +7,10 @@
     & .title-tabs-part {
         width: 100%;
         background-color: $white;
+       
+        @media #{$large-mobile}{
+            overflow-x: scroll;
+        }
 
         & .page-title-container {
             height: 0;
@@ -33,6 +37,11 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+
+            @media #{$large-mobile} {
+                width: max-content;
+                gap: 2em;
+            }
 
             & .each-tab {
                 font-size: 1.125em;

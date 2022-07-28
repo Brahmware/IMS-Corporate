@@ -1,7 +1,7 @@
 .header {
-    @media #{$extra-small-mobile} {
-        font-size: 0.9em;
-    }
+    // @media #{$extra-small-mobile} {
+    //     font-size: 0.9em;
+    // }
     height: $header-height;
     width: 100vw;
     left: 0;
@@ -38,6 +38,10 @@
         align-items: center;
         gap: 3em;
 
+        @media #{$large-mobile}{
+            gap:1.125em;
+        }
+
         & .join-button {
             height: $header-button-height;
             display: flex;
@@ -63,10 +67,19 @@
     & .logo {
         & svg {
             height: 2em;
+
+            @media #{$large-mobile}{
+                height: 1.75em;
+                width:8.0625em;
+            }
         }
     }
 
     &.shrinked-header {
         height: $shrinked-header-height;
+
+        @media #{$large-mobile}{
+            height: 5.6em;
+        }
     }
 }

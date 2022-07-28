@@ -51,162 +51,164 @@ const Forms = ({ data }) => {
         <div className="container forms">
             <div className="heading">{data[0].title}</div>
             <form action="">
-                <div className="row form-body">
-                    <div className="col-md-6 mb-3">
-                        <input
-                            value={inputFieldData.firstName}
-                            name="firstName"
-                            onChange={inputValue}
-                            id={firstNameData.id}
-                            type={firstNameData.type}
-                            placeholder={firstNameData.label}
-                            className="input-field"
-                        />
-                    </div> 
-                    <div className="col-md-6 mb-3 ">
-                        <input
-                            value={inputFieldData.lastName}
-                            name="lastName"
-                            onChange={inputValue}
-                            id={lastNameData.id}
-                            type={lastNameData.type}
-                            placeholder={lastNameData.label}
-                            className="input-field" />
-                    </div>
-                    <div className="col-md-12 mb-3">
-                        <input
-                            value={inputFieldData.email}
-                            name="email"
-                            onChange={inputValue}
-                            id={emailData.id}
-                            type={emailData.type}
-                            placeholder={emailData.label}
-                            className="input-field" />
-                    </div>
-                    <div
-
-                        className="col-md-12 mb-3">
-
-                        <input
-                            value={inputFieldData.companyName}
-                            name="companyName"
-                            onChange={inputValue}
-                            id={companyNameData.id}
-                            type={companyNameData.type}
-                            placeholder={companyNameData.label}
-                            className="input-field" />
-                    </div>
-                    <div
-
-                        className="col-md-12 mb-3"
-                    >
-                        <textarea id={companyDescriptionData.id} cols="30" rows="10" className="col-md-12 input-field"
-                            value={inputFieldData.companyDescription}
-                            name="companyDescription"
-                            onChange={inputValue}
-                            placeholder={companyDescriptionData.label}
-                        />
-                    </div>
-                    <div className="col-md-12 mb-3">
-                        <input
-                            value={inputFieldData.website}
-                            name="website"
-                            onChange={inputValue}
-                            id={websiteData.id}
-                            type={websiteData.type}
-                            placeholder={websiteData.label}
-                            className="input-field" />
-                    </div>
-                    <div className="col-md-12 mb-3">
-                        <input
-                            value={inputFieldData.phoneNumber}
-                            name="phoneNumber"
-                            onChange={inputValue}
-                            id={phoneNumberData.id}
-                            type={phoneNumberData.type}
-                            placeholder={phoneNumberData.label}
-                            className="input-field" />
-                    </div>
-                    <div className="col-md-6 row mb-3 pe-0 ">
-                        <div className="menu col-md-6 mb-3 pe-0">
-
-                            <select value={inputFieldData.requirement}
-                                name="requirement"
+                <div className="box">
+                    <div className="row form-body">
+                        <div className="col-md-6 mb-3">
+                            <input
+                                value={inputFieldData.firstName}
+                                name="firstName"
                                 onChange={inputValue}
-                                id={requirementData.id} className='input-field'>
-
-                                {
-                                    requirementData.option.map((data, index) => {
-                                        return (<option value={data} key={index}>{data}</option>)
-                                    })
-                                }
-                            </select>
+                                id={firstNameData.id}
+                                type={firstNameData.type}
+                                placeholder={firstNameData.label}
+                                className="input-field"
+                            />
                         </div>
-                        <div className="menu col-md-6 pe-0">
-                            <select
-                                value={inputFieldData.region}
-                                name="region"
+                        <div className="col-md-6 mb-3 ">
+                            <input
+                                value={inputFieldData.lastName}
+                                name="lastName"
                                 onChange={inputValue}
-                                id={regionData.id} className='input-field'>
-
-                                {
-                                    regionData.option.map((data, index) => {
-                                        return (<option value={data} key={index}>{data}</option>)
-                                    })
-                                }
-                            </select>
+                                id={lastNameData.id}
+                                type={lastNameData.type}
+                                placeholder={lastNameData.label}
+                                className="input-field" />
                         </div>
-                    </div>
-                    <div className="col-md-12 mb-3">
-                        <select
-                            value={inputFieldData.advertisementAvenue}
-                            name="advertisementAvenue"
-                            onChange={inputValue}
-                            id={advertisementAvenueData.id} className='input-field'>
-                            {
-                                advertisementAvenueData.option.map((data, index) => {
-                                    return (<option value={data} key={index}>{data}</option>)
-                                })
-                            }
-                        </select>
-                    </div>
-                    <div className="col-md-12 mb-3">
-                        <select
-                            value={inputFieldData.advertisementType}
-                            name="advertisementType"
-                            onChange={inputValue}
-                            id={advertisementTypeData.id} className='input-field'>
-                            {
-                                advertisementTypeData.option.map((data, index) => {
-                                    return (<option value={data} key={index}>{data}</option>)
-                                })
-                            }
-                        </select>
-                    </div>
-                    <div className="col-md-12 mb-3">
-                        <textarea
-                            value={inputFieldData.advertisementDescription}
-                            name="advertisementDescription"
-                            onChange={inputValue}
-                            id={advertisementDescriptionData.id} cols="30" rows="10" className="col-md-12 input-field"
-                            placeholder={advertisementDescriptionData.label} />
-                    </div>
-                    <div className="col-md-12 terms-condition mb-3">
-                        <input type="checkbox" name="" id="" className='' />
-                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum eaque veritatis tempora corrupti laudantium doloribus voluptates dolorum. Tenetur, corrupti quam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis libero repudiandae recusandae </span>
-                    </div>
-                    <div className="button-part">
-                        <Button
-                            className='form-body-button'
-                            type='submit'
-                            color="btn btn-outline-primary"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                console.log(inputFieldData)
-                            }}
+                        <div className="col-md-12 mb-3">
+                            <input
+                                value={inputFieldData.email}
+                                name="email"
+                                onChange={inputValue}
+                                id={emailData.id}
+                                type={emailData.type}
+                                placeholder={emailData.label}
+                                className="input-field" />
+                        </div>
+                        <div
+
+                            className="col-md-12 mb-3">
+
+                            <input
+                                value={inputFieldData.companyName}
+                                name="companyName"
+                                onChange={inputValue}
+                                id={companyNameData.id}
+                                type={companyNameData.type}
+                                placeholder={companyNameData.label}
+                                className="input-field" />
+                        </div>
+                        <div
+
+                            className="col-md-12 mb-3"
                         >
-                            {"send"}
-                        </Button>
+                            <textarea id={companyDescriptionData.id} cols="30" rows="10" className="col-md-12 input-field"
+                                value={inputFieldData.companyDescription}
+                                name="companyDescription"
+                                onChange={inputValue}
+                                placeholder={companyDescriptionData.label}
+                            />
+                        </div>
+                        <div className="col-md-12 mb-3">
+                            <input
+                                value={inputFieldData.website}
+                                name="website"
+                                onChange={inputValue}
+                                id={websiteData.id}
+                                type={websiteData.type}
+                                placeholder={websiteData.label}
+                                className="input-field" />
+                        </div>
+                        <div className="col-md-12 mb-3">
+                            <input
+                                value={inputFieldData.phoneNumber}
+                                name="phoneNumber"
+                                onChange={inputValue}
+                                id={phoneNumberData.id}
+                                type={phoneNumberData.type}
+                                placeholder={phoneNumberData.label}
+                                className="input-field" />
+                        </div>
+                        <div className="col-md-6 row mb-3 pe-0 ">
+                            <div className="menu col-md-6 mb-3 pe-0">
+
+                                <select value={inputFieldData.requirement}
+                                    name="requirement"
+                                    onChange={inputValue}
+                                    id={requirementData.id} className='input-field'>
+
+                                    {
+                                        requirementData.option.map((data, index) => {
+                                            return (<option value={data} key={index}>{data}</option>)
+                                        })
+                                    }
+                                </select>
+                            </div>
+                            <div className="menu col-md-6 pe-0">
+                                <select
+                                    value={inputFieldData.region}
+                                    name="region"
+                                    onChange={inputValue}
+                                    id={regionData.id} className='input-field'>
+
+                                    {
+                                        regionData.option.map((data, index) => {
+                                            return (<option value={data} key={index}>{data}</option>)
+                                        })
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div className="col-md-12 mb-3">
+                            <select
+                                value={inputFieldData.advertisementAvenue}
+                                name="advertisementAvenue"
+                                onChange={inputValue}
+                                id={advertisementAvenueData.id} className='input-field'>
+                                {
+                                    advertisementAvenueData.option.map((data, index) => {
+                                        return (<option value={data} key={index}>{data}</option>)
+                                    })
+                                }
+                            </select>
+                        </div>
+                        <div className="col-md-12 mb-3">
+                            <select
+                                value={inputFieldData.advertisementType}
+                                name="advertisementType"
+                                onChange={inputValue}
+                                id={advertisementTypeData.id} className='input-field'>
+                                {
+                                    advertisementTypeData.option.map((data, index) => {
+                                        return (<option value={data} key={index}>{data}</option>)
+                                    })
+                                }
+                            </select>
+                        </div>
+                        <div className="col-md-12 mb-3">
+                            <textarea
+                                value={inputFieldData.advertisementDescription}
+                                name="advertisementDescription"
+                                onChange={inputValue}
+                                id={advertisementDescriptionData.id} cols="30" rows="10" className="col-md-12 input-field"
+                                placeholder={advertisementDescriptionData.label} />
+                        </div>
+                        <div className="col-md-12 terms-condition mb-3">
+                            <input type="checkbox" name="" id="" className='larger' />
+                            <span>I agree to terms & conditions. I understand all information given by me are true and payments to Indian Media Syndicate are non-refundable and non-transferrable. I further acknowledge that by using the sites, I agree to abide by the terms of this Visitor Agreement.</span>
+                        </div>
+                        <div className="button-part">
+                            <Button
+                                className='form-body-button'
+                                type='submit'
+                                color="btn btn-outline-primary"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    console.log(inputFieldData)
+                                }}
+                            >
+                                {"send"}
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </form>

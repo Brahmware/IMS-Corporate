@@ -5,6 +5,15 @@
     font-size: 0.8em;
     letter-spacing: 0.03em;
 
+    @media #{$large-mobile} {
+        flex-direction: column;
+        width:100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap:31px
+
+    }
+
     & .displayed-per-pages {
         display: flex;
         justify-content: center;
@@ -32,6 +41,9 @@
     & .page-numbers-part {
         display: flex;
         gap: 1em;
+        @media #{$large-mobile} {
+            width: 100%;
+        }
 
         & .page-count {
             display: flex;
@@ -40,14 +52,18 @@
         }
 
         & .symbol {
-            height: 2em;
-            width: 2em;
+            // height: 2em;
+            // width: 2em;
+            padding: 0.5em 1em;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
             transition: $transition-base;
+            // @media #{$large-mobile} {
+            //     padding:0.5em 1em;
+            // }
         }
 
         & .symbol:hover {
@@ -60,6 +76,11 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+
+            @media #{$large-mobile} {
+                overflow-x: scroll;
+                justify-content: flex-start;
+            }
 
             & span {
                 cursor: pointer;

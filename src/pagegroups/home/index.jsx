@@ -33,6 +33,7 @@ const HomePage = () => {
       <SEO title='Indian Media Syndicate' />
       <div className="page-wrapper home-page-wrapper">
         <Header />
+        <FloatingEarthButton />
         <HomeContainerOne data={dataContainer1} />
         <HomeContainerTwo data={dataContainer2} />
         <HomeContainerThree data={dataContainer3} />
@@ -44,7 +45,6 @@ const HomePage = () => {
         <HomeContainerNine data={dataContainer9} />
         <HomeContainerTen data={dataContainer10} />
         <HomeContainerEleven data={dataContainer11} />
-        <FloatingEarthButton />
         <Footer />
       </div>
     </React.Fragment>

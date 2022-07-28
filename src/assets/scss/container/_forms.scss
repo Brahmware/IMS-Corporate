@@ -1,8 +1,24 @@
 .forms {
+    @media #{$large-mobile} {
+        padding-bottom: 2em;
+    }
     & .heading {
         padding: 1em 0em;
         font-size: 4em;
         font-weight: 1000;
+
+        @media #{$large-mobile} {
+            font-size: 1.875em;
+        }
+    }
+
+    & .box {
+        @media #{$large-mobile} {
+            padding: 2em;
+            border: 1px solid gray;
+            border-radius: 10px;
+            box-shadow: 0px 3px 6px grey;
+        }
     }
     & .form-body {
         & .input-field {
@@ -13,6 +29,10 @@
             width: 100%;
             line-height: 1;
             color: #707070;
+
+            @media #{$large-mobile} {
+                font-size: 1em;
+            }
         }
         & .terms-condition {
             padding-left: 3em;
@@ -21,13 +41,25 @@
             justify-content: center;
             align-items: center;
 
-            & input {
-                height: 3.5em;
-                width: 3.5em;
+            @media #{$large-mobile}{
+                gap: 12px;
+                padding-left: 1em;
+            }
+
+            @media #{$large-mobile} {
+                align-items: flex-start;
+            }
+
+            & input.larger {
+               zoom: 1.5;
             }
             & span {
                 font-size: 1.5em;
                 line-height: normal;
+
+                @media #{$large-mobile} {
+                    font-size: 1em;
+                }
             }
         }
         & .button-part {
@@ -40,6 +72,10 @@
                 padding: 0.5em 2.5em;
                 font-weight: bold;
                 border-radius: 100px;
+
+                @media #{$large-mobile} {
+                    font-size: 14px;
+                }
             }
         }
     }
