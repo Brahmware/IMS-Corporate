@@ -3,6 +3,7 @@
     font-size: 1em;
     transition-property: all;
     transition-duration: 1s;
+    position: relative;
 
     // @media #{$large-mobile} {
     //     display: none;
@@ -15,65 +16,80 @@
         height: 100%;
         margin: 0;
         padding: 0;
+        
         & input {
+            position: absolute;
             color: $default-black;
-            //overflow: hidden;
-            width: 1.2em;
+            width: 0em;
+            height: 100%;
+            border: 0;
             padding: 0;
             opacity: 0;
             border-radius: $button-border-radius;
-            -webkit-box-sizing: border-box;
-            /* Safari/Chrome, other WebKit */
-            -moz-box-sizing: border-box;
-            /* Firefox, other Gecko */
-            box-sizing: border-box;
-            /* Opera/IE 8+ */
-            border: 0;
+            background-color: $default-background;
             transition: $transition-base;
+
+            transform: translateX(0em);
+
             &::placeholder {
                 font-size: 1em;
                 font-weight: 300;
                 font-style: italic;
             }
         }
+
         & .search-button {
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: rgba($color: $white, $alpha: 0);
             border: 0;
+            border-radius: 0 50% 50% 0;
             outline: 0;
-            padding: 0.2em;
+            padding: 0.33em;
+            margin-right: -0.15em;
             position: absolute;
+            transition: $transition-base;
+
             & svg {
                 height: 1.3em;
-                & * {
-                    stroke: $default-black;
-                }
+                transition: $transition-base;
+                fill: $black;
             }
         }
+
         &:hover,
         &:focus,
         &:active,
         &:focus-within {
-            width: 20em;
 
-            @media #{$large-mobile}{
-                width: 10em;
-            }
             & input {
                 width: 100%;
-                padding: 0 2em;
+                width: 21em;
+                padding: 0 2em 0 1em;
                 border-radius: $button-border-radius;
-                outline: $medium-thin-border solid $default-black;
+                outline: 0;
                 margin: 0;
                 opacity: 1;
             }
+
             & .search-button {
-                transform: translateX(-18.2em);
-                @media #{$large-mobile}{
-                    
-                    transform: translateX(0);
+                background-color: $primary;
+
+                & svg {
+                    fill: $white;
+                }
+            }
+
+            @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
+                & input {
+                    left: 0;
+                    right: 0;
+                    transform: translateX(-14.75em);
+                }
+
+                & .search-button {
+                    transform: translateX(6.5em);
                 }
             }
         }
