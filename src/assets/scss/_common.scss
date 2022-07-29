@@ -39,16 +39,11 @@
 
 html,
 body {
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     font-family: $font-family-base;
     font-weight: $font-wight-base;
-    font-smooth: auto;
-}
-
-@media #{$large-mobile} {
-    #root {
-        // overflow-x: hidden;
-    }
+    overflow-x: hidden;
 }
 
 body {
@@ -60,8 +55,12 @@ body {
     line-height: 1.714;
     // overflow-x: hidden;
 
-    @media #{large-mobile} {
+    @media #{$large-mobile} {
         font-size: 14px;
+    }
+
+    @media #{$small-mobile} {
+        font-size: 0.8em;
     }
 
     @supports (overflow-x: clip) {
