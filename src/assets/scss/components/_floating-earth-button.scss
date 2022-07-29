@@ -66,6 +66,9 @@
 
         & .button-image {
             pointer-events: all;
+            height: 5.26em;
+            width: 5.26em;
+            transform: translateY(-1.5em);
         }
     }
 }
