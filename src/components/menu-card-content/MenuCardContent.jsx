@@ -4,7 +4,7 @@ import {useHistory} from "react-router-dom"
 import ParallaxImageComponent from '../parallax-image-component';
 
 const MenuCardContent = ({ card }) => {
-    const history=useHistory()
+    const history = useHistory();
     const image = card.image;
     const cardtitle = card.cardtitle;
     const cardcontent = card.cardcontentlist;
