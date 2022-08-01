@@ -1,8 +1,7 @@
 .business-page-wrapper {
 
-    & .container_3 {
-        
-    }
+    padding-top: $header-height;
+    
     @media #{$extraBig-device} {
         font-size: 1.3em;
     }

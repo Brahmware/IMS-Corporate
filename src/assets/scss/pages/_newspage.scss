@@ -1,15 +1,20 @@
-.newspage-wrapper{
+.newspage-wrapper {
+
+    padding-top: $header-height;
+
     @media #{$tablet-device} {
         font-size: 0.7em;
     }
+
     @media #{$large-mobile} {
         font-size: 0.7em;
     }
 }
 
-.newspage-banner{
+.newspage-banner {
     height: 90vh;
-    & .newspage-content{
+
+    & .newspage-content {
         position: absolute;
         top: 0;
         width: 100vw;
@@ -17,96 +22,112 @@
         display: flex;
         align-items: flex-end;
         color: white;
-        & .newspage-title{
+
+        & .newspage-title {
             font-size: 6em;
             font-weight: 1000;
             line-height: 1;
             margin-bottom: 0.3em;
+
             @media #{$large-mobile} {
                 font-size: 5em;
             }
         }
-        & .newspage-date{
+
+        & .newspage-date {
             font-size: 1.5em;
             margin-bottom: 3em;
         }
     }
 }
 
-.recommended-cards-container{
-    
-    & .more-like-this-area{
+.recommended-cards-container {
+
+    & .more-like-this-area {
         width: 100%;
         padding-bottom: 7.25em;
-        & .heading{
+
+        & .heading {
             display: flex;
             gap: 1em;
             align-items: flex-end;
             margin-bottom: 2em;
-            & span{
+
+            & span {
                 font-size: 2.5em;
                 font-weight: 1000;
                 line-height: 1;
             }
-            & a{
+
+            & a {
                 text-decoration: underline;
                 color: $primary;
             }
-    
+
         }
-        & .recommended-cards{
+
+        & .recommended-cards {
             display: grid;
             grid-auto-flow: column;
             background-color: transparent;
             overflow-x: auto;
             overscroll-behavior-inline: contain;
             gap: 2.5em;
-            & .news-card{
+
+            & .news-card {
                 width: 28em;
                 max-height: 30em;
             }
         }
+
         & ::-webkit-scrollbar {
             display: none;
         }
     }
 }
 
-.newspage-body{
+.newspage-body {
     display: flex;
-    & .newspage-content{
+
+    & .newspage-content {
         width: 75%;
         padding-right: 8em;
         display: flex;
         flex-direction: column;
         gap: 4em;
-        & .heading{
+
+        & .heading {
             font-size: 3em;
             letter-spacing: 0;
             line-height: 1;
             font-weight: 400;
-            & .divider{
+
+            & .divider {
                 margin-top: 0.6em;
                 height: 0.04em;
             }
         }
-        & .divider{
+
+        & .divider {
             width: 20%;
         }
-        & .content{
-        }
-        & .quotes{
+
+        & .content {}
+
+        & .quotes {
             font-size: 2em;
             color: $light-text-color;
             font-style: italic;
             line-height: 1;
-            & .quotes-upper{
+
+            & .quotes-upper {
                 margin-bottom: 0.8em;
                 height: 0.08em;
                 width: 20%;
                 background-color: $primary;
             }
-            & .quotes-lower{
+
+            & .quotes-lower {
                 margin-top: 0.8em;
                 height: 0.08em;
                 margin-left: auto;
@@ -114,106 +135,129 @@
                 background-color: $primary;
             }
         }
-        & .images{
+
+        & .images {
             border-radius: 1.375em;
             height: 36em;
-            & img{
+
+            & img {
                 height: 100%;
                 width: 100%;
             }
         }
-        & .imagewithtext{
+
+        & .imagewithtext {
             @media #{$extraBig-device} {
                 display: flex;
                 justify-content: space-between;
-                & .text-part{
+
+                & .text-part {
                     width: 57.5%;
                 }
             }
+
             @media #{$laptop-device } {
                 display: flex;
                 justify-content: space-between;
-                & .text-part{
+
+                & .text-part {
                     width: 57.5%;
                 }
             }
+
             @media #{$desktop-device} {
                 display: flex;
                 justify-content: space-between;
-                & .text-part{
+
+                & .text-part {
                     width: 57.5%;
                 }
             }
-            & .image-part{
+
+            & .image-part {
                 border-radius: 1.375em;
                 width: 37.5%;
-                & img{
+
+                & img {
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
                 }
             }
-            & .text-part{
+
+            & .text-part {
                 font-size: 1em;
                 line-height: 1.3em;
                 color: $light-text-color;
             }
+
             @media #{$large-mobile} {
-                & .image-part{
+                & .image-part {
                     height: 15em;
                     width: 50%;
                 }
-                & .text-part{
+
+                & .text-part {
                     text-align: justify;
                 }
             }
+
             @media #{$tablet-device} {
-                & .image-part{
+                & .image-part {
                     height: 15em;
                     width: 50%;
                 }
-                & .text-part{
+
+                & .text-part {
                     text-align: justify;
                 }
             }
         }
     }
-    & .author-card{
+
+    & .author-card {
         width: 25%;
         background-color: $default-background;
         border-radius: 1.7em;
+
         @media #{$extraBig-device} {
             position: sticky;
             scroll-behavior: smooth;
             top: 10%;
         }
+
         @media #{$laptop-device } {
             position: sticky;
             scroll-behavior: smooth;
             top: 10%;
         }
+
         @media #{$desktop-device} {
             position: sticky;
             scroll-behavior: smooth;
             top: 10%;
         }
+
         @media #{$tablet-device} {
             position: sticky;
             scroll-behavior: smooth;
             top: 10%;
         }
-        padding: 2.125em 2.375em 2.8em 2.375em; 
+
+        padding: 2.125em 2.375em 2.8em 2.375em;
         height: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        & .profile-image{
+
+        & .profile-image {
             width: 6.5em;
             height: 6.5em;
             border-radius: 100%;
             margin-bottom: 1.4em;
-            & img{
+
+            & img {
                 object-fit: cover;
                 object-position: center;
                 height: 100%;
@@ -221,13 +265,15 @@
                 border-radius: 100%;
             }
         }
-        & .title{
+
+        & .title {
             font-size: 0.93em;
             line-height: 1;
             margin-bottom: 0.5em;
             letter-spacing: 0.28em;
         }
-        & .author{
+
+        & .author {
             font-size: 1.875em;
             margin-bottom: 0.6em;
             color: $light-text-color;
@@ -235,23 +281,28 @@
             font-style: italic;
             text-align: center;
         }
-        & .divider{
+
+        & .divider {
             height: 0.08em;
         }
-        & .share-msg{
+
+        & .share-msg {
             margin-top: 1.2em;
             font-size: 1em;
             text-align: center;
             margin-bottom: 1.3em;
         }
-        & .social{
+
+        & .social {
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            & .social-icon{
+
+            & .social-icon {
                 display: flex;
-                & svg{
+
+                & svg {
                     cursor: pointer;
                     border-radius: 100%;
                     width: 1.5em;
@@ -259,24 +310,27 @@
                     transition: all 0.5s 0s ease;
                 }
             }
-            & :hover{
-                & svg{
+
+            & :hover {
+                & svg {
                     fill: $primary;
                 }
             }
         }
-        
+
     }
-    
+
     @media #{$large-mobile} {
         flex-direction: column;
-        & .newspage-content{
+
+        & .newspage-content {
             width: 100%;
             padding-right: 0em;
         }
-        & .author-card{
+
+        & .author-card {
             width: 100%;
-            margin-top: 4em ;
+            margin-top: 4em;
         }
     }
 

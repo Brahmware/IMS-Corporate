@@ -62,6 +62,10 @@ body {
         font-size: 16px;
     }
 
+    @media #{$small-mobile} {
+        font-size: 0.8em;
+    }
+
     @supports (overflow-x: clip) {
         overflow-x: clip;
     }
