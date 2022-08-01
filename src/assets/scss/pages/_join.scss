@@ -90,17 +90,14 @@
     }
 
     .image-background {
-        height: 30em;
+        height: 35em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // height: 30em;
 
-
-
-        @media #{$large-mobile} {
-            height: 17em;
+        @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
+            height: 21em;
         }
 
         & .fixed-container {
@@ -126,13 +123,13 @@
         }
 
         & .banner-background {
-            height: 30em;
+            height: 35em;
             flex-shrink: 0;
             width: 100%;
             overflow: hidden;
 
-            @media #{$large-mobile} {
-                height: 17em;
+            @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
+                height: 21em;
             }
 
             & img {
@@ -167,6 +164,10 @@
                         line-height: 20px;
                     }
                 }
+
+                @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
+                    transform: translateY(-2.3em);
+                }
             }
         }
     }
@@ -187,8 +188,7 @@
                     // padding: 2.25em 0em 1.5em 0em;
                     font-size: 0.875em;
                     letter-spacing: 0.2625em;
-                    padding-top: 3.2142em;
-                    padding-bottom: 1.7142em;
+                    padding: 3.2142em 0;
                 }
             }
 
@@ -223,7 +223,14 @@
                     background-color: $primary;
                     // height: 15em;
                     padding: 2em;
+<<<<<<< HEAD
                     @media #{$large-mobile,$tablet-device} {
+=======
+                    position: relative;
+                    transition: $transition-base;
+
+                    @media #{$large-mobile} {
+>>>>>>> main
                         padding: 0;
                         display: flex;
                         align-items: center;
@@ -236,15 +243,37 @@
                         display: flex;
                         flex-direction: row-reverse;
                         position: absolute;
-                        bottom: -15px;
+                        bottom: -1em;
                         border: 1px solid $primary;
+                        z-index: 3;
 
                         & button {
-                            font-size: 1.2em;
+                            font-size: 1em;
                             font-weight: 800;
                             padding-top: 0.2em;
                             padding-bottom: 0.2em;
                             border-radius: 0%;
+                            transition: $transition-base;
+                            z-index: 3;
+                        }
+
+                        @media #{$large-mobile} {
+                            & button {
+                                padding: 0.2em 3.5em;
+                            }
+                        }
+
+                        @media #{$small-mobile, $extra-small-mobile} {
+                            & button {
+                                padding: 0.2em 2.5em;
+                            }
+                        }
+
+                        &:hover {
+                            & button {
+                                background-color: $primary;
+                                color: $white;
+                            }
                         }
                     }
 
@@ -290,12 +319,6 @@
 
                 & .sub-container:hover {
                     background-color: white;
-
-                    & .box-button {
-                        & button {
-                            border: 1px solid $primary;
-                        }
-                    }
 
                     & .tab-box-heading {
                         color: $primary;

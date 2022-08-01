@@ -3,7 +3,7 @@ import { SearchIcon } from '../../assets/icons'
 import { useForm } from "react-hook-form";
 
 const SearchComponent = (props) => {
-    
+
     const { register, handleSubmit, errors } = useForm({
         mode: "onBlur",
     });
@@ -14,7 +14,7 @@ const SearchComponent = (props) => {
     return (
         <div className={!props.toggleState ? "search search-invisible" : "search"}>
             <form onSubmit={handleSubmit(handleSerachSubmit)}>
-                <input 
+                <input
                     type='text'
                     placeholder='Type Your Search'
                     {...register('search_input')}
@@ -23,7 +23,6 @@ const SearchComponent = (props) => {
                     <SearchIcon />
                 </button>
             </form>
-
         </div>
     )
 }

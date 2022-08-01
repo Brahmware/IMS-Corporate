@@ -106,31 +106,16 @@
         ::-webkit-scrollbar{
             display: none;
         }
-        // & .tabs-container {
-            //     width: 100%;
-        //     height: $banner-tab-container-height;
-        //     display: flex;
-        //     justify-content: space-around;
-        //     align-items: center;
-        //     & .each-tab{
-        //         font-size: 1.125em;
-        //         font-weight: 1000;
-        //         text-transform: uppercase;
-        //         color: $light-text-color;
-        //         transition: $transition-base;
-        //         cursor: pointer;
-        //         & span {
-        //             pointer-events: none;
-        //         }
-        //         &:hover {
-        //             color: rgba($color: $black, $alpha: 0.75);
-        //         }
-        //         &.active-tab {
-        //             color: $black;
-        //             transform: scale(1.1);
-        //         }
-        //     }
-        // }
+
+    }
+    @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
+        & .title-tabs-part {
+            & .page-title {
+                bottom: 0;
+                transform: translateY(0.15em) !important;
+                text-align: right;
+            }
+        }
     }
 
 }
