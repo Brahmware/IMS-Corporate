@@ -19,7 +19,7 @@
     .container-mb{
         display: none;
     }
-    @media #{$large-mobile} {
+    @media #{$large-mobile, $tablet-device} {
         & .laptop-container{
             display: none;
         }
@@ -37,15 +37,16 @@
                 margin-top: 2em;
                 height: 28em;
                 margin-bottom: 2em;
-                @media #{$small-mobile} {
-                    height: 26em;
+                @media #{$small-mobile, $large-mobile, $tablet-device} {
+                    height: 28.85em;
                 }
                 @media #{$extra-small-mobile} {
                     height: 24em;
                 }
             }
             & .continent-selector-part {
-                font-size: 20px;
+                font-size: 1em;
+                padding-bottom: 2em;
             }
         }
         

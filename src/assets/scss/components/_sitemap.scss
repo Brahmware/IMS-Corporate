@@ -5,6 +5,10 @@
     flex-direction: column;
     align-items: center;
 
+    @media #{$tablet-device}{
+        max-width: 100%;
+    }
+
     & .row,
     & .col {
         margin: 0;
@@ -20,6 +24,10 @@
             & .title {
                 font-size: 1.3em;
                 font-weight: 1000;
+
+                @media #{$large-mobile, $tablet-device}{
+                    font-size: 1em;
+                }
             }
         }
 

@@ -5,6 +5,10 @@
     align-items: flex-start;
     gap: 4em;
 
+    @media #{$large-mobile,$tablet-device}{
+        padding-top: 2.64em;
+    }
+
     & .tagline-part {
         display: flex;
         flex-direction: column;

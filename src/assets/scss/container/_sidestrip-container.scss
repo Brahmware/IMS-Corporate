@@ -6,6 +6,20 @@
     right: 0;
     transform: translateX(200%);
     transition: $transition-base;
+& .close {
+    width: 1.71em;
+    height: 1.71em;
+    display: none;
+
+    @media #{$large-mobile, $tablet-device} {
+        display: block;
+    }
+}
+    @media #{$large-mobile}{
+        transform: translateX(0);
+        top: 5em !important;
+        transform: translateY(100%);
+    }
 
     &.open {
         transform: translateY(0%);
@@ -30,9 +44,17 @@
         align-items: center;
         box-shadow: $default-shadow;
 
+        @media #{$large-mobile, $tablet-device} {
+            width: 100%;
+        }
+
         & .cover-image {
             height: 12em;
             width: 100%;
+
+            @media #{$large-mobile, $tablet-device} {
+                height: 13.71em;
+            }
 
             & img {
                 height: 100%;
@@ -48,17 +70,29 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-
+            @media #{$large-mobile, $tablet-device} {
+                padding: 1.42em 2.64em;
+                justify-content: flex-start;
+                gap: 1.78em;
+            }
             & .bookish-card {
                 
                 & .title {
                     line-height: 1.2em;
-                    font-size: 00.7em;
+                    font-size: 0.7em;
+
+                    @media #{$large-mobile, $tablet-device} {
+                        font-size: 0.85em;
+                    }
                 }
                 
                 & .subtitle {
                     font-size: 2em;
                     line-height: 1.2em;
+
+                    @media #{$large-mobile, $tablet-device} {
+                        font-size: 2.14em;
+                    }
                 }
                 & .content {
                     line-height: 1.2em;
@@ -76,6 +110,9 @@
                 justify-content: space-around;
                 align-items: center;
                 gap: 1em;
+                @media #{$large-mobile, $tablet-device} {
+                    font-size: 1.42em;
+                }
 
                 & .filled-button {
                     width: 100%;

@@ -27,5 +27,8 @@
         @media #{$large-mobile} {
             margin-top: 1em;
         }
+        @media #{$tablet-device} {
+            margin-top: 1em;
+        }
     }
 }

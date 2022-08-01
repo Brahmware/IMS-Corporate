@@ -1,4 +1,5 @@
 .navigation-container {
+    padding-top: 5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +9,7 @@
         width: 100%;
         background-color: $white;
        
-        @media #{$large-mobile}{
+        @media #{$large-mobile, $tablet-device}{
             overflow-x: scroll;
         }
 
@@ -38,7 +39,7 @@
             justify-content: space-around;
             align-items: center;
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile, $tablet-device} {
                 width: max-content;
                 gap: 2em;
             }

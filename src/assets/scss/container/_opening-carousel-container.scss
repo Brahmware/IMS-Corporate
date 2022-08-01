@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     gap: 3em;
-    @media #{$large-mobile} {
+    @media #{$large-mobile, $tablet-device} {
         font-size: 14px;
         & .heading-part{
             & .subtitle{
@@ -36,6 +36,10 @@
         justify-content: center;
         align-items: flex-start;
         gap: 1em;
+
+        @media #{$large-mobile, $tablet-device} {
+            padding-top: 2.64em;
+        }
         & .title {
             padding-left: 0.4em;
         }
@@ -60,13 +64,13 @@
         }
     }
     & .carousal-part-desktop{
-        @media #{$large-mobile} {
+        @media #{$large-mobile, $tablet-device} {
             display: none;
         }
     }
     & .carousal-part-mb{
         display: none;
-        @media #{$large-mobile} {
+        @media #{$large-mobile, $tablet-device} {
             display: block;
             & .swiper-system-mb{
                 display: grid;
@@ -78,8 +82,9 @@
                     margin-right: 2em;
                     // width: 70vw;
                 }
-                @media #{$small-mobile} {
+                @media #{$small-mobile, $tablet-device, $large-mobile} {
                     font-size: 13px;
+                    padding-bottom: 2.64em;
                     & .card-holder{
                         width: 82vw;
                     }

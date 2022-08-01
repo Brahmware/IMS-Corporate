@@ -67,6 +67,7 @@
 
             @media #{$large-mobile} {
                 justify-content: center;
+                grid-template-columns: none;
             }
 
             @media #{$small-mobile} {
@@ -78,6 +79,12 @@
 
             }
 
+            & .image-parts {
+                @media #{$large-mobile} {
+                    width : 100%;
+                }
+            }
+
             & .grid-figure {
                 display: grid;
                 max-width: 18em;
@@ -85,6 +92,10 @@
                 cursor: pointer;
                 transition: $transition-base;
                 border-radius: 1.3em;
+
+                @media #{$large-mobile} {
+                    max-width: 100%;
+                }
 
                 &:hover {
                     box-shadow: $default-shadow;
@@ -102,6 +113,10 @@
                         height: 15em;
                         background: radial-gradient(circle, rgba(181, 181, 181, 0) 23%, rgba(44, 44, 44, 0.39289219105610995) 80%);
                         border-radius: 1.3em;
+
+                        @media #{$large-mobile} {
+                            height: 17.35em;
+                        }
 
                         & .download-btn {
                             width: 1.7em;
@@ -144,6 +159,10 @@
                         height: 15em;
                         border-radius: 1.3em;
                         object-fit: cover;
+
+                        @media #{$large-mobile} {
+                            height:17.35em;
+                        }
                     }
 
                 }
@@ -160,6 +179,10 @@
                         line-height: 1;
                         font-weight: bold;
                         color: black;
+
+                        @media #{$large-mobile, $tablet-device}{
+                            font-size: 1.42em;
+                        }
                     }
 
                     & .grid-figure-subtitle {
@@ -198,6 +221,7 @@
 
         .gallery-container {
             width: 100%;
+            height: max-content;
         }
 
         .filter-container {

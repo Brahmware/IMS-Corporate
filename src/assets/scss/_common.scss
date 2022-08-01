@@ -55,8 +55,11 @@ body {
     line-height: 1.714;
     // overflow-x: hidden;
 
-    @media #{large-mobile} {
+    @media #{$large-mobile} {
         font-size: 14px;
+    }
+    @media #{$tablet-device} {
+        font-size: 16px;
     }
 
     @supports (overflow-x: clip) {
@@ -114,6 +117,7 @@ a {
 
 p:last-child {
     margin-bottom: 0;
+    // text-align: center;
 }
 
 ul,
@@ -159,7 +163,10 @@ ol {
         padding: 0 70px;
     }
     @media #{$large-mobile} {
-        padding: 0em 2.3125em ;
+        padding: 0em 2.6428em;
+    }
+    @media #{$tablet-device} {
+        padding: 0em 2.3125em;
     }
 }
 
@@ -169,25 +176,32 @@ ol {
     width: 100%;
 
     .title {
-        font-size: 0.8em;
+        font-size: 0.8575em;
         color: $light-text-color;
         letter-spacing: 0.4em;
         font-weight: 600;
+        @media #{$large-mobile} {
+            font-size: 0.8575em;
+            color: #707070;
+            letter-spacing: 0.3em;
+            font-weight: 600;
+            // line-height: 4.416em;
+        }
     }
 
     .subtitle {
         @media #{$large-mobile} {
-            font-size: 2.8em;
+            font-size: 2.1428em;
+            line-height: 1em;
+        }
+        @media #{$tablet-device} {
+            font-size: 2.1428em;
+            line-height: 1.46em;
         }
         font-size: 3em;
         font-weight: 900;
         line-height: 1.3em;
         letter-spacing: 0.02em;
-
-        @media #{$large-mobile} {
-            font-size: 1.875em;
-            // text-align: center;
-        }
     }
 
     .divider {
@@ -202,7 +216,7 @@ ol {
 
     .content {
         color: $light-text-color;
-        line-height: 1.3em;
+        line-height: 1.21em;
     }
 }
 
@@ -210,6 +224,9 @@ ol {
     padding: $section-padding;
 
     @media #{$large-mobile} {
+        padding: 0em;
+    }
+    @media #{$tablet-device} {
         padding: 2em 0em;
     }
 }
@@ -223,10 +240,17 @@ ol {
         flex-direction: column;
         gap: 1em;
     }
+    @media #{$tablet-device} {
+        flex-direction: column;
+        gap: 1em;
+    }
 
     & > div {
         width: 50%;
         @media #{$large-mobile} {
+            width: 100%;
+        }
+        @media #{$tablet-device} {
             width: 100%;
         }
     }
@@ -236,6 +260,9 @@ ol {
         @media #{$large-mobile} {
             flex-direction: column;
         }
+        @media #{$tablet-device} {
+            flex-direction: column;
+        }
     }
 }
 
@@ -243,7 +270,11 @@ ol {
     font-size: 6em;
     font-weight: 900;
     line-height: 1em;
-    @media #{$large-mobile}{
+    @media #{$large-mobile} {
+        font-size: 1.875em;
+        font-weight: 1000;
+    }
+    @media #{$tablet-device} {
         font-size: 1.875em;
         font-weight: 1000;
     }
@@ -257,11 +288,17 @@ ol {
     @media #{$large-mobile} {
         flex-direction: column-reverse;
     }
+    @media #{$tablet-device} {
+        flex-direction: column-reverse;
+    }
 
     & > div {
         &:first-child {
             width: 45.48%;
             @media #{$large-mobile} {
+                width: 100%;
+            }
+            @media #{$tablet-device} {
                 width: 100%;
             }
         }
@@ -271,9 +308,18 @@ ol {
             @media #{$large-mobile} {
                 width: 100%;
             }
+            @media #{$tablet-device} {
+                width: 100%;
+            }
         }
         & .button-element {
             @media #{$large-mobile} {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+            @media #{$tablet-device} {
                 display: flex;
                 align-items: center;
                 justify-content: center;

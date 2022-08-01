@@ -1,5 +1,5 @@
 .footer {
-    height: 100vh;
+    height: max-content;
     padding: 4em 0 2em 0;
     font-size: 1em;
     color: $default-black;
@@ -7,8 +7,9 @@
     overflow: hidden;
     position: relative;
 
-    @media #{$large-mobile} {
+    @media #{$large-mobile, $tablet-device} {
         height: max-content;
+        padding-bottom: 7.625em;
     }
     & .container {
         height: 100%;
@@ -30,7 +31,7 @@
             background-color: $default-black;
             border-radius: 2.5em;
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile, $tablet-device} {
                 width: 100%;
             }
         }
@@ -42,7 +43,7 @@
         flex-direction: column;
         justify-content: space-between;
 
-        @media #{$large-mobile} {
+        @media #{$large-mobile, $tablet-device} {
             align-items: center;
         }
 
@@ -52,7 +53,7 @@
             justify-content: space-between;
             align-items: center;
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile, $tablet-device} {
                 flex-direction: column;
                 padding-top: 3em;
                 width: 100%;
@@ -62,8 +63,9 @@
                 font-size: 0.7em;
                 padding: 0;
 
-                @media #{$large-mobile} {
+                @media #{$large-mobile, $tablet-device} {
                     width: 100%;
+                    font-size: 1em;
                 }
             }
         }
@@ -75,27 +77,30 @@
             align-items: flex-end;
             font-size: 1em;
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile, $tablet-device} {
                 flex-direction: column;
+                width: 100%;    
+                
             }
 
             & .col-6 {
                 padding: 0;
-                @media #{$large-mobile} {
+                @media #{$large-mobile, $tablet-device} {
                     width: 100%;
                 }
             }
             & .subscribecomponent {
                 font-size: 0.8em;
 
-                @media #{$large-mobile} {
+                @media #{$large-mobile, $tablet-device} {
                     margin-top: 1em;
+                    font-size: 1em;
                     align-items: center;
                 }
 
                 & .title {
-                    @media #{$large-mobile} {
-                        font-size: 1.375em;
+                    @media #{$large-mobile, $tablet-device} {
+                        font-size: 1.42em;
                     }
                 }
             }
@@ -105,8 +110,9 @@
             padding: 0;
             gap: 0;
             font-size: 1em;
-            @media #{$large-mobile} {
+            @media #{$large-mobile, $tablet-device} {
                 margin-top: 2em;
+                width: 100%;
             }
 
             & .privacy-copyright-section-left {
@@ -116,14 +122,14 @@
                 align-items: flex-start;
                 gap: 1.5em;
 
-                @media #{$large-mobile} {
+                @media #{$large-mobile, $tablet-device} {
                     align-items: center;
                 }
                 & .contactus {
                     font-size: 0.8em;
                     font-weight: 1000;
 
-                    @media #{$large-mobile} {
+                    @media #{$large-mobile, $tablet-device} {
                         display: none;
                     }
                 }
@@ -132,7 +138,7 @@
                     gap: 2em;
                 }
                 & .copyright {
-                    @media #{$large-mobile} {
+                    @media #{$large-mobile, $tablet-device} {
                         display: none;
                     }
                 }
@@ -154,8 +160,11 @@
 
                 & .copyright-sm {
                     display: none;
-                    @media #{$large-mobile}{
-                        display: block;
+                    @media #{$large-mobile, $tablet-device}{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+
                     }
                 }
                 & .legals {
@@ -168,6 +177,12 @@
                     @media #{$large-mobile} {
                         display: grid;
                         grid-template-columns: auto auto;
+                        margin-top: 1.25em;
+                        row-gap: 1em;
+                    }
+                    @media #{ $tablet-device} {
+                        display: grid;
+                        grid-template-columns: auto auto auto;
                         margin-top: 1.25em;
                         row-gap: 1em;
                     }

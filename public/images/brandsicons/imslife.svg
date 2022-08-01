@@ -1,0 +1,14 @@
+<svg id="Group_19" data-name="Group 19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="151.692" height="61.904" viewBox="0 0 151.692 61.904">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_16" data-name="Rectangle 16" width="151.692" height="61.904" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_18" data-name="Group 18" clip-path="url(#clip-path)">
+    <text id="life" transform="translate(81.422 53.666)" fill="#1e1e1e" font-size="21" font-family="Elephant-Regular, Elephant"><tspan x="0" y="0">life</tspan></text>
+    <text id="ims" transform="translate(79.356 32.455)" fill="#74b750" font-size="39" font-family="Gotham-Black, Gotham" font-weight="800"><tspan x="0" y="0">ims</tspan></text>
+    <path id="Path_176" data-name="Path 176" d="M86.416,60.186h3.429A21.853,21.853,0,0,0,111.7,38.334V10.88h-3.43A21.853,21.853,0,0,0,86.416,32.732Z" transform="translate(-47.792 -6.017)" fill="#74b750"/>
+    <path id="Path_177" data-name="Path 177" d="M61.531,39.745h0V26.986A16.106,16.106,0,0,0,45.425,10.88V23.639A16.106,16.106,0,0,0,61.531,39.745" transform="translate(-25.122 -6.017)" fill="#74b750"/>
+    <path id="Path_178" data-name="Path 178" d="M0,99H20.9a15.5,15.5,0,0,0,15.5-15.5V81.061H15.5A15.5,15.5,0,0,0,0,96.566Z" transform="translate(0 -44.831)" fill="#74b750"/>
+  </g>
+</svg>

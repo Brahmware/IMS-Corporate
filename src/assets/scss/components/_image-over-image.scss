@@ -17,9 +17,9 @@
         justify-content: center;
         align-items: center;
 
-        @media #{$large-mobile} {
-            width: 62.5%;
-            height: 27.5625em;
+        @media #{$large-mobile, $tablet-device } {
+            width: 62.38%;
+            height: 31.5em;
         }
 
         & .image-overlay {
@@ -30,6 +30,9 @@
             opacity: 0.75;
 
             @media #{$large-mobile} {
+                width: 100%;
+            }
+            @media #{$tablet-device} {
                 width: 100%;
             }
         }
@@ -44,9 +47,15 @@
         z-index: 1;
 
         @media #{$large-mobile} {
-            width: 14.9375em;
-            height: 21.1875em;
-            right: 2.3125em;
+            width: 17.07em;
+            height: 24.21em;
+            right: 2.6428em;
+            transform: translateX(0);
+        }
+        @media #{$tablet-device} {
+            width: 17.07em;
+            height: 24.21em;
+            right: 0;
             transform: translateX(0);
         }
 
@@ -77,6 +86,10 @@
                 transform: translateX(0);
                 left: 2.3125em;
             }
+            @media #{$tablet-device} {
+                transform: translateX(0);
+                left: 2.3125em;
+            }
         }
     }
 }
@@ -93,6 +106,9 @@
     @media #{$large-mobile} {
         width: 100%;
     }
+    @media #{$tablet-device} {
+        width: 100%;
+    }
 
     & .bottom-image {
         align-self: flex-start;
@@ -105,9 +121,10 @@
         justify-content: center;
         align-items: center;
 
-        @media #{$large-mobile} {
-            width: 14.0625em;
-            height: 13.625em;
+        @media #{$large-mobile, $tablet-device} {
+            width: 16.07em;
+            height: 15.57em;
+            border-radius: 1.57em;
         }
 
         & .image-overlay {
@@ -133,10 +150,17 @@
         flex-shrink: 0;
 
         @media #{$large-mobile} {
+            width: 13.21em;
+            height: 9.64em;
+            left: 0;
+            transform: translateX(0);
+            border-radius: 1.57em;
+        }
+        @media #{$tablet-device} {
             width: 11.5625em;
             height: 8.4375em;
             left: 0;
-            transform: translateX(0)
+            transform: translateX(0);
         }
 
         & .image-wrapper {

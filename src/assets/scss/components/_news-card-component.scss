@@ -166,7 +166,7 @@
             }
             
         }
-        @media #{$large-mobile} {
+        @media #{$large-mobile,$tablet-device} {
             flex-direction: column;
             justify-content: flex-start;
             & .highlighted-news-card {
@@ -203,7 +203,7 @@
 
 .newsroom-container-2{
     padding: 3em 0em;
-    @media #{$large-mobile} {
+    @media #{$large-mobile,$tablet-device} {
         padding: 0;
         padding-bottom: 3em;
     }

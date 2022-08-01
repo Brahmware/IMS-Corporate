@@ -3,12 +3,23 @@
         width: 100%;
         padding:0;
     }
+    @media #{$tablet-device} {
+        width: 100%;
+        padding:0;
+    }
     .flashcard-component {
         position: relative;
-        height: 32em;
-        width: 24em;
+        height: 28.847em;
+        width: 21.635em;
 
         @media #{$large-mobile} {
+            width: 100%;
+            // height: max-content;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        @media #{$tablet-device} {
             width: 100%;
             // height: max-content;
             height: auto;
@@ -29,6 +40,10 @@
             overflow: hidden;
 
             @media #{$large-mobile} {
+                position: relative;
+                height: 30.75em;
+            }
+            @media #{$tablet-device} {
                 position: relative;
                 height: 30.75em;
             }
@@ -92,6 +107,9 @@
             @media #{$large-mobile} {
                 display: none;
             }
+            @media #{$tablet-device} {
+                display: none;
+            }
         }
 
         & .information-card {
@@ -107,6 +125,38 @@
             z-index: -1;
 
             @media #{$large-mobile} {
+                position: relative;
+                transform: translateY(-100%);
+                // animation: none;
+                animation: slide-up-down 10s linear infinite;
+                padding-left: 0;
+                padding-top: 2em;
+
+                @keyframes slide-up-down {
+                    0% {
+                        transform: translateY(-100%);
+                    }
+
+                    5% {
+                        transform: translateY(-100%);
+                    }
+
+                    10% {
+                        transform: translateY(-20%);
+                    }
+
+                    90% {
+                        transform: translateY(-20%);
+                    }
+                    95% {
+                        transform: translateY(-100%);
+                    }
+                    100% {
+                        transform: translateY(-100%);
+                    }
+                }
+            }
+            @media #{$tablet-device} {
                 position: relative;
                 transform: translateY(-100%);
                 // animation: none;

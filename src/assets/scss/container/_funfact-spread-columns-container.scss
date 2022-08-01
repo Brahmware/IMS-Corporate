@@ -5,8 +5,10 @@
     gap: 10em;
     margin-top: -1.3em;
 
-    @media #{$small-mobile}{
+    @media #{$large-mobile,$tablet-device} {
         flex-direction: column;
+        padding-top: 2.64em;
         gap: 3em;
+        padding-bottom: 3em;
     }
 }

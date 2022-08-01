@@ -1,7 +1,10 @@
 .image-card-container {
     font-size: 1em;
-    @media #{$large-mobile} {
+    @media #{$large-mobile, $tablet-device} {
         font-size: 14px;
+        padding: 0
+        ;
+        padding-top: 2.85em;
         & .half-devided-section{
             display: flex;
             flex-direction: column;
@@ -10,6 +13,8 @@
             }
             & .card-part {
                 width: 100%;
+                padding: 2.85em 0em;
+                
             }
         }
     }
@@ -19,6 +24,10 @@
     
             &>div {
                 border-radius: $image-border-radius;
+
+                @media #{$large-mobile, $tablet-device} {
+                    border-radius: 1.57em;
+                }
             }
     
             & .image-box {
