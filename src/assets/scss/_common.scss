@@ -62,9 +62,9 @@ body {
         font-size: 16px;
     }
 
-    @media #{$small-mobile} {
-        font-size: 0.8em;
-    }
+    // @media #{$small-mobile} {
+    //     font-size: 0.8em;
+    // }
 
     @supports (overflow-x: clip) {
         overflow-x: clip;
@@ -174,18 +174,27 @@ ol {
     }
 }
 
+// .title {
+//     @media #{$large-mobile, $tablet-device} {
+//         font-size: 1em;
+//         color: #707070;
+//         letter-spacing: 0.3em;
+//         font-weight: 600;
+//     }
+// }
+
 /* Section Style */
 .section,
 .section-with-padding {
     width: 100%;
 
     .title {
-        font-size: 0.8575em;
+        font-size: 1em;
         color: $light-text-color;
         letter-spacing: 0.4em;
         font-weight: 600;
         @media #{$large-mobile} {
-            font-size: 0.8575em;
+            font-size: 1em;
             color: #707070;
             letter-spacing: 0.3em;
             font-weight: 600;
@@ -341,6 +350,21 @@ ol {
     background-color: $white;
 }
 
+.button-element {
+    @media #{$large-mobile} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 2.64em;
+    }
+    @media #{$tablet-device} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
 /* Section Padding */
 
 .section-padding {

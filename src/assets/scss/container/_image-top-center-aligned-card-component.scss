@@ -1,6 +1,7 @@
 .image-top-center-aligned-card-component {
     @media #{$large-mobile, $tablet-device}{
-        padding: 2.3125em;
+        padding: 2.64em;
+        padding-bottom: 0;
     }
     & .image-part {
         @media #{$large-mobile, $tablet-device} {
@@ -10,9 +11,9 @@
             font-size: 8px;
             height:70em;
         }
-        @media #{$small-mobile} {
-            font-size: 7px;
-        }
+        // @media #{$small-mobile} {
+        //     font-size: 7px;
+        // }
         width: 100%;
         height: 29.24em;
         display: flex;
@@ -65,7 +66,7 @@
     }
     & .center-aligned-card-part {
         @media #{$large-mobile, $tablet-device} {
-            font-size: 15px;
+            font-size: 14px;
             padding-bottom: 0;
             padding: 0;
         }

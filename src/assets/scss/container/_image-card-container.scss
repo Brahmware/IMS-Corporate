@@ -2,8 +2,7 @@
     font-size: 1em;
     @media #{$large-mobile, $tablet-device} {
         font-size: 14px;
-        padding: 0
-        ;
+        // padding: 0;
         padding-top: 2.85em;
         & .half-devided-section{
             display: flex;
@@ -14,6 +13,7 @@
             & .card-part {
                 width: 100%;
                 padding: 2.85em 0em;
+                padding-bottom: 0;
                 
             }
         }

@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
 
+    @media #{$large-mobile , $tablet-device}{
+        padding-top:0;
+    }
+
     & .title-tabs-part {
         width: 100%;
         background-color: $white;

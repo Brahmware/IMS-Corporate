@@ -3,12 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; 
+    text-align: center;
     gap: 1em;
     @media #{$large-mobile} {
         padding: 0;
         padding-top: 3.21em;
-        padding-bottom: 3.28em;
+        padding-bottom: 2.64em;
     }
     @media #{$tablet-device} {
         padding: 2.3125em;
@@ -16,6 +16,23 @@
         padding-bottom: 0;
     }
 
+    & .title {
+        font-size: 1em;
+        color: #707070;
+        letter-spacing: 0.4em;
+        font-weight: 600;
+    }
+
+    & .subtitle {
+        font-size: 3em;
+        font-weight: 900;
+        line-height: 1.3em;
+        letter-spacing: 0.02em;
+
+        @media #{$large-mobile, $tablet-device} {
+            font-size: 2.1428em;
+        }
+    }
     & .divider {
         height: $thick-divider;
         width: 10em;
@@ -34,5 +51,13 @@
         @media #{$tablet-device} {
             max-width: 100%;
         }
+    }
+}
+
+.center-aligned-card-sm {
+    @media #{$large-mobile} {
+        padding: 0;
+        padding-top: 3.21em;
+        padding-bottom: 0;
     }
 }

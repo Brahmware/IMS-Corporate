@@ -76,6 +76,10 @@ const NewsCards = ({ data, heading }) => {
                                             <div className="blank"><BlankIcon /><span>{data.text}</span></div>
                                             <div className="info"><span><InfoIcon /></span></div>
                                         </div>
+                                        <div className="icon-part-sm">
+                                            <div className="blank"><BlankIcon /><span>{data.text}</span></div>
+                                            <div className="info"><span><InfoIcon /></span></div>
+                                        </div>
                                     </div>
                                 </div> 
                             </>

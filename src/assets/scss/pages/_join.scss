@@ -40,7 +40,7 @@
 
                 @media #{$large-mobile,$tablet-device} {
                     transform: translateY(-8.25em);
-                    padding-right: 2.3125em;
+                    padding-right: 2.64em;
                 }
 
                 & .page-title {
@@ -51,7 +51,7 @@
                     line-height: 1em;
 
                     @media #{$large-mobile,$tablet-device} {
-                        font-size: 2.5em;
+                        font-size: 2.85em;
                     }
                 }
 
@@ -61,7 +61,7 @@
                     text-transform: uppercase;
 
                     @media #{$large-mobile,$tablet-device} {
-                        font-size: 1.25em;
+                        font-size: 1.42em;
                     }
                 }
             }
@@ -223,14 +223,7 @@
                     background-color: $primary;
                     // height: 15em;
                     padding: 2em;
-<<<<<<< HEAD
                     @media #{$large-mobile,$tablet-device} {
-=======
-                    position: relative;
-                    transition: $transition-base;
-
-                    @media #{$large-mobile} {
->>>>>>> main
                         padding: 0;
                         display: flex;
                         align-items: center;

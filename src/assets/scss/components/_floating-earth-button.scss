@@ -55,7 +55,7 @@
         /* Opera 11.10+ */
         background: -ms-radial-gradient(bottom, ellipse cover, rgba($white, 0.95) 0%, rgba($white, 0.95) 20%, rgba($black, 0) 70%);
         /* IE 10+ */
-        background: radial-gradient(ellipse at bottom, rgba($white, 0.95) 0%, rgba($white, 0.95) 20%, rgba($black, 0) 60%);
+        background: radial-gradient(ellipse at bottom, rgb(255 255 255) 0%, rgb(255 255 255 / 34%) 32%, rgb(0 0 0 / 0%) 55%);
         /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
         /* IE6-9 fallback on horizontal gradient */
