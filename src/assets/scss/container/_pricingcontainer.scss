@@ -2,6 +2,10 @@
     & .table-wrapper {
         justify-content: space-between;
 
+        @media #{$tablet-device}{
+            padding: 0em 5em;
+        }
+
         & .card-wrapper {
             margin: 4em 0em;
             @media #{$large-mobile, $tablet-device}{

@@ -20,6 +20,11 @@
         top: 5.6em !important;
         transform: translateY(100%);
     }
+    @media #{ $tablet-device} {
+        transform: translateX(0);
+        top: 80px !important;
+        transform: translateY(100%);
+    }
 
     &.open {
         transform: translateY(0%);

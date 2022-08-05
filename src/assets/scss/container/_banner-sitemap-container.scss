@@ -76,14 +76,14 @@
                 grid-auto-flow: column;
                 overflow-x: auto;
                 gap: 4em;
-                height: 0;
+                height: auto;
                 padding-top: 2.5em;
                 padding-bottom: 3.21em;
             }
             & .each-tab{
                 @media #{$large-mobile, $tablet-device} {
                     width: max-content;
-                    font-size: 1em;
+                    font-size: 1.42em;
                 }
                 font-size: 1.125em;
                 font-weight: 1000;

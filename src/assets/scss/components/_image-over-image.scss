@@ -21,6 +21,10 @@
             width: 62.38%;
             height: 31.5em;
         }
+        @media #{$tablet-device } {
+            width: 62.38%;
+            height: 47em;
+        }
 
         & .image-overlay {
             position: absolute;
@@ -52,12 +56,12 @@
             right: 2.6428em;
             transform: translateX(0);
         }
-        // @media #{$tablet-device} {
-        //     width: 17.07em;
-        //     height: 24.21em;
-        //     right: 0;
-        //     transform: translateX(0);
-        // }
+        @media #{$tablet-device} {
+            width: 24em;
+            height: 34em;
+            right: 0em;
+            transform: translateX(0);
+        }
 
         & .image-wrapper {
             height: 100%;
@@ -86,10 +90,10 @@
                 transform: translateX(0);
                 left: 2.3125em;
             }
-            // @media #{$tablet-device} {
-            //     transform: translateX(0);
-            //     left: 2.3125em;
-            // }
+            @media #{$tablet-device} {
+                transform: translateX(0);
+                left: 0;
+            }
         }
     }
 }
@@ -127,11 +131,11 @@
             height: 15.57em;
             border-radius: 1.57em;
         }
-        @media #{$small-mobile} {
-            width: 12.07em;
-            height: 12.57em;
-            border-radius: 1.57em;
-        }
+        // @media #{$small-mobile} {
+        //     width: 12.07em;
+        //     height: 12.57em;
+        //     border-radius: 1.57em;
+        // }
 
         & .image-overlay {
             position: absolute;

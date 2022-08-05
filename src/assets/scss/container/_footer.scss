@@ -157,6 +157,9 @@
                 justify-content: flex-end;
                 align-items: flex-start;
                 gap: 1.5em;
+                @media #{$large-mobile, $tablet-device} {
+                    font-size: 1em;
+                }
 
                 & .copyright-sm {
                     display: none;

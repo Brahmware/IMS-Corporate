@@ -41,7 +41,7 @@ const TabBoxImageBackground = (props) => {
                                 }}
                             />
                         </div>
-                        <div className="divider w-75 bg-white"></div>
+                        <div className="divider border w-75 bg-white"></div>
                         <div
                             className="sub-container-content content w-75 text-center"
                         >

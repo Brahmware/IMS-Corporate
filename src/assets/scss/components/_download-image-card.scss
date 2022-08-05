@@ -65,6 +65,9 @@
                 justify-content: space-between;
             }
 
+            @media #{$tablet-device} {
+                justify-content: space-evenly;
+            }
             @media #{$large-mobile} {
                 justify-content: center;
                 grid-template-columns: none;
