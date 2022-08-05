@@ -17,7 +17,7 @@ const NewsCards = ({ data, heading }) => {
     console.log(data);
     return (
         <>
-            <div className="col" >
+            <div className="col col-md-6" >
             <Link
                 to={`/newspage/${data.id}`}
             >

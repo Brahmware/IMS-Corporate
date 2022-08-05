@@ -5,19 +5,19 @@
     align-items: center;
     text-align: center;
     gap: 1em;
-    @media #{$large-mobile} {
+    @media #{$large-mobile,$tablet-device} {
         padding: 0;
         padding-top: 3.21em;
         padding-bottom: 2.64em;
     }
-    @media #{$tablet-device} {
-        padding: 2.3125em;
-        padding-top: 67px;
-        padding-bottom: 0;
-    }
+    // @media #{$tablet-device} {
+    //     padding: 2.3125em;
+    //     padding-top: 67px;
+    //     padding-bottom: 0;
+    // }
 
     & .title {
-        font-size: 1em;
+        // font-size: 1em;
         color: #707070;
         letter-spacing: 0.4em;
         font-weight: 600;

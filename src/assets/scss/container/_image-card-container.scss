@@ -1,7 +1,25 @@
 .image-card-container {
     font-size: 1em;
-    @media #{$large-mobile, $tablet-device} {
-        font-size: 14px;
+    @media #{$large-mobile} {
+        // font-size: 14px;
+        // padding: 0;
+        padding-top: 2.85em;
+        & .half-devided-section{
+            display: flex;
+            flex-direction: column;
+            & .image-part{
+                width: 100%;
+            }
+            & .card-part {
+                width: 100%;
+                padding: 2.85em 0em;
+                padding-bottom: 0;
+                
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        font-size: 16px;
         // padding: 0;
         padding-top: 2.85em;
         & .half-devided-section{

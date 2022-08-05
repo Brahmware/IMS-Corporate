@@ -6,7 +6,7 @@
     gap: 0.5em;
 
     & .title {
-        @media #{$large-mobile, $tablet-device} {
+        @media #{$large-mobile} {
             font-size: 1em;
         }
     }

@@ -7,8 +7,11 @@
         padding: 0em
     }
     & .card-part {
-        @media #{$large-mobile, $tablet-device}{
+        @media #{$large-mobile}{
             padding: 1.92em 2.64em;
+        }
+        @media #{$tablet-device}{
+            padding: 1.92em 0em;
         }
         & .black-button {
             font-size: 0.9em;

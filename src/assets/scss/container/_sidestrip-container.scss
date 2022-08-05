@@ -15,7 +15,7 @@
         display: block;
     }
 }
-    @media #{$large-mobile}{
+    @media #{$large-mobile, $tablet-device} {
         transform: translateX(0);
         top: 5.6em !important;
         transform: translateY(100%);
@@ -52,14 +52,20 @@
             height: 12em;
             width: 100%;
 
-            @media #{$large-mobile, $tablet-device} {
+            @media #{$large-mobile} {
                 height: 13.71em;
+            }
+            // @media #{$small-mobile} {
+            //     height: 11.71em;
+            // }
+            @media #{ $tablet-device} {
+                height: 20.71em;
             }
 
             & img {
                 height: 100%;
                 width: 100%;
-                object-fit: cover;
+                object-fit: fill;
             }
         }
 
@@ -76,13 +82,16 @@
                 gap: 1.78em;
             }
             & .bookish-card {
-                
+               
                 & .title {
                     line-height: 1.2em;
                     font-size: 0.7em;
 
                     @media #{$large-mobile, $tablet-device} {
                         font-size: 0.85em;
+                    }
+                    @media #{$small-mobile} {
+                        font-size: 1em;
                     }
                 }
                 
@@ -93,10 +102,17 @@
                     @media #{$large-mobile, $tablet-device} {
                         font-size: 2.14em;
                     }
+                    // @media #{$small-mobile} {
+                    //     font-size: 1.66em;
+                    // }
                 }
                 & .content {
                     line-height: 1.2em;
                     font-size: 0.65em;
+
+                    @media #{$small-mobile}{
+                        font-size: 1em;
+                    }
                 }
             }
 
@@ -112,7 +128,16 @@
                 gap: 1em;
                 @media #{$large-mobile, $tablet-device} {
                     font-size: 1.42em;
+                    // gap: 0.5em;
                 }
+
+                & .filled-button {
+                    padding:0.3em 1.5em;
+                }
+                // @media #{$small-mobile} {
+                //     gap: 0.5em;
+                //     font-size: 1em;
+                // }
 
                 & .filled-button {
                     width: 100%;
