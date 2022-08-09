@@ -80,6 +80,16 @@
                 padding-top: 2.5em;
                 padding-bottom: 3.21em;
             }
+            @media #{$tablet-device} {
+                display: grid;
+                grid-auto-flow: column;
+                overflow-x: auto;
+                gap: 4em;
+                height: auto;
+                padding-top: 2.5em;
+                padding-bottom: 3.21em;
+                padding-left:18em;
+            }
             & .each-tab{
                 @media #{$large-mobile, $tablet-device} {
                     width: max-content;
@@ -108,7 +118,7 @@
         }
 
     }
-    @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
+    @media #{$large-mobile, $small-mobile, $extra-small-mobile, $tablet-device} {
         & .title-tabs-part {
             & .page-title {
                 bottom: 0;

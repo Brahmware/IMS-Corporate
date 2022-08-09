@@ -131,6 +131,9 @@
             @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
                 height: 21em;
             }
+            @media #{$tablet-device} {
+                height: 30em;
+            }
 
             & img {
                 background-color: $black;

@@ -5,9 +5,9 @@
     align-items: flex-start;
     gap: 1em;
 
-    // @media #{$large-mobile} {
-    //     padding: 1em;
-    // }
+    @media #{$tablet-device} {
+       width:100%;
+    }
 
     
     & button {

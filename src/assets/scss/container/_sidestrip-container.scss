@@ -15,14 +15,14 @@
         display: block;
     }
 }
-    @media #{$large-mobile, $tablet-device} {
+    @media #{$large-mobile} {
         transform: translateX(0);
         top: 5.6em !important;
         transform: translateY(100%);
     }
     @media #{ $tablet-device} {
         transform: translateX(0);
-        top: 80px !important;
+        // top: 80px !important;
         transform: translateY(100%);
     }
 
@@ -70,7 +70,7 @@
             & img {
                 height: 100%;
                 width: 100%;
-                object-fit: fill;
+                object-fit: cover;
             }
         }
 
