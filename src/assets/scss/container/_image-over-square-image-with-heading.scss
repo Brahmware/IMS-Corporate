@@ -4,7 +4,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @media #{$large-mobile}{
+        @media #{$large-mobile, $tablet-device}{
             margin-top: 1em;
         }
     }
@@ -12,7 +12,7 @@
     & .bookish-card {
         padding-right: 8em;
 
-        @media #{$large-mobile}{
+        @media #{$large-mobile, $tablet-device}{
             padding: 0;
         }
     }

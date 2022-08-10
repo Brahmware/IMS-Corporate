@@ -5,9 +5,10 @@
     justify-content: center;
     align-items: center;
     gap: 3em;
-    @media #{$large-mobile} {
+    @media #{$large-mobile, $tablet-device} {
         gap: 1.6em;
         font-size: 14px;
+        padding: 2.64em 0em;
     }
     
     & .title {
@@ -39,7 +40,7 @@
                 align-items: center;
                 cursor: pointer;
 
-                @media #{$large-mobile} {
+                @media #{$large-mobile, $tablet-device} {
                     & .tab-name{
                         font-size: 1.2em;
                     }
@@ -65,7 +66,7 @@
                         background-color: $primary;
                         transform: translateY(calc(1em + $thicker-divider/2));
                         transition: width $transition-specific;
-                        @media #{$large-mobile} {
+                        @media #{$large-mobile, $tablet-device} {
                             transform: translateY(calc(1em + $thicker-divider/2));
                         }
 
@@ -86,7 +87,7 @@
 
     & .cards-carousel-container {
         margin: 3em 0;
-        @media #{$large-mobile} {
+        @media #{$large-mobile, $tablet-device} {
             margin: 1em;
         }
     }

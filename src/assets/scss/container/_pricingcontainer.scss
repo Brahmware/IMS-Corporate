@@ -2,9 +2,13 @@
     & .table-wrapper {
         justify-content: space-between;
 
+        @media #{$tablet-device}{
+            padding: 0em 5em;
+        }
+
         & .card-wrapper {
             margin: 4em 0em;
-            @media #{$large-mobile}{
+            @media #{$large-mobile, $tablet-device}{
                 margin: 2em 0em;
             }
 
@@ -26,7 +30,7 @@
 
                 & .big {
                     font-size: 1.3em;
-                    @media #{$large-mobile}{
+                    @media #{$large-mobile, $tablet-device}{
                         font-size: 1em;
                     }
                 }
@@ -43,8 +47,8 @@
                     justify-content: space-between;
                     align-items: center;
 
-                    @media #{$large-mobile}{
-                        font-size: 1.25em;
+                    @media #{$large-mobile, $tablet-device}{
+                        font-size: 1.4285em;
                     }
                 }
 
@@ -56,6 +60,11 @@
                     align-items: center;
                     gap: 1em;
                     color: $light-text-color;
+
+                    @media #{$large-mobile, $tablet-device} {
+                        padding: 2em 0;
+                        gap: 2em;
+                    }
 
                     & .item-divider {
                         width: 100%;
@@ -70,6 +79,10 @@
 
                         &:last-child {
                             height: 4em;
+
+                            @media #{$large-mobile, $tablet-device}{
+                                height:auto;
+                            }
                         }
                     }
                 }

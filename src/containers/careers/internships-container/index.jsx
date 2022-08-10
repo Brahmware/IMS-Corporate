@@ -86,7 +86,7 @@ const InternshipsContainer = ({ data }) => {
                    }
                </div> :
                <div className="container">
-                   <div className="title">
+                   <div className="title pt-4 text-center">
                        <span>INTERNSHIP OPPORTUNITIES</span>
                    </div>
                    <div className="d-flex justify-content-center p-4">

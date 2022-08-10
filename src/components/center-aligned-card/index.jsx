@@ -2,7 +2,7 @@ import React from 'react'
 
 const CenterAlignedCard = (props) => {
     return (
-        <div className='center-aligned-card'>
+        <div className={!props.largeheading?'center-aligned-card' :"center-aligned-card-sm center-aligned-card"}>
             <div
                 className="title"
                 data-aos='fade-up'

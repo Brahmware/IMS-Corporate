@@ -4,8 +4,10 @@
     justify-content: space-between;
     align-items: center;
 
-    @media #{$small-mobile}{
-        gap: 1em;
+    @media #{$large-mobile,$tablet-device}{
+        gap: 5em;
+        overflow-x: scroll;
+        width: max-content;
     }
     & svg {
         min-height: 8em;

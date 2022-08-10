@@ -107,7 +107,7 @@ const MenuCard = (props) => {
                                         <React.Fragment key={key}>
                                             <div
                                                 className={Number(tab.id) === activeTab ? 'tab active-tab' : 'tab'}
-                                                id={tab.id}
+                                                id={tab.subtitle}
                                                 onClick={handleClick}
                                             >
                                                 <div className="tab-inner">

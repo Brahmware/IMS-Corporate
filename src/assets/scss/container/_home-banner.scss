@@ -1,10 +1,5 @@
 .home-banner-section {
-    height: calc(100vh - $header-height);
-    position: relative;
-
-    @media #{$large-mobile} {
-        height: calc(100vh - 4em);
-    }
+    height: calc(100vh);
 
     & .swiper-container {
         height: 100%;
@@ -32,9 +27,10 @@
                 display: flex;
                 justify-content: space-between;
 
-                @media #{$large-mobile}{
-                    transform:translateY(-7.375em) ;
-                    padding: 0em 2.3125em;
+                @media #{$large-mobile, $tablet-device}{
+                    transform:translateY(0em) ;
+                    bottom: 8.42em;
+                    // padding: 0em 2.3125em;
                 }
 
                 & .banner-card {
@@ -48,9 +44,10 @@
                     gap: 0.3em;
                     background-color: $white;
 
-                    @media #{$large-mobile}{
+                    @media #{$large-mobile, $tablet-device}{
                         width:100%;
-                        padding: 2.5em 1.32em 1.55em 1.6875em;
+                        padding:2.85em 1.5em 1.78em 1.9285em;
+                        gap:0.78em;
                     }
                 }
             }
@@ -65,7 +62,7 @@
         justify-content: flex-end;
         align-items: center;
 
-        @media #{$large-mobile}{
+        @media #{$large-mobile, $tablet-device}{
             justify-content: center;
         }
 
@@ -79,8 +76,9 @@
             align-items: center;
             gap: 1.6em;
 
-            @media #{$large-mobile}{
-                transform: translateY(-26.6875em)
+            @media #{$large-mobile, $tablet-device}{
+                transform: translateY(0);
+                bottom:27.14em;
             }
             & .swiper-pagination-bullet {
                 cursor: pointer;

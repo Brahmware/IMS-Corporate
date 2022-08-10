@@ -5,4 +5,8 @@
     align-items: center;
     gap: 4em;
     transition: height $transition-specific;
+
+    @media #{$large-mobile, $tablet-device}{
+        gap:0;
+    }
 }

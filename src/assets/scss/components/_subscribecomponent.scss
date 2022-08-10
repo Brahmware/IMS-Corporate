@@ -16,8 +16,9 @@
         align-items: center;
         gap: 1.5em;
 
-        @media #{$large-mobile} {
+        @media #{$large-mobile, $tablet-device} {
             flex-direction: column;
+            width: 100%;
         }
 
         & input {
@@ -28,6 +29,10 @@
             padding-left: 1em;
             font-weight: 300;
             padding: 0.3125em 0px 0.3125em 1em;
+
+            @media #{$tablet-device}{
+                width: 100%;
+            }
             &::placeholder {
                 font-size: 1em;
                 font-weight: 500;

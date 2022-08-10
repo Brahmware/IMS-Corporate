@@ -6,6 +6,11 @@
     justify-content: center;
     align-items: flex-start;
     gap: 1em;
+
+    @media #{$large-mobile, $tablet-device}{
+        padding-top: 4.92em;
+        padding-bottom: 4.64em;
+    }
     & .section-title {
         font-weight: 1000;
         font-size: 1.3em;
@@ -14,9 +19,16 @@
         background-color: $default-background;
         padding: 4em 0;
         width: 100%;
+        
+        overflow-x: scroll;
+        
+        // @media #{$large-mobile, $tablet-device}{
+        // }
 
         @media #{$small-mobile}{
-            overflow-x: scroll;
         }
+    }
+    .brands-part::-webkit-scrollbar{
+        display: none;
     }
 }

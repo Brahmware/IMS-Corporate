@@ -38,9 +38,9 @@
                 transform: translateY(-4em);
                 z-index: 1;
 
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$tablet-device} {
                     transform: translateY(-8.25em);
-                    padding-right: 2.3125em;
+                    padding-right: 2.64em;
                 }
 
                 & .page-title {
@@ -50,8 +50,8 @@
                     font-weight: 1000;
                     line-height: 1em;
 
-                    @media #{$large-mobile} {
-                        font-size: 2.5em;
+                    @media #{$large-mobile,$tablet-device} {
+                        font-size: 2.85em;
                     }
                 }
 
@@ -60,8 +60,8 @@
                     font-size: 1.5em;
                     text-transform: uppercase;
 
-                    @media #{$large-mobile} {
-                        font-size: 1.25em;
+                    @media #{$large-mobile,$tablet-device} {
+                        font-size: 1.42em;
                     }
                 }
             }
@@ -80,7 +80,7 @@
                 font-weight: 1000;
                 line-height: 1em;
 
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$tablet-device} {
                     padding-top: 1.68em;
                     padding-bottom: 1.8em;
                     font-size: 1.5625em;
@@ -111,8 +111,7 @@
                 right: 0;
                 z-index: 3;
                 width: 80%;
-
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$tablet-device} {
                     width: 100%;
                     // width:20em;
                     top: -6em;
@@ -131,6 +130,9 @@
 
             @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
                 height: 21em;
+            }
+            @media #{$tablet-device} {
+                height: 30em;
             }
 
             & img {
@@ -159,7 +161,7 @@
                     font-weight: 900;
                     margin-bottom: 1em;
 
-                    @media #{$large-mobile} {
+                    @media #{$large-mobile,$tablet-device} {
                         font-size: 1.25em;
                         text-align: center;
                         line-height: 20px;
@@ -175,7 +177,7 @@
 
     .ims-society-membership {
         & .containers {
-            @media #{$large-mobile} {
+            @media #{$large-mobile,$tablet-device} {
                 padding: 0;
             }
 
@@ -184,8 +186,8 @@
                 padding: 4em 0em;
                 letter-spacing: 0.6em;
 
-
-                @media #{$large-mobile} {
+        
+                @media #{$large-mobile,$tablet-device} {
                     // padding: 2.25em 0em 1.5em 0em;
                     font-size: 0.875em;
                     letter-spacing: 0.2625em;
@@ -197,7 +199,7 @@
                 height: 15em;
                 overflow: hidden;
 
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$tablet-device} {
                     height: 10.125em;
                 }
 
@@ -213,7 +215,7 @@
                 gap: 0.5em;
 
 
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$tablet-device} {
                     display: flex;
                     flex-wrap: nowrap;
                     gap: 1px;
@@ -224,10 +226,7 @@
                     background-color: $primary;
                     // height: 15em;
                     padding: 2em;
-                    position: relative;
-                    transition: $transition-base;
-
-                    @media #{$large-mobile} {
+                    @media #{$large-mobile,$tablet-device} {
                         padding: 0;
                         display: flex;
                         align-items: center;
@@ -278,8 +277,7 @@
                         font-size: 5em;
                         color: $white;
                         line-height: normal;
-
-                        @media #{$large-mobile} {
+                        @media #{$large-mobile,$tablet-device} {
                             font-size: 2.125em;
                         }
                     }
@@ -288,8 +286,7 @@
                         font-size: 1.5em;
                         color: $white;
                         font-weight: 300;
-
-                        @media #{$large-mobile} {
+                        @media #{$large-mobile,$tablet-device} {
                             font-size: 1em;
                         }
                     }
@@ -298,8 +295,7 @@
                         border: 0.07em solid $white;
                         background: $white;
                         width: 6em;
-
-                        @media #{$large-mobile} {
+                        @media #{$large-mobile,$tablet-device} {
                             width: 40%;
                         }
 
@@ -309,8 +305,7 @@
                     & .tab-box-price {
                         font-size: 0.8em;
                         line-height: 2.8em;
-
-                        @media #{$large-mobile} {
+                        @media #{$large-mobile,$tablet-device} {
                             font-size: 0.5em;
                             line-height: 5em;
                             color: white;

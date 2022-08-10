@@ -74,7 +74,7 @@
         display: none;
     }
 
-    @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
+    @media #{$large-mobile, $small-mobile, $extra-small-mobile, $tablet-device} {
         & .menu-card-wide-screen {
             display: none;
         }
@@ -111,6 +111,9 @@
                         height: 100%;
                         width: 70em;
 
+                        @media #{$tablet-device} {
+                            width: 45em;
+                        }
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;

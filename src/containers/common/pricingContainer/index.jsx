@@ -7,7 +7,7 @@ const PricingContainer = (props) => {
                 {
                     props.tabledata && props.tabledata.map((eachCard, key) => {
                         return (
-                            <div className="col" key={key}>
+                            <div className="col col-md-12" key={key}>
                                 <div
                                     className="card-wrapper noselect"
                                     data-aos='fade-up'

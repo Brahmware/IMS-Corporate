@@ -6,6 +6,25 @@
     right: 0;
     transform: translateX(200%);
     transition: $transition-base;
+& .close {
+    width: 1.71em;
+    height: 1.71em;
+    display: none;
+
+    @media #{$large-mobile, $tablet-device} {
+        display: block;
+    }
+}
+    @media #{$large-mobile} {
+        transform: translateX(0);
+        top: 5.6em !important;
+        transform: translateY(100%);
+    }
+    @media #{ $tablet-device} {
+        transform: translateX(0);
+        // top: 80px !important;
+        transform: translateY(100%);
+    }
 
     &.open {
         transform: translateY(0%);
@@ -30,9 +49,23 @@
         align-items: center;
         box-shadow: $default-shadow;
 
+        @media #{$large-mobile, $tablet-device} {
+            width: 100%;
+        }
+
         & .cover-image {
             height: 12em;
             width: 100%;
+
+            @media #{$large-mobile} {
+                height: 13.71em;
+            }
+            // @media #{$small-mobile} {
+            //     height: 11.71em;
+            // }
+            @media #{ $tablet-device} {
+                height: 20.71em;
+            }
 
             & img {
                 height: 100%;
@@ -48,21 +81,43 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-
+            @media #{$large-mobile, $tablet-device} {
+                padding: 1.42em 2.64em;
+                justify-content: flex-start;
+                gap: 1.78em;
+            }
             & .bookish-card {
-                
+               
                 & .title {
                     line-height: 1.2em;
-                    font-size: 00.7em;
+                    font-size: 0.7em;
+
+                    @media #{$large-mobile, $tablet-device} {
+                        font-size: 0.85em;
+                    }
+                    @media #{$small-mobile} {
+                        font-size: 1em;
+                    }
                 }
                 
                 & .subtitle {
                     font-size: 2em;
                     line-height: 1.2em;
+
+                    @media #{$large-mobile, $tablet-device} {
+                        font-size: 2.14em;
+                    }
+                    // @media #{$small-mobile} {
+                    //     font-size: 1.66em;
+                    // }
                 }
                 & .content {
                     line-height: 1.2em;
                     font-size: 0.65em;
+
+                    @media #{$small-mobile}{
+                        font-size: 1em;
+                    }
                 }
             }
 
@@ -76,6 +131,18 @@
                 justify-content: space-around;
                 align-items: center;
                 gap: 1em;
+                @media #{$large-mobile, $tablet-device} {
+                    font-size: 1.42em;
+                    // gap: 0.5em;
+                }
+
+                & .filled-button {
+                    padding:0.3em 1.5em;
+                }
+                // @media #{$small-mobile} {
+                //     gap: 0.5em;
+                //     font-size: 1em;
+                // }
 
                 & .filled-button {
                     width: 100%;

@@ -8,9 +8,9 @@ const TabBoxImageBackground = (props) => {
     const allData = props.data
 
     return (
-        <Link to={`${props.url}/${allData.title}`}>
+        <Link to={`${props.url}/${allData.title}`} className="col-md-12">
 
-            <div className="col">
+            <div className="col h-100">
                 <div className="sub-container"
                     data-aos='fade-up'
                     data-aos-duration='600'
@@ -41,7 +41,7 @@ const TabBoxImageBackground = (props) => {
                                 }}
                             />
                         </div>
-                        <div className="divider w-75 bg-white"></div>
+                        <div className="divider border w-75 bg-white"></div>
                         <div
                             className="sub-container-content content w-75 text-center"
                         >

@@ -17,7 +17,7 @@ const NewsCards = ({ data, heading }) => {
     console.log(data);
     return (
         <>
-            <div className="col" >
+            <div className="col col-md-6" >
             <Link
                 to={`/newspage/${data.id}`}
             >
@@ -73,6 +73,10 @@ const NewsCards = ({ data, heading }) => {
                                             })
                                         }</div>
                                         <div className="icon-part">
+                                            <div className="blank"><BlankIcon /><span>{data.text}</span></div>
+                                            <div className="info"><span><InfoIcon /></span></div>
+                                        </div>
+                                        <div className="icon-part-sm">
                                             <div className="blank"><BlankIcon /><span>{data.text}</span></div>
                                             <div className="info"><span><InfoIcon /></span></div>
                                         </div>

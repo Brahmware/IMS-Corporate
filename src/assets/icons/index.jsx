@@ -25,3 +25,8 @@ export { ReactComponent as WhatsappIcon } from './whatsapp.svg';
 export { ReactComponent as Share2Icon } from './shareIcon2.svg';
 export { ReactComponent as BlankIcon } from './blank.svg';
 export { ReactComponent as StarFillIcon } from './star-fill.svg';
+export { ReactComponent as ImsLifeIcon} from "./brandsicons/imslife.svg"
+export { ReactComponent as POPNews} from "./brandsicons/popnews.svg"
+export { ReactComponent as WorldTV} from "./brandsicons/worldTV.svg"
+export { ReactComponent as ImsScience} from "./brandsicons/imsscience.svg"
+export { ReactComponent as ImsHistory} from "./brandsicons/imshistory.svg"

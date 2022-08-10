@@ -5,13 +5,13 @@
         padding: 3em 0em;
         gap: $container-gap;
 
-        @media #{$large-mobile} {
+        @media #{$large-mobile, $tablet-device} {
             flex-direction: column;
         }
 
         & .heading-part {
             width: 50%;
-            @media #{$large-mobile} {
+            @media #{$large-mobile, $tablet-device} {
                 width: 100%;
             }
 
@@ -20,7 +20,7 @@
                 font-weight: 1000;
                 line-height: 1em;
 
-                @media #{$large-mobile} {
+                @media #{$large-mobile, $tablet-device} {
                     font-size: 2em;
                 }
                 // letter-spacing: 0.02em;
@@ -50,8 +50,10 @@
             overflow-y: scroll;
             padding: 2em;
             background-color: $default-background;
-            @media #{$large-mobile} {
+            @media #{$large-mobile, $tablet-device} {
                 width: 100%;
+                // padding-top: 2.85em;
+                // padding-bottom: 2.85em;
             }
 
             & .content {
