@@ -72,6 +72,11 @@ body {
     &[dir="rtl"] {
         text-align: right;
     }
+
+    & *::selection {
+        color: $white;
+        background: $primary;
+    }
 }
 
 // Managing Scroll Bar

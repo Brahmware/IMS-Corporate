@@ -11,5 +11,8 @@
         "pagename",
         "porttitor",
         "posuere"
+    ],
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
     ]
 }

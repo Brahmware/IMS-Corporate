@@ -1,13 +1,10 @@
 .search {
-    height: $header-button-height;
+    height: calc($header-button-height + 0.1em);
     font-size: 1em;
     transition-property: all;
     transition-duration: 1s;
     position: relative;
 
-    // @media #{$large-mobile} {
-    //     display: none;
-    // }
     & form {
         width: max-content;
         display: flex;
@@ -19,6 +16,7 @@
         
         & input {
             position: absolute;
+            z-index: 1;
             color: $default-black;
             width: 0em;
             height: 100%;
@@ -40,13 +38,14 @@
 
         & .search-button {
             display: flex;
+            z-index: 1;
             justify-content: center;
             align-items: center;
             background-color: rgba($color: $white, $alpha: 0);
             border: 0;
             border-radius: 0 50% 50% 0;
             outline: 0;
-            padding: 0.33em;
+            padding: 0.4em;
             margin-right: -0.15em;
             position: absolute;
             transition: $transition-base;
@@ -81,11 +80,24 @@
                 }
             }
 
-            @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
+            @media #{$large-mobile} {
                 & input {
                     left: 0;
                     right: 0;
                     transform: translateX(-14.75em);
+                }
+
+                & .search-button {
+                    transform: translateX(6.5em);
+                }
+            }
+
+            @media #{$small-mobile, $extra-small-mobile} {
+                & input {
+                    left: 0;
+                    right: 0;
+                    transform: translateX(-15.75em);
+                    width: 22em;
                 }
 
                 & .search-button {
