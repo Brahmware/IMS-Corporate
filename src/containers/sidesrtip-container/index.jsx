@@ -3,6 +3,7 @@ import BookishCard from '../../components/bookish-card'
 import FilledButton from '../../components/buttons/FilledButton'
 import DonationData from '../../data/donate.json'
 import disableScroll from 'disable-scroll'
+import { CloseIcon } from '../../assets/icons'
 
 const SidestripContainer = ({ show, onclose, headerHeight }) => {
 
@@ -11,18 +12,18 @@ const SidestripContainer = ({ show, onclose, headerHeight }) => {
     const availableTypes = DonationData && DonationData.find(datum => datum.id === 'donation-types');
 
     useEffect(() => {
-        show ? disableScroll.on() : disableScroll.off(); 
+        show ? disableScroll.on() : disableScroll.off();
     }, [show])
-    
+
     return (
-        <div 
+        <div
             className={show ? "sidestrip-container section open" : "sidestrip-container section"}
-            style={{ 
-                    height: `calc(100% - ${headerHeight}px)`,
-                    top: headerHeight
-                }}
+            style={{
+                height: `calc(100% - ${headerHeight}px)`,
+                top: headerHeight
+            }}
         >
-            <div className="other-part" onClick={onclose}/>
+            <div className="other-part" onClick={onclose} />
             <div className="sidestrip-wrapper noselect">
                 <div className="cover-image">
                     <img src={coverImage.image} alt={coverImage.alt} />
@@ -43,6 +44,9 @@ const SidestripContainer = ({ show, onclose, headerHeight }) => {
                                 )
                             })
                         }
+                    </div>
+                    <div className="close" onClick={onclose}>
+                        <CloseIcon />
                     </div>
                 </div>
             </div>

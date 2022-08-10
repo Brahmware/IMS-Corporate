@@ -109,7 +109,7 @@
 }
 
 .search-invisible {
-    @media #{$large-mobile} {
+    @media #{$large-mobile, $tablet-device} {
         opacity: 0;
         transition-property: all;
         transition-duration: 1s;

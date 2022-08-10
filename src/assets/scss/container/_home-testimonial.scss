@@ -26,6 +26,10 @@
                     gap: 2em;
                     background-color: rgba($color: $black, $alpha: 0);
                     color: $white;
+
+                    @media #{$large-mobile, $tablet-device}{
+                        padding-top: 3.71em;
+                    }
     
                     & .profile-image {
                         height: 10em;

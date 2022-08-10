@@ -1,13 +1,13 @@
 .newspage-wrapper {
-
     padding-top: $header-height;
 
     @media #{$tablet-device} {
-        font-size: 0.7em;
+        font-size: 16px;
+        padding-top:0;
     }
 
     @media #{$large-mobile} {
-        font-size: 0.7em;
+        font-size: 14px;
     }
 }
 
@@ -30,7 +30,10 @@
             margin-bottom: 0.3em;
 
             @media #{$large-mobile} {
-                font-size: 5em;
+                font-size: 2.85em;
+            }
+            @media #{$tablet-device} {
+                font-size: 2.85em;
             }
         }
 
@@ -42,7 +45,6 @@
 }
 
 .recommended-cards-container {
-
     & .more-like-this-area {
         width: 100%;
         padding-bottom: 7.25em;
@@ -63,7 +65,6 @@
                 text-decoration: underline;
                 color: $primary;
             }
-
         }
 
         & .recommended-cards {
@@ -102,6 +103,10 @@
             line-height: 1;
             font-weight: 400;
 
+            @media #{$large-mobile,$tablet-device} {
+                font-size: 1.78em;
+            }
+
             & .divider {
                 margin-top: 0.6em;
                 height: 0.04em;
@@ -112,7 +117,7 @@
             width: 20%;
         }
 
-        & .content {}
+        // & .content {}
 
         & .quotes {
             font-size: 2em;
@@ -120,11 +125,19 @@
             font-style: italic;
             line-height: 1;
 
+            @media #{$large-mobile,$tablet-device} {
+                font-size: 1.42em;
+            }
+
             & .quotes-upper {
                 margin-bottom: 0.8em;
                 height: 0.08em;
                 width: 20%;
                 background-color: $primary;
+                @media #{$large-mobile,$tablet-device} {
+                    font-size: 1.71em;
+                    width: 40%;
+                }
             }
 
             & .quotes-lower {
@@ -133,12 +146,20 @@
                 margin-left: auto;
                 width: 20%;
                 background-color: $primary;
+                @media #{$large-mobile,$tablet-device} {
+                    font-size: 1.71em;
+                    width: 40%;
+                }
             }
         }
 
         & .images {
             border-radius: 1.375em;
             height: 36em;
+
+            @media #{$large-mobile} {
+                height: 21.42em;
+            }
 
             & img {
                 height: 100%;
@@ -193,7 +214,7 @@
 
             @media #{$large-mobile} {
                 & .image-part {
-                    height: 15em;
+                    height: 11.41em;
                     width: 50%;
                 }
 
@@ -317,7 +338,6 @@
                 }
             }
         }
-
     }
 
     @media #{$large-mobile} {
@@ -326,12 +346,13 @@
         & .newspage-content {
             width: 100%;
             padding-right: 0em;
+            padding-top: 3.64em;
         }
 
         & .author-card {
             width: 100%;
             margin-top: 4em;
+            margin-bottom: 10.42em;
         }
     }
-
 }

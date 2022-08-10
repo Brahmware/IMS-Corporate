@@ -4,6 +4,12 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 0.5em;
+
+    & .title {
+        @media #{$large-mobile} {
+            font-size: 1em;
+        }
+    }
     & .continent {
         font-size: 1.05em;
         font-weight: 900;
@@ -12,7 +18,11 @@
         transition: $transition-base;
         cursor: pointer;
 
-        &:hover{
+        @media #{$large-mobile, $tablet-device}{
+            font-size: 1.28em;
+        }
+
+        &:hover {
             color: rgba($color: $black, $alpha: $opacity-base);
         }
 
@@ -22,7 +32,7 @@
             pointer-events: none;
         }
 
-        &>span {
+        & > span {
             pointer-events: none;
         }
     }

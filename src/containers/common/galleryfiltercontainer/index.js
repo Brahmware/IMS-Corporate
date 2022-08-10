@@ -108,7 +108,7 @@ const GalleryFilterContainer = ({ data }) => {
                 <ul className="grid" >
                     {cardData.map((card, index) => {
                         return (
-                            <div key={index}  >
+                            <div key={index} className="image-parts" >
                                 <DownloadImageCard card={card}/>
                             </div>
                         )

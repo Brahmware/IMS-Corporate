@@ -126,7 +126,7 @@
         }
     }
 
-    @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
+    @media #{$large-mobile, $small-mobile, $extra-small-mobile , $tablet-device} {
         flex-direction: column;
         gap: 0.5em;
         height: 40em;

@@ -17,9 +17,13 @@
         justify-content: center;
         align-items: center;
 
-        @media #{$large-mobile} {
-            width: 62.5%;
-            height: 27.5625em;
+        @media #{$large-mobile } {
+            width: 62.38%;
+            height: 31.5em;
+        }
+        @media #{$tablet-device } {
+            width: 62.38%;
+            height: 47em;
         }
 
         & .image-overlay {
@@ -30,6 +34,9 @@
             opacity: 0.75;
 
             @media #{$large-mobile} {
+                width: 100%;
+            }
+            @media #{$tablet-device} {
                 width: 100%;
             }
         }
@@ -44,9 +51,15 @@
         z-index: 1;
 
         @media #{$large-mobile} {
-            width: 14.9375em;
-            height: 21.1875em;
-            right: 2.3125em;
+            width: 17.07em;
+            height: 24.21em;
+            right: 2.6428em;
+            transform: translateX(0);
+        }
+        @media #{$tablet-device} {
+            width: 24em;
+            height: 34em;
+            right: 0em;
             transform: translateX(0);
         }
 
@@ -77,6 +90,10 @@
                 transform: translateX(0);
                 left: 2.3125em;
             }
+            @media #{$tablet-device} {
+                transform: translateX(0);
+                left: 0;
+            }
         }
     }
 }
@@ -92,6 +109,10 @@
 
     @media #{$large-mobile} {
         width: 100%;
+        padding-top:2.64em;
+    }
+    @media #{$tablet-device} {
+        width: 100%;
     }
 
     & .bottom-image {
@@ -106,9 +127,15 @@
         align-items: center;
 
         @media #{$large-mobile} {
-            width: 14.0625em;
-            height: 13.625em;
+            width: 16.07em;
+            height: 15.57em;
+            border-radius: 1.57em;
         }
+        // @media #{$small-mobile} {
+        //     width: 12.07em;
+        //     height: 12.57em;
+        //     border-radius: 1.57em;
+        // }
 
         & .image-overlay {
             position: absolute;
@@ -132,11 +159,19 @@
         z-index: 1;
         flex-shrink: 0;
 
+        // @media #{$small-mobile} {
+        //     width: 10.21em;
+        //     height: 6.64em;
+        // }
         @media #{$large-mobile} {
-            width: 11.5625em;
-            height: 8.4375em;
+            width: 13.21em;
+            height: 9.64em;
             left: 0;
-            transform: translateX(0)
+            transform: translateX(0);
+            border-radius: 1.57em;
+        }
+        @media #{$tablet-device} {
+            transform: translateX(-18em);
         }
 
         & .image-wrapper {

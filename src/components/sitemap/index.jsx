@@ -21,7 +21,7 @@ const SiteMap = (props) => {
                             <div
                                 key={groupKey}
                                 id={group.id}
-                                className="col-6"
+                                className="col-6 col-md-4"
                             >
                                 <div
                                     className="pagegroup"

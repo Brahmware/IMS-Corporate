@@ -198,27 +198,27 @@
             {
                 "id": 1,
                 "name": "IMS Life",
-                "logo": "images/our-networks/ims-life/logo.svg"
+                "logo": "images/brandsicons/imslife.svg"
             },
             {
                 "id": 2,
                 "name": "IMS Science",
-                "logo": "/images/our-networks/ims-science/logo.svg"
+                "logo": "images/brandsicons/imsscience.svg"
             },
             {
                 "id": 3,
                 "name": "World TV",
-                "logo": "/images/our-networks/world-tv/logo.svg"
+                "logo": "images/brandsicons/worldTV.svg"
             },
             {
                 "id": 4,
                 "name": "POP News",
-                "logo": "/images/our-networks/pop-news/logo.svg"
+                "logo": "images/brandsicons/popnews.svg"
             },
             {
                 "id": 5,
                 "name": "IMS History",
-                "logo": "/images/our-networks/ims-history/logo.svg"
+                "logo": "images/brandsicons/imshistory.svg"
             },
             {
                 "id": 6,

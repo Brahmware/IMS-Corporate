@@ -1,19 +1,23 @@
 .membership-card-row {
     & .membership-card-column {
+
+        @media #{$tablet-device}{
+            padding: 0em 5em;
+        }
         & .membership-card-form {
             background-color: white;
             border-radius: 5px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             padding: 5em 3.4em;
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile, $tablet-device} {
                 padding: 4em 2.5em 5.6825em 2.5em;
             }
             & .form-header {
                 font-size: 2em;
                 padding-bottom: 1em;
                 line-height: 1;
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$tablet-device} {
                     font-size: 1.25em;
                 }
             }
@@ -26,7 +30,7 @@
                     width: 100%;
                     line-height: 1;
                     color: $light-text-color;
-                    @media #{$large-mobile} {
+                    @media #{$large-mobile,$tablet-device} {
                         font-size: 1em;
                     }
                 }
@@ -35,7 +39,7 @@
                 display: flex;
                 justify-content: space-between;
                 gap: 1em;
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$tablet-device} {
                     flex-direction: column;
                 }
             }
@@ -51,10 +55,10 @@
                 padding: 0.5em 2.5em;
                 font-weight: bold;
                 border-radius: 100px;
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$tablet-device} {
                     font-size: 1em;
                 }
-                @media #{$small-mobile} {
+                @media #{$small-mobile,$tablet-device} {
                     font-size: 0.8em;
                 }
             }
@@ -65,7 +69,7 @@
             border-radius: 5px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             padding: 2.5em 3.1em;
-            @media #{$large-mobile} {
+            @media #{$large-mobile,$tablet-device} {
                 padding: 1.25em 1em;
             }
             width: 100%;
@@ -79,7 +83,7 @@
                 width: 100%;
                 height: 100%;
 
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$tablet-device} {
                     padding: 1.5em;
                 }
                 & .action-header {
@@ -87,7 +91,7 @@
                     font-size: 2em;
                     line-height: 1;
                     padding-bottom: 1em;
-                    @media #{$large-mobile} {
+                    @media #{$large-mobile,$tablet-device} {
                         font-size: 1em;
                     }
                 }
@@ -102,7 +106,7 @@
                         padding: 0.5em;
                         font-weight: bold;
                         border-radius: 100px;
-                        @media #{$large-mobile} {
+                        @media #{$large-mobile,$tablet-device} {
                             width: 100%;
                             font-size: 1em;
                         }
@@ -119,6 +123,11 @@
         padding-bottom: 1.5em;
         position: relative;
         color: white;
+
+        @media #{$tablet-device} {
+            height: 100%;
+            padding: 5em 0em;
+        }
         & .image-part {
             position: absolute;
             top: 0;
@@ -150,19 +159,30 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            @media #{$tablet-device} {
+                gap: 1em;
+            }
             & .sub-container-title {
                 font-size: 5em;
                 line-height: 1.2;
                 @media #{$large-mobile} {
-                    font-size: 3.75em;
+                    font-size: 4.28em;
+                    text-shadow: 0px 3px 6px #00000029;
+                }
+                @media #{$tablet-device} {
+                    // font-size: 2.75esm;
+                    text-shadow: 0px 3px 6px #00000029;
                 }
             }
             & .sub-container-subtitle {
                 font-size: 1.5em;
                 line-height: 1;
                 padding-bottom: 1em;
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$tablet-device} {
                     font-size: 1.25em;
+                }
+                @media #{$tablet-device} {
+                    font-size: 1.5em;
                 }
             }
             & .sub-container-content {
@@ -170,6 +190,9 @@
                 color: white;
                 @media #{$large-mobile} {
                     font-size: 14px;
+                }
+                @media #{$tablet-device} {
+                    font-size: 20px;
                 }
             }
             & .white-button {

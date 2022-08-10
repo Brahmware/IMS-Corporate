@@ -3,7 +3,7 @@ import { InfoIcon, BlankIcon, StarFillIcon } from '../../assets/icons'
 import { Link } from 'react-router-dom';
 
 const BigNewsCard = ({ data, heading }) => {
-    const stars=[1,2,3,4,5]
+    const stars = [1, 2, 3, 4, 5]
     const convertDate = (dateData) => {
         const months = ['Januray', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         const date = dateData.split(',')[0].split('/');
@@ -40,9 +40,22 @@ const BigNewsCard = ({ data, heading }) => {
                                             <div className="stars">
                                                 {
                                                     stars.map((star, index) => {
-                                                        return <StarFillIcon key={index}/>
+                                                        return <StarFillIcon key={index} />
                                                     })
-                                            }
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='content-part-sm'>
+                                        <div className="content-parts">
+                                            {data.content}
+                                        </div>
+                                        <div className="icon-part-sm">
+                                            <div className="blank">
+                                                <BlankIcon /><span>{data.text}</span>
+                                            </div>
+                                            <div className="info">
+                                                <span><InfoIcon /></span>
                                             </div>
                                         </div>
                                     </div>
