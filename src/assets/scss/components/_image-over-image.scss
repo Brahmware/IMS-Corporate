@@ -17,7 +17,7 @@
         justify-content: center;
         align-items: center;
 
-        @media #{$large-mobile } {
+        @media #{$large-mobile ,$small-mobile} {
             width: 62.38%;
             height: 31.5em;
         }
@@ -33,7 +33,7 @@
             background-color: $color-overlay;
             opacity: 0.75;
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile,$small-mobile} {
                 width: 100%;
             }
             @media #{$tablet-device} {
@@ -50,7 +50,7 @@
         border-radius: $image-border-radius;
         z-index: 1;
 
-        @media #{$large-mobile} {
+        @media #{$large-mobile,$small-mobile} {
             width: 17.07em;
             height: 24.21em;
             right: 2.6428em;
@@ -86,7 +86,7 @@
 
         & .top-image {
             transform: translateX(-1 * calc(22.12em / 1.88));
-            @media #{$large-mobile} {
+            @media #{$large-mobile,$small-mobile} {
                 transform: translateX(0);
                 left: 2.3125em;
             }
@@ -107,7 +107,7 @@
     align-items: center;
     position: relative;
 
-    @media #{$large-mobile} {
+    @media #{$large-mobile,$small-mobile} {
         width: 100%;
         padding-top:2.64em;
     }
@@ -126,7 +126,7 @@
         justify-content: center;
         align-items: center;
 
-        @media #{$large-mobile} {
+        @media #{$large-mobile,$small-mobile} {
             width: 16.07em;
             height: 15.57em;
             border-radius: 1.57em;
@@ -163,7 +163,7 @@
         //     width: 10.21em;
         //     height: 6.64em;
         // }
-        @media #{$large-mobile} {
+        @media #{$large-mobile,$small-mobile} {
             width: 13.21em;
             height: 9.64em;
             left: 0;

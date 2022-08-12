@@ -1,5 +1,5 @@
 .flashcard-part {
-    @media #{$large-mobile} {
+    @media #{$large-mobile,$small-mobile} {
         width: 100%;
         padding:0;
     }
@@ -12,7 +12,7 @@
         height: 28.847em;
         width: 21.635em;
 
-        @media #{$large-mobile} {
+        @media #{$large-mobile,$small-mobile} {
             width: 100%;
             // height: max-content;
             height: auto;
@@ -39,7 +39,7 @@
             z-index: 1;
             overflow: hidden;
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile,$small-mobile} {
                 position: relative;
                 height: 30.75em;
             }
@@ -104,7 +104,7 @@
             bottom: 7.5%;
             box-shadow: $deep-shadow;
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile,$small-mobile} {
                 display: none;
             }
             @media #{$tablet-device} {
@@ -124,7 +124,7 @@
             background-color: $default-background;
             z-index: -1;
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile,$small-mobile} {
                 position: relative;
                 transform: translateY(-100%);
                 // animation: none;
@@ -156,7 +156,7 @@
                     }
                 }
             }
-            @media #{$tablet-device} {
+            @media #{$tablet-device,$small-mobile} {
                 position: relative;
                 transform: translateY(-100%);
                 // animation: none;

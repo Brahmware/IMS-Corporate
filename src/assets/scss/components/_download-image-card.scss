@@ -4,7 +4,7 @@
         display: none;
         @media #{$large-mobile} {
             @media #{$small-mobile} {
-                font-size: 14px;
+                font-size: 12px;
             }
             display: block;
             padding: 4em 0em;
@@ -76,6 +76,8 @@
 
             @media #{$small-mobile} {
                 justify-content: center;
+                grid-template-columns: none;
+                padding-top:4em;
             }
 
             @media #{$extra-small-mobile} {
@@ -84,7 +86,7 @@
             }
 
             & .image-parts {
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$small-mobile} {
                     width : 100%;
                 }
             }
@@ -97,7 +99,7 @@
                 transition: $transition-base;
                 border-radius: 1.3em;
 
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$small-mobile} {
                     max-width: 100%;
                 }
 
@@ -118,7 +120,7 @@
                         background: radial-gradient(circle, rgba(181, 181, 181, 0) 23%, rgba(44, 44, 44, 0.39289219105610995) 80%);
                         border-radius: 1.3em;
 
-                        @media #{$large-mobile} {
+                        @media #{$large-mobile,$small-mobile} {
                             height: 17.35em;
                         }
 
@@ -164,7 +166,7 @@
                         border-radius: 1.3em;
                         object-fit: cover;
 
-                        @media #{$large-mobile} {
+                        @media #{$large-mobile,$small-mobile} {
                             height:17.35em;
                         }
                     }
@@ -184,7 +186,7 @@
                         font-weight: bold;
                         color: black;
 
-                        @media #{$large-mobile, $tablet-device}{
+                        @media #{$large-mobile, $tablet-device,$small-mobile}{
                             font-size: 1.42em;
                         }
                     }
@@ -217,7 +219,7 @@
         }
     }
 
-    @media #{$large-mobile} {
+    @media #{$large-mobile,$small-mobile} {
         .filter {
             width: 0%;
             display: none;

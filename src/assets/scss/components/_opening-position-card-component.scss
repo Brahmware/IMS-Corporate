@@ -14,7 +14,7 @@
         justify-content: space-between;
         align-items: flex-end;
         @media #{$small-mobile} {
-            font-size: 0.9em;
+            font-size: 0.8em;
         }
         & .head-left {
 
@@ -100,7 +100,7 @@
                     width: 5.25em;
                     fill: $light-text-color;
                 }
-                @media #{$large-mobile, $tablet-device} {
+                @media #{$large-mobile,$small-mobile, $tablet-device} {
                     height: 6em;
                     width: 6em;
                     & svg{

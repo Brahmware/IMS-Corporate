@@ -37,7 +37,7 @@
         align-items: flex-start;
         gap: 1em;
 
-        @media #{$large-mobile, $tablet-device} {
+        @media #{$large-mobile,$small-mobile, $tablet-device} {
             padding-top: 2.64em;
         }
         & .title {
@@ -64,13 +64,13 @@
         }
     }
     & .carousal-part-desktop{
-        @media #{$large-mobile, $tablet-device} {
+        @media #{$large-mobile,$small-mobile, $tablet-device} {
             display: none;
         }
     }
     & .carousal-part-mb{
         display: none;
-        @media #{$large-mobile, $tablet-device} {
+        @media #{$large-mobile,$small-mobile, $tablet-device} {
             display: block;
             & .swiper-system-mb{
                 display: grid;

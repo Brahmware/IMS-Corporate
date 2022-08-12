@@ -38,7 +38,7 @@
         align-items: center;
         gap: 3em;
 
-        @media #{$large-mobile, $tablet-device}{
+        @media #{$large-mobile,$small-mobile, $tablet-device}{
             gap:1.125em;
         }
 
@@ -68,7 +68,7 @@
         & svg {
             height: 2em;
 
-            @media #{$large-mobile, $tablet-device}{
+            @media #{$large-mobile,$small-mobile, $tablet-device}{
                 height: 1.75em;
                 width:8.0625em;
             }
@@ -78,7 +78,7 @@
     &.shrinked-header {
         height: $shrinked-header-height;
 
-        @media #{$large-mobile, $tablet-device}{
+        @media #{$large-mobile,$small-mobile, $tablet-device}{
             height: 5.6em;
         }
     }
