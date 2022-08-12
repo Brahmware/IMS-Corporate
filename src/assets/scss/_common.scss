@@ -55,6 +55,9 @@ body {
     line-height: 1.714;
     // overflow-x: hidden;
 
+    @media #{$extra-small-mobile} {
+        font-size: 10px !important;
+    }
     @media #{$small-mobile} {
         font-size: 12px !important;
     }
@@ -172,6 +175,9 @@ ol {
     @media #{$small-mobile} {
         padding: 0em 3em;
     }
+    @media #{$extra-small-mobile} {
+        padding: 0em 3.7em;
+    }
     // @media #{$tablet-device} {
     //     padding: 0em 2.3125em;
     // }
@@ -196,7 +202,7 @@ ol {
         color: $light-text-color;
         letter-spacing: 0.4em;
         font-weight: 600;
-        @media #{$large-mobile,$small-mobile} {
+        @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
             font-size: 1em;
             color: #707070;
             letter-spacing: 0.3em;
@@ -206,7 +212,7 @@ ol {
     }
 
     .subtitle {
-        @media #{$large-mobile, $small-mobile} {
+        @media #{$large-mobile, $small-mobile, $extra-small-mobile} {
             font-size: 2.1428em;
             line-height: 1em;
         }
@@ -239,7 +245,7 @@ ol {
 .section-with-padding {
     padding: $section-padding;
 
-    @media #{$large-mobile,$small-mobile} {
+    @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
         padding: 0em;
     }
     @media #{$tablet-device} {
@@ -252,7 +258,7 @@ ol {
     justify-content: flex-start;
     gap: $container-gap;
 
-    @media #{$large-mobile,$small-mobile} {
+    @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
         flex-direction: column;
         gap: 1em;
     }
@@ -263,7 +269,7 @@ ol {
 
     & > div {
         width: 50%;
-        @media #{$large-mobile,$small-mobile} {
+        @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
             width: 100%;
         }
         @media #{$tablet-device} {
@@ -273,7 +279,7 @@ ol {
 
     &.container-inverse {
         flex-direction: row-reverse;
-        @media #{$large-mobile,$small-mobile} {
+        @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
             flex-direction: column;
         }
         @media #{$tablet-device} {
@@ -286,7 +292,7 @@ ol {
     font-size: 6em;
     font-weight: 900;
     line-height: 1em;
-    @media #{$large-mobile,$small-mobile} {
+    @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
         font-size: 1.875em;
         font-weight: 1000;
     }
@@ -301,7 +307,7 @@ ol {
     justify-content: flex-start;
     gap: $container-gap;
 
-    @media #{$large-mobile,$small-mobile} {
+    @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
         flex-direction: column-reverse;
     }
     @media #{$tablet-device} {
@@ -311,7 +317,7 @@ ol {
     & > div {
         &:first-child {
             width: 45.48%;
-            @media #{$large-mobile,$small-mobile} {
+            @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
                 width: 100%;
             }
             @media #{$tablet-device} {
@@ -321,7 +327,7 @@ ol {
 
         &:last-child {
             width: 54.52%;
-            @media #{$large-mobile,$small-mobile} {
+            @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
                 width: 100%;
             }
             @media #{$tablet-device} {
@@ -329,7 +335,7 @@ ol {
             }
         }
         & .button-element {
-            @media #{$large-mobile,$small-mobile} {
+            @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -354,7 +360,7 @@ ol {
 }
 
 .button-element {
-    @media #{$large-mobile,$small-mobile} {
+    @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -416,6 +422,9 @@ ol {
     @media #{$small-mobile} {
         padding-top: 40px;
     }
+    @media #{$extra-small-mobile} {
+        padding-top: 20px;
+    }
 }
 
 .section-padding-03 {
@@ -437,7 +446,7 @@ ol {
         padding-bottom: 60px;
     }
     @media #{$small-mobile} {
-        padding-bottom: 60px;
+        padding-bottom: 40px;
     }
 }
 

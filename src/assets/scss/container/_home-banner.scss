@@ -27,7 +27,7 @@
                 display: flex;
                 justify-content: space-between;
 
-                @media #{$large-mobile,$small-mobile, $tablet-device}{
+                @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device}{
                     transform:translateY(0em) ;
                     bottom: 8.42em;
                     // padding: 0em 2.3125em;
@@ -44,7 +44,7 @@
                     gap: 0.3em;
                     background-color: $white;
 
-                    @media #{$large-mobile,$small-mobile, $tablet-device}{
+                    @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device}{
                         width:100%;
                         padding:2.85em 1.5em 1.78em 1.9285em;
                         gap:0.78em;
@@ -62,7 +62,7 @@
         justify-content: flex-end;
         align-items: center;
 
-        @media #{$large-mobile,$small-mobile, $tablet-device}{
+        @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device}{
             justify-content: center;
         }
 
@@ -76,7 +76,7 @@
             align-items: center;
             gap: 1.6em;
 
-            @media #{$large-mobile,$small-mobile, $tablet-device}{
+            @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device}{
                 transform: translateY(0);
                 bottom:27.14em;
             }

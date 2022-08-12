@@ -13,7 +13,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
-        @media #{$small-mobile} {
+        @media #{$small-mobile, $extra-small-mobile} {
             font-size: 0.8em;
         }
         & .head-left {
@@ -29,7 +29,7 @@
                 @media #{$large-mobile, $tablet-device} {
                     font-size: 2em;
                 }
-                @media #{$small-mobile} {
+                @media #{$small-mobile, $extra-small-mobile} {
                     font-size: 1.5em;
                 }
                 font-size: 2.5em;
@@ -160,7 +160,7 @@
         align-items: center;
         gap: 2.6em;
         
-        @media #{$small-mobile} {
+        @media #{$small-mobile, $extra-small-mobile} {
             font-size: 1.2em;
         }
         & .apply-button,

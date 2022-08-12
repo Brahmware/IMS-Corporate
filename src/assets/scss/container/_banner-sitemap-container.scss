@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media #{$large-mobile,$small-mobile, $tablet-device}{
+    @media #{$large-mobile,$small-mobile, $extra-small-mobile, $tablet-device}{
         height: auto;
     }
     & .banner-background {
@@ -39,7 +39,7 @@
             @media #{$large-mobile, $tablet-device} {
                 font-size: 10px;
             }
-            @media #{$small-mobile} {
+            @media #{$small-mobile, $extra-small-mobile} {
                 font-size: 8px;
             }
             & .page-title {
@@ -71,7 +71,7 @@
                 justify-content: space-around;
             }
             align-items: center;
-            @media #{$large-mobile,$small-mobile} {
+            @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
                 display: grid;
                 grid-auto-flow: column;
                 overflow-x: auto;
@@ -91,7 +91,7 @@
                 padding-left:18em;
             }
             & .each-tab{
-                @media #{$large-mobile,$small-mobile, $tablet-device} {
+                @media #{$large-mobile,$small-mobile, $extra-small-mobile, $tablet-device} {
                     width: max-content;
                     font-size: 1.42em;
                 }

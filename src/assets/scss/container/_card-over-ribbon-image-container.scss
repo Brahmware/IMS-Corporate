@@ -29,7 +29,7 @@
             align-items: flex-start;
             gap: 1em;
 
-            @media #{ $large-mobile,$small-mobile, $tablet-device} {
+            @media #{ $large-mobile,$small-mobile, $extra-small-mobile, $tablet-device} {
                 width: 100%;
             }
 
@@ -38,7 +38,7 @@
                 letter-spacing: 0.01em;
                 color: $white;
 
-                @media #{$large-mobile,$small-mobile, $tablet-device}{
+                @media #{$large-mobile,$small-mobile, $extra-small-mobile, $tablet-device}{
                     font-size: 1em;
                     font-weight: normal;
                 }
@@ -49,7 +49,7 @@
                 font-size: 4em;
                 line-height: 1em;
 
-                @media #{$large-mobile,$small-mobile, $tablet-device}{
+                @media #{$large-mobile,$small-mobile, $extra-small-mobile, $tablet-device}{
                     font-size: 2.5em;
                 }
             }

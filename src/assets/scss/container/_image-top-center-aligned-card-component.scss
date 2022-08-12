@@ -1,10 +1,10 @@
 .image-top-center-aligned-card-component {
-    @media #{$large-mobile,$small-mobile, $tablet-device}{
+    @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device}{
         padding: 2.64em;
         padding-bottom: 0;
     }
     & .image-part {
-        @media #{$large-mobile,$small-mobile, $tablet-device} {
+        @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
             font-size: 8px;
         }
         @media #{$tablet-device} {
@@ -26,7 +26,7 @@
             width: 100%;
             height: 50%;
 
-            @media #{$large-mobile,$small-mobile, $tablet-device} {
+            @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
                 border-radius:1.57em 
             }
         }
@@ -46,7 +46,7 @@
                 border-radius: $image-border-radius;
                 flex-shrink: 0;
 
-                @media #{$large-mobile,$small-mobile} {
+                @media #{$large-mobile,$small-mobile,$extra-small-mobile} {
                     border-radius: 1.57em;
                     width: 100%;
                 }
@@ -65,7 +65,7 @@
         }
     }
     & .center-aligned-card-part {
-        @media #{$large-mobile,$small-mobile, $tablet-device} {
+        @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
             font-size: 14px;
             padding-bottom: 0;
             padding: 0;

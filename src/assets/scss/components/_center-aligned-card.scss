@@ -5,7 +5,7 @@
     align-items: center;
     text-align: center;
     gap: 1em;
-    @media #{$large-mobile,$small-mobile} {
+    @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
         padding: 0em;
         padding-top: 3.21em;
         padding-bottom: 2.64em;
@@ -29,7 +29,7 @@
         line-height: 1.3em;
         letter-spacing: 0.02em;
 
-        @media #{$large-mobile, $tablet-device,$small-mobile} {
+        @media #{$large-mobile, $tablet-device,$small-mobile, $extra-small-mobile} {
             font-size: 2.1428em;
         }
     }
@@ -45,7 +45,7 @@
     & .content {
         max-width: 60%;
 
-        @media #{$large-mobile,$small-mobile} {
+        @media #{$large-mobile, $extra-small-mobile,$small-mobile} {
             max-width: 100%;
         }
         @media #{$tablet-device} {
@@ -55,7 +55,7 @@
 }
 
 .center-aligned-card-sm {
-    @media #{$large-mobile,$small-mobile} {
+    @media #{$large-mobile, $extra-small-mobile,$small-mobile} {
         padding: 0;
         padding-top: 3.21em;
         padding-bottom: 0;

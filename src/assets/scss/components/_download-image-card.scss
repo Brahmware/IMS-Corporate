@@ -6,6 +6,9 @@
             @media #{$small-mobile} {
                 font-size: 12px;
             }
+            @media #{$extra-small-mobile} {
+                font-size: 10px;
+            }
             display: block;
             padding: 4em 0em;
             position: absolute;
@@ -74,7 +77,7 @@
                 padding-top:4em;
             }
 
-            @media #{$small-mobile} {
+            @media #{$small-mobile, $extra-small-mobile} {
                 justify-content: center;
                 grid-template-columns: none;
                 padding-top:4em;
@@ -86,7 +89,7 @@
             }
 
             & .image-parts {
-                @media #{$large-mobile,$small-mobile} {
+                @media #{$large-mobile, $extra-small-mobile,$small-mobile} {
                     width : 100%;
                 }
             }
@@ -99,7 +102,7 @@
                 transition: $transition-base;
                 border-radius: 1.3em;
 
-                @media #{$large-mobile,$small-mobile} {
+                @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
                     max-width: 100%;
                 }
 
@@ -120,7 +123,7 @@
                         background: radial-gradient(circle, rgba(181, 181, 181, 0) 23%, rgba(44, 44, 44, 0.39289219105610995) 80%);
                         border-radius: 1.3em;
 
-                        @media #{$large-mobile,$small-mobile} {
+                        @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
                             height: 17.35em;
                         }
 
@@ -166,7 +169,7 @@
                         border-radius: 1.3em;
                         object-fit: cover;
 
-                        @media #{$large-mobile,$small-mobile} {
+                        @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
                             height:17.35em;
                         }
                     }
@@ -186,7 +189,7 @@
                         font-weight: bold;
                         color: black;
 
-                        @media #{$large-mobile, $tablet-device,$small-mobile}{
+                        @media #{$large-mobile, $tablet-device,$small-mobile, $extra-small-mobile}{
                             font-size: 1.42em;
                         }
                     }
@@ -219,7 +222,7 @@
         }
     }
 
-    @media #{$large-mobile,$small-mobile} {
+    @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
         .filter {
             width: 0%;
             display: none;

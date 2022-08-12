@@ -24,7 +24,7 @@
     & .card-button {
         margin-top: 4em;
 
-        @media #{$large-mobile,$small-mobile} {
+        @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
             margin-top: 1em;
         }
         @media #{$tablet-device} {

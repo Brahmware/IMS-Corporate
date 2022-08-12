@@ -6,7 +6,7 @@
     align-items: center;
     gap: 4em;
 
-    @media #{$large-mobile,$small-mobile, $tablet-device} {
+    @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
         gap: 0em;
     }
     & .background-image-holder {
@@ -38,7 +38,7 @@
                     gap: 2em;
                     background-color: rgba($color: $black, $alpha: 0);
                     color: $white;
-                    @media #{$large-mobile,$small-mobile, $tablet-device} {
+                    @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
                         padding-top: 3.71em;
                     }
 
@@ -49,7 +49,7 @@
                         border-radius: 50%;
                         flex-shrink: 0;
                         
-                        @media #{$large-mobile,$small-mobile, $tablet-device}{
+                        @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device}{
                             height: 8.28em;
                             width: 8.28em;
                         }
@@ -68,7 +68,7 @@
                         font-style: italic;
                         max-width: 60%;
                         
-                        @media #{$large-mobile,$small-mobile, $tablet-device}{
+                        @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device}{
                             max-width: 100%;
                         }
                     }
@@ -92,7 +92,7 @@
         justify-content: center;
         align-items: center;
 
-        @media #{$large-mobile,$small-mobile, $tablet-device}{
+        @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device}{
             margin-bottom: 3.35em;
         }
 
