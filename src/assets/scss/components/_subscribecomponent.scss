@@ -16,7 +16,7 @@
         align-items: center;
         gap: 1.5em;
 
-        @media #{$large-mobile, $tablet-device} {
+        @media #{$large-mobile,$small-mobile, $extra-small-mobile, $tablet-device} {
             flex-direction: column;
             width: 100%;
         }

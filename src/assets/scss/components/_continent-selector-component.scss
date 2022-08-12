@@ -6,7 +6,7 @@
     gap: 0.5em;
 
     & .title {
-        @media #{$large-mobile} {
+        @media #{$large-mobile,$small-mobile} {
             font-size: 1em;
         }
     }
@@ -18,7 +18,7 @@
         transition: $transition-base;
         cursor: pointer;
 
-        @media #{$large-mobile, $tablet-device}{
+        @media #{$large-mobile, $tablet-device,$small-mobile}{
             font-size: 1.28em;
         }
 

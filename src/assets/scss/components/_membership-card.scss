@@ -4,20 +4,23 @@
         @media #{$tablet-device}{
             padding: 0em 5em;
         }
+        @media #{$large-mobile, $small-mobile, $extra-small-mobile}{
+            padding-bottom:1em;
+        }
         & .membership-card-form {
             background-color: white;
             border-radius: 5px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             padding: 5em 3.4em;
 
-            @media #{$large-mobile, $tablet-device} {
+            @media #{$large-mobile, $tablet-device,$small-mobile, $extra-small-mobile} {
                 padding: 4em 2.5em 5.6825em 2.5em;
             }
             & .form-header {
                 font-size: 2em;
                 padding-bottom: 1em;
                 line-height: 1;
-                @media #{$large-mobile,$tablet-device} {
+                @media #{$large-mobile,$tablet-device,$small-mobile, $extra-small-mobile} {
                     font-size: 1.25em;
                 }
             }
@@ -30,7 +33,7 @@
                     width: 100%;
                     line-height: 1;
                     color: $light-text-color;
-                    @media #{$large-mobile,$tablet-device} {
+                    @media #{$large-mobile,$tablet-device,$small-mobile, $extra-small-mobile} {
                         font-size: 1em;
                     }
                 }
@@ -39,7 +42,7 @@
                 display: flex;
                 justify-content: space-between;
                 gap: 1em;
-                @media #{$large-mobile,$tablet-device} {
+                @media #{$large-mobile,$tablet-device,$small-mobile, $extra-small-mobile} {
                     flex-direction: column;
                 }
             }
@@ -58,8 +61,8 @@
                 @media #{$large-mobile,$tablet-device} {
                     font-size: 1em;
                 }
-                @media #{$small-mobile,$tablet-device} {
-                    font-size: 0.8em;
+                @media #{$small-mobile, $extra-small-mobile} {
+                    font-size: 1em;
                 }
             }
         }
@@ -69,7 +72,7 @@
             border-radius: 5px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             padding: 2.5em 3.1em;
-            @media #{$large-mobile,$tablet-device} {
+            @media #{$large-mobile,$tablet-device,$small-mobile, $extra-small-mobile} {
                 padding: 1.25em 1em;
             }
             width: 100%;
@@ -83,7 +86,7 @@
                 width: 100%;
                 height: 100%;
 
-                @media #{$large-mobile,$tablet-device} {
+                @media #{$large-mobile,$tablet-device,$small-mobile, $extra-small-mobile} {
                     padding: 1.5em;
                 }
                 & .action-header {
@@ -91,7 +94,7 @@
                     font-size: 2em;
                     line-height: 1;
                     padding-bottom: 1em;
-                    @media #{$large-mobile,$tablet-device} {
+                    @media #{$large-mobile, $extra-small-mobile,$small-mobile,$tablet-device} {
                         font-size: 1em;
                     }
                 }
@@ -106,7 +109,7 @@
                         padding: 0.5em;
                         font-weight: bold;
                         border-radius: 100px;
-                        @media #{$large-mobile,$tablet-device} {
+                        @media #{$large-mobile, $extra-small-mobile,$small-mobile,$tablet-device} {
                             width: 100%;
                             font-size: 1em;
                         }
@@ -165,7 +168,7 @@
             & .sub-container-title {
                 font-size: 5em;
                 line-height: 1.2;
-                @media #{$large-mobile} {
+                @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
                     font-size: 4.28em;
                     text-shadow: 0px 3px 6px #00000029;
                 }
@@ -178,7 +181,7 @@
                 font-size: 1.5em;
                 line-height: 1;
                 padding-bottom: 1em;
-                @media #{$large-mobile,$tablet-device} {
+                @media #{$large-mobile,$small-mobile, $extra-small-mobile,$tablet-device} {
                     font-size: 1.25em;
                 }
                 @media #{$tablet-device} {
@@ -190,6 +193,12 @@
                 color: white;
                 @media #{$large-mobile} {
                     font-size: 14px;
+                }
+                @media #{$small-mobile} {
+                    font-size: 12px;
+                }
+                @media #{$extra-small-mobile} {
+                    font-size: 10px;
                 }
                 @media #{$tablet-device} {
                     font-size: 20px;

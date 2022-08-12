@@ -9,6 +9,12 @@
     @media #{$large-mobile} {
         font-size: 14px;
     }
+    @media #{$small-mobile} {
+        font-size: 12px;
+    }
+    @media #{$extra-small-mobile} {
+        font-size: 10px;
+    }
 }
 
 .newspage-banner {
@@ -29,7 +35,7 @@
             line-height: 1;
             margin-bottom: 0.3em;
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile,$small-mobile,$extra-small-mobile} {
                 font-size: 2.85em;
             }
             @media #{$tablet-device} {
@@ -78,6 +84,9 @@
             & .news-card {
                 width: 28em;
                 max-height: 30em;
+                @media #{$small-mobile,$extra-small-mobile}{
+                    width: 23em;
+                }
             }
         }
 
@@ -97,13 +106,17 @@
         flex-direction: column;
         gap: 4em;
 
+        @media #{$tablet-device}{
+            padding-right: 4em;
+        }
+
         & .heading {
             font-size: 3em;
             letter-spacing: 0;
             line-height: 1;
             font-weight: 400;
 
-            @media #{$large-mobile,$tablet-device} {
+            @media #{$large-mobile,$small-mobile,$extra-small-mobile,$tablet-device} {
                 font-size: 1.78em;
             }
 
@@ -125,7 +138,7 @@
             font-style: italic;
             line-height: 1;
 
-            @media #{$large-mobile,$tablet-device} {
+            @media #{$large-mobile,$small-mobile,$extra-small-mobile,$tablet-device} {
                 font-size: 1.42em;
             }
 
@@ -134,7 +147,7 @@
                 height: 0.08em;
                 width: 20%;
                 background-color: $primary;
-                @media #{$large-mobile,$tablet-device} {
+                @media #{$large-mobile,$small-mobile,$extra-small-mobile,$tablet-device} {
                     font-size: 1.71em;
                     width: 40%;
                 }
@@ -146,7 +159,7 @@
                 margin-left: auto;
                 width: 20%;
                 background-color: $primary;
-                @media #{$large-mobile,$tablet-device} {
+                @media #{$large-mobile,$small-mobile,$extra-small-mobile,$tablet-device} {
                     font-size: 1.71em;
                     width: 40%;
                 }
@@ -157,8 +170,11 @@
             border-radius: 1.375em;
             height: 36em;
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile,$small-mobile,$extra-small-mobile} {
                 height: 21.42em;
+            }
+            @media #{$tablet-device} {
+                height: 32em;
             }
 
             & img {
@@ -212,7 +228,7 @@
                 color: $light-text-color;
             }
 
-            @media #{$large-mobile} {
+            @media #{$large-mobile,$small-mobile,$extra-small-mobile} {
                 & .image-part {
                     height: 11.41em;
                     width: 50%;
@@ -263,6 +279,7 @@
             position: sticky;
             scroll-behavior: smooth;
             top: 10%;
+            width: auto;
         }
 
         padding: 2.125em 2.375em 2.8em 2.375em;
@@ -340,7 +357,7 @@
         }
     }
 
-    @media #{$large-mobile} {
+    @media #{$large-mobile,$small-mobile,$extra-small-mobile} {
         flex-direction: column;
 
         & .newspage-content {

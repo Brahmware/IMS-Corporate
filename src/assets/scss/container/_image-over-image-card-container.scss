@@ -3,11 +3,11 @@
     //     padding: 0;
     // }
 
-    @media #{$large-mobile}{
+    @media #{$large-mobile,$small-mobile,$extra-small-mobile}{
         padding: 0em
     }
     & .card-part {
-        @media #{$large-mobile}{
+        @media #{$large-mobile,$small-mobile,$extra-small-mobile}{
             padding: 1.92em 2.64em;
         }
         @media #{$tablet-device}{

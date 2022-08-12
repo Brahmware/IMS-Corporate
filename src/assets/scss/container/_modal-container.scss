@@ -48,7 +48,7 @@
         transition: $transition-base;
         margin-top: 6em;
         margin-bottom: 6em;
-        @media #{$large-mobile, $tablet-device} {
+        @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
             font-size: 14px;
             width: 80vw;
             padding: 1.5em;
@@ -66,7 +66,7 @@
                 height: 1.5em;
                 fill: $black;
                 transition: $transition-base;
-                @media #{$large-mobile, $tablet-device} {
+                @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
                     height: 1em;
                 }
             }
@@ -87,7 +87,7 @@
             align-items: center;
             gap: 3em;
 
-            @media #{$large-mobile, $tablet-device} {
+            @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
                 gap: 2.5em;
             }
             
@@ -107,7 +107,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-start;
-                @media #{$large-mobile, $tablet-device} {
+                @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -179,7 +179,7 @@
                 }
             }
 
-            @media #{$large-mobile, $tablet-device} {
+            @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
                 flex-direction: column;
                 & .image{
                     height: 17em;
@@ -209,7 +209,7 @@
         & .more-like-this-area{
             margin-top: 6.5em;
             width: 100%;
-            @media #{$large-mobile, $tablet-device}{
+            @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device}{
                 margin-top: 3.7em;
                 margin-bottom: 2em;
             }
@@ -222,7 +222,7 @@
                     font-size: 2.5em;
                     font-weight: 1000;
                     line-height: 1;
-                    @media #{$large-mobile, $tablet-device}{
+                    @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device}{
                         font-size: 2em;
                     }
                 }
@@ -244,7 +244,7 @@
                 overflow-x: auto;
                 gap: 2.5em;
                 // overscroll-behavior-inline: contain;
-                @media #{$large-mobile, $tablet-device} {
+                @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
                     padding-top: 1em;
                     gap: 1em;
                 }
@@ -259,7 +259,7 @@
                     // &:hover {
                     //     box-shadow: $default-shadow;
                     // }
-                    @media #{$large-mobile, $tablet-device} {
+                    @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
                         height: 13em;
                         width: 16em;
                     }

@@ -19,7 +19,7 @@
     .container-mb{
         display: none;
     }
-    @media #{$large-mobile, $tablet-device} {
+    @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
         & .laptop-container{
             display: none;
         }
@@ -37,7 +37,7 @@
                 margin-top: 2em;
                 height: 28em;
                 margin-bottom: 2em;
-                @media #{$small-mobile, $large-mobile, $tablet-device} {
+                @media #{$small-mobile,$extra-small-mobile, $large-mobile, $tablet-device} {
                     height: 28.85em;
                 }
                 @media #{$extra-small-mobile} {
