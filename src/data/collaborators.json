@@ -69,9 +69,9 @@
                             {
                                 "image": "/images/partners/become-a-member/container-1/cover.jpg",
                                 "card": {
-                                    "title": "UNITED FOR GOOD",
-                                    "subtitle": "This is what an explorer looks like",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "title": "THE SYNDICATE MEMBERSHIP",
+                                    "subtitle": "An Union made for Bigger things",
+                                    "content": "<p>Indian Media Syndicate is an industry association for independent producers. We represent hundreds of production companies all around the globe engaged in the development, production and distribution of Audio-Video content for OTT, TV, films and digital media channels.</p>"
                                 }
                             }
                         ]
@@ -82,7 +82,7 @@
                             {
                                 "image": "/images/collaborators/producers/container-1/cover.jpg",
                                 "card": {
-                                    "title": "WHAT WE DO",
+                                    "title": "INTERCONNECTED PRODUCTION NETWORK",
                                     "subtitle": "India celebrates Exploration",
                                     "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -93,8 +93,8 @@
                         "id": "container_3",
                         "elements": [
                             {
-                                "title": "OUR MISSION",
-                                "subtitle": "To Revolutionize Indian Media",
+                                "title": "INDIAN MEDIA SYNDICATE MEMBERSHIP",
+                                "subtitle": "The Greatest Event in Indian Broadcasting",
                                 "cards": [
                                     {
                                         "title": "Apply for Membership",
