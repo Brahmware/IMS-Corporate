@@ -103,7 +103,31 @@
                 "id": "container_5",
                 "elements": [
                     {
-                        "image": "/images/partners/corporate-and-foundations/container-4/cover.jpg",
+                        "image": "/images/partners/corporate-and-foundations/container-4/cover1.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    },
+                    {
+                        "image": "/images/partners/corporate-and-foundations/container-4/cover2.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    },
+                    {
+                        "image": "/images/partners/corporate-and-foundations/container-4/cover3.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    },
+                    {
+                        "image": "/images/partners/corporate-and-foundations/container-4/cover4.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    },
+                    {
+                        "image": "/images/partners/corporate-and-foundations/container-4/cover5.jpg",
                         "title": "IMS Explorers",
                         "subtitle": "Changemakers<br /> and Innovators",
                         "buttontext": "APPLY"

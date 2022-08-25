@@ -1,7 +1,8 @@
 import React from 'react'
 import HollowButton from '../buttons/HollowButton'
+import {Link} from "react-router-dom"
 
-const FunfactSingleColumnComponent = ( {columnKey, count, cardtitle, cardcontent} ) => {
+const FunfactSingleColumnComponent = ( {columnKey, count, cardtitle, cardcontent, path} ) => {
   return (
     <div
       className='column-card'
@@ -20,7 +21,7 @@ const FunfactSingleColumnComponent = ( {columnKey, count, cardtitle, cardcontent
         <span>{cardcontent}</span>
       </div>
       <div className="card-button">
-        <HollowButton class={"gray-button"} text={"DISCOVER"} />
+        <Link to={!path?"/":path}><HollowButton class={"gray-button"} text={"DISCOVER"} /></Link>
       </div>
     </div>
   )

@@ -84,7 +84,31 @@
                 "id": "container_6",
                 "elements": [
                     {
-                        "image": "/images/business/about-us/container-4/cover.jpg",
+                        "image": "/images/business/about-us/container-6/cover1.jpg",
+                        "title": "Become a Part of the Media Syndicate",
+                        "subtitle": "Launch Your<br/> next Blockbuster",
+                        "buttontext": "CLAIM A SEAT"
+                    },
+                    {
+                        "image": "/images/business/about-us/container-6/cover2.jpg",
+                        "title": "Become a Part of the Media Syndicate",
+                        "subtitle": "Launch Your<br/> next Blockbuster",
+                        "buttontext": "CLAIM A SEAT"
+                    },
+                    {
+                        "image": "/images/business/about-us/container-6/cover3.jpg",
+                        "title": "Become a Part of the Media Syndicate",
+                        "subtitle": "Launch Your<br/> next Blockbuster",
+                        "buttontext": "CLAIM A SEAT"
+                    },
+                    {
+                        "image": "/images/business/about-us/container-6/cover4.jpg",
+                        "title": "Become a Part of the Media Syndicate",
+                        "subtitle": "Launch Your<br/> next Blockbuster",
+                        "buttontext": "CLAIM A SEAT"
+                    },
+                    {
+                        "image": "/images/business/about-us/container-6/cover5.jpg",
                         "title": "Become a Part of the Media Syndicate",
                         "subtitle": "Launch Your<br/> next Blockbuster",
                         "buttontext": "CLAIM A SEAT"
@@ -162,7 +186,8 @@
                         "card": {
                             "subtitle": "Celebrating our Stories together",
                             "content": "<p>We promote an enriching and supportive climate for our community of employees, explorers, photojournalists, and storytellers– regardless of their age, race, gender identity, sexual orientation, physical or mental ability, ethnicity, nationality, or professional title.</p>",
-                            "buttontext": "VIEW MORE"
+                            "buttontext": "VIEW MORE",
+                            "path":"/media_network/focus_areas"
                         }
                     }
                 ]
@@ -184,10 +209,32 @@
                 "id": "container_4",
                 "elements": [
                     {
+                        "image": "/images/business/diversity-and-inclusion/container-1/cover.jpg",
+                        "title": "IMS Crew",
+                        "subtitle": "Let us Go FURTHER,<br/> Together.",
+                        "buttontext": "APPLY",
+                        "path":"/business/career"
+                    },
+                    {
+                        "image": "/images/business/diversity-and-inclusion/container-1/cover.jpg",
+                        "title": "IMS Crew",
+                        "subtitle": "Let us Go FURTHER,<br/> Together.",
+                        "buttontext": "APPLY",
+                        "path":"/business/career"
+                    },
+                    {
+                        "image": "/images/business/diversity-and-inclusion/container-3/cover.jpg",
+                        "title": "IMS Crew",
+                        "subtitle": "Let us Go FURTHER,<br/> Together.",
+                        "buttontext": "APPLY",
+                        "path":"/business/career"
+                    },
+                    {
                         "image": "/images/business/diversity-and-inclusion/container-4/cover.jpg",
                         "title": "IMS Crew",
                         "subtitle": "Let us Go FURTHER,<br/> Together.",
-                        "buttontext": "APPLY"
+                        "buttontext": "APPLY",
+                        "path":"/business/career"
                     }
                 ]
             }
