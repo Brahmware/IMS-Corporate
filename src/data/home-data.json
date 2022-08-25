@@ -6,32 +6,32 @@
                 "image": "/images/home/container-1/cover-1.jpg",
                 "card": {
                     "title": "FOR INDIA",
-                    "subtitle": "Go Inventions!",
-                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    "subtitle": "Discover Bharat",
+                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Global Societies.</p>"
                 }
             },
             {
                 "image": "/images/home/container-1/cover-2.jpg",
                 "card": {
                     "title": "FOR INDIA",
-                    "subtitle": "Go Inventions!",
-                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    "subtitle": "Discover Bharat",
+                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Global Societies.</p>"
                 }
             },
             {
                 "image": "/images/home/container-1/cover-3.jpg",
                 "card": {
                     "title": "FOR INDIA",
-                    "subtitle": "Go Inventions!",
-                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    "subtitle": "Discover Bharat",
+                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Global Societies.</p>"
                 }
             },
             {
                 "image": "/images/home/container-1/cover-4.jpg",
                 "card": {
                     "title": "FOR INDIA",
-                    "subtitle": "Go Inventions!",
-                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                    "subtitle": "Discover Bharat",
+                    "content": "<p>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Global Societies.</p>"
                 }
             }
         ]
@@ -48,6 +48,7 @@
             {
                 "card": {
                     "title": "ABOUT US",
+                    "path":"/business/about_us",
                     "subtitle": "India, Explore!<br/>Dream! Lead!",
                     "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
                 }
@@ -74,18 +75,21 @@
                     {
                         "id": 1,
                         "count": "2.3Billion",
+                        "path":"/media_network/business_and_brands",
                         "cardtitle": "Serviceable Audience",
                         "cardcontent": "Pan Asia Media creation & distribution."
                     },
                     {
                         "id": 2,
                         "count": "20+",
+                        "path":"/media_network/technology",
                         "cardtitle": "Languages",
                         "cardcontent": "In audio channels for all media labels. All Indic languages covered."
                     },
                     {
                         "id": 3,
                         "count": "100+",
+                        "path":"/collaborators/producers",
                         "cardtitle": "Production Houses",
                         "cardcontent": "In Syndicate partnership, crafting the dream."
                     }
@@ -117,6 +121,7 @@
             {
                 "card": {
                     "title": "IMMERSIVE TEACHING",
+                    "path":"/education_and_teaching/professional_learning/containers",
                     "subtitle": "A Strategy to Revolutionize Learning",
                     "content": "<p>Grasping attention is easier, keeping learners engaged throughout the process and command action is a different story. We learn much faster visually, and retention is simply great if it is rewarding. In comes the array of Immersive education for new generation of India.<br/><br/> Putting our best foot forward, IMS resources are used in teaching the new wave of decision-makers. Integrating with schools and teaching organizations, creating the seamless streaming of knowledge like never before.</p>"
                 }
@@ -135,6 +140,7 @@
             {
                 "card": {
                     "title": "EXPLORERS",
+                    "path":"/collaborators/explorers",
                     "subtitle": "Impactful programs for a global community of Changemakers",
                     "content": "<p>We fund a worldwide network of Explorers who investigate, evaluate theories, revolutionize, take imagination to new heights, and push the limitations of traditional thinking in ways that fundamentally change humanity.</p>",
                     "buttontext": "MEET EXPLORERS"
@@ -231,10 +237,39 @@
         "id": "container_11",
         "elements": [
             {
-                "image": "/images/home/container-11/cover.jpg",
+                "image": "/images/home/container-11/cover1.jpg",
                 "title": "Production Ready IMS Resources",
                 "subtitle": "Get your FREE <br/> IMS Resources",
-                "buttontext": "CHECK"
+                "buttontext": "CHECK",
+                "path":"/education_and_teaching/resources"
+            },
+            {
+                "image": "/images/home/container-11/cover2.jpg",
+                "title": "Production Ready IMS Resources",
+                "subtitle": "Get your FREE <br/> IMS Resources",
+                "buttontext": "CHECK",
+                "path":"/education_and_teaching/resources"
+            },
+            {
+                "image": "/images/home/container-11/cover3.jpg",
+                "title": "Production Ready IMS Resources",
+                "subtitle": "Get your FREE <br/> IMS Resources",
+                "buttontext": "CHECK",
+                "path":"/education_and_teaching/resources"
+            },
+            {
+                "image": "/images/home/container-11/cover4.jpg",
+                "title": "Production Ready IMS Resources",
+                "subtitle": "Get your FREE <br/> IMS Resources",
+                "buttontext": "CHECK",
+                "path":"/education_and_teaching/resources"
+            },
+            {
+                "image": "/images/home/container-11/cover5.jpg",
+                "title": "Production Ready IMS Resources",
+                "subtitle": "Get your FREE <br/> IMS Resources",
+                "buttontext": "CHECK",
+                "path":"/education_and_teaching/resources"
             }
         ]
     }

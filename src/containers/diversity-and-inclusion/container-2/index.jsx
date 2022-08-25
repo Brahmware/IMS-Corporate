@@ -1,6 +1,7 @@
 import React from 'react'
 import ImageOverSquareImageHeadingContainer from '../../common/image-over-square-image-heading'
 import FilledButton from '../../../components/buttons/FilledButton';
+import {Link} from "react-router-dom"
 
 const DiversityInclusionContainerTwo = ({ data }) => {
 
@@ -8,7 +9,7 @@ const DiversityInclusionContainerTwo = ({ data }) => {
     const imagedata = data[1].images
     const carddata = data[2].card
 
-    const ButtonElement = <FilledButton class={'black-button'} text={carddata.buttontext} />
+    const ButtonElement = <Link to={!carddata.path?"/":carddata.path}><FilledButton class={'black-button'} text={carddata.buttontext} /></Link>
 
     return (
         <div className='diversity-and-inclusion-container-2 section-with-padding'>

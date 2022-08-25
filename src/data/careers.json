@@ -11,7 +11,31 @@
         "id": "banner",
         "elements": [
             {
-                "image": "/images/collaborators/explorers/container-5/cover.jpg",
+                "image": "/images/collaborators/explorers/container-5/cover1.jpg",
+                "title": "Pilot the Revolution",
+                "subtitle": "You are here to<br/>make an Impact.",
+                "buttontext": "APPLY"
+            },
+            {
+                "image": "/images/collaborators/explorers/container-5/cover2.jpg",
+                "title": "Pilot the Revolution",
+                "subtitle": "You are here to<br/>make an Impact.",
+                "buttontext": "APPLY"
+            },
+            {
+                "image": "/images/collaborators/explorers/container-5/cover3.jpg",
+                "title": "Pilot the Revolution",
+                "subtitle": "You are here to<br/>make an Impact.",
+                "buttontext": "APPLY"
+            },
+            {
+                "image": "/images/collaborators/explorers/container-5/cover4.jpg",
+                "title": "Pilot the Revolution",
+                "subtitle": "You are here to<br/>make an Impact.",
+                "buttontext": "APPLY"
+            },
+            {
+                "image": "/images/collaborators/explorers/container-5/cover5.jpg",
                 "title": "Pilot the Revolution",
                 "subtitle": "You are here to<br/>make an Impact.",
                 "buttontext": "APPLY"
