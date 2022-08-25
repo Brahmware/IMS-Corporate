@@ -61,8 +61,7 @@ const GalleryFilterContainer = ({ data }) => {
     const filterData = data[0]
     const cardData = data[1].cards.slice(0, size)
 
-    const handleShow = (e) => {
-        // console.log(cardData)
+    const handleShow = () => {
         setShow(true);
     }
     const [cardStyle, setCardStyle] = useState({});

@@ -11,8 +11,10 @@ const SearchComponent = (props) => {
     let handleSerachSubmit = async (data) => {
         console.log(data);
     }
+
     return (
         <div className={!props.toggleState ? "search search-invisible" : "search"}>
+            
             <form onSubmit={handleSubmit(handleSerachSubmit)}>
                 <input
                     type='text'
