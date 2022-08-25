@@ -10,16 +10,16 @@ const FlashcardComponent = () => {
     const [photoToShow, setPhotoToshow] = useState({});
     const [intervalTime, setIntervalTime] = useState(0);
     const [randomIndex, setRandomIndex] = useState(0);
-    
+
     const DEFAULT_INTERVAL = 10000;
-    
+
     const changePhoto = async () => {
         intervalTime === 0 && setIntervalTime(DEFAULT_INTERVAL);
 
         let isSame = true;
-        while(isSame) {
+        while (isSame) {
             let random_index = Math.floor(Math.random() * FlashcardData.length);
-            if(random_index !== randomIndex) {
+            if (random_index !== randomIndex) {
                 isSame = false;
             }
             setRandomIndex(random_index);

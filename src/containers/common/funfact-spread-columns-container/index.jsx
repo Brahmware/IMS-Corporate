@@ -2,6 +2,7 @@ import React from 'react'
 import FunfactSingleColumnComponent from '../../../components/funfact-single-column-component'
 
 const FunfactColumnSpreadContainer = ({ columnsdata }) => {
+    console.log(columnsdata)
     return (
         <div className="funfact-spread-columns-container">
             {
@@ -12,7 +13,8 @@ const FunfactColumnSpreadContainer = ({ columnsdata }) => {
                                 columnKey = {key}
                                 count = {eachColumnData.count}
                                 cardtitle = {eachColumnData.cardtitle}
-                                cardcontent = {eachColumnData.cardcontent}
+                                cardcontent={eachColumnData.cardcontent}
+                                path ={eachColumnData.path}
                             />
                         </React.Fragment>
                     )

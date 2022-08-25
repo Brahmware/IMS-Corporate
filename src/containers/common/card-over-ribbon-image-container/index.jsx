@@ -1,6 +1,7 @@
 import React from 'react'
 import HollowButton from '../../../components/buttons/HollowButton'
 import ParallaxImageComponent from '../../../components/parallax-image-component';
+import {Link} from "react-router-dom"
 
 const CardOverRibbonImageContainer = ({ cardribbondata }) => {
     return (
@@ -42,7 +43,7 @@ const CardOverRibbonImageContainer = ({ cardribbondata }) => {
                                 data-aos-duration='600'
                                 data-aos-delay='900'
                             >
-                                <HollowButton class={"hollow-button white-button"} text={cardribbondata.buttontext} />
+                                <Link to={!cardribbondata.path?"/":cardribbondata.path}><HollowButton class={"hollow-button white-button"} text={cardribbondata.buttontext} /></Link>
                             </div>
                         </div>
                     </div>

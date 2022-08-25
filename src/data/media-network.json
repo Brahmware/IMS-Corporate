@@ -49,7 +49,7 @@
                             {
                                 "image": "/images/media-network/businessandbrands/tv-network/container-2/cover.jpg",
                                 "card": {
-                                    "button": "VIEW MORE",
+                                    "button": "EXPLORE",
                                     "title": "IMSCIENCE",
                                     "subtitle": "India’s first Science OTT for curious people",
                                     "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
@@ -64,7 +64,7 @@
                                 "image": "/images/media-network/businessandbrands/tv-network/container-3/cover.jpg",
                                 "card": {
                                     "title": "IMS HISTORY",
-                                    "button": "VIEW MORE",
+                                    "button": "EXPLORE",
                                     "subtitle": "History narrated for the newest generation",
                                     "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -78,7 +78,7 @@
                                 "image": "/images/media-network/businessandbrands/tv-network/container-4/cover.jpg",
                                 "card": {
                                     "title": "POP NEWS",
-                                    "button": "VIEW MORE",
+                                    "button": "EXPLORE",
                                     "subtitle": "Global Disaster NEWS Channel",
                                     "content": "Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -92,7 +92,7 @@
                                 "image": "/images/media-network/businessandbrands/tv-network/container-5/cover.jpg",
                                 "card": {
                                     "title": "WORLD TV",
-                                    "button": "VIEW MORE",
+                                    "button": "EXPLORE",
                                     "subtitle": "If World Culture is fire, World TV is gasoline",
                                     "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -106,7 +106,7 @@
                                 "image": "/images/media-network/businessandbrands/tv-network/container-6/cover.jpg",
                                 "card": {
                                     "title": "IMS LIFE",
-                                    "button": "VIEW MORE",
+                                    "button": "EXPLORE",
                                     "subtitle": "Responsible Lifestyle your way",
                                     "content": "<p>Science BroadcastScience BroadcastScience BroadcastScience BroadcastScience Broadcast Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br/> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                                 }
@@ -117,7 +117,31 @@
                         "id": "container_7",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/tv-network/container-7/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/tv-network/container-7/cover1.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/tv-network/container-7/cover2.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/tv-network/container-7/cover3.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/tv-network/container-7/cover4.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/tv-network/container-7/cover5.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -727,7 +751,31 @@
                         "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover1.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover2.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover3.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover4.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover5.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -864,7 +912,31 @@
                         "id": "container_8",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover1.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover2.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover3.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover4.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover5.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -987,7 +1059,31 @@
                         "id": "container_7",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover1.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover2.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover3.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover4.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/magazines/container-8/cover5.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -1082,7 +1178,31 @@
                         "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover1.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover2.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover3.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover4.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover5.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -1174,7 +1294,7 @@
                         ]
                     },
                     {
-                        "id": "container_5",
+                        "id": "container_7",
                         "elements": [
                             {
                                 "image": "/images/media-network/businessandbrands/container-5/cover.jpg",
@@ -1202,10 +1322,34 @@
                         ]
                     },
                     {
-                        "id": "container_7",
+                        "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/container-7/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover1.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover2.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover3.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover4.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/studio-operations/container-5/cover5.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -1300,7 +1444,31 @@
                         "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover.jpg",
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover1.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover2.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover3.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover4.jpg",
+                                "title": "IMS Explorers",
+                                "subtitle": "Changemakers<br /> and Innovators",
+                                "buttontext": "APPLY"
+                            },
+                            {
+                                "image": "/images/media-network/businessandbrands/intellectual-properties/container-5/cover5.jpg",
                                 "title": "IMS Explorers",
                                 "subtitle": "Changemakers<br /> and Innovators",
                                 "buttontext": "APPLY"
@@ -1374,7 +1542,7 @@
                         "card": {
                             "title": "ENCOURAGING & ENFORCING",
                             "subtitle": "Ecosystem Preservation",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                            "content": "<p>Our environment work aims to discover, understand, and conserve all species of animals, plants, or other forms of life. Our aim is to inspire and motivate audiences in India and around the world to better understand and defend them. Our explorers are working all around the world to conserve endangered species, protect ecosystems, and teach people on how to coexist peacefully with all local and global populations.</p>"
                         }
                     }
                 ]
@@ -1387,7 +1555,7 @@
                         "card": {
                             "title": "UNDERSTANDING",
                             "subtitle": "Human Past",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                            "content": "<p>Understanding our past and protecting our future. Our Human History and Cultures work aims to preserve cultural knowledge and better understand human history, culture, diversity, and evolution—past and present. Our purpose is to ignite curiosity in local and worldwide audiences with stories or lessons about humans across themes like archaeology, cultural anthropology, palaeoanthropology, human geography, human migration, and related fields.</p>"
                         }
                     }
                 ]
@@ -1409,7 +1577,31 @@
                 "id": "container_11",
                 "elements": [
                     {
-                        "image": "/images/media-network/focus-areas/container-11/cover.jpg",
+                        "image": "/images/media-network/focus-areas/container-11/cover1.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    },
+                    {
+                        "image": "/images/media-network/focus-areas/container-11/cover2.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    },
+                    {
+                        "image": "/images/media-network/focus-areas/container-11/cover3.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    },
+                    {
+                        "image": "/images/media-network/focus-areas/container-11/cover4.jpg",
+                        "title": "IMS Explorers",
+                        "subtitle": "Changemakers<br /> and Innovators",
+                        "buttontext": "APPLY"
+                    },
+                    {
+                        "image": "/images/media-network/focus-areas/container-11/cover5.jpg",
                         "title": "IMS Explorers",
                         "subtitle": "Changemakers<br /> and Innovators",
                         "buttontext": "APPLY"

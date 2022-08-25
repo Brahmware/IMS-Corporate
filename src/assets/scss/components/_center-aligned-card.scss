@@ -5,6 +5,7 @@
     align-items: center;
     text-align: center;
     gap: 1em;
+    padding-top: 3em;
     @media #{$large-mobile,$small-mobile, $extra-small-mobile} {
         padding: 0em;
         padding-top: 3.21em;
