@@ -29,7 +29,7 @@
         line-height: 1.3em;
         letter-spacing: 0.02em;
 
-        @media #{$large-mobile, $tablet-device,$small-mobile, $extra-small-mobile} {
+        @media #{$large-mobile, $tablet-device, $small-mobile, $extra-small-mobile} {
             font-size: 2.1428em;
         }
     }
@@ -45,7 +45,7 @@
     & .content {
         max-width: 60%;
 
-        @media #{$large-mobile, $extra-small-mobile,$small-mobile} {
+        @media #{$large-mobile, $extra-small-mobile, $small-mobile} {
             max-width: 100%;
         }
         @media #{$tablet-device} {

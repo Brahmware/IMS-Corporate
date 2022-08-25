@@ -10,11 +10,11 @@ $small-mobile: "only screen and (max-width: 575px)";
 $extra-small-mobile: "only screen and (max-width: 479px)"; */
 
 $extraBig-device: "only screen and (min-width: 1600px)";
-$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
-$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
-$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
-$large-mobile: "only screen and (min-width: 376px) and (max-width: 767px)";
-$small-mobile: "only screen and (min-width: 321px) and (max-width: 375px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1600px)";
+$desktop-device: "only screen and (min-width: 991px) and (max-width: 1200px)";
+$tablet-device: "only screen and (min-width: 767px) and (max-width: 991px)";
+$large-mobile: "only screen and (min-width: 377px) and (max-width: 767px)";
+$small-mobile: "only screen and (min-width: 320px) and (max-width: 377px)";
 $extra-small-mobile: "only screen and (max-width: 320px)";
 
 // Colors

@@ -6,7 +6,9 @@
     background-color: $white;
     overflow: hidden;
     position: relative;
-
+    @media #{$extraBig-device, $laptop-device, $desktop-device} {
+        height: 100vh;
+    }
     @media #{$large-mobile,$small-mobile,$extra-small-mobile, $tablet-device} {
         height: max-content;
         padding-bottom: 7.625em;

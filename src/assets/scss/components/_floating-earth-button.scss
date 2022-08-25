@@ -36,7 +36,7 @@
         }
     }
 
-    @media #{$large-mobile, $small-mobile, $extra-small-mobile,$tablet-device} {
+    @media #{$large-mobile, $small-mobile, $extra-small-mobile, $tablet-device} {
         bottom: 0;
         left: -50%;
         right: 0;
