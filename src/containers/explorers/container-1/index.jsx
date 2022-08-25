@@ -4,7 +4,7 @@ import ImageTopCenterAlignedCardComponent from '../../common/image-top-center-al
 const ExplorersContainerOne = ({ data }) => {
 
     return (
-        <div className='explorers-container-1 section'>
+        <div className='explorers-container-1 section section-padding-03-min'>
             <ImageTopCenterAlignedCardComponent data={data[0]} dividercolor="primary"/>
         </div>
     )

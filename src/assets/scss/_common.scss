@@ -455,6 +455,36 @@ ol {
     }
 }
 
+.section-padding-03-min {
+    padding-bottom: 4em;
+
+    @media #{$laptop-device} {
+        padding-bottom: 4em;
+    }
+
+    @media #{$desktop-device} {
+        padding-bottom: 4em;
+    }
+
+    @media #{$tablet-device} {
+        padding-bottom: 80px;
+    }
+
+    @media #{$large-mobile} {
+        padding-bottom: 0em;
+    }
+    @media #{$small-mobile} {
+        padding-bottom: 0em;
+    }
+}
+
+.single-page {
+    min-height: calc(100vh - $header-height - $navigator-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 // No select text
 .noselect {
     -webkit-touch-callout: none;
