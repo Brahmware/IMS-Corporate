@@ -1,21 +1,4 @@
-// import React from 'react'
-// import CenterAlignedCardContainer from '../../common/center-aligned-card-component';
-
-// const HomeContainerOne = ({ data }) => {
-//     return (
-//         <div className='home-container-1 section-with-padding'>
-//             <CenterAlignedCardContainer data={data[0]} dividercolor='primary' />
-//         </div>
-//     )
-// }
-
-// export default HomeContainerOne
-
-
-
-
-
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Autoplay } from "swiper/core";
 import ParallaxImageComponent from '../../../components/parallax-image-component';
@@ -26,6 +9,8 @@ SwiperCore.use([Pagination, Autoplay]);
 const HomeContainerOne = (props) => {
 
     const bannerPaginationRef = useRef(null);
+
+    const [loopOver, setLoopOver] = useState(true);
 
     const params = {
         initialSlide: 1,
@@ -39,7 +24,7 @@ const HomeContainerOne = (props) => {
         autoplay: {
             delay: 6000,
         },
-        speed: 2000,
+        speed: 3000,
         direction: 'horizontal',
         loop: true,
     };
@@ -52,6 +37,7 @@ const HomeContainerOne = (props) => {
     return (
         <div className='section home-banner-section'>
             <Swiper {...params}>
+                {console.log(loopOver)}
                 {
                     props.data.map((eachSlide, key) => {
                         return (
@@ -61,7 +47,11 @@ const HomeContainerOne = (props) => {
                                         <ParallaxImageComponent image={eachSlide.image} positiontop={true} />
                                     </div>
                                     <div className="container">
-                                        <div className="banner-card" >
+                                        <div 
+                                            className="banner-card" 
+                                            onMouseEnter = {() => setLoopOver(false)}
+                                            onMouseLeave = {() => setLoopOver(true)}
+                                        >
                                             <div className="title">
                                                 <span
                                                     dangerouslySetInnerHTML={{
