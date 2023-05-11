@@ -9,9 +9,9 @@
                     {
                         "image": "/images/partners/corporate-and-foundations/container-1/cover.jpg",
                         "card": {
-                            "title": "WHAT WE DO",
-                            "subtitle": "India celebrates Exploration",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                            "title": "Partnership for the future",
+                            "subtitle": "Putting the Best Organizations Forward!",
+                            "content": "<p>Indian Media Syndicate is always looking for new and innovative ways to bring high-quality educational and entertainment media to a global audience. That's why we're excited to announce our partnership opportunities with corporate and NGOs. Together, we can create media that inspires, informs, and entertains people of all ages, from all corners of the world. Our OTT platforms and TV channels are the perfect platform for businesses and organizations to reach their target audience in a meaningful way. We offer a range of partnership opportunities, from co-creating content to co-branding and co-marketing. Our goal is to work together with our partners to create media that has a real impact on the world.</p>"
                         }
                     }
                 ]
@@ -49,7 +49,7 @@
                         "card": {
                             "title": "ABOUT US",
                             "subtitle": "India celebrates Exploration",
-                            "content": "<p>Indian Media Syndicate endeavors to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world generating scientific journalism that inspires, informs and entertains.<br /> <br />This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
+                            "content": "<p>At IMS, we believe in the power of media to create positive change. That's why we're dedicated to working with organizations that share our vision of a better world. Whether you're a business looking to reach new customers or an NGO looking to raise awareness about important issues, we have a partnership opportunity that's right for you. Join us today and let's create media that makes a difference. Contact IMS to learn more about our partnership opportunities and find out how we can work together to create a brighter future.</p>"
                         }
                     }
                 ]
@@ -147,7 +147,7 @@
                         "image": "/images/partners/become-a-member/container-1/cover.jpg",
                         "card": {
                             "title": "UNITED FOR GOOD",
-                            "subtitle": "This is what an explorer looks like",
+                            "subtitle": "Informative Broadcast happens because of You",
                             "content": "<p>When you connect with our network, you help further the work of our explorers, and educators around the world.</p>"
                         }
                     }
@@ -157,7 +157,7 @@
                 "id": "container_2",
                 "elements": [
                     {
-                        "title": "IMS ASSEMBLY MEMBERSHIP"
+                        "title": "IMS SOCIETY MEMBERSHIP"
                     },
                     {
                         "cards": [
@@ -240,7 +240,7 @@
                         "card": {
                             "title": "ABOUT US",
                             "subtitle": "India celebrates Exploration",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
                         }
                     }
                 ]
