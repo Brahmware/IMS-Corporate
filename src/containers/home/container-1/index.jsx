@@ -5,7 +5,6 @@ import ParallaxImageComponent from '../../../components/parallax-image-component
 
 SwiperCore.use([Pagination, Autoplay]);
 
-
 const HomeContainerOne = (props) => {
 
     const bannerPaginationRef = useRef(null);
@@ -37,7 +36,6 @@ const HomeContainerOne = (props) => {
     return (
         <div className='section home-banner-section'>
             <Swiper {...params}>
-                {console.log(loopOver)}
                 {
                     props.data.map((eachSlide, key) => {
                         return (
