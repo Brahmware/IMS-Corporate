@@ -9,7 +9,7 @@ const HomeContainerOne = (props) => {
 
     const bannerPaginationRef = useRef(null);
 
-    const [loopOver, setLoopOver] = useState(true);
+    const [, setLoopOver] = useState(true);
 
     const params = {
         initialSlide: 1,
