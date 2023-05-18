@@ -1568,7 +1568,7 @@
                         "card": {
                             "title": "ACCOMPLISH",
                             "subtitle": "Universal Intellect",
-                            "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                            "content": "<p>IMS is on a mission to empower the world with education and knowledge! We are focused on bridging the gap between education and technology, so that knowledge and learning can reach every corner of the globe. We believe that information technology and broadcast are the key to unlocking the full potential of every individual. Our aim is to create and publish media that will ignite the mind, inspire the soul and bring about a new era of universal intellect. We are dedicated to spreading knowledge, breaking down barriers and making education accessible to all. Our focus on education is not just about imparting information, it's about empowering individuals, communities and nations to thrive. So come and join us on this journey to a brighter future, where education knows no bounds! </p>"
                         }
                     }
                 ]
@@ -1664,7 +1664,7 @@
                                 "card": {
                                     "title": "DISCOVERING",
                                     "subtitle": "AR/VR Experience<br/> Production Wing",
-                                    "content": "<p>IMS is always looking for new and innovative ways to deliver educational and entertaining content to our viewers. Our AR/VR Experience Production Wing is a testament to our commitment to this goal. This state-of-the-art facility combines the latest technology with creative storytelling to produce cutting-edge AR/VR experiences. Our team of experts work tirelessly to ensure that each experience is not only visually stunning but also informative and engaging. We are taking media consumption to the next level, offering our viewers a unique and immersive experience like no other.</p>"
+                                    "content": "<p>We are always looking for new and innovative ways to deliver educational and entertaining content to our viewers. Our AR/VR Experience Production Wing is a testament to our commitment to this goal. This state-of-the-art facility combines the latest technology with creative storytelling to produce cutting-edge AR/VR experiences. Our team of experts work tirelessly to ensure that each experience is not only visually stunning but also informative and engaging. We are taking media consumption to the next level, offering our viewers a unique and immersive experience like no other.</p>"
                                 }
                             }
                         ]
@@ -1712,7 +1712,7 @@
                                 "card": {
                                     "title": "IMS PRODUCTION SETS",
                                     "subtitle": "Mega Unreal Production Sets",
-                                    "content": "<p>We think that we will only be able to achieve our purpose if we put our commitment to diversity, equity, and inclusion into practice in all aspects of our work.</p>"
+                                    "content": "<p>Powered by cutting-edge broadcast technologies from our valued partners, IMS features advanced virtual production mega facilities strategically positioned throughout India. We are able to create immersive and high-quality material thanks to these cutting-edge facilities, completely changing the nation's media production landscape.</p>"
                                 }
                             }
                         ]
@@ -1724,21 +1724,21 @@
                                 "cards": [
                                     {
                                         "id": 1,
-                                        "count": "265",
-                                        "cardtitle": "Conserved Species",
-                                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                        "count": "45+",
+                                        "cardtitle": "Virtual Production Mega Studios",
+                                        "cardcontent": "With a network of virtual production mega facilities spread across India, IMS has established a significant presence in the media production industry."
                                     },
                                     {
                                         "id": 2,
-                                        "count": "265",
-                                        "cardtitle": "Conserved Species",
-                                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                        "count": "25+",
+                                        "cardtitle": "Broadcast Tech Partners",
+                                        "cardcontent": "Our partnership with leading broadcast technology providers ensures access to the latest advancements, with state-of-the-art systems deployed in each facility."
                                     },
                                     {
                                         "id": 3,
-                                        "count": "265",
-                                        "cardtitle": "Conserved Species",
-                                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                        "count": "1k+ hrs",
+                                        "cardtitle": "High Quality Content",
+                                        "cardcontent": "These facilities enables us to captivate millions of viewers and cement our position as a key player in the Indian media landscape."
                                     }
                                 ]
                             }

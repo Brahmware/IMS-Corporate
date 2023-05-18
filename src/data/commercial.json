@@ -824,7 +824,7 @@
                                 "card": {
                                     "title": "ABOUT US",
                                     "subtitle": "India celebrates Exploration",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. <br/> <br/>This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "content": "<p>Investors are revolutionizing communication channels, reshaping India's media environment, and developing a strong ecosystem for scientific communication. Their assistance has been crucial in fostering great content, creativity, and innovation across a variety of platforms. Investors have supported private investment for R&D, ecological protection, and other crucial emphasis areas by realising the enormous potential of the media sector. The increase in funding has sped up scientific and technological progress while also opening up new possibilities for partnerships, knowledge sharing, and talent development. Investors are igniting positive change through their bold investments, empowering the media sector to have a significant impact on society and fuel sustainable growth in India.</p>"
                                 }
                             }
                         ]
@@ -1026,9 +1026,9 @@
                             {
                                 "image": "/images/commercial/sustainability-statement/container-1/cover.jpg",
                                 "card": {
-                                    "title": "WHAT WE DO",
-                                    "subtitle": "India celebrates Exploration",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "title": "SUSTAINABILITY STATEMENT",
+                                    "subtitle": "Of the Impactful Media Syndicate",
+                                    "content": "<p>For future generations, we are dedicated to promoting a sustainable future. We work to have a good influence in each of these contexts because we are aware of how intertwined our ecological, social, cultural, and evolutionary environments are. For us, sustainability is more than just a duty; it is a core value ingrained in the fabric of who we are. We welcome the chance to have a good influence and help create a better future for everyone. Come along with us on this revolutionary path to a sustainable future.</p>"
                                 }
                             }
                         ]
@@ -1038,9 +1038,9 @@
                         "elements": [
                             {
                                 "heading": {
-                                    "title": "OUR MISSION",
-                                    "subtitle": "To Revolutionize Indian Media",
-                                    "content": "<p>By making every Information, every Discovery, every Invention, every Challenge accessible to every person in the India pacific Region</p>"
+                                    "title": "OUR CORE VALUE",
+                                    "subtitle": "Environmental Stewardship",
+                                    "content": "<p>Beyond our internal operations, we collaborate with partners, stakeholders, and our audience as part of our sustainability activities. To address urgent environmental and social issues, we are dedicated to building a platform that fosters discussion, cooperation, and group action.</p>"
                                 }
                             },
                             {
@@ -1051,8 +1051,8 @@
                             },
                             {
                                 "card": {
-                                    "subtitle": "Making Knowledge Accessible to All.",
-                                    "content": "<p>Each control has been designed for multiple use, several administrators will be able to assign content remotely from their mobile phones, without any worries.</p>",
+                                    "subtitle": "Inspiring Sustainable Living through Media",
+                                    "content": "<p>IMS uses the power of media to inspire sustainable living. We encourage people to adopt eco-friendly practises by increasing awareness, educating them, and inspiring them through engaging material. Let's embrace sustainability together to improve the future of our world.</p>",
                                     "buttontext": "VIEW MORE"
                                 }
                             }
@@ -1065,21 +1065,21 @@
                                 "cards": [
                                     {
                                         "id": 1,
-                                        "count": 265,
-                                        "cardtitle": "Conserved Species",
-                                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                        "count": "500 mT",
+                                        "cardtitle": "Annual CO2 Reduction",
+                                        "cardcontent": "We reduced carbon emissions by 30% through the implementation of energy-efficient technologies and renewable energy sources, equivalent to saving 500 metric tons of CO2 annually."
                                     },
                                     {
                                         "id": 2,
-                                        "count": 265,
-                                        "cardtitle": "Conserved Species",
-                                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                        "count": "10<sup>5</sup> Kg",
+                                        "cardtitle": "Waste Managed",
+                                        "cardcontent": "Our comprehensive waste management initiatives have resulted in a recycling rate of 70%, diverting over 100,000 Kg of waste from landfills each year."
                                     },
                                     {
                                         "id": 3,
-                                        "count": 265,
-                                        "cardtitle": "Conserved Species",
-                                        "cardcontent": "Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis."
+                                        "count": "10<sup>4</sup> Acres",
+                                        "cardtitle": "Natural Habitats Preserved",
+                                        "cardcontent": "We have contributed to preservation of biodiversity by supporting the protection of 10,000 acres of natural habitats, enabling the survival of endangered species and promoting ecological balance."
                                     }
                                 ]
                             }
@@ -1124,9 +1124,9 @@
                             {
                                 "image": "/images/commercial/sustainability-statement/container-5/cover.jpg",
                                 "card": {
-                                    "title": "ABOUT US",
-                                    "subtitle": "India celebrates Exploration",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains. This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "title": "IMS PROMOTES",
+                                    "subtitle": "Empowering Media, Inspiring Sustainability",
+                                    "content": "<p>We want to engage and empower our audience to make decisions that contribute to a greener, more sustainable world by utilising the influential media. We encourage people to adopt sustainable behaviours, such as recycling, water conservation, purchasing locally and organically grown goods, and eco-friendly travel, through compelling storytelling, expert interviews, and instructional programming. We are committed to using the media's influence and audience to promote a sustainable and environmentally conscious culture. We work to bring about a transformation in the way people think so that living sustainably becomes a natural and essential part of daily life. We can build a better, more sustainable future for future generations together.</p>"
                                 }
                             }
                         ]
