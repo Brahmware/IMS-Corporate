@@ -1,6 +1,30 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "IMS Corporate Website",
+  "name": "Indian Media Syndicate's Corporate Website",
+  "description": "A comprehensive corporate website showcasing Vishwa Brahmand's services and products.",
+  "scope": "/",
+  "categories": [
+    "Indian Media Syndicate (IMS)",
+    "Media revolution in India",
+    "Language barriers in broadcasting",
+    "AI in media industry",
+    "Real-time translation",
+    "Linguistic diversity in India",
+    "Inclusivity in media",
+    "Accessibility in broadcasting",
+    "Content creation and distribution",
+    "Future of broadcasting",
+    "Technological innovation in media",
+    "Artificial Intelligence in broadcasting",
+    "Breaking language barriers",
+    "Media landscape in India",
+    "IMS real-time translation",
+    "Multilingual content",
+    "Broadcasting in India",
+    "Indian media industry",
+    "Indian media innovation",
+    "IMS and inclusivity"
+  ],
   "icons": [
     {
       "src": "favicon.ico",
