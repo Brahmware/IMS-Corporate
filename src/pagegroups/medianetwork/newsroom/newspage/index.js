@@ -20,7 +20,7 @@ const NewsPage = () => {
     const datacontainer2=data && (data).find(data => data.id === 'container_2').elements;
     const datacontainer3=data && (data).find(data => data.id === 'container_3').elements;
     const datacontainer4=data && (data).find(data => data.id === 'container_4').elements;
-    const { url, path } = useRouteMatch();
+    const { path } = useRouteMatch();
     return (
         <React.Fragment>
             <div className="page-wrapper join-page-wrapper">
