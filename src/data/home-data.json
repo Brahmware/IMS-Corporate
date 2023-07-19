@@ -225,11 +225,6 @@
                 "id": 5,
                 "name": "IMS History",
                 "logo": "images/brandsicons/imshistory.svg"
-            },
-            {
-                "id": 6,
-                "name": "more",
-                "logo": "/images/our-networks/more/logo.svg"
             }
         ]
     },

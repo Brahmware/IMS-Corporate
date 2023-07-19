@@ -40,10 +40,10 @@ const HomePage = () => {
         <HomeContainerFour data={dataContainer4} />
         <HomeContainerFive data={dataContainer5} />
         <HomeContainerSix data={dataContainer6} />
-        <HomeContainerSeven />
+        {/* <HomeContainerSeven /> */}
+        <HomeContainerTen data={dataContainer10} />
         <HomeContainerEight data={dataContainer8} />
         <HomeContainerNine data={dataContainer9} />
-        <HomeContainerTen data={dataContainer10} />
         <HomeContainerEleven data={dataContainer11} />
         <Footer />
       </div>
