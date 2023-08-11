@@ -13,7 +13,7 @@ const OurLeadership = ({ data }) => {
             <OurLeadershipContainerOne data={dataContainer1} />
             <OurLeadershipContainerTwo />
             <OurLeadershipContainerThree data={dataContainer3} />
-            <OurLeadershipContainerFour />
+            {/* <OurLeadershipContainerFour /> */}
         </div>
     )
 }

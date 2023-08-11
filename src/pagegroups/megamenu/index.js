@@ -79,7 +79,7 @@ const MegaMenu = (props) => {
     return (
         <div
             className={props.show ? "megamenu open" : "megamenu"}
-            style={{ paddingTop: `${props.headerHeight}px` }}
+            style={{ paddingTop: `${props.headerHeight}px`, height: `${window.innerHeight} !important` }}
         >
             <div className="page-wrapper-container container h-100">
                 <div className="page-wrapper megamenu-page">

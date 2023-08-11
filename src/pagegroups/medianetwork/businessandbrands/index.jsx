@@ -48,11 +48,12 @@ const BusinessAndBrands = ({ data, fromParent }) => {
 
     const dataTVNetwork = data.find(element => element.id === 'tv_network');
     const dataPhysicalExperiences = data.find(element => element.id === 'physical_experiences');
+    const dataRadio = data.find(element => element.id === 'radio');
     const dataMagazines = data.find(element => element.id === 'magazines');
+    const dataConsumerProducts = data.find(element => element.id === 'consumer_products');
     const dataStudioOperations = data.find(element => element.id === 'studio_operations');
     const dataMotionPictures = data.find(element => element.id === 'motion_pictures');
     const dataIntellectualProperties = data.find(element => element.id === 'intellectual_properties');
-    const dataRadio = data.find(element => element.id === 'radio');
 
     return (
         <div className="business-and-brands-page">
@@ -70,20 +71,13 @@ const BusinessAndBrands = ({ data, fromParent }) => {
                     <Redirect to={`${path}/tv_network`} />
                 </Route>
                 <Route path={`${path}/tv_network`} component={() => <TVNetwork data={dataTVNetwork.elements} />} />
-                {/* <Route path={`${path}/motion_pictures`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
-                <Route path={`${path}/radio`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
-                <Route path={`${path}/magazines`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
-                <Route path={`${path}/consumer_products`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} />
-                <Route path={`${path}/studio_operations`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
-                <Route path={`${path}/physical_experiences`} component={() => <PhysicalExperiences data={dataPhysicalExperiences.elements} />}/>
-                {/* <Route path={`${path}/intellectual_properties`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
-                <Route path={`${path}/magazines`} component={() => <Magazines data={dataMagazines.elements}/>} />
-                <Route path={`${path}/radio`} component={() => <Radio data={dataRadio.elements}/>} />
-                <Route path={`${path}/motion_pictures`} component={() => <MotionPictures data={dataMotionPictures.elements}/>} />
-                {/* <Route path={`${path}/consumer_products`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
-                <Route path={`${path}/studio_operations`} component={() => <StudioOperations data={dataStudioOperations.elements}/>} />
-                {/* <Route path={`${path}/physical_experiences`} component={() => {<TVNetwork data={dataTVNetwork.elements}/>}} /> */}
-                <Route path={`${path}/intellectual_properties`} component={() => <IntellectualProperties data={dataIntellectualProperties.elements}/>} />
+                <Route path={`${path}/motion_pictures`} component={() => <React.Fragment />} />
+                <Route path={`${path}/radio`} component={() => <React.Fragment/>} />
+                <Route path={`${path}/magazines`} component={() => <React.Fragment/>} />
+                <Route path={`${path}/consumer_products`} component={() => <React.Fragment/>} />
+                <Route path={`${path}/studio_operations`} component={() => <React.Fragment/>} />
+                <Route path={`${path}/physical_experiences`} component={() => <React.Fragment />}/>
+                <Route path={`${path}/intellectual_properties`} component={() => <React.Fragment/>} />
             </Switch>
         </div>
     )

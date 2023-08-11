@@ -1490,7 +1490,7 @@
                         "image": "/images/media-network/focus-areas/container-1/cover.jpg",
                         "card": {
                             "title": "GROUND BREAKING",
-                            "subtitle": "Human Network",
+                            "subtitle": "Human<Br />Network",
                             "content": "<p>Step into a world where the power of human interconnection takes centre stage! IMS is dedicated to fostering a network that propels discoveries and ideas forward at lightning speed. Imagine a world where information and inspiration flow freely, igniting a chain reaction of progress and innovation. At our company, we believe that by connecting people, we are unlocking the full potential of humanity. So come and join us on this journey of discovery, as we work together to create a brighter future, one connection at a time!</p>"
                         }
                     }
@@ -1625,7 +1625,7 @@
                                 "image": "/images/media-network/technology/container-1/cover.jpg",
                                 "card": {
                                     "title": "IMS MEDIA CENTERS",
-                                    "subtitle": "Largest Educational <br/>Media Archive",
+                                    "subtitle": "Largest Educational Media Archive",
                                     "content": "<p>We are dedicated to delivering high-quality media content to our viewers around the world. To achieve this, we operate a state-of-the-art network of data servers that support our streaming networks. These servers provide the necessary infrastructure to ensure that our content is delivered seamlessly and with the highest level of reliability. We invest in the latest technology and the best people to ensure that our data servers provide the high-quality service that our viewers deserve. Visit our website to learn more about our streaming networks and the innovative technology that makes them possible.</p>"
                                 }
                             }
@@ -1662,7 +1662,7 @@
                             {
                                 "image": "/images/media-network/technology/container-3/cover.jpg",
                                 "card": {
-                                    "title": "DISCOVERING",
+                                    "title": "FEEL THE CHANGE",
                                     "subtitle": "AR/VR Experience<br/> Production Wing",
                                     "content": "<p>We are always looking for new and innovative ways to deliver educational and entertaining content to our viewers. Our AR/VR Experience Production Wing is a testament to our commitment to this goal. This state-of-the-art facility combines the latest technology with creative storytelling to produce cutting-edge AR/VR experiences. Our team of experts work tirelessly to ensure that each experience is not only visually stunning but also informative and engaging. We are taking media consumption to the next level, offering our viewers a unique and immersive experience like no other.</p>"
                                 }
@@ -1682,7 +1682,7 @@
                                         "image": "/images/media-network/technology/container-4/cover1.jpg",
                                         "title": "Tech",
                                         "subtitle": "DATA SHEET",
-                                        "content": "Precious Members of the Indian Media Syndicate"
+                                        "content": "All production related technical information at one place"
                                     },
                                     {
                                         "id": 2,
@@ -1690,7 +1690,7 @@
                                         "image": "/images/media-network/technology/container-4/cover2.jpg",
                                         "title": "Speech",
                                         "subtitle": "SERVERS",
-                                        "content": "Guidelines for IMS title Productions (Procedural)"
+                                        "content": "Announcements regarding updates to the Speech AI and Data Tech"
                                     },
                                     {
                                         "id": 3,
@@ -1698,7 +1698,7 @@
                                         "image": "/images/media-network/technology/container-4/cover3.jpg",
                                         "title": "Film",
                                         "subtitle": "PRODUCTION",
-                                        "content": "Guidelines for IMS production partners and terms of cooperation"
+                                        "content": "Guidelines for IMS media production partners and terms of cooperation"
                                     }
                                 ]
                             }

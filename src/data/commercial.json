@@ -26,9 +26,9 @@
                             {
                                 "image": "/images/commercial/advertise-with-us/container-2/cover.jpg",
                                 "card": {
-                                    "title": "ABOUT US",
-                                    "subtitle": "India celebrates Exploration",
-                                    "content": "<p>Indian Media Syndicate strives to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving passionate Explorers around the world with scientific journalism that inspires, informs and entertains.<br /><br /> This is an Indian family of informational, educational and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by Indic Societies.</p>"
+                                    "title": "AMPLIFY YOUR REACH",
+                                    "subtitle": "Spark Connections<br /> with IMS Prasar",
+                                    "content": "<p>Expand your audience and amplify your message with Indian Media Syndicate (IMS) and our advanced advertising intelligence, IMS Prasar. By leveraging our extensive network and diverse content platforms, we offer unique advertising opportunities that cater to a wide variety of interests and demographics. With our state-of-the-art ad intelligence, we ensure your ads are delivered to the right audience at the right time, maximizing engagement and return on investment. IMS Prasar uses data-driven insights to tailor your advertising strategy, making your message more impactful, relevant, and engaging. Partner with IMS today, and let us empower your brand to ignite connections, inspire actions, and drive results.</p>"
                                 }
                             }
                         ]
@@ -37,8 +37,8 @@
                         "id": "container_3",
                         "elements": [
                             {
-                                "title": "INDIAN MEDIA SYNDICATE MEMBERSHIP",
-                                "subtitle": "The Greatest Event in Indian Broadcasting",
+                                "title": "INDIAN MEDIA SYNDICATE PRASAR SYSTEMS",
+                                "subtitle": "Explore the Potential of Cutting-Edge Advertising",
                                 "cards": [
                                     {
                                         "title": "Advertisement Enquiry",
@@ -118,26 +118,26 @@
                                     {
                                         "id": 1,
                                         "button": "DISCOVER",
-                                        "image": "/images/commercial/advertise-with-us/container-4/cover.jpg",
+                                        "image": "/images/commercial/advertise-with-us/container-4/cover1.jpg",
                                         "title": "IMS",
                                         "subtitle": "PRASAR",
-                                        "content": "Precious Members of the Indian Media Syndicate"
+                                        "content": "Advertising with data-driven insights and tailored recommendations"
                                     },
                                     {
                                         "id": 2,
                                         "button": "CHECK",
-                                        "image": "/images/commercial/advertise-with-us/container-4/cover.jpg",
+                                        "image": "/images/commercial/advertise-with-us/container-4/cover2.jpg",
                                         "title": "Advert",
                                         "subtitle": "POLICY",
-                                        "content": "Guidelines for IMS title Productions (Procedural)"
+                                        "content": "Policy for seamless and engaging viewer experience and ethical advertising"
                                     },
                                     {
                                         "id": 3,
                                         "button": "CHECK",
-                                        "image": "/images/commercial/advertise-with-us/container-4/cover.jpg",
+                                        "image": "/images/commercial/advertise-with-us/container-4/cover3.jpg",
                                         "title": "PRASAR",
                                         "subtitle": "MONETIZATION",
-                                        "content": "Guidelines for IMS production partners and terms of cooperation"
+                                        "content": "Revenue growth with content integrity and viewer satisfaction"
                                     }
                                 ]
                             }
@@ -458,7 +458,7 @@
                                 "card": {
                                     "title": "OUR INVESTORS LIVE HERE",
                                     "button": "INVESTMENT QUERY",
-                                    "subtitle": "We work for a Purpose. Find Yours.",
+                                    "subtitle": "We work for a<br /> Purpose. Find Yours.",
                                     "content": "<p>Every year, a percentage of our net income is allocated to finance projects in research, exploration, conservation, and education. This one-of-a-kind collaboration fosters a virtuous loop of storytelling and inquiry that motivates individuals to act, broadens their perspectives, and frequently sparks new ideas, creativity and Inventions.</p>"
                                 }
                             }
@@ -791,25 +791,25 @@
                                     {
                                         "id": 1,
                                         "button": "DISCOVER",
-                                        "image": "/images/commercial/advertise-with-us/container-2/cover.jpg",
-                                        "title": "IMS",
-                                        "subtitle": "PRASAR",
-                                        "content": "Precious Members of the Indian Media Syndicate"
+                                        "image": "/images/commercial/investors/container-2/cover1.jpg",
+                                        "title": "Officers",
+                                        "subtitle": "VAULT",
+                                        "content": "Transparent insights into IMS's leadership and strategic direction"
                                     },
                                     {
                                         "id": 2,
                                         "button": "CHECK",
-                                        "image": "/images/commercial/advertise-with-us/container-2/cover.jpg",
-                                        "title": "Advert",
-                                        "subtitle": "POLICY",
-                                        "content": "Guidelines for IMS title Productions (Procedural)"
+                                        "image": "/images/commercial/investors/container-2/cover2.jpg",
+                                        "title": "Financial",
+                                        "subtitle": "RELEASE",
+                                        "content": "Access our latest financial updates and performance reports"
                                     },
                                     {
                                         "id": 3,
                                         "button": "CHECK",
-                                        "image": "/images/commercial/advertise-with-us/container-2/cover.jpg",
-                                        "title": "PRASAR",
-                                        "subtitle": "MONETIZATION",
+                                        "image": "/images/commercial/investors/container-2/cover3.jpg",
+                                        "title": "Quarter",
+                                        "subtitle": "RESULTS",
                                         "content": "Guidelines for IMS production partners and terms of cooperation"
                                     }
                                 ]
@@ -820,10 +820,10 @@
                         "id": "container_4",
                         "elements": [
                             {
-                                "image": "/images/commercial/investors/container-1/cover.jpg",
+                                "image": "/images/commercial/investors/container-3/cover.jpg",
                                 "card": {
-                                    "title": "ABOUT US",
-                                    "subtitle": "India celebrates Exploration",
+                                    "title": "EMPOWERING INNOVATION",
+                                    "subtitle": "Propel the Future<br /> with Communication",
                                     "content": "<p>Investors are revolutionizing communication channels, reshaping India's media environment, and developing a strong ecosystem for scientific communication. Their assistance has been crucial in fostering great content, creativity, and innovation across a variety of platforms. Investors have supported private investment for R&D, ecological protection, and other crucial emphasis areas by realising the enormous potential of the media sector. The increase in funding has sped up scientific and technological progress while also opening up new possibilities for partnerships, knowledge sharing, and talent development. Investors are igniting positive change through their bold investments, empowering the media sector to have a significant impact on society and fuel sustainable growth in India.</p>"
                                 }
                             }
@@ -1066,8 +1066,8 @@
                                     {
                                         "id": 1,
                                         "count": "500 mT",
-                                        "cardtitle": "Annual CO2 Reduction",
-                                        "cardcontent": "We reduced carbon emissions by 30% through the implementation of energy-efficient technologies and renewable energy sources, equivalent to saving 500 metric tons of CO2 annually."
+                                        "cardtitle": "Annual CO<sub>2</sub> Reduction",
+                                        "cardcontent": "We reduced carbon emissions by 30% through the implementation of energy-efficient technologies and renewable energy sources, equivalent to saving 500 metric tons of CO<sub>2</sub> annually."
                                     },
                                     {
                                         "id": 2,
@@ -1093,26 +1093,26 @@
                                     {
                                         "id": 1,
                                         "button": "DISCOVER",
-                                        "image": "/images/commercial/sustainability-statement/container-4/cover.jpg",
-                                        "title": "IMS",
-                                        "subtitle": "UNIVERSE",
-                                        "content": "Precious Members of the Indian Media Syndicate"
+                                        "image": "/images/commercial/sustainability-statement/container-4/cover1.jpg",
+                                        "title": "Natural",
+                                        "subtitle": "RESOURCE MONITOR",
+                                        "content": "Tracking and optimizing our eco-conscious resource management practices"
                                     },
                                     {
                                         "id": 2,
                                         "button": "CHECK",
-                                        "image": "/images/commercial/sustainability-statement/container-4/cover.jpg",
-                                        "title": "Standard",
-                                        "subtitle": "REQUIREMENTS",
-                                        "content": "Guidelines for IMS title Productions (Procedural)"
+                                        "image": "/images/commercial/sustainability-statement/container-4/cover2.jpg",
+                                        "title": "Cultural",
+                                        "subtitle": "RESOURCE MONITOR",
+                                        "content": "Safeguarding and celebrating India's diverse cultural heritage"
                                     },
                                     {
                                         "id": 3,
                                         "button": "CHECK",
-                                        "image": "/images/commercial/sustainability-statement/container-4/cover.jpg",
-                                        "title": "Member",
-                                        "subtitle": "GUDELINES",
-                                        "content": "Guidelines for IMS production partners and terms of cooperation"
+                                        "image": "/images/commercial/sustainability-statement/container-4/cover3.jpg",
+                                        "title": "Evolution",
+                                        "subtitle": "RESOURCE MONITOR",
+                                        "content": "Sustaining biodiversity and promoting ecological equilibrium ethically"
                                     }
                                 ]
                             }

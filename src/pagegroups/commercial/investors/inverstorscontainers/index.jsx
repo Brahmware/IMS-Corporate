@@ -14,7 +14,7 @@ const InvestorsContainers = ({ data ,url}) => {
     return (
         <div className="investors-page">
             <InvestorsContainerOne data={dataContainer1} />
-            <InvestorsContainerTwo data={dataContainer2} />
+            {/* <InvestorsContainerTwo data={dataContainer2} /> */}
             <InvestorsContainerThree data={dataContainer3} url={ url} />
             <InvestorsContainerFour data={dataContainer4} />
             <InvestorsContainerFive data={dataContainer5} />

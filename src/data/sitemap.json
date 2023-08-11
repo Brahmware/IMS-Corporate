@@ -68,9 +68,9 @@
                 "path": "/education_and_teaching/professional_learning"
             },
             {
-                "id": "immersive_experience",
-                "page": "Immersive Experience",
-                "path": "/education_and_teaching/immersive_experience"
+                "id": "immersive_experiences",
+                "page": "Immersive Experiences",
+                "path": "/education_and_teaching/immersive_experiences"
             }
         ]
     },

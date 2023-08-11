@@ -36,7 +36,7 @@ const JoinContainerOne = (props) => {
                 </div>
             </div>
             <div className="banner-background">
-                <div className="overlay" />
+                <div className="overlay" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }} />
                 <ParallaxImageComponent image={props.data[0].bannerbackground} alt={props.data[0].bannerbackground} positiontop={true} />
             </div>
         </div>

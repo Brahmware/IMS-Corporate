@@ -38,9 +38,7 @@ const ResourcesContainerOne = ({ data, fromParent }) => {
         }
     }, [DEFAULT_PAGE, data, history]);
     return (
-        <div className='resources-container-1 section-with-padding white-background'
-           /*  style={{overflow: "hidden"}}  */// jb tk website responsive nhi bnti
-        >
+        <div className='resources-container-1 section-with-padding white-background'>
             <StackedFluidCardsContainer
                 url={url}
                 cards={data}

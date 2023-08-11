@@ -19,7 +19,7 @@ const ImageTopCenterAlignedCardComponent = ({ data, dividercolor, largeheading }
                     <div className="centered-aligned-image">
                         <ReflectionComponent
                             component={
-                                <img src={imagedata} alt={carddata.title} />
+                                <img src={imagedata} alt={carddata.title} style={{ height: 'unset !important'}} />
                             }
                         />
                     </div>

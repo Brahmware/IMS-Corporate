@@ -74,7 +74,7 @@ const EducationTeachingPage = () => {
                         component={() => <ProfessionalLearning data={relatedDataElements} />}
                     />
                     <Route
-                        path={`${path}/immersive_experience`}
+                        path={`${path}/immersive_experiences`}
                         component={() => <ImmersiveExperience data={relatedDataElements} />}
                     />
                     <Route path={`${path}/*`}>

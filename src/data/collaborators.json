@@ -91,7 +91,7 @@
                         "id": "container_1",
                         "elements": [
                             {
-                                "image": "/images/partners/become-a-member/container-1/cover.jpg",
+                                "image": "/images/collaborators/producers/container-1/cover.jpg",
                                 "card": {
                                     "title": "THE SYNDICATE MEMBERSHIP",
                                     "subtitle": "An Union made for Bigger things",
@@ -104,7 +104,7 @@
                         "id": "container_2",
                         "elements": [
                             {
-                                "image": "/images/collaborators/producers/container-1/cover.jpg",
+                                "image": "/images/collaborators/producers/container-2/cover.jpg",
                                 "card": {
                                     "title": "INTERCONNECTED PRODUCTION NETWORK",
                                     "subtitle": "Largest Information Production Network",
@@ -198,7 +198,7 @@
                                     {
                                         "id": 1,
                                         "button": "DISCOVER",
-                                        "image": "/images/collaborators/producers/container-4/cover.jpg",
+                                        "image": "/images/collaborators/producers/container-4/image-bottom-1.jpg",
                                         "title": "IMS",
                                         "subtitle": "UNIVERSE",
                                         "content": "Precious Members of the Indian Media Syndicate"
@@ -206,7 +206,7 @@
                                     {
                                         "id": 2,
                                         "button": "CHECK",
-                                        "image": "/images/collaborators/producers/container-4/cover.jpg",
+                                        "image": "/images/collaborators/producers/container-4/image-bottom-2.jpg",
                                         "title": "Standard",
                                         "subtitle": "REQUIREMENTS",
                                         "content": "Guidelines for IMS title Productions (Procedural)"
@@ -214,10 +214,10 @@
                                     {
                                         "id": 3,
                                         "button": "CHECK",
-                                        "image": "/images/collaborators/producers/container-4/cover.jpg",
+                                        "image": "/images/collaborators/producers/container-4/image-bottom-3.jpg",
                                         "title": "Member",
                                         "subtitle": "GUDELINES",
-                                        "content": "Guidelines for IMS production partners and terms of cooperation"
+                                        "content": "Guidelines for IMS production partners, financiers and terms of cooperation"
                                     }
                                 ]
                             }

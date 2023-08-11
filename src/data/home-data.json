@@ -49,7 +49,7 @@
                 "card": {
                     "title": "ABOUT US",
                     "path":"/business/about_us",
-                    "subtitle": "India, Explore in your tongue! <br/>Dream in your tongue! <br />Lead in your tongue!",
+                    "subtitle": "India, Explore!<br /> Dream! Lead!",
                     "content": "<p>Indian Media Syndicate endeavours to be the global leader in Exploration, Scientific Communications, Real Life Entertainment, serving enthusiastic Explorers around the world generating scientific journalism that inspires, informs, and entertains every age, at grassroots level, soaring high.<br /> <br />IMS is developing its’ unique voice AI for making real-time translation possible in all Indian languages.<br /> <br />This is an Indian family of informational, educational, and entertainment-oriented Television, Applications and Websites offering value to how Education is developed and accessed by the world.</p>"
                 }
             }
@@ -161,7 +161,7 @@
                         "adjective": "Most Popular",
                         "price": "₹ 1",
                         "tableitems": [
-                            "<p><span class='bold black'>Monthly</span></p>",
+                            "<p><span class='bold black'>Up to 6 User Profiles</span></p>",
                             "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
                             "<p><span class='bold black'>HD</span> Streaming</p>",
                             "<p><span class='bold black big'>Corporate Subscription</span> Available</p>",
@@ -174,7 +174,7 @@
                         "adjective": null,
                         "price": "₹ 20",
                         "tableitems": [
-                            "<p><span class='bold black'>Monthly</span></p>",
+                            "<p><span class='bold black'>Up to 6 User Profiles</span></p>",
                             "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
                             "<p><span class='bold black'>HD</span> Streaming</p>",
                             "<p><span class='bold black big'>Corporate Subscription</span> Available</p>",
@@ -187,7 +187,7 @@
                         "adjective": "Value Pack",
                         "price": "₹ 250",
                         "tableitems": [
-                            "<p><span class='bold black'>Monthly</span></p>",
+                            "<p><span class='bold black'>Up to 6 User Profiles</span></p>",
                             "<p><span class='bold black'>Full Access</span> to IMS Network</p>",
                             "<p><span class='bold black'>4K</span> Streaming</p>",
                             "<p><span class='bold black big'>Student Discount</span> Available</p>",

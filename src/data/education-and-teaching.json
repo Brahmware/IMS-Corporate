@@ -7,8 +7,8 @@
                 "id": "container_1",
                 "elements": [
                     {
-                        "id": "tv_network",
-                        "name": "TV Network",
+                        "id": "shows",
+                        "name": "Shows",
                         "cover": "/images/media-network/businessandbrands/tv-network/cover.jpg",
                         "elements": [
                             {
@@ -148,8 +148,8 @@
                         ]
                     },
                     {
-                        "id": "motion_pictures",
-                        "name": "Motion Pictures",
+                        "id": "documentaries",
+                        "name": "Documentaries",
                         "cover": "/images/media-network/businessandbrands/motion-pictures/cover.jpg",
                         "elements": [
                             {
@@ -571,8 +571,8 @@
                         ]
                     },
                     {
-                        "id": "consumer_products",
-                        "name": "Consumer Products",
+                        "id": "e-books",
+                        "name": "e Books",
                         "cover": "/images/media-network/businessandbrands/consumer-products/cover.jpg",
                         "elements": [
                             {
@@ -712,8 +712,8 @@
                         ]
                     },
                     {
-                        "id": "studio_operations",
-                        "name": "Studio Operations",
+                        "id": "courses",
+                        "name": "Courses",
                         "cover": "/images/media-network/businessandbrands/studio-operations/cover.jpg",
                         "elements": [
                             {
@@ -853,8 +853,8 @@
                         ]
                     },
                     {
-                        "id": "physical_experiences",
-                        "name": "Physical Experiences",
+                        "id": "pictures",
+                        "name": "Pictures",
                         "cover": "/images/media-network/businessandbrands/physical-experiences/cover.jpg",
                         "elements": [
                             {
@@ -966,8 +966,8 @@
                         ]
                     },
                     {
-                        "id": "intellectual_properties",
-                        "name": "Intellectual Properties",
+                        "id": "videos_gifs",
+                        "name": "Videos/Gifs",
                         "cover": "/images/media-network/businessandbrands/intellectual-properties/cover.jpg",
                         "elements": [
                             {
@@ -1491,7 +1491,7 @@
                             {
                                 "image": "/images/education-and-teaching/professional-learning/container-1/cover.jpg",
                                 "card": {
-                                    "title": "IMS PRASAR",
+                                    "title": "IMS VIDYASAGAR",
                                     "subtitle": "Start your Learning Journey",
                                     "content": "<p>Our programmes for professional learning offer distinctive experiences that link teachers, Explorers, and young people. We work with you to increase your knowledge, hone your leadership abilities, and cultivate your empathy in order to motivate future generations of global citizens to persistently look for and apply answers to the most critical issues facing the planet.<br/> We support giving educators the tools they need to influence education policy and build a better-informed India. Our professional learning programme is created to give teachers the information and tools they need to improve the quality of their lessons and student learning.</p>"
                                 }
@@ -1524,7 +1524,7 @@
                                         "image": "/images/education-and-teaching/professional-learning/container-3/cover1.jpg",
                                         "title": "Corporate",
                                         "subtitle": "SEMINARS",
-                                        "content": "Precious Members of the Indian Media Syndicate"
+                                        "content": "How to create IMS Events and Corporate events Guidelines"
                                     },
                                     {
                                         "id": 2,
@@ -1532,7 +1532,7 @@
                                         "image": "/images/education-and-teaching/professional-learning/container-3/cover2.jpg",
                                         "title": "Educator",
                                         "subtitle": "COURSES",
-                                        "content": "Guidelines for IMS title Productions (Procedural)"
+                                        "content": "Educator pre-requisites and Education Guidelines"
                                     },
                                     {
                                         "id": 3,
@@ -1540,7 +1540,7 @@
                                         "image": "/images/education-and-teaching/professional-learning/container-3/cover3.jpg",
                                         "title": "Leaders'",
                                         "subtitle": "GUILD",
-                                        "content": "Guidelines for IMS production partners and terms of cooperation"
+                                        "content": "Minimum Requirements to participate in Annual IMS Award Shows"
                                     }
                                 ]
                             }
@@ -1552,7 +1552,7 @@
                             {
                                 "image": "/images/education-and-teaching/professional-learning/container-4/cover.jpg",
                                 "card": {
-                                    "title": "WHAT INDIA NEEDS",
+                                    "title": "OUR SOLUTION",
                                     "subtitle": "Educating the Educators",
                                     "content": "<p>Our experienced team of specialists delivers insightful workshops that explore cutting-edge pedagogies, cutting-edge teaching methods, and the integration of technology in education. We also collaborate with famous experts from a variety of sectors. By taking part in professional learning, educators can develop crucial knowledge and abilities that will help them engage students and promote a culture of inquiry and critical thinking.<br/> As we collaborate to create a more informed India, come along on this transformative journey with us. Let's provide teachers the tools they need to design a stimulating and dynamic learning environment that will equip students to succeed in a world that is constantly changing. Together, we can significantly influence education's future and build the groundwork for a better future.</p>"
                                 }
@@ -1563,7 +1563,7 @@
                         "id": "container_5",
                         "elements": [
                             {
-                                "image": "/images/education-and-teaching/professional-learning/container-5/cover.jpg",
+                                "image": "/images/education-and-teaching/professional-learning/container-5/cover5.jpg",
                                 "title": "Professional Learning",
                                 "subtitle": "Join the Educator <br/> Community",
                                 "buttontext": "DISCOVER"
@@ -1671,14 +1671,14 @@
         ]
     },
     {
-        "id": "immersive_experience",
-        "pagename": "Immersive Experience",
+        "id": "immersive_experiences",
+        "pagename": "Immersive Experiences",
         "elements": [
             {
                 "id": "container_1",
                 "elements": [
                     {
-                        "image": "/images/commercial/advertise-with-us/container-1/cover.jpg",
+                        "image": "/images/education-and-teaching/immersive-experience/container-1/cover.jpg",
                         "card": {
                             "title": "AR/VR PRODUCTION SERVICES",
                             "subtitle": "Immersive teaching tools for Educators",
@@ -1706,7 +1706,7 @@
                     },
                     {
                         "card": {
-                            "subtitle": "Making Knowledge Accessible to All.",
+                            "subtitle": "Making Knowledge attractive to all",
                             "content": "<p>Immerse your students in a world of knowledge, where learning comes to life. Our AR/VR teaching resources open up a world of opportunities while encouraging creativity, curiosity, and a deeper comprehension of difficult ideas. Leverage the benefits of immersive learning with IMS to better prepare your students for the future.</p>",
                             "buttontext": "VIEW MORE"
                         }
@@ -1740,11 +1740,6 @@
                         "id": 5,
                         "name": "IMS History",
                         "logo": "/images/our-networks/ims-history/logo.svg"
-                    },
-                    {
-                        "id": 6,
-                        "name": "more",
-                        "logo": "/images/our-networks/more/logo.svg"
                     }
                 ]
             },

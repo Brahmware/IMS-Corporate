@@ -9,7 +9,7 @@
                     {
                         "image": "/images/partners/corporate-and-foundations/container-1/cover.jpg",
                         "card": {
-                            "title": "Partnership for the future",
+                            "title": "PARTNERSHIP FOR THE FUTURE",
                             "subtitle": "Putting the Best Organizations Forward!",
                             "content": "<p>We are always looking for new and innovative ways to bring high-quality educational and entertainment media to a global audience. That's why we're excited to announce our partnership opportunities with corporate and NGOs. Together, we can create media that inspires, informs, and entertains people of all ages, from all corners of the world. <br/>Our OTT platforms and TV channels are the perfect platform for businesses and organizations to reach their target audience in a meaningful way. We offer a range of partnership opportunities, from co-creating content to co-branding and co-marketing. Our goal is to work together with our partners to create media that has a real impact on the world.</p>"
                         }
@@ -60,42 +60,37 @@
                     {
                         "id": 1,
                         "name": "Macromedia",
-                        "logo": "images/our-networks/ims-life/logo.svg"
+                        "logo": "/images/partners/corporate-and-foundations/container-4/macromedia-logo.svg"
                     },
                     {
                         "id": 2,
                         "name": "JIO",
-                        "logo": "/images/our-networks/ims-science/logo.svg"
+                        "logo": "/images/partners/corporate-and-foundations/container-4/jio-logo.svg"
                     },
                     {
                         "id": 3,
                         "name": "Oculus",
-                        "logo": "/images/our-networks/world-tv/logo.svg"
+                        "logo": "/images/partners/corporate-and-foundations/container-4/oculus-logo.svg"
                     },
                     {
                         "id": 4,
                         "name": "Unreal",
-                        "logo": "/images/our-networks/pop-news/logo.svg"
+                        "logo": "/images/partners/corporate-and-foundations/container-4/unreal-engine-logo.svg"
                     },
                     {
                         "id": 5,
                         "name": "Vulkan",
-                        "logo": "/images/our-networks/ims-history/logo.svg"
+                        "logo": "/images/partners/corporate-and-foundations/container-4/vulkan-logo.svg"
                     },
                     {
                         "id": 6,
                         "name": "Adobe",
-                        "logo": "/images/our-networks/ims-history/logo.svg"
+                        "logo": "/images/partners/corporate-and-foundations/container-4/adobe-logo.svg"
                     },
                     {
                         "id": 7,
-                        "name": "Adobe",
-                        "logo": "/images/our-networks/ims-history/logo.svg"
-                    },
-                    {
-                        "id": 8,
-                        "name": "more",
-                        "logo": "/images/our-networks/more/logo.svg"
+                        "name": "Autodesk",
+                        "logo": "/images/partners/corporate-and-foundations/container-4/autodesk-logo.svg"
                     }
                 ]
             },
